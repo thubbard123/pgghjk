@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="474" MadCap:lastWidth="1197">
+    <head />
+    <body>
+        <p class="Subheading">The font magnification feature in Windows 7 causes unexpected output in PDF targets</p>
+        <p>The font magnification feature in Windows 7 causes unexpected output in PDF targets, such as odd kerning, spacing and font sizes. </p>
+        <p class="Subheading">Cause</p>
+        <p>This is a compatibility issue between <MadCap:variable name="Outputs.PDF" /> output and Microsoft Windows 7.</p>
+        <p class="Subheading">Solution</p>
+        <p>Reset the magnification feature to Smaller (100%) in Windows 7.</p>
+        <ol>
+            <li>Open the <span class="Emphasis">Start</span> menu.</li>
+            <li>Click <span class="Emphasis">Control Panel</span>. The Control Panel opens. </li>
+            <li>In the Control Panel, click <span class="Emphasis">Appearance and Personalization</span>.</li>
+            <li>Click <span class="Emphasis">Display</span>.</li>
+            <li>Click the <span class="Emphasis">Smaller - 100% (default)</span> button.</li>
+            <li>Click <span class="Emphasis">Apply</span>.</li>
+            <li>You will be prompted to log off to complete the change.</li>
+            <li>When you have logged back on, open Flare and regenerate the <MadCap:variable name="Outputs.PDF" /> output. It should appear correctly.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="1654" MadCap:lastWidth="936" MadCap:fileTags="Flare/FlareTopicAuthor.Kate">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="EclipseHelpOutputTypeDescShort.flsnp" />
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <p>The <MadCap:variable name="Outputs.EclipseHelp"></MadCap:variable> output type (called a "plug-in" in Eclipse) consists of the following components:</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">Plug-In XML&#160;File </span>This is an XML-based main file that defines the name and ID&#160;of the Eclipse help plug-in that you generate with Flare.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>The output generates a plugin.xml file for Eclipse:</p>
+                    <p>
+                        <img src="../../Images/eclipse_output_pluginxml.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>The plugin.xml file contains the extension point definitions that the Eclipse runtime environment needs to activate your help plug-in:</p>
+                    <p>
+                        <img src="../../Images/eclipse_plugin_file_example.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">HTML&#160;Content Files </span>As with other output types, Flare publishes a separate HTML file for each documentation topic. These are contained in the Content folder. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>As with other output types, the Content folder contains your Flare target's topics:</p>
+                    <p>
+                        <img src="../../Images/eclipse-help-content-folder.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Other XML Files </span>Flare publishes separate XML&#160;files for the table of contents, keyword index, and context-sensitive Help . These correspond to the <a href="http://help.eclipse.org/kepler/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_help_toc.html?cp=2_1_1_83" target="_blank">org.eclipse.help.toc</a>, <a href="http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_help_index.html&amp;resultof=%22org%2eeclipse%2ehelp%2eindex%22%20" target="_blank">org.eclipse.help.index</a>, and <a href="http://help.eclipse.org/kepler/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_help_contexts.html?cp=2_1_1_81" target="_blank">org.eclipse.help.contexts</a> extension points.</p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Manifest.MF&#160;File </span>The manifest file is used only when you package your Eclipse help plug-in as a Java archive (JAR) file. This file is required by Java when creating a JAR&#160;file. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>If you package your Eclipse help plug-in as a JAR file, the META-INF&#160;folder contains the required Manifest.MF&#160;file.</p>
+                    <p>
+                        <img src="../../Images/eclipse-help-plugin-metainf-manifest.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

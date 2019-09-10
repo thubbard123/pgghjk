@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="22" MadCap:lastHeight="14359" MadCap:lastWidth="566" MadCap:conditions="Products.Analyzer,Products.Flare">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul type="1" class="FirstLevel">
+                    <li>
+                        <MadCap:keyword term="Host name;Destinations:host name" /><span class="SetOffFirstLevel">Host Name </span>Enter or select the name of the remote server or the computer where the output files will be published (e.g., acme.com).</li>
+                    <li>
+                        <MadCap:keyword term="Port;Destinations:port" /><span class="SetOffFirstLevel">Port </span>Enter the port that you will use to connect to the remote server. Typically, you can obtain the port from your network administrator. The default port for FTP is 21, and the default port for SFTP&#160;is 22.</li>
+                    <li>
+                        <MadCap:keyword term="Connection mode;Destinations:connection mode" /><span class="SetOffFirstLevel">Connection Mode </span>For FTP connections, select either <span class="Emphasis">Active</span> or <span class="Emphasis">Passive</span>. These two modes have to do with security firewalls and how FTP connections are made between the server and the client. With Active mode, the client initiates the connection for the command channel, and the server initiates the connection for the data channel. With Passive mode, the client initiates the connection for both channels. From a security standpoint, Active mode is more beneficial for the server side, and Passive mode is more beneficial for the client side.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+        </MadCap:snippetBlock>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>sftp settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul type="1" class="FirstLevel">
+                    <li>
+                        <p class="SetOffFirstLevel">Server Validation</p>
+                        <ul class="SecondLevel">
+                            <li><span class="SetOffSecondLevel">None </span> Select this if there is no validation of the SFTP server.</li>
+                            <li><span class="SetOffSecondLevel">Known Hosts File </span>Select this if the SFTP server is listed in a known hosts file.</li>
+                            <li><span class="SetOffSecondLevel">Public Key File </span> Select this to validate the server against a public key.</li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Hosts File </span>Click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" /> to find and select the hosts file.</li>
+                    <li>
+                        <p class="SetOffFirstLevel">Authentication</p>
+                        <ul class="SecondLevel">
+                            <li><span class="SetOffSecondLevel">Password </span>Select this if the server connection is authenticated by the username and password set in the Login dialog (Login Credentials).</li>
+                            <li><span class="SetOffSecondLevel">Public Key </span>Select this if the server connection is validated against a public/private key pair match. You need  to supply the private key and password for the server.</li>
+                            <li><span class="SetOffSecondLevel">Both </span>Select this if the server connection requires both the user and private key validation.</li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Key File </span>Click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" /> to find and select the key file.</li>
+                    <li><span class="SetOffFirstLevel">Key Password </span> Enter the key password.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>destination</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul type="1" class="FirstLevel">
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Directory;Destinations:directory" /><span class="SetOffFirstLevel">Directory </span>Enter the folder where the output files will be published. You might enter something like this: public_html/Help/FictionSoftPro. You can also leave the default setting of "public_html" if you are publishing to the root directory on the server. </p>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you are publishing to source control, you should enter a location that is not your project's output folder. This is because you do not want to inadvertently overwrite or delete your published files.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you publish your output, only the files and subfolders within your target's output folder are sent to the destination. The target output folder itself is not included. For example, let's say you have a target named "AdvancedOutput." If you want the output to be placed in a destination with the same folder name, you need to create the "AdvancedOutput" folder at the final location first. Then in your publishing destination file, you can point to that exact folder. When you publish the output, the necessary files will automatically be placed inside it.</p>
+                    </li>
+                    <li>
+                        <MadCap:keyword term="Comments:publishing destination;Destinations:comments" /><span class="SetOffFirstLevel">Comment </span>You can use this field to provide a description of the destination so that its purpose is clear.</li>
+                    <li>
+                        <MadCap:keyword term="Optional view URL;URL;Destinations:optional view URL" /><span class="SetOffFirstLevel">"View" Url </span>You can enter or select an .http address in this field to be used for viewing the published files. This field is optional and is for your own internal purposes.</li>
+                    <MadCap:snippetBlock src="../Output/LogFileOptions.flsnp" />
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Source Control</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol class="LowerAlpha">
+                    <li>
+                        <p>Create or detect a source control binding.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>If Your Project Is Already Bound to Source Control</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul>
+                                    <li>
+                                        <p>Click <span class="Emphasis">Detect</span> to search for existing source control bindings on the current destination folder. If they exist, Flare will automatically fill in the fields using this information.</p>
+                                        <div class="note">
+                                            <p>Source control providers are scanned in the following order:</p>
+                                            <ol>
+                                                <li>Git</li>
+                                                <li>Subversion</li>
+                                                <li>Perforce</li>
+                                                <li>Microsoft Team Foundation Server (TFS)</li>
+                                            </ol>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Click <span class="Emphasis">New</span> to create a new bind destination. The Bind Destination dialog opens.</p>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Git</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep5.flsnp" />
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep6.flsnp" />
+                                                        </p>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator.</p>
+                                                        <MadCap:snippetBlock src="../SourceControl/SourceControlCloudForgeGitError.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:keyword term="Source control:push;Push" />
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep7.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep9.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10.flsnp" />
+                                                        </p>
+                                                        <ul class="Indented">
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10a.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10b.flsnp" />
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/GitSSHStep1.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet3] exclude[Snippets.Snippet1 or Snippets.Snippet2] " />
+                                                        </p>
+                                                        <ol style="list-style-type: lower-alpha;">
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1a.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1b.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1c.flsnp" />
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Perforce</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep6.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep7.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9.flsnp" />
+                                                        </p>
+                                                        <MadCap:dropDown class="SecondLevel">
+                                                            <MadCap:dropDownHead>
+                                                                <MadCap:dropDownHotspot>If you are Binding to a Stream</MadCap:dropDownHotspot>
+                                                            </MadCap:dropDownHead>
+                                                            <MadCap:dropDownBody>
+                                                                <ol style="list-style-type: lower-alpha;">
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streama1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlLoginDialogSimple.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streama2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamb.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamc1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamc2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamd.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamf.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                </ol>
+                                                            </MadCap:dropDownBody>
+                                                        </MadCap:dropDown>
+                                                        <MadCap:dropDown class="SecondLevel">
+                                                            <MadCap:dropDownHead>
+                                                                <MadCap:dropDownHotspot>If you are Binding to a Depot</MadCap:dropDownHotspot>
+                                                            </MadCap:dropDownHead>
+                                                            <MadCap:dropDownBody class="Final">
+                                                                <ol style="list-style-type: lower-alpha;">
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depota1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depota2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotb.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotc.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depote1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlLoginDialogSimple.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depote2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotf.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                </ol>
+                                                            </MadCap:dropDownBody>
+                                                        </MadCap:dropDown>
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlKeepCheckedOut.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Subversion</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep6.flsnp" />
+                                                    </li>
+                                                    <li>Next to the <span class="Emphasis">Destination Path</span> field, click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. The Browse Source Control Folders dialog opens.</li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—TFS</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep6.flsnp" />
+                                                        </p>
+                                                        <ol class="LowerAlpha">
+                                                            <li>To add a server, click <img src="../../Images/add_new_custom_attribute_btn.png" class="ReduceButtonSize" />. The Add Team Foundation Server dialog opens. </li>
+                                                            <li>Enter the name or URL of the server. </li>
+                                                            <li>Enter the path and port number. </li>
+                                                            <li>
+                                                                <p>Select the protocol (HTTP or HTTPS).</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator. Click <span class="Emphasis">OK</span> in the dialogs until you return to the main wizard page.</p>
+                                                        <div class="note">
+                                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Be sure to specify the path deeper than the server name (e.g., <span class="TypedEntry">.../tfs/DefaultCollection</span> or <span class="TypedEntry">.../tfs/SourceCollection</span>). If you do not know this information, contact your system administrator.</p>
+                                                        </div>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you run into issues in this dialog, chances are your user permissions do not have access to all of the collections on the TFS server. Please try to enter in the server/collection path manually.</p>
+                                                    </li>
+                                                    <li>Next to the <span class="Emphasis">Destination Path</span> field, click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. The Browse Source Control Folders dialog opens.</li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlKeepCheckedOut.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead class="OnlineOnly">
+                                                <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Microsoft Visual SourceSafe (VSS) does not support source control publishing. </p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your selected destination folder is already bound to source control and you are having difficulties with source control detection, you may need to unbind the destination folder using your source control tool and create a new source control destination.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>If Your Project Is Not Bound to Source Control</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ul>
+                                    <li>
+                                        <MadCap:snippetBlock src="../SourceControl/BindDestinationNotBound.flsnp" />
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Git</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep5.flsnp" />
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep6.flsnp" />
+                                                        </p>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator.</p>
+                                                        <MadCap:snippetBlock src="../SourceControl/SourceControlCloudForgeGitError.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:keyword term="Source control:push;Push" />
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep7.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep9.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10.flsnp" />
+                                                        </p>
+                                                        <ul class="Indented">
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10a.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/SourceControlBindGitStep10b.flsnp" />
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/GitSSHStep1.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet3] exclude[Snippets.Snippet1 or Snippets.Snippet2] " />
+                                                        </p>
+                                                        <ol style="list-style-type: lower-alpha;">
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1a.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1b.flsnp" />
+                                                            </li>
+                                                            <li>
+                                                                <MadCap:snippetText src="../SourceControl/GitSSHStep1c.flsnp" />
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Perforce</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep6.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep7.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9.flsnp" />
+                                                        </p>
+                                                        <MadCap:dropDown class="SecondLevel">
+                                                            <MadCap:dropDownHead>
+                                                                <MadCap:dropDownHotspot>If you are Binding to a Stream</MadCap:dropDownHotspot>
+                                                            </MadCap:dropDownHead>
+                                                            <MadCap:dropDownBody>
+                                                                <ol style="list-style-type: lower-alpha;">
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streama1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlLoginDialogSimple.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streama2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamb.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamc1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamc2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamd.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9streamf.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                </ol>
+                                                            </MadCap:dropDownBody>
+                                                        </MadCap:dropDown>
+                                                        <MadCap:dropDown class="SecondLevel">
+                                                            <MadCap:dropDownHead>
+                                                                <MadCap:dropDownHotspot>If you are Binding to a Depot</MadCap:dropDownHotspot>
+                                                            </MadCap:dropDownHead>
+                                                            <MadCap:dropDownBody class="Final">
+                                                                <ol style="list-style-type: lower-alpha;">
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depota1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depota2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotb.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotc.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depote1.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlLoginDialogSimple.flsnp" />
+                                                                        </p>
+                                                                        <p>
+                                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depote2.flsnp" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindPerStep9depotf.flsnp" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                                    </li>
+                                                                </ol>
+                                                            </MadCap:dropDownBody>
+                                                        </MadCap:dropDown>
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlKeepCheckedOut.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—Subversion</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep6.flsnp" />
+                                                    </li>
+                                                    <li>Next to the <span class="Emphasis">Destination Path</span> field, click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. The Browse Source Control Folders dialog opens.</li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindSvnStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>How to Set a Bind Destination—TFS</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ol class="LowerRoman">
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep5.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep6.flsnp" />
+                                                        </p>
+                                                        <ol class="LowerAlpha">
+                                                            <li>To add a server, click <img src="../../Images/add_new_custom_attribute_btn.png" class="ReduceButtonSize" />. The Add Team Foundation Server dialog opens. </li>
+                                                            <li>Enter the name or URL of the server. </li>
+                                                            <li>Enter the path and port number. </li>
+                                                            <li>
+                                                                <p>Select the protocol (HTTP or HTTPS).</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator. Click <span class="Emphasis">OK</span> in the dialogs until you return to the main wizard page.</p>
+                                                        <div class="note">
+                                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Be sure to specify the path deeper than the server name (e.g., <span class="TypedEntry">.../tfs/DefaultCollection</span> or <span class="TypedEntry">.../tfs/SourceCollection</span>). If you do not know this information, contact your system administrator.</p>
+                                                        </div>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you run into issues in this dialog, chances are your user permissions do not have access to all of the collections on the TFS server. Please try to enter in the server/collection path manually.</p>
+                                                    </li>
+                                                    <li>Next to the <span class="Emphasis">Destination Path</span> field, click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. The Browse Source Control Folders dialog opens.</li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlBindTFSStep8.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/OptionalCommentFieldStep.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetText src="../SourceControl/SourceControlKeepCheckedOut.flsnp" />
+                                                    </li>
+                                                    <li>
+                                                        <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="FourthLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Microsoft Visual SourceSafe (VSS) does not support source control publishing. </p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your selected destination folder is already bound to source control and you are having difficulties with source control detection, you may need to unbind the destination folder using your source control tool and create a new source control destination.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Review your source control settings.<ul><li><p><span class="SetOffFirstLevel">Provider Type </span>This is the source control provider.</p></li><li><span class="SetOffFirstLevel">Database </span>This is the current source control database. </li><li><span class="SetOffFirstLevel">Database Root </span>This is the root folder in the source control database where source control files will be published.</li><li><span class="SetOffFirstLevel">Push to Remote (Git) </span>Select this check box if you want to publish your output to a remote repository.</li><li><p><span class="SetOffFirstLevel">Remote Repository (Git) </span>Select a remote repository from the drop-down. If you need to add or remove a remote repository, click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" /> to open the Remote Repositories dialog.</p><MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>How to Add a Remote Repository</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody><ol MadCap:conditions="Snippets.Snippet1" class="LowerRoman"><li><p><MadCap:snippetText src="../SourceControl/RemoteRepositoryAdd1.flsnp" /></p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator.</p></li><li><p><MadCap:snippetText src="../SourceControl/RemoteRepositoryAdd2.flsnp" /></p><p><img src="../../Images/remote_repository_add.png" alt="" title="" class="MaxWidth100Percent" /></p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Repository names cannot include spaces.</p></li><li><p><MadCap:snippetText src="../SourceControl/RemoteRepositoryAdd3.flsnp" /></p><p><img src="../../Images/remote_repository_available.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" /></li></ol><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit" /></MadCap:dropDownBody></MadCap:dropDown><MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>How to Remove a Remote Repository</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><ol MadCap:conditions="Snippets.Snippet1" class="LowerRoman"><li>From the <span class="Emphasis">Remote Repository</span> list, select the repository you want to delete.</li><li>Click <span class="Emphasis">Remove</span>. The repository is removed from the list of available repositories.</li><li><MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" /></li></ol></MadCap:dropDownBody></MadCap:dropDown></li></ul></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Credentials</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul type="1" class="FirstLevel">
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Login;Destinations:login credentials" /><span class="SetOffFirstLevel">Login Credentials </span>Select this button to open the Login Credentials dialog. You can then enter the user name and password required for accessing the server to which you are publishing. If you do not enter the user name and password at the point, a dialog will open later when you actually publish the output, asking for the user name and password. This field is enabled only after you enter the host name or bind destination above.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are publishing to source control, login credentials are enabled after binding. If you are using Git, they are enabled if you selected the Push to Remote option.</p>
+                    </li>
+                    <li>
+                        <MadCap:keyword term="Anonymous login;Login;Destinations:anonymous login" /><span class="SetOffFirstLevel">Anonymous Login </span>Select this check box if you want to publish to the server without being required to enter a user name or password. (You may need to check with your network administrator to determine if this is allowed.)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

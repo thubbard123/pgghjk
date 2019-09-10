@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1252" MadCap:lastWidth="1033" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:concept term="FrameMaker" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing;Adobe FrameMaker:topic alias markers;Adobe FrameMaker:context-sensitive Help;Identifiers:creating and assigning;Context-sensitive Help:identifiers" />
+            <MadCap:keyword term="Topic IDs;Context-sensitive Help:topic IDs;Identifiers;Context-sensitive Help:identifiers" />Creating Topic Alias Markers in FrameMaker for CSH</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerTopicAliasMarkersSummary.flsnp" />
+        <p>You can use these markers as an alternative to creating the identifiers in Flare. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareCSHGuide,General.OnlineLive">For more information see <MadCap:xref href="../../CSH/Creating_and_Assigning_Identifiers.htm">Creating and Assigning Identifiers</MadCap:xref> and <MadCap:xref href="../../CSH/About_Context_Sensitive_Help.htm">About Context-sensitive Help</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide" /></p>
+        <p>Following are steps for creating these markers in <MadCap:keyword term="Adobe FrameMaker" /><MadCap:variable name="Outputs.Frame" />. For more information, please refer to the documentation provided with <MadCap:variable name="Outputs.Frame" />.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a topic alias marker for context-sensitive help</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps may vary in different versions of FrameMaker.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the FrameMaker document.</li>
+                    <li>In FrameMaker, create the topic alias marker type that is required for this feature. This is a one-time step in the document. Afterwards, you can simply select the newly created marker type when applying it to content. To create the topic alias marker type, do the following:<ol type="1" class="LowerAlpha"><li>In FrameMaker, select <span class="Emphasis">Special&gt;Marker</span>. The Marker dialog opens.</li><li>From the <span class="Emphasis">Marker Type</span> field, click the down arrow and select <span class="Emphasis">Edit</span>. The Edit Custom Marker Type dialog opens.</li><li>In the field, replace the existing text and type <span class="TypedEntry">TopicAlias</span>.</li><li>Click <span class="Emphasis">Add</span>.</li><li>Click <span class="Emphasis">Done</span>.</li></ol></li>
+                    <li>
+                        <p>In the FrameMaker document, place your cursor at the location where you want to insert a topic alias marker. </p>
+                        <p>Usually you will place the cursor at the beginning of a heading that you want to be the start of a new online topic in Flare.</p>
+                    </li>
+                    <li>If it is not already displayed, open the Marker dialog (<span class="Emphasis">Special&gt;Marker</span>).</li>
+                    <li>If the topic alias marker type is not already displayed in the dialog, click the <span class="Emphasis">Marker Type</span> down arrow and select <span class="Emphasis">TopicAlias</span>.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+                <ol type="1" class="Decimal" MadCap:continue="true">
+                    <li>
+                        <p>In the <span class="Emphasis">Marker Text</span> field, enter the text to be used as the topic ID. </p>
+                        <p>You might simply type the same text that occurs in the paragraph heading. That way, it will be easily identified by both you and the developer. When typing the topic ID, make sure you use underscores between words, because spaces are not allowed (e.g., Properties_Dialog).</p>
+                    </li>
+                    <li>Click <span class="Emphasis">New Marker</span>.</li>
+                    <li>Close the Marker dialog.</li>
+                    <li>Save the FrameMaker document.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteFmSupports7AndNewer.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareCSHGuide" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareCSHGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you import the FrameMaker document(s), you can open the alias or header file to see the new identifiers created from the topic alias markers. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>, <MadCap:xref href="../../CSH/More_About_Alias_Files/Opening_Alias_Files.htm">Opening Alias Files</MadCap:xref>, and <MadCap:xref href="../../CSH/More_About_Header_Files/Opening_Header_Files.htm">Opening Header Files</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="FrameMaker" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareTransitionFromFMGuide" />
+    </body>
+</html>

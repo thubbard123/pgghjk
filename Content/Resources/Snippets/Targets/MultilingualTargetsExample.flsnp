@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="2795" MadCap:lastWidth="1218" MadCap:conditions="Products.Flare">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example—Linking to Flare Projects</p>
+            <p>Let’s say you want to create HTML5 and PDF&#160;outputs in US&#160;English, Spanish, and Japanese. You have already worked with a translator to translate your documents, so you have three different Flare projects:&#160;one for each language.</p>
+            <p>Before you can create your multilingual output in Flare,  make sure that each Flare project has both an HTML5 and a PDF&#160;target available. This will allow your master project to build from the targets in the other two linked projects. Open the Project Organizer in each project, and then open the Targets folder. If you already have the targets you need, you do not need to create any new targets. If you do not have both targets in all three projects, you can create the missing targets from the Add File dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/Adding_Targets.htm">Adding Targets</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/multilingual_example2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p> Because you want to build multilingual HTML5 output, you need to make sure that each of your projects has the SelectLanguage button in its HTML5 toolbar. If it the button isn't there, users won't be able to switch from one language to another in your output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Skins/HTML5_Skin_Styles/Topic_Toolbars_in_HTML5_Skins.htm">Topic Toolbars in HTML5 Skin Components</MadCap:xref>.
+</MadCap:conditionalText></p>
+            <p>Open the Project Organizer. In the <span class="Emphasis">Skins</span> folder, open the Topic Toolbar skin component. On the <span class="Emphasis">Setup</span> tab, select the <span class="Emphasis">SelectLanguage</span> button, click <img src="../../Images/move_item_to_right_btn.png" alt="" title="" /> to add it to your skin, and then save your work. </p>
+            <p>
+                <img src="../../Images/multilingual_example1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>Now you can prepare your multilingual target. Open your master project (in this case, the US&#160;English project), and open the <span class="Emphasis">Targets</span> folder. Open the HTML5 target. In the Target Editor, select the <span class="Emphasis">Language</span> tab. This is where you will link your other two projects. Click <img src="../../Images/add_language_row_btn.png" alt="" title="" class="ReduceButtonSize" /> to add a new row. </p>
+            <p>
+                <img src="../../Images/multilingual_example3.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Click the link in the <span class="Emphasis">Linked Flare Project</span> column.</p>
+            <p>
+                <img src="../../Images/multilingual_example4.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>In the dialog that opens, navigate to your Spanish project and click <span class="Emphasis">Open</span>. This links the Spanish project to the US&#160;English project. The Language drop-down automatically updates when Flare detects the default Spanish language settings in your linked project.</p>
+            <p>
+                <img src="../../Images/multilingual_example5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Add your Japanese project in the same way.</p>
+            <p>
+                <img src="../../Images/multilingual_example6.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>You want the Japanese project to appear second in the Help system, so you select the Japanese project and click  <img src="../../Images/move_item_up_btn.png" alt="" title="" /> to rearrange the projects. </p>
+            <p>
+                <img src="../../Images/multilingual_example7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Now the Japanese project is listed before the Spanish project.</p>
+            <p>
+                <img src="../../Images/multilingual_example8.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>You are ready to build, so save your work and build the target. When you open the HTML5 output, it defaults to the US&#160;English Help because that is your browser’s default setting.</p>
+            <p>But remember the SelectLanguage button you added to your Topic Toolbar skin component? You can use that button to change the language setting using a drop-down menu.</p>
+            <p>
+                <img src="../../Images/multilingual_example14.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/multilingual_example10.png" alt="" title="" class="MaxWidth90Percent" /> </p>
+            <p>Next you create the PDF&#160;target. Open the PDF&#160;target in the Target Editor and create it in the same way you did the HTML5 output. Since you want the Japanese output to appear first, you add that project first, then you add the Spanish project.</p>
+            <p>
+                <img src="../../Images/multilingual_example11.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>Save the PDF&#160;target and build it. When you look in the Output folder, you only see one document. This is because Flare stitched all three documents together into a single PDF.</p>
+            <p>
+                <img src="../../Images/multilingual_example13.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareLanguageSupportGuide" />
+            <p>When you open the PDF, you see all three languages in the document’s table of contents. Each language has its own title page so you can find it quickly.</p>
+            <p>
+                <img src="../../Images/multilingual_example12.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+        </div>
+    </body>
+</html>

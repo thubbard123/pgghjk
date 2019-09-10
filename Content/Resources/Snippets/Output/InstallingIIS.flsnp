@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="7003" MadCap:lastWidth="669">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">installing iis and asp.net</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps show you how to install IIS and ASP.NET, depending on the operating system.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Microsoft Windows 8" />windows 8</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET 4.5 for Windows 8.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Select <span class="Emphasis">Programs and Features</span>.</li>
+                            <li>Click <span class="Emphasis">Turn Windows features on or off</span>.</li>
+                            <li>Select <span class="Emphasis">Internet Information Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Internet Information Services&gt;Web Management Tools&gt;IIS 6 Management Compatibility</span>.</li>
+                            <li>Click <span class="Emphasis">IIS Metabase and IIS 6 configuration compatibility</span>.</li>
+                        </ol>
+                        <p class="Subheading">installing asp.net 4.5</p>
+                        <ol start="7">
+                            <li>Under <span class="Emphasis">Internet Information Services</span> expand <span class="Emphasis">World Wide Web Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Application Development Features</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">ASP.NET 4.5</span> to add a check mark.</li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows 7</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows 7.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Select <span class="Emphasis">Programs and Features</span>.</li>
+                            <li>Click <span class="Emphasis">Turn Windows features on or off</span>.</li>
+                            <li>Select <span class="Emphasis">Internet Information Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Internet Information Services&gt;Web Management Tools&gt;IIS 6 Management Compatibility</span>.</li>
+                            <li>Click <span class="Emphasis">IIS 6 Metabase and IIS 6 configuration compatibility</span>.</li>
+                        </ol>
+                        <p class="Subheading">installing asp.net</p>
+                        <ol start="7">
+                            <li>Under <span class="Emphasis">Internet Information Services</span> expand <span class="Emphasis">World Wide Web Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Application Development Features</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">ASP.NET</span> to add a check mark.</li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Click <span class="Emphasis">Start</span>. </li>
+                            <li>In the search field enter <span class="TypedEntry">run</span>.</li>
+                            <li>Click <span class="Emphasis">Run</span>. The Run dialog opens.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide,FlareGuides.FlareWebHelpGuide" />
+                            <li>
+                                <p>In the <span class="Emphasis">Open</span> field, copy and paste one of the following into the field, depending on whether you have a 32-bit or 64-bit system:</p>
+                                <p class="Subheading">32-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                                <p class="Subheading">64-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                <p>A window opens, displaying the installation progress of ASP.NET. The window will close automatically when the installation finishes.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2012</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET 4.5 for Windows Server 2012.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>Open the Server Manager.</li>
+                            <li>Click <span class="Emphasis">Add roles and features</span>. The Add Roles and Features Wizard opens.</li>
+                            <li>Click <span class="Emphasis">Next</span> two times until you ge to the Server Roles page.</li>
+                            <li>Click the check box next to <span class="Emphasis">Web Server (IIS)</span>.</li>
+                            <li>In the dialog that opens click <span class="Emphasis">Add Features</span>.</li>
+                        </ol>
+                        <p class="Subheading">installing asp.net 4.5</p>
+                        <ol start="6">
+                            <li>In the Add Roles Wizard click <span class="Emphasis">Next</span>.</li>
+                            <li>Expand <span class="Emphasis">.NET Framework 4.5 Features</span> and click <span class="Emphasis">ASP.NET 4.5</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>At the Web Server Role (IIS) tab, click <span class="Emphasis">Next</span> again.</li>
+                            <li>Expand <span class="Emphasis">Management Tools&gt;IIS 6 Management Compatibility</span> and click <span class="Emphasis">IIS 6 Metabase Compatibility</span>.</li>
+                            <li>On the Confirm Installation Selections page of the wizard, click <span class="Emphasis">Install</span>.</li>
+                            <li>After the installation is completed, the Installation Results page opens. Click <span class="Emphasis">Close</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2008 r2</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows Server 2008 R2.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>From the Start menu open the Server Manager dialog.</li>
+                            <li>Click <span class="Emphasis">Add roles</span>. The Add Roles Wizard opens.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">Web Server (IIS)</span>.</li>
+                            <li>In the dialog that opens click <span class="Emphasis">Add Required Features</span>.</li>
+                            <li>In the Add Roles Wizard click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span> again.</li>
+                            <li>On the "Select Role Services" page of the wizard, expand <span class="Emphasis">Management Tools&gt;IIS 6 Management Compatibility</span> and click <span class="Emphasis">IIS 6 Metabase Compatibility</span>.</li>
+                            <li>On the Confirm Installation Selections page of the wizard, click <span class="Emphasis">Install</span>.</li>
+                            <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                        <p class="Subheading">installing asp.net</p>
+                        <ol>
+                            <li>In the Server Manager dialog, expand <span class="Emphasis">Roles</span>.</li>
+                            <li>Select <span class="Emphasis">Web Server IIS</span>.</li>
+                            <li>In the <span class="Emphasis">Role Services</span> section, click <span class="Emphasis">Add Role Services</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">ASP.NET</span> to add a check mark.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Install</span>. </li>
+                            <li>Click <span class="Emphasis">Close</span>. </li>
+                            <li>In the search field enter <span class="TypedEntry">run</span>.</li>
+                            <li>Click <span class="Emphasis">Run</span>.The Run dialog opens.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Open</span> field, copy and paste one of the following into the field, depending on whether you have a 32-bit or 64-bit system:</p>
+                                <p class="Subheading">32-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                                <p class="Subheading">64-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                <p>A window opens, displaying the installation progress of ASP.NET. The window will close automatically when the installation finishes.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2008</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows Server 2008.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>From the Start menu open the Server Manager dialog.</li>
+                            <li>Click <span class="Emphasis">Add roles</span>. The Add Roles Wizard opens.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">Web Server (IIS)</span>.</li>
+                            <li>In the dialog that opens click <span class="Emphasis">Add Required Features</span>.</li>
+                            <li>In the Add Roles Wizard click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span> again.</li>
+                            <li>On the "Select Role Services" page of the wizard, expand <span class="Emphasis">Management Tools&gt;IIS 6 Management Compatibility</span> and click <span class="Emphasis">IIS 6 Metabase Compatibility</span>.</li>
+                            <li>On the Confirm Installation Selections page of the wizard, click <span class="Emphasis">Install</span>.</li>
+                            <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                        <p class="Subheading">installing asp.net</p>
+                        <ol>
+                            <li>In the Server Manager dialog, expand <span class="Emphasis">Roles</span>.</li>
+                            <li>Select <span class="Emphasis">Web Server IIS</span>.</li>
+                            <li>In the <span class="Emphasis">Role Services</span> section, click <span class="Emphasis">Add Role Services</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">ASP.NET</span> to add a check mark.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Install</span>. </li>
+                            <li>Click <span class="Emphasis">Close</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2003</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows Server 2003.</p>
+                        <p class="Subheading">installing iis via the manage your server dialog</p>
+                        <ol>
+                            <li>From the Start menu open the Manage Your Server dialog.</li>
+                            <li>Click <span class="Emphasis">Add or remove a role</span>.The Configure Your Server Wizard opens.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Select <span class="Emphasis">Application server (IIS, ASP.NET)</span> and click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Enable ASP.NET</span> and click <span class="Emphasis">Next</span>.Your selections are summarized.</li>
+                            <li>Click <span class="Emphasis">Next</span>.The Windows Components Wizard opens, displaying the status of the installation.</li>
+                            <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                        <p class="Subheading">installing iis via the control panel</p>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Double-click <span class="Emphasis">Add or Remove Programs</span>.The Add or Remove Programs window opens.</li>
+                            <li>Click <span class="Emphasis">Add/Remove Windows Components</span>.The Windows Components Wizard opens.</li>
+                            <li>In the list of components select <span class="Emphasis">Application Server</span> and then click <span class="Emphasis">Details</span>.The Application Server Dialog opens.</li>
+                            <li>Click the check box next to <span class="Emphasis">Internet Information Services (IIS)</span> to add a check mark.</li>
+                            <li>In the Windows Component Wizard, "Application Server" should now be selected. Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                        <p class="Subheading">installing asp.net</p>
+                        <ol>
+                            <li>Click <span class="Emphasis">Start&gt;Run</span>.The Run dialog opens.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Open</span> field, copy and paste one of the following into the field, depending on whether you have a 32-bit or 64-bit system:</p>
+                                <p class="Subheading">32-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                                <p class="Subheading">64-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetBlock src="../StepsGeneral/ClickOK.flsnp" />
+                                <p>A window opens, displaying the installation progress of ASP.NET. The window will close automatically when the installation finishes.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">ASP.NET pages by default are prohibited in IIS. Therefore, you must set these pages to be allowed if you are running Windows Server 2003. To do this: (1) In Internet Information Services (IIS) Manager, select <span class="Emphasis">Web Service Extensions</span> from the left pane; (2) in the right pane, make sure that <span class="Emphasis">ASP.NET v4.0.30319</span> is set to <span class="Emphasis">Allowed</span>. If it is not, select it and click the <span class="Emphasis">Allow</span> button.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows xp</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows XP.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Double-click <span class="Emphasis">Add or Remove Programs</span>.The Add or Remove Programs window opens.</li>
+                            <li>Click <span class="Emphasis">Add/Remove Windows Components</span>.The Windows Components Wizard opens.</li>
+                            <li>
+                                <p>In the list of components select <span class="Emphasis">Application Server</span> and then click <span class="Emphasis">Details</span>.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The options in step 4 do not apply to the process for installing IIS on Windows XP Professional. If you are installing IIS on Windows XP&#160;Professional, skip step 4 and move on to step 5.</p>
+                            </li>
+                            <li>Click the check box next to <span class="Emphasis">Internet Information Services (IIS)</span> to add a check mark.</li>
+                            <li>In the Windows Component Wizard, "Application Server" should now be selected. Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                        <p class="Subheading">installing asp.net</p>
+                        <ol>
+                            <li>Click <span class="Emphasis">Start&gt;Run</span>.The Run dialog opens.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Open</span> field, copy and paste one of the following into the field, depending on whether you have a 32-bit or 64-bit system:</p>
+                                <p class="Subheading">32-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                                <p class="Subheading">64-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                            </li>
+                            <li>Click <span class="Emphasis">OK</span>. A window opens, displaying the installation progress of ASP.NET. The window will close automatically when the installation finishes.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows vista</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The following steps show you how to install IIS and ASP.NET for Windows Vista.</p>
+                        <p class="Subheading">installing iis</p>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Double-click <span class="Emphasis">Programs and Features</span>.</li>
+                            <li>Click <span class="Emphasis">Turn Windows features on or off</span>.</li>
+                            <li>Select <span class="Emphasis">Internet Information Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Internet Information Services&gt;Web Management Tools&gt;IIS 6 Management Compatibility</span></li>
+                            <li>Click <span class="Emphasis">IIS 6 Metabase and IIS 6 configuration compatibility</span>.</li>
+                        </ol>
+                        <p class="Subheading">installing asp.net</p>
+                        <ol start="7">
+                            <li>Under <span class="Emphasis">Internet Information Services</span> expand <span class="Emphasis">World Wide Web Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Application Development Features</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">ASP.NET</span> to add a check mark.</li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Click <span class="Emphasis">Start&gt;Run</span>.The Run dialog opens.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Open</span> field, copy and paste one of the following into the field, depending on whether you have a 32-bit or 64-bit system:</p>
+                                <p class="Subheading">32-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                                <p class="Subheading">64-bit</p>
+                                <p><span class="TypedEntry">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis -i</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click <span class="Emphasis">OK</span>. A window opens, displaying the installation progress of ASP.NET. The window will close automatically when the installation finishes.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

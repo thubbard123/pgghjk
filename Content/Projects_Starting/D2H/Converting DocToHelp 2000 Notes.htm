@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="628" MadCap:lastWidth="1176">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Doc-To-Help 2000" />Converting Doc-To-Help 2000 Notes</h1>
+        <p>If you have projects that were produced in Doc-To-Help 2000, you can convert them to Doc-To-Help <MadCap:variable name="Other.VersionNumber" /> by using the Doc-To-Help 2000 conversion wizard. See <MadCap:xref href="../../Introduction_Topics/D2H/Steps/Creating and Converting Projects_DNH.htm">Creating and Converting Projects</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Before Converting a Doc-To-Help 2000 Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The project must be in Doc-To-Help 2000 format and the project must have been "built" (output directories must exist). You should also run the Doc-To-Help 2000 Diagnostics, particularly those options that deal with bookmarks and cross-references.</p>
+                <p>By default, Doc-To-Help <MadCap:variable name="Other.VersionNumber" /> places your converted project files and folders in the parent directory where your Doc-To-Help 2000 files resided. </p>
+                <ul>
+                    <li>The source documents are placed directly in the parent directory.</li>
+                    <li>The related folders are also placed in the parent directory. The Doc-To-Help conversion duplicates the original folder names used in your Doc-To-Help 2000 project.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Additional Doc-To-Help 2000 Conversion Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The list below includes some known items that you should check after converting your Doc-To-Help 2000 project to Doc-To-Help <MadCap:variable name="Other.VersionNumber" />.</p>
+                <ul>
+                    <li>
+                        <p>If there are topics that are excluded from the default target via conditional text, any hyperlinks to those topics will need to be recreated manually.</p>
+                    </li>
+                    <li>
+                        <p>Tables containing conditional text may require the conditional text be reapplied, particularly if multiple targets were involved. If the original table contained a conditional column, you must make two tables and mark them accordingly.</p>
+                    </li>
+                    <li>
+                        <p>If you have a list of related topics at the end of a parent topic, you may have to reinsert the related topics heading, or the heading that precedes the list of topics and their buttons. Doc-To-Help uses the Help Target dialog Label field to add a related topics heading.</p>
+                    </li>
+                    <li>
+                        <p>If a {bmc} reference or HTML passthrough code cannot locate a file, either move the missing file to one of the referenced folders or append a new folder (preceded by a semi-colon) to the string value.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

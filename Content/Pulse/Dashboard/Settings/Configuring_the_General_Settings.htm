@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="7557" MadCap:lastWidth="751" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:ignoredWords="Plussing" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="How to configure the general settings in MadCap Pulse." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="AdminMenu" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />General Settings</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">General Settings</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>In the Pulse dashboard, the Administration&gt;Settings menu command is available to members of the Administrators group. This gives administrators the ability to click <span class="Emphasis">Settings</span> to view and update general system settings for the Pulse web server. </p>
+        <h2 MadCap:conditions="General.Print">Viewing the General Settings</h2>
+        <p MadCap:conditions="General.Print">You will not typically need to modify the information in the&#160;General Settings page. However, you have the ability to both view and change the settings if needed.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to view the general settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">You will not typically need to modify the information in the&#160;General Settings page. However, you have the ability to both view and change the settings if needed.</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                <ol start="3">
+                    <li>Click <span class="Emphasis">General</span>. This opens the General Settings page.</li>
+                </ol>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseTipSettingsSafekeeping.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Understanding the General Settings</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>understanding the general settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse server and its settings are populated during the installation process. You can view the general settings by selecting the <span class="Emphasis">Administration&gt;Settings</span> menu command and then clicking <span class="Emphasis">General</span>. You can make changes to your settings you have special requirements for your environment. </p>
+                <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');width: 100%;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Setting</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Typical Setting/Format</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Additional Information</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Site URL</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">This is the URL&#160;that users will enter in their web browser to gain access to Pulse. In order for email and other settings to work properly, you must type the exact URL. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">http://application.domain.com</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">This setting is pre-populated for you during the installation process. </p>
+                                <p class="TableTextSmall">The site URL is used when it is different from the URL&#160;used during the Pulse configuration. For example, the user may have configured to an IP&#160;address, but now the user is replacing that IP&#160;address with a host name.</p>
+                                <p class="TableTextSmall">It is important to ensure that the Site URL&#160;exactly matches the DNS entry for your Pulse server. </p>
+                                <p class="TableTextSmall">The Site&#160;URL&#160;is also included in outbound email notifications.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Restricted Word List</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Click <span class="Emphasis">Show</span> to reveal an entry field where you can type any words you would like to restrict from use in end user posts. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">blank</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically,&#160;this is left blank. Your environment may have a different requirement. If you choose to create a word list, always use comma-separated text.</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p><span class="TypedEntry">curse,darn</span>
+                                            </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Customer Groups</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Place a checkmark in this box to allow external users. This allows the Administrator to disable the embedded discussion forum for any users who have not been granted Administrator or Employee privileges. See <MadCap:xref href="Managing_Users.htm">Managing Users</MadCap:xref>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Typically, this is selected. Your environment may have a different requirement. </p>
+                                <p class="TableTextSmall">A checkmark grants external users (i.e., Customers) access to Pulse. Remove the checkmark to revoke access. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Group Sync</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Place a checkmark in this box to enable group sync.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">SMTP&#160;Host</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">This is the hostname or IP&#160;address of the SMTP relay that accepts incoming requests which is the host that will send outbound emails for Pulse.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">exchange01</p>
+                                <p class="TableTextSmall">or </p>
+                                <p class="TableTextSmall">smtp.example.com</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Obtain this information from your company's Email Administrator. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">SMTP&#160;Port</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">This is the port number of the SMTP&#160;server handing outbound emails.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">25 </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, the port number is 25.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">SMTP&#160;SSL</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Place a checkmark in the box to enable Secure Sockets Layer (SSL). </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Typically, this feature is disabled.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">SMTP Username</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Type the user name of a valid account on the SMTP relay.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">pulse@example.com</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Obtain this information from your company's Email Administrator.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">SMTP&#160;Password</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Type the password for the valid account on the SMTP&#160;relay.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">&lt;password&gt;</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Obtain this information from your company's Email Administrator. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Incoming Mail Server&#160;Type</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Select the type of incoming email server to use. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">POP3</p>
+                                <p class="TableTextSmall">Exchange Web Services</p>
+                                <p class="TableTextSmall">Poll the Local SMTP&#160;Drop Folder</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Obtain this information from your company's Email Administrator. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Incoming Bad Mail Folder</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Enter the path of the local server folder to hold raw incoming messages that have failed processing. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">  <![CDATA[ ]]></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">POP3 Host</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Enter the name or IP address of the POP3 host. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall"><span class="TypedEntry">pop3.gmail.com</span>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">POP3 Username</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Enter the POP3 username. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">  <![CDATA[ ]]></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">POP3 Password</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Enter the POP3 password.  </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">POP3 Poll Task Frequency in Minutes</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Enter the POP3 poll task frequency in minutes. This determines how often incoming mail is pulled.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">0=off</p>
+                                <p class="TableTextSmall">1=1 minute</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall"> 1 is the recommended setting.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">POP3 Enable SSL</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Place a checkmark in the box to enable Secure Sockets Layer (SSL). </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Use of this feature depends on company policy. We recommend leaving it unchecked.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Notification Email Type</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Set this to a single email address that does not change.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Static</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Typically, this will be static. Your environment may have a different requirement.</p>
+                                <p class="TableTextSmall">Pulse supports three types of email notifications: static, domain, and plussing.</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableTextSmall"><span class="SetOffFirstLevel">Static </span>For a single email 
+address that doesn't change, and no support for posting to a group via email.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableTextSmall"><span class="SetOffFirstLevel">Domain </span>If you have a whole 
+domain you'd like Pulse to control. </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableTextSmall"><span class="SetOffFirstLevel">Plussing </span>If you have one email address you'd like Pulse to manage but 
+would like to be able to post to groups via email.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Notification Email Address</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Type a single email address from which notifications and registration emails are sent.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall"><span class="TypedEntry">accountname@example.com</span>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, it is PulseRegistration@example.com (where example = your domain name). &#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Notification Email Display Name</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">The name that you want to appear as the sender in email notifications sent by Pulse.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Pulse Notifications</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">This defines the name that you want to appear in messages from the Notification Email Address.</p>
+                                <p class="TableTextSmall"> </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Activity Purge Task Frequency in Days</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">The frequency at which Pulse will run message archive task. When messages reach the age defined in the Message Archive Task Max Message Age in Day field, Pulse archives the messages and they will not display any longer in the user's task pane. 0=off, 1=1 day, 2=2days, etc.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">0 (off)</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, this feature is turned off.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Activity Purge Task Max Message Age in Days</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">The maximum age a message can be until it is archived.  After the established days, all messages will be archived and will not display any longer in the user's messages pane.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">180</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Typically, this is set to 180.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Account Sync Period</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">The number of minutes the authentication providers will sync with Pulse.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">0</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, this is set to 0. Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Always Use SSL</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Place a checkmark in this box to redirect calls for http:// to https://.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">Typically, this feature is disabled.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Windows Auto Login IP&#160;Ranges</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Define the range of IP addresses 
+that will be permitted to automatically login to Pulse using windows credentials. 
+If a user attempts to login from an IP address outside of the defined range, Pulse will prompt for credentials.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">0.0.0.0-10.10.10.10 (or the IP range for your environment)</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, this field is left blank. Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Mobile Client Persistent Login</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Place a checkmark in this box to enable mobile client persistent login. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">When this feature is enabled Pulse mobile clients will remember user login information. If this feature is disabled, users will be required re-login after 60 minutes of inactivity.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Video Encoding</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Place a checkmark in this box if you have setup an encoding server. When this feature is enabled Pulse can support additional video formats (.mov, .3gp, .wmv, .avi) in addition to MP4. Requires a licensed copy of Microsoft Expression Encoder or Handbrake.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">Typically, this feature is disabled.&#160;Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Log Retention</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Specify the number of days to retain the error message log on the server.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">30</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">The default value is 30. Your environment may have a different requirement.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Content Purging</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">Place a checkmark in this box to enable content purging. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextSmall">checkmark=enabled</p>
+                                <p class="TableTextSmall">blank=disabled</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextSmall">When content purging is enabled, any content that is marked as deleted will be permanently deleted from the database. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Direct Messaging</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Select where direct messaging should be enabled in Pulse. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextSmall">Off</p>
+                                <p class="TableTextSmall">Users and Groups</p>
+                                <p class="TableTextSmall">Users Only</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextSmall">  <![CDATA[ ]]></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextEmphasisSmallNoIndent">Files</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextSmall">Select where files should be enabled in Pulse.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide"> See <MadCap:xref href="../../Your_Apps/Files.htm">Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextSmall">Off</p>
+                                <p class="TableTextSmall">Users and Groups</p>
+                                <p class="TableTextSmall">Users Only</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableTextSmall">&#160;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Incoming Mail Server Type Settings</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>incoming mail server type settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse web server can connect to a mail server using one of these methods:</p>
+                <p>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>pop3 mail server settings</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p>These settings give the Pulse server to use Post Office Protocol Version 3 (POP3) to collect incoming email  (i.e., email replies to Pulse notifications):</p>
+                            <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                        <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                            <p class="TableTextHead">Setting</p>
+                                        </th>
+                                        <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                            <p class="TableTextHead">Description</p>
+                                        </th>
+                                        <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                            <p class="TableTextHead">Typical Setting/Format</p>
+                                        </th>
+                                        <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                            <p class="TableTextHead">Additional Information</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextEmphasisSmallNoIndent">POP3 Host</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextSmall">Type the name of the host.</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextSmall"><span class="TypedEntry">pop3.example.com</span>
+                                            </p>
+                                            <p class="TableTextSmall">or</p>
+                                            <p class="TableTextSmall"><span class="TypedEntry">10.10.18.222</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows" rowspan="3">
+                                            <p class="TableTextSmall">Obtain this information from your Email Administrator or POP3 Service Provider.</p>
+                                            <p class="TableTextSmall">&#160;</p>
+                                            <p class="TableTextSmall">&#160;</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextEmphasisSmallNoIndent">POP3 Username</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextSmall">Type the username of a valid account.</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextSmall"><span class="TypedEntry">accountname@example.com</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextEmphasisSmallNoIndent">POP3 Password</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextSmall">Type the password for the account.</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                            <p class="TableTextSmall"><span class="TypedEntry">&lt;password&gt;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextEmphasisSmallNoIndent">POP3 Poll Task</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextSmall">This defines how frequently incoming mail is pulled by the server. </p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                            <p class="TableTextSmall"><span class="TypedEntry">1</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                            <p class="TableTextSmall">This is set to 0 by default. It is recommended that you set the value to 1.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                        <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                            <p class="TableTextEmphasisSmallNoIndent">POP3 Enable SSL</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                            <p class="TableTextSmall">Place a checkmark in the box to enable Secure Sockets Layer&#160;(SSL). </p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                            <p class="TableTextSmall">blank=disabled</p>
+                                        </td>
+                                        <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                            <p class="TableTextSmall">It is recommended that you leave this box blank. Your environment may have a different requirement.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>exchange web services</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>These settings give the Pulse server the ability to connect to Microsoft Exchange Web Services for incoming email (i.e., email replies to Pulse notifications):</p>
+                        <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Setting</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Typical Setting/Format</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Additional Information</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">EWS&#160;URL</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextSmall">Type the URL&#160;for your Exchange Web Services endpoint.</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">examples</p>
+                                                    <p><span class="TypedEntry">https://mail.mycompany.com/ews/exchange.asmx</span>
+                                                    </p>
+                                                    <p><span class="TypedEntry">mail.us.example.com</span>
+                                                    </p>
+                                                    <p><span class="TypedEntry">mail.emea.example.com</span>
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows" rowspan="4">
+                                        <p class="TableTextSmall">Obtain this information from your Email Administrator or EWS&#160;Provider. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">EWS</p>
+                                        <p class="TableTextEmphasisSmallNoIndent">Domain</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextSmall">Type the domain name for your Exchange Web Server.</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p class="Code">CORP</p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">EWS</p>
+                                        <p class="TableTextEmphasisSmallNoIndent">Username</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextSmall">Type the username of a valid account. For example, enter the username of an account that has an Exchange inbox. This account should not be a real user’s account. Additionally, the account name is usually 
+how your name appears in 
+emails sent from this email 
+configuration.</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextSmall"><span class="TypedEntry">accountname@example.com</span>
+                                        </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p class="Code">PulseRegistration@example.com</p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">EWS </p>
+                                        <p class="TableTextEmphasisSmallNoIndent">Password</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextSmall">Type the password for the account.</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextSmall"><span class="TypedEntry">&lt;password&gt;</span>
+                                        </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p class="Code">p@ssword1</p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">EWS&#160;Poll Task</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextSmall">This defines how frequently incoming mail is pulled by the server. </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextSmall"><span class="TypedEntry">1</span>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableTextSmall">This is set to 0 by default. It is recommended that you set the value to 1. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>poll the local smtp drop folder</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>These settings give the Pulse server the ability check the SMTP&#160;areas of Internet Information Services (IIS) for incoming email (i.e., email replies to Pulse notifications):</p>
+                        <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Setting</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Typical Setting/Format</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Additional Information</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">SMTP&#160;Drop Folder</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextSmall">The path to the local message store on the SMTP server</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextSmall"><span class="TypedEntry">C:\Inetpub\Mailroot\Drop</span>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextSmall">This server must exist on all nodes.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmallNoIndent">Folder Poll Task Frequency in Minutes</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextSmall">This defines how frequently incoming mail is pulled by the server. </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextSmall"><span class="TypedEntry">1</span>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableTextSmall">This is set to 0 by default. It is recommended that you set the value to 1.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Configuring the Auto Login for Internal Windows Users</h2>
+        <p MadCap:conditions="General.Print">If you are using Active Directory to control access to Pulse, you can configure the Windows Auto Login IP&#160;Ranges feature. This gives individuals the ability to log into servers and workstations in the defined range, and automatically logs them into Pulse using their windows credentials. </p>
+        <p class="note" MadCap:conditions="General.Print" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To use this solution, you will need a valid IP address range or list of valid IP addresses to work with.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to configure the auto login for internal windows users</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="General.OnlineLive">If you are using Active Directory to control access to Pulse, you can configure the Windows Auto Login IP&#160;Ranges feature. This gives individuals the ability to log into servers and workstations in the defined range, and automatically logs them into Pulse using their windows credentials. </p>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To use this solution, you will need a valid IP address range or list of valid IP addresses to work with.</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                <ol start="3">
+                    <li>
+                        <p>Click&#160;<span class="Emphasis">General</span>. </p>
+                        <p>This opens the&#160;General page. In the <span class="Emphasis">Windows Auto Login IP&#160;Ranges</span> box, enter one of the following:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">An IP&#160;Address Range </span>For example, type: <span class="TypedEntry">10.0.0.0-10.255.255.255</span>. This permits all IP addresses within that range to log on automatically. </li>
+                            <li><span class="SetOffFirstLevel">Multiple IP Address Ranges </span>If you have multiple ranges, separate each range with a comma. For example, <span class="TypedEntry">0.0.0.0-10.10.10.10<span class="YellowBackground">,</span>192.168.0.0-255.255.255.255</span>.</li>
+                        </ul>
+                    </li>
+                    <li>Click <span class="Emphasis">Save</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AdminMenu" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseUserGuide" />
+    </body>
+</html>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="14" MadCap:lastHeight="7984" MadCap:lastWidth="1043" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareImages.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Learn how to display thumbnail images in your online output. This lets users hover or click the image thumbnail to reveal the full-size image. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Thumbnails:images;Images:thumbnails;Images:styles;Styles:images;Size:images" />
+            <MadCap:concept term="PicturesFormatting" />
+            <MadCap:concept term="FilterPictures" />Showing Images as Thumbnails in Output</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline.flsnp" MadCap:conditions="Products.Flare" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailsOutputSummary.flsnp" MadCap:conditions="Products.Flare" />
+        <p MadCap:conditions="Products.Contributor">You can use thumbnail images for online Flare output. For example, if a Flare author sends you a topic containing an image, you can edit the image to specify that it should appear as a thumbnail in output. Then you send the file back to the author. If the author generates output such as WebHelp, the end user will see the image as a thumbnail until he or she performs an action on the thumbnail, such as hovering over it or clicking it. After that action, the end user will see the image in its full size.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/CanBeDoneThroughStylesOrLocalFormatting.flsnp" MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you have a topic that looks like this, with a large image in the middle of the content:</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_editing_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Suppose that, in the output, you want the end user to see this image as a small thumbnail. Furthermore, if the end user hovers over the image, it will be shown at its full size.</p>
+                    <p>First, you must decide if you want the thumbnail settings to be applied to this image only, or to many images like it throughout your project. Let's say that you have many images and want to apply the settings to all of them. To begin, you might create a class of the img style in your stylesheet, perhaps calling it "LargeImages."</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_output_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>After double-clicking this style class, you can set the properties on the <span class="Emphasis">Thumbnail</span> tab of the Properties dialog.</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_output_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Next, you right-click on the image in the topic and apply the new image style class to it.</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_output_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Afterward, both in the editor and in the output, the topic looks like this, with the image shown as a thumbnail:</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_output_example4.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>If the user hovers over the thumbnail image, the full version of the image displays in a popup, like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/thumbnail_output_example5.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you are working on a topic that looks like this, with a large image in the middle of the content:</p>
+                    <p MadCap:conditions="Products.Contributor">
+                        <img src="../../Resources/Images/thumbnail_editing_example1_contributor.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Suppose that, in the Flare output, you want the end user to see this image as a small thumbnail. Furthermore, if the end user hovers over the image, it will be shown at its full size.</p>
+                    <p>To begin, you right-click on the image and choose <span class="Emphasis">Image Properties</span>. This opens the Image Properties dialog. You can set the properties on the <span class="Emphasis">Thumbnail</span> tab.</p>
+                    <p MadCap:conditions="Products.Contributor">
+                        <img src="../../Resources/Images/thumbnail_output_example_contributor.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Afterward, both in the editor and in the Flare output that the author generates, the topic looks like this, with the image shown as a thumbnail:</p>
+                    <p MadCap:conditions="Products.Contributor">
+                        <img src="../../Resources/Images/thumbnail_editing_example3_contributor.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Thumbnails:images;Images:thumbnails;Images:styles;Styles:images;Size:images" />how to show images as thumbnails by using styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Content Explorer, open the stylesheet that you want to modify.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesCompleteFollowingAdvancedSimplified.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterImageStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>Select the appropriate image (img) style.</p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailExample.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </li>
+                                    <li>Select the <span class="Emphasis">Thumbnail</span> tab.</li>
+                                    <li>In the area on the left, select one of the options.<MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailActionsList.flsnp" /></li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight1.flsnp" />
+                                        </p>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight2.flsnp" />
+                                        </p>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight3.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/EnterNumberSelectUOM.flsnp" /></p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterImageStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>Select the appropriate image style. For example, you can select the parent <span class="Emphasis">img</span> tag, or you can expand the img style select a class that you may have created.</p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailExample.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>If you are using the group view, expand the <span class="Emphasis">Thumbnail</span> group.</p>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>To the right of <span class="Emphasis">mc-thumbnail</span>, select one of the following from the drop-down.</p>
+                                        <ul class="FirstLevel">
+                                            <li><span class="SetOffFirstLevel">hover</span> The end user can see the image in its full size by hovering the mouse over the thumbnail. As a result, the full size of the image will be shown in a popup window.</li>
+                                            <li><span class="SetOffFirstLevel">link</span> The end user can see the image in its full size by clicking the thumbnail. As a result, the full size of the image will be shown.</li>
+                                            <li><span class="SetOffFirstLevel">popup</span> The end user can see the image in its full size by clicking the thumbnail. As a result, the full size of the image will be shown in a popup window.</li>
+                                        </ul>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you enter <span class="Emphasis">none</span>, the image will not be shown as a thumbnail. If you enter <span class="Emphasis">normal</span>, the image will be replaced with its thumbnail.</p>
+                                    </li>
+                                    <li>
+                                        <p>If you want to set a maximum height or width for thumbnail images, complete the <span class="Emphasis">mc-thumbnail-max-height</span> or <span class="Emphasis">mc-thumbnail-max-width</span> fields. You probably only need to complete one of these areas.</p>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight2.flsnp" />
+                                        </p>
+                                        <p>If you want to change either the maximum width or height settings, click to the right of either field and enter the appropriate width or height (e.g., 60px, 1in).</p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li value="3">
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>To apply a particular style class to an image (after you create it in the Stylesheet Editor), simply right-click the image where it is inserted. Then from the menu, select <span class="Emphasis">Style Class</span> and choose the appropriate style.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.FlarePrintOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Thumbnails:images;Images:thumbnails;Images:styles;Styles:images;Size:images" />how to show images as thumbnails by using styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Content Explorer, open the stylesheet that you want to modify.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterImageStylesStep.flsnp" />
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <li>
+                        <p>Select the appropriate image style. For example, you can select the parent <span class="Emphasis">img</span> tag, or you can expand the img style select a class that you may have created.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailExample.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>If you are using the group view, expand the <span class="Emphasis">Thumbnail</span> group.</p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareImagesGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>To the right of <span class="Emphasis">mc-thumbnail</span>, select one of the following from the drop-down.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">hover</span> The end user can see the image in its full size by hovering the mouse over the thumbnail. As a result, the full size of the image will be shown in a popup window.</li>
+                            <li><span class="SetOffFirstLevel">link</span> The end user can see the image in its full size by clicking the thumbnail. As a result, the full size of the image will be shown.</li>
+                            <li><span class="SetOffFirstLevel">popup</span> The end user can see the image in its full size by clicking the thumbnail. As a result, the full size of the image will be shown in a popup window.</li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you enter <span class="Emphasis">none</span>, the image will not be shown as a thumbnail. If you enter <span class="Emphasis">normal</span>, the image will be replaced with its thumbnail.</p>
+                    </li>
+                    <li>
+                        <p>If you want to set a maximum height or width for thumbnail images, complete the <span class="Emphasis">mc-thumbnail-max-height</span> or <span class="Emphasis">mc-thumbnail-max-width</span> fields. You probably only need to complete one of these areas.</p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight2.flsnp" />
+                        </p>
+                        <p>If you want to change either the maximum width or height settings, click to the right of either field and enter the appropriate width or height (e.g., 60px, 1in).</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>To apply a particular style class to an image (after you create it in the Stylesheet Editor), simply right-click the image where it is inserted. Then from the menu, select <span class="Emphasis">Style Class</span> and choose the appropriate style.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to show images as thumbnails locally by using properties</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click on the image.</li>
+                    <li>From the context menu, select <span class="Emphasis">Image Properties</span>. The Image Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Thumbnail</span> tab.</li>
+                    <li>In the area on the left, select one of the options.<MadCap:snippetBlock src="../../Resources/Snippets/ImagesAndCapture/ThumbnailActionsList.flsnp" /></li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight1.flsnp" />
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight2.flsnp" />
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ThumbnailMaxWidthHeight3.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/EnterNumberSelectUOM.flsnp" /></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" MadCap:conditions="Products.Contributor" />
+                <p class="note" MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also preview thumbnails (see <MadCap:xref href="Previewing_Thumbnails.htm" >Previewing Thumbnails</MadCap:xref>) and show images as thumbnails while you are editing (see <MadCap:xref href="Showing_Images_as_Thumbnails_While_Editing.htm" >Showing Images as Thumbnails While Editing</MadCap:xref>).</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience problems in the output with thumbnail images not opening to the full size, this might be caused by "Mark of the Web" being enabled on the Advanced tab of the Target Editor. You can try disabling Mark of the Web from your target to fix the issue. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Targets/More_About_Targets/Adding_Mark_of_the_Web.htm" >Adding Mark of the Web</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PicturesFormatting" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+    </body>
+</html>

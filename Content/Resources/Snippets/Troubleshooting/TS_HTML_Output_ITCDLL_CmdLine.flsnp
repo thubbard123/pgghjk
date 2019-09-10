@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:fileTags="Align/AlignTopicAuthor.Kate" MadCap:ignoredWords="SPACEBAR" MadCap:lastBlockDepth="11" MadCap:lastHeight="1187" MadCap:lastWidth="1410">
+    <body>
+        <ol>
+            <li>
+                <p>In Windows Explorer, open the computer's System32 directory.&#160;The path is <span class="Emphasis">C:\Windows\System32</span>.</p>
+            </li>
+            <li>
+                <p>Right-click the application file named <span class="Emphasis">cmd.exe</span> and select <span class="Emphasis">Run as administrator</span> from the context menu.</p>
+                <p>
+                    <img src="../../Images/search_system32_cmdexe_runasadmin.png" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>
+                <p>If the User Account Control  message appears, click <span class="Emphasis">Yes</span>. This allows you to use the command prompt to make changes on the system.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In Windows 7, you can use this method to run the command prompt as an administrator when you are using an account that does not have administrative credentials. This typically allows most users to make changes to the itcc.dll file in the Flare \bin directory. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p>At the command prompt, do the following:</p>
+                <ol class="LowerAlpha">
+                    <li>
+                        <p>Type <span class="TypedEntry">cd</span> to change directories and press the <span class="Emphasis">SPACEBAR</span>.&#160;Then type the path to the Flare \bin directory as shown in this example:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Use this information to enter the following path, depending on the version of Flare you are using.</p>
+                                    <p class="Subheading">If you are using Flare 12 or later</p>
+                                    <p class="TypedEntry">C:\Program Files\MadCap Software\MadCap Flare [#]\Flare.app\Resources\Bin</p>
+                                    <p>Below is an example:</p>
+                                    <p class="TypedEntry">C:\Program Files\MadCap Software\MadCap Flare 12\Flare.app\Resources\Bin</p>
+                                    <p class="TypedEntry">
+                                        <img src="../../Images/windows_cmdexe_flarebin2.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <p class="Subheading">If you are using Flare 11 or earlier</p>
+                                    <p class="TypedEntry">C:\Program Files (x86)\MadCap Software\MadCap Flare V[#]\Flare.app\Resources\Bin</p>
+                                    <p>Where [#] appears above, you must enter the correct Flare version number when typing the system path (e.g., V8, V9, V10.). Below is an example:</p>
+                                    <p class="TypedEntry">C:\Program Files (x86)\MadCap Software\MadCap Flare V11\Flare.app\Resources\Bin</p>
+                                    <p>
+                                        <img src="../../Images/windows_cmdexe_flarebin.png" class="MaxWidth90Percent" />
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Press <span class="Emphasis">Enter</span>.</li>
+                </ol>
+            </li>
+            <li>
+                <p>At the command prompt, type: <span class="TypedEntry">registeritcc.bat</span>. Then press <span class="Emphasis">Enter</span>. This runs the batch file. If the registration is successful, a message tells you so.</p>
+            </li>
+            <li>Click <span class="Emphasis">OK</span> to acknowledge the message. </li>
+            <li>Close the command prompt.</li>
+        </ol>
+    </body>
+</html>

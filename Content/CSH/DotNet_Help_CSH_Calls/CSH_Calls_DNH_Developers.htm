@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2134" MadCap:lastWidth="910" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareDNH.flmsp');">
+    <head>
+        <meta name="description" content="Learn how software developers create CSH calls to DotNet Help systems created with MadCap Flare. Using the Help Viewer SDK. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="CSHCallsDNH" />
+            <MadCap:concept term="ConnectingDotNetHelp" />CSH Calls for DotNet Help—Developers</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForDevelopers.flsnp" />
+        <p>There are three ways to make DotNet Help calls from your Windows application. The most basic way is to use the <MadCap:keyword term="Command line" />command line functionality of the DotNet Help Viewer (see <MadCap:xref href="Command_Line.htm" target="" title="" alt="">Command Line</MadCap:xref>). The other two ways are to use the <MadCap:keyword term="HelpViewerClient" />HelpViewerClient (HVC) (see <MadCap:xref href="HelpViewerClient_API.htm" target="" title="" alt="">HelpViewerClient API</MadCap:xref>) and <MadCap:keyword term="HelpViewerEmbeddedClient" />HelpViewerEmbeddedClient (HVEC) (see <MadCap:xref href="HelpViewerEmbeddedClient_API.htm" target="" title="" alt="">HelpViewerEmbeddedClient API</MadCap:xref>) classes. Use the command line version only if your application doesn't have access to the latest  .NET framework. Otherwise, you should use one of the other two methods.</p>
+        <h2 MadCap:conditions="General.Print">Features of the DotNet Help CSH Engine</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>features of the dotnet help csh engine</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Open a topic of your choice in the <MadCap:keyword term="MadCap Help Viewer" />MadCap Help Viewer.</li>
+                    <li>Launch a Help system with the search results from a search string that you specify.</li>
+                    <li>Embed Help topics or search results directly into your application.</li>
+                    <li>
+                        <MadCap:keyword term="Dynamic Help window" />Dynamic Help—A Help window automatically shows relevant information based on the user's focus in your application.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Key Differences between the HVC and HVEC Classes</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>key differences between the hvc and hvec classes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>HVC only supports basic, non-embedded CSH calls. It also does not provide Dynamic Help functionality.</li>
+                    <li>HVEC contains built-in functionality for <MadCap:keyword term="F1 Help" />F1 help. F1 help is still possible with HVC, however the developer must manually handle the user pressing the F1 key.</li>
+                    <li>HVC opens the Help Viewer in a separate process from your application, whereas HVEC opens the Help Viewer in the same process as your application. This means that with HVC, if your application closes, the Help window will remain open. On the other hand, with HVEC, if your application closes, the Help window will also close.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide,FlareGuides.FlareDNHGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="API" />Using the API</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="API" />using the api</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can download the Help Viewer <MadCap:keyword term="SDK" />SDK at:</p>
+                <p><a href="http://www.madcapsoftware.com/downloads/redistributables.aspx" target="_blank">http://www.madcapsoftware.com/downloads/redistributables.aspx</a>
+                </p>
+                <p> You must add a reference to the appropriate <MadCap:keyword term="DLL" />DLL in your project to use the API. </p>
+                <p>In <MadCap:keyword term="Microsoft Visual Studio 2005" />Visual Studio 2005, do the following.</p>
+                <ol>
+                    <li>In the Solution Explorer, right-click the project.</li>
+                    <li>Click <span class="Emphasis">Add Reference</span>.</li>
+                    <li>Select the <span class="Emphasis">Browse</span> tab.</li>
+                    <li>Navigate to the appropriate .dll file and select it:<ul class="FirstLevel"><li><p>Select <span class="Emphasis">MadCap.HelpViewerClient.dll</span> to use the HelpViewerClient API.</p><p>OR</p></li><li>Select the <span class="Emphasis">MadCap.HelpViewerEmbeddedClient.dll</span> to use the HelpViewerEmbeddClient API.</li></ul></li>
+                    <li>Click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Sample applications" />Sample Applications</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Sample applications" />sample applications</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are two sample applications available in the SDK that demonstrate using the HelpViewerClient and HelpViewerEmbeddedClient classes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareDNHGuide,FlareGuides.FlareCSHGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Distribution" />Distribution</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Distribution" />distribution</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Help Viewer must be installed on the user's machine that is using your application. The SDK contains a merge module that you can incorporate into an MSI-based installer to distribute the Help Viewer. </p>
+                <p>The following are instructions on how to include the merge module using Visual Studio 2005.</p>
+                <ol>
+                    <li>In the Solution Explorer, right-click the MSI installer project.</li>
+                    <li>Click <span class="Emphasis">Add</span>.</li>
+                    <li>Click <span class="Emphasis">Merge Module</span>.</li>
+                    <li>Browse to the <span class="Emphasis">InstallMadCapHelpViewer.msm</span> file and select it.</li>
+                    <li>Click <span class="Emphasis">Open</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Search:performance" />Search Performance and Wildcards</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Search:performance" />search performance and wildcards</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>When <MadCap:keyword term="SQL:Server Compact" />SQL Server Compact 3.5 SP1 is present, Help Viewer can use it to improve search performance and also allow wildcard searching. To take advantage of these capabilities, you can include SQL Server Compact 3.5 SP1 as part of your application's installation. For more information regarding SQL Server Compact 3.5 SP1 including redistribution rights, please visit:</p>
+                <p><a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx" target="_blank">http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx</a>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="CSHCallsDNH" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+    </body>
+</html>

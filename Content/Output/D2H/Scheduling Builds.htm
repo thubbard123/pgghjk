@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="1668" MadCap:lastWidth="739" class="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output" />
+            <MadCap:keyword term="Targets" />Scheduling Builds with the Build Scheduler</h1>
+        <p>Using Doc-To-Help's Build Scheduler, you can schedule and monitor automatic builds of targets. One-time, daily, and weekly builds can be scheduled.&#160; </p>
+        <p>All of the scheduled builds created display in the Build Scheduler window. Only those with a check mark in the Enabled column will be run. The project name, status, build time, the time of the next and the last build, and the result of the last build are displayed for each scheduled build.</p>
+        <p>You can build all of the targets for a project from a single build schedule. </p>
+        <p>The toolbar in the Build Scheduler allows you to create, edit, and delete builds; view build logs; run any build on the spot; and refresh the window. </p>
+        <p>
+            <img src="../../Resources/Images/D2H/build_scheduler.png" height="292" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Schedule a Build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select <span class="Emphasis">File&gt;Tools&gt;Build Scheduler</span>. The Build Scheduler opens.</li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Create a New Task</span> button. The Schedule Build dialog opens.</p>
+                        <p>You can open the Schedule Build dialog directly from a Doc-To-Help project. Open the project and from the <span class="Emphasis">Home</span> tab, click the drop-down arrow at the bottom of the <span class="Emphasis">Build</span> or <span class="Emphasis">Rebuild</span> buttons. Choose <span class="Emphasis">Schedule Build</span> from the options.</p>
+                    </li>
+                    <li>In the <span class="Emphasis">Project</span> field, click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and choose the project.</li>
+                    <li>Select the check box next to each target in that project you would like to build.</li>
+                    <li>Choose the <span class="Emphasis">Build type</span>. For an explanation of the difference between Build and Rebuild, see <MadCap:xref href="Building a Target.htm">Building Targets</MadCap:xref>.</li>
+                    <li>Choose the <span class="Emphasis">Schedule type</span>. You have the choice of <span class="Emphasis">One time</span>, <span class="Emphasis">Daily</span>, and <span class="Emphasis">Weekly</span>. </li>
+                    <li>Choose the <span class="Emphasis">Start time</span> and <span class="Emphasis">date</span>. If you have chosen a Daily or Weekly build, you can then choose when the build should recur.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you choose to schedule daily builds, the default is for the targets to build every day at the chosen time (<span class="Emphasis">Recur every 1 days</span>). If you would prefer to choose the exact days your builds will occur (e.g., every weeknight, choose the <span class="Emphasis">Schedule type</span> of <span class="Emphasis">Daily</span> and select the days of the week).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Other Tasks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you create a new task using the previous set of steps, you can also do the following in the Build Scheduler:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Delete Task </span>To delete a task, select it and click the <span class="Emphasis">Delete Selected Task</span> button.</li>
+                    <li><span class="SetOffFirstLevel">Edit </span>To edit a build schedule, select it, and click the <span class="Emphasis">Edit the Selected Task</span> button.</li>
+                    <li><span class="SetOffFirstLevel">Refresh List </span>Click the <span class="Emphasis">Refresh Task Status</span> button to refresh the task list.</li>
+                    <li><span class="SetOffFirstLevel">Run Task </span>To run a task immediately, select it and click the <span class="Emphasis">Run Selected Task</span> button.</li>
+                    <li><span class="SetOffFirstLevel">View Build Log </span>After your build tasks are run,&#160; the log files are stored within your project's Temp\BuildLogs folder. Every target will have a separate folder, and the log file names will have the "schedule_" prefix (e.g., "schedule_2010-11-15_16-60-50.log"). To view the build log of a task, select it and click the <span class="Emphasis">View Build Log of Selected Task</span> button.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When the scheduled build for a project is building, you cannot open that project. If you open a project and it is scheduled to build within that time frame,&#160; the scheduled build will not begin (it will fail). You can open, edit, and build any other Doc-To-Help project while the scheduled build of another project is building.</p>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Windows Task Scheduler must be started for Doc-To-Help's Build Scheduler to run. To check the status of the Windows Build Scheduler:</p>
+                    <p>Windows 7 and later: Click <span class="Emphasis">Start&gt;Control Panel&gt;System and Security&gt;Administrative Tools&gt;Scheduled Tasks</span>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

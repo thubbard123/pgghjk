@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="7" MadCap:lastHeight="2236" MadCap:lastWidth="1146" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output;Targets;Transformations" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Transformations</h1>
+        <p>Using the Transformation Wizard, you can insert boilerplate content or code into every topic in your targets<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../D2H/About_Targets.htm">About Targets</MadCap:xref>)</MadCap:conditionalText>. Examples include: headers, footers, or code needed for technology such as analytics.</p>
+        <p>You can add transformations to NetHelp, HTML Help, EPUB, JavaHelp, Eclipse Help, Microsoft Help Viewer, and Microsoft Help 2.0 Help targets.</p>
+        <p>Transformation files created with the wizard can be used in any project.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HTargetsGuide">Custom HTML5 Code</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Custom HTML5 Code</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Custom HTML5 code can be defined for the following places in a topic:</p>
+                <ul>
+                    <li>Inside the &lt;head&gt; element (e.g., scripts, CSS, metadata)</li>
+                    <li>At the beginning of topic text (i.e., above the topic title)</li>
+                    <li>At the end of&#160; topic text</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="D2HGuides.D2HTargetsGuide">How to Insert a Transformation</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>How to Insert a Transformation</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <span class="Emphasis">Home</span> tab.</li>
+                    <li>At the bottom of the <span class="Emphasis">Target</span> group, click <img src="../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>In the <span class="Emphasis">Advanced</span> section, next to the <span class="Emphasis">XML transformation</span> field, click <img src="../../Resources/Images/transformation_wizard_btn.png" alt="" title="" class="ReduceButtonSize" />. The Transformation Wizard opens.</li>
+                    <li>Enter your custom code in the appropriate section(s): &lt;head&gt; element, beginning of topic, or end of topic. </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Save</span>. You are prompted to name and save the file. The transformation file created (*.config) is stored at the root of your <MadCap:variable name="Other.Product" /> project folder. (This location is the default, but you can store it anywhere.)</p>
+                        <p>After you build your target, the code will be inserted in each topic of the target.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HTargetsGuide">How to Reuse a Transformation File</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>How to Reuse a Transformation File</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If would like to reuse the transformation file in another project, do the following:</p>
+                <ol>
+                    <li>In Doc-To-Help, open the <span class="Emphasis">Home</span> ribbon, and at the bottom of the <span class="Emphasis">Target</span> group click <img src="../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>In the <span class="Emphasis">Advanced</span> section, next to the <span class="Emphasis">XML transformation</span> field, click <img src="../../Resources/Images/browse_ellipses.png" alt="" title="" class="ReduceButtonSize" />. </li>
+                    <li> Navigate to the *.config file, select it, and click <span class="Emphasis">Open</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>There is an example transformation named "timestamp.config" that will add timestamp text to each topic of a target. It is located at:&#160;<span class="Emphasis">C:\Program Files (x86)\MadCap Software\DocToHelp\Transforms\Examples\Timestamp</span></p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>To insert keywords in the &lt;head&gt; element of each topic, add this to the first field of the Transformation Wizard:</p>
+                    <p class="Code">&lt;meta name="keywords" content="help authoring tool, doc-to-help, doctohelp, online help"/&gt;</p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>To insert a distinctive header (green, bold, and italic) in each topic, add this to the middle field of the Transformation Wizard:</p>
+                    <p class="Code">&lt;div style="font-size:large; font-style:italic; color:green; font-weight:bold" &gt;</p>
+                    <p class="Code">Draft Version 1.1, for Internal Review Only </p>
+                    <p class="Code">&lt;/div&gt;</p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>To insert a footer with a logo and hyperlink in each topic, add this to the last field of the Transformation Wizard:</p>
+                    <p class="Code">&lt;div style="width:90%"&gt;</p>
+                    <p class="CodeIndented">&lt;hr style="color:#CCCCCC" /&gt;</p>
+                    <p class="CodeIndented">&lt;div style="float: left"&gt;</p>
+                    <p class="CodeIndented2">&lt;img src="http://www.madcapsoftware.com/newimages/company/icon.png" alt="MadCap Logo" /&gt;</p>
+                    <p class="CodeIndented">&lt;/div&gt; </p>
+                    <p class="CodeIndented">&lt;div style="float: right"&gt;</p>
+                    <p class="CodeIndented2">MadCap Software&lt;br /&gt;</p>
+                    <p class="CodeIndented2">San Diego, CA&lt;br /&gt;</p>
+                    <p class="CodeIndented2">&lt;a href="http://www.madcapsoftware.com" target="_blank"&gt;madcapsoftware.com&lt;/a&gt;</p>
+                    <p class="CodeIndented">&lt;/div&gt;</p>
+                    <p class="Code">&lt;/div&gt;</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Verify that the <span class="Emphasis">Generate XHTML</span> check box is selected in the Help Targets dialog before building your target. It is selected by default in most targets.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Transformations cannot be used with Manual targets.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also add programmatic and XSLT transformations to your projects. See <MadCap:xref href="Advanced XML Transformations.htm">Advanced XML Transformations</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

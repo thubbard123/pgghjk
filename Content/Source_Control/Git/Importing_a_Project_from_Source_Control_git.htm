@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6] " MadCap:conditions="Products.Flare,Products.Lingo" MadCap:lastBlockDepth="14" MadCap:lastHeight="2326" MadCap:lastWidth="804" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:keyword term="Importing:source control projects;Source control:importing projects;Multi-authoring;Source control:Git" />
+            <MadCap:concept term="FilterSourceControlGit" />Importing a Project from Git</h1>
+        <h1 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Importing:source control projects;Source control:importing projects;Multi-authoring;Source control:Git" />Importing from Git</h1>
+        <p MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareSourceControlGuideGit,Products.FlareOnlineOnly">This<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> topic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareSourceControlGuideGit"> chapter</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareProjectCreationGuide"> section</MadCap:conditionalText> focuses on importing a <MadCap:variable name="Other.Product" /> project from source control. You might use this method, for example, if you are working on a multi-author project and another member of the team has placed the <MadCap:variable name="Other.Product" /> project in Git. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,General.OnlineLive">For more information see <MadCap:xref href="../About_Source_Control.htm">About Source Control</MadCap:xref>.</MadCap:conditionalText></p>
+        <p MadCap:conditions="Products.Lingo">This topic focuses on importing a <MadCap:variable name="Other.Product" /> project from source control. You might use this method, for example, if you are working on a project with several other translators and another member of the team has placed the <MadCap:variable name="Other.Product" /> project in Git. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../About_Source_Control_Lingo.htm">About Source Control</MadCap:xref>.</MadCap:conditionalText></p>
+        <p MadCap:conditions="FlareGuides.FlareProjectCreationGuide">Following are the steps for importing a project from Git.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to import a project from source control</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> Select <span class="Emphasis">File&gt;New Project&gt;Import Project</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare,Products.Lingo"><span class="SetOffFirstLevel"><MadCap:keyword term="Source Control Explorer:Home pane" />Source Control Explorer </span> From the <span class="Emphasis">View</span> ribbon, open the Source Control Explorer. From the drop-down, select the Home pane. Click <span class="Emphasis">Import Project</span>.</li>
+                        </ul>
+                        <p>The Import Project from Source Control Wizard dialog opens.</p>
+                    </li>
+                    <li>From the drop-down, select <span class="Emphasis">Git</span>. </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Remote</span> drop-down, enter the remote repository where the project is located. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBindGitStep8.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBindGitStep9.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBindGitStep10.flsnp" />
+                        </p>
+                        <ul>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBindGitStep10a.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBindGitStep10b.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>Next to the <span class="Emphasis">Project</span><MadCap:conditionalText MadCap:conditions="Products.Flare"><span class="Emphasis"> file</span></MadCap:conditionalText> field, click <span class="Emphasis">Browse</span>. The Browse Source Control Files dialog opens. (You may need to log in with your user name and password.)</p>
+                    </li>
+                    <li>
+                        <p>(Optional) If the remote you selected in Step 3 requires an SSH&#160;certificate, the Certificate Specification dialog opens. In the dialog, do the following:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SourceControl/GitSSHStep1a.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SourceControl/GitSSHStep1b.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SourceControl/GitSSHStep1c.flsnp" />
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Find and click on the <MadCap:variable name="Other.Product" /> project file <MadCap:conditionalText MadCap:conditions="Products.Flare">(<MadCap:keyword term="FLPRJ file" />FLPRJ)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">(<MadCap:keyword term="LIPRJ file" />LIPRJ)</MadCap:conditionalText> that you want to import. (You may need to log in with your user name and password.)</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>In the <span class="Emphasis">Project name</span> field, the name of the project being imported is displayed. It is recommended that you leave the name as it is, especially if you are working with other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>on the project. However, you can enter a different project name if you want.</li>
+                    <li>In the <span class="Emphasis">Project folder</span> field, either accept the default location for the new project or click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> to browse for and select a folder.</li>
+                    <li>Click <span class="Emphasis">Finish</span>. The project is imported and loaded into <MadCap:variable name="Other.Product" />.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/ApplyBindDetection.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/ApplyBindDetection.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="">You can perform any of the other source control tasks, such as pushing, pulling, and committing files. See <MadCap:xref href="../About_Source_Control.htm">About Source Control</MadCap:xref>.</p>
+                <p MadCap:conditions="">You can also move on to any of the other basic steps.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNext/Steps2Thru6.flsnp">
+                </MadCap:snippetBlock>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteDontHaveToFollowStepsInOrder.flsnp">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide" />
+    </body>
+</html>

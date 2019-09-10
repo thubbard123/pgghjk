@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="5" MadCap:lastHeight="1232" MadCap:lastWidth="627">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example   </p>
+            <p>Let's say you have a document that uses a portrait landscape throughout. However, you have inserted several wide tables in the document, and you would like the pages showing those tables to be displayed with a landscape configuration whenever they appear in the Doc-To-Help print-based output. Like this:</p>
+            <p>
+                <img src="../../Images/D2H/section_break_page_orientation1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+            <p>Furthermore, in your Word template you've created a special style called "TableTitle" that you apply to a paragraph just above each table. It makes sense to associate the landscape configuration with that paragraph style because it clearly signifies the start of the content that you want to show as landscape.</p>
+            <p>You also insert a section break in the source document after each of those tables, because that will tell Doc-To-Help to end the custom configuration.</p>
+            <p>In Doc-To-Help you open the Project Styles dialog. In the <span class="Emphasis">Paragraph Styles</span> section on the left, you add a new style called <span class="Emphasis">TableTitle</span>, and you set the <span class="Emphasis">Section configuration</span> to <span class="Emphasis">Landscape</span>.</p>
+            <p>
+                <img src="../../Images/D2H/section_break_page_orientation2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>When you build the Manual target, the sections beginning with the TableTitle style are changed from portrait to landscape.</p>
+        </div>
+    </body>
+</html>

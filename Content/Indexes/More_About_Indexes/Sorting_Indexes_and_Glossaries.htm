@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:lastBlockDepth="8" MadCap:lastHeight="1261" MadCap:lastWidth="1149" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterLanguageSupport" />
+            <MadCap:keyword term="Indexes:sorting;Indexes:sort as;Glossaries:sorting;Glossaries:sort as" />Sorting Indexes and Glossaries</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Indexes/CustomSortOrderIntroLingo.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Indexes/IndexSortOrderExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Sort the Index or Glossary</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open and translate the MadCap Flare glossary (.flglo) and index (.liindexmap) files in your Lingo project. See <MadCap:xref href="../../Translating_Files/Translating_Files.htm">Translating Files</MadCap:xref>.</li>
+                    <li>Select <span class="Emphasis">File&gt;Project Properties</span>. The Project Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Sort Order</span> tab.</li>
+                    <li>
+                        <p>From the <span class="Emphasis">Select file</span> drop-down, select the index or glossary file you want to sort. The terms in the file appear in the grid below.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Glossaries/GlossarySortAsLingoFilters.flsnp" />
+                    </li>
+                    <li>
+                        <p>Review the terms in each Entry column. These are the terms you entered in the MadCap Flare glossary (.flglo) and index (.liindexmap) files. If you need to enter a new term for sorting, type it in the <span class="Emphasis">Sort As</span> column.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also see the Entry and Sort As terms&#160;from the source project, if applicable.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only make changes in the Sort As column. If you need to change the term in the Entry column, you can edit the translation in the glossary or index file.</p>
+                    </li>
+                    <li>(Optional) Repeat steps 4-5 for any other index and glossary files.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <p>When translated project is exported back to Flare, the index and glossary will use the new terms to alphabetize the entries.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

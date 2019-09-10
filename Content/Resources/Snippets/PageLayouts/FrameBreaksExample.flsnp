@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="5" MadCap:lastHeight="1446" MadCap:lastWidth="949">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>Let's say you want chapter titles to appear by themselves in PDF output. You want the chapter title to start farther to the left than the rest of the body content, and you want extra space between the title and body content, in case you have long chapter titles that wrap to two lines.</p>
+            <p>
+                <img src="../../Images/frame_breaks1.png" alt="" title="" class="MaxWidth80Percent" />
+            </p>
+            <p>
+                <img src="../../Images/frame_breaks2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,ContributorGuides.ContributorWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+            <p>In  your page layout, you can create one body frame that you want to be used to display the chapter title, and a second, much larger body frame to display the content following it.</p>
+            <p>
+                <img src="../../Images/frame_breaks3.png" alt="" title="" class="MaxWidth70Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,ContributorGuides.ContributorWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+            <p>This might work fine when you have long chapter titles that wrap to two lines, but if you have a short, one-line title, the body text from below will creep up and start below it in the first body frame, like this:</p>
+            <p>
+                <img src="../../Images/frame_breaks4.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,ContributorGuides.ContributorWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+            <p>To solve the issue, you apply a frame break to the style used for your chapter titles (e.g., h1).</p>
+            <p>
+                <img src="../../Images/frame_breaks5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Therefore, even when a chapter title is short, <MadCap:variable name="Other.Product" /> inserts a break after it. This creates the effect that you want, where only the chapter title appears in the top body frame, and everything else shows up in the second body frame.</p>
+        </div>
+    </body>
+</html>

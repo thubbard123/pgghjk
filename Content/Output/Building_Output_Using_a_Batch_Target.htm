@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="target.&quot;" MadCap:lastBlockDepth="15" MadCap:lastHeight="5215" MadCap:lastWidth="890" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet1]exclude[Snippets.Snippet2]" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head><title></title>
+        <meta name="template" content="Flare.htt" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Building:batch target;Targets:building output;Output:building targets;Batch:output;Output:batch;Batch:targets" />
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:concept term="BuildOutput" />
+            <MadCap:concept term="FilterTargets" />Building Output Using a Batch Target</h1>
+        <p>Use the following steps if you want to generate and/or publish one or multiple targets in a batch from the user interface, perhaps scheduled to run at a specific time.</p>
+        <p>
+            <img src="../Resources/Images/batch_target_example.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                    <p MadCap:conditions="">Let's say you have a project with 17 targets and you need to build and publish 12 of those targets at the beginning of each day. Rather than manually building and generating each of these targets, you can use a batch target. Within this batch target, you can select the check boxes at the top of the Build and Publish columns. This automatically selects the check boxes for each target. Then you can manually deselect the 5 targets you do not wish to build or publish. Furthermore, you can use the Schedule tab in the batch target to specify that the batch should be run each night at 2 a.m. When you arrive at the office each morning, the outputs for those 12 targets will already be generated and placed in the appropriate publishing destination folders.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide">Batch Generate Interface Versus Command Line</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="FlareOnlineOnly">
+                <MadCap:dropDownHotspot>batch generate Interface versus command line</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The batch target in the <MadCap:variable name="Other.Product" /> interface is similar to the command line feature<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="Building_Targets_Using_the_Command_Line.htm">Building Targets Using the Command Line</MadCap:xref>)</MadCap:conditionalText>. However, the command line feature works outside of the <MadCap:variable name="Other.Product" /> interface, is a bit more manual, and does not support as many processes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide"><a name="CreateBatchTarget"></a>Create a Batch Target</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="CreateBatchTargetOnline"></a>How to Create a Batch Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">First, you must create a batch target. </MadCap:conditionalText>
+                    <MadCap:snippetText src="../Resources/Snippets/Targets/BatchTargetSummary.flsnp" /> A batch target file has an <MadCap:keyword term="FLBAT file" />.flbat extension and is stored in the Project Organizer under the Targets folder.</p>
+                <p class="Subheading" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide">how to create a batch target</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Content</span> section select <span class="Emphasis">New&gt;Batch Target</span>. </li>
+                            <li><span class="SetOffFirstLevel">Right-Click</span> In the Project Organizer, right-click on the <span class="Emphasis">Targets</span> folder and from the context menu select <span class="Emphasis">Add Batch Target</span>.</li>
+                        </ul>
+                        <p>The Add File dialog opens.</p>
+                    </li>
+                    <li>In the <span class="Emphasis">File Type</span> field at the top, make sure <span class="Emphasis">Batch Target</span> is selected.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Templates/InSourceAreaTemplateStep.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Templates/TemplateOptionsStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SelectSubfolderProjectOrganizerStep.flsnp" />
+                    </li>
+                    <li>In the <span class="Emphasis">File Name</span> field, type a new name for the batch target.</li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:04:28.8860843-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—Condition Tags\r\nAdd File Dialog—File Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:04:48.7363581-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/ConditionalText/ExpandAttributesSection2.flsnp"></MadCap:snippetText></li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:04:52.2515878-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—Condition Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:04:58.8155118-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/ConditionalText/SelectRelevantConditionTags.flsnp" /> <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Condition_Tags/Applying_Condition_Tags_to_Content.htm">Applying Conditions to Content</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:05:02.6279181-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—File Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:05:13.8635399-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/FileTags/SelectRelevantFileTags.flsnp" /> <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../File_Tagging/Associating_Tags_with_Files.htm">Associating Tags with Files</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Click <span class="Emphasis">Add</span>. The target is added to the Targets folder in the Project Organizer.</li>
+                    <li>A message asks if you want to create a scheduled task. Click <span class="Emphasis">Yes</span>. The Batch Target Editor opens to the right.</li>
+                    <li>
+                        <p>The Targets tab in the editor displays all of the non-batch targets already contained in your project. Click the <span class="Emphasis">Build</span> and/or <span class="Emphasis">Publish</span> check boxes next to the targets that you want to be affected when the batch runs. You can also click the check boxes at the top of each column; this selects all of the check boxes in that column. Clicking the top check box again deselects all of the check boxes in the column.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order for targets to be published when the batch runs, you must also create and associate a publishing destination with the target(s). <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="Creating_Publishing_Destinations.htm" >Creating Publishing Destinations</MadCap:xref> and <MadCap:xref href="Associating_Publishing_Destinations_with_Targets.htm" >Associating Publishing Destinations with Targets</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide">
+            <MadCap:keyword term="Building:Schedule;Building:Scheduling" /><a name="ScheduleBuildBatchProcess"></a>(Optional) Schedule Build or Publish Processes</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="ScheduleBuildBatchProcessOnline"></a>(Optional) How to Schedule Build or Publish Processes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/ScheduleBuildSummary.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/WhenScheduledTaskRuns.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <p class="Subheading" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide">how to schedule build or publish processes</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/ScheduleBuildProcessSteps.flsnp" />
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">Because scheduled tasks in batch targets use <MadCap:keyword term="Windows Task Scheduler" />Windows Task Scheduler, the settings in that utility are applied. By default, scheduled tasks will run only if you are logged on. However, you can change this setting in Windows Task Scheduler so that the batch runs whether you are logged on or not. To accomplish this, first open Windows Task Scheduler. The steps may be different depending on the operating system. For example, in Windows 7 click the <span class="Emphasis">Start</span> button and select <span class="Emphasis">All Programs&gt;Accessories&gt;System Tools&gt;Task Scheduler</span>. Then select <span class="Emphasis">Task Scheduler Library</span> to see a list of your scheduled tasks. In the list select the appropriate task and click <span class="Emphasis">Properties</span>. Click <span class="Emphasis">Run whether user is logged on or not</span> (in Windows 7 this is on the General tab). Click <span class="Emphasis">OK</span>. You will be prompted to enter your Windows login password. When you are finished working for the day, log off your computer (instead of shutting down completely). The task will run as scheduled.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you create a scheduled task in a batch target, a .job file is automatically created in Windows Task Scheduler. If you delete the batch target from within <MadCap:variable name="Other.Product" />, the .job file is automatically removed from Windows Task Scheduler. However, if you delete the project or batch target from Windows (outside of <MadCap:variable name="Other.Product" />), the .job file remains in Windows Task Scheduler. Therefore, you will need to remove the .job file manually from there.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide">
+            <MadCap:keyword term="Building:Publishing" /><a name="ManuallyBuildPublish"></a>(Optional) Manually Start Build or Publish Processes</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="ManuallyBuildPublishOnline"></a>(Optional) How to Manually Start Build or Publish Processes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Although you can schedule a batch target to run at a specific time, you can always open the batch target and manually start the batch.</p>
+                <p class="Subheading" MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">how to manually start build or publish processes</p>
+                <ol>
+                    <li>From the <span class="Emphasis">Targets</span> folder in the Project Organizer, open the batch target file.</li>
+                    <li>In the local toolbar of the Batch Target Editor, click any of the following.<ul class="FirstLevel"><li><img src="../Resources/Images/build_and_publish_btn.png" class="ReduceButtonSize" /> Builds and publishes the selected targets (if they have check marks in the Build and Publish boxes in the batch target).</li><li><img src="../Resources/Images/build_only_btn.png" class="ReduceButtonSize" /> Builds the selected targets (if they have check marks in the Build box in the batch target).</li><li><p><img src="../Resources/Images/publish_only_btn.png" class="ReduceButtonSize" /> Publishes the selected targets (if they have check marks in the Publish boxes in the batch target).</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you click the Publish Only option, Flare makes sure that each selected target already has generated output files. If so, those targets are published. If output has not yet been generated, Flare builds the target and then publishes its output files.</p></li></ul><p><img src="../Resources/Images/batch_target_example3.png" class="MaxWidth100Percent" /></p></li>
+                    <li>(Optional) For each target in the batch, a row is added to the Builds window pane, showing the progress of the target as it is generated. If the target generates successfully, the color of the Progress columns changes from light to dark green, and the Status column displays "Finished." You can then select that row and in the local toolbar click <span class="Emphasis">View Output</span>.</li>
+                    <li>(Optional)  For each target a log file is generated and saved automatically at the root level of the output folder for that target, whether or not there are errors or warnings. You can tell if errors or warnings have occurred by looking at the appropriate columns in the Builds window pane. You can then select that row and in the local toolbar click <span class="Emphasis">Open Build Log</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Building_Final_Output/Opening_Build_Logs.htm">Opening Build Logs</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/WarningBuildErrorsAVScan.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also select a target row in the Builds window pane and click <span class="Emphasis">Rebuild Target</span> to generate the output again.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you publish output using a batch target, changed files are replaced and stale files are always removed.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You cannot use scheduled tasks for batch targets if you are working in trial mode.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="">After the batch runs, you can do any of the following.</p>
+                <ul class="FirstLevel">
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">Edit </span>See <MadCap:xref href="More_About_Building_Final_Output/Editing_Batch_Targets.htm">Editing Batch Targets</MadCap:xref>.</li>
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">View </span>See <MadCap:xref href="More_About_Building_Final_Output/Viewing_Output.htm">Viewing Output</MadCap:xref>.</li>
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">Test </span>See <MadCap:xref href="More_About_Building_Final_Output/Testing_Output.htm">Testing Output</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="BuildOutput" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1537" MadCap:lastWidth="889" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareWebHelp.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Developer instructions about the Context Sensitive Help (CSH)&#160;calls used to map applications to help topics in a WebHelp Mobile target. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:keyword term="Output:WebHelp Mobile;Context-sensitive Help:WebHelp Mobile;WebHelp Mobile:context-sensitive Help" />
+            <MadCap:keyword term="WebHelp Mobile:connecting to application;WebHelp Mobile:distributing" />
+            <MadCap:concept term="ConnectingWebHelpMobile" />CSH Calls for WebHelp Mobile—Developers</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForDevelopers.flsnp" />
+        <p>Use the following information if you are producing <MadCap:variable name="Outputs.WebHelp Mobile" /> and want to incorporate context-sensitive Help (CSH). This lets users open specific parts of the output from web links.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create csh calls for webhelp mobile</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li><span class="SetOffFirstLevel">Author </span>(Optional) Add a header file to your project.</li>
+                    <li><span class="SetOffFirstLevel">Author </span>(Optional) Add an alias file to your project.</li>
+                    <li><span class="SetOffFirstLevel">Author </span> (Optional) In the Alias Editor, create and assign IDs for the topics that you want to provide links to. If you do not want to create a header file, alias file, and IDs for topics, you can instead use the file names for the topics to which you want to link. </li>
+                    <li><span class="SetOffFirstLevel">Author </span>Build your Help system using a <MadCap:variable name="Outputs.WebHelp Mobile" /> target and publish the output files to the final destination.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Developer</span> Create a trigger and add a link to let users open a specific area of the Help system. </p>
+                        <p>There is a certain amount of flexibility in terms of how you create the link and what you can include in it. Here is the basic structure of the link.</p>
+                        <div class="example">
+                            <p class="Code">[main entry file]?cshid=[ID number, ID name, or topic path/name]&amp;searchQuery=[search string]&amp;firstPick=true</p>
+                        </div>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide,FlareGuides.FlareWebHelpGuide" />
+                        <p>After the question mark, you can specify any combination of the parameters (cshid, searchQuery, firstPick), separted by ampersands (&amp;). The order of the parameters does not matter.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Main entry file </span>Provide the path to the main entry file for your output. The file name is determined by whatever you enter into the <span class="Emphasis">Output File</span> field in the <span class="Emphasis">General</span> tab of the Target Editor. If you do not provide a name in this field, the name "Default" will be used.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">cshid </span>This is the CSH ID that you created in Flare (see Step 3 above). This can be either the identifier name or value. Alternatively, you can enter the path and name of the specific topic to which you want to link. If you use this element, you do not need to create an ID as described above. The topic path must be relative to the Content folder of the Flare project.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">searchQuery </span>This is an optional element that automatically performs a search for a specific string.</li>
+                            <li><span class="SetOffFirstLevel">firstPick </span>This element can be used in conjunction with the search string. If you include the first pick option, the first topic found with the specified search string <span class="EmphasisItalic">will</span> be opened automatically. If you do not include this element, the search results will simply be displayed; the first topic <span class="EmphasisItalic">will not</span> be opened automatically.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">examples</p>
+                            <p class="Code">&lt;a href="http://mycompany.com/Default.htm?cshid=1000&amp;searchQuery=World Cup Standings&amp;firstPick=true"&gt;Click here to open&lt;/a&gt;</p>
+                            <p class="Code">&lt;a href="http://mycompany.com/Default.htm?cshid=Soccer&amp;searchQuery=World Cup Standings&amp;firstPick=true"&gt;Click here to open&lt;/a&gt;</p>
+                            <p class="Code">&lt;a href="http://mycompany.com/Default.htm?cshid=Soccer.htm&amp;searchQuery=World Cup Standings&amp;firstPick=true"&gt;Click here to open&lt;/a&gt;</p>
+                        </div>
+                        <p>In these examples, the following were used.</p>
+                        <ul style="list-style-type: square;">
+                            <li>Default.htm = main entry file name</li>
+                            <li>1000 = CSH ID value</li>
+                            <li>Soccer = CSH ID name</li>
+                            <li>Soccer.htm = topic in the project, at the root level of the Content Explorer</li>
+                            <li>World Cup Standings = search term</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ConnectingWebHelpMobile" />
+        </p>
+    </body>
+</html>

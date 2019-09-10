@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1392" MadCap:lastWidth="1192" MadCap:conditions="Products.Analyzer,Products.Flare">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—toc structure method  for print output</p>
+            <p>Let's say that you want to use the method where the mini-TOC entries are based on the structure of your outline TOC. Perhaps you have created several topics that are organized in your TOC, like "Chapter 5" in this example:</p>
+            <p>
+                <img src="../../Images/mini_toc_proxy_example4.png" class="MaxWidth40Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+            <p>That book in the outline TOC consists of seven topics (Chapter 5, Exercising a Dog, Indoor Exercise, Outdoor Exercise, Feeding a Dog, Picking a Dog, and Training a Dog). Let's say that you want to insert a Mini-TOC proxy into the "Chapter 5" topic so that it creates a small TOC pointing to the other topics under it. Furthermore, suppose that you are using the h1 style at the top of each of those topics, and you do not want to change that fact. In that case, you can simply insert the Mini-TOC proxy into the "Chapter 5" topic, like this:</p>
+            <p>
+                <img src="../../Images/mini_toc_proxy_example5.png" class="MaxWidth80Percent" />
+            </p>
+            <p>When you insert the proxy, you specify that it should include three levels of headings in the mini-TOC, because in the output <MadCap:variable name="Other.Product" /> will create three levels based on your structure. </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>You can then open the target that you want to generate, select the Advanced tab, and click the option to generate your TOC based on the structure of the outline TOC in your project. </p>
+            <p>Like this:</p>
+            <p>
+                <img src="../../Images/mini_toc_proxy_example6.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+            <p>In the output, the "Chapter 5" topic might look something like this:</p>
+            <p>
+                <img src="../../Images/mini_toc_proxy_example7.png" class="MaxWidth80Percent" />
+            </p>
+            <p>Please remember that the topic containing your Mini-TOC proxy must be on a higher level in the TOC than the topics that you want to be captured by that mini-TOC.</p>
+            <p>
+                <img src="../../Images/mini_toc_example2.png" class="MaxWidth80Percent" />
+            </p>
+        </div>
+    </body>
+</html>

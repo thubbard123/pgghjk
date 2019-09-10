@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="12533" MadCap:lastWidth="491" MadCap:conditions="Products.Flare,Products.Contributor" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Stylesheets:regular" />
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:concept term="StylesUsingFlare" />
+            <MadCap:concept term="Styles;LookGood" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">About </MadCap:conditionalText>Regular Stylesheets</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Styles/RegularAndTableStylesheets.flsnp" /> See <MadCap:xref href="About_Table_Stylesheets.htm">About Table Stylesheets</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareStylesGuide">Where Regular Stylesheets are Stored</h2>
+        <p MadCap:conditions="Products.Flare">You can have as many styles as you want within one regular stylesheet, and you can create as many stylesheets as you need (although one stylesheet is often sufficient for many authors and projects). <MadCap:conditionalText MadCap:conditions="Products.Flare">The traditional location to store a regular <MadCap:keyword term="CSS file" />CSS stylesheet in the Content Explorer is in the Resources\Stylesheets folder. However, you can store it anywhere in the Content Explorer that you like.</MadCap:conditionalText></p>
+        <p MadCap:conditions="Products.Flare">
+            <img src="../Resources/Images/regular_stylesheet.png" class="MaxWidth100Percent" />
+        </p>
+        <p MadCap:conditions="Products.Flare">The exception to this is when you import source files that already include a stylesheet. In that case, <MadCap:variable name="Other.Product" /> retains the structure of the imported files, storing the stylesheet in the same location where it resided in the source files.</p>
+        <MadCap:dropDown MadCap:conditions="Products.FlareWebHelp">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>See the Movies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Styles/StyleVideos.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Stylesheet Editor" />Stylesheet Editor</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Stylesheet Editor" />stylesheet editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you open a regular stylesheet, it is displayed in the Stylesheet Editor, which allows you to use either an Advanced or a Simplified view when working with topic styles. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Interface/UI_Elements/Stylesheet_Editor.htm">Stylesheet Editor</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Styles/StylesAdvancedSimplifiedViews.flsnp" MadCap:conditions="" />
+                <p MadCap:conditions="">
+                    <img src="../Resources/Images/stylesheet_editor_simplified_view_example.png" class="MaxWidth90Percent" />
+                </p>
+                <p MadCap:conditions="">
+                    <img src="../Resources/Images/stylesheet_editor_advanced_view_example.png" class="MaxWidth90Percent" />
+                </p>
+                <p>You can also work on a stylesheet in the Internal Text Editor. This is usually the preferred method for advanced users of CSS. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Interface/UI_Elements/Internal_Text_Editor.htm" MadCap:conditions="Products.Flare">Internal Text Editor</MadCap:xref><MadCap:xref href="../Interface/UI_Elements/Internal_Text_Editor_Contributor.htm" MadCap:conditions="Products.Contributor">Internal Text Editor</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print"><a name="LocalMasterStylesheetsPrint"></a>
+            <MadCap:keyword term="Stylesheets:local;Stylesheets:master;Master stylesheets;Local stylesheets" />Local and Master Stylesheets</h2>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="LocalMasterStylesheetsOnline"></a>
+                    <MadCap:keyword term="Stylesheets:local;Stylesheets:master;Master stylesheets;Local stylesheets" />Local and Master Stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Flare lets you use local and master stylesheets. Local stylesheets are those associated with individual files (e.g., topics, master pages). Master stylesheets are those associated at the project or target level. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Associating_Stylesheets_with_Specific_Files.htm">Associating Regular Stylesheets with Specific Files</MadCap:xref> and <MadCap:xref href="Associating_Master_Stylesheets_with_All_Files.htm">Associating Master Stylesheets with All Files</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>Master stylesheets are usually preferred because you only have to set them in one place and they are automatically applied to all content files associated with that project or target. However, you might need to use stylesheets locally as well if you have multiple stylesheets in your project.</p>
+                <p>
+                    <MadCap:snippetText src="../Resources/Snippets/Styles/LocalMasterCSS1.flsnp" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Tip</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">You can use stylesheets both at the master and local level in the same project. However, in order to do this, when you set a master stylesheet on the project or target, you must select an option to allow local stylesheets. Using both master and local stylesheets might be a good approach, for example, if the vast majority of your topics will use one stylesheet and just a few topics will use another. The most streamlined way to use stylesheets in this situation is to set the stylesheet used by most topics at the master level, and then set the other stylesheet locally on the few remaining topics.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Stylesheets:master;Master stylesheets" />Master Stylesheet (Targets)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/AllowLocalMasterCSSTargetEditor.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Stylesheets:master;Master stylesheets" />Master Stylesheet (Project)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/AllowLocalMasterCSSProjectProperties.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Stylesheets:precedence" />Precedence for Stylesheets</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/Precedence.flsnp" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Precedence for Topics in XML Editor</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Styles/Precedence2.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Precedence for Output</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Styles/Precedence3.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSnippetStylesheetLinks.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="General.Print">Tasks Associated with Regular Stylesheets</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>tasks associated with regular stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary tasks associated with regular stylesheets. <MadCap:snippetText src="../Resources/Snippets/ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Stylesheets:creating" />Create a New Stylesheet </span>The first task for using styles in your topics is to add a new stylesheet if necessary. However, if a stylesheet was already included in the template when you created the project, you can use that one instead of creating a new one. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.FlareOnlineOnly">See <MadCap:xref href="Creating_New_Style_Sheets.htm">Creating New Regular Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="Products.Flare">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you already have a stylesheet (CSS file) somewhere else and want to reuse it in your current project, you can import that stylesheet. You can also import individual styles from another stylesheet into one you've got in your project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">See <MadCap:xref href="More_About_Styles_and_Style_Sheets/Importing_Style_Sheets.htm">Importing Stylesheets</MadCap:xref> and <MadCap:xref href="More_About_Styles_and_Style_Sheets/Importing_Styles.htm">Importing Styles</MadCap:xref>.</MadCap:conditionalText></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Create Selectors </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Styles/SelectorSummary.flsnp" />&#160;<MadCap:snippetText src="../Resources/Snippets/Styles/CreateSelectorsSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,General.OnlineLive">See <MadCap:xref href="Creating_Selectors.htm">Creating Selectors</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Styles:editing;Stylesheets:editing;Stylesheets:regular" />Edit Styles </span>You can edit styles contained in a regular stylesheet to quickly change the look of your content. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.FlareOnlineOnly">See <MadCap:xref href="Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="Products.Flare">
+                        <p><span class="SetOffFirstLevel">Associate a Stylesheet with Files </span>To use styles from a regular stylesheet, you must link the stylesheet to the appropriate file(s). You can do this in the following ways:</p>
+                        <ul class="SecondLevel">
+                            <li><span class="SetOffSecondLevel"><MadCap:keyword term="Topics:stylesheets;Styles:stylesheets;Cascading stylesheets;Master stylesheets;Styles:master stylesheets;Projects:master stylesheets;Targets:master stylesheets;Stylesheets:master;Stylesheets:project;Stylesheets:target" />Associate Master Stylesheets with All Files </span>You may want to associate a single stylesheet at the project or target level, thus making it a master stylesheet, which then automatically becomes available for all topics in that project or target. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.FlareOnlineOnly">See <MadCap:xref href="Associating_Master_Stylesheets_with_All_Files.htm">Associating Master Stylesheets with All Files</MadCap:xref>. </MadCap:conditionalText></li>
+                            <li><span class="SetOffSecondLevel"><MadCap:keyword term="Topics:stylesheets;Styles:stylesheets;Cascading stylesheets;Local stylesheets;Styles:local stylesheets;Stylesheets:local" />Associate Stylesheets Locally with Specific Files </span>You can also associate a stylesheet locally with specific files. This is the method to use when you have multiple stylesheets for a particular output. You can even associate multiple stylesheets with a single file. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.FlareOnlineOnly">See <MadCap:xref href="Associating_Stylesheets_with_Specific_Files.htm">Associating Regular Stylesheets with Specific Files</MadCap:xref>. </MadCap:conditionalText></li>
+                        </ul>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteMultipleStylesheetsPerTopicExcept.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:topics;Styles:applying to content;Topics:styles" />Apply a Style to Content </span>The final step is to apply styles to the content in your project. This is probably the style task you will perform most frequently. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,General.OnlineLive">See <MadCap:xref href="Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="Products.Flare">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Styles/TipPinningStyles.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">More About Regular Stylesheets</h2>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>more about regular stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">See the following for more information about regular stylesheets:</p>
+                <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">See the online Help or the <span class="EmphasisItalic">Styles Guide</span> for more information about regular stylesheets, including the following:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:types" />Types of Styles </span>Learn about the different kinds of styles that you can use in <MadCap:variable name="Other.Product" />. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Using_Styles_and_Stylesheets/Types_of_Styles_in_Flare.htm" target="" title="" alt="">Types of Styles in Flare</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:MadCap-specific;Styles:stylesheets;Styles:properties" />MadCap-specific Styles and Properties </span>Learn about the many different styles and properties that were created just for use in MadCap products. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Using_Styles_and_Stylesheets/MadCap_Specific_Styles_and_Properties.htm" target="" title="" alt="">MadCap-specific Styles and Properties</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Where's My Style? </span>  Learn about reasons why your style not always be available for use when you are editing content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Using_Styles_and_Stylesheets/Wheres_My_Style.htm" target="" title="" alt="">Where's My Style?</MadCap:xref></MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For the differences between regular stylesheets, table stylesheets, and local properties—and when you should use one over the other—see <MadCap:xref href="Using_Styles_and_Stylesheets/Regular_Stylesheets_Table_Stylesheets_or_Properties.htm">Regular Stylesheets, Table Stylesheets, or Local Properties?</MadCap:xref></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StylesUsingFlare" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:ignoredWords="CompanyName.&quot;;Incorporated.&quot;;h;hh;.tif;(.css;HF;flvar;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;VariableName;F11;F3;F7;NewWord;MadCap's;MyProfile;taskbar;filename1;filename2;filename3;1filename;2filename;3filename;Highcolor;Truecolor;truecolor;ProductName;OurSoftware" MadCap:lastBlockDepth="6" MadCap:lastHeight="1302" MadCap:lastWidth="1159" MadCap:conditions="Products.Capture" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Variables" />
+            <MadCap:concept term="Variables" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Variables</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Variables/VariableDefinition.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">types of variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h2 MadCap:conditions="General.Print">Types of Variables</h2>
+                <p>There are different kinds of variables in Capture.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:file" />File Variables</span> These are variables that you create in Capture. A file variable is available only for the image for which it was created. See <MadCap:xref href="Creating_Variables.htm">Creating Variables</MadCap:xref>.</li>
+                    <li>
+                        <MadCap:keyword term="Variables:system" /><span class="SetOffFirstLevel">System Variables</span> These are variables provided by Capture, such as variables for your system date and time. </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:project link" />Project Link Variables</span> These are variables that were created in a MadCap Flare project, which have been linked to the Capture image. Therefore, any variables in that project can also be used in your image. You can link to a Flare project from an image manually. However, if the image is already contained within the folder structure of a Flare project, those variables are automatically available to the image (i.e., you do not need to link to the project manually). See <MadCap:xref href="../Project_Links/Linking_to_Flare_ProjectsCapture1.htm">Linking to Project Variables</MadCap:xref>.</p>
+                    </li>
+                </ul>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say that you open an image that is already part of a MadCap Flare project. All of the variables from that Flare project automatically become available for you to use in your image (i.e., they are project link variables, as described above). Suppose that you want to use a variable called "ProductName." The definition that you have provided for that variable name in Flare is "OurSoftware Version 1." So within your image, you might add a bubble callout and add text to it (e.g., "Welcome to"). Then you select the ProductName variable. The callout now displays the text you typed, plus the definition of the variable (e.g., "Welcome to OurSoftware Version 1").</p>
+                    <p>Now let's say that it is a year later and your company has created another version of the software, called "OurSoftware Version 2." You need to change this name everywhere in your Flare project, as well as everywhere it has been used in an image callout. If you had not used a variable, you would need to manually find and replace the old name with the new name. Fortunately, you used a variable, so all you need to do is change the definition in one place. If you had created the variable within Capture, you would edit the definition in Capture's <a href="../Interface/UI_Elements/File_Properties_Dialog.htm" MadCap:conditions="General.OnlineLive" MadCap:excludeAction="unbind">File Properties dialog</a>. However, in this example, you used a variable from your Flare project. Therefore, you would modify the variable definition from within the Flare project. After you do so, the definition is changed everywhere that the variable was inserted (including within the callout in your image). </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tasks for using variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <h2 MadCap:conditions="General.Print">Tasks for Using Variables</h2>
+                <p>Following are the most common tasks associated with using variables in Capture.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Creating</span> You can create new variables in an image, although a more common task is to link to existing variables from a MadCap Flare project. See <MadCap:xref href="Creating_Variables.htm">Creating Variables</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Editing</span> After you create a variable, you can easily edit it in the File Properties dialog. If you change the definition for a variable that has already been inserted into objects, the changes will automatically be reflected wherever that variable has been inserted. See <MadCap:xref href="Editing_Variables.htm" target="" title="" alt="">Editing Variables</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Linking</span> You can link an image to a MadCap Flare project. This allows you to automatically have access to any variables or condition tags found in that Flare project. See <MadCap:xref href="../Project_Links/Linking_to_Flare_ProjectsCapture1.htm">Linking to Project Variables</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Inserting</span> After you create variables or link to existing variables in a MadCap Flare project, you can insert them into most objects that can be added to an image (e.g., callouts, rectangles). See <MadCap:xref href="Inserting_Variables_into_Objects.htm" target="" title="" alt="">Inserting Variables into Objects</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Variables" />
+        </p>
+    </body>
+</html>

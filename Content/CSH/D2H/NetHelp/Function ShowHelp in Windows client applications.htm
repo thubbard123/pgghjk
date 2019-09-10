@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2126" MadCap:lastWidth="1344" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HCSH.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Context-sensitive Help;NetHelp" />Function ShowHelp in Windows Client Applications</h1>
+        <p>In Windows client applications, you can use NetHelp context-sensitive Help  in two different ways:</p>
+        <ul>
+            <li>
+                <p>Use the Microsoft WebBrowser control to show Help inside one of your application windows. In this case you need to add a reference to the WebBrowser control in your application.</p>
+            </li>
+            <li>
+                <p>Show Help in a separate browser window. In this case you don’t need to use the WebBrowser control.</p>
+            </li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Syntax</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use the appropriate syntax.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>C#</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Code">ContextSensitiveHelp.ShowHelp(Query query, Parameters param, string url, object window)</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Visual Basic .NET</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Code">ContextSensitiveHelp.ShowHelp(ByVal query As Query, ByVal param As Parameters, ByVal url As String, ByVal window As Object) As Boolean</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Parameters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Query (Query Class) </span>Represents Query parameters: QueryType, Value.</p>
+                    </li>
+                    <ul class="SecondLevel">
+                        <li>
+                            <p><span class="SetOffSecondLevel">QueryType (QueryTypes enumeration) </span>Possible values: ContextID, Keyword, Group, Search, TopicUrl, None. Specifies what type of query must be performed. It is used together with the Value parameter.</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffSecondLevel">Value (String) </span>Corresponds to specified QueryType and contains either a context ID value, keyword, group, search query, or a topic URL.</p>
+                        </li>
+                    </ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Param (Parameter Class) </span>Represents Hash parameters: ActiveTab, TopicOnly.</p>
+                    </li>
+                    <ul class="SecondLevel">
+                        <li>
+                            <p><span class="SetOffSecondLevel">Tab (Tabs Enumeration) </span>Specifies the active tab when NetHelp is loaded. Possible values: Default, Contents, Index, Search.</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffSecondLevel">TopicOnly (Bool) </span>If true, the topic is displayed without the Contents, Index, and Search, and without header panel and toolbars. The user will still be able to navigate to other topics if this topic contains links to other topics, but the Contents, Index, and Search will be hidden. If false is passed, the complete Help system is displayed with Contents, Index, and Search, as well as header panel and toolbars. The user will be able to navigate through the links in the topic and through the Contents, Index, and Search.</p>
+                        </li>
+                    </ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">URL (String) </span>URL of the main web page of the Help or a direct topic URL. For example, the URL of a locally deployed NetHelp target can be a file path, although it still needs to be encoded as a URL with the prefix "file:///," such as file:///C:/Program Files (x86)/MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html; or, for a server-deployed NetHelp target it can be http://www.mycompany.com/myproject/index.html. This parameter is used to identify the Help system containing the topic. It is necessary because you may use multiple Help systems in the same application or even on the same web page.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Window (WebBrowser Object) </span>If this parameter is null (Nothing in Visual Basic .NET), the Help is shown in a separate browser window, as if you were opening an HTML file with a double-click. If this parameter is set to a WebBrowser component, the Help is shown in that component. Using the WebBrowser component, you can show Help inside your application windows.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HCSHGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Enable the Function</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Add one of the D2H_ctxt.* files to your project; use D2H_ctxt.cs for C# or D2H_ctxt.vb for Visual Basic .NET. </p>
+                    </li>
+                    <li>
+                        <p>To show context-sensitive Help  in one of your application windows, add the WebBrowser control reference to your application. If you choose to show Help in a separate browser window, you don’t need a reference to the WebBrowser control.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example—C#</p>
+                    <ol>
+                        <li>
+                            <p>Open default topic and Index </p>
+                            <p class="Code">tab string url = "file:///C:/Program Files (x86)/MadCap Software/DocToHelp /Samples/MyProject/NetHelp/index.html"; </p>
+                            <p class="Code">Query query = new Query(); </p>
+                            <p class="Code">Parameters parameters = new Parameters(Tabs.Index); </p>
+                            <p class="Code">ContextSensitiveHelp. ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                        <li>
+                            <p>Open default topic with default tab (Contents) in topic only mode</p>
+                            <p class="Code">string url = "file:///C:/Program Files (x86)/ MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html";</p>
+                            <p class="Code">Query query = new Query(QueryTypes.ContextID, "91");</p>
+                            <p class="Code">Parameters parameters = new Parameters(Tabs.Default, true);</p>
+                            <p class="Code">ContextSensitiveHelp.ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                        <li>
+                            <p>Open specified topic and search tab</p>
+                            <p class="Code">string url = "file:///C:/Program Files (x86)/ MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html";</p>
+                            <p class="Code">Query query = new Query(QueryTypes.TopicUrl, "documents/sandiego_attractions.htm");</p>
+                            <p class="Code">Parameters parameters = new Parameters(Tabs.Search);</p>
+                            <p class="Code">ContextSensitiveHelp.ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                    </ol>
+                    <p>To open NetHelp in an external browser window pass null instead of the&#160; "webBrowser" value.</p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example—Visual Basic .NET</p>
+                    <ol>
+                        <li>
+                            <p>Open default topic and Index tab</p>
+                            <p class="Code">Dim url As String, query As Query, parameters As Parameters</p>
+                            <p class="Code">url = "file:///C:/Program Files (x86)/ MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html"</p>
+                            <p class="Code">query = New Query()</p>
+                            <p class="Code">parameters = New Parameters(Tabs.Index)</p>
+                            <p class="Code">ContextSensitiveHelp.ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                        <li>
+                            <p>Open default topic with default tab (Contents) in topic only mode</p>
+                            <p class="Code">Dim url As String, query As Query, parameters As Parameters</p>
+                            <p class="Code">url = "file:///C:/Program Files (x86)/ MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html"</p>
+                            <p class="Code">query = new Query(QueryTypes.ContextID, "91")</p>
+                            <p class="Code">parameters = new Parameters(Tabs.Default, true)</p>
+                            <p class="Code">ContextSensitiveHelp.ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                        <li>
+                            <p>Open specified topic and search tab</p>
+                            <p class="Code">Dim url As String, query As Query, parameters As Parameters</p>
+                            <p class="Code">url = "file:///C:/Program Files (x86)/ MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html"</p>
+                            <p class="Code">query = new Query(QueryTypes.TopicUrl, "documents/sandiego_attractions.htm")</p>
+                            <p class="Code">parameters = new Parameters(Tabs.Search)</p>
+                            <p class="Code">ContextSensitiveHelp.ShowHelp(query, parameters, url, webBrowser);</p>
+                        </li>
+                    </ol>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

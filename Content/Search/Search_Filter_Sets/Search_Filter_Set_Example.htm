@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;n;reimport;flsfs" MadCap:lastBlockDepth="11" MadCap:lastHeight="3139" MadCap:lastWidth="871" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSearch.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Search:search filters" />
+            <MadCap:concept term="SearchFilter" />
+            <MadCap:concept term="FilterSearch" />Search Filter Set Example</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Search:search filters" />Search Filter Set Example</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTML5_WebHelp_WHPlus_WHAIR.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>Concepts and search filters might seem a little confusing to you at first. The following example is designed to help make these ideas clearer and guide you through the steps for creating your own search filter by using concepts.</p>
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">Scenario</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Let's say we have a Flare project called "Pets." In this project, we have dozens of topics about all kinds of animals (cats, dogs, parrots, hamsters, and so on). We have written five topics about dogs. These are:</p>
+                <ul>
+                    <li>Choosing a Dog</li>
+                    <li>Feeding a Dog</li>
+                    <li>Training a Dog</li>
+                    <li>Grooming a Dog</li>
+                    <li>Walking a Dog</li>
+                </ul>
+                <p>We want our users to be able to search for information about dogs. However, we want to limit their search to these five topics (so that they aren't bothered with seeing search results in other "non-dog" topics). We'll use a concept to tie our five "dog" topics together, and then we'll customize the search feature to include this concept.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">
+            <MadCap:keyword term="Concepts:creating" />Step 1—Create and Insert a Concept</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 1—create and insert a concept</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>First, we need to create a concept to tie these five topics together. We can create a concept with any name that we want, but it helps to name the keyword something that is obvious and all topics have in common. Therefore, we'll give our concept the name "dogs."</p>
+                <ol>
+                    <li>Open any of the five topics. In this example, we'll open the topic "Choosing a Dog."</li>
+                    <li>Click in the location in the topic where you want to insert the concept. Typically, you'll insert the concept somewhere near the top of the topic. In our example, we will click right before our topic title "Choosing a Dog."</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Reference</span> section select <span class="Emphasis">Concept Window</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">SHIFT+F9</span>.</li>
+                        </ul>
+                        <p>The Concept window pane opens.</p>
+                    </li>
+                    <li>
+                        <p>The cursor should already be placed in the <span class="Emphasis">Terms</span> cell. If not, click in that cell. Then type <span class="TypedEntry">dogs</span> and press <span class="Emphasis">Enter</span>. A concept marker labeled "dogs" is added before the topic title. If you cannot see the marker, you need to turn your markers on by clicking the down arrow next to the <span class="Emphasis">Show tags</span> button <img src="../../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> in the XML Editor. Then select <span class="Emphasis">Show Markers</span>.</p>
+                        <p>
+                            <img src="../../Resources/Images/concept_link_example2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">
+            <MadCap:keyword term="Concepts:search filters" />Step 2—Copy and Paste the Concept Marker into All Relevant Topics</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 2—copy and paste the concept marker into all relevant topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Next, we need to place the same concept marker in our other four "dog" topics. We could repeat the same steps above for each topic, but we'll copy and paste our first concept marker instead.</p>
+                <ol>
+                    <li>In the "Choosing a Dog" topic, click on the concept marker and choose <span class="Emphasis">Select</span>.</li>
+                    <li>Press <span class="Emphasis">CTRL+C</span> on your keyboard.</li>
+                    <li>Open another "dog" topic ("Feeding a Dog," "Training a Dog," etc.). Click in front of the topic title (or somewhere near the top of the topic), and press <span class="Emphasis">CTRL+V</span> on your keyboard. Repeat this until you've pasted the concept marker into all five of the "dog" topics.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">Step 3—Add a Search Filter Set and Create a Filter</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 3—add a search filter set and create a filter</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Now that we have the concepts in place, we can create a search filter for the "dog" topics.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Content</span> section select <span class="Emphasis">New&gt;Advanced&gt;Search Filter Set</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>In the Project Organizer, right-click on the <span class="Emphasis">Advanced</span> folder and from the context menu select <span class="Emphasis">Add Search Filter Set</span>.</li>
+                        </ul>
+                        <p>The Add File dialog opens.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Add</span>. The search filter set is added to the Advanced folder in the Project Organizer. The Search Filter Set Editor opens to the right, with an initial search filter entry shown. </li>
+                    <li>Click in the cell under the <span class="Emphasis">Filter Name</span> column until "My Subset" is highlighted. Type <span class="TypedEntry">Dog Topics</span> and press <span class="Emphasis">Enter</span>.</li>
+                    <li>Click in the cell under the <span class="Emphasis">Concepts</span> column. The Select Concepts for Search Filter dialog opens. </li>
+                    <li>In the <span class="Emphasis">Selected Concepts</span> section, double-click <span class="Emphasis">dogs</span>. The concept is added to the "All Concepts" section on the left side of the dialog.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">Step 4—Customize Search Filter Ordering</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 4—customize Search Filter Ordering</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have created multiple search filters, you can rearrange them to best suit the needs of your audience (in web outputs). By default, they are alphabetical, but you want to move the "dog" filter to the top of the list.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Double-click the <span class="Emphasis">Advanced</span> folder. Any search filter sets that you have added are listed.</li>
+                    <li>Double-click the search filter set you want to customize. The Search Filter Set Editor opens to the right. The <span class="Emphasis">Order</span> column represents the displayed order in the output.</li>
+                    <li>In the <span class="Emphasis">Filter Name</span> column, select the "dog"&#160;filter. </li>
+                    <li>To customize the order of the filters, do one of the following:<ul><li>Click <img src="../../Resources/Images/move_item_up_btn.png" class="ReduceButtonSize" /> or <img src="../../Resources/Images/move_item_down_btn.png" class="ReduceButtonSize" /> in the local toolbar.</li><li>Select <span class="Emphasis">Move Up</span> or <span class="Emphasis">Move Down</span> from the context menu.</li></ul></li>
+                    <li>(Optional) To reset the search filters to alphabetical order, click <img src="../../Resources/Images/search_filter_reset_btn.png" alt="" title="" class="ReduceButtonSize" />.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSearchGuide">
+            <MadCap:keyword term="Search:targets" />Step 5—Associate the Search Filter Set with a Target</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 5—associate the search filter set with a target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Finally, we need to make sure the search filter set that we created is associated with the target that we plan to build.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Search/AssociateSearchFilterWithTarget.flsnp" />
+                <p>Now when people use the search feature in our output, they can select "Dog Topics" from the Filter field to limit their search to our five "dog" topics.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="SearchFilter" xmlns:d4p1="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

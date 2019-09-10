@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="10491" MadCap:lastWidth="709" MadCap:conditions="Products.Flare,Products.Contributor,Products.Analyzer" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTables.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Tables:page breaks;Page breaks:tables;Styles:page breaks;Tables:styles" />
+            <MadCap:concept term="FilterTables" />Setting Page, Column, and Frame Breaks on Tables</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllPrint.flsnp" MadCap:conditions="Products.Flare" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>You can set page, column, and frame breaks on tables using a couple of different options. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.FlareOnlineOnly,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide">For additional information about frame breaks and why you might use them, see <MadCap:xref href="../../Page_Layouts/Frames/Setting_Frame_Breaks.htm">Setting Frame Breaks on Paragraphs and Headings</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTablesGuide">For additional information about frame breaks and why you might use them, see the online Help.</MadCap:conditionalText></p>
+        <p>In regular stylesheets, you can set breaks on the standard HTML table tags. The most common approach for page breaks is to set them on table rows through the tr style. Another option is that you can set breaks on rows (and on entire tables) through a table stylesheet. And because you can create patterns in table stylesheets, each pattern item might have different settings for breaks.</p>
+        <p>You might use standard HTML table tags in a regular stylesheet if you want all tables to follow the same behavior when it comes to breaks. On the other hand, you might use table style settings if you have complex tables and patterns requiring some table elements to break in a certain way and other elements to behave differently.</p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—page break in regular stylesheet</p>
+                    <p>Let's say you have a long table. In the output, the first part of the table might be shown on page 14, and the second part of it is shown on page 15. Suppose the final table row on page 14 has so much content that it wraps around to page 15, in essence splitting that row. If you would rather not split rows such as this, but rather keep them entirely on one page or another, you can set a page break on the tr style in a regular stylesheet. In this situation, you would set the "page-break-inside" property to "avoid." Therefore, all tables in your output would simply break automatically at the end of pages when necessary.</p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—page break in special table stylesheet</p>
+                    <p>Let's say you have many tables where you have not only main headings with a gray background at the top of each table, but subheadings with a blue background every so many rows. And whenever a new subheading is needed, you want a page break to occur before it so that the subheading row begins a new page. </p>
+                    <p>After designing your main header row in the Header tab of the Table Style Editor, you open the Rows tab. In the Rows tab you create two pattern items—one for the main table rows and another for rows used as subheadings.</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>You leave the "RegularRows" item set as a "Pattern" type, which means that this style will be applied to rows in the table automatically. On the other hand, you change the type of the "SubHeadings" item to "Custom." This means that the style will not automatically be applied to rows to be used as subheadings; instead, you must apply the style to those rows manually. Why? Because you can't predict when you're going to need a subheading in a table. So you simply apply that look whenever it's needed.</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>As mentioned, subheading rows should have a blue background, so that's what you set in the <span class="Emphasis">Background</span> area.</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>With the "SubHeadings" item still selected, you can click the <span class="Emphasis">Print Options</span> button at the bottom of the tab.</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example4.png" class="MaxWidth85Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>In the Breaks dialog you select <span class="Emphasis">Always</span> in the <span class="Emphasis">Before</span> field in the <span class="Emphasis">Page Break</span> section.</p>
+                    <p MadCap:conditions="Products.Flare,Products.Contributor">
+                        <img src="../../Resources/Images/table_row_breaks_example5.png" class="MaxWidth70Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../Resources/Images/table_row_breaks_example5_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>After you are finished designing your table stylesheet, you insert a table into a topic and apply the table stylesheet to it. But because the "SubHeading" pattern item was set to "Custom," none of the rows initially have the blue background or the page break setting. </p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example6.png" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>In PDF output the table might look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example7.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>In order for a row to be treated as a subheading row with a page break, you need to right-click on the <span class="Emphasis">tr</span> tag bar and select the custom "SubHeadings" style.</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example8.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>In the XML Editor, the table might now look like this (in this example, the topic is being viewed with the Default medium, which is why we don't see the page break in action):</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example9.png" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <p>And in the PDF output, it would look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/table_row_breaks_example10.png" class="MaxWidth65Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set breaks for tables in a regular stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectMediumStep1.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/SelectMediumStep2.flsnp" MadCap:conditions="Products.Flare" />
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/RemembersLastMedium.flsnp" />
+                        </p>
+                        <p MadCap:conditions="FlareGuides.FlareTablesGuide,Products.FlareOnlineOnly">
+                            <img src="../../Resources/Images/medium_example1.png" class="MaxWidth80Percent">
+                            </img>
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide" />
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterTableStylesStep.flsnp" />
+                    </li>
+                    <li>From the list below, select the appropriate style. Usually you want to put a break on table (which sets the break on the entire table) or tr (which sets the break on rows, allowing you to easily end a page with one row due to the amount of content, and begin the next page with the following row).</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandPrintSupportGroupStep.flsnp" />
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <li>
+                        <p>Select the appropriate property and value for it. Perhaps the most common setting is to click in the column to the right of <span class="Emphasis">page-break-inside</span>, and select <span class="Emphasis">avoid</span> from the drop-down. If you do this for the tr style, <MadCap:variable name="Other.Product" /> will automatically create a break between rows so that row content does not continue from one page to another.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>column-break-before</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a column break before the element (if you are using a multi-column page layout).</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always </span>A column break will always occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto </span>A column break will neither be forced nor prevented before the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A column break will not occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The column break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>column-break-after</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a column break after the element (if you are using a multi-column page layout).</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always </span>A column break will always occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto </span>A column break will neither be forced nor prevented after the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A column break will not occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The column break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>column-break-inside</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a column break after the element (if you are using a multi-column page layout).</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">auto </span>A column break will neither be forced nor prevented inside the rendering box of the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A column break will not occur inside the rendering box of the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The column break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>frame-break-before</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> Click in the column to the right of this property and select an option from the drop-down to set a frame break before the element.</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always</span> A frame break will always occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto</span> A frame break will neither be forced nor prevented before the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid</span> A frame break will not occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit</span> The frame break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>frame-break-after</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a frame break after the element.</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always</span> A frame break will always occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto</span> A frame break will neither be forced nor prevented after the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid</span> A frame break will not occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit</span> The frame break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>frame-break-inside</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Using the drop-down in the column to the right of this property, you can select one of the options for setting a frame break inside the "rendering box" of the element.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">automatic</span> A frame break will neither be forced nor prevented inside the rendering box of the element.</li><li><span class="SetOffFirstLevel">avoid</span> A frame break will not occur inside the rendering box of the element.</li><li><span class="SetOffFirstLevel">inherit</span> The frame break setting of the parent tag is used.</li></ul></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>page-break-before</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a page break before the element.</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always </span>A page break will always occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto </span>A page break will neither be forced nor prevented before the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A page break will not occur before the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The page break setting of the parent tag is used.</li>
+                                    <li><span class="SetOffFirstLevel">left </span>One or two page breaks will occur before the element so that the next page is formatted as a left page.</li>
+                                    <li><span class="SetOffFirstLevel">right </span>One or two page breaks will occur before the element so that the next page is formatted as a right page.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>page-break-after</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a page break after the element.</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">always </span>A page break will always occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">auto </span>A page break will neither be forced nor prevented after the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A page break will not occur after the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The page break setting of the parent tag is used.</li>
+                                    <li><span class="SetOffFirstLevel">left </span>One or two page breaks will occur after the element so that the next page is formatted as a left page.</li>
+                                    <li><span class="SetOffFirstLevel">right </span>One or two page breaks will occur after the element so that the next page is formatted as a right page.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>page-break-inside</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Click in the column to the right of this property and select an option from the drop-down to set a page break inside the "rendering box" of the element.</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">auto </span>A page break will neither be forced nor prevented inside the rendering box of the element.</li>
+                                    <li><span class="SetOffFirstLevel">avoid </span>A page break will not occur inside the rendering box of the element.</li>
+                                    <li><span class="SetOffFirstLevel">inherit </span>The page break setting of the parent tag is used.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Analyzer,Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Table styles:page layout breaks" />how to set breaks in a table stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>In the Table Style Editor, select the appropriate tab, depending on the table element that you want to create the break for.<ul type="1" class="FirstLevel"><li><span class="SetOffFirstLevel">General tab</span> This tab lets you set breaks for the entire table.</li><li><span class="SetOffFirstLevel">Rows tab</span> This tab lets you set breaks for regular rows in the table.</li></ul></li>
+                    <li>If the tab has multiple pattern items, select the one that you want to set the break for (e.g., in the Row Styles section).</li>
+                    <li>Toward the bottom of the tab click the <span class="Emphasis">Print Options</span> button. (You may need to use the scroll bar to view this button.) The Breaks dialog opens.</li>
+                    <li>
+                        <p>Use the <span class="Emphasis">Page Break</span>, <span class="Emphasis">Column Break</span>, and <span class="Emphasis">Frame Break</span> sections in the dialog to specify the settings for a page, column, or frame break, respectively.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>before</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>&#160;You can select one of the options for setting a page or column break before the element.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Automatic </span>A break will neither be forced nor prevented before the element.</li><li><span class="SetOffFirstLevel">Always </span>A break will always occur before the element.</li><li><span class="SetOffFirstLevel">Avoid </span>A break will not occur before the element.</li><li><span class="SetOffFirstLevel">Force to 'left page' </span>One or two page breaks will occur before the element so that the next page is formatted as a left page. This option is available only for page breaks, not for column or frame breaks.</li><li><span class="SetOffFirstLevel">Force to 'right page' </span>One or two page breaks will occur before the element so that the next page is formatted as a right page. This option is available only for page breaks, not for column or frame breaks.</li></ul></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>after</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>&#160;You can select one of the options for setting a break after the element.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Automatic </span>A break will neither be forced nor prevented after the element.</li><li><span class="SetOffFirstLevel">Always </span>A break will always occur after the element.</li><li><span class="SetOffFirstLevel">Avoid </span>A break will not occur after the element.</li><li><span class="SetOffFirstLevel">Force to 'left page' </span>One or two page breaks will occur after the element so that the next page is formatted as a left page. This option is available only for page breaks, not for column or frame breaks.</li><li><span class="SetOffFirstLevel">Force to 'right page' </span>One or two page breaks will occur after the element so that the next page is formatted as a right page. This option is available only for page breaks, not for column or frame breaks.</li></ul></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>inside</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>&#160;You can select one of the options for setting a break inside the "rendering box" of the element.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Automatic </span>A break will neither be forced nor prevented inside the rendering box of the element.</li><li><span class="SetOffFirstLevel">Avoid </span>A break will not occur inside the rendering box of the element.</li></ul></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>(Optional) If you have selected the General tab, you can also set widow and orphan properties for the table. By default, table widows and orphans are set at 1, which means that it is possible for there to be a single row from a table left at the top or bottom of a page or column (if you use multi-column page layouts). But you can change the setting in order to ensure that multiple rows are always shown at the top or bottom of a page or column.<ol type="1" class="LowerAlpha"><li>In the <span class="Emphasis">Widows</span> section, click the down arrow in the upper-right corner and select <span class="Emphasis">Number</span>. Then enter a number in the field. This determines the number of leftover rows allowed at the top of a page or column.</li><li>In the <span class="Emphasis">Orphans</span> section, click the down arrow in the upper-right corner and select <span class="Emphasis">Number</span>. Then enter a number in the field. This determines the number of leftover rows allowed at the bottom of a page or column.</li></ol></li>
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteTableStylePrecedence.flsnp" MadCap:conditions="Products.Flare" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are using a multi-column page layout and set an "Inside" break to "Avoid," you must specify this in both the "Page Break" and "Column Break" fields.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Frame breaks are supported only in PDF, XPS, and XHTML outputs.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It is also possible to use styles to set breaks on lists. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareStylesGuide">See <MadCap:xref href="../../Lists/Editng_List_Styles/Setting_Page_and_Column_Breaks_for_Lists.htm">Setting Page and Column Breaks for Lists</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp,Products.ContributorOnlineNotWebHelp">
+            <MadCap:conceptLink term="Tables" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

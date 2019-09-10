@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="15" MadCap:lastHeight="7150" MadCap:lastWidth="1315" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:ignoredWords="xxxINSERTXREF" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Learn how to manage users in MadCap Pulse. User administration is performed by administrators using the Pulse dashboard." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="AdminMenu" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Managing Users</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Managing Users</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>In the Pulse dashboard, the Administration&gt;Settings menu command is available to members of the Administrators group. This gives administrators the ability to click the <span class="Emphasis">Users</span> feature to add new users and perform user administration tasks on the Pulse web server. </p>
+        <h2 MadCap:conditions="General.Print">Types of Users</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>types of users</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you open the Users page, you will notice counts showing the total number of users:</p>
+                <p>
+                    <img src="../../../Resources/Images/pulse_internal_vs_external_users.png" class="MaxWidth100Percent" />
+                </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Internal Users </span>This is the total number of user accounts associated with the Administrators and Employees groups. These are the individuals responsible for administering and/or moderating Pulse. The PulseAdmin account is not included in this total.</li>
+                    <li><span class="SetOffFirstLevel">External Users </span>This is the total number of user accounts for the Customers group. These are the users who will typically log in to Pulse and use the community features in the Flare output.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <p>User access to Pulse tools and features is governed by group membership. There are four access levels for users:</p>
+                <table style="width: 100%;mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Group Name</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Access Level</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">User Type</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Administrators</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Full Access</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Registered</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Employees</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">Advanced Access</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Registered</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Customers</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Limited Access</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Registered</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">General Public</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">Restricted Access</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText">Unregistered</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By default, registered users who are not explicitly added to a group are granted the same access privileges as members of the Customers group. </p>
+                <p>In addition to the default groups above, Administrators can create more groups. See <MadCap:xref href="Managing_Groups.htm">Managing Groups</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Creating an Administrator Account</h2>
+        <p MadCap:conditions="General.Print">Although a default administrator account named "PulseAdmin" is created during the initial server configuration<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide"> (see <MadCap:xref href="../../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>)</MadCap:conditionalText>, it is strongly recommended that you create a "standard" user account and assign it administrative permissions for day-to-day administrative operations. </p>
+        <p class="note" MadCap:conditions="General.Print" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The default PulseAdmin account gives the account holder permission to log on to the Pulse server and perform administrative tasks, such as installing software and changing the network configuration. A "standard" account with administrative privileges simply gives the account holder permission to perform day-to-day administrative operations for the Pulse system.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create an administrator account</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">Although a default administrator account named "PulseAdmin" is created during the initial server configuration (see <MadCap:xref href="../../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>), it is strongly recommended that you create a "standard" user account and assign it administrative permissions for day-to-day administrative operations. </p>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The default PulseAdmin account gives the account holder permission to log on to the Pulse server and perform administrative tasks, such as installing software and changing the network configuration. A "standard" account with administrative privileges simply gives the account holder permission to perform day-to-day administrative operations for the Pulse system.</p>
+                <ol>
+                    <li>Log in to the Pulse dashboard using the default PulseAdmin account. See <MadCap:xref href="../About_the_Pulse_Dashboard.htm">About the Pulse Dashboard</MadCap:xref>.</li>
+                    <li>Select <span class="Emphasis">Administration&gt;Settings</span>. The Settings page opens.</li>
+                    <li>In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is selected. </li>
+                    <li>In the <span class="Emphasis">Manage&#160;Users</span> tab, click <span class="Emphasis">Invite a User</span>. This opens the Invite&#160;User page.</li>
+                    <li>
+                        <p>Type the following information in these fields.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/EditMyProfile.flsnp" />
+                    </li>
+                    <li>In the <span class="Emphasis">Group</span> area, place a check mark in the <span class="Emphasis">Administrators</span> box.</li>
+                    <li>When you are satisfied with the invitation, click <span class="Emphasis">Send Invite</span>.</li>
+                    <li>In the User Invite dialog, click <span class="Emphasis">Ok</span> to close the message confirming that the invitation was sent.</li>
+                </ol>
+                <p>When the email message arrives, follow the instructions to log in to Pulse. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">See <MadCap:xref href="../../Getting_Started/Logging_in_to_Pulse.htm">Logging In to Pulse</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Inviting New Users to Pulse</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>inviting new users to pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Members of the Administrators group have permissions to send Pulse invitations to other individuals by e-mail. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>minimum user account requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In order to send an email invite to users asking them join a Pulse community, you need their basic user information. This list details the minimum user account requirements:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">First Name </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctFirstName.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Last Name </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctLastName.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Email Address</span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctEmail.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Groups </span>The desired group membership for the user. A user can be a member of one or more groups. The default groups are: Administrators, Employees, or Customers. See <MadCap:xref href="Managing_Groups.htm">Managing Groups</MadCap:xref>.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to invite a single user</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="4">
+                            <li value="3">In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is selected. </li>
+                            <li>In the <span class="Emphasis">Manage&#160;Users</span> tab, click <span class="Emphasis">Invite a User</span>. This opens the Invite&#160;User page.</li>
+                            <li>Complete the fields on the page.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Group</span> area, place a check mark in the appropriate group name box(es) to add the user to one or more groups. You must select at least one group to send an invite.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When users belong to more than one group, they are granted the combined access for all the groups to which they belong.</p>
+                            </li>
+                            <li>When you are satisfied with the invitation, click <span class="Emphasis">Send Invite</span>.</li>
+                            <li>In the User Invite dialog, click <span class="Emphasis">Ok</span> to close the message confirming that the invitation was sent.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide,FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to bulk invite users</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p> If you would like to bulk invite users to join Pulse, members of the Administrators group can import users by importing a comma-separated values (CSV) file.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>csv file requirements</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To successfully import user data from CSV, keep the following in mind:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Import a CSV&#160;File </span>The file must be saved in the CSV&#160;format. </li>
+                                    <li><span class="SetOffFirstLevel">Include Column Headings in the Top Data Row </span>Always use the first data row to define the column headings. Column headings must use exact spelling shown in the table below under "Column Name."</li>
+                                    <li><span class="SetOffFirstLevel">Column Order is Not Important </span>As long as you have named the column headings as required, the order of your columns is not important. </li>
+                                    <li><span class="SetOffFirstLevel">Table Must Contain At Least One Data Row </span>At a minimum, the file must contain at least one row of data.</li>
+                                    <li><span class="SetOffFirstLevel">Always Include the Required Columns </span>At a minimum, the user data you plan to import must contain these columns:&#160;<span class="TypedEntry">FirstName</span>, <span class="TypedEntry">LastName</span>, <span class="TypedEntry">EmailAddress</span>, and at least one assignment for <span class="TypedEntry">Groups</span>.</li>
+                                </ul>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Below is an example of a properly formatted CSV file:</p>
+                                    <p>
+                                        <img src="../../../Resources/Images/pulse_import_users_csv_file.png" class="MaxWidth90Percent" />
+                                    </p>
+                                </div>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                                <p>In order to successfully import CSV-formatted user data into the system, see the information in the table below:</p>
+                                <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <thead>
+                                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                <p class="TableTextHead">Column Name</p>
+                                            </th>
+                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                <p class="TableTextHead">Format</p>
+                                            </th>
+                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                <p class="TableTextHead">Required Column</p>
+                                            </th>
+                                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                                <p class="TableTextHead">Description</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">FirstName</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">text</p>
+                                                <MadCap:dropDown>
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <div class="example">
+                                                            <p class="exampleHeadTextEmpty">example</p>
+                                                            <p>Enter the first name of the user:</p>
+                                                            <p> <span class="TypedEntry">Emily</span></p>
+                                                        </div>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">
+                                                    <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctFirstName.flsnp" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">LastName</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableText">text</p>
+                                                <MadCap:dropDown>
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <div class="example">
+                                                            <p class="exampleHeadTextEmpty">example</p>
+                                                            <p>Enter the last name of the user:</p>
+                                                            <p> <span class="TypedEntry">Smith</span></p>
+                                                        </div>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">
+                                                    <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctLastName.flsnp" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">EmailAddress</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">email address</p>
+                                                <MadCap:dropDown>
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <div class="example">
+                                                            <p class="exampleHeadTextEmpty">example</p>
+                                                            <p>Enter a valid email address:</p>
+                                                            <p><span class="TypedEntry">emily@example.com</span>
+                                                            </p>
+                                                            <p>A valid email address includes the account (emily), the ampersand (@) and the domain (example.com).</p>
+                                                        </div>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p src="../../../Resources/Snippets/Pulse/PulseUserAcctEmail.flsnp" class="TableText">
+                                                    <p>A valid email address.</p>
+                                                </p>
+                                                <MadCap:dropDown>
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>important</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">The email address is the unique identifier for the account. The email address cannot be changed once an account is created.</p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">Groups</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableText">text</p>
+                                                <MadCap:dropDown>
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <div class="example">
+                                                            <p class="exampleHeadTextEmpty">example</p>
+                                                            <p>To add the user to a single group, enter the group name. For example:</p>
+                                                            <p> <span class="TypedEntry">Customers</span></p>
+                                                            <p>To add the user to multiple groups, enter the group names and separate them with the semicolon. For example:</p>
+                                                            <p> <span class="TypedEntry">Administrators;Employees</span></p>
+                                                        </div>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText"> This in the group name (or names) in Pulse. </p>
+                                                <p class="TableText">To add a user to multiple groups, separate the group names using a semicolon (;).</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">Location</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">text</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">This can be used to specify the user location. This might be a facility, city, town, state, or region.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">Title</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableText">text</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">This is the user's professional title. </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">Department</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">text</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">This is the user's department.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">Phone</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableText">telephone number</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">This is the account holder's telephone number. <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseImportAreaCodePrefixLine.flsnp" /></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">Cell</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">telephone number</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">This is the users mobile number. <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseImportAreaCodePrefixLine.flsnp" /></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">Password</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <p class="TableText">text</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <p class="TableTextCenter">
+                                                    <img src="../../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p class="TableText">
+                                                    <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseUserAcctPassword.flsnp" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to import users from csv</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Follow these steps to import users into Pulse.</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you are syncing Pulse with Microsoft Active Directory&#160;(AD), you will not need to import your AD&#160;users.</p>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                                <ol start="3">
+                                    <li>In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is active in this page. </li>
+                                    <li>Click the <span class="Emphasis">Import Users</span> tab.</li>
+                                    <li>
+                                        <p>Under Select a User&#160;Data File, click the&#160;<span class="Emphasis">Choose File</span> button. </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The file that you using for the import must be saved in the CSV&#160;file format. The data in the file must also meet the requirement defined above. </p>
+                                    </li>
+                                    <li>
+                                        <p>In the Open dialog for Windows, find the file that you want to open. Then, double-click the file or highlight it and click <span class="Emphasis">Open</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/pulse_admin_import_choose_file.png" class="MaxWidth75Percent" />
+                                        </p>
+                                    </li>
+                                    <li>Under&#160;<span class="Emphasis">Email Options</span>, place a checkmark in the <span class="Emphasis">Send invitation emails to each user</span> box. </li>
+                                    <li>Type a message in the text box. The system includes the message "Welcome to Pulse" by default. </li>
+                                    <li>
+                                        <p>Click <span class="Emphasis">Import</span>.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the import is not successful, an error message appears. Most failed import attempts are due to a format error in your data file. Be sure to review the requirements for CSV files above. Then, try the import again.</p>
+                                    </li>
+                                    <li>
+                                        <p>Click <span class="Emphasis">Back</span> to return to the Import users page.&#160;Until your users log in to Pulse for the first time, you will not be able to find them in the&#160;Manage Users list.</p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to resend an invite</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Administrators can resend invitations to users that have not yet registered for Pulse. </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is active in this page. </li>
+                            <li>
+                                <p>In the <span class="Emphasis">Manage Users</span> tab, select the user to mange by following these steps:</p>
+                                <ol class="LowerAlpha">
+                                    <li>Type part of all of the user name.</li>
+                                    <li>In the selection list, place a checkmark in the box next to the desired username.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Click <span class="Emphasis">Next</span>. </p>
+                            </li>
+                            <li>
+                                <p>In the User Details page, click <span class="Emphasis">Resend Invite</span>. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option is only available if the user has not yet activated their Pulse account.</p>
+                            </li>
+                            <li>In the User Invite dialog, click <span class="Emphasis">Ok</span> to close the message that the invitation has been sent.</li>
+                        </ol>
+                        <p>The user can click the link in the invitation to log into Pulse for the first time. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Deleting/Disabling Use Accounts</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>deleting/disabling user accounts</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can disable, enable, and delete user accounts.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to disable a user account</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="4">
+                            <li>In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is active in this page. </li>
+                            <li>
+                                <p>In the <span class="Emphasis">Manage Users</span> tab, select the user to manage by following these steps:</p>
+                                <ol class="LowerAlpha">
+                                    <li>Type part or all of the user name.</li>
+                                    <li>In the selection list, place a checkmark in the box next to the desired username.</li>
+                                </ol>
+                            </li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>In the User Details page, click <span class="Emphasis">Disable</span>. </li>
+                            <li>In the Confirm Disable dialog, click <span class="Emphasis">Disable</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to enable a disabled account</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To enable a disabled account use the same steps as above. Click <span class="Emphasis">Enable</span> in the User Details page. </p>
+                        <p>
+                            <img src="../../../Resources/Images/pulse_user_detail_enable.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to delete a user account</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Members of the Administrators group have permissions to delete users in Pulse. After deleting a user, the user will no longer be able to sign in to Pulse. </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>
+                                <p>In the Settings page, click <span class="Emphasis">Users</span>. The Users page opens. By default, the Manage Users tab is active in this page. </p>
+                            </li>
+                            <li>Click the <span class="Emphasis">Manage Users</span> tab.</li>
+                            <li>
+                                <p>Select the user to manage:</p>
+                                <ol class="LowerAlpha">
+                                    <li>Type part or all of the user name. For example, type <span class="TypedEntry">cal</span>.</li>
+                                    <li>In the selection list, place a checkmark in the box next to the desired username. For example, select <span class="TypedEntry">Cal Customer</span>.</li>
+                                </ol>
+                            </li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>In the User Details page, click <span class="Emphasis">Delete</span>. </li>
+                            <li>In the Confirm Delete User dialog, click <span class="Emphasis">Delete</span>. The user will no longer be able to log in to Pulse.</li>
+                        </ol>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Deleting a Pulse user removes all access to Pulse. To give a user the ability to re-use the email address in Pulse, you must also delete the user from the dbo.Users and dbo.Login tables in the SQL&#160;Server instance for the Pulse database. Once the entries are deleted, the email can be used to create a new Pulse account.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AdminMenu" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="896" MadCap:lastWidth="841">
+    <head />
+    <body>
+        <p class="Subheading">Import error when importing microsoft word documents into Flare</p>
+        <p>When importing <MadCap:variable name="Outputs.Word" /> projects into a Flare project, Flare displays the following error message:</p>
+        <p class="Bold">Error converting the following document:</p>
+        <p class="Bold">[document name]</p>
+        <p class="Bold">The document can not be imported to Flare unless Microsoft Word can save the file in XML format.</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>This error can have the following causes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This error appears because the <MadCap:variable name="Outputs.Word" /> document being imported has its attribute set to "Read-only". Flare cannot save a <MadCap:variable name="Outputs.Word" /> document in XML format when its attribute is set to "Read-only", and therefore cannot import it into a project. </p>
+                <p>Set the attribute of the <MadCap:variable name="Outputs.Word" /> document being imported to "Read-only". Perform the following steps.</p>
+                <ol>
+                    <li>In the Windows Explorer, navigate to the location of the <MadCap:variable name="Outputs.Word" /> file that you want to import into Flare.</li>
+                    <li>Right-click the file and from the context menu, select <span class="Emphasis">Properties</span>.</li>
+                    <li>In the <span class="Emphasis">Attributes</span> section, click the <span class="Emphasis">Read-only</span> check box so that it is unchecked. </li>
+                    <li>Click <span class="Emphasis">Apply</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Import the <MadCap:variable name="Outputs.Word" /> document into Flare. The error will not appear.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The macros set in the <MadCap:variable name="Outputs.Word" /> document are causing problems with the import process.</p>
+                <p>Disable the macros in the <MadCap:variable name="Outputs.Word" /> document.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 3</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The document needs to be converted to XML format.</p>
+                <p>Save the document as an XML document, then save it again as a <MadCap:variable name="Outputs.Word" /> document. </p>
+                <ol>
+                    <li>In <MadCap:variable name="Outputs.Word" />, select <span class="Emphasis">File&gt;Save As</span>.</li>
+                    <li>In the <span class="Emphasis">Save as type</span> field, select <span class="Emphasis">Word XML Document</span>.</li>
+                    <li>Click <span class="Emphasis">Save</span>.</li>
+                    <li>Repeat steps 1 through 3, but in the <span class="Emphasis">Save as type</span> field, select <span class="Emphasis">Word Document</span>.</li>
+                    <li>Open Flare and import the <MadCap:variable name="Outputs.Word" /> document. The error should not appear. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>For more information see <MadCap:xref href="../../../Importing/Importing_Word_Files.htm">Importing Word Files</MadCap:xref>.</p>
+    </body>
+</html>

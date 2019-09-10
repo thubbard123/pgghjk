@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Lingo" MadCap:lastBlockDepth="13" MadCap:lastHeight="6531" MadCap:lastWidth="817" MadCap:conditionTagExpression="include[Snippets.Snippet13 or Snippets.Snippet2] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet11 or Snippets.Snippet12 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />
+            <MadCap:keyword term="Git;Source control:Git" />
+            <MadCap:keyword term="Source control;Multi-authoring" />About Git</h1>
+        <p>Because <MadCap:variable name="Other.Product" /> uses an open architecture,  <MadCap:variable name="Other.Product" /> projects are compatible with all source control systems. In addition to this native support for all source control applications, <MadCap:variable name="Other.Product" /> provides integrated support with some source control applications. </p>
+        <p>Please reference the source control topics in this section if you are using <MadCap:variable name="Other.Product" />'s integrated source control with Git.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideGit,FlareGuides.FlareSourceControlGuideGit" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" class="NoPageBreakBefore">Common Source Control Terms </h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>common source control terms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are definitions for some of the common phrases used in <MadCap:variable name="Other.Product" />'s integrated source control with Git.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind </span>This means to connect your project to Git. After doing this, you can then take advantage of all the automated source control tasks (such as commit, revert, pull, push, and so on). </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit;Commit" />Commit </span>This means to record your <MadCap:variable name="Other.Product" /> files to the local Git repository.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:revert;Revert" />Revert </span>This means to undo changes you have made to a <MadCap:variable name="Other.Product" /> file. Changes are reverted to the way they were at the last commit.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:synchronize;Synchronize" />Synchronize </span>This pulls the files from the remote Git repository and merges them with your local database, then pushes your local changes back to the remote Git repository.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pull;Pull" />Pull </span>This retrieves commits from the remote Git repository and merges them with the files in your local database.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:push" />Push </span>This sends commits from your local database to the remote Git repository.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:source control" />Branch </span>This creates a new path for commits. This lets you create new versions of a file while keeping the original file unchanged (e.g., for documenting a new feature, testing page layouts, or rewriting existing information). You can create as many branches as you want.</li>
+                </ul>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:variable name="Other.Product" /> integrates with multiple source control providers to provide built-in source control support. Each of the source control providers built-in to <MadCap:variable name="Other.Product" /> uses different terms. As such, <MadCap:variable name="Other.Product" />'s source control interface is different depending on which source control provider you use. Please refer to the sections for each source control provider if you need to see information about the terms used by other built-in systems.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" class="NoPageBreakBefore">Source Control Icons</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>source control icons</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are descriptions for the primary icons that you may see next to files when using Git. </p>
+                <table class="TableStyle-Simple" style="mc-table-style: url('../../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                    <col style="width: 22px;" class="TableStyle-Simple-Column-Column1" />
+                    <col class="TableStyle-Simple-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/SourceControlCheckedOut.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Modified</span>
+                                </p>
+                                <p class="TableText">This indicates that the file has been modified. You can commit the file to your local Git repository when you are ready. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1" MadCap:conditions="">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/SourceControlNewFile.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1" MadCap:conditions="">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">New File (Pending Add)</span>
+                                </p>
+                                <p class="TableText">This indicates that you have a file in your project but have not yet added it to Git. This might occur, for example, if you create a new topic and do not add the file to source control during the topic creation process. To resolve this, simply right-click on the file and select <span class="Emphasis">Source Control&gt;Add</span>. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_git.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="Products.Lingo">
+                            <td class="TableStyle-Simple-BodyB-Column1-Row1" MadCap:conditions="">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/SourceControlNewFile.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyA-Column1-Row1" MadCap:conditions="">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">New File</span>
+                                </p>
+                                <p class="TableText">This indicates that you have a file that only exists in your local copy of the project. This might occur if you import a Lingo project from source control and have not yet checked in your files to the server, or if you update a project and new files are added from the source project.  To resolve this, simply right-click on the file(s) and select <span class="Emphasis">Source Control&gt;Push</span>. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Pushing_Files_to_a_Remote.htm">Pushing Files to a Remote Repository</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit">General Workflow (Multi-<MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">Author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">User </MadCap:conditionalText>Team)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (multi-
+					<MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">
+					author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">
+						User
+				</MadCap:conditionalText>team)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s source control integration for a <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">multi-author </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">multi-user </MadCap:conditionalText>team.                     </p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Set Up Git </span>Install Git and set up the local database and any folders where you want to place the project. You should also set up your remote repository. Also, assign permissions to the proper individuals. This task may be performed by someone else, such as a network administrator.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2a.flsnp" />
+                                </p>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing <MadCap:variable name="Other.Product" /> project on your local machine, bind the project to Git. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_git.htm">Binding a Project to Git</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only one of the <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>needs to perform this task. The other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>on the team can follow Step 3 below. </p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:importing projects" />Import Project </span>Other users on the team can easily import the project from the remote repository. This creates a copy of the <MadCap:variable name="Other.Product" /> project on the <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author's </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user's </MadCap:conditionalText>computer. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Lingo">See <MadCap:xref href="../Git/Importing_a_Project_from_Source_Control_git.htm">Importing a Project from Git</MadCap:xref>. </MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" /></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pull;Pull" />Pull Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlPull.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:modify;Modify:source control" />Modify Files </span> <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlModifyFilesGit.flsnp" /></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit" />Commit Files </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCommitSummaryGit.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                <ol MadCap:continue="true">
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:create" />Create Branches </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBranchesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo"> See <MadCap:xref href="More_About_Source_Control/Creating_Branches.htm">Creating Branches</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:switch" />Switch Branches </span>If you have created more than one branch, you can select the branch you want to work with. You will see the files associated with the selected branch, and new commits will be sent to the selected branch. By default, the master branch is selected. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Selecting_Branches.htm">Switching Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:publish" />Publish Branches </span> If you have created a branch, you can publish the branch. This allows you to push to, pull from, and synchronize that branch. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Publishing_Branches.htm">Publishing Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:delete" />Delete Branches </span>If you no longer need a branch, you can delete it. This also deletes any commits on that branch. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Deleting_Branches.htm">Deleting Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:push;Push" />Push Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlPush.flsnp" />
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:synchronize;Synchronize" />Synchronize </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlSynchronize.flsnp" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_git.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:merging;Merging:source control" />Merging </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlMergeSummaryGit.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Merging_Source_Control_Files_git.htm">Merging Source Control Files</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit">General Workflow (Single <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">Author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">User</MadCap:conditionalText>)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (Single
+					<MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">
+					author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">
+						User
+				</MadCap:conditionalText>)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s Git integration for a single <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user</MadCap:conditionalText>.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Set Up Git </span>Install Git and set up the local database and any folders where you want to place the project. You should also set up your remote repository. Also, assign permissions to the proper individuals. This task may be performed by someone else, such as a network administrator.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2a.flsnp" />
+                                </p>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing <MadCap:variable name="Other.Product" /> project on your local machine, bind the project to Git. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_git.htm">Binding a Project to Git</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pull;Pull" />Pull Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlPull.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:modify" />Modify Files </span> <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlModifyFilesGit.flsnp" /></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit;Commit:source control" />Commit Files </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCommitSummaryGit.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:create" />Create Branches </span> <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBranchesSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Creating_Branches.htm">Creating Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:switch" />Switch Branches </span>If you have created more than one branch, you can switch to the branch you want to work with. You will see the files associated with the selected branch, and new commits will be sent to the selected branch. By default, the master branch is selected.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo"> See <MadCap:xref href="More_About_Source_Control/Selecting_Branches.htm">Switching Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:publish" />Publish Branches </span> If you want to push to, pull from, or synchronize using a branch you have created, you must publish the branch. You can still commit to an unpublished branch, but until you publish, you will not be able to send your commits to source control for backup. It is a good idea to publish branches unless you are only using a branch for a short period of time.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo"> See <MadCap:xref href="More_About_Source_Control/Publishing_Branches.htm">Publishing Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch;Branch:delete" />Delete Branches </span> If you no longer need a branch, you can delete it. This also deletes any commits on that branch. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Deleting_Branches.htm">Deleting Branches</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:push;Push" />Push Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlPush.flsnp" />
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:synchronize;Synchronize" />Synchronize </span> <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlSynchronize.flsnp" /></p>
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_git.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit">Additional Source Control Tasks and Features</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>additional source control tasks and features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are some additional tasks and features related to source control:<![CDATA[                    ]]></p>
+                <ul>
+                    <li MadCap:conditions="Products.Flare">
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:API;API:source control" />API </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlUseAPI.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotMandatoryToUseSourceControlAPI.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:status updates" />Automatic Status Checks </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAutoStatusChecks.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Enabling_Source_Control_Status_Checks_git.htm">Enabling Source Control Status Checks</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:differences;Differences:source control" />Differences </span>You can view differences between files in various ways. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Viewing_Differences_in_Source_Control_Files_git.htm">Viewing Differences in Source Control Files</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:get latest version;Projects:source control" />Disable Prompt for Get Latest </span>By default, when you open a project that is bound to source control, a message automatically asks if you want to get the latest version of files. However, you can disable this prompt in the Options dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Disabling_Get_Latest_Prompt_git.htm">Disabling the Get Latest Prompt for Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:history;History:source control" />History </span>You can view the history of a particular source control file. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Viewing_the_History_of_Source_Control_Files_git.htm">Viewing the History of Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/SourceControlHistoryOptionsListGit.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet14] " />
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:publishing;Publishing:source control" />Publish to Source Control </span>You can use Flare to directly publish your output to source control, rather than having to upload it to source control separately. Publishing your output to source control is beneficial because it you can keep previous versions of your output in source control and access them if necessary. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Publishing_to_Source_Control_git.htm">Publishing to Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:unbind;Projects:source control;Unbinding:source control" />Unbind </span>You can unbind a project from source control. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Lingo">See <MadCap:xref href="../Git/More_About_Source_Control/Unbinding_a_Project_from_Source_Control_git.htm" target="" title="" alt="">Unbinding a Project from Git</MadCap:xref>. </MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" /></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:network settings;Network settings:modify" />View and Modify Network Settings </span>You can view and modify your current source control network settings without having to close <MadCap:variable name="Other.Product" />. You can make changes to several settings, including SSL configurations, HTTP&#160;proxy options, and cookies. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Products.Lingo">See <MadCap:xref href="More_About_Source_Control/Modifying_Network_Settings_git.htm">Modifying Network Settings</MadCap:xref>.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Because of the way Git is designed, when you remove files from your project and commit your changes to the local database, you still need to push your changes to the remote repository in order for those files to be removed from the remote repository. </p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you unpack a zipped project that is bound to source control, the files in the unpacked project become editable. See <MadCap:xref href="../../Zip/Opening_Zipped_Projects.htm">Opening Zipped Projects</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

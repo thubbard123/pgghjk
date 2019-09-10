@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="F5" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="519" MadCap:lastWidth="693">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Subheading">Remove files to locate problems</p>
+        <p>Sometimes you might experience a problem where it seems particularly difficult to locate the source of the issue. This is particularly true when you have a build error that prevents a target from finishing the compilation process.</p>
+        <p>One way to discover the precise location of the problem is remove files until you no longer have the issue.</p>
+        <ol>
+            <li>Before you remove anything from your project, first make a copy of it.</li>
+            <li>In Windows, open the folder where the backup project is stored.</li>
+            <li>Delete several files. However, do not remove the few files that are absolutely necessary to open the project and generate the target. This includes the main FLPRJ project file and the target file itself. But otherwise, try deleting many of your content files.</li>
+            <li>Open the backup project in Flare and try generating the target again. You will probably see several warnings in the Builds window pane due to the files you removed. Don't worry about those. You are only concerned about seeing the error that you saw previously.</li>
+            <li>If you experience the same error again, repeat these steps until it does not occur. Then you can put some of the deleted files back into the folder and try again until you narrow the issue down to a specific file. Even then, you may need to then remove content from the problem file and try generating again until you discover the source of the problem.</li>
+        </ol>
+    </body>
+</html>

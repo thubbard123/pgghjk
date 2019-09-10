@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="11" MadCap:lastHeight="7815" MadCap:lastWidth="1121" MadCap:conditions="Products.Flare" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:concept term="BuildOutput" />
+            <MadCap:keyword term="Building:targets using command line;Targets:building output;Output:building targets;Command line:building targets;Batch:output;Output:batch" />Building Targets Using the Command Line</h1>
+        <p>Use the following steps if you want to use your operating system's command line to build: (1) all targets in a single batch, (2) one specific target, or (3) a batch target that already exists in <MadCap:variable name="Other.Product" />. Using this method, you do not have to open <MadCap:variable name="Other.Product" /> at all.</p>
+        <p>A batch is simply a way to perform many tasks with one action by grouping all of those tasks into a batch. There are a couple of ways that you can use batches for output in <MadCap:variable name="Other.Product" />.</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">BAT Files </span>The following steps describe how to use the operating system's command line to build output. The best way to use the command line feature is to create a simple batch (.bat) file with the necessary commands in it so that you do not need to enter all of those commands manually each time. You can also use a scheduling tool (such as the Scheduled Tasks utility in Windows) to run the batch file automatically whenever you want. You can complete any of the following command line tasks with or without the use of a BAT file.</li>
+            <li><span class="SetOffFirstLevel">Batch Targets </span>In the <MadCap:variable name="Other.Product" /> interface, you can create a batch target, which lets you group all of your targets together, specifying which ones should be generated and/or published when that batch target is generated. There are two ways to run a batch target: <ul class="SecondLevel"><li><span class="SetOffSecondLevel">Interface </span>You can run a batch target within the <MadCap:variable name="Other.Product" /> interface, which is the easiest method. See <MadCap:xref href="Building_Output_Using_a_Batch_Target.htm">Building Output Using a Batch Target</MadCap:xref>.</li><li><span class="SetOffSecondLevel">Command Line </span>You can run a batch target using the command line. You can even use a BAT file to run a batch target. See <MadCap:xref href="#CommandLineBatchTarget">How to Use the Command Line to Build a Batch Target in Your Project</MadCap:xref>.</li></ul></li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Command line:building all targets" />how to use the command line to build all targets in your project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineCompileFirstSteps.flsnp" />
+                <ol>
+                    <li value="3">
+                        <p>
+                            <MadCap:keyword term="Madbuild" />Type the following and press <span class="Emphasis">Enter</span> on your keyboard (entering the path to your project in place of the section in angle brackets):</p>
+                        <p><span class="TypedEntry">madbuild -project [project]</span>
+                        </p>
+                        <p>A log file is generated and saved automatically at the root level of the output folder for that target, whether or not there are errors or warnings. See <MadCap:xref href="More_About_Building_Final_Output/Opening_Build_Logs.htm">Opening Build Logs</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSpacesQuotationMarksCommandLine.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineQuotationMarksTip.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you have a <MadCap:variable name="Other.Product" /> project called "FictionSoftPro" that you have stored in a folder of the same name at the root level of the C: drive, you can type this:</p>
+                                    <p class="Code">madbuild -project c:\fictionsoftpro\fictionsoftpro.flprj</p>
+                                </div>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you have a project called "FictionSoftPro" that you have stored in a folder named "My Projects" (with a space) at the root level of the C: drive, you would type this:</p>
+                                    <p class="Code">madbuild -project "c:\my projects\fictionsoftpro.flprj"</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p>If you are using the command prompt window, the targets in that project generate immediately, and the output files are copied to the Output subfolder in your main project folder. </p>
+                        <p>If you are creating a batch file in Notepad, it might look something like this:</p>
+                        <p>
+                            <img src="../Resources/Images/batch_file_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li class="PageBreakBefore">
+                        <MadCap:snippetText src="../Resources/Snippets/Output/CommandLineScheduledTask.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineScheduledTaskSteps.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Command line:building one target" />how to use the command line to build a specific target in your project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineCompileFirstSteps.flsnp" />
+                <ol>
+                    <li value="3">
+                        <p>Type the following and press <span class="Emphasis">Enter</span> on your keyboard (entering the path to your project and the name of the target in place of the sections in angle brackets):</p>
+                        <p><span class="TypedEntry">madbuild -project [project] -target [target name]</span>
+                        </p>
+                        <p>A log file is generated and saved automatically at the root level of the output folder for that target, whether or not there are errors or warnings. See <MadCap:xref href="More_About_Building_Final_Output/Opening_Build_Logs.htm">Opening Build Logs</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The default location for targets is in the root Targets folder in the Project Organizer. However, you can create subfolders and place different targets in different folders (see <MadCap:xref href="../Folders/Creating_Subfolders.htm" target="" title="" alt="">Creating Subfolders</MadCap:xref>). If you do this, make sure you include the subfolder name in your command. You can do this by typing the name of the subfolder, followed by a slash, and then the name of the target (i.e., madbuild -project [project] -target [mysubfoldername/mytargetname]).</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSpacesQuotationMarksCommandLine.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineQuotationMarksTip.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you have a project called "FictionSoftPro" that you have stored in a folder of the same name at the root level of the C: drive. If you want to build only the target named "Beginner" in that project, you can type this:</p>
+                                    <p class="Code">madbuild -project c:\fictionsoftpro\fictionsoftpro.flprj -target Beginner</p>
+                                </div>
+                                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If the project is located in a folder called "My Projects" (with a space), you would type this:</p>
+                                    <p class="Code">madbuild -project "c:\my projects\fictionsoftpro.flprj" -target Beginner</p>
+                                </div>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If the target is named "Beginner Online Help" (with spaces between words), you would type this:</p>
+                                    <p class="Code">madbuild -project "c:\my projects\fictionsoftpro.flprj" -target "Beginner Online Help"</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p>If you are using the command prompt window, the targets in that project generate immediately, and the output files are copied to the Output subfolder in your main project folder.</p>
+                        <p>If you are creating a batch file in Notepad, it might look something like this:</p>
+                        <p>
+                            <img src="../Resources/Images/batch_file_example2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Output/CommandLineScheduledTask.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineScheduledTaskSteps.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Command line:batch targets;Batch targets:command line" /><a name="CommandLineBatchTarget"></a>How to Use the Command Line to Build a Batch Target in Your Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineCompileFirstSteps.flsnp" />
+                <ol>
+                    <li value="3">
+                        <p>Type the following and press <span class="Emphasis">Enter</span> on your keyboard (entering the path to your project and the name of the target in place of the sections in angle brackets):</p>
+                        <p><span class="TypedEntry">madbuild -project [project] -batch [batch target name]</span>
+                        </p>
+                        <p>A log file is generated and saved automatically at the root level of the output folder for that target, whether or not there are errors or warnings. See <MadCap:xref href="More_About_Building_Final_Output/Opening_Build_Logs.htm">Opening Build Logs</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The default location for batch targets is in the root Targets folder in the Project Organizer. However, you can create subfolders and place different batch targets in different folders (see <MadCap:xref href="../Folders/Creating_Subfolders.htm" target="" title="" alt="">Creating Subfolders</MadCap:xref>). If you do this, make sure you include the subfolder name in your command. You can do this by typing the name of the subfolder, followed by a slash, and then the name of the batch target (i.e., madbuild -project [project] -batch [mysubfoldername/mybatchtargetname]).</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSpacesQuotationMarksCommandLine.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineQuotationMarksTip.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you have a project called "FictionsoftPro" that you have stored in a folder of the same name at the root level of the C: drive. If you want to build the batch target named "MyBatchTarget" in that project, you can type this:</p>
+                                    <p class="Code">madbuild -project c:\fictionsoftpro\fictionsoftpro.flprj -batch MyBatchTarget</p>
+                                </div>
+                                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If the project is located in a folder called "My Projects" (with a space), you would type this:</p>
+                                    <p class="Code">madbuild -project "c:\my projects\fictionsoftpro.flprj" -batch MyBatchTarget</p>
+                                </div>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If the batch target is named "My Batch Target" (with spaces between words), you would type this:</p>
+                                    <p class="Code">madbuild -project "c:\my projects\fictionsoftpro.flprj" -batch "My Batch Target"</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p>If you are using the command prompt window, the targets in that project generate immediately, and the output files are copied to the Output subfolder in your main project folder.</p>
+                        <p>If you are creating a batch file in Notepad, it might look something like this:</p>
+                        <p>
+                            <img src="../Resources/Images/batch_file_example3.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Output/CommandLineScheduledTask.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineScheduledTaskSteps.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Output/WarningBuildErrorsAVScan.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">errorlevel global variable</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you generate output using the command line, <MadCap:variable name="Other.Product" /> sends a value to the command line's ERRORLEVEL global variable. This value indicates the success, or lack of success, of the compilation and/or publishing process. To see this value, type ECHO %ERRORLEVEL% at the command prompt after the compilation finishes. Only one value can be shown at a time.</p>
+                <p>
+                    <img src="../Resources/Images/command_line_error_level_example.png" class="MaxWidth100Percent" />
+                </p>
+                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">For more details on a particular error code, please refer to the log file that is generated. See <MadCap:xref href="More_About_Building_Final_Output/Opening_Build_Logs.htm">Opening Build Logs</MadCap:xref>.</p>
+                <p>Codes listed below in <span class="BoldWarning">red</span> indicate that the output did not compile at all. For the other codes, there may be issues (e.g., missing linked file), but the output is still able to finish compiling. </p>
+                <p class="Subheading">common codes</p>
+                <ul style="list-style-type: square;">
+                    <li>0  = Success - No problems</li>
+                    <li>
+                        <p class="TableTextRedBold">1  = One or more Target Builds failed – One or more of the targets failed to compile</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2  = One or more Publish Targets failed – One or more of the targets failed to compile</p>
+                    </li>
+                    <li>3  = Build completed with compiler warnings</li>
+                    <li>4  = Compiler reported errors</li>
+                    <li>5  = Failed to process one or more project import files</li>
+                    <li>6  = Failed to load topic</li>
+                    <li>7  = Missing linked file</li>
+                </ul>
+                <p class="Subheading">other codes</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p class="TableTextRedBold">-1 = Application error – Something critical has forced <MadCap:variable name="Other.Product" /> to close</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">1000 = Zero arguments passed in</p>
+                    </li>
+                    <li>1001 = Show Help</li>
+                    <li>
+                        <p class="TableTextRedBold">2000 = Unlicensed <MadCap:variable name="Other.Product" /></p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2001 =  <MadCap:variable name="Other.Product" /> not activated</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2002 = Invalid license activation code</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2003 = License expired</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2004 = Evaluation expired</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2005 = Trial expired</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2006 = Project does not exist</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2007 = Batch file does not exist</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2008 = Floating session request failed</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2009 = Floating session timeout</p>
+                    </li>
+                    <li>
+                        <p class="TableTextRedBold">2010 = Target not found</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you build targets using the command line, you can do the following.</p>
+                <ul class="FirstLevel">
+                    <li><span class="SetOffFirstLevel">View </span>See <MadCap:xref href="More_About_Building_Final_Output/Viewing_Output.htm" target="" title="" alt="">Viewing Output</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Test </span>See <MadCap:xref href="More_About_Building_Final_Output/Testing_Output.htm" target="" title="" alt="">Testing Output</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="BuildOutput" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2199" MadCap:lastWidth="813" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FrameMaker" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing;Adobe FrameMaker:passthrough markers;Passthrough markers" />Creating Passthrough Markers in FrameMaker Source Documents</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerPassthroughMarkerSummary.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerPassthroughMarkerSummary2.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerPassthroughMarkerSummary3.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerPassthroughMarkerExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareTransitionFromFMGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a passthrough marker in a framemaker source document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are steps for creating these markers in<MadCap:keyword term="Adobe FrameMaker" /><MadCap:variable name="Outputs.Frame" />. For more information, please refer to the documentation provided with <MadCap:variable name="Outputs.Frame" />.</p>
+                <p>The following steps may vary in different versions of FrameMaker.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the FrameMaker document.</li>
+                    <li>In FrameMaker, create the passthrough marker type that is required for this feature. This is a one-time step in the document. Afterwards, you can simply select the newly created marker type when applying it to content. To create the passthrough marker type, do the following.<ol type="1" class="LowerAlpha"><li>In FrameMaker, select <span class="Emphasis">Special&gt;Marker</span>. The Marker dialog opens.</li><li>From the <span class="Emphasis">Marker Type</span> field, click the down arrow and select <span class="Emphasis">Edit</span>. The Edit Custom Marker Type dialog opens.</li><li>In the field, replace the existing text and type <span class="TypedEntry">PassThrough</span>.</li><li>Click <span class="Emphasis">Add</span>.</li><li>Click <span class="Emphasis">Done</span>.</li></ol></li>
+                    <li>In the FrameMaker document, place your cursor at the location where you want to insert a passthrough marker.</li>
+                    <li>If it is not already displayed, open the Marker dialog (<span class="Emphasis">Special&gt;Marker</span>).</li>
+                    <li>If the passthrough marker type is not already displayed in the dialog, click the <span class="Emphasis">Marker Type</span> down arrow and select <span class="Emphasis">PassThrough</span>.</li>
+                    <li>In the <span class="Emphasis">Marker Text</span> field, enter the text and/or code that you want to be included in the marker.</li>
+                    <li>Click <span class="Emphasis">New Marker</span>.</li>
+                    <li>Save the FrameMaker document.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide,FlareGuides.FlareImportGuide" />
+                <ol type="1" class="Decimal" MadCap:continue="true">
+                    <li>
+                        <p>In <MadCap:variable name="Other.Product" />, go through the process for importing the FrameMaker document. When you arrive at the "Options" page in the Import FrameMaker Wizard or the "Options" tab in the Frame Import Editor, make sure <span class="Emphasis">Enable 'Passthrough' Markers</span> is selected. Then from the <span class="Emphasis">Passthrough Marker Format</span> field, select one of the options:</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Importing/FrameMakerPassthroughMarkerFormatOptions.flsnp" />
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteFmSupports7AndNewer.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="FrameMaker" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareTransitionFromFMGuide" />
+    </body>
+</html>

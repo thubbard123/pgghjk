@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:ignoredWords="Login" MadCap:lastBlockDepth="13" MadCap:lastHeight="17290" MadCap:lastWidth="1068" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <meta name="description" content="Learn how to integrate a Pulse system with a Flare community. This adds the Pulse social layer and community features to your published Flare output. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Pulse:Flare integration;MadCap Pulse:communities;MadCap Pulse:systems" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Flare:integration;Communities;Systems" MadCap:conditions="Products.Pulse" />Integrating Flare and Pulse</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:Flare integration;MadCap Pulse:communities;MadCap Pulse:systems" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Flare:integration;Communities;Systems" MadCap:conditions="Products.Pulse" />Integrating Flare and Pulse</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/HTML5_WebHelp_WHPlus.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Pulse/IntegrateFlarePulseSummary.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Integration Options</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>integration options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are developing an online Flare target for a single product, service, or purpose, integrating Flare is a straightforward process. You simply install Pulse and then add a new Flare community to create a corresponding system in Pulse. However, because many organizations develop multiple Flare targets, you also have these options:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Add a Single Flare Community for Use With Multiple Targets </span>In this scenario, you add one Flare community which creates a corresponding Pulse system. Then you associate that community with multiple Flare targets. This method gives you less-granular reporting capabilities in Pulse.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Add a Unique Flare Community for Each&#160;Different Target </span>In this scenario, you add a unique Flare community for each different target. This creates a separate system in Pulse.&#160;The advantage of using this option is that it gives you more granular reporting capabilities, letting you generate usage reports for each community.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Enabling the Pulse Server</h2>
+        <p MadCap:conditions="General.Print">
+            <MadCap:snippetText src="../../Resources/Snippets/Pulse/EnablingPulseServer.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable the pulse server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">
+                    <MadCap:snippetText src="../../Resources/Snippets/Pulse/EnablingPulseServer.flsnp" />
+                </p>
+                <ol>
+                    <li>Open the desired Flare project.</li>
+                    <li>
+                        <p>In the Project Organizer, open the desired WebHelp or HTML5&#160;target.</p>
+                    </li>
+                    <li>
+                        <p>In the Target Editor, select the <span class="Emphasis">Community</span> tab.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_community_tab_disabled.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>Enable the server as follows:</p>
+                        <ol class="LowerAlpha">
+                            <li>At the top of the <span class="Emphasis">Community</span> tab, place a check mark in the <span class="Emphasis">Enable Pulse/Feedback Server</span> box. </li>
+                            <li>
+                                <p>In the <span class="Emphasis">URL</span>&#160;field, type the URL&#160;for the Pulse web server.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_server_url_downloading.png" class="MaxWidth100Percent" />
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To find the URL, log in to the Pulse dashboard as an administrator. Then select <span class="Emphasis">Administration&gt;Settings&gt;General Settings</span>. The URL above corresponds to the value in the <span class="Emphasis">Site URL</span> box. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have installed a Secure Sockets Layer (SSL)&#160;certificate on the Pulse web server, ensure that the URL starts with the https:// protocol (instead of http://). <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive">See <MadCap:xref href="2012/Pulse_System_Requirements_2012.htm">Pulse System Requirements for Windows Server 2012</MadCap:xref>, <MadCap:xref href="2008R2/Pulse_System_Requirements_2008R2.htm">Pulse System Requirements for Windows Server 2008R2</MadCap:xref>, or <MadCap:xref href="2008/Pulse_System_Requirements_2008.htm">Pulse System Requirements for Windows Server 2008</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2012InstallationGuide">See <MadCap:xref href="2012/Pulse_System_Requirements_2012.htm">Pulse System Requirements for Windows Server 2012</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2008R2InstallationGuide">See <MadCap:xref href="2008R2/Pulse_System_Requirements_2008R2.htm">Pulse System Requirements for Windows Server 2008R2</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2008InstallationGuide">See <MadCap:xref href="2008/Pulse_System_Requirements_2008.htm">Pulse System Requirements for Windows Server 2008</MadCap:xref>.</MadCap:conditionalText></p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                        <ol class="LowerAlpha" MadCap:continue="true">
+                            <li>
+                                <p>Enter the access credentials as appropriate:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If this is the first time you are enabling the  Pulse community in the Flare target, the Log In dialog automatically appears. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>If you want to change the existing login information, click the <span class="Emphasis">Logout</span> button to clear the existing credentials. Then click <span class="Emphasis">Login</span>. The Log In dialog appears. </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>In the Log In dialog, type the appropriate <span class="Emphasis">User name</span> and <span class="Emphasis">Password</span>. The account that you use must have administrative permissions to Pulse. You have these options:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Use the PulseAdmin Account </span>This is the default administrator account that was created by the person who installed Pulse. </li>
+                                    <li><span class="SetOffFirstLevel">Use an Account that is a Member of the Administrators&#160;Group </span>This can be any account belonging to a registered Pulse user who is a member of the Administrators group. </li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">OK</span>&#160;or press <span class="Emphasis">Enter</span> to close the Log In dialog. </li>
+                            <li>Before you can save the Flare target, you must associate a Flare community with the Pulse system.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Setting Up the Community in Flare</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>setting up the community in flare</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After enabling the Pulse server in the desired target, you can set up the community in Flare. If you are setting up Flare for the first time, you will add a new Flare community. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to add a new flare community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If this is the first time you are integrating Flare andPulse, add a new Flare community to your project's Flare target. This process automatically creates a new "system" on the Pulse server. In Pulse, a system hosts the following items:</p>
+                        <ul>
+                            <li>The activity streams that are used when moderating your topics with the Pulse dashboard</li>
+                            <li>The embedded discussion forms that registered Pulse users can access in the Flare output</li>
+                        </ul>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;"> To integrate Flare content with Pulse integration, you must always add new or use existing communities in Flare. While you have the ability to create systems using the Pulse dashboard, you do not have the ability integrate those systems with a Flare community.</p>
+                        <ol>
+                            <li>
+                                <p>In the <span class="Emphasis">Community</span> tab, locate the <span class="Emphasis">Communities</span> list and then click <span class="Emphasis">Manage</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_manage_button.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                            <li>In the Manage Community dialog, click <span class="Emphasis">Add</span>. </li>
+                            <li>
+                                <p>In the Enter Name dialog, type a name for your community. In this example, we are creating a community to use with a Flare target about Pets. Then click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_add_enter_name.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                            <li>In the Manage Communities dialog, the new community appears.&#160;Click <span class="Emphasis">OK</span> to close the dialog. </li>
+                            <li>Click <span class="Emphasis">Refresh</span> to update the Current Pulse Configuration info. This provides you with basic information about the community, such as the status of the server, and the total number of users.</li>
+                        </ol>
+                        <p>After the community is associated with the Flare target, the <span class="Emphasis">Remap Topics</span> button becomes available so you can map your community topics to Pulse for the first time.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePulseGuide" />
+                <p>You also have the ability to select an existing community, delete a community, provide a published URL, and rename a community as follows:</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to select an existing flare community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you need to publish any updates for your Flare output and do not wish to create a new community for your documentation release, select the community that you previously created for the target. This gives you the ability to ensure that any new, removed, and updated topics are mapped to the appropriate embedded discussion forms in the Pulse system. </p>
+                        <ol class="NumberedList">
+                            <li>In the <span class="Emphasis">Community</span> tab, locate the <span class="Emphasis">Community</span> area. </li>
+                            <li>
+                                <p>From the <span class="Emphasis">Communities</span> list, select an existing community. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_select.png" class="MaxWidth100Percent" />
+                                </p>
+                                <li>
+                                    <p>Click <span class="Emphasis">Refresh</span> to update the Current Pulse Configuration info. This provides you with basic information about the community, such as the status of the server, and the total number of users.</p>
+                                    <MadCap:dropDown>
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Communities list in Flare initially only includes communities that have been added with the Flare user interface. If you create Pulse systems using the Pulse dashboard, those systems will be not be listed as Flare communities until you remap the topics.</p>
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can associate multiple Flare targets with a single community if desired. However, for best results with reporting, we recommend that you create a separate community for each target. This will also simplify any mapping/remapping tasks when you publish updates. </p>
+                                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,FlareGuides.FlareTargetsGuide" />
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to verify that the Flare community you added is now a system in Pulse, log in to the Pulse dashboard using an account that is a member of the Administrators or Employees group. The select <span class="Emphasis">Systems&gt;Find Systems</span> from the menu. The community you created will appear in the list. </p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                    <p>After the community is activated, the <span class="Emphasis">Remap Topics</span> button becomes available so you can remap the community topics to Pulse.</p>
+                                </li>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to delete a flare community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you want to delete a Flare community, use the steps below. This deletes both the Flare community and the Pulse system.</p>
+                        <ol class="NumberedList">
+                            <li>
+                                <p>In the <span class="Emphasis">Community</span> tab, locate the <span class="Emphasis">Communities</span> list and click the <span class="Emphasis">Manage</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_manage_button.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                            <li>In the Manage Community dialog, select the community that you want to remove. Then click <span class="Emphasis">Delete</span>. </li>
+                            <li>When prompted to confirm the delete action, click <span class="Emphasis">Yes</span>. This removes your selection from the Communities list. </li>
+                            <li>Click <span class="Emphasis">OK</span> to close the Manage Communities dialog. </li>
+                            <li>Click <span class="Emphasis">Remap Topics</span> and confirm the topics to remove.</li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="HowToProvidePublishedURL"></a>How to Provide a Published URL for a Community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can assign a URL path to your community from your Flare target<MadCap:conditionalText MadCap:conditions="Products.Pulse"> (if you have Flare 10.2 or later installed)</MadCap:conditionalText>. This can also be done from the Pulse dashboard (by selecting <span class="Emphasis">Administration&gt;Settings</span> and clicking <span class="Emphasis">Communities</span>), but using the Flare target is recommended.</p>
+                        <ol class="NumberedList">
+                            <li> Under the <span class="Emphasis">Community</span> area, click the <span class="Emphasis">Manage</span> button.</li>
+                            <li>In the Manage Communities dialog, highlight the community that you want to edit. Then click <span class="Emphasis">Edit</span>. </li>
+                            <li>
+                                <p>In the Edit Community dialog, click in the <span class="Emphasis">Enter published url</span> field and enter a path to the main landing page of your Flare output.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_feed_context3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/PublishedURL2.flsnp" />
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                            <li>Click <span class="Emphasis">OK</span> to close the Edit Community dialog. </li>
+                            <li>Click <span class="Emphasis">OK</span> to close the Manage Communities dialog. </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/PublishedURL3.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to rename a flare community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol class="NumberedList">
+                            <li>In the <span class="Emphasis">Community</span> tab, under <span class="Emphasis">Current Pulse Configuration</span>, click the <span class="Emphasis">Refresh</span> button. </li>
+                            <li>Under the <span class="Emphasis">Community</span> area, click the <span class="Emphasis">Remap Topics</span> button ensure your topics have been mapped.</li>
+                            <li> Under the <span class="Emphasis">Community</span> area, click the <span class="Emphasis">Manage</span> button.</li>
+                            <li>
+                                <p>In the Manage Community dialog, highlight the community that you want to rename. Then click <span class="Emphasis">Rename</span>. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_manage_edit_button.png" class="MaxWidth70Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>In the Enter Name dialog, type a new name for your community. Then click <span class="Emphasis">OK</span>.</p>
+                                <p>This changes the name of the community in Flare, as well as the name of its corresponding Pulse system. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If an error message appears, try clicking the <span class="Emphasis">Refresh</span> button and the remapping the topics. This typically resolves any issues. </p>
+                            </li>
+                            <li>Click <span class="Emphasis">OK</span> to close the Manage Communities dialog. </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Mapping/Remapping a Flare Community to Pulse</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>mapping/remapping a flare community to pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to add the embedded discussion forms to the Flare output that you will publish, you must map/remap the community topics in Flare for Pulse.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to map a new flare community to a pulse system</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If this is the first time you are setting up a Flare community for a target, you will need to map the topics for your community to Pulse. </p>
+                        <ol>
+                            <li>Make the desired changes to your Flare target. Always be sure to update the TOC before remapping the topics. </li>
+                            <li>In the&#160;Target Editor, select the <span class="Emphasis">Community</span> tab. </li>
+                            <li>From the <span class="Emphasis">Communities</span> drop-down list, select the appropriate community.</li>
+                            <li>
+                                <p>Click <span class="Emphasis">Remap Topics</span>. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_community_remap_topics_button.png" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This opens the Remap Community Topics dialog. </p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                            <li>
+                                <p>In the Remap Community Topics dialog, make sure the <span class="Emphasis">New Topics</span> tab is selected and review the topics in the list. </p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>A topic count appears in the label of the <span class="Emphasis">New Topics</span> tab. The tab lists the topic titles and paths to the topics. These items will be mapped to a corresponding stream in Pulse. In a new community, the counts in the other tabs will typically be zero (0). </p>
+                                    <p> <img src="../../Resources/Images/pulse_remap_community_topics_new.png" class="MaxWidth90Percent" /></p>
+                                </div>
+                            </li>
+                            <li>When finished, click <span class="Emphasis">OK</span>. The system automatically maps each community to a stream in Pulse. The community updated message appears.</li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                <p>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>how to remap a flare community to an existing pulse system</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p>As you prepare to publish content updates to a Flare target, you can review the new, removed, and updated topics and then reassign any of the topics to the appropriate stream&#160;in the Pulse system. This stream corresponds to the embedded discussion form at the bottom of the Flare topic. </p>
+                            <ol>
+                                <li>Make your content changes in Flare. Be sure to make all of the desired updates in the Flare TOC associated with your target. </li>
+                                <li>Open the Flare target. </li>
+                                <li>In the&#160;Target Editor, select the <span class="Emphasis">Community</span> tab.</li>
+                                <li>From the <span class="Emphasis">Communities</span> drop-down list, select the appropriate community.</li>
+                                <li>
+                                    <p>Click <span class="Emphasis">Remap Topics</span>. This opens the Remap Community Topics dialog so you can review the updates:</p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot>new topics tab</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody>
+                                            <p>The New Topics tab lists Flare updates that have an effect on the Pulse mapping definitions:</p>
+                                            <ul class="FirstLevel">
+                                                <li><span class="SetOffFirstLevel">New Topics </span>New topics that have been added to the Flare TOC associated with the target. </li>
+                                                <li><span class="SetOffFirstLevel">Moved Topics </span>Existing topics that have been moved to a different folder or location in the Content Explorer.</li>
+                                                <li><span class="SetOffFirstLevel">Renamed Topics (New Name) </span>Existing topics where the actual file name has changed. The new file name appears in this tab. </li>
+                                            </ul>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_remap_community_topics_new_tab.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot>remove topics tab</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody>
+                                            <p>The Remove Topics tab lists Flare updates that have an effect on the Pulse mapping definitions:</p>
+                                            <ul class="FirstLevel">
+                                                <li><span class="SetOffFirstLevel">Deleted Topics </span>Topics that have been removed from the Flare TOC associated with the target. </li>
+                                                <li><span class="SetOffFirstLevel">Moved Topics </span>Existing topics that have been moved to a different folder or location in the Content Explorer.</li>
+                                                <li><span class="SetOffFirstLevel">Renamed Topics (Former Name) </span> Existing topics where the file name has changed. The former file name appears in this tab. </li>
+                                            </ul>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_remap_community_topics_remove.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot>update topics tab</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody>
+                                            <p>The Update Topics tab only lists community topic updates that specifically relate to Pulse mapping definitions. This includes topic updates such as title changes, reassigned links, and so on. </p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_remap_community_topics_update.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot>exclude topics tab</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p>The Exclude Topics tab lists all topic files where Flare changes have no effect on the Pulse mapping definitions.</p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_remap_community_topics_exclude.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>Review the topics in each tab and then reassign the links as desired.&#160;See below for instructions,</li>
+                                <li>When finished, click <span class="Emphasis">OK</span>. The community updated message appears. </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>how to reassign a link</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p>When you are preparing to publish content updates for a Flare target, there may occasionally be times when you want to reassign a link that is associated with a community topic. This lets you take the embedded discussion form associated with a topic and associate it with a different topic. </p>
+                            <MadCap:dropDown class="ThirdLevel">
+                                <MadCap:dropDownHead>
+                                    <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                </MadCap:dropDownHead>
+                                <MadCap:dropDownBody>
+                                    <div class="example">
+                                        <p class="exampleHeadTextEmpty">example</p>
+                                        <p>Let's say you have a topic with the file name, "Feeding_Cats.htm" and you decide to rename it, "Feeding_a_Cat.htm." When you make this change, the&#160;Remap Community Topics dialog will list this change in two places. </p>
+                                        <p>The New Topics tab will shown the new topic file name. If you click <span class="Emphasis">OK</span>&#160;in the dialog, the system would add a new stream for the topic in the Pulse system:</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_reassign_link_new.png" class="MaxWidth90Percent" />
+                                        </p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                                        <p>The Remove Topics tab will show the former file name. If you click <span class="Emphasis">OK</span>&#160;in the dialog, the system would remove the corresponding stream for the topic in the Pulse system:</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_reassign_link_remove.png" class="MaxWidth90Percent" />
+                                        </p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                                        <p>Instead of creating a new stream for the new topic named "Feeding_a_Cat.htm", let's say you want to keep the discussion from the existing stream associated with "Feeding_Cats.htm."&#160;You can reassign the link to tie the discussion with the old file name to the new file name. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_remap_community_topics_flare.png" class="MaxWidth90Percent" />
+                                        </p>
+                                    </div>
+                                </MadCap:dropDownBody>
+                            </MadCap:dropDown>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                            <MadCap:dropDown class="ThirdLevel">
+                                <MadCap:dropDownHead>
+                                    <MadCap:dropDownHotspot>how to reassign a link</MadCap:dropDownHotspot>
+                                </MadCap:dropDownHead>
+                                <MadCap:dropDownBody class="Final">
+                                    <ol>
+                                        <li>Make your content changes in Flare. Be sure to make all of the desired updates in the Flare TOC associated with your target. </li>
+                                        <li>Open the Flare target. </li>
+                                        <li>In the&#160;Target Editor, select the <span class="Emphasis">Community</span> tab. </li>
+                                        <li>Select the appropriate Flare community in the <span class="Emphasis">Community</span> drop-down list. &#160;</li>
+                                        <li>
+                                            <p>Click <span class="Emphasis">Remap Topics</span>. This opens the Remap Community Topics dialog so you can review the updates. In this example, we've renamed a topic file from "Feeding_Cats.htm"&#160;to "Feeding_a_Cat.htm." </p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_reassign_link_new.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>In the <span class="Emphasis">New Topic</span> tab, right-click the new topic and select <span class="Emphasis">Reassign Link</span> from the context menu. </p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_reassign_link_menu.png" class="MaxWidth100Percent" />
+                                            </p>
+                                            <p>This opens the Reassign Community Link dialog.</p>
+                                        </li>
+                                        <li>
+                                            <p>From the <span class="Emphasis">Select Links</span> drop-down list, select the desired topic. This will map the embedded discussion form for the selected link with the topic. In this example, we will select the topic formerly named, "Feeding_Cats.htm."</p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_reassign_community_link_dialog.png" class="MaxWidth100Percent" />
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>When finished, click <span class="Emphasis">OK</span>. The community updated message appears. </p>
+                                            <p>When you republish your Flare target, the discussion originally linked to the former file is now linked to the new file.</p>
+                                        </li>
+                                    </ol>
+                                </MadCap:dropDownBody>
+                            </MadCap:dropDown>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>how to verify the community topics in the pulse system</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody class="Final">
+                            <p>To see the community topics that have been created for your Flare output:</p>
+                            <ol>
+                                <li>
+                                    <p>Log in to the Pulse dashboard with an appropriate user account. </p>
+                                    <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To access systems, you must be a member of the&#160;Administrators or Employees group. </p>
+                                </li>
+                                <li>In the menu bar, select <span class="Emphasis">Systems&gt;Find Systems</span>. The Find Systems page appears. </li>
+                                <li>
+                                    <p>Under <span class="Emphasis">New Systems</span>, click the Pulse system that corresponds to the appropriate Flare community.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/pulse_systems_new_systems.png" class="MaxWidth65Percent" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>In the community page, click the <span class="Emphasis">Topics</span> link. </p>
+                                    <p>
+                                        <img src="../../Resources/Images/pulse_system_page_new.png" class="MaxWidth100Percent" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p> In the list of topics, click a topic. Any community activity for the topic will be reflected in the stream.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/pulse_systems_new_streams.png" class="MaxWidth70Percent" />
+                                    </p>
+                                </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Enabling the Community Tab in the Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>enabling the community tab in the output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You need to decide whether you want to include or exclude the Community tab with your published output. For HTML5 output, this can be done for Tripane skins only.</p>
+                <p>Below is an example of the Community tab:</p>
+                <p>
+                    <img src="../../Resources/Images/pulse_community_tab_html5.png" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p>You can enable or disable this feature by editing the general features of the skin associated with the Flare target.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Skins/More_About_Skins/Specifying_Tabs_or_Accordion_Items_to_Include_in_the_Output_Window.htm">Specifying Navigation Elements to Include in the Output Window</MadCap:xref>. </MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                <p>The benefits of including the Community tab in your output include:</p>
+                <ul>
+                    <li>
+                        <p>Gives site visitors the ability to register for a Pulse account. Also gives registered users the ability to log in to Pulse directly from the Flare output.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_output_community_tab_login.png" class="MaxWidth70Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                    <li>
+                        <p>Gives registered users the ability to edit their profile, which includes changing their avatar image, updating personal information, and modifying notification preferences.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_output_community_tab_profile.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ul>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You cannot add a Community pane to Top Navigation or skinless HTML5 output, because those outputs do not use panes. However, registered users can open the dashboard in a browser and access some of the features that are normally available in the Community pane in the Flare output (depending on the access level). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Dashboard/About_the_Pulse_Dashboard.htm">About the Pulse Dashboard</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Setting the Community Options—Comments and Search Results</h2>
+        <p MadCap:conditions="General.Print">You can set community options, which control the display of comments and search results. For both Standard and HTML5 skins, you can do this in the Skin Editor. For HTML5 outputs—including skinless—you can also use your stylesheet to display or hide topic comments; this makes it possible to show comments for some topics but hide them for others.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="SetCommunityOptions"></a>How to Set the Community Options Using a Skin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Project Organizer, open a Standard or HTML5 skin.</li>
+                    <li>
+                        <p>In the Skin Editor, click the <span class="Emphasis">Community</span> tab. You have these options:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to display topic comments</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>If you want registered Pulse users to have the ability to post comments in the embedded discussion forms that Pulse includes at the bottom of the Flare topics, place a check mark in the <span class="Emphasis">Display topic comments at the end of each topic</span> check box. This check box is selected by default.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_flare_standard_skin_comments.png" class="MaxWidth85Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to display community search results</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can configure the Flare skin to give the Flare search engine the ability to index the Pulse system and return any community results when end users perform searches.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">examples</p>
+                                            <p>In <MadCap:variable name="Outputs.HTML5" /> output, Pulse posts matching the search query are listed on the Search Results page under a <span class="Emphasis">Community Results</span> link:</p>
+                                            <p>
+                                                <img src="../../Resources/Images/community_search_results_ex1.png" alt="" title="" class="MaxWidth90Percent" />
+                                            </p>
+                                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                                            <p>If a user clicks the <span class="Emphasis">Community Results</span> link shown above, only the matching Pulse content appears in the results page:</p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_search_results_pulse_content.png" class="MaxWidth90Percent" />
+                                            </p>
+                                            <p>Users can then hover the mouse cursor over the content to reveal a links that open either the matching Pulsepost, the matching Flare topic and the matchingPulse post, or the Pulse user feed. </p>
+                                            <p>
+                                                <img src="../../Resources/Images/pulse_search_results_pulse_links.png" class="MaxWidth70Percent" />
+                                            </p>
+                                            <p>This feature works similarly in <MadCap:variable name="Outputs.WebHelp" /> output. </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to display search results</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ol class="LowerAlpha">
+                                            <li>Open a Standard or HTML5 skin.</li>
+                                            <li>Click the <span class="Emphasis">Community</span> tab.</li>
+                                            <li>Place a check mark in the <span class="Emphasis">Display community search results</span> box.</li>
+                                            <li>(Optional) In the <span class="Emphasis">Number of community search results</span> field, you can enter the number of community search results shown by default when a search is made in the output. The default number in this field is 3.</li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Feedback area in the Community tab of the Skin Editor is only relevant to Feedback Server Admin. The Feedback option is not supported by Pulse.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set the Community Options (Display Comments) Using a Stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the stylesheet.</li>
+                    <li>Find and select the <span class="Emphasis">html</span> style or the appropriate class.</li>
+                    <li>In the <span class="Emphasis">Show</span> filter field, select <span class="Emphasis">Alphabetical List</span>.</li>
+                    <li>Find the <span class="Emphasis">mc-community-features</span> property and set it to <span class="Emphasis">enabled</span> or <span class="Emphasis">disabled</span>. The default setting is "enabled."</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>This stylesheet method can be especially useful if you only want some topics to display the comment area.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>Let's say you create a Flare project and structure it in much the same way that some of Flare's project templates are structured. In other words, you have a main Home page that looks much different than the rest of your topics and serves primarily as a landing page with links, not to provide content. Therefore, you do not want the Pulse comment area to be displayed at the bottom of that topic.</p>
+                            <p>
+                                <img src="../../Resources/Images/pulse_comment_topnav2.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                            <p>However, you do want the comments to appear at the bottom of all of your other topics.</p>
+                            <p>
+                                <img src="../../Resources/Images/pulse_comment_topnav3.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                            <p>You have two stylesheets—one for the Home topic and another for all the other topics. So you open the stylesheet that is designated for the Home page and for a special html style class you've created (called "HomePage"), you set the <span class="Emphasis">mc-community-features</span> property to disabled.</p>
+                            <p>
+                                <img src="../../Resources/Images/pulse_comment_topnav4.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                            <p>Then you open the Properties dialog for that Home topic. You associate the topic with the stylesheet and choose the <span class="Emphasis">HomePage</span> style class.</p>
+                            <p>
+                                <img src="../../Resources/Images/pulse_comment_topnav5.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p>As far as the other topics are concerned, they are using a different stylesheet. But you don't need to set the mc-community-features property in it, because the default setting is to enable the Pulse comments area. Therefore, the comment area will automatically be displayed. The only thing you need to do is make sure all of those topics are using the appropriate stylesheet. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/Associating_Stylesheets_with_Specific_Files.htm">Associating Regular Stylesheets with Specific Files</MadCap:xref>.</MadCap:conditionalText></p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If there is a discrepancy between the skin and the stylesheet setting (e.g., the skin is set to disabled and the CSS is set to enabled), the stylesheet setting has precedence.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Comments at the bottom of topics are not shown in tablet or mobile view. This is the same case for HTML5 Tripane output.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The comments area at the bottom of topics is wrapped in an iframe. Therefore, the output is technically not entirely frameless. However, because it is only the comments that are contained in the iframe, the main topic content still retains the benefits (e.g., better search results) of frameless output.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Styles for Generated Pulse and Search Topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/StylesGeneratedPulseSearch1.flsnp" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Style Classes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/StylesGeneratedPulseSearch2.flsnp" />
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/StylesGeneratedPulseSearch3.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Suggested Style Setting</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/StylesGeneratedPulseSearch4.flsnp" />
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/Editing_Styles.htm#EditingStylesInternalTextEditor">Editing Styles in the Internal Text Editor</MadCap:xref> and <MadCap:xref href="../../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p colspan="15" class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">These styles are supported only in HTML5 Top Navigation and skinless outputs. They are not supported in HTML5 Tripane output.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="General.Print">Building and Publishing the Flare Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>building and publishing the flare output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Once you set up the community features, you can build and publish your Flare output.</p>
+                <p>When building the output, you may see a message that states, "Some community features will not be displayed in tablet and mobile outputs." This means that when users are viewing your responsive output on a tablet or phone<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../Responsive_Web_Design/About_Responsive_Web_Design.htm">About Responsive Web Design</MadCap:xref>)</MadCap:conditionalText>, they will not see comments or the Community tab. However, Pulse still tracks hits on pages in those formats for reporting purposes. You can hide the warning if you do not want to see it in future builds.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Output/More_About_Building_Final_Output/Ignoring_Warnings_When_Building_Output.htm">Ignoring Warnings When Building Output</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

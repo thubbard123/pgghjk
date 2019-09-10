@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="9" MadCap:lastHeight="4183" MadCap:lastWidth="1007" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Themes;Eclipse Help;EPUB" />Using the Theme Editor</h1>
+        <p style="font-family: Arial;">For Eclipse Help and EPUB themes, the Theme Editor is used to view and edit themes and configurations, and to choose the stylesheet. All three of these options work together to create the look, behavior, text, color scheme, accessibility options, and language you want for your theme.</p>
+        <p>For other targets, see <MadCap:xref href="Customizing NetHelp Themes.htm">Customizing NetHelp Themes</MadCap:xref> and <MadCap:xref href="Customizing HTML Help Help Viewer Help 20 and JavaHelp Themes.htm">Customizing HTML Help, Help Viewer, Help 2.0, and JavaHelp Themes</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to View or Customize a Theme or Configuration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>On the <span class="Emphasis">Home</span> ribbon, click the <span class="Emphasis">Theme</span> button. The Theme Preview dialog opens. If you have chosen a default theme or configuration, you can view them using the <span class="Emphasis">View</span> buttons.<br /></li>
+                    <li>If you would like to create a custom theme or configuration, create a new theme first. See <c1hjump><MadCap:xref href="Adding a Theme or Theme Configuration.htm">Adding a Theme or Theme Configuration</MadCap:xref></c1hjump>. </li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Edit Theme</span> or <span class="Emphasis">Edit Configuration</span> button. A full list of options for each appears in <c1hjump>Theme Options and Configuration Options</c1hjump>.<br /></p>
+                        <p>
+                            <img id="_x0000_i1044" src="../Resources/Images/D2H/Theme_EPUBEclipseEdit2.png" height="55" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Choose a Stylesheet (Eclipse Help Only)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Theme Preview dialog.</li>
+                    <li>
+                        <p>Using the <span class="Emphasis">Style sheet</span> drop-down, select a stylesheet.</p>
+                        <p>Doc-To-Help includes stylesheets for Eclipse Help, and you can create more using the jQuery and Wijmo theme rollers. </p>
+                        <p>jQuery UI themes can be downloaded from and created at <a href="http://jqueryui.com/themeroller/">http://jqueryui.com/themeroller/</a>.</p>
+                        <p>Wijmo themes can be downloaded from <a href="http://wijmo.com/theming/">http://wijmo.com/theming/</a>.</p>
+                        <p>Copy the new themes to:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">jQuery </span>\\My Doc-To-Help Projects\Doc-To-Help\Themes\Common\(type of theme)\css\jquery-ui</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Wijmo </span>\\My Doc-To-Help Projects\Doc-To-Help\Themes\Common\(type of theme)\css\wijmo </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Customized themes and configurations are stored by default in the \\My Doc-To-Help Projects\Doc-To-Help\Themes\ folder.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Theme Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../Resources/Images/D2H/Theme_EPUBEclipseEdit1.png" alt="" title="" />
+                </p>
+                <p>Theme options are available by clicking the Edit Theme button and are used to enable specific items in the theme (the header, plus tabs and buttons), to change icons in the navigation panes (TOC, Index, Search), to insert a logo in the header, and to change the icons for related topics and expanding/collapsing sections.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Theme</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>The <span class="SetOffFirstLevel">name</span>, <span class="SetOffFirstLevel">baseTheme</span>, and <span class="SetOffFirstLevel">baseVersion</span> of the theme. These fields are read-only for default themes.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>General</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">updateTitle </span>Switches the header title displayed on the browser tab from the topic title to the project title.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Header</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can modify or even turn off the header at the top of the theme.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">visible </span>Turns the header on or off.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can change the icons used for automatic subtopic links and expanding/collapsing sections.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">applyStylesheet (Eclipse Help only) </span>Set to true by default.</li>
+                            <li><span class="SetOffFirstLevel">relatedTopics </span>Choose the icon that will appear before subtopic links.</li>
+                            <li><span class="SetOffFirstLevel">collapsibleSections (Eclipse Help only) </span>Choose the expand all, collapse all, expanded, and collapsed icons for expanding/collapsing sections.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Nav_Links/D2H/Creating an ExpandingCollapsing Section.htm">Creating an Expanding/Collapsing Section</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>TOC</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can change the icons for the table of contents.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">icons </span>Choose the leaf (topic with no subtopics), expanded, and collapsed icons for the topics in the table of contents. You can also select the "No icon" option.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can turn the Search tab or accordion button on or off, as well as change the icons for the search features.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">buttons </span>Choose the icons for go (begin search), help, and highlight (turns search highlight on/off).</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>buttons</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>You can turn the buttons in the theme on or off, change the button icons, as well as display text on the buttons. </p>
+                        <p>The button labels and tooltips can be edited using the Configuration Options.</p>
+                        <p>Each button has an ID that matches the ID element in layout.html.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">prev </span>Turn the Previous button on or off, choose the icon, and display button text (showLabel). </li>
+                            <li><span class="SetOffFirstLevel">next </span>Turn the Next button on or off, choose the icon, and display button text (showLabel). </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Configuration (Language) Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>
+                    <img id="_x0000_i1046" src="../Resources/Images/D2H/Theme_EPUBEclipseConfigEdit.png" height="55" />
+                </p>
+                <p>These options are available by clicking the Edit Configuration button and are used to edit the language strings used in the theme. Doc-To-Help includes configuration files for multiple languages. There are also options for right-to-left languages (under "general") and accessibility strings.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Configuration Files</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">English </span>= settings.en-us.xml </li>
+                            <li><span class="SetOffFirstLevel">Danish </span>= settings.da-dk.xml</li>
+                            <li><span class="SetOffFirstLevel">German </span>= settings.de-de.xml</li>
+                            <li><span class="SetOffFirstLevel">Spanish </span>= settings.es-es.xml</li>
+                            <li><span class="SetOffFirstLevel">Norwegian </span>= settings.nb-no.xml</li>
+                            <li><span class="SetOffFirstLevel">Portuguese </span>= settings.pt-pt.xml</li>
+                            <li><span class="SetOffFirstLevel">Russian </span>= settings.ru-ru.xml</li>
+                            <li><span class="SetOffFirstLevel">Swedish </span>= settings.sv-se.xml</li>
+                            <li><span class="SetOffFirstLevel">Hebrew </span>= settings.he-il.xml</li>
+                            <li><span class="SetOffFirstLevel">Chinese </span>= settings.zh-cn.xml</li>
+                            <li><span class="SetOffFirstLevel">Japanese </span>= settings.ja-jp.xml</li>
+                            <li><span class="SetOffFirstLevel">Italian </span>= settings.it-it.xml</li>
+                            <li><span class="SetOffFirstLevel">French </span>= settings.fr-fr.xml</li>
+                            <li><span class="SetOffFirstLevel">Dutch </span>= settings.nl-nl.xml</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>General</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">rightToLeft </span>The theme text direction will be set for right-to-left languages. If you choose the Hebrew configuration file (settings.he-il.xml) this check box will be selected automatically. </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Theme</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>The name of the theme this configuration is used in. </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">topicSpinnerText </span>The text that displays when the topic is loading.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Splitter</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">strings </span>The tooltips for the splitter button: "Show Side Panel" and "Hide Side Panel."</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">index (EPUB only) </span>The header label for the index.(Value).</li>
+                            <li><span class="SetOffFirstLevel">strings </span>"Topic Not Found" text (notfoundText, notfoundTitle).</li>
+                            <li><span class="SetOffFirstLevel">collapsibleSections </span>The "Expand All" and "Collapse All" text displayed for expanding/collapsing all sections.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Nav_Links/D2H/Creating an ExpandingCollapsing Section.htm">Creating an Expanding/Collapsing Section</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Index</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The text displayed on the Index tab or accordion button. Also the text for the following:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Filter keywords" (filterTooltip) </span>Tooltip for the Index text box.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"No keywords found" (notfound) </span>This message is shown when no keywords are found.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"#{count} keywords found" (found) </span>This message is shown when one or more keywords are found. It can contain a {count} macro that is replaced with the number of keywords found.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"More…" (more) </span>The text for the link that displays if the keywords don’t fit on the screen and aren’t scrolled.</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The text displayed within the Search tab or accordion button. </p>
+                        <p>The text for the following:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Search topics" (filterTooltip) </span>Tooltip for the Search text box.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Logical Operators" (helpMessage) </span>This text will be shown in a popup when the user clicks the Help button on the Search tab.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Loading Search Engine" (loading) </span>This message is shown when the data is loading.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Search engine failed to load" (loaderror) </span>This message is shown if the data fails to load.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Search disabled" (disabled) </span>This message is shown when search is disabled.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"No topics found" (notfound) </span>This message is shown when no keywords are found.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"# {count} topic(s) found." (found) </span>This message is shown when one or more topics are found. It can contain a {count} macro that is replaced with the number of topics found.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"Did you mean #{query}?" (correcting) </span>This message is shown when the search engine suggests a search string correction to the user. It can contain a #{query} macro that is replaced with a link to the corrected search string.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">"More…" (more) </span>The text for the link that displays if the found topics don’t fit on the screen and aren’t scrolled.</p>
+                            </li>
+                        </ul>
+                        <p>The text for the Go, Search, Help, and Highlight Search Hits button tooltips.</p>
+                        <p>The name of the search operators AND , NOT, and OR.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>These buttons and their labels can be turned on and off using the theme options.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Previous (prev) </span>The label text and tooltip text for the Previous button&#160; (label).</li>
+                            <li><span class="SetOffFirstLevel">Next (next) </span>The label text and tooltip text for the Next button&#160; (label).</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>accessibility</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>These strings are only editable if the Accessibility Mode for this target is set to Section 508. This is done in the Help Targets dialog, in the Advanced section.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">toc </span>The titles for all of the icons in the table of contents.</li>
+                            <li><span class="SetOffFirstLevel">collapsibleSections </span>The titles for the collapsible section icons.</li>
+                            <li><span class="SetOffFirstLevel">akLinksMenuHeader&#160;</span>The header for the list of topics (#{count} topics found) if a keyword or group link has more than one topic to display.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

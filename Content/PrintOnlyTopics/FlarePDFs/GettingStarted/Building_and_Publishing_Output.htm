@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.FlarePrintOnly" MadCap:lastBlockDepth="20" MadCap:lastHeight="2461" MadCap:lastWidth="922">
+    <head>
+    </head>
+    <body>
+        <h1>Building and Publishing Output</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Output/BuildOutputSummary.flsnp" />
+        <p>For more detailed information about the features in this chapter, including examples, see the online Help or the <span class="EmphasisItalic">Targets Guide</span>.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareGettingStartedGuide" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGettingStartedGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareGettingStartedGuide">Ways to Build and Publish Targets</h2>
+        <p>Building the final output involves generating one or more targets in your project, usually with just the click of a button or two. You can build output in the following ways:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Building:primary target;Targets:building output;Output:building targets;Primary target:building" />Primary Target </span>Do this if you are only concerned about building and publishing the primary target for your project.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Building:single target;Targets:building output;Output:building targets" />Single Target </span>Do this if you want to build and publish a target that may or may not be designated as your primary target.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Building:multiple targets;Targets:building output;Output:building targets" />Multiple Targets </span>Do this if you want to quickly build and publish multiple targets using an option in the Builds window pane. The targets do not need to be within the project that you currently have open.  This is an alternative to using batch targets. </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Building:batch target;Targets:building output;Output:building targets;Batch:output;Output:batch" />Batch Target </span>Do this if you want to build and publish one or multiple targets in a batch file, perhaps scheduled to run at a specific time. </li>
+        </ul>
+        <h2 MadCap:conditions="FlareGuides.FlareGettingStartedGuide">Interface or Command Line</h2>
+        <p>You can build and publish output (primary, single, multiple, or batch targets) using either the Flare interface or your system's command line. There are benefits to using each method.</p>
+        <h3 MadCap:conditions="FlareGuides.FlareGettingStartedGuide">User Interface</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Output/BuildOutputUserInterfaceMethod.flsnp" />
+        <p>There are many ways to initiate the building of a target. For example, you can double-click the target in the Project Organizer. Then in the Target Editor, click <span class="Emphasis">Build</span> in the local toolbar.</p>
+        <h3 MadCap:conditions="FlareGuides.FlareGettingStartedGuide">Command Line</h3>
+        <p>This option is intended for more advanced users. It lets you  build targets from your operating system's command line. Using this method, you do not have to open <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> at all. In addition, this method allows you to build a single target or all targets in your <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> project in one batch. The best way to use this feature is to create a batch file with the necessary commands in it. Then you can use a scheduling tool (such as the "Scheduled Tasks" utility in Windows) to run the batch file automatically whenever you want. This is similar to the "batch target" feature. However, the command line feature works outside of the <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> interface, is a bit more manual, and does not support as many processes. <MadCap:conditionalText MadCap:conditions="General.Print">For steps see the online Help.</MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTargetsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareGettingStartedGuide" class="NoPageBreakBefore">Where Output Files are Stored</h2>
+        <p>When you build a target, <MadCap:variable name="Other.Product" /> creates output files and places them in a folder named after the target, which is stored in a subfolder of your project called "Output." For example, let's say your project is stored here: C:\MyProject. In that case, after you generate output, the files would be stored here:</p>
+        <p> C:\MyProject\Output\MyName\TargetName</p>
+        <p>Depending on the output type associated with the target, the generated output might consist of many files.</p>
+        <h2 MadCap:conditions="FlareGuides.FlareGettingStartedGuide"><a name="PublishingFeaturesPrint"></a>Publishing Features</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="PublishingFeaturesOnline"></a>Publishing Features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To distribute output, you can simply open your Output folder to retrieve the files manually, or you can use <MadCap:variable name="Other.Product" />'s publishing destination feature to automatically send a copy of the output files to another location (e.g., to a network folder or a website).</p>
+                <h3 MadCap:conditions="FlareGuides.FlareGettingStartedGuide">Retrieving Files Manually</h3>
+                <p>
+                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Build</span> section select <span class="Emphasis">Open Output Folder</span>.</p>
+                <p>
+                    <img src="../../../Resources/Images/open_output_folder.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>You can also select this button in the Builds window pane.</p>
+                <p>Navigate to the folder showing the name of your target. Then you can copy those files to any location you want, whether it is on a network, in a version control directory, or up on a web server. You might need to work with your network or web administrator to learn the proper way to move files in your company, including login credentials.</p>
+                <h3 MadCap:conditions="FlareGuides.FlareGettingStartedGuide" class="PageBreakBefore">Using the Publishing Destination Feature</h3>
+                <p>To use this automated feature, you must first create a publishing destination for your output. In the Project Organizer, right-click the <span class="Emphasis">Destinations</span> folder and select <span class="Emphasis">Add Destination</span>.</p>
+                <p>Next, open your target and on the <span class="Emphasis">Publishing</span> tab, associate the publishing destination with the target.</p>
+                <p>Then when you build your output (or after you build it) you simply use the <span class="Emphasis">Publish</span> button or check box, depending on the method you use for generating the output (e.g., build primary target, single target, batch target).</p>
+                <p>
+                    <img src="../../../Resources/Images/publish_output1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../../Resources/Images/publish_output2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <div class="tip">
+            <p class="tipInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #a5910a;&quot; class=&quot;mcFormatColor&quot;&gt;Tip: &lt;/span&gt;&lt;/b&gt;"><span class="Emphasis"><MadCap:keyword term="Topics:previewing;Previewing:topics" /></span>You do not need to build the target to see how a particular topic will look in the final output. You can always preview topics as you develop your project by clicking <img src="../../../Resources/Images/preview_topic_btn.png" class="ReduceButtonSize" /> in the local toolbar of the XML Editor. If you click the face of the button, the topic preview is shown based on the format specified in the primary target. If you click the down arrow, you can select any of the targets in your project from a menu. The topic preview is then displayed using the output format specified in that target.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="1763" MadCap:lastWidth="789" MadCap:conditions="Products.Lingo" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Defining the fuzzy matching and translation suggestion properties in MadCap Lingo for your computer-aided translation projects." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Translation memory:suggestions;Suggestions;Suggestions:match options;Translation memory:match options" />
+            <MadCap:concept term="FilterTM" />
+            <MadCap:concept term="TranslationMemory" />Setting Match Options for Suggestions</h1>
+        <p>Properties are available for specifying matching behavior for translation suggestions. This includes minimum matches and fuzzy matches.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>minimum matches</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>With this feature, only translations with a rank greater than or equal to a specified percentage will be displayed as suggestions in the interface.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you set this percentage to 50%. When using translation suggestions, you might have one translation in your database that matches the current string exactly (100%), another translation that matches it 75%, and a third translation that matches it only 30%. In this case, only the first two translations will be available for you to select in the interface.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to set a minimum match percentage</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <p>Select <span class="Emphasis">File&gt;Options</span>.</p>
+                                <p>The Options dialog opens.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Translation Memory</span> tab.</li>
+                            <li>Enter a percentage in the field labeled <span class="Emphasis">Retrieve suggestions with minimum match of</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>fuzzy matches</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>With this feature, you can specify the percentage at which you can insert matching translations automatically. By default, this percentage is set at 100%, meaning you can use automatic inserts only when text strings match existing translations exactly. However, you can reduce this percentage if you wish. Any matching translation that falls below that specified percentage is considered "fuzzy," because it does not match the string closely enough to warrant an automatic insert.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you open a topic to translate the text in it. In the suggestions area at the bottom of the Translation Editor, a few matching translations from your TM database are shown. Perhaps two of the translations match segments exactly (100%) and there are other partial matches that are below 100%. Perhaps one of those is a 98% match. All of the partial matches, including the one at 98%, are considered "fuzzy."</p>
+                            <p>When you first opened the Translation Editor, a message displayed. It might say something like this: "2 segments had matches of at least 100% and there were 3 other partial matches. Do you want to use the top matches automatically?" If you select Yes, the two translations that match text 100% will replace the corresponding strings in the topic automatically. If you want to use any of the partial matches, you must do so manually.</p>
+                            <p>Now suppose you want to be able to automatically use matching translations if they match 97% of the string text. Therefore, you set the fuzzy matching option to 97%. If you then return to the same topic, this time the message will say the following: "3 segments had matches of at least 97% and there were 2 other partial matches. Do you want to use the top matches automatically?" If you select Yes, both of the 100% matches are automatically used, as is the 98% match (because it is no longer considered a "fuzzy match").</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to set a fuzzy match percentage</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <p>Select <span class="Emphasis">File&gt;Options</span>.</p>
+                                <p>The Options dialog opens.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Translation Memory</span> tab.</li>
+                            <li>Enter a percentage in the field labeled <span class="Emphasis">Fill-in fuzzy matches of at least</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Be aware that TM&#160;rankings take priority over fuzzy match percentages. If you set a minimum match percentage  and you ranked your TMs, a segment in the highest-ranked TM&#160;will take priority over a segment in the lower-ranked TM, even if the higher-ranked segment has a lower fuzzy match percentage. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Ranking_Translation_Memory.htm" >Ranking Translation Memories</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Ranking_Translation_Memory.htm#Ranking" >Ranking Translation Memories</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+    </body>
+</html>

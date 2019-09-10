@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);file.&quot;;n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1623" MadCap:lastWidth="1426" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareCSH.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Learn how a Header File is use for mapping Topic IDs to Help topics in context-sensitive MadCap Flare projects. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="csh" />
+            <MadCap:keyword term="Context-sensitive Help:header files;Header files" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Header Files</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHMobile_WHPlus.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/CSH/HeaderFileSummary.flsnp" />
+        </p>
+        <p>A header file has an .h extension and is stored in the Project Organizer under the Advanced folder. You can export the <MadCap:variable name="Other.Product" /> header file into other file formats (e.g., .bas, .properties, .inc, etc.) if necessary.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <h2 MadCap:conditions="General.Print">Who Develops the Header File and How?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>who develops the header file and how?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Either you or the software developer is responsible for creating the header file. That is something you must decide with the developer. </p>
+                <p>If it is decided that you are responsible for creating the header file, you can do so by adding a header file to the project, adding an alias file to the project, and then creating and assigning identifiers.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 class="NoPageBreakBefore" MadCap:conditions="General.Print">What is Contained in a Header File?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>what is contained in a header file?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Identifiers;Context-sensitive Help:identifiers" />A completed header file contains one or more lines of text ("identifiers"). Each identifier refers to a specific dialog or window that is linked to a corresponding topic in the Help system. Here is part of a header file, showing three identifiers:</p>
+                <p>
+                    <img src="../Resources/Images/header_file_example1.png" class="MaxWidth50Percent" />
+                </p>
+                <p>The following images provide a breakdown of what each part of an identifier means.</p>
+                <p>
+                    <img src="../Resources/Images/header_file_example2.png" class="MaxWidth50Percent" />
+                </p>
+                <p>
+                    <img src="../Resources/Images/header_file_example3.png" class="MaxWidth50Percent" />
+                </p>
+                <p>
+                    <img src="../Resources/Images/header_file_example4.png" class="MaxWidth50Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteCSHAliasHeaderIDOptional.flsnp" MadCap:conditions="General.OnlineLive" />
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">A header file is sometimes referred to as a "map file."</p>
+                </div>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteTopicAliasMarkersCreateCSHFiles.flsnp" />
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have multiple header files in your project, their contents are merged when you generate output.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="csh" />
+        </p>
+    </body>
+</html>

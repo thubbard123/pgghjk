@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1263" MadCap:lastWidth="855" MadCap:conditions="Products.FlarePrintOnly">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>
+            <img src="../../../Resources/Images/FlareLogoAndLine.png" class="MaxWidth100PercentNoThumbnail" />
+        </p>
+        <p class="CheatSheet">Print Output Cheat Sheet</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-BasicAlternateRows-Head-Header1" MadCap:conditions="">
+                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1" colspan="2" MadCap:conditions="">
+                        <p class="TableTextHead">Concepts</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Autonumber</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>A feature where content is numbered automatically. It is often used to place numbers on chapter titles, table captions, image captions, and so on. Recommend setting this on a style. Page numbers typically use variables, not autonumbers.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Break</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p>A way to designate a particular place to start new content.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Chapter Break </span>Tells Flare to begin a new chapter (accompanied by a specific page layout and often by an autonumber). Set this in an outline TOC (Properties dialog&gt;Printed Output tab).</li>
+                            <li><span class="SetOffFirstLevel">Page Break </span>Tells Flare to begin the selected content on a new page. Recommend setting this on a style (e.g., h1 style has page-break-before set to "always").</li>
+                            <li><span class="SetOffFirstLevel">Frame Break </span>Tells Flare to begin selected content in the next frame of a page layout. Recommend setting this on a style.</li>
+                            <li><span class="SetOffFirstLevel">Column Break </span>Tells Flare to begin selected content in the next column of a page layout. Recommend setting this on a style.</li>
+                            <li><span class="SetOffFirstLevel">Independent </span>Break Lets you manually insert a page break independent of an HTML element.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Outline TOC</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>A TOC file from the Project Organizer that acts as an outline for print-based output. Does not create the generated TOC in print output (a proxy is used for that).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Page Layout</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p class="TableText">A file used to determine page specifications and apply certain content (e.g., headers, page numbers) to many (or all) topics in a printed manual. Stored in Content Explorer (usually in Resources/PageLayouts).</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Page </span>Each page layout can consist of several pages (if you want different settings to be applied to different pages). Many page types are available (e.g., Title, First, First Right, Left, Right, Empty).</li>
+                            <li><span class="SetOffFirstLevel">Frame </span>Each page can contain multiple frames, which are used to hold content and determine where that content is positioned (e.g., Body, Header, Footer, Decoration).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Proxy</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>A placeholder for auto-generated content. Appears as a gray bar in the XML Editor. Used to create TOC, index, glossary, and other content in print-based output.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Widows and Orphans</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                        <p class="TableText">Settings that let you avoid instances where "leftover" lines from a paragraph are shown at the top or bottom of a page or column. Recommend setting this on a style.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

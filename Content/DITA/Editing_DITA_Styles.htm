@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="16" MadCap:lastHeight="4187" MadCap:lastWidth="1095" MadCap:conditionTagExpression="include[Snippets.Snippet11 or Snippets.Snippet13 or Snippets.Snippet9]exclude[Snippets.Snippet10 or Snippets.Snippet12 or Snippets.Snippet8]" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Editing style classes for imported DITA elements." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="DITA:styles;Styles:DITA" />
+            <MadCap:concept term="DITA" />
+            <MadCap:concept term="FilterDITA" />Editing DITA Styles</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareStylesGuide">
+            <MadCap:keyword term="DITA:styles;Styles:DITA;DITA:editing" />DITA</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/DITA/EditDITAStylesSummary.flsnp" />
+        <p>When you import content from DITA files, there is a one-to-one conversion that occurs. For each DITA element in your file, a style class is created in <MadCap:variable name="Other.Product" /> as a result. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you have a paragraph-level DITA element called "topictitle," after you import the file content, a style class called "h1.topictitle" might be created as a result in <MadCap:variable name="Other.Product" />. Or if you have a character-level DITA element called "cmdname," after you import the file, a style class called "span.cmdname" might be created as a result in <MadCap:variable name="Other.Product" />. If necessary, you can edit those style classes in <MadCap:variable name="Other.Product" />. If you generate DITA output from your project, the style classes are converted back to DITA elements.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit dita styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol type="1" class="Decimal">
+                    <li>From the Content Explorer, open the stylesheet that you want to modify.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In addition to the many properties that can be set in either the Simplified or Advanced view, there is a special "mc-dita-type" property that lets you change the default value for a DITA element when you generate output. This property can be changed only in the Advanced view.</p>
+                                    <p>For example, DITA lets you specify two different kinds of tables—<i>table</i> and <i>simpletable</i>. <i>Table</i> is the default type. If you intend to generate DITA output from <MadCap:variable name="Other.Product" /> and want to use the <i>simpletable</i> type instead of the <i>table</i>, you would use the following steps to select the appropriate style class, locate the mc-dita-type property, and type <span class="TypedEntry">simpletable</span> in the value field. For more details, see the following steps under "If using Advanced view."</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>(Optional) You can click in the <span class="Emphasis">Show Styles</span> field <img src="../Resources/Images/show_styles_field.png" class="ReduceButtonSize" /> in the upper-left corner of the Stylesheet Editor to limit which styles are shown in the editor. For example, if you select <span class="Emphasis">Show All Styles</span>, then all styles will be displayed. If you select <span class="Emphasis">Show Paragraph Styles</span>, only paragraph styles will be displayed. If you select <span class="Emphasis">Show Table Styles</span>, only table styles will be displayed.</li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/FromGridSelectStyle.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/UseTabsFieldsToChangeStyleProperties.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>(Optional) You can click in the <span class="Emphasis">Styles</span> drop-down list <img src="../Resources/Images/show_styles_field.png" class="ReduceButtonSize" /> in the upper-left corner of the Stylesheet Editor to limit which styles are shown in the editor. For example, if you select <span class="Emphasis">All Styles</span>, then all styles will be displayed. If you select <span class="Emphasis">Paragraph Styles</span>, then only paragraph styles will be displayed. If you select <span class="Emphasis">Table Styles</span>, then only table styles will be displayed.</li>
+                                    <li>
+                                        <p>On the left side of the editor, select the style that you want to edit.</p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to limit the list of styles to only those that you tend to use in your project, you can <MadCap:keyword term="Styles:disabling" />disable the styles that you do not want to see. This does not delete those styles; it merely hides them from view. See <MadCap:xref href="../Styles/More_About_Styles_and_Style_Sheets/Disabling_Styles.htm" >Disabling Styles</MadCap:xref>.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li>From the <span class="Emphasis">Show Properties</span> drop-down list <img src="../Resources/Images/show_properties_field.png" class="ReduceButtonSize" /> on the upper-right side of the editor, select any of the options shown to determine which properties are displayed below. This is simply a way to find the appropriate property as quickly as possible.<ul type="1" class="FirstLevel"><li><MadCap:keyword term="Assorted relevant properties;Properties:assorted relevant" /><span class="SetOffFirstLevel">Assorted Relevant Properties </span>Displays the property groups that are used most often for the selected style type.</li><li><MadCap:keyword term="Properties:all" /><span class="SetOffFirstLevel">All Properties</span> Displays all the different groups holding the properties for the selected style. This is simply a way to organize the properties intro groups so that they are easy for you to find. If you want to see the values for a given property group, expand it.</li><li><span class="SetOffFirstLevel">Alphabetical List</span> Displays all of the properties <MadCap:conditionalText MadCap:conditions="General.OnlineLive">for the selected style </MadCap:conditionalText>in alphabetical order.</li><li><MadCap:keyword term="Set properties;Properties:set" /><span class="SetOffFirstLevel">Set Properties</span> Displays properties that have been set explicitly in the stylesheet. It will also show properties that have been set in an imported stylesheet or inherited properties that have been set in a factory stylesheet.</li><li><p><MadCap:keyword term="Properties:set locally" /><span class="SetOffFirstLevel">Set (Locally) Properties </span>Displays properties that have been set explicitly in the stylesheet.</p></li></ul><MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to a edit the special "mc-dita-type" property for a style, it is probably easiest to select <span class="Emphasis">All Properties</span>.</p></MadCap:dropDownBody></MadCap:dropDown></li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the editor, locate the specific property that you want to change.</p>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                                        </p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to a edit the special "mc-dita-type" property for a style, expand the <span class="Emphasis">DITA</span> property group. The mc-dita-type property is shown under it.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li class="PageBreakBefore">
+                                        <MadCap:snippetText src="../Resources/Snippets/Styles/ClickInValueColumn.flsnp" />
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/IfValuesInPopup.flsnp" />
+                                        </p>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/AsYouMakeChangesPreview.flsnp" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+                <ol type="1" class="Decimal">
+                    <li value="3">
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock MadCap:conditions="FlareGuides.FlareStylesGuide" src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" />
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit dita styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol type="1" class="Decimal">
+                    <li>From the Content Explorer, open the stylesheet that you want to modify.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In addition to the many properties that can be set in either the Simplified or Advanced view, there is a special "mc-dita-type" property that lets you change the default value for a DITA element when you generate output. This property can be changed only in the Advanced view.</p>
+                            <p>For example, DITA lets you specify two different kinds of tables—<i>table</i> and <i>simpletable</i>. <i>Table</i> is the default type. If you intend to generate DITA output from <MadCap:variable name="Other.Product" /> and want to use the <i>simpletable</i> type instead of the <i>table</i>, you would use the following steps to select the appropriate style class, locate the mc-dita-type property, and type <span class="TypedEntry">simpletable</span> in the value field.</p>
+                        </div>
+                    </li>
+                    <li>(Optional) You can click in the <span class="Emphasis">Show Styles</span> drop-down list <img src="../Resources/Images/show_styles_field.png" class="ReduceButtonSize" /> in the upper-left corner of the Stylesheet Editor to limit which styles are shown in the editor. For example, if you select <span class="Emphasis">Show All Styles</span>, then all styles will be displayed. If you select <span class="Emphasis">Show Paragraph Styles</span>, then only paragraph styles will be displayed. If you select <span class="Emphasis">Show Table Styles</span>, then only table styles will be displayed.</li>
+                    <li>
+                        <p>On the left side of the editor, select the style that you want to edit.</p>
+                        <MadCap:dropDown>
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to limit the list of styles to only those that you tend to use in your project, you can <MadCap:keyword term="Styles:disabling" />disable the styles that you do not want to see. This does not delete those styles; it merely hides them from view. See <MadCap:xref href="../Styles/More_About_Styles_and_Style_Sheets/Disabling_Styles.htm" >Disabling Styles</MadCap:xref>.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:snippetBlock MadCap:conditions="FlareGuides.FlareStylesGuide" src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" />
+                    <li>From the <span class="Emphasis">Show Properties</span> drop-down list <img src="../Resources/Images/show_properties_field.png" class="ReduceButtonSize" /> on the upper-right side of the editor, select any of the options shown to determine which properties are displayed below. This is simply a way to find the appropriate property as quickly as possible.<ul type="1" class="FirstLevel"><li><MadCap:keyword term="Assorted relevant properties;Properties:assorted relevant" /><span class="SetOffFirstLevel">Assorted Relevant Properties </span>Displays the property groups that are used most often for the selected style type.</li><li><MadCap:keyword term="Properties:all" /><span class="SetOffFirstLevel">All Properties</span> Displays all the different groups holding the properties for the selected style. This is simply a way to organize the properties intro groups so that they are easy for you to find. If you want to see the values for a given property group, expand it.</li><li><span class="SetOffFirstLevel">Alphabetical List</span> Displays all of the properties <MadCap:conditionalText MadCap:conditions="General.OnlineLive">for the selected style </MadCap:conditionalText>in alphabetical order.</li><li><MadCap:keyword term="Set properties;Properties:set" /><span class="SetOffFirstLevel">Set Properties</span> Displays properties that have been set explicitly in the stylesheet. It will also show properties that have been set in an imported stylesheet or inherited properties that have been set in a factory stylesheet.</li><li><p><MadCap:keyword term="Properties:set locally" /><span class="SetOffFirstLevel">Set (Locally) Properties </span>Displays properties that have been set explicitly in the stylesheet.</p></li></ul><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to a edit the special "mc-dita-type" property for a style, it is probably easiest to select <span class="Emphasis">All Properties</span>.</p></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>On the right side of the editor, locate the specific property that you want to change.</p>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to a edit the special "mc-dita-type" property for a style, expand the <span class="Emphasis">DITA</span> property group. The mc-dita-type property is shown under it.</p>
+                    </li>
+                    <li class="PageBreakBefore">
+                        <MadCap:snippetText src="../Resources/Snippets/Styles/ClickInValueColumn.flsnp" />
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Styles/IfValuesInPopup.flsnp" />
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Styles/AsYouMakeChangesPreview.flsnp" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DITA" />
+        </p>
+        <MadCap:snippetBlock MadCap:conditions="FlareGuides.FlareStylesGuide" src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" />
+    </body>
+</html>

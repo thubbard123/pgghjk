@@ -1,0 +1,1339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="12" MadCap:lastHeight="12642" MadCap:lastWidth="1292" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HSandcastle.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft Sandcastle" />Creating Links from Narrative Text to Reference Text</h1>
+        <p>To create a link from your text to a generated topic (or to an added topic), all you need to do is to format a word or a phrase in your text (usually it is a name of a property, method, class, and so on) with an appropriate style. For example, to create a link from the text MyProperty to the topic MyClass.MyProperty Property, you simply format the word MyProperty in your text with Link Property style. </p>
+        <p>The template D2H_sandcastle_src.dotx is recommended for source narrative documents in Sandcastle plug-in projects, because it contains the Doc-To-Help - Sandcastle toolbar or ribbon, which has a button for each special Link style for creating links from narrative text to reference text (e.g., styles such as Link Class, Link Property). </p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img id="_x0000_i1038" src="../../Resources/Images/D2H/ContentWordSandcastle.png" height="92" class="MaxWidth100Percent" />
+        </p>
+        <p>You can use your own template if you add the Link styles to it (or if you don't need those styles), but this template has these styles already defined for you with a toolbar that makes applying these styles a matter of a single click.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Styles Supported</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Styles Supported</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following styles are supported:</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Class</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Class style is used to link a class name to the topic describing that class.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Class</span> button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Class</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the qualifying namespace, if present, from the class name in the link text. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Class style.</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.IO.FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.IO.)FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo Class</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo Class</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo Class</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">FileInfo Class</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Constructor</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Constructor style is used to link a constructor name to the topic describing that constructor.</p>
+                        <p>For this style, link text must consist of a type name followed by the word "Constructor."</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Constructor</span> button.</p>
+                        <p>By default, Doc-To-Help applies the nested type separator substitution to the link text, if applicable. It also removes the qualifying namespace, if present, from the class name in the link text. You can cancel removing the namespace by using the special characters, exclamation sign, and parenthesis (see <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>). You can also use the argument list for constructor overloads (see <MadCap:xref href="Argument List in Links.htm">Argument List in Links</MadCap:xref>).</p>
+                        <p>The following table demonstrates the usage of the Link Constructor style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.IO.)FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">FileInfo Constructor</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Delegate</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Delegate style is used to link a delegate name to the topic describing that delegate.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Delegate</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Delegate</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the qualifying namespace, if present, from the delegate name in the link text. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Delegate style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Reflection.TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.Reflection.TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.Reflection.)TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Reflection.TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Reflection.TypeFilter</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TypeFilter Delegate</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Reflection.TypeFilter Delegate</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Reflection.TypeFilter Delegate</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">TypeFilter Delegate</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Enumeration</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Enumeration style is used to link an enumeration name to the topic describing that enumeration.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Enumeration</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Enumeration</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the qualifying namespace, if present, from the enumeration name in the link text. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Enumeration style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Web.TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.Web.TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.Web.)TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Web.TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Web.TraceMode</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">TraceMode Enumeration</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Web.TraceMode Enumeration</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Web.TraceMode Enumeration</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">TraceMode Enumeration</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Event</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Event style is used to link an event name to the topic describing that event.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Event</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Event</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the name of the type containing the event, if the type name is present. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Event style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Windows.Forms.Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!System.Windows.Forms.Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">(System.Windows.Forms.)Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Windows.Forms.Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Windows.Forms.Form.Load</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Form.Load Event</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Form.Load Event</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Windows.Forms.Form.Load Event</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Windows.Forms.Form.Load Event</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">Form.Load Event</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Field</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Field style is used to link a field name to the topic describing that field.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Field</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Field</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the name of the type containing the field, if the type name is present. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Field style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Threading.Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!System.Threading.Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">(System.Threading.)Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Threading.Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Threading.Timeout.Infinite</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Timeout.Infinite Field</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Timeout.Infinite Field</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Threading.Timeout.Infinite Field</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Threading.Timeout.Infinite Field</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">Timeout.Infinite Field</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Interface</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Interface style is used to link an interface name to the topic describing that interface.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Interface</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Interface</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the qualifying namespace, if present, from the interface name in the link text. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Interface style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Resources.IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.Resources.IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.Resources.)IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Resources.IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Resources.IResourceReader</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">IResourceReader Interface</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Resources.IResourceReader Interface</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Resources.IResourceReader Interface</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">IResourceReader Interface</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Method</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Method style is used to link a method name to the topic describing that method.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Method</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Method</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the name of the type containing the method, if the type name is present. You can change this behavior by using the special characters, exclamation sign, and parenthesis (see <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>). You can also use the argument list for method overloads (see <MadCap:xref href="Argument List in Links.htm">Argument List in Links</MadCap:xref>).</p>
+                        <p>The following table demonstrates the usage of the Link Method style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!System.IO.File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">(System.IO.)File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.File.Delete</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">File.Delete Method</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">File.Delete Method</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.File.Delete Method</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.File.Delete Method</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">File.Delete Method</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Namespace</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Namespace style is used to link the text representing a namespace name to the topic describing that namespace.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Namespace</span>&#160;button.</p>
+                        <p>For this style, Doc-To-Help compiler will add the word "Namespace" to the text and establish a link to the topic with the title coinciding with the resulting text.</p>
+                        <p>The following table illustrates the usage of the Link Namespace style:</p>
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Data</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Data</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System Namespace</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">System.Data Namespace</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Operator</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Operator style is used to link an operator name to the topic describing that operator.</p>
+                        <p>For this style, link text must consist of an operator name followed by the word "Operator" or "Conversion" defining the kind of the operator. The operator name must exactly correspond to the operator name in the title of the topic describing the operator.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Operator</span>&#160;button.</p>
+                        <p>By default, Doc-To-Help applies the nested type separator substitution to the link text, if applicable. It also removes the name of the type containing the operator, if the type name is present. You can change this behavior by using the special characters, exclamation sign, and parenthesis (see <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>). You can also use the argument list for operator overloads (see <MadCap:xref href="Argument List in Links.htm">Argument List in Links</MadCap:xref>).</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Usage of the Link Operator Style for Regular Operators</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>The following table demonstrates the usage of the Link Operator style for regular operators:</p>
+                                <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">In Document</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">!Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">!System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">(System.Drawing.)Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">In Help File</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">Links to Topic</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">System.Drawing.Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p class="TableText">Point.Addition Operator</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Usage of the Link Operator Style for Conversion Operators</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>The following table demonstrates the usage of the Link Operator style for conversion operators:</p>
+                                <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">In Document</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">!Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">!System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">(System.Drawing.)Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">In Help File</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                                <p class="TableTextHead">Links to Topic</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">System.Drawing.Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p class="TableText">Point.Point to Size Conversion</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Property</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Link Property style is used to link a property name to the topic describing that property.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Property</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Property</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the name of the type containing the property, if the type name is present. You can change this behavior by using the special characters, exclamation sign, and parenthesis (see <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>). You can also use the argument list for property overloads with arguments (see <MadCap:xref href="Argument List in Links.htm">Argument List in Links</MadCap:xref>).</p>
+                        <p>The following table demonstrates the usage of the Link Property style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">!System.IO.FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">(System.IO.)FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo.Exists</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo.Exists Property</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">FileInfo.Exists Property</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.IO.FileInfo.Exists Property</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.IO.FileInfo.Exists Property</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">FileInfo.Exists Property</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Link Structure</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The Link Structure style is used to link a structure name to the topic describing that structure.</p>
+                        <p>To create a link using this style, select the link text and on the Doc-To-Help Sandcastle toolbar, click the <span class="Emphasis">Link Structure</span>&#160;button.</p>
+                        <p>For this style, the Doc-To-Help compiler will apply the nested type separator substitution to the link text, if applicable. Add the word <span class="TypedEntry">Structure</span> to the text, and establish a link to the topic, with the title coinciding with the resulting text.</p>
+                        <p>By default, Doc-To-Help removes the qualifying namespace, if present, from the structure name in the link text. You can change this behavior by using the special characters, exclamation sign, and parenthesis. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</p>
+                        <p>The following table demonstrates the usage of the Link Structure style:</p>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                        <table border="0" style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Document</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Drawing.Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">!System.Drawing.Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">(System.Drawing.)Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">In Help File</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Drawing.Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Drawing.Point</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-MidTableHeader" MadCap:pattern="10">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-MidTableHeader">
+                                        <p class="TableTextHead">Links to Topic</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Point Structure</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">System.Drawing.Point Structure</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">System.Drawing.Point Structure</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">Point Structure</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Styles Not Supported</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Styles Not Supported</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following styles are not supported:</p>
+                <ul>
+                    <li>
+                        <p>Link Tag, Link Topic (Superseded by the D2HML style C1H Link. You may find these styles in legacy Documenter for .NET projects; D2HML makes these two styles unnecessary.)</p>
+                    </li>
+                    <li>
+                        <p>Link Type (Obsolete)</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Additional Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See the following for additional information:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Argument List in Links </span>Certain link styles can contain an argument list, in case it is necessary to distinguish between overloads with different arguments. See <MadCap:xref href="Argument List in Links.htm">Argument List in Links</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Link Colors and Appearance </span>By default, links use the color blue and underline. You can change this, as with many other appearance and formatting style attributes, by modifying the target template used by Doc-To-Help. See <MadCap:xref href="Link Colors and Appearance.htm">Link Colors and Appearance</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Special Characters in Link Text </span>There are three special characters that you can use in link text, in addition to link styles, to control the process of creating links. See <MadCap:xref href="Special Characters in Link Text.htm">Special Characters in Link Text</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

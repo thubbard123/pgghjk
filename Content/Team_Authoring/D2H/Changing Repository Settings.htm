@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="732" MadCap:lastWidth="1219" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Team authoring" />Changing Repository Settings</h1>
+        <p>When a project is first set up for team authoring using the Share Project Wizard, the author sharing the project determines if the number of backup files kept in the repository for each file is limited, and, if so, to how many. The author also determines whether other team members can delete old backup files when they check a newer version of the file into the repository and the limit of backups for that file has been exceeded. These settings can be changed by the administrator using C1D2HTeamAdmin.exe.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Change the Repository Settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Double-click <span class="Emphasis">C1D2HTeamAdmin.exe</span>. See <MadCap:xref href="Team Authoring Administrative Functions.htm">Team Authoring Administrative Functions</MadCap:xref>.</li>
+                    <li>Select <span class="Emphasis">File&gt;Open Team Project</span> to connect to the repository. The Load Remote Project dialog opens. </li>
+                    <li>Select the <span class="Emphasis">Repository Type</span>. (If necessary, enter your login credentials.)</li>
+                    <li>Select a team project (or from the drop-down choose <span class="Emphasis">Select Team Project</span> to browse for a project) and click <span class="Emphasis">OK</span>. </li>
+                    <li>Select <span class="Emphasis">Tools&gt;Repository Settings</span>. The Repository Settings dialog opens.</li>
+                    <li>
+                        <p>Edit the following:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Limit the number of backups for each file </span>Used to set the limit on the number of backups kept for each file in the repository. The default is 5, but you can change it in the <span class="Emphasis">Number of backups kept</span> box. If you do not set a limit, every time a file is checked-in, a new backup file will be created in the repository, and there is no automatic cleanup of old backup files.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Allow users to delete old backups in check-in </span>Select this check box to permit other team members to delete old backup files when they attempt to check in a newer version of a file and the backup limit for that file has been exceeded. </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ask user confirmation to delete backups </span>Select this check box if you want a confirmation dialog to appear when a team member deletes old backup files. This option is only available when the <span class="Emphasis">Allow users to delete old backups in check-in</span> check box has been selected.&#160; </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For other tasks, see <MadCap:xref href="Team Authoring Administrative Functions.htm" >Team Authoring Administrative Functions</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

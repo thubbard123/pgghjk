@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3894" MadCap:lastWidth="1133" MadCap:conditions="Products.Flare,Products.Contributor,Products.Analyzer" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Lock a frame added to a page layout using anchors. The anchor locks the frame to the page margins, and automatially resizes the frame when the page is resized." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="PageLayoutFramesSnap" />
+            <MadCap:keyword term="Frames:page layouts;Page layouts:frames;Frames:anchors;Anchors:frames;Page layouts:anchors;Anchors:page layouts" />
+            <MadCap:concept term="FilterPageLayouts" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />Setting Frame Anchors</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <snippetText src="../../Resources/Snippets/PageLayouts/FrameAnchorsSummary1.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set frame anchors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a page in a page layout.</li>
+                    <li>Make sure you have set the margins for the page. See <MadCap:xref href="../Pages/Specifying_Page_Margins.htm">Specifying Page Margins</MadCap:xref>.</li>
+                    <li>Double-click on the frame that you want to anchor. The Frame Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                    <li>Make sure you have specified the size and position of the frame by using the <span class="Emphasis">Left</span>, <span class="Emphasis">Top</span>, <span class="Emphasis">Width</span>, <span class="Emphasis">Height</span>, <span class="Emphasis">Right</span>, and <span class="Emphasis">Bottom</span> fields. See <MadCap:xref href="Specifying_Frame_Size.htm">Specifying Frame Size</MadCap:xref>.</li>
+                    <li>
+                        <p>Click the appropriate anchors (the arrows shown on the Frame tab). The arrows on the outside of the box are used to anchor the frame to the top, bottom, left, or right margins on the page. The arrows inside the box are used to center the frame horizontally and vertically on the frame. To set an anchor, click the appropriate arrow so that it is no longer gray.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you select the inside arrow to center the frame horizontally, the left and right anchors are disabled. Likewise, if you select the inside arrow to center the frame vertically, the top and bottom anchors are disabled.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also enable or disable anchors by right-clicking the frame in the page layout, selecting <span class="Emphasis">Anchors</span> from the context menu, and choosing the options you want.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">visual explanation of each anchor arrow</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../Resources/Images/frame_anchors.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                                    <p MadCap:conditions="">Let's say you are generating a PDF manual, and you are initially told that the size of the manual should be 8.5 inches wide by 11 inches high.</p>
+                                    <p MadCap:conditions=""> On the pages to be used for the main chapter content, you have set 1-inch margins. </p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example1.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">Now suppose that you do not set any anchors on the body frame for that page:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example2.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">When you generate the PDF output, it looks like this:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example3.png" class="MaxWidth65Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">However, let's say you are then told that the page size needs to be changed to 6 inches by 9 inches. Therefore, you make the change. But when you generate the PDF output, it looks like this:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example4.png" class="MaxWidth50Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">Therefore, you might decide to set your body frame anchors like this:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example5.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">As a result, the output will look correct, whether the page dimensions are 8.5 X 11 or 6 X 9:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example6.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">But now let's say that, instead of the outside anchors (which lock the distance from the edge of the body frame to the margins), you set the inside anchors (which center the body frame horizontally and vertically).</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example7.png" class="MaxWidth90Percent" />
+                                    </p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                    <p MadCap:conditions="">In that case, you would end up with this result in the output:</p>
+                                    <p MadCap:conditions="">
+                                        <img src="../../Resources/Images/frame_anchors_example8.png" class="MaxWidth90Percent" />
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <conceptLink term="PageLayoutFramesSnap" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

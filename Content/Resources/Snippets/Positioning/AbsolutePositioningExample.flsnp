@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="5" MadCap:lastHeight="1487" MadCap:lastWidth="949">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Following is an example where styles were used for most steps, but local formatting was also used to complete the process:</p>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Let's say you want to use absolute positioning for many images throughout your project. What should you set on a style, and what should you set locally?</p>
+            <p>First, you ask yourself, <span class="EmphasisItalic">Do I always want the same kind of effect on these images (i.e., Square, In Front of Text, Behind Text)?</span> You decide that you usually want images to use the "Square" (text wraparound) effect, where text can flow around it on any side. In most situations, you decide you don't want to put images behind or in front of text. Therefore, you open your stylesheet and create a class of the <span class="Emphasis">img</span> style. Maybe you name this class "AbsoluteTextFlowAround."</p>
+            <p>In the stylesheet you set the <span class="Emphasis">position</span> property to <span class="Emphasis">absolute</span>, and you set the <span class="Emphasis">z-index</span> to <span class="Emphasis">0</span>.</p>
+            <p>
+                <img src="../../Images/absolute_positioning21.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+            <p>Next, you ask yourself, <span class="EmphasisItalic">Do I want margins or padding around those images?</span> You decide that you want to use some margins so that there is space around each of those images, separating it from the wraparound text. So you set the <span class="Emphasis">margin</span> property to <span class="Emphasis">10 px</span> (you only need to set margin; the same value is automatically used for margin-bottom, margin-left, margin-right, and margin-top, unless you override one of those).</p>
+            <p>
+                <img src="../../Images/absolute_positioning22.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Finally, you ask yourself, <span class="EmphasisItalic">Do I want the image to be placed at the same location everywhere it's used?</span> If you wanted each image to be placed in the exact same location of each topic, you might decide to set the left and top properties on that style class. But in this case, you decide that the location of each image is going to be different in each topic. Therefore, you decide to set the location for each image locally after it is inserted in the topic, rather than setting it ahead of time in the stylesheet.</p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+            <p> In the topic, you make sure the <span class="Emphasis">Print Layout</span> mode is selected (because the Square wraparound effect is displayed only in print-based output). You click anywhere in the topic and insert the image. Then you apply the <span class="Emphasis">img.AbsoluteTextFlowAround</span> style class to it. As soon as this style class is applied to the image, it is immediately separated from the main flow of content (because it has the absolute position setting), and it has a margin around it. Initially, the image is displayed in the upper-left corner of the topic (because you have not told <MadCap:variable name="Other.Product" /> in the stylesheet where to locate this absolutely positioned image). </p>
+            <p>
+                <img src="../../Images/absolute_positioning23.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+            <p>So you click in the middle of the image and drag it to the location in the topic where you want it. When you do this, the top and left values are automatically set locally on the image in the HTML code.</p>
+            <p>
+                <img src="../../Images/absolute_positioning24.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+        </div>
+    </body>
+</html>

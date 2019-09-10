@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2246" MadCap:lastWidth="884" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Creating &quot;empty&quot; pages to use as intentionally left blank pages. Empty pages are saved as a page in a Page Layout." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Page layouts:empty;Empty pages" />
+            <MadCap:concept term="FilterPageLayouts" />
+            <MadCap:concept term="FilterPrintedOutput" />
+            <MadCap:concept term="PageFlow" />Using Empty Pages</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/FrameMaker_PDF_XHTML_XPS.flsnp" />
+        <p>When creating print-based output, there may be times when you want a page in the document to purposely be left blank (or mostly blank). Flare lets you use three kinds of empty page types in a page layout. If you add one of these empty page types in a page layout, empty pages can automatically be injected into the output when necessary, based on the page types in your layout.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>the empty page types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Here are the three kinds of empty page types available in Flare. See <MadCap:xref href="Specifying_Page_Types.htm">Specifying Page Types</MadCap:xref>.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Empty </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>Select this type if you want the settings to be applied to an empty page in the output. You might use this page type after Title pages. Otherwise, you probably want to use the Empty Left and Empty Right page types instead.  </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Empty Left </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>Select this page type if you also have a First Right page type and need empty pages to be injected before them automatically when necessary (i.e., to force a new chapter to begin on the right side).</MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Empty Right </span>
+                            <MadCap:expanding>
+                                <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                <MadCap:expandingBody>  Select this page type if you also have a First Left page type and need empty pages to be injected before them automatically when necessary (i.e., to force a new chapter to begin on the left side).</MadCap:expandingBody>
+                            </MadCap:expanding>
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The empty page types are not supported in <MadCap:variable name="Outputs.Word" /> output.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>injecting empty pages for pdf and xps</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>On the Advanced tab of the Target Editor for PDF&#160;and XPS outputs, there is a check box that is used in conjunction with empty page types to automatically include empty pages in the output when necessary.</p>
+                <p>
+                    <img src="../../Resources/Images/inject_empty_pages_option.png" class="MaxWidth100Percent" />
+                </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order for this feature to work, you must have an empty page in your page layout.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>empty doesn't always mean empty</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Although it is called an "empty" page type, it does not technically need to be left completely empty. You can add header or footer content, as well as a decoration frame to that page. The main difference with the other page types is that an empty page will not display any body text. It has two main purposes: (1) to be used immediately after the title page in a manual, and (2) to be used after the body content for a particular "chapter" runs out and you want to force the next chapter to start on a certain page.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you have a page layout with four pages—one using the First Right page type, another using the Right page type, another using the Left page type, and a final one using the Empty Left page type. You want the first page to display the frame content that is specified on the First Right page of the layout (e.g., perhaps there is no header, and the footer has a page number aligned right). Similarly, you want the odd-numbered pages to use the frame content from the Right page of the layout, and you want the even-numbered pages to use the frame content from the Left page of the layout.</p>
+                    <p>When does an empty page display in the output? Let's say that when you associate the page layout with an entry in the outline TOC, you specify that the first page of that chapter should use the First Right page of the layout. For the next chapter in the outline TOC, you also specify the First Right page of the layout to begin that chapter. Your purpose is to ensure that the correct content is displayed on the first page of each chapter. Also, you want each chapter to begin on an odd (right) page. Therefore, if the previous chapter body text finishes on an odd page, you want an empty page to be forced on the even page before the next chapter starts.</p>
+                    <p>The final result is that each chapter using that page layout will begin on an odd page, using the First Right page of the layout. As the chapter progresses, the odd pages will use the Right page in the layout and the even pages will use the Left page in the layout. Let's say the Chapter 5 content ends on page 83 (an odd page), an additional page will be inserted at the end of the chapter on page 84, using the Empty Left page from the layout. Chapter 6 will start on page 85, using the First Right page from the layout.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use an empty page for a page layout</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add a page layout to the project.</li>
+                    <li>Add the necessary pages to the page layout. See <MadCap:xref href="../Adding_Pages.htm">Adding Pages</MadCap:xref>.</li>
+                    <li>Specify chapter breaks and page layouts for the appropriate entries in the outline TOC (where you want that layout to start being used in a new chapter document). See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</li>
+                    <li>
+                        <p>For PDF and XPS output, open the target. On the <span class="Emphasis">Advanced</span> tab, click <span class="Emphasis">Inject empty pages as needed to ensure TOC nodes start on their selected pages</span>.</p>
+                        <p>For details and graphics that show how these different options work together to create output that flows the way you want, see <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Page_Type_Flow_Scenarios.htm">Page Type Flow Scenarios</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteMeaningOfChapter.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PageLayouts;PageFlow" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

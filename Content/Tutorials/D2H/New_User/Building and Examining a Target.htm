@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="2093" MadCap:lastWidth="1159" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HNewUserTutorial.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Tutorials;Targets;Output" />Building and Examining a Target</h1>
+        <p>So far, we have done very little, but we have given Doc-To-Help enough to work with. If we build right now, we can take a look at what Doc-To-Help will do out-of-the-box. But first, let’s take a quick look at our Word document. If it is not already open, double-click the <span class="Emphasis">SanDiegoQuickTour.doc</span> file to open it.</p>
+        <p>It is structured like this:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Heading 1 </span>All About San Diego</li>
+            <li><span class="SetOffFirstLevel">Heading 1 </span>San Diego Attractions<ul class="SecondLevel"><li><span class="SetOffSecondLevel">Heading 2 </span>Balboa Park</li><li><span class="SetOffSecondLevel">Heading 2  </span>San Diego Zoo</li><li><span class="SetOffSecondLevel">Heading 2  </span>Petco Park</li></ul></li>
+            <li><span class="SetOffFirstLevel">Heading 1 </span>San Diego Colleges and Universities</li>
+        </ul>
+        <p>Doc-To-Help will use this structure to create topics, the table of contents (TOC), and automatic links. Close the document so we can build a target to see how it looks.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Steps</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>In Word, open the <span class="Emphasis">Doc-To-Help</span> ribbon, and in the <span class="Emphasis">Project</span> group click the <span class="Emphasis">Build Panel</span> button. The Doc-To-Help Build panel opens at the bottom of the Word interface.</p>
+                        <p MadCap:conditions="General.Future">
+                            <img id="_x0000_i1052" src="../../../Resources/Images/D2H/build_panel_tutorial.png" height="121" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the local toolbar of the Build Panel, click <span class="Emphasis">Build</span>. The default NetHelp target (chosen earlier) is built.</p>
+                        <p>
+                            <img id="_x0000_i1052" src="../../../Resources/Images/D2H/build_panel_tutorial2.png" height="121" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Doc-To-Help prompts you to view the target. Click <span class="Emphasis">Yes</span>. </p>
+                        <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">Your browser’s security settings may block display of NetHelp. Click <span class="Emphasis">Allow blocked content</span> to view your target. </p>
+                        <p>The TOC structure is based on the heading styles. Since Balboa Park, San Diego Zoo, and Petco Park used Heading 2 styles under the Heading 1 of San Diego Attractions, they were converted to subtopics.</p>
+                    </li>
+                    <li>
+                        <p>In the TOC of the NetHelp target, click the <span class="Emphasis">San Diego Attractions</span> topic. The topic has three automatic subtopic links—Balboa Park, San Diego Zoo, and Petco Park—which were created by Doc-To-Help based on the document structure. We will learn later how to add custom subtopics, but these are created automatically.</p>
+                        <p>
+                            <img src="../../../Resources/Images/D2H/GroupedTopics2.png" alt="" title="" class="MaxWidth70Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In Word, open the Doc-To-Help Project panel (<span class="Emphasis">Doc-To-Help&gt;Project Panel</span>), then click the <span class="Emphasis">Contents</span> window pane button. The TOC is displayed. If desired, you can use the Add, Rename, and Delete options in the Doc-To-Help ribbon to can edit the names of your topics and modify your TOC. However, the automatically generated TOC is logical and can be used as-is if you like. The TOC in the Contents window pane looks exactly like the TOC in the NetHelp target.</p>
+                        <p>
+                            <img src="../../../Resources/Images/D2H/Contents_window.png" alt="" title="" class="MaxWidth40Percent" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">There is also a Contents window pane in the Doc-To-Help application. This window pane offers a few additional options not available in Word, such as the ability to quickly rearrange topics. <MadCap:conditionalText MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide">For more information, see the online Help. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Interface/UI_Elements/D2H/Contents pane.htm">Contents Window Pane (Doc-To-Help)</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <p>Open the Doc-To-Help application. You can do this easily from Word by selecting <span class="Emphasis">Doc-To-Help&gt;Open in Doc-To-Help</span>.</p>
+                    </li>
+                    <li>
+                        <p>In Doc-To-Help, open the Topics window. Each Heading 1 and Heading 2 style starts a separate topic in the project. This will make it possible to create links between topics and more.</p>
+                        <p>
+                            <img src="../../../Resources/Images/D2H/ContentsPane.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also build output while working in the Doc-To-Help application. The functionality is essentially the same in both locations, so you should use whichever is most convenient for you. Typically, if you are actively editing a source document, you will probably want to build from Word. If you are not editing a document (and are instead working on tasks in Doc-To-Help), you will most likely want to build from the Doc-To-Help application. <MadCap:conditionalText MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide">For more information, see the online Help. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Output/D2H/Building a Target.htm">Building Targets</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Now that we have seen our baseline, let's add more to this project.</p>
+                <p MadCap:conditions="General.OnlineLive">Next, let's insert a graphic. See <MadCap:xref href="Inserting an Image.htm">Inserting an Image</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

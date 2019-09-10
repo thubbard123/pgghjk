@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="2722" MadCap:lastWidth="633" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects;Modular projects;Microsoft Help Viewer" />Creating Modular Output for Microsoft Help Viewer Targets</h1>
+        <p>The Microsoft Help Viewer (MHV) target is exclusively for integration with the Microsoft Visual Studio 2010 (and above) output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/D2H/Output_Types_D2H.htm">Output Types</MadCap:xref>)</MadCap:conditionalText>. MHV targets usually include API reference documentation generated using the Doc-To-Help Sandcastle plug-in.</p>
+        <p>The purpose of a MHV modular project is to combine the tables of contents of multiple projects so that they appear as a single TOC when integrated with Visual Studio 2010 (and above) output.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say your company develops almost 300 controls for Visual Studio. These controls are grouped into several studios. In order to create a single TOC for the products within Visual Studio's Help system, you create an MHV modular project. Not only is a merged TOC created, but the multiple MHV 1.x setups (HelpContentSetup.msha files) are merged into a single setup.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create an MHV Modular Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Set up your modular file structure in Windows Explorer (see <MadCap:xref href="About Modular Projects.htm#FileOrganization">File Organization</MadCap:xref>). You will not need the Redistributables folder. </li>
+                    <li>If you have already created your child projects, simply drag them into this file structure. Make sure all of the child projects have their Microsoft Help Viewer targets built.</li>
+                    <li>Create a new project that will serve as the hub or parent project. The project name should contain no spaces.</li>
+                    <li>Select the <span class="Emphasis">Project</span> ribbon.</li>
+                    <li>At the bottom of the <span class="Emphasis">Project</span> group, click <img src="../../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Project Settings dialog opens.</li>
+                    <li>In the <span class="Emphasis">Output options</span> section, select <span class="Emphasis">Is modular hub project</span>.</li>
+                    <li>Click <span class="Emphasis">OK</span> to close the Project Settings dialog.</li>
+                    <li>Open the hub project's source document and create placeholder topics for each of the child topics you wish to associate with the hub.</li>
+                    <li>Build the Microsoft Help Viewer target.</li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+                    <li>
+                        <p>Open the Topics window, right-click on each of the topics, and select <span class="Emphasis">Properties</span> from the menu. In the Topic Properties dialog, set the following in the <span class="Emphasis">Module link</span> section:</p>
+                        <ul>
+                            <li>
+                                <p>In the <span class="Emphasis">Module file</span> field, choose the manifest file (.msha) that the topic should link to.</p>
+                            </li>
+                            <li>
+                                <p>If you would like the topic chosen to be the parent of all the topics in the child project, select the <span class="Emphasis">Use first topic as parent</span> check box.</p>
+                            </li>
+                            <li>
+                                <p>If you would like the product name listed in the Help Targets dialog for your project to be inherited by all the children, select the <span class="Emphasis">Inherit Product name</span> check box. (It is selected by default.)</p>
+                            </li>
+                            <li>
+                                <p>If you would like the book name property listed in the Help Targets dialog for your project to be inherited by all the children, select the <span class="Emphasis">Inherit Book name</span> check box.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Rebuild the Microsoft Help Viewer target.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can map a topic to .msha files that were created in another modular hub project. This makes it possible to create nested (multi-level) hub projects.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">All files in the MHV target folders (MSHelpViewer by default) are required to create a successful setup.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Limitations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are limitations of this kind of output:</p>
+                <ul>
+                    <li>The content of child setups must contain .mshc files (not .cab files).</li>
+                    <li>Breadcrumbs are not supported in the parent and child setups. </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manifest List File Format</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you don't want to use an .msha file built by Doc-To-Help, you can manually create a .msha file with any list of child setups and use it. </p>
+                <p>A manifest list file is used to list all child setup manifests for a single hub topic.</p>
+                <p>This file is a standard XHTML file but must have the .msha extension.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p class="Code">&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</p>
+                    <div class="IndentSmall">
+                        <p class="Code">&lt;head&gt;</p>
+                        <p class="Code">&#160;&#160; &lt;title&gt;MadCap Software&lt;/title&gt;</p>
+                        <p class="Code">&lt;/head&gt;</p>
+                        <p class="Code">&lt;body class="manifest-list"&gt;</p>
+                        <div class="IndentSmall">
+                            <p class="Code">&lt;div class="manifest"&gt;</p>
+                            <p class="Code">&lt;a class="manifest-link" href="C1BarCode/HelpContentSetup.msha"&gt;MadCap BarCode for .NET Help&lt;/a&gt;</p>
+                            <p class="Code">&lt;/div&gt;</p>
+                            <p class="Code">&lt;div class="manifest"&gt;</p>
+                            <p class="Code">&lt;a class="manifest-link" href="C1Zip/HelpContentSetup.msha"&gt;MadCap Zip for .NET Help&lt;/a&gt;</p>
+                            <p class="Code">&lt;/div&gt;</p>
+                        </div>
+                        <p class="Code">&lt;/body&gt;</p>
+                    </div>
+                    <p class="Code">&lt;/html&gt;</p>
+                </div>
+                <p>Elements used in the file:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; </span>Required.</li>
+                    <li><span class="SetOffFirstLevel">&lt;head&gt; </span>Optional (not used).</li>
+                    <li><span class="SetOffFirstLevel">&lt;title&gt; </span>Optional (not used).</li>
+                    <li><span class="SetOffFirstLevel">&lt;body class="manifest-list"&gt; </span>Required .</li>
+                    <li><span class="SetOffFirstLevel">&lt;div class="manifest"&gt; </span>Required (one or more).</li>
+                    <li><span class="SetOffFirstLevel">&lt;a class="manifest-link" href="HelpContentSetup.msha"&gt;MadCap BarCode for .NET Help&lt;/a&gt; </span>Required (only one in a manifest div). Its text is optional, not used.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>MHV Resources</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li><span class="SetOffFirstLevel">MSDN Forum </span><a href="http://social.msdn.microsoft.com/Forums/en-US/devdocs/threads" target="_blank">http://social.msdn.microsoft.com/Forums/en-US/devdocs/threads</a>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Yahoo! Group </span><a href="http://tech.groups.yahoo.com/group/MSHelpViewer/" target="_blank">http://tech.groups.yahoo.com/group/MSHelpViewer/</a>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

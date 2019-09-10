@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="4019" MadCap:lastWidth="1366">
+    <head><title></title>
+        <meta name="description" content="Step-by-step instructions about configuring and maintaining the MadCap Feedback Server Admin" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="GettingSetUp" />
+            <MadCap:keyword term="MadCap Feedback:MadCap Feedback;MadCap Feedback;Server:MadCap Feedback" MadCap:conditions="Products.Flare" />Configuring MadCap Feedback Server Admin</h1>
+        <p>After you install the MadCap Feedback Server Admin and the other necessary components, you can open the admin to do any of the following:</p>
+        <ul>
+            <li>Require and set a password for use in Feedback Explorer</li>
+            <li>Set up an SMTP server for various email notifications.</li>
+            <li>Test your settings.</li>
+            <li>
+                <p>Specify redirection web pages for end users who register to enter Feedback comments </p>
+                <p>The author can configure MadCap Feedback to require end users to register before submitting comments. After the end user registers, a specific web page displays, depending on whether the registration was successful. You can use the Feedback Server Admin to specify the pages that end users see when successful or unsuccessful registrations occur.</p>
+            </li>
+            <li>Schedule automatic backups of the database and transaction log.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to configure and maintain the madcap feedback server admin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Feedback Server Admin application. </li>
+                    <li>
+                        <p>Select the <span class="Emphasis">General</span> tab. </p>
+                        <p>Notice that the server, database name, and website that you selected during installation are populated. Because multiple Feedback servers can use the same SQL Server, a unique name is generated for each database and is displayed in the Database Name field.</p>
+                    </li>
+                    <li>
+                        <p>If you want to require a <MadCap:keyword term="MadCap Feedback:password;Feedback Server Admin:password;Password:Feedback" />password for access to the data in Feedback Explorer, click <span class="Emphasis">Require password from Feedback Explorer</span>. Click <span class="Emphasis">Set new password</span> to enter the password. Anyone attempting to view statistics for that server in Feedback Explorer must then enter the password.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say an employee who had been using Feedback Explorer leaves your company. In order to keep your project statistics confidential, you might change the password so only current employees can access that information.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">SMTP Server</span> section, enter the appropriate server, user name, and password. This is the server that will be used to support the Feedback comments that end users can submit, as well as to send emails for the user registration process. If you have an existing SMTP server (such as Microsoft Exchange) set up, you can use it for this purpose. In the <span class="Emphasis">"From" Address</span> field, enter the email address that you want email notifications to contain in the "From" field.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you elect to use Windows Integrated Authentication, leave the user name and password fields blank. Otherwise, if your SMTP server requires specific credentials, specify them in the provided fields. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>(Optional) You can click the <span class="Emphasis">Test</span> button next to any of the sections on this tab to make sure that <MadCap:keyword term="SQL:Server" />the SQL Server, website, and SMTP Server are working. If you click the Test button in the SMTP Server section, a dialog opens, letting you enter an email address for sending a test email. </li>
+                    <li>Select the <span class="Emphasis">Advanced</span> tab. </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Activation success page</span> field, enter the URL to the web page that you want to be displayed if the registration process is successful.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><span class="Emphasis"><MadCap:keyword term="Language support:Feedback success page" /></span>You can localize the activation success page by using a server-side scripting language (e.g., ASP.NET, PHP). See <MadCap:xref href="Localizing_Success_Failure_Pages.htm">Localizing Activation Success and Failure Pages</MadCap:xref>.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Activation failure page</span> field, enter the URL to the web page that you want to be displayed if the registration process is unsuccessful. </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><span class="Emphasis"><MadCap:keyword term="Language support:Feedback failure page" /></span>You can localize the activation failure page by using a server-side scripting language (e.g., ASP.NET, PHP). See <MadCap:xref href="Localizing_Success_Failure_Pages.htm">Localizing Activation Success and Failure Pages</MadCap:xref>.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>Select the <span class="Emphasis">Maintenance</span> tab.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The tasks on the Maintenance tab are applicable to <MadCap:keyword term="SQL:Server Express" />SQL Server Express when it is located on the same computer as IIS only. If instead you have <MadCap:keyword term="SQL:Server Standard" />SQL Server Standard, you can perform these remaining maintenance tasks in that application (see the steps below on the following pages). Automatic database backups by Feedback Server are not currently supported if you are using SQL Server Express, but it is located on a remote computer. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>In the <span class="Emphasis">Location</span> field, enter the path where you want backups of the database and transaction log to be stored. </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Day &amp; Time</span> field, specify whether you want the backups to be created daily or weekly. Also, specify the day and time when you want the backup process to run.</p>
+                        <p>In the SQL Server Express Maintenance Service section, the Start button should already be engaged. <MadCap:keyword term="Backups" />This enables backups to be created. Backups will be created for the database and the transaction log. In addition, this action "shrinks" the transaction log (which steadily grows over time). </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can use the button in the local toolbar to uninstall Feedback Server. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how to set up a maintenance plan in sql server 2005 standard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The following prerequisites, steps, and verification process are necessary only if you are working with SQL Server 2005 Standard. They are not necessary for SQL Server Express. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>prerequisites</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>Install <MadCap:keyword term="Microsoft SQL Server Management Studio" />Microsoft SQL Server Management Studio (not SQL Server Management Studio Express) and Integration Services.<ol class="LowerAlpha"><li>Run the SQL Server 2005 setup from the SQL Server 2005 installation disk.</li><li>In <span class="Emphasis">Feature Selection</span>, click <span class="Emphasis">Advanced</span>.</li><li>Click <span class="Emphasis">Integration Services</span> and select <span class="Emphasis">Will be installed on local hard drive</span>.</li><li> Similarly, under <span class="Emphasis">Client Components</span>, click <span class="Emphasis">Management Tools</span> and select <span class="Emphasis">Will be installed on local hard drive</span>.</li><li>Click <span class="Emphasis">Next</span> and finish the setup.</li></ol></li>
+                            <li>Make sure SQL Server Agent is running and set to run automatically when Windows starts up.<ol class="LowerAlpha"><li>Select <span class="Emphasis">Start&gt;Programs&gt;Microsoft SQL Server 2005&gt;Configuration Tools&gt;SQL Server Configuration Manager</span>.</li><li> Select <span class="Emphasis">SQL Server 2005 Services</span>.</li><li>In the right pane, ensure that<MadCap:keyword term="SQL:Server Agent" /><span class="Emphasis" style="font-weight: normal;">SQL Server Agent</span> is running and starts on Windows startup.<ol class="LowerRoman"><li>Right-click <span class="Emphasis">SQL Server Agent</span> and select <span class="Emphasis">Properties</span>.</li><li>On the <span class="Emphasis">Service</span> tab, make sure <span class="Emphasis">Start Mode</span> is set to <span class="Emphasis">Automatic</span>.</li><li><MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /></li><li>Right click <span class="Emphasis">SQL Server Agent</span> again and select <span class="Emphasis">Start</span>. If Start is grayed out but Stop is not, then it is already started.</li></ol></li></ol></li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>steps</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open Microsoft SQL Server Management Studio.<ol class="LowerAlpha"><li>Select <span class="Emphasis">Start&gt;Programs&gt;Microsoft SQL Server 2005&gt;SQL Server Management Studio</span>.</li><li>In the Connect to Server dialog, select your SQL Server from the <span class="Emphasis">Server name</span> drop-down. </li><li>Click <span class="Emphasis">Connect</span>.</li></ol></li>
+                            <li>In the <span class="Emphasis" style="font-weight: normal;">Object Explorer</span>, expand <span class="Emphasis">Management</span>.</li>
+                            <li>Right-click <span class="Emphasis">Maintenance Plans</span> and select <span class="Emphasis">Maintenance Plan Wizard</span>. The Maintenance Plan Wizard opens.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>On the <span class="Emphasis">Select a Target Server</span> page, click in the <span class="Emphasis">Name</span> field and enter a name for this maintenance plan (e.g., "Feedback Server Maintenance Plan"). </li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>On the <span class="Emphasis">Select Maintenance Tasks</span> page, place a check mark next to the following.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Shrink Database</span></li><li><span class="SetOffFirstLevel">Back Up Database (Full)</span></li><li><span class="SetOffFirstLevel">Back Up Database (Transaction Log)</span></li></ul></li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>On the <span class="Emphasis">Select Maintenance Task Order</span> page, use the <span class="Emphasis">Move Up</span> and <span class="Emphasis">Move Down</span> buttons to configure the three previous tasks in the following order from top to bottom. <ul class="FirstLevel"><li><span class="SetOffFirstLevel">Back Up Database (Full)</span></li><li><span class="SetOffFirstLevel">Back Up Database (Transaction Log)</span></li><li><span class="SetOffFirstLevel">Shrink Database</span></li></ul></li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>On the <span class="Emphasis">Define Back Up Database (Full) Task</span> page, click the down arrow next to the <span class="Emphasis">Databases</span> field and place a check mark next to the name of the appropriate database (i.e., the same database that is listed on the General tab of the Feedback Server Admin).</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>(Optional) Next to the <span class="Emphasis">Folder</span> field, you can select the folder where the backup will be saved.</li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>On the <span class="Emphasis">Define Back Up Database (Transaction Log) Task</span> page, click the down arrow next to the <span class="Emphasis">Databases</span> field and place a check mark next to the name of the appropriate database (i.e., the same database that is listed on the General tab of the Feedback Server Admin).</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>(Optional) Next to the <span class="Emphasis">Folder</span> field, you can select the folder where the backup will be saved.</li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>On the <span class="Emphasis">Define Shrink Database Task</span> page, click the down arrow next to the <span class="Emphasis">Databases</span> field and place a check mark next to the name of the appropriate database (i.e., the same database that is listed on the General tab of the Feedback Server Admin).</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>In the field labeled <span class="Emphasis">Shrink database when it grows beyond</span>, enter <span class="TypedEntry">1</span> so that the database shrinking occurs when the database is larger than 1 MB.</li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>On the <span class="Emphasis">Select Plan Properties</span> page, click <span class="Emphasis">Change</span> to define a maintenance schedule. The New Job Schedule dialog opens.</li>
+                            <li>In the <span class="Emphasis">Name</span> field, type a name for this schedule (e.g., "Feedback Server Maintenance Schedule"). </li>
+                            <li>From the <span class="Emphasis">Occurs</span> drop-down menu, select <span class="Emphasis">Daily</span>. </li>
+                            <li>(Optional) In the field labeled <span class="Emphasis">Occurs once at</span>, you can select a time you prefer the maintenance plan to be executed or use the default (12:00:00 AM). It is recommended that the maintenance plan run during a time when there is the least amount of traffic using the database.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>In the Maintenance Plan Wizard, click Next. </li>
+                            <li>(Optional) On the <span class="Emphasis">Select Report Options</span> page, you can select to have a report written to a text file after each time the maintenance plan is executed. To do so, place a check mark next to <span class="Emphasis">Write a report to a text file</span>. </li>
+                            <li>(Optional) Next to <span class="Emphasis">Folder location</span>, you can select the folder where the text file will be saved.</li>
+                            <li>Click <span class="Emphasis">Next</span>. </li>
+                            <li>The Complete the Wizard page shows a summary of the options that you selected. Review them and click <span class="Emphasis">Finish</span>.</li>
+                            <li>The Maintenance Plan Wizard Progress page displays the progress of creating the maintenance plan. After it is completed, click <span class="Emphasis">Close</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>verify the maintenance plan</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Open Microsoft SQL Server Management Studio</li>
+                            <li>In the <span class="Emphasis" style="font-weight: normal;">Object Explorer</span>, expand <span class="Emphasis">Management</span>.</li>
+                            <li>Expand <span class="Emphasis">Maintenance Plans</span>. </li>
+                            <li>Right-click <span class="Emphasis">Maintenance Plans</span> and select <span class="Emphasis">Refresh</span> to ensure that all maintenance plans are displayed. The new maintenance plan should appear in the list. </li>
+                            <li>On the same level as <span class="Emphasis">Maintenance Plans</span>, expand <span class="Emphasis">SQL Server Agent</span>. </li>
+                            <li>Expand <span class="Emphasis">Jobs</span>. </li>
+                            <li>Right-click Jobs and select <span class="Emphasis">Refresh</span> to ensure that all jobs are displayed. A new job should appear in the list with the same name as the maintenance plan you created. </li>
+                            <li>To test executing the maintenance plan, right-click the job and select <span class="Emphasis">Start job</span>. A dialog appears, displaying the progress and status of the job. All statuses should show "Success." </li>
+                            <li>Using Windows Explorer, browse to the various locations you chose to save the database backup, transaction log backup, and report text file. Verify that each file exists. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="GettingSetUp" />
+        </p>
+    </body>
+</html>

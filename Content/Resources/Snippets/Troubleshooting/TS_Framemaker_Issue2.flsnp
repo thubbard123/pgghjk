@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="726" MadCap:lastWidth="1295">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Import Error: Failed to run command: 'Add FrameMaker Import file…'</p>
+        <p>When importing <MadCap:variable name="Outputs.Frame" /> files into Flare, the following error occurs:</p>
+        <p class="Bold">Failed to run command: 'Add FrameMaker Import file…'</p>
+        <p class="Subheading">Cause</p>
+        <p>This can be due to Microsoft Windows 7 and its use of (User Account Control) UAC.The   settings will not allow you to edit INI files,  even though you are set as local administrator.</p>
+        <p class="Subheading">Solution</p>
+        <p>Perform the following steps in order to allow Flare to write to the INI file and import the <MadCap:variable name="Outputs.Frame" /> file. </p>
+        <ol>
+            <li>
+                <p>Locate the <span class="Emphasis">maker.ini</span> file (its location is listed in the error message). For example, the file's location might look something like this:</p>
+                <p class="Bold">C:\Program Files\Adobe\AdobeFrameMaker11\maker.ini</p>
+            </li>
+            <li>
+                <p>Right-click on the file and from the context menu select <span class="Emphasis">Properties</span>. The Properties dialog opens.</p>
+                <p>
+                    <img src="../../Images/TS_framemaker_ex2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>
+                <p>In the Properties dialog, click  the <span class="Emphasis">Security</span> tab.</p>
+            </li>
+            <li>Click on your username.</li>
+            <li>
+                <p>Click the <span class="Emphasis">Edit</span> button.</p>
+            </li>
+            <li>In the <span class="Emphasis">Allow</span> column, click the check box next to <span class="Emphasis">Modify</span>.  </li>
+            <li>Click <span class="Emphasis">Apply</span>.</li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                </p>
+                <p>
+                    <img src="../../Images/TS_framemaker_ex4.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>Open Flare and Import the <MadCap:variable name="Outputs.Frame" /> file.</li>
+        </ol>
+        <p>If you cannot edit the maker.ini file due to security restrictions, you might want to contact your system administrator in order to obtain the permissions necessary to access that file.</p>
+    </body>
+</html>

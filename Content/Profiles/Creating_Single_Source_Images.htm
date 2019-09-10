@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="s;W;C;F;F1;F4;P;Y;Z;Tollfree;MadCap1;F11;F3;F7;NewWord;MadCap's;MyProfile;taskbar" MadCap:conditions="Products.Capture" MadCap:lastBlockDepth="12" MadCap:lastHeight="2075" MadCap:lastWidth="1081">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Profiles" />
+            <MadCap:keyword term="Images:single-sourcing;Single-sourcing:images" />Creating Single-Source Images</h1>
+        <p>If you have MadCap Flare installed on your computer and you are generating files for both online and printed output, chances are good that you require different image settings (e.g., gray scale, resolution) for those outputs. In the past, the easiest way to accomplish this task was to create one set of images for the online output and another set for the printed output. However, there is another alternative if you use Capture to create the images for that project. You can single-source your images, producing only one set of images for all outputs. You can specify that the online images should have one group of settings, while the printed images have another group of settings. You can also specify that images that use custom mediums—which might be used for print- or web-based output—have a different group of settings.</p>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ImagesAndCapture/SingleSourceImageExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureCreatingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a single-source image</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This requires a combination of tasks in MadCap Capture, followed by tasks in Flare.</p>
+                <p class="Subheading">madcap capture tasks</p>
+                <ol>
+                    <li>
+                        <p>(Optional) One option you have is to use a profile to specify your single-source settings before you capture the image. In the Profiles Editor, use the <span class="Emphasis">Format</span> tab and select the Web (Default) medium to enter the appropriate settings for the image when it is displayed in online output. Select  the Print medium to enter the appropriate settings for the image when it is used in outputs intended for printed distribution (<MadCap:snippetText src="../Resources/Snippets/Output/AllPrintOutputTypes.flsnp" />). Select a custom medium to enter the appropriate settings for the image when it is displayed in outputs that use a specific custom Flare medium. If necessary, select <span class="Emphasis">Enable Format</span> to enable the medium. See <MadCap:xref href="About_Profiles.htm">About Profiles</MadCap:xref>.</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFlarePrintFormatTab.flsnp" />
+                    </li>
+                    <li>
+                        <p>Capture the image.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You also have the option of initiating the capture from Flare. See Flare's online Help for more information.</p>
+                    </li>
+                    <li>
+                        <p>(Optional) Another option you have is to specify your single-source settings for each image after you capture them. To do this, double-click the image. In the File Properties dialog, use the <span class="Emphasis">Format</span> tab and select the Web (Default) medium to enter the appropriate settings for the image when it is displayed in online output. Select Print medium to enter the appropriate settings for the image when it is used in outputs intended for printed distribution (<MadCap:snippetText src="../Resources/Snippets/Output/AllPrintOutputTypes.flsnp" />). Select a custom medium to enter the appropriate settings for the image when it is displayed in outputs that use a specific custom Flare medium. If necessary, select <span class="Emphasis">Enable Format</span> to enable the medium. See <MadCap:xref href="../Appearance/Mediums/Setting_Image_Properties_Using_Mediums.htm">Setting Image Properties Using Mediums</MadCap:xref>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Some settings are available in the File Properties dialog, but not in the Profiles Editor.</p>
+                    </li>
+                    <li>Save the image in the appropriate location in the Flare project folder (usually, Content\Resources\Images). </li>
+                </ol>
+                <p class="Subheading">madcap flare tasks</p>
+                <p value="5">See Flare's online Help for details about each of the following steps.</p>
+                <ol>
+                    <li value="7">After completing the MadCap Capture tasks above, insert the image into the appropriate topic(s).</li>
+                    <li>Make sure you develop targets for your different outputs.</li>
+                    <li>When you are finished with your project, build the targets.</li>
+                    <li>View the output for the targets. Notice that the image uses the appropriate settings. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureCreatingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Not only can you incorporate the single-source image into Flare, but you can save a standalone version of the image with the print settings applied to it. When you do this, a copy of the image is saved in a folder called "PrintVersions," next to the location where the original image was saved. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Steps/Saving_an_Image.htm" class="seepara">Saving an Image</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Profiles" />
+        </p>
+    </body>
+</html>

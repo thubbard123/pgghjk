@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="18" MadCap:lastHeight="6636" MadCap:lastWidth="830" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet2 or Snippets.Snippet4 or Snippets.Snippet6] exclude[Snippets.Snippet1 or Snippets.Snippet3 or Snippets.Snippet5] " class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Edit the CSS properties for a List of Elements MadCap Flare. This is accomplished using the List-Of-Proxy dialog. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="PrintedOutputStyles" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Lists:proxies;Proxies:lists;Print-based output:lists of elements;Print-based output:proxies;Tables:list of;Images:list of;Styles:lists of elements;Elements:list of;Elements:styles" MadCap:conditions="Products.Flare" />Using Styles to Determine the Look of a List of Elements</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareStylesGuide">
+            <MadCap:keyword term="Lists:proxies;Proxies:lists;Print-based output:lists of elements;Print-based output:proxies;Tables:list of;Images:list of;Styles:lists of elements;Elements:list of;Elements:styles" MadCap:conditions="Products.Flare" /> Lists of Elements</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide" />
+        <p>When you use the List-Of proxy to create a list of elements (such as a list of figures or tables), you have the option of selecting a couple of style classes in the List-Of Proxy dialog.</p>
+        <ul>
+            <li>In the field labeled <span class="Emphasis">Stylesheet class for each generated entry</span>, you can select a style class for determining how each item in the generated list looks. You would use this style class, for example, if you want to change the font of the entries or add a leader (e.g., series of dots) between the entries and the page numbers. This should be a custom class of the p style that you have created.</li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../../../Resources/Snippets/Proxies/StylesheetClassForProxyListOfProxy.flsnp" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Proxies/ListOfProxyStylesheetClassForProxyComment.flsnp" />
+            </li>
+        </ul>
+        <p>Therefore, when you want to change the way a list of elements looks (either each entry or the entire container), you simply need to adjust the properties for the appropriate style. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a list of elements (entire container)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                            </MadCap:snippetText>
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Some of the necessary style properties can also be changed in the Simplified view in the Stylesheet Editor.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <p>On the left side of the editor, scroll down and select the <span class="Emphasis">MadCap|listOfProxy</span> style or a class that you have created under it (e.g., MadCap|listOfProxy.myclass). </p>
+                        <p>This is the same style that you selected in the field labeled <span class="Emphasis">Stylesheet class for proxy</span> in the List-Of Proxy dialog (when you inserted the List-Of proxy).</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteAssortedRelevantProperties.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand a property group (e.g., Font, Block, Box) to see the actual properties within it. </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" />
+                        <p>For example, if you want to change the width of the entire list of elements, you would first expand the <span class="Emphasis">Box</span> property group. Then you would click <img src="../../../Resources/Images/browse_ellipses.png" /> to the right of the <span class="Emphasis">width</span> property and set the value in the popup.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteForMoreInfoComponentsPropsStylesheetEditor.flsnp" MadCap:conditions="General.OnlineLive" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a list of elements (individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>In the<span class="Emphasis"> Styles</span> section of the editor, scroll down and select the style to be used for each generated item. This is the same style that you selected in the field labeled <span class="Emphasis">Stylesheet class for each generated entry</span> in the List-Of Proxy dialog (when you inserted the List-Of proxy).</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.ListOfPageNumber style.</p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </li>
+                                    <li>Select the <span class="Emphasis">Leader</span> tab.</li>
+                                    <li>Modify any of the following fields on the tab.<MadCap:snippetBlock src="../../../Resources/Snippets/Styles/LeaderSettingsListSimplifiedView.flsnp" /><p>Additional changes can be made in the Advanced view.</p></li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>On the left side of the editor, scroll down and select the style to be used for each generated item. This is the same style that you selected in the field labeled <span class="Emphasis">Stylesheet class for each generated entry</span> in the List-Of Proxy dialog (when you inserted the List-Of proxy).</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.ListOfPageNumber style.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                                        </p>
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteAssortedRelevantProperties.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>If you are using the group view, expand a property group (e.g., Font, Block, Box) to see the actual properties within it. </li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" /> Following are some of the more common properties that you might change.</p>
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntriesList.flsnp" />
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteForMoreInfoComponentsPropsStylesheetEditor.flsnp" MadCap:conditions="General.OnlineLive" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li value="3">
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a list of elements (individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <p>On the left side of the editor, scroll down and select the style to be used for each generated item. This is the same style that you selected in the field labeled <span class="Emphasis">Stylesheet class for each generated entry</span> in the List-Of Proxy dialog (when you inserted the List-Of proxy).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.ListOfPageNumber style.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteAssortedRelevantProperties.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand a property group (e.g., Font, Block, Box) to see the actual properties within it. </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" /> Following are some of the more common properties that you might change.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntriesList.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputStyles" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+    </body>
+</html>

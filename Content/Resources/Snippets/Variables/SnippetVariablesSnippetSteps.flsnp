@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="6" MadCap:lastHeight="638" MadCap:lastWidth="1187">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Use this option if you want to change the definition of a variable within a specific snippet. Snippet-level snippet variable definitions take priority over topic-level snippet variable definitions.</p>
+        <ol>
+            <li MadCap:conditions="Products.Flare">
+                <MadCap:snippetText src="../StepsGeneral/MakeSureContentExplorerOpen.flsnp" />
+            </li>
+            <li MadCap:conditions="Products.Flare">Locate the topic in which you want to override a variable definition.</li>
+            <li MadCap:conditions="Products.Contributor">Open the file in which you want to override a variable definition.</li>
+            <li>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="Products.Flare">In the topic, right-click </MadCap:conditionalText>
+                    <MadCap:conditionalText MadCap:conditions="Products.Contributor">Right-click </MadCap:conditionalText>the instance of the snippet in which you want to override the variable definition and select <span class="Emphasis">Snippet Variables</span> from the context menu. </p>
+                <p>The Snippet Variables dialog opens. The Snippet Variables dialog shows all of the variable sets in your project and their associated variables.</p>
+            </li>
+            <li>Select the appropriate variable set.</li>
+            <li>Do one of the following, depending on whether the variable has only one or multiple definitions in the Variable Set Editor<MadCap:conditionalText MadCap:conditions="Products.Contributor"> in Flare</MadCap:conditionalText>.<MadCap:conditionalText MadCap:conditions="FlareGuides.FlareVariablesGuide,Products.FlareOnlineOnly"> For information on adding multiple definitions, see <MadCap:xref href="../../../Variables/More_About_Variables/Editing_Variables.htm">Editing Variables</MadCap:xref> and <MadCap:xref href="../../../Variables/More_About_Variables/Editing_DateTime_Variables.htm">Editing Date/Time Variables</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTargetsGuide"> For information on adding multiple definitions, see the online Help.</MadCap:conditionalText><ul class="FirstLevel"><li><span class="SetOffFirstLevel">Single Definition </span>Click in the <span class="Emphasis">Definition</span> cell for the variable that you want to override and press <span class="Emphasis">F2</span> on your keyboard. Then type a different definition and press <span class="Emphasis">Enter</span> on your keyboard.</li><li><p><span class="SetOffFirstLevel">Multiple Definitions </span>In the <span class="Emphasis">Definition</span> cell, click the down arrow and select an alternative definition.</p><p><img src="../../Images/snippet_variables_dialog_multiple_definitions.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul></li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+            </li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" /> The alternative variable definition will be used for all instances of the variable that appear in the selected snippet. However, if the variable appears elsewhere in the topic (i.e., in other snippets or outside of snippets) or in other topics, the topic-level snippet variable definition, the target-level variable definition (if applicable), or the original variable definition will be used.</p>
+            </li>
+        </ol>
+    </body>
+</html>

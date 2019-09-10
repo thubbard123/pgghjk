@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="flare020;ke5g.asp" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1395" MadCap:lastWidth="1139" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareDNH.flmsp');">
+    <head><title></title>
+        <meta name="description" content="About CSH Calls for DotNet Help. Steps for mapping context-sensitive Help topics to a .NET application in MadCap Flare. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="ConnectingDotNetHelp" />
+            <MadCap:keyword term="DotNet Help:connecting to application;DotNet Help:distributing" />
+            <MadCap:keyword term="Output:DotNet Help;Context-sensitive Help:DotNet Help;DotNet Help:context-sensitive Help" />
+            <MadCap:concept term="FilterDotNetHelp" />CSH Calls for DotNet Help</h1>
+        <p>There are several ways that your <MadCap:variable name="Other.Product" /> DotNet Help system can be "connected" to a software application.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareDNHGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareDNHGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Available DotNet Help Features in Flare</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>available  dotnet help features in flare</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Features that are available include the following.</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Detached or Integrated Help </span>he Help system can be connected so that the Help opens in a window separate from your software application (detached Help).</p>
+                        <p>Alternatively, the Help can be connected so that the Help opens within the software application (integrated Help).</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Same or Different Process </span>The Help system can be connected so that it uses the same process as the software application <MadCap:keyword term="Embedded Help" />(embedded). If the Help uses the same process, the Help will close when the application is closed. The online Help in Flare is connected so that it uses the same process as Flare. Alternatively, the Help system can be connected so that it uses a different process than the software application. If the Help uses a different process, the Help can remain open even if the application is closed.  </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Context-sensitive Help" /><span class="SetOffFirstLevel">Basic Help or Context-sensitive Help (CSH) </span>The developer can connect the application to your basic DotNet Help output, rather than to a specific topic. For example, you might want a standalone version of the Help Viewer to open separately from the software application, displaying your startup topic and showing panes for the navigation elements (e.g., TOC, Index, Search, Browse Sequences) that you have created. Or maybe you want users to be able to open the different navigation elements within the application and access topics from each one. </p>
+                        <p>Alternatively, the developer can use CSH to connect the application to specific topics in the DotNet Help output (as long as you have created CSH in your Flare project and share the header file information with the developer). </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Dynamic Help window" />Dynamic Help </span>The developer can also incorporate your Help into the application using a unique feature called "Dynamic Help." This is a type of CSH where a Help window automatically displays topics from a Help system as an individual uses the application. It does not require any other action from the user (e.g., clicking a button or pressing a shortcut key). The Help system simply follows the actions of the user, automatically providing the appropriate Help content based on the area of the interface that is being clicked. </p>
+                    </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="F1 Help" />F1 Help </span>The developer can connect the application to the Help in such a way that the Help opens when a user presses the F1 key. </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Dialog's Help Button </span>The developer can connect the application to the Help in such a way that the Help opens when a user clicks the dialog's Help button (i.e., the "question mark" button). </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">What You Need to Do</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>what you need to do</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Work with your developer to determine which of the above features you want to use. You may want to use several of the features, as is the case with the Flare's online Help.</li>
+                    <li>Create and build your <MadCap:variable name="Outputs.DotNetHelp" /> project in Flare. </li>
+                    <li>Provide the developer with the output files, as well as the CSH header file (if you plan to use CSH). </li>
+                    <li>Provide the developer with the information in the following topics. The developer should begin with the "CSH Calls for DotNet Help—Developers" topic. <ul class="FirstLevel"><li><MadCap:xref href="CSH_Calls_DNH_Developers.htm">CSH Calls for DotNet Help—Developers</MadCap:xref></li><li><MadCap:xref href="HelpViewerClient_API.htm">HelpViewerClient API</MadCap:xref></li><li><MadCap:xref href="HelpViewerEmbeddedClient_API.htm">HelpViewerEmbeddedClient API</MadCap:xref></li><li><MadCap:xref href="IEmbeddedHelpSystem.htm">IEmbeddedHelpSystem API</MadCap:xref></li><li><MadCap:xref href="ICSHIDProvider.htm">ICSHIDProvider API</MadCap:xref></li><li><MadCap:xref href="Command_Line.htm">Command Line</MadCap:xref></li></ul></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ConnectingDotNetHelp" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+    </body>
+</html>

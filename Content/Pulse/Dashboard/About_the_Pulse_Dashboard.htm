@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:ignoredWords="PulseAdmin;MadCap;Login;Timeline;Logout" MadCap:lastBlockDepth="10" MadCap:lastHeight="6035" MadCap:lastWidth="1107" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="Dashboard" />
+            <MadCap:conditionalText MadCap:conditions="PulseGuides.PulseServerAdminGuide,General.OnlineLive">About the </MadCap:conditionalText>Pulse Dashboard</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />About the Pulse Dashboard</h1>
+        <p>The Pulse dashboard is the web-based interface to the Pulse system. Depending on your group membership, authorized users can use the dashboard to configure a variety of server settings, administer users and groups, moderate the Pulse content associated with your Flare output, and access some basic end user features.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+        <h2 MadCap:conditions="General.Print">Group Dashboards</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>group dashboards</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse dashboard gives registered users the ability to view and gain access to different features based on the group membership of their user account. See <MadCap:xref href="Settings/Managing_Groups.htm">Managing Groups</MadCap:xref>.</p>
+                <p>There are three levels of group access available:</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>administrator dashboard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Users who have been granted access privileges to the Administrator dashboard include:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">PulseAdmin Account </span>This is the default PulseAdmin user account. It is created during the initial server configuration and the person configuring the server sets the password. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">See <MadCap:xref href="../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">Members of the Administrators Group </span> Registered  users who are members of the Administrators group. See <MadCap:xref href="Settings/Managing_Groups.htm">Managing Groups</MadCap:xref>.</li>
+                        </ul>
+                        <p>Members of the Administrators group have full access to all dashboard features and options. It is recommended that you limit the number of members in the Administrators group. See <MadCap:xref href="Settings/Managing_Users.htm">Managing Users</MadCap:xref>.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_view_administrators.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>employee dashboard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Employee dashboard is available to registered users who have been added as members of the Employees group in Pulse. See <MadCap:xref href="Settings/Managing_Users.htm">Managing Users</MadCap:xref> and <MadCap:xref href="Settings/Managing_Groups.htm">Managing Groups</MadCap:xref>.</p>
+                        <p>This dashboard provides members with access to a variety of Pulse moderation features and all of the customer-facing community features.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_view_employee.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>customer dashboard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The Customer dashboard has limited access to features. It lets users edit their profile, view the general system status, view system notifications, and use messaging features. </p>
+                        <p>Users with access to functions of the Customer dashboard include:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">All Registered Users </span>All registered Pulse users have access to the features that are available in the&#160;Customer dashboard. </li>
+                            <li><span class="SetOffFirstLevel">Members of the Customers Groups </span>An Administrator can also explicitly add a user as a member of the Customers group. See <MadCap:xref href="Settings/Managing_Users.htm">Managing Users</MadCap:xref>.</li>
+                        </ul>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_view_customers.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>Because the Customer dashboard functions are limited, most organizations integrating a Pulse system with Flare encourage their end users to access Pulse directly from the Flare output. The embedded discussion forms and optional Community tab in the Flare output provide end users with the richest community experience. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By default, registered users who are not explicitly added to a group are granted the same access privileges as members of the Customers group. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Initial&#160;Dashboard Login for Administrators</h2>
+        <p MadCap:conditions="General.Print">If this is your first time logging in to the Pulse dashboard, you must log in with the PulseAdmin account that was created during the initial server configuration. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide">See <MadCap:xref href="../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to initially log in to the dashboard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">If this is your first time logging in to the Pulse dashboard, you must log in with the PulseAdmin account that was created during the initial server configuration. See <MadCap:xref href="../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</p>
+                <ol>
+                    <li>
+                        <p>In a web browser, navigate to the Pulse Server URL. </p>
+                        <p>If you do not know the Pulse Server URL:</p>
+                        <ol class="LowerAlpha">
+                            <li>Log in to the Pulse web server as the server administrator. </li>
+                            <li>Double-click the MadCap&#160;Pulse desktop shortcut. The starts the Pulse application on the server.</li>
+                            <li>In the Pulse Server Configuration window, the Pulse Server URL&#160;appears in the <span class="Emphasis">Web Site</span> area in the <span class="Emphasis">URL</span> box.</li>
+                            <li>
+                                <p>Click the <span class="Emphasis">View</span> button to launch the Pulse dashboard. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_server_url_site_url.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>In the Pulse Account Login page, do the following:</p>
+                        <ol class="LowerAlpha">
+                            <li>In the <span class="Emphasis">Email Address</span> box, type:&#160;<span class="TypedEntry">PulseAdmin</span>.</li>
+                            <li>In the <span class="Emphasis">Password</span> box, enter the password that you created during the initial server configuration. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">See <MadCap:xref href="../Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ol>
+                    </li>
+                    <li>Click <span class="Emphasis">Login</span>.</li>
+                </ol>
+                <p>After logging in to the Pulse dashboard for the first time, you should create at least one administrator account before you start inviting users to join Pulse. See <MadCap:xref href="Settings/Managing_Users.htm">Managing Users</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Dashboard Structure</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>dashboard structure</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The Pulse dashboard consists of several areas:</p>
+                <p>
+                    <img src="../../Resources/Images/pulse_dashboard_structure.png" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>menu bar</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Across the upper-left of the Pulse dashboard is the menu bar. The menus and commands that are accessible to you depend on your group membership. This table details the general availability of the Pulse dashboard menus:</p>
+                        <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Menus</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Menu Commands</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead"> Customers Group</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Employees Group</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Administrators Group</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="5">
+                                        <p class="TableTextEmphasis">Pulse</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Home</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Messages</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Profile</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Timeline</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Logout</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" rowspan="2">
+                                        <p class="TableTextEmphasis">People</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Find People</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Followed by Me</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" rowspan="4">
+                                        <p class="TableTextEmphasis">Groups</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Find Groups</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Followed by Me</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Owned by Me</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Create Group</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" rowspan="3">
+                                        <p class="TableTextEmphasis">Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Find Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Followed by Me</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Create Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="2">
+                                        <p class="TableTextEmphasis">Systems </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Find Systems</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Create Systems</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="2">
+                                        <p class="TableTextEmphasis">Administration</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Settings</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Reports</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>system bar and search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Across the upper-left of the Pulse dashboard is the system notification bar. This area shows general system status information, including notifications and messages. It also gives users the ability to perform full-text searches of the posts and comments in the embedded discussion forms.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_system_bar.png" class="MaxWidth50Percent" />
+                        </p>
+                        <p>This table details the availability of the system bar and search functions:</p>
+                        <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Feature</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Customers Group</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Employees Group</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Administrators Group</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Status</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Notifications</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Messages</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Search</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>profile</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The profile area of the Pulse dashboard shows the user's first and last name, profile avatar, and a link to edit the user profile. </p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_profile_info.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>your apps and lists</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Apps area displays a list of Pulse applications. It lets users customize which apps display in the personalized Your Apps menu. The Lists area displays items that the user adds to his or her list of Favorites. </p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_your_apps_lists.png" class="MaxWidth30Percent" />
+                        </p>
+                        <p>The following apps can be added to the Pulse dashboard. This feature is available to members of the Administrators or Employees group. </p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_your_apps_messages.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                        <table style="width: 100%;mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Your Apps</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Most Recent<sup>1</sup></p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Shows your most recent posts. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Files</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Upload files to share with others, and download files.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Messages<sup>1</sup></p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Shows a list of all system conversations.&#160;This includes both chat messages and email messages. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Notifications<sup>1</sup></p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Shows all of the notifications about system events. You can turn notifications on and off by clicking <span class="Emphasis">Edit My Profile</span> and then selecting the <span class="Emphasis">Notifications</span> tab.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Moderation</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">View content that is pending (i.e., awaiting moderation).</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Tasks<sup>1</sup></p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Shows a list of tasks assigned to you.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Mentions<sup>1</sup></p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Lists posts where you are mentioned.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Top News</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Shows the top news. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Read it Later</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Lists items you have marked to read later. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Statuses</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Shows the latest updates posted to the selected feed.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Questions</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Shows a list of all your posted questions.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Articles</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Shows a list of all your posted articles. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Profile</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">Opens the Profile Editor. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="TableStyle-BasicAlternateRows-Foot-Footer1">
+                                    <td class="TableStyle-BasicAlternateRows-FootD-Regular-Footer1" colspan="2">
+                                        <p class="TableTextFootnote"><sup style="font-weight: bold;">1</sup>This displays in the Your Apps list by default.</p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>status updates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The lets you post status updates, ask questions, create articles, and assign tasks to other registered users. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>search this feed</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The Search this Feed area lets users perform full-text search on the contents of the active system feed. As shown below, matches to search queries are highlighted in bold text. </p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_dashboard_search_feed.png" class="MaxWidth70Percent" />
+                        </p>
+                        <p>The Search this Feed area is powered by the Pulse search engine. The Pulse search engine restricts its search to the system feed.&#160;It does not search your Flare content for matching topics. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Pulse;Dashboard" />
+        </p>
+    </body>
+</html>

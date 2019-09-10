@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1279" MadCap:lastWidth="910" MadCap:conditions="Products.Flare">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterWord" />
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:keyword term="Importing:Word documents;Microsoft Word:importing;Microsoft Word:custom import file names" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:concept term="FilterTopics" />
+            <MadCap:concept term="WordImport" />Specifying Custom File Names for Word Imports</h1>
+        <p>If you import Microsoft Word documents, you can split those documents into multiple topics based on the styles in them. For example, you might decide to create a new topic at each "Heading 1" style in the Word document. You can also control the file names given to the new topics that are created from the imported Word documents. To do this, you need to apply "Private" field codes to the appropriate headings in the Word documents where new topics will be created. The following format should be used when applying the field: PRIVATE:MADCAP:FILENAME:&lt;custom filename&gt;.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify custom file names for word imports</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps are based on Microsoft Word 2003 and 2007. For more details on creating Private fields in <MadCap:variable name="Outputs.Word" /> in other versions, please refer to the documentation provided with that application.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the Word document.</li>
+                    <li>Place your cursor on a heading where you want to start a new topic in <MadCap:variable name="Other.Product" />.</li>
+                    <li>Do one of the following.<ul type="1" class="FirstLevel"><li><p><span class="SetOffFirstLevel">For Word 2003</span> Select <span class="Emphasis">Insert&gt;Field</span>. </p><p>OR</p></li><li><span class="SetOffFirstLevel">For Word 2007</span> Select <span class="Emphasis">Insert&gt;Quick Parts&gt;Field</span>.</li></ul><p>The Field dialog opens.</p></li>
+                    <li>In the <span class="Emphasis">Field name</span> section, scroll down and select <span class="Emphasis">Private</span>.</li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTopicsGuide,FlareGuides.FlareImportGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Field codes</span> section, enter the code using the following format: PRIVATE:MADCAP:FILENAME:&lt;custom filename&gt;.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you have a place in a Word document that is using the "Heading 1" style and contains the text "All About Rabbits." You want a new topic to be created at that point when you import the document. However, you also want to make sure that the file name for that new topic is simply "Rabbits." Therefore, you open the Word document and apply a Private field on that heading, using the following format:</p>
+                            <p>PRIVATE:MADCAP:FILENAME:Rabbits</p>
+                            <p>When you import the Word document, you select to split new topics on certain styles, including the "Heading 1" style. After the import is finished, one of the topics created is named "Rabbits.htm."</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Save the Word document.</li>
+                    <li>
+                        <p>In <MadCap:variable name="Other.Product" />, go through the process for importing the Word document. When you arrive at the "New Topic Styles" page in the Import Microsoft Word Wizard or the "New Topic Styles" tab in the Word Import Editor, make sure you select the style(s) where you inserted Private fields in the Word document.</p>
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Importing_Word_Files.htm">Importing Word Files</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteWordSupports2003AndNewer.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="WordImport" />
+        </p>
+    </body>
+</html>

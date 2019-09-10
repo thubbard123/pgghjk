@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo,Products.Align" MadCap:lastBlockDepth="7" MadCap:lastHeight="2321" MadCap:lastWidth="872">
+    <head>
+        <meta name="description" content="View these examples to learn how to create segementation rules and use spaces for translated segments in MadCap Lingo. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Segmentation Rules and Spaces</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/SegmentationRules/SegmentationRulesSpaces.flsnp" /> For more information, see <MadCap:xref href="../../Segmentation_Split_Join/About_Segmentation_Rules.htm">About Segmentation Rules</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—do not break</p>
+                    <p>Let’s say you have the date Feb. 21 (with a space between) and want to make sure it appears in the same segment. Without a segmentation rule, <MadCap:variable name="Other.Product" /> will break the segment after Feb. because it thinks it is the end of a sentence. </p>
+                    <p MadCap:conditions="Products.Lingo">
+                        <img src="../../Resources/Images/segmentation_rules17.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Align">
+                        <img src="../../Resources/Images/segmentation_rules17_align.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <MadCap:conditionalText MadCap:conditions="Products.Align">The segments are aligned, but they are not segmented the way you want. </MadCap:conditionalText>You can create a rule by entering Feb. in the After cell and 21 in the Before cell. However, when you enter 21 in the Before cell, make sure you also add a space before it. Otherwise, the segment will break only if it comes across Feb.21 (with no space) but not if it comes across Feb. 21 (with a space).</p>
+                    <p>
+                        <img src="../../Resources/Images/segmentation_rules18.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Lingo">After updating the project, the segment looks like this:</p>
+                    <p MadCap:conditions="Products.Align">After reimporting the project, the segment looks like this. Segmentation rules created in Align are applied to both the source and target segments, if applicable.</p>
+                    <p MadCap:conditions="Products.Lingo">
+                        <img src="../../Resources/Images/segmentation_rules19.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Align">
+                        <img src="../../Resources/Images/segmentation_rules19_align.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/SegmentationRules/ExampleBreak.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

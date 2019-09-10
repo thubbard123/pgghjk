@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Contributor" MadCap:lastBlockDepth="3" MadCap:lastHeight="343" MadCap:lastWidth="902">
+    <body>
+        <div class="warning">
+            <p class="warningInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">When controlling the look of tables, you might want to choose just one method for styling them. You should use either (A) table stylesheets and perhaps classes of the p style (e.g., p.TableText) for table content<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Tables/More_About_Tables/Selecting_Styles_for_Table_Cell_Contents.htm">Selecting Styles for Table Cell Contents</MadCap:xref>)</MadCap:conditionalText>, or (B) standard table styles from a regular stylesheet.</p>
+            <p>If you use standard table tags at the parent level (e.g., tr, td), you may run into trouble if you also use proxies in your project. The reason for this is that when proxies are generated, they also use standard parent-level table styles. So any style changes you make to the standard table styles may be seen not only in tables, but also in generated content created via proxies (e.g., TOCs, indexes). In this case, it would be wiser to use classes of the standard table styles (e.g., tr.myclass, td.myclass), instead of table styles at the parent level. </p>
+            <p>However, if you decide to use classes of standard table styles (e.g., tr.myclass, td.myclass), you may be faced with a different dilemma. This issue occurs when you also use table stylesheets. That's because the table stylesheet settings will overwrite settings on the classes.</p>
+        </div>
+    </body>
+</html>

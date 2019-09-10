@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1271" MadCap:lastWidth="1282">
+    <body>
+        <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">When you create print-based output, there are many techniques for single-sourcing your content. That is, you can create content once and reuse it in multiple ways.</p>
+        <MadCap:snippetBlock src="../../ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:keyword term="Print-based output:topic styles;Topics:styles;Styles:topics" /><a name="CreatingTopicStylesForPrintOutput"></a>Setting Styles for Print Output in a Regular Stylesheet</h2>
+        <p>
+            <MadCap:snippetText src="../../Styles/SettingStylesIntro.flsnp" />
+        </p>
+        <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref> and <MadCap:xref href="../../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set styles for print output in a regular stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>Set the style properties to be used for your online output as follows:<ol class="LowerAlpha"><li>In the local toolbar of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> field and make sure the medium for your online output is selected.</li><li>Select a style and set the properties for it. Do this for each style that you want to use in your online output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</MadCap:conditionalText></li></ol></li>
+                    <li>Set the style properties to be used for your printed output as follows:<ol class="LowerAlpha"><li><p><MadCap:keyword term="Topics:styles;Topics:mediums" />In the local toolbar of the Stylesheet Editor, click the down arrow in the <span class="Emphasis">Medium</span> field and select <span class="Emphasis">Medium: print</span> or <span class="Emphasis">Medium: [name of print medium]</span>.</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create a new medium if necessary. You actually might find it preferable to do this. For example, if you want page breaks before a particular heading for print output, but not when users send online topics to the printer, it is a good idea to create a custom print medium. The reason for this is that browsers respect the settings in the "print" medium provided by <MadCap:variable name="Other.Product" />. Therefore, even though your online output style medium does not have page breaks set before that heading, the application will see that you <span class="EmphasisItalic">do</span> have a page break specified in the print medium. And when a user tries to print a topic from your online Help, the printer will start a new page at that heading. The solution is to create a custom print medium (perhaps calling it "PDF" or "XPS"), specifying page breaks in that medium, and using it for your print output (instead of using the "print" medium provided by <MadCap:variable name="Other.Product" />). See <MadCap:xref href="../../../../Styles/Mediums/Creating_Medium_Types.htm" >Creating Stylesheet Mediums</MadCap:xref>.</p></li><li>Select the same styles that you edited for the online output, and set different properties for them (for the purpose of printed output).</li><li><MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" /></li></ol></li>
+                    <li>
+                        <p>Apply the styles to the content throughout your project. </p>
+                        <p>
+                            <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareStylesGuide">See <MadCap:xref href="../../../../Styles/Applying_Styles_to_Content.htm">Applying Styles to Topic Content</MadCap:xref>.</MadCap:conditionalText>
+                            <MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        </p>
+                    </li>
+                    <li>Associate the online medium with your online target  as follows:<ol class="LowerAlpha"><li>Open the target to be used for online output (<MadCap:snippetText src="../../Output/AllOnlineOutputTypesOR.flsnp" />). </li><li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li><li>In the <span class="Emphasis">Stylesheet Medium</span> section, select the medium that you used for online output.</li></ol></li>
+                    <li>
+                        <MadCap:keyword term="Mediums:targets;Print mediums:Targets;Targets:print mediums" />Associate the print medium with your print target  as follows:<ol class="LowerAlpha"><li><p>Open the target to be used for print output (<MadCap:snippetText src="../../Output/AllPrintOutputTypesOR.flsnp" />). </p></li><li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li><li>In the <span class="Emphasis">Stylesheet Medium</span> section, select the medium that you used for printed output (e.g., print).</li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork2.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create special print versions of styles for tables. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Setting_Table_Styles_for_Print_Output.htm">Creating Table Styles for Print Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputStyles" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

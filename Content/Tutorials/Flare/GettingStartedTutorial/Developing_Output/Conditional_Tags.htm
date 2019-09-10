@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4489" MadCap:lastWidth="1033" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsGettingStarted.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/GettingStarted.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Getting Started" />
+            <MadCap:keyword term="Conditions" />Using Conditions</h1>
+        <p>You may have noticed red and blue indicators on some drop-downs and headings in the San Diego project (take a look at Food.htm to see some). These colors indicate condition tags. The San Diego project has condition tags set up for printed and online output.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Apply Condition Tags</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Content Explorer, double-click <span class="Emphasis">AllAboutSanDiego.htm</span>. The topic opens in the XML&#160;Editor.</li>
+                    <li>
+                        <p>Scroll down to the <span class="Emphasis">History</span> section of the topic. </p>
+                        <p>Notice that the History section contains both a drop-down and a Heading 2. As we discussed in <MadCap:xref href="../Adding_Elements/Drop_Down_Text.htm">Inserting Drop-Down Text</MadCap:xref>, the drop-down effect only works in online outputs. Although we could use a drop-down as static text in our PDF, we will use the Heading 2 instead. It will work better with the PDF's built-in bookmarking features. We will use the drop-down in the online output.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions1.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                        <p>In order to tell Flare which text to use in which output, we will assign condition tags to each element.</p>
+                    </li>
+                    <li>Right-click the word <span class="Emphasis">History</span>&#160;used for the Heading 2.</li>
+                    <li>
+                        <p>From the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens.</p>
+                        <p>In this dialog, you can see the Default condition tag set. There are two conditions in the set: PrintOnly and ScreenOnly. </p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions2.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In your own project, you can create as many condition tag sets and conditions as you need. And you don't need to use the ones provided in the Default condition tag set. They're simply a starting point for you.</p>
+                        </div>
+                    </li>
+                    <li>Since we want this heading to appear in our PDF, select the check box next to <span class="Emphasis">PrintOnly</span>.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p>If you have markers turned on, the entire Heading 2 is highlighted red.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions4.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can turn conditional indicators on and off by clicking <img src="../../../../Resources/Images/hide_show_conditional_indicators_btn.png" alt="" title="" class="ReduceButtonSize" /> in the bottom toolbar of the XML&#160;Editor.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                        <p>Now we will apply an online condition tag to the drop-down hotspot. But this time we're going to do it a little differently. Conditions can also be associated with styles, so we're going to use that method.</p>
+                    </li>
+                    <li>In the Content Explorer, navigate to <span class="Emphasis">Resources&gt;Stylesheets</span> and double-click <span class="Emphasis">MainStyles.css</span>. The Stylesheet Editor opens.</li>
+                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>. The New Selector dialog opens.</li>
+                    <li>Previously in this tutorial, we created a class of the parent img style (see <MadCap:xref href="../Making_It_Look_Good/Creating_Style_Classes.htm">Creating Style Classes</MadCap:xref>). But now we're going to create something called a "generic style class." This class will not be directly associated with any parent style, which means that any parent style can use it. In the <span class="Emphasis">HTML Element</span> field, clear any text in it.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">OnlineOnly</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions8.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the Stylesheet Editor, click in the drop-down in the upper-left corner and select <span class="Emphasis">All Styles</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions12.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>In the list of styles below, expand <span class="Emphasis">(Generic Classes)</span>.</li>
+                    <li>
+                        <p>Select <span class="Emphasis">OnlineOnly</span>, the class you just created.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions13.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the <span class="Emphasis">Show</span> drop-down field in the upper-right corner, select <span class="Emphasis">Show: All Properties</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions14.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Expand the <span class="Emphasis">Unclassified</span> group below.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions9.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>Scroll down until you find the <span class="Emphasis">mc-conditions</span> property and click <img src="../../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> to the right of it. The Condition Tags dialog opens.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions15.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Since our new generic style class is intended for online content only, select the check box next to <span class="Emphasis">ScreenOnly</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Now we will apply that new generic style class to the drop-down in our topic. Go back to the <span class="Emphasis">AllAboutSanDiego.htm</span> topic.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>Right-click the drop-down structure bar just to the left of the <span class="Emphasis">History</span> drop-down hotspot.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the context menu, select <span class="Emphasis">Style Class</span> and then choose <span class="Emphasis">.OnlineOnly</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>A blue box appears next to the word "History" in the drop-down. If you have conditional indicators turned on, the entire drop-down heading is highlighted blue.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions3.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <p>This second method might seem like a lot of steps, but remember, creating the style class and associating a condition with it is a one-time setup. Once that is done, you can apply the generic style class to any parent tag (e.g., p, ol, img) that you want to be shown only in online output. And that's a very quick task.</p>
+                    </li>
+                    <li>(Optional) You can also apply conditions in the <span class="Emphasis">Climate</span> section below in the topic.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you added drop-down text and Heading 2s to the San Diego Attractions topic (see <MadCap:xref href="../Adding_Elements/Drop_Down_Text.htm" >Inserting Drop-Down Text</MadCap:xref>), you can go back and add conditions to this topic as well. </p>
+                    <p>This is not a requirement, though. In fact, you may want to build the PDF&#160;output twice—once before adding the headings and condition, and again after you add them—to see the difference between a heading and a drop-down in printed output. </p>
+                </div>
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">You can also preview the topic to see your changes. In the local toolbar of the XML&#160;Editor, click <img src="../../../../Resources/Images/preview_topic_btn.png" class="ReduceButtonSize" />. Preview both the PDF and the HTML5 target to see the differences. If you preview the HTML5 topic, you might notice that you see both the drop-down headings and the Heading 2s. That is because you have not yet associated conditions with that new target.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Associate Condition Tags with a Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You have applied condition tags to your topic, but they won't do anything if you don't also associate them with the targets you are going to build. Associating the condition tags with a target tells the Flare which conditions to include or exclude when building the output.</p>
+                <p>We have already associated conditions with the PDF&#160;target for you. But you still need to associate conditions with your new HTML5 target.</p>
+                <ol>
+                    <li>In the Project Organizer, expand the <span class="Emphasis">Targets</span> folder.</li>
+                    <li>Double-click the <span class="Emphasis">All About San Diego HTML5</span> target. The Target Editor opens to the right.</li>
+                    <li>Select the <span class="Emphasis">Conditional Text</span> tab. This tab allows you to select which conditions will be included and which will be excluded from the output. </li>
+                    <li>Next to the <span class="Emphasis">Default.PrintOnly</span> condition, select the <span class="Emphasis">Exclude</span> check box. We <span class="EmphasisItalic">do not</span> want to see content marked with the print condition in the HTML5 target.</li>
+                    <li>
+                        <p>Next to the <span class="Emphasis">Default.ScreenOnly</span> condition, select the <span class="Emphasis">Include</span> check box. We <span class="EmphasisItalic">do</span> want to see content marked with the screen condition in the HTML5 target.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/conditions7.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about conditions, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Skins.htm">Working with Skins</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

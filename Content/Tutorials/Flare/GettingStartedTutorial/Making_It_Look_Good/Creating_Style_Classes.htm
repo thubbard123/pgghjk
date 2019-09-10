@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2240" MadCap:lastWidth="1033" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsGettingStarted.flmsp');">
+    <head>&#160;<link href="" rel="stylesheet" type="text/css" /></head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/GettingStarted.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Getting Started" />
+            <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Creating Style Classes</h1>
+        <p>You can use styles in your projects to format elements. While you can use local formatting (such as selecting a single word and using the Color button on the Home ribbon to make it red), using styles will save you time. If you change the properties for a style in the stylesheet, that change will be made anywhere you used the style class. You do not need to go back and make the change in every topic.</p>
+        <p>After you create a new Flare project, you'll see that there are already many styles for you to use. And you can change the properties for any of those styles to adjust the look.</p>
+        <p>In addition to using the styles that are already in place, you may find the need now and then to create your own style class. Think of a style class as a "child" of a "parent" style. A style class gives you more flexibility when using a style. For example, you might create a red h1 (heading 1) style class and a blue h1 style class. These would both be children of the h1 style (e.g., h1.red, h1.blue).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a Style Class</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We are going to create a style class of the parent image (img) style. Then we will modify our style class so that it turns online images into thumbnails. In other words, images will initially display very small but when they are clicked in online output, they will be shown at the full size in a popup.</p>
+                <ol>
+                    <li>In the Content Explorer, open <span class="Emphasis">Resources&gt;Stylesheets</span>.</li>
+                    <li>Double-click the <span class="Emphasis">MainStyles.css</span> stylesheet. The Stylesheet Editor opens to the right.</li>
+                    <li>You can use the Simplified or Advanced view when editing a stylesheet. Let's use the latter. In the local toolbar of the Stylesheet Editor, make sure the first button is labeled <span class="Emphasis">View: Advanced</span>. If it says <span class="Emphasis">View: Simplified</span>, click it so that it change to the Advanced view.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the upper-left corner of the editor, make sure the drop-down is set to <img src="../../../../Resources/Images/show_image_styles.png" alt="" title="" class="ReduceButtonSize" />.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/images2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>In the <span class="Emphasis">Styles</span> section, select <span class="Emphasis">img</span>.</li>
+                    <li>In the local toolbar of the editor, click <img src="../../../../Resources/Images/add_class_btn.png" alt="" title="" class="ReduceButtonSize" />. The New Selector dialog opens.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">thumbnail</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/create_styles1.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                    <li>
+                        <p>Click <span class="Emphasis">OK</span>. The thumbnail style class appears in the stylesheet, indented under the img parent style.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/styles1.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <p>The style class is added, but the only properties it has right now are the ones it has inherited from the img style.  Now we need to add unique properties to the thumbnail style class.</p>
+                    </li>
+                    <li>
+                        <p>With the new <span class="Emphasis">thumbnail</span> class selected, from the <span class="Emphasis">Show</span> field in the upper-right corner of the editor, select <img src="../../../../Resources/Images/show_assorted_relevant_properties_field.png" alt="" title="" class="ReduceButtonSize" />. This will display only the properties that are related to images, making it a lot easier to find the properties that you need to set.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/images4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>Make sure the properties on the right side of the editor are shown in group view, which means there will be different categories that you can expand and collapse. In the local toolbar, you should see a <span class="Emphasis">Grouped View</span> button <img src="../../../../Resources/Images/styles_group_view_btn.png" alt="" title="" class="ReduceButtonSize" />. If instead you see the <span class="Emphasis">Alphabetical View</span> button <img src="../../../../Resources/Images/styles_alphabetical_view_btn.png" alt="" title="" class="ReduceButtonSize" />, click it to switch to Group View.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/images5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Expand the <span class="Emphasis">Thumbnail</span> group.</li>
+                    <li>
+                        <p>Next to the <span class="Emphasis">mc-thumbnail</span> property, click the drop-down and select <span class="Emphasis">popup</span>. We will leave the other thumbnail settings as they are. </p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/styles2.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <ol MadCap:continue="true">
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about styles and creating classes, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about styles and creating classes, see <MadCap:xref href="../../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref> and <MadCap:xref href="../../../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Applying_Styles.htm">Applying Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

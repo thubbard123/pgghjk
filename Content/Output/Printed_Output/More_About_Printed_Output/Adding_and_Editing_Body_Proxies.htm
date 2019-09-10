@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="5026" MadCap:lastWidth="1034" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Learn how to add and edit a body proxy in a Master Page. In MadCap Flare, a body proxy  be used in online and print-based output to customize pages." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Master pages:proxies;Proxies:master pages" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Master pages:printed output;Print-based output:master pages" />
+            <MadCap:keyword term="Proxies:body" />
+            <MadCap:keyword term="Body:proxy;Proxies:body" />
+            <MadCap:concept term="PrintedOutputMasterPage" MadCap:conditions="Products.Flare" />Adding and Editing Body Proxies for Print Output</h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/PrintOutput/AddEditBodyProxyForPrintSummary.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Proxies/Using_the_Body_Proxy.htm">About the Body Proxy</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add and edit a body proxy in a master page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/MasterPages/OpenMasterPageStep.flsnp" /> </li>
+                    <li>Do one of the following, depending on whether you need to add a new Body proxy or simply edit an existing one.<p class="Subheading">add a new body proxy</p><ul class="FirstLevel"><li><p><MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Proxy</span> section select <span class="Emphasis">Proxy&gt;Body Proxy</span>. </p></li></ul><p class="Subheading">edit an existing body proxy</p><ul><li>Right-click on the Body proxy and select <span class="Emphasis">Edit Body Proxy</span>.</li></ul><p>The Body Proxy dialog opens.</p></li>
+                    <li>(Optional) In the dialog, you can click the down arrow in the <span class="Emphasis">Stylesheet class</span> field and make a selection if you have created a style class specifically for body proxies (e.g., MadCap|bodyProxy.mybodyproxy). You might use a style like this, for example, if you want to add a border around all topic content. You can leave this field blank if you like.</li>
+                    <li>Click <span class="Emphasis">Printer Page Properties</span>. </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                    <li>
+                        <p>In the Printer Page Properties dialog, you can specify the size, orientation, margins, and page number settings for the printed pages. </p>
+                        <p>By default, the settings will be applied to all pages. However, you can specify that the settings should be applied only to the first page, odd pages, or even pages. If so, you will want to have more than one Body proxy in your master page, one for each page configuration.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Page Size </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageSizeDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Custom Width </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/CustomWidthDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Custom Height </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/CustomHeightDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Orientation </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/OrientationDescription.flsnp" />
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Start Number </span>If you want the first printed page associated with this master page to start at a particular page number, enter that number in this field.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Rather than specifying page number settings in this dialog, you may find it preferable to set them from the TOC Properties dialog when you specify chapter breaks. Using that dialog provides a bit more flexibility. See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" >Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Number Format</span> If you want the page numbers for this master page to take on a particular format (e.g., numbers without dashes, numbers with dashes, uppercase alpha, lowercase alpha, uppercase Roman, lowercase Roman), select it from this field.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The -1- page format in this field is not supported in <MadCap:variable name="Outputs.Frame" />.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Rather than specifying page number settings in this dialog, you may find it preferable to set them from the TOC Properties dialog when you specify chapter breaks. Using that dialog provides a bit more flexibility. See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" >Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Page Type </span>Select the pages to which these settings will be applied (All Pages, Odd Pages, Even Pages, First Page). The default is to apply the settings to all pages using the master page. If you want all of the pages in your output to share the same settings (page size, margins, etc.), you only need one Body proxy in the master page. However, if you want different pages to have different settings, you can add a Body proxy page for each configuration. Then, edit the settings for a particular Body proxy for specific pages (e.g., odd pages), and use this field to specify which pages the settings pertain to.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p>Let's say that you want the first page in the output to use certain margin settings, you want the odd pages to use a different set of margins, and you want the even pages to use yet another set of margins. Therefore, you would add three body proxies to the master page, and you would edit each of these proxies accordingly—one for the first page, one for odd pages, and one for even pages.</p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This feature pertains to Word output only.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Left </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginLeftDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginRightDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Top </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginTopDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Bottom </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginBottomDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Margin between header and page top </span>Enter the length of the margin from the top of the header to the top edge of the page. <MadCap:snippetText src="../../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">Margin between footer and page bottom </span>Enter the length of the margin from the bottom of the footer to the bottom edge of the page. <MadCap:snippetText src="../../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                        <p class="PageBreakBefore">Following is the Printer Page Properties dialog. After it is a schematic of a printed page in Word. For this example, we've added colored lines in the dialog and corresponding arrows in the Word page to show you which areas of the printed page are influenced by the different sections of the dialog.</p>
+                        <p>
+                            <img src="../../../Resources/Images/printer_page_properties_dialog.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>
+                            <img src="../../../Resources/Images/printer_page_properties_dialog_word_example.png" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>In the Printer Page Properties dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>In the Body Proxy dialog, click <span class="Emphasis">OK</span>. The proxy is added to the master page.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add and edit a body proxy Using Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterReusableContentStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, select <span class="Emphasis">MadCap|bodyProxy</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowRelevantPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>If you are using the group view, expand a property group and change values for any of the style's properties. <MadCap:snippetText src="../../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /> Following are some of the more common properties that you might change.</p>
+                        <p>By default, the settings will be applied to all pages. However, you can specify that the settings should be applied only to the first page, odd pages, or even pages. If so, you will want to have more than one Body proxy in your master page, one for each page configuration.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">mc-printer-page-size </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageSizeDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-custom-height </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/CustomHeightDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-custom-width </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/CustomWidthDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-orientation </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/OrientationDescription.flsnp" />
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">mc-page-number-start-value </span>If you want the first printed page associated with this master page to start at a particular page number, enter that number in this field.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Rather than specifying page number settings, you may find it preferable to set them from the TOC Properties dialog when you specify chapter breaks. Using that dialog provides a bit more flexibility. See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" >Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">mc-page-number-format </span>If you want the page numbers for this master page to take on a particular format (e.g., numbers without dashes, numbers with dashes, uppercase alpha, lowercase alpha, uppercase Roman, lowercase Roman), select it from this field.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The -1- page format in this field is not supported in <MadCap:variable name="Outputs.Frame" />.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Rather than specifying page number settings, you may find it preferable to set them from the TOC Properties dialog when you specify chapter breaks. Using that dialog provides a bit more flexibility. See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" >Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">mc-page-type </span>Select the pages to which these settings will be applied (All Pages, Odd Pages, Even Pages, First Page). The default is to apply the settings to all pages using the master page. If you want all of the pages in your output to share the same settings (page size, margins, etc.), you only need one Body proxy in the master page. However, if you want different pages to have different settings, you can add a Body proxy page for each configuration. Then, edit the settings for a particular Body proxy for specific pages (e.g., odd pages), and use this field to specify which pages the settings pertain to.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p>Let's say that you want the first page in the output to use certain margin settings, you want the odd pages to use a different set of margins, and you want the even pages to use yet another set of margins. Therefore, you would add three body proxies to the master page, and you would edit each of these proxies accordingly—one for the first page, one for odd pages, and one for even pages.</p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This feature pertains to Word output only.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-margin-left </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginLeftDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-margin-right </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginRightDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-margin-top </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginTopDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-margin-bottom </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageMarginBottomDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-header-margin </span>Enter the length of the margin from the top of the header to the top edge of the page. <MadCap:snippetText src="../../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">mc-printer-page-footer-margin</span>Enter the length of the margin from the bottom of the footer to the bottom edge of the page. <MadCap:snippetText src="../../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                        <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../Styles/About_Styles_and_Style_Sheets.htm" target="" title="" alt="">About Styles and Stylesheets</MadCap:xref>, as well as <MadCap:xref href="../../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputMasterPage" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

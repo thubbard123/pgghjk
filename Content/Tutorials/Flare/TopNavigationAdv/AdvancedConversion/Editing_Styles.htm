@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');" MadCap:lastBlockDepth="8" MadCap:lastHeight="5670" MadCap:lastWidth="1394">
+    <head>
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Styles:editing;Stylesheets:editing;Stylesheets:regular" />
+            <MadCap:concept term="FilterStyles" />Editing Styles</h1>
+        <p MadCap:conditions="">So far we've imported files from the Temp project. We've also replaced some content and links in the Home page and master page that were imported.</p>
+        <p MadCap:conditions="">Now we need to make some changes to our stylesheets—both the StylesForHomePage.css file that was imported, as well as the stylesheet that already existed in our Legacy project.</p>
+        <p>Complete all of the following steps in the Legacy project.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Fix the Bullets on the Home Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">As you may recall, the bullet images are missing in the Home topic, because we did not include them in the import. Instead, we want to use bullet images that already exist in our project.</p>
+                <ol>
+                    <li MadCap:conditions="">In the Content Explorer, expand the <span class="Emphasis">Resources</span> folder, then the <span class="Emphasis">Stylesheets</span> subfolder.</li>
+                    <li MadCap:conditions="">Double-click <span class="Emphasis">StylesForHomePage.css</span>. The stylesheet opens to the right in the Stylesheet Editor.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">On the left side of the Stylesheet Editor, make sure the filter at the top shows <span class="Emphasis">All Styles</span>. And expand <span class="Emphasis">(Complex Selectors)</span> below.</li>
+                    <li MadCap:conditions="">
+                        <p>Select <span class="Emphasis">#content-section.mc-blurb .mc-bullets &gt; li</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>In the local toolbar, click <img src="../../../../Resources/Images/styles_group_view_btn.png" class="ReduceButtonSize" />. This changes the view of the properties on the right from groups to an alphabetical list.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>On the right side of the local toolbar, click the <span class="Emphasis">Show</span> drop-down field and select <span class="Emphasis">Show: Set Properties</span>. This filters the properties below to only those that have been explicitly set in the stylesheet for the selected style, as well as any properties explicitly set in an inherited stylesheet.</p>
+                        <p>As you can see, only a few properties were set on this style. One points to a small image that serves as the bullet.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <p>At the end of the list-style-image field, click <img src="../../../../Resources/Images/insert_image_btn2.png" class="ReduceButtonSize" />. The Insert Image dialog opens.</p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not want to use an image for a button, you can click the down arrow in this field and select <span class="Emphasis">none</span>.</p>
+                        </div>
+                    </li>
+                    <li MadCap:conditions="">Expand the <span class="Emphasis">Resources</span> folder, then <span class="Emphasis">Images</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Select <span class="Emphasis">Bullet1Online.png</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Go back to the Home topic and notice that the list now has the bullets.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust the Spacing on the Master Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">When we build the output, the footer on the Home page will look like this:</p>
+                <p MadCap:conditions="">
+                    <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles8.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>We want to create a little bit more space between the logo and the text links and the copyright. To do this, we are going to edit the styles being used. But we are not going to do this in the stylesheet, but rather in the topic itself. The reason for this is that the footer is using a <MadCap:keyword term="HTML5:responsive web design;Responsive web design" />responsive layout, and by adjusting the settings in the Responsive Layout window pane, we will be automatically changing the relevant styles.</p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                <ol>
+                    <li>Open the <span class="Emphasis">HomePage.flmsp</span> master page.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Home</span> ribbon at the top of Flare, go to the <span class="Emphasis">Styles</span> section and click <span class="Emphasis">Responsive Layout</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles9.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The Responsive Layout window pane opens on the right side of the interface.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>As you have probably noticed, the footer content is contained in three cells. We are going to widen the first cell a bit, while we reduce the width of the second cell. Click in the first cell containing the logo image.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>In the Responsive Layout window pane, click the <span class="Emphasis">Cell Width</span> field and select <span class="Emphasis">4</span>. This changes the width of that cell from 25% to 33.333%; this style change is shown at the bottom of the window pane. Also, in the XML Editor you will see the third cell (containing the Twitter and Facebook icons) shift to the bottom, but that will change in the next step.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Click in the second cell containing the text links and copyright. Then in the Responsive Layout window pane, click the <span class="Emphasis">Cell Width</span> field and select <span class="Emphasis">5</span>. This changes the width of that cell from 50% to 41.667%. Also, the third cell in the XML Editor shifts back up to the top.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles12.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>That takes care of the responsive layout for web (large screens). Now we will make adjusts for medium-sized screens. At the top of the Responsive Layout window pane, click <span class="Emphasis">Tablet</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles19.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <p>The XML Editor changes, showing the master page at the tablet width, which is set on the Skin tab of the Target Editor. This is why you might see a horizontal scroll bar at the bottom of the XML Editor.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles20.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>If you were to reduce the tablet setting in the Target Editor, the XML Editor display would also be reduced.</p>
+                    </li>
+                    <li>With the cursor still in the second cell, set the <span class="Emphasis">Cell Width</span> in the Responsive Layout window pane to <span class="Emphasis">5</span>.</li>
+                    <li>In the XML Editor, click in the first cell with the logo. In the Responsive Layout window pane, set the <span class="Emphasis">Cell Width</span> in to <span class="Emphasis">4</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>At the top of the Responsive Layout window pane, click <span class="Emphasis">Web</span> to return to that view in the XML Editor. You do not need to make adjustments for the Mobile medium, because that configuration of the footer places one cell on top of the other.</p>
+                        <p>Also, you do not need to save your topic in this case, because the changes were actually made and (auto-saved) to the stylesheet, not to the topic.</p>
+                        <p>When you build the output, the footer will have a little more space between the logo and text hyperlinks.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles13.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="General.Print">For more on responsive layouts, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more on responsive layouts, see <MadCap:xref href="../../../../Responsive_Web_Design/Responsive_Content.htm">Responsive Content</MadCap:xref> and <MadCap:xref href="../../../../Responsive_Web_Design/Creating_Responsive_Layouts.htm">Creating Responsive Layouts</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Position the Side Menu</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">There is one change that we want to make in our existing stylesheet in the Legacy project in order to better support the Top Navigation output. We need to add a style class called "div.sideContent," which positions the context-sensitive menu in topics to the side of topics, allowing content to flow under it.</p>
+                <p MadCap:conditions="">This particular style was included in the MainStyles.css stylesheet from the Temp project. However, that stylesheet is not one of the files that we imported into our Legacy project, because we didn't want to use any of its other styles. The good news is that we can quickly import this single style from that stylesheet into our existing stylesheet.</p>
+                <ol>
+                    <li MadCap:conditions="">In the Content Explorer, expand the <span class="Emphasis">Resources</span> folder, then the <span class="Emphasis">Stylesheets</span> subfolder.</li>
+                    <li MadCap:conditions="">
+                        <p>Double-click <span class="Emphasis">styles.css</span> (the stylesheet that already existed in our Legacy project). It opens to the right in the Stylesheet Editor.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles14.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the local toolbar, click the Options drop-down and select <span class="Emphasis">Import Styles</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles15.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The Import Styles dialog opens.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>At the end of the <span class="Emphasis">File</span> field, click <span class="Emphasis">Browse</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles16.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the dialog that opens, navigate to the Temp project that we imported from at the beginning of this tutorial. Once you find it, navigate to <span class="Emphasis">Content&gt;Resources&gt;Stylesheets</span>. You should see its two stylesheets.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles17.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">Select <span class="Emphasis">MainStyles</span> and click <span class="Emphasis">Open</span>. The styles from that stylesheet are listed in the Import Styles dialog.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the list of styles at the bottom, scroll down until you find <span class="Emphasis">div.sideContent</span> and click the check box next to it.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_edit_styles18.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The style class is added to your stylesheet.</li>
+                    <li MadCap:conditions="">
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about styles and editing them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about styles and editing them, see <MadCap:xref href="../../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref> and <MadCap:xref href="../../../../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Incorporating_the_Skin.htm">Incorporating the Skin</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1614" MadCap:lastWidth="916" MadCap:conditions="Products.Mimic">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li>In the Visual States section, select the <span class="Emphasis">(default)</span>&#160;visual state.</li>
+            <li>Expand the <span class="Emphasis">Action</span> section.</li>
+            <li>Click <span class="Emphasis">Add Action</span>.</li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2015-09-04T08:51:43.7756151-07:00" MadCap:creator="nrepici" MadCap:initials="NR" MadCap:comment="Bug 107304 is for MouseUp/MouseRelease." MadCap:editor="kschneider" MadCap:editDate="2015-10-27T13:44:48.3826563-07:00">Click </MadCap:annotation>the <span class="Emphasis">Event</span> drop-down and select one of the following:</p>
+                <MadCap:snippetBlock src="../Actions/EventTypesMimic.flsnp" />
+            </li>
+            <li>In the <span class="Emphasis">Action</span> field, select <span class="Emphasis">Set Visual State</span>.</li>
+            <li>In the <span class="Emphasis">Shape</span> field, select the object to which you want to apply the visual state. <ul><li><span class="SetOffFirstLevel">(this object)</span> When an action triggers the visual state, it affects the selected object (e.g., the current object will change color when clicked).</li><li><p><span class="SetOffFirstLevel">[another object]</span> When an action triggers the visual state, it affects a different object (e.g., when the user clicks the current object, a different object on the frame will change color). Objects you select here must have one or more visual states available.</p></li></ul><MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" /><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Visual states are created for each object. If you want to apply a visual state to another object, you must first create a visual state for that object. When you select an object from the Shape drop-down, the Visual States drop-down updates to show you the visual states that are available for that shape.</p><div class="example"><p class="exampleHeadTextEmpty">Example</p><p>Let's say you have two rectangles:&#160;a red one and a blue one. The red rectangle has a red to green visual state assigned to it.</p><p>You want the red rectangle's visual state to activate when you click the blue rectangle. To do this, you would create a "Set Visual State"&#160;action in the blue rectangle's properties. Then you can set the shape to "Red Rectangle," and then select the "red to green"&#160;visual state, which is associated with the red rectangle.</p><p><img src="../../Images/visual_states_example5.png" class="MaxWidth90Percent" /></p><p>When you click the blue rectangle, the red rectangle will turn green. </p><p><img src="../../Images/visual_states_example6.png" class="MaxWidth90Percent" /></p></div></li>
+            <li>
+                <p>In the <span class="Emphasis">Visual State</span> field, select the visual state you want to apply (e.g., when the cursor moves over an object, it will use "Visual State 1.").</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">After you create and apply a visual state, you can preview how it will look without building the movie. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Steps/More/Using_Preview_Mode.htm">Using Preview Mode</MadCap:xref>.</MadCap:conditionalText></p>
+            </li>
+        </ol>
+    </body>
+</html>

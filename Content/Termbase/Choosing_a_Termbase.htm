@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.Lingo" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="1519" MadCap:lastWidth="843" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTermbase.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Steps for choosing the TM&#160;(Translation Memory)&#160;database to use with a translation project." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Termbase" />
+            <MadCap:keyword term="Termbases" />
+            <MadCap:concept term="FilterTermbase" />Choosing a Termbase</h1>
+        <p>You need to choose which termbases you want to use for a particular project. You can choose one or more termbases per project.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTermbaseGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to choose a Termbase</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Make sure you have created at least one termbase (see <MadCap:xref href="Creating_Termbases.htm">Creating Termbases</MadCap:xref>) and added it (if necessary) so that it is available for selection in the project (see <MadCap:xref href="Adding_Termbases.htm">Adding Termbases</MadCap:xref>).</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the<span class="Emphasis">Termbase</span>section select<span class="Emphasis">Choose Termbase</span>. </p>
+                        <p>The Manage Termbases dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>Next to each termbase in the grid that you want to associate with the project, click <span class="Emphasis">Use</span>.</p>
+                        <p>
+                            <img src="../Resources/Images/multiple_termbases10.png" class="MaxWidth90Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>(Optional) Select a rank for each enabled termbase. From the <span class="Emphasis">Rank</span> drop-down, select a numeric value for each enabled termabse, where <span class="Emphasis">1</span> is the preferred termbase. You do not have to select a value; unranked termbases will take lowest priority. See <MadCap:xref href="Ranking_Termbases.htm">Ranking Termbases</MadCap:xref>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only rank enabled termbases. The <span class="Emphasis">Rank</span> drop-down is disabled if a termbase is not selected for the project.</p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTermbaseGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>(Optional) In the grid listing termbases, there is a drop-down field to specify the access rights for each database. There are options for Read &amp; Write, as well as for Read Only. By default all termbases are set to Read &amp; Write, which means they can be altered once they are loaded into the Lingo project. However, you can change any of the termbases to Read Only access if you want. In order to switch to Read Only access, the Use check box must first be selected for that termbase.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you are connecting your new Lingo project to four different termbases, like this:</p>
+                            <p>
+                                <img src="../Resources/Images/multiple_termbases7.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTermbaseGuide" />
+                            <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoWhatsNewGuide,LingoGuides.LingoTranslationGuide" />
+                            <p>You want to see terms and definitions from all of the termbases. However, when you add new terms to the termbase, let's say you only want to upload them to the termbase called "LocalTB4." Therefore, even though the Lingo project will be connected to all four termbases, three of them should be set as Read Only, and LocalTB4 should be set to Read &amp; Write.</p>
+                            <p>
+                                <img src="../Resources/Images/multiple_termbases8.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only specify access rights for enabled termbases. The <span class="Emphasis">Access</span> drop-down is disabled if a termbase is not selected for the project.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also choose a termbase when creating a new project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.LingoOnlineNotWebHelp">
+            <MadCap:conceptLink term="Termbase" />
+        </p>
+    </body>
+</html>

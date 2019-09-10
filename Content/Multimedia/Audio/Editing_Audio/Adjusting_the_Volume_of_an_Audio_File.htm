@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="1443" MadCap:lastWidth="968" MadCap:conditions="Products.Mimic">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="EditSound" />
+            <MadCap:keyword term="Audio:volume;Audio:adjuisting" />
+            <MadCap:concept term="FilterAudio" />Adjusting the Volume of an Audio File</h1>
+        <p>After you record an audio file, you can make adjustments to the volume of the file. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to adjust the volume of an audio file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the movie.</li>
+                    <li>
+                        <p>Do one of the following, depending on the element for which you have recorded audio:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Movie</span> For an entire movie, select <span class="Emphasis">Movie&gt;Properties</span>, then in the Movie Properties dialog, select the <span class="Emphasis">Audio</span> tab. The recorded audio file should be displayed in the Audio field.</li>
+                            <li><span class="SetOffFirstLevel">Frame</span> For a single frame, double-click the frame, then in the Frame Properties window pane, expand the <span class="Emphasis">Frame Sound</span> section. The recorded audio file should be displayed in the Sound File field.</li>
+                            <li><span class="SetOffFirstLevel">Object</span> For an object, double-click the object, then in the Object Properties window pane, expand the <span class="Emphasis">Audio</span> section. The recorded audio file should be displayed in the Sound File field.</li>
+                        </ul>
+                    </li>
+                    <li>Click <span class="Emphasis">Edit</span>. The Sound Editor opens.</li>
+                    <li>Click <img src="../../../Resources/Images/adjust_volume_btn.png" class="ReduceButtonSize" />. The Adjust Volume dialog opens.</li>
+                    <li>
+                        <MadCap:keyword term="Audio:editing" />Modify the options in the dialog as necessary:<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Volume </span>Slide the bar up or down to increase or decrease the volume.</li><li><p><span class="SetOffFirstLevel">Normalize </span>Click this button to maximize the volume of the audio file without causing clipping. In other words, if audio peaks in the file extend beyond the loudest allowable point, distortion of the sound can result. When you normalize an audio file, the highest peak is extended to the loudest point (but not beyond it). The rest of the peaks are then adjusted accordingly.</p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">Example</p><p><img src="../../../Resources/Images/audio_volume_normalize.png" class="MaxWidth90Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></li><li><span class="SetOffFirstLevel">Dynamics </span>Click this button to increase the volume of quiet sections in the audio. You can use the "Ratio" and "Threshold" sliders in the dialog to determine what constitutes a "quiet section" and how much it will be boosted. Based on your settings, the "non-quiet" section will be compressed (i.e., its volume will be decreased), and then the volume in the entire file will be boosted.<ul class="SecondLevel"><li><p><span class="SetOffSecondLevel">Threshold </span>Drag this slider to specify the area that is the "non-quiet" portion. It is measured in terms of percentage, starting with the top (i.e., the loudest point). Everything below this area will be considered the "quiet" portion. </p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">Example</p><p><img src="../../../Resources/Images/audio_volume_dynamics.png" class="MaxWidth90Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></li></ul><ul class="SecondLevel"><li><span class="SetOffSecondLevel">Ratio </span>Drag this slider to specify how much the "non-quiet" portion of the audio file will be compressed (i.e., its volume will be decreased). For example, a setting of 2.0 means that the area will be made twice as quiet; a setting of 3.0 means that the area will be made three times as quiet. After this "non-quiet" portion of the file is compressed, the entire audio file is adjusted accordingly, thus making the "quiet" portion louder.</li></ul></li></ul></li>
+                    <li>In the Adjust Volume dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>In the Sound Editor, click <span class="Emphasis">OK</span>.</li>
+                    <li>If using the Movie Properties dialog, click <span class="Emphasis">OK</span>. The Object and Frame Properties window panes require no further action.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="EditSound" />
+        </p>
+    </body>
+</html>

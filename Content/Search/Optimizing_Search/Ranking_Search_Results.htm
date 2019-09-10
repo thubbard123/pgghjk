@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="3750" MadCap:lastWidth="715" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSearch.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterSearch" />
+            <MadCap:concept term="OptimizingSearch" />
+            <MadCap:keyword term="Search:optimization;Search:ranking results" />Ranking Search Results</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Search:optimization;Search:ranking results" />Ranking Search Results</h1>
+        <p>The Flare search database generates organic search results and looks at numerous signals, factors, and metrics to determine how relevant the results are to the query terms. Understanding how searches are ranked in the different output types helps you determine strategies for optimizing your search results.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>ranking results—dotnet help, webhelp, webhelp air, webhelp mobile, and html5</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Flare's search engine uses content signals and content weighting to determine search rankings.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="content_signals"></a>Content Signals</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When end users enter their query terms in output, the search engine looks at a variety of signals, such as:</p>
+                        <ul>
+                            <li>Do the search terms occur in the topic title?</li>
+                            <li>Do the search terms occur in a heading tag, and at what level (e.g., H1, H2, H3)?</li>
+                            <li>Do the search terms occur in the abstract text or meta description?</li>
+                            <li>Do the search terms occur in an index marker in the topic?</li>
+                            <li>Do the search terms occur in a glossary term?</li>
+                            <li>Do the search terms occur in the topic's body?</li>
+                            <li>How many times do the search&#160;terms&#160;occur in each location (e.g., topic title, hyperlinks, body text)?</li>
+                        </ul>
+                        <p>These items are used to determine the topic's search ranking against other topics.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="content_weighting"></a>Content Weighting</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>As with most search engines, Flare takes a variety of factors into account when ranking its search results. Since retrieved results are relative to the search query and indexed content, the table below describes in general terms how different content elements are ranked:</p>
+                        <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Content Elements</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Title Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">The topic title lets readers know the topic of a particular page. It is placed in a &lt;title&gt; tag, within a &lt;head&gt; tag in HTML documents.</p>
+                                        <p class="TableText">You can add a topic title by right-clicking the topic in the Content Explorer, and selecting <span class="Emphasis">Properties</span> from the context menu. In the Properties dialog, click the <span class="Emphasis">Topic Properties</span> tab, and enter text in the <span class="Emphasis">Topic Title</span> field.</p>
+                                        <p class="TableText">You also have the option to leave the Topic Title field blank. If you do this, the first topic heading will be used as the topic title by default. </p>
+                                        <p class="TableText">Topics with a keyword in the &lt;title&gt; tag always appear first in search results, and always are ranked higher than topics where a keyword appears elsewhere in the topic, regardless of how many times the keyword appears. This helps you find the most expected topics when running a search.</p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not have a &lt;title&gt; tag in your topic, Flare uses the first heading in the topic as the title tag for the file. If there are no headings in the topic, the file name acts as the title tag. This text is given the same search ranking as a &lt;title&gt; tag.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">H1 Heading Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Keywords contained in an &lt;h1&gt; tag are given less weight than the topic title, but are still an important factor.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Subsequent Heading (H2-H6) Tags</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">The search engine also looks in topics for keywords in &lt;h2&gt; through &lt;h6&gt; tags. These tags are decreasingly less important to content ranking (e.g., &lt;h2&gt; receives a higher rank than &lt;h3&gt;, &lt;h3&gt;&#160;receives a higher rank than &lt;h4&gt;).</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Abstract Text</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">The search engine looks at text in the topic's abstract. Keywords in the abstract receive the same ranking as keywords in &lt;h2&gt; tags.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This only applies to keywords in the meta description that you define in the topic's properties. If you do not set an abstract in the topic properties, Flare will generate an auto-abstract using the abstract character limit. However, this is not considered abstract text for search ranking purposes. Instead, these keywords are ranked according to their tags in the Flare topic (e.g, &lt;p&gt;, &lt;h3&gt;). See <MadCap:xref href="../../Topics/More_About_Topics/Adding_Meta_Descriptions_for_Topics.htm">Adding Meta Descriptions for Topics</MadCap:xref> and <MadCap:xref href="../../Targets/More_About_Targets/Setting_Search_Abstract_Character_Limit.htm">Setting the Search Abstract Character Limit</MadCap:xref>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Index Keywords in Topics</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">The search engine looks at topics for index keywords. Index keywords in a topic have the same weight as keywords in &lt;h4&gt; tags.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not want index keywords to be considered when retrieving search results, you can exclude them from the search. See <MadCap:xref href="../Configuring_the_Search_Database/Excluding_Index_Entries_from_Search.htm">Excluding Index Entries From Search</MadCap:xref>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Glossary Terms</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">The search engine looks at topics for glossary terms. Glossary terms in a topic have the same weight as keywords in &lt;h5&gt; tags.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Keywords in the Body Text</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Keywords that appear in the body text are ranked the same as keywords in &lt;h6&gt;&#160;tags.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Keyword Frequency</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">The search engine looks at how many times the search term appears in each topic. Topics with frequent keywords  are ranked higher than topics with fewer keywords.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">While topics with more frequent keywords are ranked higher, they will never outrank a keyword with a higher base weighting.</p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">Example</p>
+                                                    <p>Let's say you have two topics that are almost identical. However, the search term appears in a Heading 2 three times in the first topic and only two times in the second topic. Because the search engine accounts for frequency, the first topic will appear higher in the search results than the second topic.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_rankings_headings.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                </div>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">Example</p>
+                                                    <p>Let's say you have two topics. In the first, your search term appears many times, all in Heading 4s. In the second it appears once, in a Heading 3. The second topic will appear higher in the search results because even though the search engine accounts for frequency, search terms that appear in a Heading 3 still take priority over search terms that appear in a Heading 4, regardless of how many total times they appear in the topic.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_rankings_frequency.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In HTML5 outputs, the Flare search engine uses one additional concept to rank search results: <MadCap:keyword term="Importance" />Importance.</p>
+                            <p>A topic's importance is determined by the number  links to a topic in the output. A topic that is linked from ten other topics is more important than a topic that is only linked from one other topic.</p>
+                            <p>
+                                <MadCap:conditionalText>See <MadCap:xref href="../../Targets/More_About_Targets/Setting_Search_Result_Importance.htm">Setting Search Result Importance</MadCap:xref>.</MadCap:conditionalText>
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>ranking results—server-based html5 and webhelp plus</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you enable server-based output for <MadCap:variable name="Outputs.HTML5" /> or <MadCap:variable name="Outputs.WebHelp Plus" />, the Flare the search engine is supported by one of these tools:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Microsoft Indexing Service </span>To learn about the Microsoft Indexing Service, see Microsoft's documentation. Here is a link to get you started:</p>
+                        <p><a href="http://technet.microsoft.com/en-us/library/cc723263.aspx#XSLTsection123121120120" target="_blank">http://technet.microsoft.com/en-us/library/cc723263.aspx#XSLTsection123121120120</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Windows Search Service </span>To learn about the Windows Search Service, see Microsoft's documentation. Here is a link to get you started:</p>
+                        <p><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa965362(v=vs.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/aa965362(v=vs.85).aspx</a>
+                        </p>
+                    </li>
+                </ul>
+                <p>See <MadCap:xref href="../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm">Enabling HTML5 Server-based Output</MadCap:xref> or <MadCap:xref href="../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm">Enabling WebHelp Plus Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>ranking results—eclipse help</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Search is provided by the Eclipse platform. You can configure a variety of different search options in Eclipse. For more information, see the Eclipse documentation: <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_help_ui_searchEngine.html">org.eclipse.help.ui.searchEngine</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="OptimizingSearch" />
+        </p>
+    </body>
+</html>

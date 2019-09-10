@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="1441" MadCap:lastWidth="1342">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:conditions="General.Print">Second-Level Drop-Downs</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>second-level drop-downs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We created a style class to make second-level drop-downs indented.</p>
+                <p MadCap:conditions="Snippets.Snippet3">
+                    <img src="../../Images/hdydt_dropdowns17.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="Snippets.Snippet4">
+                    <img src="../../Images/top_nav_tutorial_dropdowns10.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv,FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|dropDown</span> style.</li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>. The New Selector dialog opens.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type a name for the new style class (we named ours "SecondLevel").</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_dropdowns11.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li> <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /></li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">margin-left </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-closed-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used when the drop-down is in a closed (or collapsed) state. In our template, we selected an image called "DropDownClosedSecondLevel" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                            <li><span class="SetOffFirstLevel">mc-open-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used when the drop-down is in an open (or expanded) state. In our template, we selected an image called "DropDownOpenSecondLevel" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>You don't need to set anymore styles for the second-level, because the second level will inherit all of the other settings from the parent (first-level) styles.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the default medium in the stylesheet (replacing the example images with your own):</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDown.SecondLevel</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">margin-left: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-closed-image: </span><span class="StyleValue">url('../Images/DropDownClosedSecondLevel.png');</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-open-image: </span><span class="StyleValue">url('../Images/DropDownOpenSecondLevel.png');</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                        </p>
+                        <p>Now that you've got your styles, you just need to apply them to the correct parts of the drop-down.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

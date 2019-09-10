@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="462" MadCap:lastWidth="951" MadCap:conditions="Products.Flare">
+    <head />
+    <body>
+        <p class="Subheading">When saving  a topic in the XML Editor, a message appears saying that the topic has been updated outside of the editor</p>
+        <p>When saving  a topic in the XML Editor, the following message appears:</p>
+        <p class="Bold">[Topic Name and location] has been changed outside the editor.</p>
+        <p class="Bold">Do you want to discard the changes and reload?</p>
+        <p class="Subheading">Cause</p>
+        <p>This issue is caused when there is an unsaved  topic in the XML Editor and changes are made to the same topic in an interface outside of the XML Editor. For example, if you access topic properties from the Content Explorer and change properties on the unsaved topic (e.g., file tags, language settings, the topic name, topic style class) and then click OK, the message will appear. Flare recognizes that changes have been made to the topic outside of the XML Editor and prompts you with this message to decide whether you want to discard changes and reload the topic. </p>
+        <p>Selecting "yes" to the "discard the changes and reload" option will result in any changes made to the topic in the XML Editor to be discarded. The topic will then be saved. The changes made to the topic outside of the XML Editor will also be saved. Selecting the "no" option will save the changes in the external interface but leave the XML Editor changes unsaved. </p>
+        <p class="Subheading">Solution</p>
+        <p>If you want to avoid this dialog, simply save topic in the XML Editor before you make changes to a topic in an interface outside of the XML&#160;Editor.</p>
+        <p>For more information see <MadCap:xref href="../../../Interface/UI_Elements/XML_Editor.htm">XML Editor</MadCap:xref>.</p>
+    </body>
+</html>

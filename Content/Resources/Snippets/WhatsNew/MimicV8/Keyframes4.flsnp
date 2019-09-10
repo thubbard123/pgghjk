@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Mimic" MadCap:lastBlockDepth="12" MadCap:lastHeight="5027" MadCap:lastWidth="748">
+    <head>
+        <link href="../../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li>Open a movie that contains objects, or add an object to a frame. </li>
+            <li>Click the object.</li>
+            <li>
+                <p>Select the <span class="Emphasis">Object</span> ribbon. From the <span class="Emphasis">Advanced</span> section, select <span class="Emphasis">Properties</span>.</p>
+                <p>The Object Properties window pane opens.</p>
+            </li>
+            <li>
+                <p>In the Timeline window pane (<span class="Emphasis">View&gt;Timeline</span>), do one of the following:</p>
+                <ul>
+                    <li>For all standard object types, click <span class="Emphasis">Frame View</span>. Any action objects converted to objects will also be in this view.</li>
+                    <li>For action object types, click <span class="Emphasis">Action View</span>. Any objects converted to action objects will also be in this view.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Add one of the following keyframe types:</p>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Object Opacity</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Altering the object opacity within keyframes can make an object appear to fade in or out of a frame.</p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframeOpacity.flsnp" />
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want to make an object gradually go from 0-100% opacity (or the other way around), you really only have to set two keyframes. Set the first one at the beginning of the object, then set the final state at the very end of the object. The object is automatically set to have a linear interpolation, so the transition will happen gradually over the duration of the object's time span.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Object Color</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A&#160;timed, subtle change to an object's color can redirect attention to that object when the transition begins.</p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframeColor.flsnp" />
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want a gradient to display for one or more keyframes but want a solid color for the rest of the object's keyframes, choose one of the gradient background types for the object. For the keyframes you want to remain solid, pick the same color for both gradient fields.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="PositionKeyframes"></a>Object Position</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Trajectories created by using position keyframes to change an object's position have replaced the way Mimic 7 handled trajectories. When you create keyframes in order to move the position of an object, a trajectory is automatically shown in the Frame Editor. Each movement point is indicated by a blue circle on the trajectory's dotted line. </p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframePosition.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Object Size</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You might want to show an object becoming smaller to accommodate other objects taking over the focal point of the frame.</p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframesSize.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Object Rotation</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Rotating an object on the frame will create a spinning effect.</p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframeRotation.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicWhatsNewGuide" />
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Object Text</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Changing the text on an object allows you to reuse that object.</p>
+                        <MadCap:snippetBlock src="../../Objects/AddKeyframeText.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicWhatsNewGuide" />
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tips</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Objects/PositionKeyframeTip.flsnp" />
+                        <MadCap:snippetBlock src="../../Objects/KeyframeTiming.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="FourthLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you are creating another keyframe within the same object and keyframe type, you do not need to click the keyframe button again. Any keyframes added after the first are automatically created when the property is changed.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">All objects do not have the same keyframe options. For example, cursor objects do not have a rotation property.</p>
+                        <MadCap:snippetBlock src="../../Objects/CopyingKeyframes.flsnp" />
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to change the way the object transitions from one state to the next, you will need to edit each keyframe. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="#EditKeyframes" >How to Edit Keyframes</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>Continue adding keyframes as needed.</li>
+            <li>
+                <MadCap:snippetBlock src="../../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

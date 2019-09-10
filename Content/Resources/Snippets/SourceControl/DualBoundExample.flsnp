@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Central,Products.Flare" MadCap:lastBlockDepth="3" MadCap:lastHeight="2772" MadCap:lastWidth="956">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example—Typical Dual-Bound Situation</p>
+            <p>Let's say you are working on a team of writers and your project is bound to Microsoft Team Foundation Server (TFS). Therefore, that is your primary source control provider, and the source control connection between Flare and Central serves as a secondary source control provider.</p>
+            <p>When you first start working with Central, you have to upload (or bind) the project to Central. To do this, click <img src="../../Images/central_bind_btn.png" alt="" title="" /> in the MadCap Central window pane. Because the project is bound to TFS, you will have to check out the project file before you can bind the project (Flare will prompt you to do this.) Binding the project will establish the connection between Flare and Central, and creates a copy of the project in Central.</p>
+            <p>
+                <img src="../../Images/single_bound1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound3.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>After you bind the project to Central, a Central ID&#160;is added to the Flare project file. You need to check in the updated project file so other users on your team can access it. To do this, click <span class="Emphasis">Check In All</span> in the Flare Source Control ribbon.</p>
+            <p>
+                <img src="../../Images/dual_bound10.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide" />
+            <p>If any writers on the team do not already have a local copy of the project, they should import the project from TFS so they can work on the project locally (they cannot import from Central because the project's primary source control location is TFS). To import the project, they will use the Import Project From Source Control Wizard. Importing the project from TFS&#160;will ensure that they have the Central ID&#160;in their project, which links their copy of the project to Central. This is the dual binding. <MadCap:conditionalText MadCap:conditions="Products.Central,Products.FlarePrintOnly">For more information about importing projects from source control, see the Flare online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">For more information about importing projects from source control, see <MadCap:xref href="../../../Source_Control/Linked_Topics/Importing_Projects.htm">Importing a Project from Source Control</MadCap:xref>. </MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/dual_bound8.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Writers on your team who already have the project locally do not need to re-import. They simply need to get the latest version of the project by clicking <span class="Emphasis">Get Latest All</span> in the Flare Source Control ribbon. This ensures that they have the Central ID&#160;in their project, linking it to Central.</p>
+            <p>
+                <img src="../../Images/dual_bound9.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide" />
+            <p>Now that everyone has the updated project file, you can all work on the project and make changes using TFS. However, a user with permission also needs to add your teammates to the project in Central so you can assign them project tasks, or if other users on the team will be uploading files from Flare to Central <MadCap:conditionalText MadCap:conditions="Products.Flare,CentralGuides.CentralProjectsAndBuildsGuide">(see the Central online Help)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.CentralOnlineOnly">(see <MadCap:xref href="../../../Users/Assigning_Users_to_Teams_and_Projects.htm">Assigning Users to Teams and Projects</MadCap:xref>)</MadCap:conditionalText>.</p>
+            <p>
+                <img src="../../Images/dual_bound4.png" alt="" title="" class="MaxWidth80Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide,FlareGuides.FlareWhatsNewGuide" />
+            <p>As you work on files in Flare, you should check out your files using Flare's <span class="Emphasis">Check Out</span> feature on the Flare Source Control ribbon (or using automatic checkouts, if you have this enabled). </p>
+            <p>
+                <img src="../../Images/dual_bound11.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>After you are finished making changes, you should check in your changes to TFS. You can do this by clicking <span class="Emphasis">Check In All</span> on the Flare Source Control ribbon. This will upload your changes to TFS.</p>
+            <p>
+                <img src="../../Images/dual_bound5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Once your changes are checked in, you should make sure that you have the latest version of your teammates' files, as well. To do this, click <span class="Emphasis">Get Latest Version All</span> on the Flare Source Control ribbon. This will download the latest changes of all of the files to your local version of the project.</p>
+            <p>
+                <img src="../../Images/dual_bound6.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide,FlareGuides.FlareWhatsNewGuide" />
+            <p>When you and your teammates are finished making changes, you need to synchronize your local copy of the project with the copy of the project in Central. To do this, click <img src="../../Images/central_push_btn.png" alt="" title="" /> in the MadCap Central window pane. This will upload your local copy back to Central. It is important to remember that the last person who pushes their changes to Central wins, so be sure that everyone has the latest version of the project files before you push (or even limit some users' permissions so they are not able to push; <MadCap:conditionalText MadCap:conditions="Products.Flare,CentralGuides.CentralProjectsAndBuildsGuide">see  the Central online Help</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.CentralOnlineOnly">see <MadCap:xref href="../../../Users/Setting_Permissions.htm">Setting User Permissions</MadCap:xref></MadCap:conditionalText>) so you do not have out-of-date files in Central.</p>
+            <p>
+                <img src="../../Images/dual_bound7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Once your files are up in Central, you can publish Help and manage your project. </p>
+        </div>
+    </body>
+</html>

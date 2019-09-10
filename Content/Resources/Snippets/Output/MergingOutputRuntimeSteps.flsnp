@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="5" MadCap:lastHeight="883" MadCap:lastWidth="832">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li><span class="SetOffFirstLevel">Enable <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /></span>
+                <MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><span class="SetOffFirstLevel"><MadCap:variable name="Outputs.HTML5" /> Server-based</span>
+                </MadCap:conditionalText><span class="SetOffFirstLevel"> Output </span>
+                <MadCap:snippetText src="../WHP/EnablingWHPOutput.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet9">See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareWebHelpGuide,Snippets.Snippet9">See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm#EnablingWHP" target="" title="" alt="">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet10">See <MadCap:xref href="../../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm" target="" title="" alt="">Enabling HTML5 Server-based Output</MadCap:xref>.</MadCap:conditionalText> <MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide" /></li>
+            <li><span class="SetOffFirstLevel">Determine Master Output </span>Decide which of your project outputs will serve as the "master." This is the main output that users will open. All other outputs will be accessed from that output, although it will appear as one large Help system to end users.</li>
+            <li><span class="SetOffFirstLevel">(Optional) Specify TOC and/or Browse Sequence Locations for Automerge</span> By default, the TOCs and browse sequences from the secondary outputs will be appended at the end of the master output's TOC and browse sequence. However, if you want them to be appended somewhere within the master output's TOC or browse sequence, you can specify the exact location. <MadCap:conditionalText MadCap:conditions="Snippets.Snippet9">See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/AutoMerge/Specifying_the_Auto_Merge_Location_in_a_TOC.htm">Specifying the Automerge Location in a TOC</MadCap:xref> and <MadCap:xref href="../../../Output/WebHelp_Plus_Output/AutoMerge/Specifying_the_Auto_Merge_Location_in_a_Browse_Sequence.htm">Specifying the Automerge Location in a Browse Sequence</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10">See <MadCap:xref href="../../../Output/HTML5_Output/AutoMerge/Specifying_the_Auto_Merge_Location_in_a_TOC_HTML5.htm" target="" title="" alt="">Specifying the Automerge Location in a TOC</MadCap:xref> and <MadCap:xref href="../../../Output/HTML5_Output/AutoMerge/Specifying_the_Auto_Merge_Location_in_a_Browse_Sequence_HTML5.htm" target="" title="" alt="">Specifying the Automerge Location in a Browse Sequence</MadCap:xref>.</MadCap:conditionalText></li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+            <li><span class="SetOffFirstLevel">(Optional) Specify Order of Merged Outputs </span>
+                <MadCap:snippetText src="../WHP/SpecifyOrderOfAutoMergeSummary.flsnp" />
+                <MadCap:conditionalText MadCap:conditions="Snippets.Snippet9"> See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/AutoMerge/Specifying_the_Order_of_Auto_Merged_Outputs.htm">Specifying the Order of Automerged Outputs</MadCap:xref>.</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> See <MadCap:xref href="../../../Output/HTML5_Output/AutoMerge/Specifying_the_Order_of_Auto_Merged_Outputs_HTML5.htm">Specifying the Order of Automerged HTML5 Outputs</MadCap:xref>.</MadCap:conditionalText>
+            </li>
+            <li><span class="SetOffFirstLevel">Generate Outputs </span>Build the output for each of the targets to be included in the automerge. You must use <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /> for all of the targets.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/About_Building_Output.htm">Building Output</MadCap:xref>.</MadCap:conditionalText></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>
+                <p><span class="SetOffFirstLevel">Publish Output to Server </span>Publish the output for the master project to the web server running Microsoft IIS. The output files for the secondary targets need to be published to the "AutoMerge" subfolder located in the master target's main output folder (e.g., http://www.xyzincorporated.com/help systems/MyTargetName/AutoMerge). </p>
+                <p>When readers open the online output, they will see all of the <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /> outputs merged into one Help system. They can easily navigate and use the index and search across all of the output files.</p>
+            </li>
+        </ol>
+    </body>
+</html>

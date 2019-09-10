@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="16" MadCap:lastHeight="3895" MadCap:lastWidth="1040" MadCap:conditions="Products.Flare,Products.Contributor" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Restart footnote numbering in your content. You can restart numbering in particular locations using styles or local formatting." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterFootnotes" />
+            <MadCap:keyword term="Footnotes;Endnotes;Footnotes:restart numbering;Endnotes:restart numbering;Footnotes:styles;Endnotes:styles" />
+            <MadCap:keyword term="Numbers:footnotes" />Restarting Footnote Numbering</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Footnotes/RestartFootnoteNumbering.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/CanBeDoneThroughStylesOrLocalFormatting.flsnp" MadCap:conditions="Products.FlareOnlineOnly,Products.Contributor" /></p>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to restart footnote numbering using a style</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterFootnoteStylesStep.flsnp" />
+                                    </li>
+                                    <li>Select the appropriate footnote style. If you used the default style when inserting the footnotes, then select <span class="Emphasis">MadCap|footnote</span>. Otherwise, if you have used a class of that style (e.g., MadCap|footnote.BeginnersManual) that you created previously, then select it instead.</li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </li>
+                                    <li>Select the <span class="Emphasis">Footnote</span> tab.</li>
+                                    <li>
+                                        <p>From the <span class="Emphasis">Number</span> field, select one of the following.</p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Footnotes/RestartFootnotesOptionsList.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterFootnoteStylesStep.flsnp" />
+                                    </li>
+                                    <li>On the left side of the editor, select the appropriate footnote style. If you used the default style when inserting the footnotes, select <span class="Emphasis">MadCap|footnote</span>. Otherwise, if you have used a class of that style (e.g., MadCap|footnote.BeginnersManual) that you created previously, then select it instead.</li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandUnclassifiedGroupStep.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                                    <li>Locate the <span class="Emphasis">mc-footnote-number</span> property.</li>
+                                    <li>
+                                        <p>Click in the value column on the right side of that property, and select one of the following.</p>
+                                        <ul class="FirstLevel">
+                                            <li><span class="SetOffFirstLevel">chapter</span> This restarts the footnote numbering at each chapter of the output. <MadCap:conditionalText MadCap:conditions="Products.Flare">You can create section breaks in the TOC Properties dialog.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm" MadCap:conditions="Products.FlareOnlineOnly" MadCap:excludeAction="remove">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</MadCap:conditionalText></li>
+                                            <li><span class="SetOffFirstLevel">endnote</span> This is designed to maintain the numbering with a group of endnotes inserted at a specific location in the output, such as at the end of the book. It works in conjunction with an Endnotes proxy, which you create separately. The endnote comments and their numbers are displayed wherever you insert the Endnotes proxy. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Proxies/Using_the_Endnotes_Proxy.htm">About the Endnotes Proxy</MadCap:xref>.</MadCap:conditionalText></li>
+                                            <li><span class="SetOffFirstLevel">page</span> This restarts the footnote numbering on each page of the output.</li>
+                                            <li><span class="SetOffFirstLevel">section</span> This restarts the footnote numbering at each section of the output. <MadCap:conditionalText MadCap:conditions="Products.Flare">You can create section breaks in the TOC Properties dialog.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" MadCap:conditions="Products.FlareOnlineOnly" MadCap:excludeAction="remove">Specifying Section Breaks and Master Pages</MadCap:xref>.</MadCap:conditionalText></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li value="3">
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to restart footnote numbering using a style</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterFootnoteStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, select the appropriate footnote style. If you used the default style when inserting the footnotes, select <span class="Emphasis">MadCap|footnote</span>. Otherwise, if you have used a class of that style (e.g., MadCap|footnote.BeginnersManual) that you created previously, then select it instead.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandUnclassifiedGroupStep.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                    <li>Locate the <span class="Emphasis">mc-footnote-number</span> property.</li>
+                    <li>
+                        <p>Click in the value column on the right side of that property, and select one of the following.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">chapter</span> This restarts the footnote numbering at each chapter of the output. <MadCap:conditionalText MadCap:conditions="Products.Flare">You can create section breaks in the TOC Properties dialog.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm" MadCap:conditions="Products.FlareOnlineOnly" MadCap:excludeAction="remove">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">endnote</span> This is designed to maintain the numbering with a group of endnotes inserted at a specific location in the output, such as at the end of the book. It works in conjunction with an Endnotes proxy, which you create separately. The endnote comments and their numbers are displayed wherever you insert the Endnotes proxy. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Proxies/Using_the_Endnotes_Proxy.htm">About the Endnotes Proxy</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">page</span> This restarts the footnote numbering on each page of the output.</li>
+                            <li><span class="SetOffFirstLevel">section</span> This restarts the footnote numbering at each section of the output. <MadCap:conditionalText MadCap:conditions="Products.Flare">You can create section breaks in the TOC Properties dialog.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm" MadCap:conditions="Products.FlareOnlineOnly" MadCap:excludeAction="remove">Specifying Section Breaks and Master Pages</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly,Products.Contributor">how to restart footnote numbering using local formatting</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/UIElements/MakeSureMarkersTurnedOn.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/UIElements/ToTurnMarkersOn.flsnp" /></li>
+                    <li>Right-click on the footnote marker icon where it is inserted in the topic, and from the menu select <span class="Emphasis">Footnote Properties</span>. The Footnote Properties dialog opens. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref alt="" href="../../Interface/UI_Elements/Footnote_Properties_Dialog.htm" target="" title="">Footnote Properties Dialog</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Select the <span class="Emphasis">Footnote</span> tab.</li>
+                    <li>
+                        <p>From the <span class="Emphasis">Number</span> field, select one of the following.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Footnotes/RestartFootnotesOptionsList.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteContributorReviewWorkflowLocalChangeOnly.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Footnotes" />
+        </p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

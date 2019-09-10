@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="546" MadCap:lastWidth="962">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Answer">WebHelp Plus uses <MadCap:keyword term="Microsoft Indexing" />Indexing Service for searching in <MadCap:keyword term="Microsoft Windows XP" />Windows XP and <MadCap:keyword term="Microsoft Windows Server 2003" />Windows Server 2003. The content from a WebHelp Plus output is indexed by a catalog in the Indexing Service. This catalog must be specified in the WebHelp Plus target. The ConfigureSearch.exe utility configures the specified catalog for the WebHelp Plus output. It only needs to be run once per catalog; therefore, if another WebHelp Plus output on the same web server uses the same catalog, the utility does not need to be run again for that output.</p>
+        <p class="Answer">WebHelp Plus uses Windows Search for searching in <MadCap:keyword term="Microsoft Windows Vista" />Windows Vista, <MadCap:keyword term="Microsoft Windows 7" />Windows 7, and <MadCap:keyword term="Microsoft Windows Server 2008" />Windows Server 2008. The content from a WebHelp Plus output is indexed by Windows Search. The ConfigureSearch.exe utility adds the WebHelp Plus content to the Windows Search index .</p>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>Let’s say you have a WebHelp Plus target and you are publishing to Windows XP. You have specified that it should use a catalog called "MyCatalog."</p>
+            <p>Generate the output and publish it to the destination web server. Then browse to the output folder on the web server. Within the output folder, locate the "Service\Console.ConfigureSearch" subfolder. </p>
+            <p>Run the ConfigureSearch.exe utility to configure the "MyCatalog" catalog.</p>
+            <p>Now let’s say you have a second WebHelp Plus target that will be hosted on the same web server and is also configured to use the catalog called "MyCatalog." Since it is sharing the same catalog, you do not need to run the ConfigureSearch.exe utility again.</p>
+        </div>
+        <p class="Answer">The user account that runs this utility needs to have "administrator" rights.</p>
+    </body>
+</html>

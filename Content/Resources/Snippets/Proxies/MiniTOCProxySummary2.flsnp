@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="690" MadCap:lastWidth="721" MadCap:conditions="Products.Analyzer,Products.Flare">
+    <body>
+        <p>How does <MadCap:variable name="Other.Product" /> decide which topic links to include in a mini-TOC? It works a bit differently for online output than it does for print-based output.</p>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>print-based output </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>By default the mini-TOC for print output is based on the h1 through h6 styles that you have applied to content in your topics. When you insert the proxy, you select a number for the heading depth.  This number refers to the <span class="EmphasisItalic">absolute heading level</span>. For example, if you place the proxy after an h1 heading and select 4 as the depth, the proxy will include headings that are using h2, h3, and h4 styles (but not h5 or h6). If you place the proxy after an h2 heading with 4 as the depth, the proxy will include the h3 and h4 styles only. Please note that the print mini-TOC created from the proxy is <span class="EmphasisItalic">not</span> necessarily based on the structure of your outline TOC (i.e., the file found in the TOCs folder in the Project Organizer). However, there is a switch on the Advanced tab in the Target Editor that lets you base the generated mini-TOC on the structure of your outline TOC.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>online output </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>For online output, the depth refers to the <span class="EmphasisItalic">number of sub-levels</span> found under that topic in the TOC file.</p>
+                <p>Let's say you place the proxy in a topic that is located on the first level in a TOC, with three levels of topics below it, like this:</p>
+                <p>
+                    <img src="../../Images/mini_toc_proxy_example8.png" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p>With a depth of 3, all three levels of topics will be included in the mini-TOC in online output, even if those topics happen to start with an h1 heading.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

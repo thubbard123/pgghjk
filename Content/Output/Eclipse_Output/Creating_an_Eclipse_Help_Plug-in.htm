@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="5655" MadCap:lastWidth="1052" MadCap:conditions="Products.Flare" MadCap:ignoredWords="MYPLUGIN" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareEclipse.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterEclipseHelp" />
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:keyword term="Eclipse Help;Output:Eclipse Help" />
+            <MadCap:concept term="Eclipse Help" />Creating an Eclipse Help Plug-In</h1>
+        <p>The <MadCap:variable name="Outputs.EclipseHelp" /> output type gives you the ability to create a plug-in for the <MadCap:variable name="Outputs.EclipseHelp" /> system. A plug-in lets you extend the existing Help contents of the Eclipse IDE by including your own documentation.</p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../Resources/Images/eclipse-plugin-defined.png" class="MaxWidth100Percent" />
+        </p>
+        <p>If you plan to create an Eclipse plug-in with Flare, you must install some additional Eclipse components before getting started. Once the components are in place, you must also set up the <MadCap:variable name="Outputs.EclipseHelp" /> options in the Target Editor in Flare. </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+        <h2 MadCap:conditions="General.Print">Installing Eclipse</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>installing eclipse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before you begin, you must install the required Java Runtime Environment (JRE) and Java version on the system where you will be building and publishing the <MadCap:variable name="Outputs.EclipseHelp" /> output. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to download and install the jre</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The JRE for Eclipse is part of the Eclipse&#160;IDE&#160;for Java EE&#160;Developers package distribution and can be downloaded from the eclipse.org website. This distribution contains all of the features that you need to build an Eclipse plug-in with Flare.</p>
+                        <ol>
+                            <li>In Flare, add or open an <MadCap:variable name="Outputs.EclipseHelp" /> target.</li>
+                            <li>In the Target Editor, select the <span class="Emphasis">Eclipse Options</span> tab. </li>
+                            <li>
+                                <p>Under&#160;<span class="Emphasis">Viewing Options</span>, click <span class="Emphasis">Download</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/eclipse-options-download-link.png" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This opens the Eclipse IDE&#160;for Java EE&#160;Developers page on the eclipse.org website.</p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                            <li>
+                                <p>Under the <span class="Emphasis">Download Links</span> area, download the appropriate Eclipse IDE&#160;package for your operating system:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Windows 32-bit </span>Select this link if your computer is running a 32-bit operating system.</li>
+                                    <li><span class="SetOffFirstLevel">Windows 64-bit </span>Select this link if your computer is running a 64-bit operating system.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>On the Eclipse downloads page for your operating system, click the <span class="Emphasis">Download</span> link. </p>
+                                <p>This downloads a ZIP&#160;file to your computer. Depending on your Internet bandwidth and connection speed, you should plan for the download to take a minimum of several minutes.</p>
+                            </li>
+                            <li>
+                                <p>When the download is complete, create a folder on your computer where you can decompress the download in Windows. </p>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For best results, create the folder in a root directory, such as C:\Eclipse. Users have reported Eclipse issues when extracting the files to a mapped network drive or to a location with spaces in the path. </p>
+                                    <p>
+                                        <img src="../../Resources/Images/eclipse-ide-install-extract.png" alt="" title="" class="MaxWidth85Percent" />
+                                    </p>
+                                </div>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                            <li>
+                                <p>Use a decompression utility to extract the ZIP&#160;file that you downloaded into the folder you created.</p>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Eclipse installation documentation details known issues when using the built-in decompression utility that is included with all versions of Windows. To learn more, visit this link: <a href="http://wiki.eclipse.org/Eclipse/Installation" target="_blank">http://wiki.eclipse.org/Eclipse/Installation</a>.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>After extracting the zipped files to the folder you created, you can move the files to a more appropriate location such as Program Files\Eclipse or Program Files (x86)\Eclipse. <span class="BoldWarning">Please note that these are just examples. You might use a different location than Program Files or Program Files (x86).</span></p>
+                                <p>
+                                    <img src="../../Resources/Images/eclipse-ide-install-path.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Continue by downloading and installing Java on your system. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to download and install java</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To generate the <MadCap:variable name="Outputs.EclipseHelp" /> output type, you must have Java Version 7 (Update 45)&#160;or later installed on your system.</p>
+                        <ol>
+                            <li>In a web browser, navigate to the Java downloads page at <a href="http://java.com/en/download/manual.jsp" target="_blank">http://java.com/en/download/manual.jsp</a>.</li>
+                            <li>
+                                <p>Under the Windows area, download the appropriate Windows Offline file for the 32- or 64-bit operating system:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Windows 64-bit </span>Download the file named "jre-7u45-windows-zx64.exe."</li>
+                                    <li><span class="SetOffFirstLevel">Windows 32-bit </span>Download the file named "jre-7u45-windows-i586.exe."</li>
+                                </ul>
+                            </li>
+                            <li>Double-click the EXE&#160;file. The Open File-Security Warning dialog appears.</li>
+                            <li>In the dialog, click <span class="Emphasis">Run</span>. In a few moments, the Java Setup - Welcome dialog opens. </li>
+                            <li>At the Welcome to Java message, click <span class="Emphasis">Install</span>. </li>
+                            <li>At the installation complete message, click <span class="Emphasis">OK</span>. The Verify Java Version page should now be open in your web browser.</li>
+                            <li>In the web page, click the <span class="Emphasis">Verify Java Version</span> button. </li>
+                            <li>If your web browser needs permissions to run the verification process, click the <span class="Emphasis">Run this time</span> button. In a few moments, a Java Detection message appears.</li>
+                            <li>In the Java Detection message, click <span class="Emphasis">Run</span>.</li>
+                            <li>If the verification is successful, close your web browser. </li>
+                        </ol>
+                        <p>Continue by starting the Eclipse platform for the first time.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to start eclipse for the first time</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>After installing the required JRE and Java version on your computer, do the following:</p>
+                        <ol>
+                            <li>In Windows, navigate to the folder where you moved the decompressed Eclipse files. </li>
+                            <li>Double-click the file named <span class="Emphasis">eclipse.exe</span>. The Open File - Security Warning dialog appears. </li>
+                            <li>In the dialog, click <span class="Emphasis">Run</span>. In a few moments, the Workspace Launcher appears. </li>
+                            <li>In the Select a Workspace dialog, choose a workspace folder. Then click <span class="Emphasis">OK</span>. </li>
+                            <li>When the Java - Eclipse window appears, click <span class="Emphasis">Help&gt;Check for Updates</span>. </li>
+                            <li>If any updates are found, it is recommended that you install them. If no updates are found, click <span class="Emphasis">OK</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+        <h2 MadCap:conditions="General.Print">Creating an Eclipse Plug-in With Flare</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>creating the eclipse plug-in with flare</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To create your Eclipse plug-in with Flare, add a new Eclipse Help target<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (<MadCap:xref href="../../Targets/Adding_Targets.htm">Adding Targets</MadCap:xref>) </MadCap:conditionalText>and make sure you complete the Eclipse options (see <MadCap:xref href="../../Targets/More_About_Targets/Specifying_Eclipse_Options.htm">Specifying Eclipse Options</MadCap:xref>). Then build and publish your output.</p>
+                <p>The <MadCap:variable name="Outputs.EclipseHelp" /> output type is viewed in the Eclipse Help Viewer (or if you are including context-sensitive Help, the Eclipse Dynamic Help window).<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Interface/UI_Elements/Eclipse_Help_Viewer.htm">Eclipse Help Viewer</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>eclipse help configurations</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The viewer is powered by a java-based web server instance that ships with the Eclipse IDE. This makes it possible for you to distribute the published <MadCap:variable name="Outputs.EclipseHelp" /> output using these <MadCap:variable name="Outputs.EclipseHelp" /> configurations:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Eclipse Help Configuration</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Eclipse Plug-In Reference</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Standalone Help Application</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">org.eclipse.help.standalone</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">This is a standalone Help system, which contains a pared down version of the Eclipse IDE. It includes all of the Eclipse Help content, as well as most of the features included in the integrated Eclipse Help system. This is best used when developing a standalone Help system for applications not based on the Eclipse framework. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Infocenter</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">org.eclipse.help.Infocenter</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">This is a server-based Help system, where the Eclipse plug-in that you create is installed on a server. This gives your users the ability to access your output over the internet (or over an intranet).</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Extension Points</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableText">org.eclipse.help.toc
+org.eclipse.help.index<br />org.eclipse.help.contexts</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p>If your programmers are developing a rich client application, the Eclipse plug-in that you generate with Flare lets you integrate your content using the Eclipse Help extension points (i.e., table of contents, keyword index, and HTML&#160;content pages) . </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to build and view an eclipse help target</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>After specifying the options in your <MadCap:variable name="Outputs.EclipseHelp" /> target (see <MadCap:xref href="../../Targets/More_About_Targets/Specifying_Eclipse_Options.htm">Specifying Eclipse Options</MadCap:xref>), click the <span class="Emphasis">Build</span> button in the Target Editor. </li>
+                            <li>When prompted if you want to view the generated output, click <span class="Emphasis">Yes</span>. </li>
+                            <li>
+                                <p>When the message appears to notify you that the Help Viewer extension site must be refreshed, click <span class="Emphasis">OK</span>. </p>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not want to see the notification message when building <MadCap:variable name="Outputs.EclipseHelp" /> in the future, clear the "Show this dialog" check box before clicking <span class="Emphasis">OK</span>. </p>
+                                </div>
+                                <p>This launches the Help - Eclipse window. </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>understanding the eclipse help output</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>When you build and publish your <MadCap:variable name="Outputs.EclipseHelp" /> output, Flare creates a collection of output files. The files provide Eclipse with the instructions it needs to load your Flare content in the Eclipse Help Viewer. Your plug-ins files can be distributed as a collection of files in a folder.</p>
+                        <p>
+                            <img src="../../Resources/Images/eclipse_build_directory_of_files.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                        <p>They can also be bundled in a single, executable Java archive (JAR)&#160;file.</p>
+                        <p>
+                            <img src="../../Resources/Images/eclipse_build_executable_jar_file.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The <MadCap:variable name="Outputs.EclipseHelp" /> output contains the following files and resources:</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>xml-based plug-in file and extension points</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>The plug-in file (plugin.xml) generated by the <MadCap:variable name="Outputs.EclipseHelp" /> output type provides the Eclipse framework with the XML-based instructions it needs to load and access the files you published with Flare.</p>
+                                <p>
+                                    <img src="../../Resources/Images/eclipse-help-plugin-xml-file.png" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                                <p>The content of the file specifies the different extension points for your plug-in. These extension points are required for your output to load in Eclipse and include the following:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">org.eclipse.help.contexts </span>If you have created context-sensitive Help<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../CSH/About_Context_Sensitive_Help.htm">About Context-sensitive Help</MadCap:xref>)</MadCap:conditionalText>, this extension point registers the Flare-generated context file (i.e., csh.xml) for Eclipse.</li>
+                                    <li><span class="SetOffFirstLevel">org.eclipse.help.index </span>If you have included index keywords in your target, this extension point registers the Flare keyword index file (i.e., index.xml) for Eclipse.</li>
+                                    <li><span class="SetOffFirstLevel">org.eclipse.help.toc </span>If you have created a table of contents in your target, this extension point registers the Flare-generated table of contents file (i.e., toc.xml) for Eclipse.</li>
+                                </ul>
+                                <p>Below is an example of a plugin.xml file generated for the <MadCap:variable name="Outputs.EclipseHelp" /> output:</p>
+                                <p>
+                                    <img src="../../Resources/Images/eclipse_plugin_file_example.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>content and resource folders</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>The output also includes the following content and resource folders:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Content </span>This folder contains the&#160;HTML&#160;content files that you authored in Flare. If you do not want your content files in a separate Content folder, you can omit it when publishing your target.<MadCap:conditionalText MadCap:conditions="General.OnlineLive">&#160;See <MadCap:xref href="../../Targets/More_About_Targets/Omitting_the_Content_Folder_from_Output.htm">Omitting the Content Folder from Output</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Data </span>This folder contains XML and JavaScript instructions for your Flare output.</li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">META-INF </span>When you build your output and generate a JAR&#160;file (see <MadCap:xref href="../../Targets/More_About_Targets/Specifying_Eclipse_Options.htm">Specifying Eclipse Options</MadCap:xref>), the <MadCap:variable name="Outputs.EclipseHelp" /> output creates a file named "Manifest.MF." This file contains information about the files that are packaged in your archive. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/eclipse-help-plugin-metainf-manifest.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">Resources </span>This folder contains JavaScript instructions for your Flare output.</li>
+                                    <li><span class="SetOffFirstLevel">Skin </span>This folder contains components related to the user&#160;interface of the Eclipse Help Viewer. </li>
+                                    <li><span class="SetOffFirstLevel">Skins </span>This folder also contains components related to the user&#160;interface of the Eclipse Help Viewer.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+        <h2 MadCap:conditions="General.Print">Distributing the Eclipse Help Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>distributing the eclipse help output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can choose whether to publish the <MadCap:variable name="Outputs.EclipseHelp" /> output that you generate with Flare as a collection of files in a folder or as a single executable file. Depending on your development environment, you will use the Eclipse framework to deliver your output in one of three modes:&#160;Infocenter, Standalone, or Rich Client Platform (RCP).</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>infocenter (information center)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In Eclipse, Infocenter mode lets you deliver server-based documentation via the Help-Eclipse window. This mode is typically selected when developing Eclipse-based applications (e.g., client- and web-based applications). </p>
+                        <p>With this mode, your developers must install an Eclipse information center on a server. Once the Eclipse server is installed, you can upload the <MadCap:variable name="Outputs.EclipseHelp" /> output that you generated in Flare to the server. There are a variety of ways that you can connect the plug-in that you generated in Flare.  To learn more, see the Eclipse documentation at&#160;<a href="http://help.eclipse.org/" target="_blank">http://help.eclipse.org</a>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>standalone help system</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In Eclipse, you can deliver documentation via the Eclipse Help Viewer as a standalone application. This application gets packaged and installed locally on a user's system and includes a light version of Eclipse that contains only the Eclipse Help system. </p>
+                        <p>Standalone mode is typically selected when developing applications that are not Eclipse-based. To learn more, see the Eclipse documentation at&#160;<a href="http://help.eclipse.org/" target="_blank">http://help.eclipse.org</a>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>rcp</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>In Eclipse, this mode lets you deliver documentation as part of an Eclipse RCP application. Typically, documentation is accessed using a Help menu. Unlike the Infocenter and standalone mode, the optional RCP&#160;workbench supports Eclipse context Help and the Eclipse Help Viewer. </p>
+                        <p>This mode is typically selected when developing applications that are not Eclipse-based. To learn more, see the Eclipse documentation at&#160;<a href="http://help.eclipse.org/" target="_blank">http://help.eclipse.org</a>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Eclipse Help" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

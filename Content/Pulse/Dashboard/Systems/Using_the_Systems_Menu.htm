@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet5]exclude[Snippets.Snippet1 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="16" MadCap:lastHeight="7168" MadCap:lastWidth="799" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Use the Systems menu is used by members of the Employees and Administrators group to find existing systems and create new ones. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Dashboard" />
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Using the Systems Menu</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />Systems Menu</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminEmployee.flsnp" />
+        <p>In the Pulse dashboard, the Systems menu is available to members of the Employees and Administrators group. Members of the Employees group can find existing systems. Members of the Administrators group can both find and create systems. </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseUserGuide,PulseGuides.PulseServerAdminGuide" />
+        <h2 MadCap:conditions="General.Print">Pulse Systems and Flare Communities</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>pulse systems and flare communities</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To integrate a Pulse system with the Flare output, you must first create a community in the Flare target<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive"> (see <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>)</MadCap:conditionalText>. This action also creates a corresponding system in Pulse. </p>
+                <p>A Flare community always corresponds to a Flare target. If you publish more that one online Flare target, you have these options:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Enable One Flare Community for All Targets </span>This creates one Pulse system and Flare community to use with all of your Flare targets. It also lets you run reports for the entire community.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Enable a Unique Flare Community for Each&#160;Target </span>This creates a separate Flare community and Pulse system for each Flare target. The benefit to this approach is that it lets you run reports for each community.</p>
+                        <p>
+                            <img src="../../../Resources/Images/pulse_admin_system_find_systems.png" class="MaxWidth90Percent" />
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Creating Systems and Communities</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>creating systems and communities</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are two ways to  create a new system in Pulse to integrate with a Flare community.&#160;For the best experience, it is recommended that you always create communities using the Flare Target Editor:</p>
+                <table class="TableStyle-BasicAlternateRows" cellspacing="0" style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Method</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Notes</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Community Tab in the&#160;Flare Target Editor </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">When you add a Flare community to a target, that community is automatically added as a system in Pulse. This gives members of the Customers group the ability to post updates, questions, articles, and tasks in embedded discussion forms for your Flare output. Members of the Administrators and Employees groups can also moderate these posts and other Pulse features using the Pulse dashboard. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">This is the recommended method.</p>
+                                <p class="TableText" MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">See <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Systems Menu in the Pulse Dashboard </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">If you decide to create a system in Pulse, it will require several extra steps on your part to integrate that system with Pulse.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText">This method is supported, but not recommended. </p>
+                                <p class="TableText">See the instructions below. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to create a system using the pulse dashboard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you create your new system using the Pulse dashboard, it will require several extra steps on your part. This is why we recommend creating Pulse systems from the Community tab of the Flare Target Editor. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive">See <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>.</MadCap:conditionalText></p>
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseDashLoginAdmin.flsnp" />
+                            </li>
+                            <li>
+                                <p>Open the Create System page using one of these methods:</p>
+                                <ul class="FirstLevel">
+                                    <li>Select <span class="Emphasis">Systems&gt;Create System</span>. </li>
+                                    <li>Select <span class="Emphasis">Systems&gt;Find System</span>. Then click <span class="Emphasis">Create System</span> at the bottom of the page.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Under the <span class="Emphasis">Basic</span> tab, type the following for the system hub:</p>
+                                <ol class="LowerAlpha">
+                                    <li><span class="Emphasis">Name </span>The name of the system.</li>
+                                    <li><span class="Emphasis">Description </span>A short description about the system.</li>
+                                </ol>
+                            </li>
+                            <li>Click <span class="Emphasis">Create this System</span>. This opens the new system's page in thePulse dashboard. </li>
+                            <li>Select <span class="Emphasis">Administration&gt;Settings</span>.</li>
+                            <li>In the Settings page, click <span class="Emphasis">Communities</span>. </li>
+                            <li>
+                                <p>In the Communities page, click <span class="Emphasis">New</span>. Then type the name of the system in the <span class="Emphasis">Name</span> box.&#160;</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Your entry must exactly match the system name you created earlier. </p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                        <ol MadCap:continue="true">
+                            <li>
+                                <p>Click <span class="Emphasis">Save Changes</span>. When prompted to confirm that you want to save all changes, click <span class="Emphasis">OK</span>. </p>
+                                <p>A key for your new Flare community appears in the Communities list and a message confirms that your changes have been saved successfully. </p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_community_key.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Log out of the Pulse dashboard. </li>
+                            <li>In Flare, open the desired Flare target.</li>
+                            <li>
+                                <p>In the Target&#160;Editor, select the&#160;<span class="Emphasis">Community</span> tab. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">These instructions assume that you have already enabled the Pulse server and entered your community login information. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">If this is not the case, see <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>.</MadCap:conditionalText></p>
+                            </li>
+                            <li>Under <span class="Emphasis">Current Pulse Configuration</span>, click <span class="Emphasis">Refresh</span>.</li>
+                            <li>Under <span class="Emphasis">Community</span>, click <span class="Emphasis">Manage</span>. Note that your new Pulse system/Flare community is now listed in Flare. </li>
+                            <li>Click <span class="Emphasis">Remap Topics</span>. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Configuring Systems</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>configuring systems</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can configure a variety of settings for a Pulse system. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to configure the basic settings for a system</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseDashLoginAdmin.flsnp" />
+                            </li>
+                            <li>
+                                <p>Select <span class="Emphasis">Systems&gt;Find Systems</span>. Then click the desired system link to configure it. The system page appears. </p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_system_page_empty.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the system page, click <span class="Emphasis">Settings</span>. The system's Feed Settings page opens. </li>
+                            <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                            <li>
+                                <p>In the <span class="Emphasis">Basic</span> tab, define the general system settings. You have these options:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Change Image </span>Click <span class="Emphasis">Change Image</span> to upload an image file for your system. Adding an image is a helpful way to distinguish between multiple systems. </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">System Name </span>Change the name of the system. </p>
+                                        <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">For best results and to ensure that your Flare topics are properly mapped to the Pulse features, it is strongly recommended that you always change the Flare community name. This will automatically change the <span class="Emphasis">System Name</span> in Pulse. </p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">Description </span>Update the system description. If this is a Flare-integrated system, we recommend noting it in the description. </li>
+                                    <li><span class="SetOffFirstLevel">Audience </span>Select the groups that are allowed to interact in the community. You can select Employees and Customers, or just Employees. </li>
+                                    <li><span class="SetOffFirstLevel">Embed Signing </span>If you have an embedded signing requirement for SSL, place a check mark in this box. This is the default setting. Remove the check mark to disable the option. To find out if your company has SSL&#160;requirements, see your Network Administrator.</li>
+                                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="MadCap Pulse:moderation" MadCap:conditions="Products.Flare" /><MadCap:keyword term="Moderation" MadCap:conditions="Products.Pulse" />Moderation </span>Select this option if you want new posts to always require approval by a moderator.<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive"> See <MadCap:xref href="../../Moderation/Moderating_Posts.htm">Moderating (Approving/Rejecting) Posts</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Certificate </span>If you require a certificate for SSL, click <span class="Emphasis">Generate a new certificate</span>. This creates a certificate file that you can download in the Personal&#160;Information Exchange (PFX) file format. To find out if your company has SSL&#160;requirements, see your Network Administrator. </li>
+                                </ul>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_dashboard_feed_settings_basic.png" class="MaxWidth90Percent" />
+                                </p>
+                            </li>
+                            <li>Click <span class="Emphasis">Save</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="HowToConfigurePermissions"></a>How to Configure the Privacy Settings for a System</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseDashLoginAdmin.flsnp" />
+                            </li>
+                            <li>Select <span class="Emphasis">Systems&gt;Find Systems</span>. If you cannot see this menu, your user account does not have sufficient permissions to find systems.</li>
+                            <li> Click the appropriate system link. The system page appears. </li>
+                            <li>In the system page, click <span class="Emphasis">Settings</span>. The system settings are shown. </li>
+                            <li>
+                                <p>Click the <span class="Emphasis">Privacy</span> tab. Use the controls in this tab to define the privacy settings for access to the system. You have these options:</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to remove users and group</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>If you want to remove a user or group from the privacy list, click the <img src="../../../Resources/Images/pulse_delete_btn1.png" alt="" title="" class="ReduceButtonSize" /> next to the desired item.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By default, Pulse will automatically add your user name and any groups that your account belongs to as privacy settings for the system.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to add a user or group</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ol style="list-style-type: lower-alpha;">
+                                            <li>In the <span class="Emphasis">Privacy</span> tab, click <span class="Emphasis">Add a user or group</span>. </li>
+                                            <li>
+                                                <p>In the Add a User or Group dialog, do the following:</p>
+                                                <ol class="LowerRoman">
+                                                    <li>In the entry field, type the user or group name to add. This populates the list with matching items from the Pulse database. </li>
+                                                    <li>Place a check mark in the box next to the desired user account or group name.</li>
+                                                    <li>Repeat these steps until you have added all of the desired users and groups. </li>
+                                                </ol>
+                                            </li>
+                                            <li>Click <span class="Emphasis">Add</span>. </li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to specify user and group permissions</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>Next to each user group, select one of the following settings from the drop-down list:</p>
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/SecurityPermissionsTable.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>Click <span class="Emphasis">Save</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Adding and Configuring System Feeds</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>adding and configuring system feeds</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can add and configure system feeds in Pulse. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to add feeds to a system</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you use the instructions below to add feeds for a Flare community, you must remap the topics in the Community tab of the Flare Target Editor. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive">See <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>.</MadCap:conditionalText></p>
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseDashLoginAdmin.flsnp" />
+                            </li>
+                            <li>
+                                <p>Select <span class="Emphasis">Systems&gt;Find Systems</span>. If this menu item is not available, your user account does not have administrator permissions.</p>
+                            </li>
+                            <li> Click the appropriate system link. The system page appears. </li>
+                            <li>In the system page, click <span class="Emphasis">Add Feed</span>. This opens the Add System Feed page. Next, you must configure the feed as described below.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to configure a feed</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>You can configure a variety of settings for a Pulse system feed. </p>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you use the instructions below to configure feeds for a Flare community, you must remap the topics in the Community tab of the Flare Target Editor. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive">See <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrate a Flare Community and Pulse System</MadCap:xref>.</MadCap:conditionalText></p>
+                        <ol>
+                            <li>
+                                <p>Follow the steps above to add a new feed to a system.</p>
+                            </li>
+                            <li>
+                                <p>In the Add System&#160;Feed page, enter the following information:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">System Feed Name </span>Type a name for the system feed (e.g., MadCap Software Blog).</li>
+                                    <li><span class="SetOffFirstLevel">Description </span>Add a short description about the feed.</li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Source </span>Select the source for the feed. You can select from a list of common formats for content syndication. You have these options:</p>
+                                        <ul class="SecondLevel">
+                                            <li><span class="SetOffSecondLevel">RSS 2.0 or Atom 1.0 Feed </span>This is the default option. </li>
+                                            <li><span class="SetOffSecondLevel">Microsoft CRM </span>
+                                            </li>
+                                            <li><span class="SetOffSecondLevel">Pop3 Email Address </span>
+                                            </li>
+                                            <li><span class="SetOffSecondLevel">Exchange Web&#160;Services Email Address </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Feed Format </span>Select the format of the data for the feed. Choose one of the following options.</p>
+                                        <ul class="SecondLevel">
+                                            <li><span class="SetOffSecondLevel">Text </span>This is a text format for information interchange. </li>
+                                            <li><span class="SetOffSecondLevel">Json </span>Short for "JavaScrip Object Notation." This is a text-based open standard for readable database interchange. </li>
+                                            <li><span class="SetOffSecondLevel">Jws </span>Java Web Start. This is another means for information interchange.</li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">Allow Impersonation </span>This option determines whether the system can post messages to the feed on behalf of the users in response to updates from the external source. Select <span class="Emphasis">True</span> if you want the system to make posts for the users. Select <span class="Emphasis">False</span> if you do not.</li>
+                                    <li><span class="SetOffFirstLevel">Source URL </span>Enter the source URL address of the feed you are adding to the system.</li>
+                                    <li><span class="SetOffFirstLevel">Poll Period (Minutes) </span>This determines the amount of time in minutes that the system waits in between polling the source for updates. Those updates are then added to the system feed.</li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Use Credentials </span>Check this check box if you want this feed to require credentials. Clicking this check box causes three additional fields to appear. Use these fields to enter a user name, password, and domain name to use for credentialing.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">Create this Feed</span>. The feed is created and added to the system. </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Finding Systems </h2>
+        <p MadCap:conditions="General.Print">Users who are members of the Administrators and Employees groups are permitted to find systems in Pulse. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to find systems </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">Users who are members of the Administrators and Employees groups are permitted to find systems in Pulse. </p>
+                <ol>
+                    <li> <MadCap:snippetText src="../../../Resources/Snippets/Pulse/PulseDashLoginAdminEmployee.flsnp" /></li>
+                    <li>Select <span class="Emphasis">Systems&gt;Find Systems</span>. The Find Systems page appears.</li>
+                    <li>The newest systems in the Pulse database will be displayed by default. You can search for a system in the <span class="Emphasis">Search</span> field in the upper-right corner of the page. You can also filter the systems by clicking the down arrow in the upper-left corner of the page and selecting from the following options.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">New Systems </span>Displays the most recently created systems.</li><li><span class="SetOffFirstLevel">Most Active Systems </span>Displays the systems with the most user activity.</li><li><span class="SetOffFirstLevel">All Systems </span>Displays all systems that exist in the Pulse database.</li></ul></li>
+                    <li>
+                        <p>Click a system.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create a system in the Find Systems dialog by clicking <span class="Emphasis">Create System</span>. </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">It is recommended that you rename communities within Flare, rather than within the dashboard. If you rename a community via the Pulse dashboard, it will not automatically update within the Flare target.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Dashboard" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.);output.);output...;level.&quot;;TOC1;TOC2;TOC3;TOC9;Index1;Index2;Index3;C;project.);TOC.)" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2076" MadCap:lastWidth="884" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Use the TOC&#160;Editor in MadCap Flare create an outline TOC to include topis in print-based output. You can also create a shared TOC and use condition tags. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Topics:printed output;Print-based output:tables of contents" />
+            <MadCap:concept term="PrintedOutput" MadCap:conditions="Products.Flare" />Adding Print Topics to an Outline TOC</h1>
+        <p>You need to make sure that all of the topics to be included in your printed output are added to an outline table of contents (TOC). We refer to it as an "outline TOC" because for print-based output it really serves more as an outline than a TOC. You have a couple of options:</p>
+        <ul>
+            <li>
+                <p>Create a new TOC just for your printed output (most common method).</p>
+                <p>OR</p>
+            </li>
+            <li>Incorporate the print topics into a shared TOC (along with topics for other outputs) and use condition tags.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a new toc (just for your print-based output)  </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add a new TOC to the project<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> (see page <MadCap:xref href="../../../TOCs/More_About_Tables_of_Contents/Adding_Another_Table_of_Contents.htm" class="page">1</MadCap:xref>)</MadCap:conditionalText>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/MakeSureContentExplorerOpen.flsnp" />
+                    </li>
+                    <li>
+                        <p>(Optional) If you want to select and add multiple topics to the TOC at the same time (as opposed to one topic at a time), complete these steps.</p>
+                        <ol class="LowerAlpha">
+                            <li>In the local toolbar of the Content Explorer, click the <span class="Emphasis">Show Files</span> button <img src="../../../Resources/Images/show_files_btn.png" class="ReduceButtonSize" />. The Content Explorer splits into two halves. </li>
+                            <li>
+                                <p>On the right half of the Content Explorer, find and select the folder and topic files that you want to include in the TOC. <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Make sure you do not select the Resources folder in the Content Explorer, which holds your ancillary content files (e.g., images, stylesheets). If you do, that folder and its contents will also be included in the TOC. </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <li>
+                        <p>Drag the topics that are to be included in the printed manual from the Content Explorer to the appropriate locations in the TOC Editor. </p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Drag the topic that contains a TOC proxy (for displaying a generated TOC) near the top of the TOC (since you will want the TOC in your printed output to be placed near the front of it). Drag the topic that contains an Index proxy (for displaying a generated index) near the bottom of the TOC (since you will want the index to be placed at the end of your printed manual).</p>
+                        </div>
+                        <p>Also, you can use the buttons in the TOC Editor local toolbar to add elements (e.g., books, topic pages) to the TOC and to determine how they behave (e.g., link them to topics).</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to incorporate print topics into a toc (to be shared with other output)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the TOC<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> (page <MadCap:xref href="../../../TOCs/More_About_Tables_of_Contents/Opening_a_Table_of_Contents.htm" class="page">1</MadCap:xref>)</MadCap:conditionalText>. </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/MakeSureContentExplorerOpen.flsnp" />
+                    </li>
+                    <li>
+                        <p>(Optional) If you want to select and add multiple topics to the TOC at the same time (as opposed to one topic at a time), complete these steps:</p>
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>In the local toolbar of the Content Explorer, click the <span class="Emphasis">Show Files</span> button <img src="../../../Resources/Images/show_files_btn.png" class="ReduceButtonSize" />. The Content Explorer splits into two halves. </p>
+                            </li>
+                            <li>
+                                <p>On the right half of the Content Explorer, find and select the folder and topic files that you want to include in the TOC. <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Make sure you do not select the Resources folder in the Content Explorer, which holds your ancillary content files (e.g., images, stylesheets). If you do, that folder and its contents will also be included in the TOC. </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Drag the topics that are to be included in the printed manual from the Content Explorer to the appropriate locations in the TOC Editor. </p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Drag the topic that contains a TOC proxy (for displaying a generated TOC) near the top of the TOC (since you will want the TOC in your printed output to be placed near the front of it). Drag the topic that contains an Index proxy (for displaying a generated index) near the bottom of the TOC (since you will want the index to be placed at the end of your printed manual).</p>
+                        </div>
+                        <p>Also, you can use the buttons in the TOC Editor local toolbar to add elements (e.g., books, topic pages) to the TOC and to determine how they behave (e.g., link them to topics).</p>
+                    </li>
+                    <li>Create condition tags for your topics<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> (see page <MadCap:xref href="../../../Condition_Tags/Creating_Condition_Tags.htm" class="page">1</MadCap:xref>)</MadCap:conditionalText>. </li>
+                    <li>Apply these condition tags to the appropriate entries in your print TOC.<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> The easiest way to do this is to double-click an entry in the TOC and use the Conditional Text tab in the Properties dialog to choose the condition tag(s) to be associated with that entry. For more details, see the online Help.</MadCap:conditionalText></li>
+                    <li>Associate the condition tags with your print target<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> (see page <MadCap:xref href="Associating_Condition_Tags_with_Your_Print_Target.htm" class="page">1</MadCap:xref>)</MadCap:conditionalText>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you incorporate your print topics into an existing or new TOC, you can move on to any of the remaining tasks for creating printed output. See <MadCap:xref href="../Creating_Printed_Output.htm" target="" title="" alt="">Creating Print-based Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutput" />
+        </p>
+    </body>
+</html>

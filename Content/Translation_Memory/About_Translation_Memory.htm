@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="6336" MadCap:lastWidth="1110" MadCap:conditions="Products.Lingo" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Using Translation Memory in MadCap Lingo. Understanding the TM features and steps for setting up and using Translation Memory." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="TranslationMemory" />
+            <MadCap:keyword term="Translation memory" />
+            <MadCap:concept term="FilterTM" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Translation Memory</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/TranslationMemorySummary.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>See the Movies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://youtu.be/W9VHwHjVWDM" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+                <p>
+                    <object src="https://youtu.be/E7yC5DbUlIo" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+                <p>
+                    <object src="https://youtu.be/fcgpCkQQYfQ" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="LingoGuides.LingoTranslationGuide">Translation Memory Features</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>translation memory features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Features of TM in Lingo include the following:</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="SQL:SQLite;SQL:Express" />local or server tm (sqlite or sql express)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/SQLLingoSummary.flsnp" /> See <MadCap:xref href="Creating_a_Translation_Memory_Database.htm">Creating a Translation Memory Database</MadCap:xref>.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>sqlite (local)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SQLiteSummary.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>sql server express (server)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SQLExpressSummary.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>multiple tm databases per project</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">You can connect multiple TM databases to your project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref> and <MadCap:xref href="Choosing_a_TM_Database.htm">Choosing a Translation Memory Database</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Choosing_a_TM_Database.htm">Choosing a Translation Memory Database</MadCap:xref>.</MadCap:conditionalText></p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you are creating a new project and have already created a few TM databases previously. In the Start New Project wizard, you might see something like this:</p>
+                            <p>
+                                <img src="../Resources/Images/multiple_tms1.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>rank tm databases</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">You can rank TM&#160;databases. This allows you to select the order in which you want to apply segments when translating or pre-translating a project. <MadCap:variable name="Other.Product" /> will also prioritize higher-ranked TMs when showing suggestions in the TM&#160;Suggestions pane. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Ranking_Translation_Memory.htm">Ranking Translation Memory</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/RankingTMsExample1.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Translation memory:suggestions;Suggestions" />suggestions based on previous translations</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>TM remembers the translation work that you have uploaded and uses it to make suggestions when you translate content in the future.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Using the Options dialog (<span class="Emphasis">File&gt;Options</span> or <span class="Emphasis">Tools&gt;Options</span>) you can adjust the percentages for matches to change the behavior of the interface. This lets you determine how closely translations must match text in order to be shown in the interface and/or be used automatically. You can also specify how to handle exact matches, whether they are automatically accepted or not when TM is applied. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Setting_Match_Options_for_Suggestions.htm" >Setting Match Options for Suggestions</MadCap:xref> and <MadCap:xref href="Accepting_Exact_Matches_on_Applying_TM.htm" >Accepting Exact Matches on Applying TM</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Translation memory:statuses and matches" />statuses and matches</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">
+                            <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/StatusesMatchesSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Statuses_and_Matches.htm">Statuses and Matches</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Translation memory:context matches;Context matches" />updating segments with context (101%) matches</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">
+                            <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/UpdateSegments101Matches.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Updating_Segments_With_101_Matches.htm">Updating Segments With 101% Matches</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Translation memory:updating with identical source" />updating translations with identical sources</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">
+                            <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/UpdateTranslationsIdenticalSource.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Updating_Translations_With_Identical_Source.htm">Updating Translations With an Identical Source</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="TMX file" />translation memory exchange</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">The purpose of Translation Memory eXchange (TMX) is to allow easier transmission of TM data between tools and/or translation vendors with no loss of critical data during the process. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="About_Translation_Memory_Exchange.htm">About Translation Memory eXchange</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>edit tm databases</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">You can open your TM database and edit it. From the Translation Memory Editor, you can delete items, make corrections, add new segments, and import/export TMX files. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Editing_the_Translation_Memory_Database.htm">Editing the Translation Memory Database</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Translation memory:metadata" />View TM&#160;Metadata and Clean up TM databases</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When editing a TM&#160;database, you can view metadata for each translation unit. These additional details for each translation help you identify each segment. Some of this information is gathered from the project details you enter when you initially create the project (e.g., the client and domain), and some is gathered as you edit the TM&#160;segment (e.g., the time the segment was last modified and the user who last changed it). You can view the metadata for each segment, and you can filter the entire translation memory to only display segments that have specific metadata.</p>
+                        <p>Translation memory cleanup allows you to use TM&#160;metadata to find and replace within a TM&#160;segment or delete TM&#160;segments. You can use metadata to search within the TM and locate specific segments, such as those created by a certain user or those pertaining to a specific client. You can also use translation memory cleanup to remove duplicate segments in your translation memory.</p>
+                        <p MadCap:conditions=""> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="About_Translation_Memory_Metadata.htm">About Translation Memory Metadata</MadCap:xref> and <MadCap:xref href="Cleaning_Up_the_Translation_Memory.htm">Cleaning Up the Translation Memory</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>pre-translate files</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Translating/PretranslateSummary.flsnp" /> See <MadCap:xref href="Applying_TM_Suggestions_to_Segments.htm">Applying TM Suggestions to Segments</MadCap:xref>.</p>
+                        <p>
+                            <img src="../Resources/Images/multiple_tms8.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Translating/PretranslateExample.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Translating/PretranslateMTExample.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteReduceFuzzyPercentage.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteAcceptExactMatches.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NotePretranslate.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteApplyFirstTMMatchFound.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="LingoGuides.LingoTranslationGuide">Steps for Using Translation Memory</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for using translation memory</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the general steps for using TM:</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="SQL" />Install SQL</span> In order to use features such as translation memory, you need to have SQLite or SQL Express Server. SQLite is automatically installed during the process of installing Lingo, but you must install SQL Express Server separately if you want to use that. <MadCap:conditionalText MadCap:conditions="LingoGuides.LingoGettingStartedGuide,General.OnlineLive">See <MadCap:xref href="../SQL/SQL_Lingo.htm">SQL</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Translation memory:creating" />Create TM Database </span>
+                        <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/InstallTMSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide"> See <MadCap:xref href="Creating_a_Translation_Memory_Database.htm">Creating a Translation Memory Database</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Translation memory:selecting" MadCap:conditions="General.OnlineLive" />Choose TM Database </span>
+                        <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/PickTMDatabaseSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide"> See <MadCap:xref href="Choosing_a_TM_Database.htm">Choosing a Translation Memory Database</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Translation memory:uploading" />Upload TM Content for Suggestions </span>
+                        <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/UploadToTMSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="LingoGuides.LingoGettingStartedGuide,General.OnlineLive"> See <MadCap:xref href="../Translating_Files/Translating_Files.htm">Translating Files</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Translation memory:suggestions;Suggestions" MadCap:conditions="General.OnlineLive" />Translate With TM Suggestions</span> You can apply TM suggestions to a segment when you are translating files. You can do this manually for each segment you come across that has a match, or you can automatically apply matching translations across the entire project or a single file. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Applying_TM_Suggestions_to_Segments.htm">Applying TM Suggestions to Segments</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/SourceControl/TMandTBXinProjectFolder.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are having difficulty connecting to a remote Lingo database, it may be due to the security setting of SQL. To view a remote server, you must have administrator rights on that server. You can add users to a local machine as administrators or add users in SQL Management Studio. To do this in Management Studio: (1) open SQL Server Management Studio (for more information see msdn.microsoft.com); (2) expand the server and then expand <span class="Emphasis">Security</span>; you’ll probably have a login called "BUILTIN\Administrators," which will have "sysadmin" rights; in that case, any admin of your machine will have sysadmin rights because they’re part of that group; and (3) add anyone to this who will need to access your server.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your database is not displaying when you are setting up TM, your SQL browser service may not be enabled. To enable this service: (1) open SQL Server Management Studio (for more information see msdn.microsoft.com), (2) open the SQL Server Configuration Manager, (3) open the SQL Server Browser and go to the <span class="Emphasis">Service</span> tab, (4) change the Start Mode to <span class="Emphasis">Automatic</span>, and (5) click <span class="Emphasis">Apply</span>, and (6) start your <span class="Emphasis">SQL Server Browser</span>.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteTermbasesTM.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+    </body>
+</html>

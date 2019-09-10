@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="exclude[Snippets.Snippet1 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6]" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="732" MadCap:lastWidth="1179">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control" />
+            <MadCap:keyword term="Source control:API;API:source control;SCC API" />
+            <MadCap:concept term="FilterSourceControl" />Using an API to Integrate Source Control</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlUseAPI.flsnp" />
+        </p>
+        <p>The SCC API is an interface specification defined by Microsoft that defines the interface between an application (in this case, <MadCap:variable name="Other.Product" />) and a source control provider (e.g., CVS, IBM Rational ClearCase), providing hooks for a number of common source control operations (such as check out, check in, get latest, and so on). </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">source control providers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Many source control providers adhere to this interface as a standard for source control integration, including (but not limited to) the following.</p>
+                <ul>
+                    <li>
+                        <MadCap:keyword term="CVS;Source control:CVS" />CVS </li>
+                    <li>
+                        <MadCap:keyword term="IBM Rational ClearCase;ClearCase;Source control:ClearCase" />IBM Rational ClearCase </li>
+                    <li>
+                        <MadCap:keyword term="CS-RCS;Source control:CS-RCS" />CS-RCS </li>
+                    <li>
+                        <MadCap:keyword term="Team Coherence;Source control:Team Coherence" />Team Coherence </li>
+                    <li>
+                        <MadCap:keyword term="QVCS-Pro;Source control:QVCS-Pro" />QVCS-Pro </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">what you need to do</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are using a source control package that supports the Microsoft SCC API, install the plug-in that is provided by that tool and follow any included instructions. This plug-in from your source control provider should be installed on the client machine (i.e., the computer that is running <MadCap:variable name="Other.Product" />). Once you have done this correctly, you should be able to select that plug-in from the <MadCap:variable name="Other.Product" /> interface whenever you are asked to select a source control provider (e.g., when binding a project to source control).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotMandatoryToUseSourceControlAPI.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control" />
+        </p>
+    </body>
+</html>

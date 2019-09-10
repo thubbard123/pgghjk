@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="1135" MadCap:lastWidth="1176" MadCap:conditionTagExpression="include[Snippets.Snippet9]exclude[Snippets.Snippet10 or Snippets.Snippet11]" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareWebHelp.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Merging output at runtime when building the WebHelp Plus output format in MadCap Flare. Learn all of the required tasks for merging targets." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterMergingProjects" />
+            <MadCap:concept term="AutoMerge" />
+            <MadCap:keyword term="Projects:merging;Merging:projects;Merging:WebHelp Plus;WebHelp Plus:merging" />
+            <MadCap:concept term="MergingProjects" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:concept term="FilterWebHelpPlus" />Merging Output at Runtime Using WebHelp Plus</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/WHP/AutomaticRuntimeMerging.flsnp" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/WHP/ScenarioLink.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareWebHelpGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareWebHelpGuide">Tasks Associated with Merging Output Using <MadCap:variable name="Outputs.WebHelp Plus" /></h2>
+        <p MadCap:conditions="FlareGuides.FlareWebHelpGuide">Following are basic tasks involved with merging output using <MadCap:variable name="Outputs.WebHelp Plus" />.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to merge output at runtime using webhelp plus</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Output/MergingOutputRuntimeSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are testing <MadCap:variable name="Outputs.WebHelp Plus" /> output on your local machine, you need view the output at least one time. <MadCap:snippetText src="../../../Resources/Snippets/WHP/MCPreviewFolder.flsnp" /> When testing the automerge feature on your computer, you need to place the secondary ("child") outputs in the AutoMerge subfolder at this location (as opposed to the output folder that was generated where your Flare project is located). </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteWaitWHPIndexing.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../../Resources/Snippets/WHP/WHPNotVista.flsnp" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="MergingProjects;AutoMerge" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareWebHelpGuide" />
+    </body>
+</html>

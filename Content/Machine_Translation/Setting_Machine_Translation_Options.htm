@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:lastBlockDepth="12" MadCap:lastHeight="936" MadCap:lastWidth="1097" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="MachineTranslation" />
+            <MadCap:keyword term="MT" />
+            <MadCap:keyword term="Machine Translation" />
+            <MadCap:concept term="FilterMachineTranslation" />Setting Machine Translation Options</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/MachineTranslation/MTOptionsIntro.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set Machine Translation Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <p>Select <span class="Emphasis">File&gt;Options</span>.</p>
+                        <p>The Options dialog opens.</p>
+                    </li>
+                    <li>Click the <span class="Emphasis">Machine Translation </span>tab.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../Resources/Snippets/MachineTranslation/SelectMTProvider.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/MachineTranslation/ProviderCredentials.flsnp" />
+                        <p>Click <span class="Emphasis">Test Connection</span> to verify that your credentials are correct.</p>
+                    </li>
+                    <li>(Optional) If you want to save previously used MT results in the XLIFF&#160;file, select <span class="Emphasis">Cache MT results as XLIFF&#160;alternates</span>. This prevents the MT&#160;from looking for new translations for previously translated segments. If the source segment is modified, the MT will look for a new translation for the updated segment. If this option is disabled, the MT&#160;will look for new translations whenever you click a target segment or translate the project with the MT.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../Resources/Snippets/MachineTranslation/ConcordanceSearch.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Translating/TMandMTLanguages.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet14 or Snippets.Snippet16] " />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p MadCap:conditions="General.OnlineNotWebHelp">
+                    <MadCap:conceptLink term="MachineTranslation" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

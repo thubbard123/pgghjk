@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="4756" MadCap:lastWidth="1068" MadCap:conditionTagExpression="include[Snippets.Snippet3] exclude[Snippets.Snippet1 or Snippets.Snippet2] " class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Read the Pulse system requirements. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Pulse:system requirements;System requirements:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="System requirements" MadCap:conditions="Products.Pulse" />System Requirements<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide"> for Windows Server 2008</MadCap:conditionalText></h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Pulse System Requirements for Windows Server 2008</h1>
+        <p>As you prepare for your Pulse installation, familiarize yourself with the minimum system requirements.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Pulse Web Server</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>pulse web server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse web server provides users the ability to access and use the web-based user interfaces of the Pulse system.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>web server—minimum hardware requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/WebServerHardwareRequirements.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.2008InstallationGuide,PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide,FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>web server—operating system requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>This table details the operating system requirements to install the Pulse web server:</p>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">You should at least be using Service Pack 2 (SP2) or later. Also, all of the latest Windows service packs and critical updates must also be installed. </p>
+                        <table class="TableStyle-BasicAlternateRows" cellspacing="0" style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Requirement</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Notes</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Microsoft Windows Installer (MSI) 4.5</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">The MSI 4.5 or later is not included with the operating system. You can download version 4.5 or later and install it from the Microsoft Download Center.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Internet Information Services Version 7 (IIS 7.0) </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">This is included with the operating system. Use the Server Manager to add the Web Server (IIS) role service. See <MadCap:xref href="Installing_the_Prerequisites_2008.htm#HowToInstallIIS">How to Install IIS</MadCap:xref>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">ASP.NET&#160;4.0</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">This is included with the operating system. Use the Server Manager to add the ASP.NET role service. This is covered in the steps for installing IIS.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Microsoft .NET&#160;Framework 4.5 (Recommended) or 4.0 (Minimum)</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">If you do not already have .NET framework 4.5 or 4.0, you can download it from the Microsoft Download Center.</p>
+                                        <ul>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">.NET framework 4.5 </span>You can download it from:</p>
+                                                <p class="TableText"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=30653</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">.NET framework 4.0 </span>You can download it from:</p>
+                                                <p class="TableText"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=17718" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=17718</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.2008InstallationGuide,PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide,FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>web server—pulse setup program</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The Pulse setup program installs the Pulse application on the Pulse web server (this is the server running IIS). Before running the setup program, you must you must make sure Microsoft .NET&#160;Framework is installed (see <MadCap:xref href="Installing_the_Prerequisites_2008.htm">Installing the&#160;Prerequisites for Windows Server 2008</MadCap:xref>).</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>web server—Microsoft Visual C++&#160;2010 Redistributable</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/Redistributable.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>web server—recommended browsers</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/RecommendedBrowsers.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+        <h2 MadCap:conditions="General.Print">Pulse Database Server</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>pulse database server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse database server is the primary repository for Pulse data. This includes users, groups, files, messages, videos, and images. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>database server—minimum hardware requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/DatabaseServerHardwareRequirements.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>database server—operating system requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>This table details the operating system requirements for the Pulse database server:</p>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">All of the latest Windows service packs and critical updates must also be installed. </p>
+                        <table class="TableStyle-BasicAlternateRows" cellspacing="0" style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Requirement</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Notes</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Microsoft Windows Installer (MSI)&#160;4.5 or later</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Not included with the operating system.</p>
+                                        <p class="TableText">You can download and install it from the Microsoft Download Center.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Internet Information Services Version 7 (IIS 7.0)</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">Included with the operating system. </p>
+                                        <p class="TableText">Use the Server Manager to add the Web Server (IIS) role service.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">ASP.NET 4.0</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Included with the operating system. </p>
+                                        <p class="TableText"> Use the Server Manager to add the ASP.NET role service.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Microsoft .NET&#160;Framework 4.5 (Recommended) or 4.0 (Minimum)</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">If you do not already have .NET framework 4.5 or 4.0, you can download it from the Microsoft Download Center.</p>
+                                        <ul>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">.NET framework 4.5 </span>You can download it from:</p>
+                                                <p class="TableText"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=30653</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">.NET framework 4.0 </span>You can download it from:</p>
+                                                <p class="TableText"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=17718" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=17718</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Microsoft Visual C++&#160;2010 Redistributable</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">Not included with the operating system.</p>
+                                        <p class="TableText">If the operating system is not running Microsoft Visual C++ 2010 or  newer, you are prompted to download and install it.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>database server—sql server requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/DatabaseServerSQLServerRequirements.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+        <h2 MadCap:conditions="General.Print">Required Access Credentials and Networking Information</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>required access credentials and networking information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/RequiredAccessCredentialsNetworkingInfo.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Pulse;Installation" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+    </body>
+</html>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Contributor" MadCap:lastBlockDepth="7" MadCap:lastHeight="5021" MadCap:lastWidth="708">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul class="FirstLevel">
+            <li><span class="SetOffFirstLevel">AnyLevel </span>Automatically displays the text in the first heading on a page that uses any of the h1 through h6 styles. </li>
+            <li MadCap:conditions="Snippets.Snippet1">
+                <p><span class="SetOffFirstLevel">FirstGlossaryPageHeading </span>Automatically displays the first glossary heading (e.g., A, B, C, D, E) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a Glossary proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_Glossary_Manually_for_Print.htm">Creating a Topic for a Print Glossary</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your glossary topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output. </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareVariablesGuide,Snippets.Snippet1" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to include a generated glossary in a PDF manual. So you create a topic called "MyGlossary" and insert a Glossary proxy into it. Then you add that topic to the outline TOC being used to produce the manual. Next, you open the page layout you want to use for the topic holding that Glossary proxy. Let's call it "GlossaryPL." Suppose you open the page in the layout that will be used for all left-hand pages in the output. In the header frame, you insert the "FirstGlossaryPageHeading" variable. Perhaps you want to show the complete range of glossary headings on each page. So you type the word "through" and also insert the "LastGlossaryPageHeading" variable. Therefore, you would have something like this: </p>
+                            <p class="Indented">
+                                <img src="../../Images/first_last_glossary_page_heading_variable_example.png" class="MaxWidth70PercentNoThumbnail" />
+                            </p>
+                            <p>Next, in the outline TOC, you create a chapter break on the entry linked to the topic holding the Glossary proxy, specifying that the entry should use the "GlossaryPL" layout.</p>
+                            <p>Now you generate the PDF. You scroll down to the first left-handed page showing the generated glossary. Let's say the first glossary heading you see on the page is <span class="Emphasis">F</span>, with all of the terms beginning with the letter "f" following it. Toward the bottom of that page, you see the glossary heading <span class="Emphasis">H</span>, and terms starting with the letter "h" are listed below it. In that case, when you look to the very top of the page, you will see this:</p>
+                            <p class="Indented"><span class="Emphasis">F through H</span>
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet1" class="PageBreakBefore">
+                <p><span class="SetOffFirstLevel">FirstGlossaryPageTerm </span>Automatically displays the first glossary term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a Glossary proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_Glossary_Manually_for_Print.htm">Creating a Topic for a Print Glossary</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your glossary topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output.  </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to include a generated glossary in a PDF manual. So you create a simple topic called "MyGlossary" and insert a Glossary proxy into it. Then you add that topic to the outline TOC that is being used to produce the manual. </p>
+                            <p>Next, you open the page layout that you want to use for the topic holding that Glossary proxy. Let's call it "GlossaryPL." Suppose you open the page in that layout that will be used for all left-hand pages in the output. In the header frame, you insert the "FirstGlossaryPageTerm" variable. Perhaps you want to show the complete range of glossary terms on each page. So you type the word "through" and also insert the "LastGlossaryPageTerm" variable. In addition, you type quotation marks around each of the variables so that the terms will stand out in the output. Therefore, you would have something like this in the frame:</p>
+                            <p class="Indented">
+                                <img src="../../Images/first_last_glossary_page_term_variable_example.png" class="MaxWidth70PercentNoThumbnail" />
+                            </p>
+                            <p>Next, in the outline TOC, you create a chapter break on the entry linked to the topic holding the Glossary proxy, specifying that the entry should use the "GlossaryPL" layout.</p>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareVariablesGuide" />
+                            <p>Generate the PDF. Scroll down to the first left-handed page showing the generated glossary. Let's say the first glossary term on the page is <span class="Emphasis">Moose</span>. The last term on the page is <span class="Emphasis">Sharks</span>. When you look to the very top of the page, you will see this:</p>
+                            <p class="Indented"><span class="Emphasis">"Moose" through "Sharks"</span>
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,Snippets.Snippet1" />
+            <li MadCap:conditions="Snippets.Snippet1">
+                <p><span class="SetOffFirstLevel">FirstIndexHeading </span>Automatically displays the first index heading (e.g., A, B, C, D, E) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an Index proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your index topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to include a generated index in a PDF manual. So you create a simple topic called "MyIndex" and insert an Index proxy into it. Then you add that topic to the outline TOC that is being used to produce the manual. </p>
+                            <p>Next, you open the page layout that you want to use for the topic holding that Index proxy. Let's call it "IndexPL." Suppose you open the page in that layout that will be used for all left-hand pages in the output. In the header frame, you insert the "FirstIndexHeading" variable. Perhaps you want to show the complete range of index headings on each page. So you type the word "through" and also insert the "LastIndexHeading" variable. Therefore, you would have something like this in the frame: </p>
+                            <p class="Indented">
+                                <img src="../../Images/first_last_index_heading_variable_example.png" class="MaxWidth70PercentNoThumbnail" />
+                            </p>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareVariablesGuide" />
+                            <p>Next, in the outline TOC, you create a chapter break on the entry linked to the topic holding the Index proxy. When doing this, you specify that the entry should use the "IndexPL" page layout.</p>
+                            <p>Now you generate the PDF. You scroll down to the first left-handed page showing the generated index. Let's say the first index heading you see on the page is <span class="Emphasis">C</span>, with all of the index entries beginning with the letter "c" following it. Toward the bottom of that page, you see the glossary heading <span class="Emphasis">J</span>, and index entries starting with the letter "j" are listed below it. In that case, when you look to the very top of the page, you will see this:</p>
+                            <p class="Indented"><span class="Emphasis">C through J</span>
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,Snippets.Snippet1" />
+            <li MadCap:conditions="Snippets.Snippet1">
+                <p><span class="SetOffFirstLevel">FirstIndexTerm </span>Automatically displays the first index term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an Index proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your index topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to include a generated index in a PDF manual. So you create a simple topic called "MyIndex" and insert an Index proxy into it. Then you add that topic to the outline TOC that is being used to produce the manual. </p>
+                            <p>Next, you open the page layout that you want to use for the topic holding that Index proxy. Let's call it "IndexPL." Suppose you open the page in that layout that will be used for all left-hand pages in the output. In the header frame, you insert the "FirstIndexTerm" variable. Perhaps you want to show the complete range of index terms on each page. So you type the word "through" and also insert the "LastIndexTerm" variable. In addition, you type quotation marks around each of the variables so that the terms will stand out in the output. Therefore, you would have something like this in the frame: </p>
+                            <p class="Indented">
+                                <img src="../../Images/first_last_index_term_variable_example.png" class="MaxWidth70PercentNoThumbnail" />
+                            </p>
+                            <p>Next, in the outline TOC, you create a chapter break on the entry linked to the topic holding the Index proxy. You specify that the entry should use the "IndexPL" layout.</p>
+                            <p>Now you generate the PDF. You scroll down to the first left-handed page showing the generated index. Let's say the first index term you see on the page is <span class="Emphasis">Moose</span>. The last term on the page is <span class="Emphasis">Sharks</span>. When you look to the very top of the page, you will see this:</p>
+                            <p class="Indented"><span class="Emphasis">"Moose" through "Sharks"</span>
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet1"><span class="SetOffFirstLevel">LastGlossaryPageHeading </span>Automatically displays the last glossary heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a Glossary proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_Glossary_Manually_for_Print.htm">Creating a Topic for a Print Glossary</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your glossary topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output.</li>
+            <li MadCap:conditions="Snippets.Snippet1"><span class="SetOffFirstLevel">LastGlossaryPageTerm </span>Automatically displays the last glossary term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a Glossary proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_Glossary_Manually_for_Print.htm">Creating a Topic for a Print Glossary</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your glossary topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output.</li>
+            <li MadCap:conditions="Snippets.Snippet1"><span class="SetOffFirstLevel">LastIndexHeading </span>Automatically displays the last index heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an Index proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your index topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output.</li>
+            <li MadCap:conditions="Snippets.Snippet1"><span class="SetOffFirstLevel">LastIndexTerm </span>Automatically displays the last index term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an Index proxy is inserted<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>)</MadCap:conditionalText>. In addition, you must specify in the outline TOC that your index topic is using the page layout where you have inserted this variable<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. The option is available only with <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, or <MadCap:variable name="Outputs.XHTML" /> output.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Level1 </span>  Automatically displays the first text on a page that uses the mc-heading-level style property set at 1. By default, the h1 style has the mc-heading-level set to 1 (that's why it's called a first-level heading), but you can change it, and you can set the mc-heading-level to 1 for other styles if you want. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you are using the keep the mc-heading-level set to 1 for the h1 style. Furthermore, you use the h1 style only for your chapter titles at the beginning of each chapter. If you insert the Heading.Level1 variable into the heading frames in the page layout that you are using for chapters, the appropriate chapter title will display automatically at the top of each chapter in the output.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li><span class="SetOffFirstLevel">Level2 </span>Automatically displays the first text on a page that uses the mc-heading-level style property set at 2. By default, the h2 style has the mc-heading-level set to 2 (that's why it's called a second-level heading), but you can change it, and you can set the mc-heading-level to 2 other styles if you want.</li>
+        </ul>
+        <ul class="FirstLevel">
+            <li><span class="SetOffFirstLevel">Level3 </span>Automatically displays the first text on a page that uses the mc-heading-level style property set at 3. By default, the h3 style has the mc-heading-level set to 3 (that's why it's called a third-level heading), but you can change it, and you can set the mc-heading-level to 3 for other styles if you want.</li>
+            <li><span class="SetOffFirstLevel">Level4 </span> Automatically displays the first text on a page that uses the mc-heading-level style property set at 4. By default, the h4 style has the mc-heading-level set to 4 (that's why it's called a fourth-level heading), but you can change it, and you can set the mc-heading-level to 4 for other styles if you want.</li>
+            <li><span class="SetOffFirstLevel">Level5 </span>  Automatically displays the first text on a page that uses the mc-heading-level style property set at 5. By default, the h5 style has the mc-heading-level set to 5 (that's why it's called a fifth-level heading), but you can change it, and you can set the mc-heading-level to 5 for other styles if you want.</li>
+            <li><span class="SetOffFirstLevel">Level6 </span>Automatically displays the first text on a page that uses the mc-heading-level style property set at 6. By default, the h6 style has the mc-heading-level set to 6 (that's why it's called a sixth-level heading), but you can change it, and you can set the mc-heading-level to 6 for other styles if you want.</li>
+        </ul>
+        <MadCap:pageBreak MadCap:conditions="Snippets.Snippet2,FlareGuides.FlareVariablesGuide" />
+        <MadCap:dropDown MadCap:conditions="Snippets.Snippet2" class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="Snippets.Snippet2" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The glossary and index variable options are available only in <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, and <MadCap:variable name="Outputs.XHTML" /> output. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

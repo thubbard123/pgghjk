@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="803" MadCap:lastWidth="1211">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>To support responsive output, HTML5 skins come equipped with three mediums—Web, Tablet, and Mobile. You can use these mediums to specify different looks when necessary for the different devices people might be using to view your output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet1">  See <MadCap:xref href="../../../Skins/HTML5_Skin_Styles/HTML5_Skin_Styles.htm">HTML5 Skin Styles</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>
+            <img src="../../Images/html5_skin_mediums.png" alt="" title="" class="MaxWidth80Percent" />
+        </p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareHTML5Guide" />
+        <ul>
+            <li><span class="SetOffFirstLevel">Web </span>When you first open an HTML5 skin, <span class="Emphasis">Web Medium</span> is selected. With that medium chosen, any changes you make to the styles are applied to that medium. This means that when users are viewing your output on a regular browser, that's the look they will see.</li>
+            <li><span class="SetOffFirstLevel">Tablet </span>If you want to change the look that users see when viewing your output on a tablet, select <span class="Emphasis">Tablet Medium</span> and make your style changes.</li>
+            <li><span class="SetOffFirstLevel">Mobile </span>If you want to change the look that users see when viewing your output on a mobile device, select <span class="Emphasis">Mobile Medium</span> and make your style changes.</li>
+        </ul>
+        <p>Similar to cascading stylesheets (CSS), there is a system of inheritance at work with skin mediums. The Web medium is the default. Most settings in that medium are inherited by the Tablet medium. In turn, settings in the Tablet medium are inherited by the Mobile medium. Therefore, if you want all of the mediums to share the same look (e.g., your company logo), you can set it once in the Web medium and it will automatically be used in all three. If you make any changes in the Tablet medium, those settings will override whatever had been inherited from the Web medium. Likewise, you can make changes in the Mobile medium, which will override any settings inherited from the Tablet medium. </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">An exception to this inheritance is with navigation icon images. Because these icon images are often different sizes in the Web medium than in the other mediums, most navigation icon images do not pass down form the Web medium to the Tablet medium. However, the Tablet medium does inherit the icon image used for the "Mark as New" feature from the Web medium. Also, icon images are passed down from the Tablet medium to the Mobile medium.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Within each medium, the icons under the TOC Entry style inherit from the icon settings in the Navigation Panel&gt;TOC.  Therefore, if no icons are set in the TOC Entry style classes in the Web medium, Flare will use the Navigation Panel&gt;TOC icons in that medium. The same holds true for the Tablet medium; if no icons are set in the TOC Entry classes in the Tablet medium, they will be inherited from the Navigation Panel&gt;TOC icons in the Tablet medium. And the same is the case with the Mobile medium.</p>
+    </body>
+</html>

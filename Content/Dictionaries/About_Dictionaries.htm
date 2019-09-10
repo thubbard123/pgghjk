@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="4495" MadCap:lastWidth="1107" MadCap:conditions="Products.Flare,Products.Contributor,Products.Lingo,Products.Analyzer">
+    <head>
+        <meta name="description" content="Learn about dictionaries and how they can be used for spell checking." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Dictionaries;Spell check:dictionaries;Hyphenation:dictionaries" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Dictionaries;Spell check:dictionaries" MadCap:conditions="Products.Lingo" />
+            <MadCap:concept term="Dictionaries" />
+            <MadCap:concept term="FilterLanguageSupport" />About Dictionaries</h1>
+        <p>Dictionaries are used in <MadCap:variable name="Other.Product" /> to support the spell checking feature. See <MadCap:xref href="../Spell Check/About_Spell_Check.htm">About Spell Check</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Built-In Dictionaries</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you create a new project in <MadCap:variable name="Other.Product" />, you select a <MadCap:conditionalText MadCap:conditions="Products.Lingo">target </MadCap:conditionalText>language<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> (see <MadCap:xref href="../Language_Support/About_Language_Support.htm">About Language Support</MadCap:xref>)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo"> (see <MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>)</MadCap:conditionalText>. Several of the languages listed in the wizard (i.e., those in bold) are associated with full dictionaries already installed for you.</p>
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../Resources/Images/bold_for_builtin_dictionaries.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="Products.Lingo">
+                    <img src="../Resources/Images/bold_for_builtin_dictionaries_lingo.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>These built-in dictionaries are automatically stored in the App Data folder on your computer, which can be accessed in various ways, depending on your operating system. For example, here is how you can open this folder in Windows 7:</p>
+                <ol>
+                    <li>On your desktop, click the <span class="Emphasis">Start</span> button.</li>
+                    <li>In the search field, type <span class="TypedEntry">%appdata%</span> and press <span class="Emphasis">Enter</span>.</li>
+                    <li>Open the <span class="Emphasis">MadCap Software</span> subfolder, then <span class="Emphasis">Dictionaries</span>, and finally <span class="Emphasis">Installed</span>.</li>
+                </ol>
+                <p>
+                    <img src="../Resources/Images/appdata_folder.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>You can also see which dictionaries are installed on your computer by opening the Options dialog in <MadCap:variable name="Other.Product" /> and selecting the <span class="Emphasis">Spelling</span> tab. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:snippetText src="../Resources/Snippets/UIElements/OptionsDialogXrefAllProducts.flsnp" />.</MadCap:conditionalText></p>
+                <p MadCap:conditions="Products.Contributor,Products.Flare">Green dots indicate which dictionaries are supported by spell checkers and hyphenators. A <span class="EmphasisItalic">hyphenator</span> automatically inserts separators in an editor based on particular word patterns, as outlined in the dictionary file. Hyphenators are important only for certain languages.</p>
+                <p MadCap:conditions="Products.Contributor,Products.Flare">
+                    <img src="../Resources/Images/dictionaries_example1.png" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p MadCap:conditions="Products.Lingo">
+                    <img src="../Resources/Images/dictionaries_example1_lingo.png" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information about hyphenation patterns in different languages, see <a href="http://hunspell.sourceforge.net/tb87nemeth.pdf" target="_blank">http://hunspell.sourceforge.net/tb87nemeth.pdf</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo,Products.Analyzer">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Custom Global and Project Dictionaries</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to all of the built-in dictionaries that are installed on your computer, you can develop custom dictionaries. You can think of these as supplements to the built-in dictionaries. A custom dictionary is created and modified automatically whenever you perform a spell check and tell <MadCap:variable name="Other.Product" /> that a questionable word is okay and should be added to a dictionary. See <MadCap:xref href="../Spell Check/Spell_Checking_While_Typing.htm">Spell Checking While Typing</MadCap:xref> and <MadCap:xref href="../Spell Check/Spell_Checking_Manually.htm">Spell Checking Manually</MadCap:xref>.</p>
+                <p>There are two kinds of custom dictionaries that you can use: global and project:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Global Dictionary </span>
+                            <MadCap:snippetText src="../Resources/Snippets/Dictionaries/GlobalDictionary1.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Dictionaries/DefaultGlobalDictionaryLocation.flsnp" />
+                        <p>
+                            <img src="../Resources/Images/appdata_folder3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Dictionaries/ChooseLocationGlobalDictionary.flsnp" /> See <MadCap:xref href="Choosing_the_Location_for_Global_Dictionaries.htm">Choosing the Location for Global Dictionaries</MadCap:xref>.</p>
+                        <p MadCap:conditions="Products.Flare,Products.Analyzer">
+                            <img src="../Resources/Images/global_dictionary_custom_location.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../Resources/Images/global_dictionary_custom_location_lingo.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Project Dictionary </span>A project dictionary is just what it sounds like. It is unique to a particular project. <MadCap:conditionalText MadCap:conditions="Products.Flare">When a project dictionary is created, it is stored in the Advanced folder in the Project Organizer. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">When a project dictionary is created, it is saved in the Spelling folder of your Lingo project.</MadCap:conditionalText></p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../Resources/Images/project_dictionary.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../Resources/Images/project_dictionary_lingo.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>For example, you might choose to use this kind of dictionary if you are a <MadCap:conditionalText MadCap:conditions="Products.Flare">writer </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">translator </MadCap:conditionalText>with several clients, and each client has unique terms with unusual spellings. By using a project dictionary, you can keep those spellings tied to a certain project.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Custom Global Dictionaries</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to all of the built-in dictionaries that are installed on your computer, you can develop custom dictionaries. You can think of these as supplements to the built-in dictionaries. A custom dictionary is created and modified automatically whenever you perform a spell check and tell <MadCap:variable name="Other.Product" /> that a questionable word is okay and should be added to a dictionary. See <MadCap:xref href="../Spell Check/Spell_Checking_While_Typing.htm">Spell Checking While Typing</MadCap:xref> and <MadCap:xref href="../Spell Check/Spell_Checking_Manually.htm">Spell Checking Manually</MadCap:xref>.</p>
+                <p MadCap:conditions="">You can use global dictionaries in your project.</p>
+                <p MadCap:conditions="">
+                    <MadCap:snippetText src="../Resources/Snippets/Dictionaries/GlobalDictionary1.flsnp" />
+                </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Dictionaries/DefaultGlobalDictionaryLocation.flsnp" MadCap:conditions="" />
+                <p>
+                    <img src="../Resources/Images/appdata_folder3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <MadCap:snippetText src="../Resources/Snippets/Dictionaries/ChooseLocationGlobalDictionary.flsnp" /> See <MadCap:xref href="Choosing_the_Location_for_Global_Dictionaries.htm">Choosing the Location for Global Dictionaries</MadCap:xref>.</p>
+                <p>
+                    <img src="../Resources/Images/global_dictionary_custom_location.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo,Products.Analyzer">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Combined Dictionary Terms for Spell Checking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Dictionaries/CombinedDictionaryTermSuggestions.flsnp" />
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../Resources/Images/global_project_dictionaries.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="Products.Lingo">
+                    <img src="../Resources/Images/global_project_dictionaries_lingo.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Tasks for Using Dictionaries</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are the primary tasks for using dictionaries:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Add Words to Custom Dictionary </span>When performing spell checking in your project, you can add questionable words to a custom global or project dictionary. See <MadCap:xref href="../Spell Check/Spell_Checking_While_Typing.htm">Spell Checking While Typing</MadCap:xref> and <MadCap:xref href="../Spell Check/Spell_Checking_Manually.htm">Spell Checking Manually</MadCap:xref>.</li>
+                    <li MadCap:conditions="Products.Flare,Products.Lingo"><span class="SetOffFirstLevel">Edit Custom Dictionary </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Dictionaries/EditingDictionaries.flsnp" /> See <MadCap:xref href="Editing_Custom_Dictionaries.htm">Editing Custom Dictionaries</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Choose Global Dictionary Location </span>Rather than using the default location, you can choose a custom location for global dictionaries. This is useful if you work on a team and want all writers to use the same dictionary. See <MadCap:xref href="Choosing_the_Location_for_Global_Dictionaries.htm">Choosing the Location for Global Dictionaries</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Import </span>If necessary, you can download more dictionaries in various languages from <a href="http://www.madcapsoftware.com/downloads/dictionaries/openoffice" target="_blank">openoffice.org</a> and then use the Options dialog to import them for use in <MadCap:variable name="Other.Product" />.<MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare,Products.Lingo"> See <MadCap:xref href="Importing_Dictionaries.htm">Importing Dictionaries</MadCap:xref>.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp,Products.ContributorOnlineNotWebHelp,Products.LingoOnlineNotWebHelp">
+            <MadCap:conceptLink term="LanguageSupport;Dictionaries" />
+        </p>
+    </body>
+</html>

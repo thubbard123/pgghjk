@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="1158" MadCap:lastWidth="673" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects;Modular projects;Tables of contents" />Modular TOC Utility</h1>
+        <p>One issue with modular HTML Help is that the child projects do not contain the entire table of contents (TOC). Generally, this limitation is not a problem because the hub Help file has the full table of contents and, in most cases, this is the Help file that is exposed to the end-user. Where the incomplete TOC can become an issue is during the use of context-sensitive Help. In this case, the child Help file may be called, leaving the end-user with no way to navigate through the entire Help contents.&#160;  </p>
+        <p>The Modular TOC Utility removes the TOC limitation by automatically adding the full TOC to each Help file in the modular project. The Modular TOC Utility is a stand-alone tool that can be used on any set of modular Help files. By simply pointing the utility at each of the component .hhp files, a fully functional TOC is incorporated into each modular Help file. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create a Modular TOC for HTML Help Targets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Verify that you have a fully defined modular Help system before continuing with the following steps.</p>
+                <ol>
+                    <li>Open the Modular TOC Utility by selecting <span class="Emphasis">Start&gt;All Programs&gt;MadCap Software&gt;Doc-To-Help&gt;Modular TOC Utility</span>. The Modular TOC Utility opens.</li>
+                    <li>Select <span class="Emphasis">Create a new Modular TOC file</span> and click <span class="Emphasis">Next</span>.</li>
+                    <li>After reading the dialog regarding the location of the new Modular TOC file, click <span class="Emphasis">OK</span>.</li>
+                    <li>
+                        <p>Browse to the directory where you want to store your .hub file. (You may want to use your Redistributables folder for this file. See <MadCap:xref href="About Modular Projects.htm#FileOrganization">File Organization</MadCap:xref>.)</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Modular TOC Utility will overwrite duplicate .hub files.</p>
+                    </li>
+                    <li>Provide the Modular TOC Utility with a name for your .hub file and click <span class="Emphasis">Save</span>.</li>
+                    <li>The Modular TOC Utility prompts you for the hub .hhp file. Browse and select the file, then click <span class="Emphasis">Open</span>. (This file is located by default in the HTMLHelp sub-directory of your hub Help file.)</li>
+                    <li>The Modular TOC Utility lists all the child .hhp files in your modular Help system. Choose the first child .hhp file, then click <span class="Emphasis">Next</span>. </li>
+                    <li>Choose the location of the appropriate .hhp file and click <span class="Emphasis">Open</span>. (This file is located by default in the HTMLHelp sub-directory of your child Help file.)</li>
+                    <li>Repeat until each of the child .hhp files has been located.</li>
+                    <li>Click <span class="Emphasis">Next</span>. The Modular TOC Utility prompts you to verify that the path for the build project.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>Browse to select a directory to store your new modular Help files.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>Verify the .hub file and build paths.</li>
+                    <li>Click <span class="Emphasis">Finish</span> to build the new modular Help files.</li>
+                    <li>After the files are built, the Modular TOC Utility Editor opens.</li>
+                    <li>Close the Modular TOC Utility Editor and examine the Help files in your build directory. Note that each Help file (hub and child) will include the entire TOC.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

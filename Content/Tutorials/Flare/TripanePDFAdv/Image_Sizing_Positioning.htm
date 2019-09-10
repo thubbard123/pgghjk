@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="12647" MadCap:lastWidth="617" MadCap:ignoredWords="bulleted" class="" MadCap:conditionTagExpression="include[Snippets.Snippet4] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTripane.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/TripanePDF.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Tripane and PDF" />
+            <MadCap:keyword term="Images" />
+            <MadCap:concept term="FilterPictures" />
+            <MadCap:keyword term="Resizing:images;Images:resizing;Images:styles;Styles:images;Size:images" />
+            <MadCap:keyword term="Element positioning;Positioning:elements" />Image Sizing and Positioning</h1>
+        <p>There are multiple topics in this template that contain images. Sizing is always a major concern with images, because you want them not only to be the right size, but also to look as good as possible. In addition, some images in this template were positioned in such a way to let text flow to the right or left of it. We also have a topic for print output where we've positioned an image with text flowing around it on all sides.</p>
+        <p>In this template, we controlled the quality, size, and position of the images.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Image Types</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>image types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you look at the files in the Resources/Images subfolder in the Content Explorer, you'll see that we used two different file types—PNG and EPS—for the various images in the project.</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online1.png" alt="" title="" class="MaxWidth45Percent">
+                    </img>
+                </p>
+                <p>We did this because we're creating both online and print-based outputs from the project. EPS files are vector-based images, and they are used only in print-based outputs. Vector images comprise geometric elements such as lines, points, and curves, based on mathematical equations. On the other hand, PNG files are raster graphics, which are made up of pixels.</p>
+                <p>A vector image is ideal for print-based output because the clarity is maintained even when you reduce the size of the graphic. They're especially good for logos. If you have a vector image in a topic that is used for online output, that image is converted to another file type, such as PNG when online output is generated.</p>
+                <p>PNG&#160;files can be used for either online or print outputs and often look better than other image file types. We used PNG&#160;files for some of the larger images, as well as for elements that are intended only for online output (e.g., drop-down icons).</p>
+                <p>For bullets, we modified our unordered list (ul) styles to point to EPS images for print and PNG&#160;files for online. For more information about how we associated images with bulleted lists, see <MadCap:xref href="Lists.htm">Lists</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Max Height/Width and Thumbnails</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>max height/width and thumbnails</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We wanted to control the height of some pictures, such as the check mark and red X images that you see in tables. We also wanted to control the width of other images, such as the Flare image inserted into multiple topics.</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online2.png" alt="" title="" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p>In addition, for online output, we wanted some of the larger images to be shown as thumbnail images that enlarge when clicked. </p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online3.png" alt="" title="" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online4.png" alt="" title="" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                <p>To accomplish this, we created multiple image style classes and placed settings on them to control the size or turn them into thumbnails.</p>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open).</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The online output is going to use the default settings, so that's where we'll start making our changes. After that, we'll switch to the print medium to make some adjustments that are important only for the PDF output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Mediums and Media Queries</MadCap:xref>.</MadCap:conditionalText></p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterImageStylesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">img</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/top_nav_tutorial_images1.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span> The New Selector dialog opens.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>In the <span class="Emphasis">Class Name</span> field, type a name for each new style class and click <span class="Emphasis">OK</span>. In this template, we named our image style classes as follows:<ul><li><p><span class="SetOffFirstLevel">AbsolutePosition </span>This style class is used on images that we want to separate from the main flow of content and then drag to a specific location in a topic. Absolute positioning can be used with both online and print-based output, but in this template we used it only in a topic that is reserved for PDF output. That's because we positioned the image with text flowing all around it, and that particular setting is supported only in print output. There is nothing very special about this style, except that we applied padding to it so that text flowing around an image would not press too tightly against it. Instead, there would be a bit of space between the edge of the image and the text next to it.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning1.png" alt="" title="" class="MaxWidth80Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p><span class="SetOffFirstLevel">FiftyPercentThumbnail </span>This style class is used on larger images that we want to be shrunk (when necessary) to 50% of the body frame width in PDF output and to display as a thumbnail in online output.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning2.png" alt="" title="" class="MaxWidth80Percent" /></p></li><li><p><span class="SetOffFirstLevel">Hyperlinked </span>This style class is used for a few images in online output that contain hyperlinks. The default look is one with a blue border for hyperlinked images, but we wanted to remove that border so we created this class.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning3.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p><span class="SetOffFirstLevel">OneHundredPercentThumbnail </span>This style class is used on larger images that we want to be shown at no more than 100% of the body frame width in PDF output and to display as a thumbnail in online output.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning4.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p><span class="SetOffFirstLevel">ReduceButtonSize </span>This style class is used on small "button-size" images that we want to be shrunk (when necessary) to no more than 18 pixels high.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning5.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p><span class="SetOffFirstLevel">SeventyFivePercent </span>This style class is used on larger images that we want to be shown at no more than 75% of the body frame width in PDF output.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning6.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul><p>These style classes are added in the stylesheet under the parent img style.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_image_sizing_positioning7.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">Absolute Position</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">padding </span>Set it to <span class="Emphasis">5px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">FiftyPercentThumbnail</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">mc-thumbnail </span>Set it to <span class="Emphasis">popup</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-left </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-right </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">Hyperlinked</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">border-style </span>Set it to <span class="Emphasis">none</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">OneHundredPercentThumbnail</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">mc-thumbnail </span>Set it to <span class="Emphasis">popup</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-left </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-right </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">ReduceButtonSize</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">max-height </span>Set it to <span class="Emphasis">25px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">SeventyFivePercent</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">padding </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the default medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">img.AbsolutePosition</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">padding: </span><span class="StyleValue">5px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.FiftyPercentThumbnail</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-thumbnail: </span><span class="StyleValue">popup;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-left: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-right: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-top: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.Hyperlinked</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">border-style: </span><span class="StyleValue">none;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <p class="Style">img.OneHundredPercentThumbnail</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-thumbnail: </span><span class="StyleValue">popup;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-left: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-right: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-top: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.ReduceButtonSize</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">max-height: </span><span class="StyleValue">25px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.SeventyFivePercent</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">padding: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>That takes care of the styles for the default medium. Now let's adjust some of the styles that are important only for our PDF output. <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" /></p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">FiftyPercentThumbnail</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">max-width </span>Set it to <span class="Emphasis">50%</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">OneHundredPercentThumbnail</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">max-width </span>Set it to <span class="Emphasis">100%</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Select the <span class="Emphasis">SeventyFivePercent</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">max-width </span>Set it to <span class="Emphasis">75%</span>.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">img.FiftyPercentThumbnail</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">max-width: </span><span class="StyleValue">50%;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.OneHundredPercentThumbnail</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">max-width: </span><span class="StyleValue">100%;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">img.SeventyFivePercent</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">max-width: </span><span class="StyleValue">75%;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Now that you've got your styles, you just need to apply them to the appropriate images. For example, let's say you have already inserted a large image into a topic and want it to show as a thumbnail in online output and display at 50% of the body frame width in PDF output. In that case, you can right-click the image and from the context menu select <span class="Emphasis">Style Class&gt;img.FiftyPercentThumbnail</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Positioning with Floats and Div Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>positioning with Floats and div styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To position some images (and their figure captions in print output), we created div style classes and placed float settings on them. A div tag essentially acts as a container, allowing us to place other tags within it.</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online5.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">Placing images in &lt;div&gt; tags can be especially useful if you want to include other content in the container as well. For example, for print-based output, you can add text that serves as a figure caption, with autonumbering applied to it. Because the figure caption is in the &lt;div&gt; tag with the image, it travels with the image wherever it is positioned.</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/PositionImagesFloatsSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Using Absolute Positioning on Images</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Using Absolute Positioning on Images</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>As mentioned previously, we created one image style class with padding all around it, with the intention of using it with absolute positioning. You can use absolute positioning on more than just images; therefore, you can put an image within a &lt;div&gt; tag, along with a figure caption, and position the entire div with absolute positioning. However, in this template, we just applied absolute positioning to a single image.</p>
+                <p>In the XML Editor, you need to be in Print Layout mode (as opposed to Web Layout mode) in order to see the full effect of what we did.</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_images_print_online21.png" alt="" title="" class="MaxWidth80Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                <ol>
+                    <li>Open a topic, and in the local toolbar of the XML Editor, make sure you are in Print Layout mode (i.e., you should see "Layout (Print)").</li>
+                    <li>Insert an image, and apply the style you created for it<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>)</MadCap:conditionalText>. In this template, we applied the <span class="Emphasis">img.AbsolutePosition</span> style class to it, so that the image would have padding around it.</li>
+                    <li>
+                        <p>Right-click on the image, and from the context menu, select <span class="Emphasis">Text Wrap&gt;Square</span>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also select one of the other options, but this is the one that lets you wrap text all the way around the image.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you use the "Square" wrap option and the topic will be included in online output as well as print output, the element will not display in the online output where you positioned it, with text flowing all around it. Instead, it will be displayed to the left of the content.</p>
+                    </li>
+                    <li>
+                        <p>Click in the middle of the element, then drag and drop it.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may also consider resizing the image to make it fit where you want it.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about images, as well as sizing and positioning them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Images/About_Images.htm">About Images</MadCap:xref>, <MadCap:xref href="../../../Images/Editing_Images/Resizing_Images.htm">Resizing Images</MadCap:xref>, and <MadCap:xref href="../../../Positioning_Elements/About_Positioning_Elements.htm">About Positioning Elements</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/TripanePDFTutorialWhatsNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

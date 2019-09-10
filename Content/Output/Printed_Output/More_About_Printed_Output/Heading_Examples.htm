@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="5661" MadCap:lastWidth="1256" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Review these examples to learn about your options when creating headings for your print-based outputs in MadCap&#160;Flare." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Heading:positioning;Heading:side;Side headings;Positioning:headings;Text boxes:headings;Heading:text boxes" />Heading Examples</h1>
+        <p MadCap:conditions="General.Future">After the release, see if this should be updated (maybe do rotated headings?)xxx</p>
+        <p>When creating headings for print-based output, you have many configuration options. You can simply use the h1 through h6 styles, and you can modify the style settings to meet your needs.</p>
+        <p>Some of the advanced features available that you might use when configuring headings for print-based output  include:</p>
+        <ul>
+            <li> Dual body frames in a page layout (one for major headings and the other for the main topic content)</li>
+            <li>Positioning headings</li>
+            <li>Text boxes</li>
+        </ul>
+        <p>Following is a topic shown in Print Layout mode with multiple headings. Each heading was configured differently to affect how it is displayed on the page. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide">The Heading 2, 3, and 4 examples were created in part by using styles. The Heading 2 example involved the positioning of a paragraph, and the Heading 4 example involved the positioning of a text box.</MadCap:conditionalText></p>
+        <p>
+            <img src="../../../Resources/Images/heading_examples.png" class="MaxWidth60Percent" />
+        </p>
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Heading 1 Example</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">heading 1 example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Heading 1 example was created by adding two body frames to a page layout. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide">For more information about using page layouts, see the online Help.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../../Resources/Images/heading_examples_h1.png" class="MaxWidth75Percent" />
+                </p>
+                <p>The first body frame was added to the top of the page layout and is high enough only to fit the first heading in the topic. It extends across the entire page. </p>
+                <p>The second body frame is much taller, but is not as wide. It was designed to hold the main content of the chapter, with space to the left that can hold subheadings, text boxes, notes, tips, images and so on.</p>
+                <p>You might consider using this type of configuration if you know for certain that the content to be displayed in the first body frame is a major heading that will always display at the top of a page, rather than somewhere in the middle of it. For example, you might create a page layout with a "First Right" page type that is designed to hold the beginning of each chapter in your output. By having a dual frame configuration (such as the one described) on the initial page only, you can be assured that the first body frame is used only by the heading that begins that chapter.</p>
+                <p>On the other hand, if you want to have headings that stretch across multiple areas of a page in random locations, you probably do not want to use this method, but rather the method described for the Heading 3 example.</p>
+                <p MadCap:conditions="FlareGuides.FlareStylesGuide">For detailed steps on creating the heading configuration in this example, see the online Help.</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive" class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how did we create the heading 1 effect in this example?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Create or open a page layout. See <MadCap:xref href="../../../Page_Layouts/Adding_Page_Layouts.htm">Adding Page Layouts</MadCap:xref> or <MadCap:xref href="../../../Page_Layouts/More_About_Page_Layouts/Opening_Page_Layouts.htm">Opening Page Layouts</MadCap:xref>.</li>
+                            <li>
+                                <p>Create a page in the layout using the "First Right" page type. See <MadCap:xref href="../../../Page_Layouts/Adding_Pages.htm">Adding Pages</MadCap:xref> and <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Types.htm">Specifying Page Types</MadCap:xref>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/heading_examples_first_page_type.png" class="MaxWidth90Percent" />
+                                </p>
+                            </li>
+                            <li>If there is not already a body frame on the page, add one. See <MadCap:xref href="../../../Page_Layouts/Adding_Page_Layout_Frames.htm">Adding Page Layout Frames</MadCap:xref>.</li>
+                            <li>Drag the edges of the first body frame to resize it to hold only a topic heading. Position the frame in the upper part of the page. In our example, the first body frame is located at <span class="Emphasis">30 pixels</span> on the <span class="Emphasis">Left</span> and at <span class="Emphasis">70 pixels</span> on the <span class="Emphasis">Top</span>. It is <span class="Emphasis">700 pixels wide</span> and <span class="Emphasis">60 pixels high</span>. See <MadCap:xref href="../../../Page_Layouts/Frames/Specifying_Frame_Size.htm">Specifying Frame Size</MadCap:xref>.</li>
+                            <li>
+                                <p>Add a second body frame. Resize and position it below the first body frame. In our example, the second body frame is located at <span class="Emphasis">250 pixels</span> on the <span class="Emphasis">Left</span> and at <span class="Emphasis">160 pixels</span> on the <span class="Emphasis">Top</span>. It is <span class="Emphasis">480 pixels wide</span> and <span class="Emphasis">780 pixels high</span>.</p>
+                                <p>An arrow points from the first body frame to the second, indicating the direction of content flow.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/heading_examples_body_frames.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>In your outline TOC, specify chapter breaks on the entries where you want new chapters to begin. When doing this, choose your page layout and specify that the chapter should begin with the "First Right" page type. See <MadCap:xref href="Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/heading_examples_chapter_break.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In the output, if the heading does not display in the first body frame, but rather below in the second body frame, you may need to make one or two adjustments. You can adjust the height of the first body frame so that it is tall enough to hold the heading. Another thing you can try is to reduce the space above or below the heading so that it fits in the frame (see <MadCap:xref href="../../../Paragraphs/Spacing/Setting_Paragraph_Spacing_Above_and_Below.htm">Setting Paragraph Spacing Above and Below</MadCap:xref>).</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Heading 2 Example</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">heading 2 example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Heading 2 Example was created by simply editing the h2 style so that it appears to the left of the body frame. We also adjusted the indentation to the right of that tag, as well as the space above it. Finally, we created a new class of the p style and adjusted the space above it. We used this style class for the first paragraph following our h2 text. For paragraphs after that, we just used the parent p style.</p>
+                <p>
+                    <img src="../../../Resources/Images/heading_examples_h2.png" class="MaxWidth50Percent" />
+                </p>
+                <p>One benefit of this method is that it is relatively simple. However, it is best when used with headings that are not very long. If you have headings that need to wrap to a second line, you should probably use a text box, which is what we used for the Heading 4 example.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how did we create the heading 2 effect in this example?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                            </li>
+                            <li>In the grid, select the style for the heading (in our example, it is <span class="Emphasis">h2</span>).</li>
+                            <li>In the local toolbar, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>In the Properties dialog, select the <span class="Emphasis">Paragraph</span> tab.</li>
+                            <li>In the <span class="Emphasis">Indentation</span> section, set the <span class="Emphasis">Right</span> field to <span class="Emphasis">12 px</span>.</li>
+                            <li>In the <span class="Emphasis">Spacing</span> section, set the <span class="Emphasis">Before</span> field to <span class="Emphasis">22 px</span>.</li>
+                            <li>Select the <span class="Emphasis">Position</span> tab.</li>
+                            <li>In the <span class="Emphasis">Float</span> field, select <span class="Emphasis">Left of Frame</span>.</li>
+                            <li>In the <span class="Emphasis">Vertical Alignment</span> field, select <span class="Emphasis">Text Bottom</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>In the Stylesheet Editor, select <span class="Emphasis">p</span> in the grid.</li>
+                            <li>In the local toolbar, click <img src="../../../Resources/Images/add_class_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>Give the new class a name. We typed <span class="TypedEntry">FirstPara</span> in our example.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>With the new style class selected, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>In the Properties dialog, select the <span class="Emphasis">Paragraph</span> tab.</li>
+                            <li>In the <span class="Emphasis">Spacing</span> section, set the <span class="Emphasis">Before</span> field to <span class="Emphasis">30 px</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                            <li>Open a topic and type the text for the heading, as well as the paragraph(s) following it.</li>
+                            <li>Click on the text to be used for the heading.</li>
+                            <li>Select the <span class="Emphasis">Home</span> ribbon, click in the <span class="Emphasis">Style</span> drop-down field, and select the style for the heading (in our example, it is <span class="Emphasis">h2</span>).</li>
+                            <li>Click on the first paragraph following that heading.</li>
+                            <li>In the Home ribbon, click in the <span class="Emphasis">Styles</span> drop-down field and select your new paragraph style class (e.g., p.FirstPara).</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Heading 3 Example</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">heading 3 example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Heading 3 Example was created by simply specifying a negative left indentation setting for the h3 style.</p>
+                <p>
+                    <img src="../../../Resources/Images/heading_examples_h3.png" class="MaxWidth60Percent" />
+                </p>
+                <p>This method is extremely easy. Plus, it allows you to stretch headings across multiple areas of a page in random locations.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how did we create the heading 3 effect in this example?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                            </li>
+                            <li>In the grid, select the style for the heading (in our example, it is <span class="Emphasis">h3</span>).</li>
+                            <li>In the local toolbar, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>In the Properties dialog, select the <span class="Emphasis">Paragraph</span> tab.</li>
+                            <li>In the <span class="Emphasis">Indentation</span> section, set the <span class="Emphasis">Left</span> field to a negative number. In our example, we set it to <span class="Emphasis">-200 pixels</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Open a topic and type the text for the heading.</li>
+                            <li>Click on the text to be used for the heading.</li>
+                            <li>Select the <span class="Emphasis">Home</span> ribbon, click in the <span class="Emphasis">Style</span> drop-down field, and select the style for the heading (in our example, it is <span class="Emphasis">h3</span>).</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Heading 4 Example</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">heading 4 example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The Heading 4 Example was configured by creating a class of the div style and using it when inserting a text box. The style class for the text box specifies that it should be floated to the left of the body frame, have text that is aligned right, and have 30 pixels of space above it. In addition, we created a new class of the p style and adjusted the space above it. We used this style class for the first paragraph following our h4 text. For paragraphs after that, we just used the parent p style.</p>
+                <p>
+                    <img src="../../../Resources/Images/heading_examples_h4.png" class="MaxWidth70Percent">
+                    </img>
+                </p>
+                <p>This method takes a bit more time, but it very useful if you want the entire heading to be displayed to the left of the frame, with text wrapping around to additional lines when necessary. Meanwhile, the text after that heading flows to the right inside the body frame.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how did we create the heading 4 effect in this example?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                            </li>
+                            <li>In the grid, select <span class="Emphasis">div</span>.</li>
+                            <li>In the local toolbar, click <img src="../../../Resources/Images/add_class_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>Give the new class a name. We typed <span class="TypedEntry">h4TextBox</span> in our example.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>With the new style class selected, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>In the Properties dialog, select the <span class="Emphasis">Paragraph</span> tab.</li>
+                            <li>In the <span class="Emphasis">Alignment</span> section, select <span class="Emphasis">Right</span>.</li>
+                            <li>In the <span class="Emphasis">Indentation</span> section, set the <span class="Emphasis">Right</span> field to <span class="Emphasis">12 px</span>. (You may need to first click the down arrow in the upper-right corner and select <span class="Emphasis">Length</span>.)</li>
+                            <li>In the <span class="Emphasis">Spacing</span> section, set the <span class="Emphasis">Before</span> field to <span class="Emphasis">30 px</span>. (You may need to first click the down arrow in the upper-right corner and select <span class="Emphasis">Length</span>.)</li>
+                            <li>Select the <span class="Emphasis">Position</span> tab.</li>
+                            <li>In the <span class="Emphasis">Float</span> field, select <span class="Emphasis">Left of Frame</span>.</li>
+                            <li>In the <span class="Emphasis">Vertical Alignment</span> field, select <span class="Emphasis">Text Bottom</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>In the Stylesheet Editor grid, select <span class="Emphasis">p</span>.</li>
+                            <li>In the local toolbar, click <img src="../../../Resources/Images/add_class_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>Give the new class a name. We typed <span class="TypedEntry">FirstPara</span> in our example.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>With the new style class selected, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>In the Properties dialog, select the <span class="Emphasis">Paragraph</span> tab.</li>
+                            <li>In the <span class="Emphasis">Spacing</span> section, set the <span class="Emphasis">Before</span> field to <span class="Emphasis">30 px</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                            <li>
+                                <p>Open a topic and click at the location where you want to add the heading.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It is often easiest if you already have some text after the location where you are inserting the text box. Therefore, type some text that you want to appear after the heading (i.e., the first paragraph or two after the heading).</p>
+                            </li>
+                            <li>Select <span class="Emphasis">Insert&gt;Text Box</span>.</li>
+                            <li>In the dialog, select the div class (e.g., div.h4TextBox).</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Unless you also added a background or border to the text box, the text box is invisible at first (since it does not contain any text). Click at the beginning of the first paragraph following the text box and press the left arrow on your keyboard a couple of times until you see the cursor to the left of the body frame. This means that the cursor is now inside the text box.</li>
+                            <li>Inside the text box, type the text for the heading.</li>
+                            <li>Click on the text to be used for the heading.</li>
+                            <li>Select the <span class="Emphasis">Home</span> ribbon, click in the <span class="Emphasis">Style</span> drop-down field, and select the style for the heading (in our example, it is <span class="Emphasis">h4</span>).</li>
+                            <li>Click on the first paragraph following the heading in the text box.</li>
+                            <li>In the Home ribbon, click in the <span class="Emphasis">Style</span> drop-down field and select your new paragraph style class (e.g., p.FirstPara).</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

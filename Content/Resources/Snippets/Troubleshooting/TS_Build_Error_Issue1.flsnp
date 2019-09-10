@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="949" MadCap:lastWidth="670">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Access to temp directory error</p>
+        <p>When building a Flare project, the following error appears:</p>
+        <p class="Bold">Internal error: Access to the temp directory is denied. Identity under which XMLSerializer is running does not have sufficient permission to access the temp directory</p>
+        <p class="Subheading">Cause</p>
+        <p> This error is a result of Flare not being able to write to a temporary file or directory. </p>
+        <p class="Subheading">Solution</p>
+        <p>Following are several solutions that can fix the problem. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Perform the following steps to clean your output files.</p>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Build</span> section select <span class="Emphasis">Clean Project</span>. </p>
+                        <p>A message displays, asking you to confirm the deletion of the Output folder and its files.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <p>For more information about cleaning projects, see <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Cleaning_Output_Files.htm">Cleaning Output Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Perform the following steps to delete the Users folder in the Flare project folder.</p>
+                <ol>
+                    <li>Open the Flare project folder in the Windows Explorer.</li>
+                    <li>Open the <span class="Emphasis">Project</span> folder.</li>
+                    <li>Select the <span MadCap:createDate="2013-01-11T08:20:08.8032667-08:00" MadCap:creator="pstoecklein" MadCap:initials="PJS" MadCap:comment="This word should have an Emphasis span tag on it." MadCap:editor="pstoecklein" MadCap:editDate="2013-01-11T08:20:26.8082966-08:00" class="Emphasis">Users</span> folder and press <span class="Emphasis">Delete</span> on the keyboard.</li>
+                    <li>Reopen the project in Flare and build the project.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 3</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Restart your computer.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 4</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Uninstall Microsoft .NET Framework and reinstall the latest version.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 5</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Check any anti-virus programs you may be running on your computer. Make sure that it allows Flare to write to temporary files and directories. Most of these types of programs have an exception list. Add <span class="Emphasis">Flare.exe</span> to that list. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

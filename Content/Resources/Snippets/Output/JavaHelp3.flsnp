@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="7" MadCap:lastHeight="608" MadCap:lastWidth="1146">
+    <body>
+        <div class="note">
+            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To build and view JavaHelp, you must first install the necessary files from Oracle. </p>
+            <p>Do the following:</p>
+            <ol>
+                <li>
+                    <p class="TableText">Install the Java Developer Kit (JDK). <br />The JDK6 for Windows x86 and Windows x64 are available at:<br /><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>&#160; &#160;</p>
+                </li>
+                <li>
+                    <p class="TableText">Download and unzip the JavaHelp files from <a href="http://olex.openlogic.com/packages/javahelp/2.0_05" target="_blank">http://olex.openlogic.com/packages/javahelp/2.0_05</a></p>
+                </li>
+                <li>
+                    <p class="TableText">Update your Environment Variables to tell your machine where to find the Java files.<br />Go to Control Panel &gt; System &gt; Advanced Settings. The System Properties dialog will open.<br />On the Advanced tab click the Environment Variables button. These variables need to be added or changed under System variables:</p>
+                    <ul>
+                        <li>
+                            <p class="TableText">JAVA_HOME<br />Value: C:\Program Files [or Program Files (x86)]\Java\jdk1.6.0 (use the location of your JDK installation)</p>
+                        </li>
+                        <li>
+                            <p class="TableText">JAVAHELP_HOME<br />Value: C:\Program Files [or Program Files (x86)]\Java\jh2.0 (use the location of your jh2.0 directory)</p>
+                        </li>
+                        <li>
+                            <p class="TableText">JHHOME<br />Value: C:\Program Files [or Program Files (x86)]\Java\jh2.0 (use the location of your jh2.0 directory)</p>
+                        </li>
+                        <li>
+                            <p class="TableText">Path<br />This one will already exist, so edit it and append ;C:\Program Files [or Program Files (x86)]\Java\jdk1.6.0\bin (use the location of your JRE\bin directory)<br />(Note: semicolons separate multiple paths)</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="TableText">As noted above, the exact file paths will vary based on Java version numbers and where you have JavaHelp and the JDK installed on your machine.</p>
+        </div>
+    </body>
+</html>

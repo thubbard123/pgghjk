@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="6909" MadCap:lastWidth="1110" MadCap:conditions="Products.Lingo" MadCap:conditionTagExpression="include[Snippets.Snippet10 or Snippets.Snippet2] exclude[Snippets.Snippet1 or Snippets.Snippet11 or Snippets.Snippet3] " style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:keyword term="Filter:snippets;Filter:DITA;Filter:variables;Flatten:snippets;Flatten:DITA;Flatten:variables;Filter:flatten" />Content Flattening</h1>
+        <p>Replacing content nodes with text is referred to as "flattening." You can flatten snippets and variables in Flare projects, and content references (conrefs) in DITA&#160;projects. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningIntroALL.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet16] exclude[Snippets.Snippet14 or Snippets.Snippet15] " />
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to FLatten DITA&#160;Content References</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlattenedSnippets2.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet11 or Snippets.Snippet14] " />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlattenedSnippetLocation.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet14] " />
+                <ol>
+                    <li>Do one of the following, depending on the type of project you are using:<ul><li><span class="SetOffFirstLevel">New Project </span> Select <span class="Emphasis">File&gt;New Project</span>. The Start New Project Wizard opens. Proceed through the wizard until you get to the <span class="Emphasis">Select DITA project settings</span> page (the location of this page in the wizard varies slightly depending on your project creation method). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel">Existing Project </span> Select <span class="Emphasis">File&gt;Project Properties</span>. The Project Properties dialog opens. Select the <span class="Emphasis">DITA Settings</span> tab.</li></ul></li>
+                    <li>At the bottom of the dialog, select the checkbox next to <span class="Emphasis">Flatten conref nodes to plain text</span>. This will flatten all conrefs.</li>
+                    <li MadCap:conditions="Snippets.Snippet2">
+                        <p>In the Project Properties dialog, click <span class="Emphasis">OK</span>.</p>
+                        <p>OR</p>
+                        <p>In the Start New Project Wizard, click <span class="Emphasis">Next</span> or <span class="Emphasis">Finish</span>.</p>
+                    </li>
+                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/DITAConrefFlattening.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningDITA.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/BlockandInlineFlattening.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet14] " />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to FLatten Snippets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlattenedSnippets2.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet11 or Snippets.Snippet15] " />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlattenedSnippetLocation.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15] " />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningSnippetsSteps.flsnp" />
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/SnippetFlatteningExample.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningSettings1.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15 or Snippets.Snippet16] " />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/BlockandInlineFlattening.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15] " />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to FLatten Variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/VariableFlattening1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningVariablesSteps.flsnp" />
+                <MadCap:dropDown MadCap:conditions="General.OnlineLive,LingoGuides.LingoTranslationGuide" class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">More information</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Variables/ConvertVariables2.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Filters/ExampleFilteringwithVariables.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningSettings1.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet15] exclude[Snippets.Snippet14 or Snippets.Snippet16] " />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Flattening/FlatteningSettings3.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+    </body>
+</html>

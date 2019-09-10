@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="2066" MadCap:lastWidth="657">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Generated CHM files do not open and content does not display</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>This problem can have one of the following causes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This can be a result of incorrect browser settings.</p>
+                <p>Reset the default browser to  Internet Explorer. To do this, perform the following steps. The following steps are based on the Microsoft Windows 7 operating system. The steps may vary if you are using a different operating system.</p>
+                <ol>
+                    <li>Open the <span class="Emphasis">Start</span> menu.</li>
+                    <li>Click   <span class="Emphasis">Control Panel</span>. The Control Panel opens.</li>
+                    <li>In the Control Panel, select <span class="Emphasis">Network and Internet</span>.</li>
+                    <li>Select <span class="Emphasis">Internet Options</span>.</li>
+                    <li>Select the <span class="Emphasis">Programs</span> tab.</li>
+                    <li>In the Default web browser section, click <span class="Emphasis">Make default</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The XML declaration in the topic files is causing the problem.</p>
+                <p> Remove the XML declaration from the CHM&#160;files. Perform the following steps. </p>
+                <ol>
+                    <li>Open a topic in the project.</li>
+                    <li>
+                        <p>In the XML Editor's bottom local toolbar, click the Text Editor tab to see the topic code.</p>
+                        <p>
+                            <img src="../../Images/TS_html_help_ex6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Select the first line of the code. This is the XML declaration. It will resemble the following:</p>
+                        <p class="Bold">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+                        <p>
+                            <img src="../../Images/TS_html_help_ex7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>With the first line selected, do one of the following to copy the code.<ul class="FirstLevel"><li><p>Press <span class="Emphasis">CTRL+C</span> on the keyboard</p><p>OR</p></li><li><p>Right-click the selected code and from the context menu, select <span class="Emphasis">Copy</span>.</p></li></ul><p>The XML declaration is copied to the clipboard.</p></li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../UIElements/SelectHomeRibbon.flsnp" MadCap:conditions="Products.Analyzer,Products.Contributor,Products.Flare" /> In the <span class="Emphasis">Editing</span> section, select <span class="Emphasis">Find and Replace in Files</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut </span>Press <span class="Emphasis">CTRL+SHIFT+F</span>.</li>
+                        </ul>
+                        <p> The Find and Replace in Files window pane opens.</p>
+                    </li>
+                    <li>
+                        <p>Click in the <span class="Emphasis">Find</span> field, then do one of the following.</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>Press <span class="Emphasis">CTRL+V</span> on the keyboard.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p>Right-click in the field and from the context menu select <span class="Emphasis">Paste</span>.</p>
+                            </li>
+                        </ul>
+                        <p>The XML declaration will be copied into the field. </p>
+                    </li>
+                    <li>Leave the <span class="Emphasis">Replace with</span> field empty.</li>
+                    <li>Click the down arrow next to the <span class="Emphasis">Find in</span> field and select <span class="Emphasis">content folder</span>.</li>
+                    <li>Click the down arrow next to the <span class="Emphasis">File types</span> field and select <span class="Emphasis">Topics</span>.</li>
+                    <li>
+                        <p>Under <span class="Emphasis">Find Options</span>, select the <span class="Emphasis">Find in source code</span> check box.</p>
+                        <p>
+                            <img src="../../Images/TS_html_help_ex8.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Find All</span>. The search is initiated. If any search text is found, it is shown in the Find Results window pane.</li>
+                    <li>Click <span class="Emphasis">Replace All</span>. This will remove the XML declaration from all topics in the project.</li>
+                    <li>Save your work.</li>
+                    <li>Regenerate your project.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

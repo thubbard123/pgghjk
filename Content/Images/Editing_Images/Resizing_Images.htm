@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="n;b;s;reimport;(.css;Reimport;flsfs;SearchFilterSet;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;VariableName;N;M;m;.tif;JPEG;PNG;NameOfFile.png;h;hh" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="14" MadCap:lastHeight="6847" MadCap:lastWidth="670" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareImages.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Resize images using the CSS&#160;Stylesheet Editor or apply local formatting directly to the image. You can also reset images to the original size. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Resizing:images;Images:resizing;Images:styles;Styles:images;Size:images" />
+            <MadCap:concept term="PicturesFormatting" />
+            <MadCap:concept term="FilterPictures" />Resizing Images</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/ImagesResizeSummary.flsnp" />&#160;<MadCap:snippetText src="../../Resources/Snippets/Styles/CanBeDoneThroughStylesOrLocalFormatting.flsnp" MadCap:conditions="General.OnlineLive" /></p>
+        <p>Following are the tasks you can perform.</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">Resize with Styles</span> You can resize many images at once by using the img style in the Stylesheet Editor. Not only can you select a specific image size, but you can also set a maximum or minimum height or width. You can set either the width or height on the image tag and let <MadCap:variable name="Other.Product" /> set the other property automatically, maintaining the aspect ratio (i.e., size proportion of the image). <MadCap:conditionalText MadCap:conditions="Products.Flare">Using this method, you can take advantage of single-sourcing by also using a print medium in the stylesheet. Simply specify one group of settings for the medium used for the online output, and use another group of settings for the medium used for print-based output. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareImagesGuide">See <MadCap:xref href="#ResizeImagesStyles">How to Resize Images by Using Styles</MadCap:xref>.</MadCap:conditionalText></p>
+                <p MadCap:conditions="FlareGuides.FlareStylesGuide">You can also use styles to show images as small thumbnails in the output. End users can see the full size of the image by hovering over it or clicking it. </p>
+            </li>
+            <li><span class="SetOffFirstLevel">Resize Locally Using Properties</span> You can resize an image locally by setting its height and width properties, including maximum or minimum height or width. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Contributor">This is similar to the styles method, except that the properties are set only for a specific image, not on a style that can be applied to many images.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Flare"> This method also lets you take advantage of single-sourcing, because there is one group of settings that can be used for online output and another for print-based output (based on the medium that you are using for the target—e.g., default, print).</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide"> See the online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareImagesGuide">See <MadCap:xref href="#ResizeImagesLocally">How to Resize Images Locally by Using Properties</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel">Resize Locally Dragging the Icon</span> You can resize an image locally by clicking and dragging the icon <img src="../../Resources/Images/resize_image_icon.png" class="ReduceButtonSize" /> in the lower-right corner of the image. When you use this feature, <MadCap:variable name="Other.Product" /> automatically sets the new height and width on the image tag. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide">See the online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareImagesGuide">See <MadCap:xref href="#ResizeImagesDragging">How to Resize Images Locally by Dragging the Icon</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel">Reset Size</span> If you resize an image and then decide you want it to be its original size (even after you save your work), you can easily reset it. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide">See the online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareImagesGuide">See <MadCap:xref href="#ResetSize">How to Reset the Size of an Image</MadCap:xref>.</MadCap:conditionalText></li>
+        </ul>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="ResizeImagesStyles"></a>How to Resize Images by Using Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectMediumStep1.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/SelectMediumStep2.flsnp" />
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/RemembersLastMedium.flsnp" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../../Resources/Images/medium_example1.png" class="MaxWidth80Percent">
+                            </img>
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterImageStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <p>From the area below, select the <span class="Emphasis">img</span> tag. If you created classes of the tag, you can expand the img style and select the class instead.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you are creating a PDF manual that is 8 inches wide and you want to ensure that none of your largest images are wider than 6 inches. You can create a class of the img style and name it "MaxWidth6Inches." For most of your images, you can use the parent img style, but for the large ones, you can use the img.MaxWidth6Inches style class. The large images will automatically be resized if necessary so that they are no wider than 6 inches.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>You can use the following steps to specify a precise width or height for the style. You can also specify a maximum or minimum width or height.<MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>to set a precise width and/or height</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody><ol class="LowerAlpha"><li><p><MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandBoxGroupStep.flsnp" /></p><p><MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></p></li><li><p>To the right of <span class="Emphasis">height</span> and/or <span class="Emphasis">width</span>, click <img src="../../Resources/Images/browse_ellipses.png" /> and complete the fields in the popup. Enter a value in the lower-left area and choose from several different units of measurement (points, pixels, centimeters, etc.) in the lower-right area.&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText>&#160;Click <span class="Emphasis">OK</span> when you are finished.</p></li></ol></MadCap:dropDownBody></MadCap:dropDown><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>to set the maximum width and/or height</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody><p>If the original image is larger than the maximum width or height that is set, it will be reduced in size so that it is no greater than the maximum value. If the original image is smaller than the maximum width or height, it will not be resized.</p><ol class="LowerAlpha"><li><p><MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandUnclassifiedGroupStep.flsnp" /></p><p><MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></p></li><li><p>To the right of <span class="Emphasis">max-height</span> and/or <span class="Emphasis">max-width</span>, click <img src="../../Resources/Images/browse_ellipses.png" /> and complete the fields in the popup. Enter a value in the lower-left area and choose from several different units of measurement (points, pixels, centimeters, etc.) in the lower-right area.&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText> Click <span class="Emphasis">OK</span> when you are finished.</p></li></ol></MadCap:dropDownBody></MadCap:dropDown><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareImagesGuide" /><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>to set the minimum width and/or height</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p>If the original image is smaller than the minimum width or height that is set, it will be enlarged so that it reaches the minimum value. If the original image is larger than the minimum width or height, it will not be resized.</p><ol class="LowerAlpha"><li><p><MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandUnclassifiedGroupStep.flsnp" /><MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></p></li><li><p>To the right of <span class="Emphasis">min-height</span> and/or <span class="Emphasis">min-width</span>, click <img src="../../Resources/Images/browse_ellipses.png" /> and complete the fields in the popup. Enter a value in the lower-left area and choose from several different units of measurement (points, pixels, centimeters, etc.) in the lower-right area.&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText> Click <span class="Emphasis">OK</span> when finished.</p></li></ol></MadCap:dropDownBody></MadCap:dropDown></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>To apply a particular style class to an image (after you create it in the Stylesheet Editor), simply right-click the image where it is inserted. Then from the menu, select <span class="Emphasis">Style Class</span> and choose the appropriate style.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="ResizeImagesLocally"></a>How to Resize Images Locally by Using Properties</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click on the image.</li>
+                    <li>From the context menu, select <span class="Emphasis">Image Properties</span>. The Image Properties dialog opens.</li>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Products.Flare">If you want to provide only one group of settings for the image, select the Size tab and complete the following steps. If you want to provide two groups of settings—one for online output and another for print-based output—select the <span class="Emphasis">Size</span> tab and complete the following steps for online output, then select the <span class="Emphasis">Print Size</span> tab and complete the same steps for print-based output. When you generate a target that is using the default or a custom medium (specified on the Advanced tab in the Target Editor), the settings on the Size tab will be used; when you generate a target that is using the print medium, the settings on the Print Size tab will be used. </MadCap:conditionalText>
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive">
+                            <MadCap:conditionalText MadCap:conditions="Products.Flare">See <MadCap:xref href="../../Styles/Mediums/Creating_Medium_Types.htm">Creating Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText>
+                        </MadCap:conditionalText>
+                        <p MadCap:conditions="Products.Contributor">In the Image Properties dialog, adjust any of the following settings to resize the image.  </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to set a precise width and/or height</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Width</span> and/or <span class="Emphasis">Height</span> field of the <span class="Emphasis">Size</span> section, provide the settings. <MadCap:snippetText src="../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to set the minimum width and/or height</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>If the original image is smaller than the minimum width or height that is set, it will be enlarged so that it reaches the minimum value. If the original image is larger than the minimum width or height, it will not be resized.</p>
+                                <ul>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Width</span> and/or <span class="Emphasis">Height</span> field of the <span class="Emphasis">Minimum Size</span> section, provide the settings. <MadCap:snippetText src="../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareImagesGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to set the maximum width and/or height</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>If the original image is larger than the maximum width or height that is set, it will be reduced in size so that it is no greater than the maximum value. If the original image is smaller than the maximum width or height, it will not be resized.</p>
+                                <ul>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Width</span> and/or <span class="Emphasis">Height</span> field of the <span class="Emphasis">Maximum Size</span> section, provide the settings. <MadCap:snippetText src="../../Resources/Snippets/UIElements/FirstSelectLength.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="ResizeImagesDragging"></a>How to Resize Images Locally by Dragging the Icon</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p>Hover over the image. The following icon displays in the lower-right corner of the image.</p>
+                        <p>
+                            <img src="../../Resources/Images/resize_image_icon.png" class="ReduceButtonSize" />
+                        </p>
+                    </li>
+                    <li>Click on the icon and drag your mouse either up and to the left (to reduce the size of the image) or down and to the right (to increase the size of the image). </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="ResetSize"></a>How to Reset the Size of an Image</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click on the image.</li>
+                    <li>From the context menu, select <span class="Emphasis">Reset Size</span>. The image returns to its original size.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareImagesGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you click on an image file in the user interface (e.g., Content Explorer or File List window pane), its resolution and dimensions are displayed at the bottom. If you have set the online or print DPI for an image using MadCap Capture, these values are also shown.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also use show images as small thumbnails in the output (either by using styles or locally). End users can see the full size of the image by hovering over it or clicking it. See <MadCap:xref href="Showing_Images_as_Thumbnails_in_Output.htm">Showing Images as Thumbnails in Output</MadCap:xref>.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteAspectRatioPreciseSize.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NotePercentageOnObject.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../Resources/Snippets/Targets/CompileResizedScaleSettings.flsnp" />
+                </p>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../Resources/Snippets/ImagesAndCapture/DownscaleImagesToPreviousVersions.flsnp" /> See <MadCap:xref href="Matching_Image_Resizing_Behavior_of_Previous_Versions.htm">Downscaling Images to Match the Behavior of Previous Versions</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteContributorReviewWorkflowLocalChangeOnly.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteAspectRatioPreciseSize.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NotePercentageOnObject.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PicturesFormatting" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="11268" MadCap:lastWidth="839">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol type="1" class="Decimal">
+            <li>In the Project Organizer, expand the <span class="Emphasis">Targets</span> folder and double-click the target that you want to edit.</li>
+            <li>
+                <p>You can use the tabs in the Target Editor to perform various tasks, depending on the output type associated with the target (i.e., some tasks can be performed only in certain targets). <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> For additional tasks not described here (such as those for online output), see the online Help.</MadCap:conditionalText></p>
+                <MadCap:dropDown class="SecondLevel" MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlarePrintedOutputGuide">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">List of Tasks</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul class="FirstLevel">
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Section 508;Accessibility;WCAG" /><MadCap:keyword term="Adobe PDF:accessibility;Accessibility:PDF" /><MadCap:keyword term="WebHelp:accessibility;Accessibility:WebHelp" />Accessibility Warnings </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can use the Target Editor to indicate whether you want to receive compiler warnings when your output fails to include information that makes it accessible. By default the warnings are set to be enabled, but you can set any of them to be ignored if you want. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Accessibility/Flare/About_Accessibility.htm">About Accessibility</MadCap:xref> and <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Ignoring_Warnings_When_Building_Output.htm">Ignoring Warnings When Building Output</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                                <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTargetsGuide">See  <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Ignoring_Warnings_When_Building_Output.htm">Ignoring Warnings When Building Output</MadCap:xref>.</MadCap:conditionalText>
+                                <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Ignoring_Warnings_When_Building_Output.htm">Ignoring Warnings When Building Output</MadCap:xref>.</MadCap:conditionalText>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Images:accessibility;Accessibility:images" /><MadCap:keyword term="Alternate text;Images:alternate text" />ALT Text (Empty) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can add an empty "alt" (alternate text) attribute to images, QR codes, and equations that do not have one. The attribute gets added to the output when the target is generated. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Accessibility/Flare/Applying_Empty_Alt_Text.htm">Applying Empty Alt Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Browse sequences:targets;Targets:browse sequences" /><span class="SetOffFirstLevel">Browse Sequence (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you have created only one browse sequence for your project, you do not need to associate it with a target. It will display automatically after you build the target. However, if you have added more browse sequences, you need to specify which one will serve as the "master browse sequence." This is the browse sequence that will be displayed in the output. The additional browse sequences will also be displayed if you have linked to them from the master browse sequence. You can use the Target Editor to associate a master browse sequence with a target. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Browse_Sequences/Associating_a_Browse_Sequence_with_a_Target.htm">Associating a Browse Sequence with a Target</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly">
+                                <MadCap:keyword term="Targets:build events" /><span class="SetOffFirstLevel">Build Events (Create) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can use the Target Editor to create pre- and post-build events. This lets you run command line events before or after the target is generated. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See </MadCap:conditionalText><MadCap:xref href="../../../Targets/More_About_Targets/Creating_Pre_Post_Build_Events.htm" MadCap:conditions="Products.FlareOnlineOnly">Creating Pre- and Post-Build Events</MadCap:xref><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Building:single target;Targets:building output;Output:building targets" /><span class="SetOffFirstLevel">Build (Generate) Output </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can use the Target Editor to build a target in your project that is not designated as your primary target. See <MadCap:xref href="../../../Output/Building_a_Single_Target.htm">Building a Single Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Conditions:targets;Targets:condition tags" /><span class="SetOffFirstLevel">Condition Tags (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>After you create and apply condition tags to content, you need to tell <MadCap:variable name="Other.Product" /> what your target should do with the condition tags that you have created and applied. Should content with a particular condition tag be included in or excluded from that target? <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Condition_Tags/Associating_Condition_Tags_with_Targets.htm">Associating Condition Tags with Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Associating_Condition_Tags_with_Your_Print_Target.htm">Associating Condition Tags with Your Print Target</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Alias files:targets;Targets:alias files" /><span class="SetOffFirstLevel">Context-sensitive Help—Alias File (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>An alias file is used to populate a header file with the information necessary for producing context-sensitive Help (CSH). If you have added more than one alias file for your project, you need to associate the appropriate alias file with the target that you plan to build. If you do not specify an alias file in a target, <MadCap:variable name="Other.Product" /> uses the first alias file listed in the Project Organizer. See <MadCap:xref href="../../../CSH/Associating_an_Alias_File_with_a_Target.htm">Associating an Alias File with a Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="DOCTYPE;Topics:DOCTYPE;Output:DOCTYPE declaration;Browser:DOCTYPE declaration;Strict mode;Quirks mode" />DOCTYPE Declaration (Add) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="DoctypeDeclarationSummary.flsnp" />&#160;<MadCap:snippetText src="DoctypeDeclarationsSummary2.flsnp" />&#160;See <MadCap:xref href="../../../Targets/More_About_Targets/Adding_the_DOCTYPE_Declaration_to_Generated_Topics.htm">Adding the DOCTYPE Declaration to Generated Topics</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Eclipse Help;Output:Eclipse Help" />Eclipse Help Output—Options (Specify) </span>&#160;<MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody>If you are sending output to the <MadCap:variable name="Outputs.EclipseHelp" /> format, you can access&#160;Eclipse options in the Target Editor. See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_Eclipse_Options.htm">Specifying Eclipse Options</MadCap:xref>.</MadCap:expandingBody></MadCap:expanding></li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Page layouts:empty;Empty pages" />Empty Pages—(Inject) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>For PDF&#160;and XPS outputs, this check box is used in conjunction with empty page types to automatically include empty pages in the output when necessary. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../Page_Layouts/Pages/Using_Empty_Pages.htm">Using Empty Pages</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="EPUB;Output:EPUB" />EPUB Output—Options (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are sending output to <MadCap:variable name="Outputs.EPUB">[%=Outputs.EPUB%]</MadCap:variable>, you can access EPUB options in the Target Editor. These options let you provide <MadCap:keyword term="EPUB:metadata;Metadata:EPUB" />metadata, select a cover image, validate output, generate MOBI output, enable MathML to PNG conversion, embed fonts, and enable dynamic content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm" target="" title="" alt="">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Equations;MathML;Equations:convert" />Equation Styles (Convert) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>When you build a target, equations may be converted to another format. This, however, depends on the output type of the target you are building. See <MadCap:xref href="../../../Equations/About_Equations.htm#Converted">Converted Output Formats for Equations</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="URL:prevent external" />External URLs—(Prevent) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="PreventExternalURLsSummary.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Preventing_External_URLs.htm">Preventing External URLs</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="MadCap Feedback:enabling" />Feedback (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you purchase the MadCap Feedback Service in order to track user activity on your online output, a separate license is required for each target that you want to associate with Feedback. <MadCap:snippetText src="../Feedback/FeedbackEnableSummary.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Feedback/Enabling_Feedback_in_Flare.htm">Enabling Feedback in Flare</MadCap:xref> and <MadCap:xref href="../../../Feedback/About_MadCap_Feedback.htm">About MadCap Feedback</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Feedback/Enabling_Feedback_in_Flare.htm">Enabling Feedback in Flare</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Glossaries:targets;Targets:glossaries" /><span class="SetOffFirstLevel">Glossaries (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are including one or more glossaries in your output, you need to associate them with the target. After you build the target, the glossary will be incorporated into the output<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"> and terms will be <MadCap:keyword term="Glossaries:converting terms;Converting:glossary terms to links" MadCap:conditions="Products.Flare" />converted to links in individual topics (if you have selected one of the term conversion options in the Target Editor)</MadCap:conditionalText>. See <MadCap:xref href="../../../Glossaries/Associating_Glossaries_with_Targets.htm">Associating Glossaries with Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Auto-generating:glossaries;Glossaries:proxies;Proxies:glossaries;Glossaries:auto-generating" />Glossaries (Auto-generate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can select an option to let Flare auto-generate a glossary for you in print-based output. See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Auto_Generating_Glossaries_for_Print.htm">Auto-generating Glossaries for Print</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Buttons:HTML Help;Output:buttons for HTML Help;Skins:buttons for HTML Help;HTML Help:buttons" />HTML Help—Jump Buttons (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can specify the destination (URL) for the Jump1, Jump2, and Home buttons that can be included in <MadCap:variable name="Outputs.HTMLHelp" /> output. You can also set these destinations in the Skin Editor (HTML Help Setup tab) and associate that skin with the target (on the General tab of the Target Editor). The reason this option is available in both the Skin Editor and Target Editor is this: If you want multiple targets to use one skin, with each target using the same destinations for the jump buttons, you should set the jump button URLs in the Skin Editor. If you want multiple targets to use the same skin, but you want them to use different URLs for the jump buttons, set the URLs in the Target Editor. If URLs are set in both the Skin Editor and the Target Editor, Flare uses the settings from the Skin Editor. See <MadCap:xref href="../../../Skins/More_About_Skins/Specifying_Buttons_for_HTML_Help_Output.htm">Specifying Buttons for HTML Help Output</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Linking:HTML Help;Tables of contents:linking;Projects:merging;Merging:projects;HTML Help:merging;Tables of contents:merging;Merging:tables of contents" />HTML Help—Merged Output (Display Navigation) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you want the merged navigation (table of contents, index, search) to be displayed in any of the CHM files, even child targets, you can enable an option on the Advanced tab of the Target Editor. However, the parent CHM must be present when you open a navigation element in a child CHM (i.e., it must be in the same folder as the child CHM). See <MadCap:xref href="../../../Targets/More_About_Targets/Displaying_Merged_Navigation_in_HTML_Help.htm">Displaying Merged Navigation in HTML Help Child Outputs</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:HTML Help;Styles:CHM;HTML Help:printing topics;Print:topics;Topics:printing from CHM" />HTML Help—Stylesheet and Image Links (Patch) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Styles/PatchingStyleSheets.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Patching_Style_Sheets_and_Image_Links_for_HTML_Help.htm">Patching Stylesheets and Image Links for HTML Help</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="HTML5:server-based output" />HTML5—Server-based Output (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can create <MadCap:variable name="Outputs.HTML5" /> output in its regular state, or you can select an option in the Publishing tab of the Target Editor to enable server-based functionality. This allows you to accomplish the same results as <MadCap:variable name="Outputs.WebHelp Plus" /> output—searching of non-XHTML content, faster server-side search, and automatic runtime merging. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm" target="" title="" alt="">Enabling HTML5 Server-based Output</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:embedding;Images:Microsoft Word;Embedded images;Microsoft Word:embedding images" />Images—Microsoft Word Output (Embed) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>An option on the Advanced tab of the Target Editor lets you ensure that images are embedded in <MadCap:variable name="Outputs.Word" /> output. This option is enabled by default. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Targets/More_About_Targets/Embedding_Images_in_Microsoft_Word_Output.htm">Embedding Images in Microsoft Word Output</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="MadCap Capture:objects;Objects:auto-sizing;Images:auto-sizing objects" />Images—Objects (Auto-size) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../ImagesAndCapture/AutoSizeImageObjects.flsnp" /> See <MadCap:xref href="../../../Images/Editing_Images/Autosizing_Capture_Image_Objects_to_Fit_Text.htm">Auto-sizing Capture Image Objects to Fit Text</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Resizing:images;Images:resizing;Images:styles;Styles:images" />Images—Resized Scaled Images (Generate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="CompileResizedScaleSettings.flsnp" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Images:web-safe;Web-safe:images;Output:web-safe images" />Images—Web-safe Images (Generate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you have used non–web-safe image formats (e.g., <MadCap:keyword term="WMF file" />WMF, <MadCap:keyword term="EMP file" />EMF, <MadCap:keyword term="BMP file" />BMP, <MadCap:keyword term="TIF file" />TIF, <MadCap:keyword term="TIFF file" />TIFF, <MadCap:keyword term="Microsoft XPS" />XPS, <MadCap:keyword term="EXPS file" />EXPS) in your project, you can convert those images to web-safe formats (e.g., <MadCap:keyword term="GIF file" />GIF, <MadCap:keyword term="JPEG file" />JPEG, <MadCap:keyword term="PNG file" />PNG) when you generate online output ( <MadCap:snippetText src="../Output/OnlineOutputTypes.flsnp" />). For print-based output types (<MadCap:snippetText src="../Output/AllPrintOutputTypes.flsnp" />), the original image file formats will be used when you generate output. See <MadCap:xref href="../../../Targets/More_About_Targets/Generating_Web_Safe_Images.htm">Generating Web-Safe Images</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Importing:Easy Sync;Easy Sync" />Importing—Auto-sync (Disable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Let's say you have imported <MadCap:variable name="Outputs.Word" />, <MadCap:variable name="Outputs.Frame" />, or Flare files from another project, and when doing so, you selected the "Easy Sync" option to automatically re-import the files when you generate output. You can use this feature to override that Easy Sync setting for a specific target. Therefore, if you want to re-import any of the files, you will need to do so manually. You might decide to use this option, for example, if you are testing the generation of output and do not want to wait the extra time for the files to be imported. After you finish your testing, you can deselect this option to return to the automatic imports of the files. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Importing/Disabling_AutoSync_of_Import_Files.htm">Disabling Auto-Sync of Import Files</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Auto-generating:indexes;Indexes:proxies;Proxies:indexes;Indexes:auto-generating" />Index (Auto-generate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can select an option to let Flare auto-generate an index for you in print-based output. See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Auto_Generating_Indexes_for_Print.htm">Auto-generating Indexes for Print</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Indexes:search;Search:indexes" />Index—Search (Excluding) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Indexes/ExcludeIndexEntriesFromSearchSummary.flsnp" /> See <MadCap:xref href="../../../Search/Configuring_the_Search_Database/Excluding_Index_Entries_from_Search.htm">Excluding Index Entries From Search</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">
+                                <MadCap:keyword term="Language support:selecting language;Language support:selecting" /><span class="SetOffFirstLevel">Language—(Select) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You need to tell <MadCap:variable name="Other.Product" /> which language you are working with so that it knows which skin to use in the output. This can be done when you are first creating the project or later by using the Project Properties option. You can also override the project language and set it for the individual targets or topics. If out want to create a multilingual target output, you can select multiple languages and link Lingo projects or additional Flare projects to your current (master) project. The generated output will include each selected language. In addition, if you set a right-to-left (RTL) language on the target, there are multiple options selected by default. These options are used to automatically invert language-related style rules locally or in the stylesheet, as well as to invert image callouts and page layout settings. See <MadCap:xref href="../../../Language_Support/Selecting_a_Language.htm#HowToSelectLanguagesTarget">How to Select Languages for a Specific Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel">MadCap Styles (Remove) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Due to an issue with Google Chrome, content within the body of topics inherits the hover color of MadCap styles (e.g., MadCap|xref:hover). To prevent this situation, Flare will automatically add a @namespace rule at the beginning of the CSS files in your output. However, you can select an option in the Target Editor for web-based outputs if you do not want this rule to be added to your stylesheets. See <MadCap:xref href="../../../Targets/More_About_Targets/Removing_MadCap_Styles.htm">Removing MadCap Styles</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Mark of the Web;WebHelp:Mark of the Web;WebHelp Plus:Mark of the Web" /><span class="SetOffFirstLevel">Mark of the Web (Add) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Mark of the Web (MOTW) is a comment added to the HTML markup for a web page. When users open the web page from their local machine, Internet Explorer references this comment to determine the security zone in which it should run the page. This means you can deliver <MadCap:variable name="Outputs.WebHelp" /> outputs without your online Help initially being blocked on the user's machine with a security message. See <MadCap:xref href="../../../Targets/More_About_Targets/Adding_Mark_of_the_Web.htm">Adding Mark of the Web</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Master pages:targets;Targets:master pages" /><span class="SetOffFirstLevel">Master Page (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you want a master page to be applied to all topics in the output, you would associate that master page with the target that you are building. This is useful, for example, if you want to create breadcrumbs, a mini-TOC, header content, or footer content for your online outputs (e.g., <MadCap:snippetText src="../Output/OnlineOutputTypes.flsnp" />).  See <MadCap:xref href="../../../Master_Pages/Associating_Master_Pages_with_Targets.htm">Associating Master Pages with Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:disabling use" />Master Pages (Disable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Let's say you have used master pages in earlier versions of Flare when creating Word or FrameMaker output, but now you decide to use the newer page layouts instead. You can manually remove all links to master pages in your target and table of contents. However, another alternative is to click this option instead. By selecting this option, Flare will ignore all links to master pages when you generate the Word or FrameMaker target. It will instead use links that you provide to any page layouts. See <MadCap:xref href="../../../Master_Pages/More_About_Master_Pages/Disabling_Use_of_Master_Pages.htm">Disabling the Use of Master Pages</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Meta tags;Metadata" />Meta Tags (Add) </span>&#160;<MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody>For online outputs, you can add custom meta tags in the Advanced tab of the Target Editor. These are added between the &lt;head&gt; and &lt;/head&gt; tags in your content when you generate output. See <MadCap:xref href="../../../Targets/More_About_Targets/Adding_Custom_Meta_Tags.htm">Adding Custom Meta Tags</MadCap:xref>.</MadCap:expandingBody></MadCap:expanding></li>
+                            <li>
+                                <MadCap:keyword term="Output:main entry file" /><span class="SetOffFirstLevel">Output File and Folder (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>When you build the output for a target in your project, <MadCap:variable name="Other.Product" /> sends the output files to the Output folder where your project is located. It also uses a default name for the main entry file in the default output type. However, you can specify a different location and main entry file name for a target's output files. For Word and FrameMaker output, you can also specify a different output file type than the default (e.g., add .pdf to the end of the file name, instead of .xml). <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_the_Output_File_and_Folder_in_a_Target.htm">Specifying the Output File and Folder in a Target</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Underscores;Space:replace with underscore;Files:underscores;Folders:underscores;Output:underscores in file names;UNIX" />Output Files—Characters and Spaces (Replace With Underscores) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you have spaces or unusual characters in your file names or folders, you can covert these spaces and characters to underscores in the output. This feature is primarily useful for individuals working in a UNIX environment. In addition to spaces, the characters that are converted to underscores include: ()&amp;;,!'. See <MadCap:xref href="../../../Targets/More_About_Targets/Replacing_Characters_and_Spaces_with_Underscores.htm">Replacing Characters and Spaces with Underscores</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Files:extensions;Extensions:custom;Output:custom file extensions;WebHelp:custom file extensions;WebHelp Plus:custom file extensions;HTM;HTML;ASPX file" />Output Files—Custom Extensions (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="CustomFileExtensionsSummary.flsnp" /> To use this option, click the appropriate check box on the Advanced tab of the Target Editor. Then type the file extension that you want to use in the text field. Do not type the period, but rather the characters only. See <MadCap:xref href="../../../Targets/More_About_Targets/Using_Custom_File_Extensions.htm">Using Custom File Extensions</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Output:exclude content;Targets:exclude content not linked" />Output Files (Exclude Content not Linked) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>One way to completely exclude content from online output is to place condition tags on the topic files and include or exclude them from the targets<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>)</MadCap:conditionalText>. Another method is to use an option in the Target Editor to include only content files that are directly or indirectly referenced from the target. This means that if the target is using particular files such as a table of contents (TOCs), master page, and so on, other files linked directly or indirectly from them will be part of the output. See <MadCap:xref href="../../../Targets/More_About_Targets/Excluding_Content_not_Linked_Directly_or_Indirectly_from_Targets.htm">Excluding Content not Linked Directly or Indirectly from Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Lowercase;UNIX;Files:lowercase names;Folders:lowercase names;Output:lowercase file names" />Output Files—Lowercase Names (Convert) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can <MadCap:snippetText src="LowercaseFileNamesSummary.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Converting_Output_File_Names_and_Folders_to_Lowercase.htm">Converting Output File Names and Folders to Lowercase</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Content:folder;Folders:content;Output:Content folder" />Output Folder—Content (Omit) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="OmitContentFolderSummary.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Omitting_the_Content_Folder_from_Output.htm">Omitting the Content Folder from Output</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Output:types" /><span class="SetOffFirstLevel">Output Type (Change) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Each target in your project is based on one of the output types available in <MadCap:variable name="Other.Product" /> (<MadCap:snippetText src="../Output/AllOutputTypesConditionalized.flsnp" />). You can use the Target Editor to switch the output type for a particular target. You can also add an internal comment to describe the output. See <MadCap:xref href="../../../Targets/More_About_Targets/Changing_the_Output_Type_for_a_Target.htm">Changing the Output Type for a Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Page layouts:master;Master page layouts;Targets:page layouts" />Page Layout—Master (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../PageLayouts/AssociatePageLayoutsSummary1.flsnp" /> In the Target Editor, you can associate a master page layout with a target. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Page_Layouts/Associating_Master_Page_Layouts_with_Targets.htm">Associating Master Page Layouts with Targets</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Chapters:breaks;Print-based output:chapter breaks;Print-based output:multiple documents;Adobe PDF:multiple documents" MadCap:conditions="Products.Flare" />PDF Output—Multiple Documents (Create) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are generating PDF output directly (rather than going through FrameMaker or Microsoft Word to produce it), you can split the generated output into multiple documents, rather than using the default, which results in only one document. To create multiple PDF documents, you must also specify chapter breaks at the appropriate places in the TOC (not the TOC that displays in the PDF output, but in the "outline TOC" used to determine the printed manual content and structure). This can be done on the Printed Output tab of the TOC Properties dialog. By specifying chapter breaks, you are letting <MadCap:variable name="Other.Product" /> know where you want to split the output into new PDF documents. Then in the Advanced tab of the Target Editor, select the "Generate multiple documents for native XPS/PDF output" option.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Adobe PDF:images;Images:PDF" /><MadCap:keyword term="Print-based output:PDF;Adobe PDF;Output:PDF" />PDF Output—Options (Specify) </span>&#160;<MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody>If you are sending output directly to <MadCap:variable name="Outputs.PDF" />, you can access PDF options in the Target Editor. These options let you specify the way that images, document properties, PDF tagging, and the initial view are handled in the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_PDF_Options.htm">Specifying PDF Options</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody></MadCap:expanding></li>
+                            <li>
+                                <MadCap:keyword term="Adobe PDF;Output:PDF" /><span class="SetOffFirstLevel">PDF Output (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are building either Microsoft Word or Adobe FrameMaker targets, you can send the output to Adobe's Portable Document Format (PDF) as well. When you use this feature, <MadCap:variable name="Other.Product" /> generates the native Word or FrameMaker documents, in addition to a PDF file. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/PDF_Output/Specifying_PDF_Output.htm">Specifying PDF Output Via Word or FrameMaker</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Margins:collapsing" />PDF Output—Top Margins (Collapse) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can collapse the top margin for all elements occurring at the top of a new page or column. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Collapsing_Top_Margins.htm" target="" title="" alt="">Collapsing Top Margins</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Building:performance;Targets:performance;Output:performance;Performance:targets;WebHelp:performance;DotNet Help:performance;WebHelp Plus:performance" /><span class="SetOffFirstLevel">Performance (Improve) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can improve the processing performance of your online output in several ways. See <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Improving_the_Processing_Performance_of_the_Target.htm">Improving the Processing Performance of the Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Print-based output;Converting:online features to printed output" /><span class="SetOffFirstLevel">Printed Output—Online Features (Convert) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Some online features in your project are automatically handled in one way or another when you produce printed output. However, there are some features (expanding text and popup effects) where you can specify how you would like them to be treated in the printed output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_How_Online_Features_are_Converted_in_Printed_Output.htm">Specifying How Online Features are Converted in Printed Output</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Publishing:destinations;Output:publishing;Destinations:publishing output" /><span class="SetOffFirstLevel">Publish Output </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>After you build a target, you can publish the output to any destinations that you have created. See <MadCap:xref href="../../../Output/About_Building_Output.htm">About Building and Publishing Output</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Publishing:targets;Targets:publishing" /><span class="SetOffFirstLevel">Publishing Destinations (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>A publishing destination is used to tell <MadCap:variable name="Other.Product" /> where to send a copy of your output files. After you create a publishing destination, you need to associate it with a target that you plan to build. You can associate the same publishing destination with as many targets as you want. See <MadCap:xref href="../../../Output/Associating_Publishing_Destinations_with_Targets.htm">Associating Publishing Destinations with Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,General.OnlineLive"><span class="SetOffFirstLevel">Pulse (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Pulse/PulseEnableSummary.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Pulse/Install/Integrating_Flare_and_Pulse.htm">Integrating Flare and Pulse</MadCap:xref> and <MadCap:xref href="../../../Pulse/About_Pulse.htm">About MadCap Pulse</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareTargetsGuide"> See <MadCap:xref href="../../../Pulse/Install/Integrating_Flare_and_Pulse.htm">Integrating Flare and Pulse</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Redacted text;Text:redacted" />Redacted Text (Set) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Redacted_Text/SetRedactedTextTargetSummary.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Targets/More_About_Targets/Setting_Redacted_Text_on_Targets.htm">Setting Redacted Text on Targets</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="DITA:relationship tables;Relationship tables;Tables:relationship" />Relationship Tables (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../RelationshipTables/AssociateRelationshipTables.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Nav_Links/Relationship_Links/Associating_Relationship_Tables_with_Targets.htm">Associating Relationship Tables with Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Search;Search:optimization" />Search—Abstract Character Limit </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Search/AbstractCharacterLimit.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Setting_Search_Abstract_Character_Limit.htm">Setting the Search Abstract Character Limit</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding><![CDATA[  ]]></li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Search;Search:optimization" />Search—Enable or Disable Importance </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Search/ImportanceAdjust.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Setting_Search_Result_Importance.htm">Setting Search Result Importance</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding><![CDATA[  ]]></li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Search:search filters;Targets:search filter sets" /><span class="SetOffFirstLevel">Search—Filter Set (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>A filter can be included in the search feature to let users narrow their search based on "concepts" that you have inserted into topics. Concepts are simply markers that you insert into topics that have some kind of relationship with each other. After you add a search filter set, you need to associate it with the target that you want to build. See <MadCap:xref href="../../../Search/Search_Filter_Sets/Associating_a_Search_Filter_Set_with_a_Target.htm">Associating a Search Filter Set with a Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Search:glossaries;Search:optimization;Glossaries:search" />Search—Include or Exclude Glossary Terms </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>For HTML5 output, search results display glossary terms if they are used as the search text. This option to display glossary terms in search results is enabled by default. However, it can be turned off in the HTML5 Target Editor. See <MadCap:xref href="../../../Targets/More_About_Targets/Including_Glossary_Terms_in_Search_Result.htm">Including Glossary Terms in Search Results</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding><![CDATA[  ]]></li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Search:partial-word" />Search—Partial Word (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>For some online outputs, you can provide partial-word searching. This lets users type part of a word, press Enter, and see search results matching those characters.  See <MadCap:xref href="../../../Search/Configuring_the_Search_Database/Enabling_Partial_Word_Search.htm">Enabling Partial-word Search</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Search;Search:optimization" />Search—Results Per Page </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Search/SearchResultsPerPage.flsnp" /> See <MadCap:xref href="../../../Targets/More_About_Targets/Setting_the_Number_of_Search_Results_Per_Page.htm">Setting the Number of Search Results Per Page</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding><![CDATA[  ]]></li>
+                            <li MadCap:conditions="FlareGuides.FlareTargetsGuide,Products.FlareOnlineOnly"><span class="SetOffFirstLevel"><MadCap:keyword term="Search;Search:optimization;Sitemap" />Sitemap/Search Engine Optimization </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="GenerateSitemap.flsnp" />
+                                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide"> See <MadCap:xref href="../../../Targets/More_About_Targets/Generating_Sitemaps_for_Search_Engine_Optimization.htm" target="" title="" alt="">Generating Sitemaps for Search Engine Optimization SEO</MadCap:xref>.</MadCap:conditionalText>
+                                    </MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Targets:skins;Skins:targets" /><span class="SetOffFirstLevel">Skin (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>A skin is a file that contains information about the appearance of the output window. After you add a skin to your project and edit the settings, you can associate it with a target. When you build the target, the output will be displayed in the skin. You can also tell Flare not to use any skin at all. See <MadCap:xref href="../../../Skins/Associating_Skins_with_Targets.htm">Associating Skins with Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Targets:skin components;Skins:targets;Skins:components" /><span class="SetOffFirstLevel">Skin Components (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>In addition to or instead of full skins, you can use smaller skin components for features such as search, menus, and toolbars. If you add multiple skin components of the same type to your project, you can associate one with a target. See <MadCap:xref href="../../../Skins/Associating_Skin_Components_with_Targets.htm">Associating Skin Components with Targets</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="HTML5:responsive web design;Responsive web design" />Skin—Responsive Output (Set) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>For HTML5 skins, you can override the responsive output settings from the Skin Editor for Tripane skins. Top Navigation skins automatically have responsive output enabled, so you can use the fields in the Target Editor to control the widths for the different mediums. In addition, you can choose to use device width media queries, which means the output will be responsive based on the actual device rather than merely on the width of the screen. See <MadCap:xref href="../../../Responsive_Web_Design/About_Responsive_Web_Design.htm">About Responsive Web Design</MadCap:xref> and <MadCap:xref href="../../../Responsive_Web_Design/Responsive_Skins.htm">Responsive Skins</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="Skins:generating;Skins:context-sensitive Help;Context-sensitive Help:skins" />Skins (Generate All) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>An option on the Advanced tab of the Target Editor controls whether every skin in the project or just the selected skin in the target (which is set on the Skin tab for HTML5 targets and the General tab for other targets) will be generated for the output. This option is enabled by default. One reason to keep this option enabled is if you need the ability to make context-sensitive Help (CSH) calls to different skins. In this case, each of those skins must be generated so that they are available in the output for the CSH calls. If you are not using multiple skins for CSH calls, you might want to disable this option. If you disable it, the size of the entire output will be minimized because unnecessary skins will be excluded. Another reason to enable this option is to use runtime skins for HTML5 outputs, where end users are able to choose the skin to display the output. See <MadCap:xref href="../../../Targets/More_About_Targets/Setting_All_Skins_to_be_Generated.htm">Setting All Skins to be Generated</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:get latest version;Projects:source control" />Source Control (Get Files Automatically) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you have bound your project to a source control program, you can use a setting in the Target Editor to automatically get the latest version of all files prior to generating the target. <MadCap:snippetText src="../SourceControl/GetFilesAutomatically1.flsnp" /><MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Source_Control/Linked_Topics/Getting_the_Latest_Version.htm">Updating or Getting the Latest Version of Source Control Files</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide">
+                                <MadCap:keyword term="Topics:startup;Startup topic" /><span class="SetOffFirstLevel">Startup Topic (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can specify which topic in your project is the first one that users see when they open the online output. If you have written a welcome or introduction topic, you will likely want this to be the "startup" topic in your output. See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_the_Startup_Topic.htm">Specifying the Startup Topic in a Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Master stylesheets;Styles:master stylesheets;Projects:master style sheets;Targets:master style sheets" /><span class="SetOffFirstLevel">Stylesheet—Master (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Styles/MasterStyleSheets1.flsnp" /> In the Target Editor, you can associate a master stylesheet with a target. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Styles/Associating_Master_Stylesheets_with_All_Files.htm">Associating Master Stylesheets with All Files</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Mediums:targets;Styles:mediums;Targets:mediums" /><span class="SetOffFirstLevel">Stylesheet—Medium (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../Styles/MediumTypeSummary.flsnp" /> You can use the Target Editor to associate a medium with a particular target.  <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../../Styles/Mediums/Associating_a_Medium_with_a_Target.htm">Associating a Medium with a Target</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Tables of contents:master;Master table of contents" /><span class="SetOffFirstLevel">TOC—Master (Associate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="../TOCs/TOCAssociateMasterProjectTargetSummary.flsnp" /> See <MadCap:xref href="../../../TOCs/Associating_a_Master_Table_of_Contents_with_a_Target.htm">Associating a Master Table of Contents with a Target</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel">TOC—Print-based Output (Auto-generate) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can select an option to let Flare auto-generate a TOC for you in print-based output. See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Auto_Generating_TOCs_for_Print.htm">Auto-generating TOCs for Print</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">TOC—Print-based Output (Heading Levels, Unlinked Books, Remove Images) </span>
+                                    <MadCap:expanding>
+                                        <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                        <MadCap:expandingBody> There are a few settings in the Target Editor that let you control how a generated TOC is produced in print-based output.</MadCap:expandingBody>
+                                    </MadCap:expanding>
+                                </p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">settings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul class="SecondLevel" type="1">
+                                            <li><span class="SetOffSecondLevel"><MadCap:keyword term="Print-based output:tables of contents;Tables of contents:printed output;Styles:TOC headings;Tables of contents:styles;Heading levels;Headings;Tables of contents:heading levels;Tables of contents:depth" MadCap:conditions="Products.Flare" />Heading Levels </span>
+                                                <MadCap:expanding>
+                                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                                    <MadCap:expandingBody>You can select an option to base the heading levels of your generated TOC on the structure of the outline TOC. When you generate print-based output (<MadCap:snippetText src="../Output/AllPrintOutputTypes.flsnp" />) with a topic containing a TOC proxy, a TOC is generated and included in the output. Unless you specify otherwise, the levels of the headings in the generated TOC are based on the h1 through h6 styles in your project (or other styles where you've entered a value for the mc-heading-level property). However, this option allows you to use an alternative method, basing the generated TOC on the exact structure that you create in the "outline TOC." See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.</MadCap:expandingBody>
+                                                </MadCap:expanding>
+                                            </li>
+                                            <li><span class="SetOffSecondLevel">Unlinked Books </span>
+                                                <MadCap:expanding>
+                                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                                    <MadCap:expandingBody>You can select an option to create headings in a generated TOC for books that are not linked in your outline TOC. See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Creating_Headings_for_Unlinked_Books_in_a_Generated_TOC.htm">Creating Headings for Unlinked Books in a Generated TOC</MadCap:xref>.</MadCap:expandingBody>
+                                                </MadCap:expanding><![CDATA[  ]]></li>
+                                            <li>
+                                                <MadCap:keyword term="Print-based output:tables of contents;Tables of contents:printed output;Images:tables of contents" MadCap:conditions="Products.Flare" /><span class="SetOffSecondLevel"><MadCap:keyword term="Tables of contents;Images:tables of contents" />Remove Images </span>
+                                                <MadCap:expanding>
+                                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                                    <MadCap:expandingBody>You can select an option to remove images from a generated TOC if you have inserted them into the headings in your topics. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Removing_Images_from_Headings_in_a_Generated_TOC.htm">Removing Images from Headings in a Generated TOC</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                                </MadCap:expanding>
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Reviews:Track changes;Track changes" /><span class="SetOffFirstLevel">Tracked Changes (Preserve) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="PreserveTrackedChanges.flsnp" />
+                                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../../Reviews_and_Contributions/Track_Changes/Preserving_Tracked_Changes.htm">Preserving Tracked Changes</MadCap:xref>.</MadCap:conditionalText>
+                                    </MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Variables:definitions" /><span class="SetOffFirstLevel">Variables (Override) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>The variables that you create and define in the Variable Set Editor are available to your entire project. However, if you want the definition for a variable to be different in a particular target, you can override the project-level definition for that target in the Target Editor. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">See <MadCap:xref href="../../../Variables/More_About_Variables/Overriding_Variable_Definitions.htm">Overriding Variable Definitions in Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />&#160;</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Viewing:output;Output:viewing" /><span class="SetOffFirstLevel">View Output </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>After you generate a target, you can view the output for it. See <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Viewing_Output.htm">Viewing Output</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="WebHelp AIR" />WebHelp AIR—Options (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are generating WebHelp AIR output, you can specify several options for it. See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_WebHelp_AIR_Options.htm">Specifying WebHelp AIR Options</MadCap:xref>.</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareTargetsGuide"><span class="SetOffFirstLevel"><MadCap:keyword term="WebHelp Plus:enabling;Output:WebHelp Plus" />WebHelp Plus  (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1">If you are generating <MadCap:variable name="Outputs.WebHelp Plus" /> output and publishing the files to a server running Microsoft Internet Information Services and Microsoft Indexing Service, you </MadCap:conditionalText>
+                                        <MadCap:conditionalText MadCap:conditions="Snippets.Snippet5">You </MadCap:conditionalText>can specify in the Target Editor the catalog that you are using for the output. In most cases, this will be <span class="Emphasis">Web</span>, which is the default value. However, if you or someone in your company (e.g., network administrator) creates a custom catalog, you need to enter that name in the field. <MadCap:conditionalText MadCap:conditions="General.Print"> See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm#SetUpWHPTarget">Setting Up a WebHelp Plus Target</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm" target="" title="" alt="">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Reviews:enable;Reviews:output;Output:reviews;Microsoft Word:review mode;Review mode:Microsoft Word" />Word Output—Review Mode (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="EnableReviewModeTargetSummary.flsnp" />
+                                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../../Targets/More_About_Targets/Enabling_Review_Mode_in_Word_Output.htm">Enabling Review Mode in Word Output</MadCap:xref>.</MadCap:conditionalText>
+                                    </MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Page layouts:mirroring pages;Margins:page layouts;Page layouts:margins;Microsoft Word:mirror margins;Margins:Microsoft Word" />Word Output—Mirror Margins (Enable) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>
+                                        <MadCap:snippetText src="EnableMirrorMarginsWordSummary.flsnp" />
+                                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../../Targets/More_About_Targets/Enabling_Mirror_Margins_in_Word_Output.htm" class="seepara">Enabling Mirror Margins in Word Output</MadCap:xref>.</MadCap:conditionalText>
+                                    </MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Chapters:breaks;Print-based output:chapter breaks;Print-based output:multiple documents;Microsoft Word:multiple documents" MadCap:conditions="Products.Flare" />Word Output—Multiple Documents (Create) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are generating Word output, you can split the generated output into multiple documents, rather than using the default, which results in only one document. To create multiple Word documents, you must also specify chapter breaks at the appropriate places in the TOC (not the TOC that displays in the Word output, but in the outline TOC used to determine the printed manual content and structure). This can be done on the Printed Output tab of the TOC Properties dialog. By specifying chapter breaks, you are letting <MadCap:variable name="Other.Product" /> know where you want to split the output into new Word documents.</MadCap:expandingBody>
+                                </MadCap:expanding><![CDATA[  ]]></li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Chapters:breaks;Print-based output:chapter breaks;Print-based output:multiple documents;Microsoft XPS:multiple documents" MadCap:conditions="Products.Flare" />XPS Output—Multiple Documents (Create) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>If you are generating XPS output directly (rather than going through Microsoft Word to produce it), you can split the generated output into multiple documents, rather than using the default, which results in only one document. To create multiple XPS documents, you must also specify chapter breaks at the appropriate places in the TOC (not the TOC that displays in the XPS output, but in the "outline TOC" used to determine the printed manual content and structure). This can be done on the Printed Output tab of the TOC Properties dialog. By specifying chapter breaks, you are letting <MadCap:variable name="Other.Product" /> know where you want to split the output into new XPS documents. </MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li>
+                                <MadCap:keyword term="Microsoft XPS;Output:XPS" /><span class="SetOffFirstLevel">XPS Output (Specify) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>Microsoft's XML Paper Specification (XPS) is a document format with a markup language that is a subset of <MadCap:keyword term="XAML file" />XAML for Windows Presentation Foundation. XPS is an alternative to Adobe's Portable Document Format (PDF). By installing a free add-in download from Microsoft, you can generate output via Microsoft Word to the XPS format. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/XPS_Output/Specifying_XPS_Output.htm">Specifying XPS Output Via Microsoft Word</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Margins:collapsing" />XPS Output—Top Margins (Collapse) </span>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                                    <MadCap:expandingBody>You can collapse the top margin for all elements occurring at the top of a new page or column. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Collapsing_Top_Margins.htm" target="" title="" alt="">Collapsing Top Margins</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

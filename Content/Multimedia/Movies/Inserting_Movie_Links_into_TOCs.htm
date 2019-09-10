@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="n;b;s;reimport;(.css;Reimport;flsfs;SearchFilterSet;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;VariableName;N;M;m;h;hh" MadCap:conditionTagExpression="include[Snippets.Snippet1 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5] exclude[Snippets.Snippet2 or Snippets.Snippet20 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8] " MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="1522" MadCap:lastWidth="1092" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareMovies.flmsp');">
+    <head><title></title>
+        <meta name="description" content="You can insert links to MadCap&#160;Mimic movies and other multimedia formats into a MadCap Flare Table of Contents." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Movies" />
+            <MadCap:keyword term="Movies:inserting;Tables of contents:movie links;MadCap Mimic:movie links" />
+            <MadCap:concept term="FilterMovies" />
+            <MadCap:concept term="FilterTOCs" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">Inserting </MadCap:conditionalText>Mimic Movie Links in TOCs</h1>
+        <p>If you have used Mimic to produce a movie, you can use this feature to create a link in a table of contents entry to the movie's output.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareMoviesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a movie link into a toc</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the TOC where you want to insert the movie link.</li>
+                    <li>
+                        <p>In the TOC Editor, double-click the TOC entry that you want to link to the movie. The Properties dialog opens.</p>
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../TOCs/Creating_a_TOC_Manually.htm">Creating a TOC Manually</MadCap:xref>.</p>
+                    </li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>Select <span class="Emphasis">Mimic Movie or Movie Collection as</span>. The Open dialog opens.</li>
+                    <li>Find and select an individual Mimic movie or a movie collection to which you want to link the entry. You can select any of the following types of files.<ul class="FirstLevel"><li><MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MIMOVItem.flsnp" /></li><li><MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MIPRJItem.flsnp" /></li><li><MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMOVIEItem.flsnp" /></li><li><MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMVItem.flsnp" /></li><li><MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMOVIESYSItem.flsnp" /></li></ul></li>
+                    <li> Click <span class="Emphasis">Open</span>.</li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareMoviesGuide" />
+                    <li>
+                        <p>(Optional) You can click in the drop-down field to the right and specify an output format.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>If you have Mimic 8 or Newer</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">(default) </span>If you build a <MadCap:variable name="Outputs.HTMLHelp" />, <MadCap:variable name="Outputs.WebHelp" />, <MadCap:variable name="Outputs.HTML5" />, or <MadCap:variable name="Outputs.WebHelp Plus" /> target, the movie uses the <MadCap:variable name="Outputs.HTML5" /> movie format. </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you generate a DotNet or WebHelp AIR target when using a Mimic 8 movie, the target will not generate. This is because the associated movie formats are not supported by Mimic 8.</p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="HTML5:movie format;Movies:HTML5" />HTML5 </span>The movie is generated in the HTML5 movie format.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>If you have Mimic 7 or older</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/MoviesAndMimic/MovieOutputFormatOptions.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Click <span class="Emphasis">OK</span> in the Properties dialog. The movie link is added to the TOC entry. </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteDoNotNeedToAddMimicFiles.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteMultimediaFileTypesSupported.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Movies" />
+        </p>
+    </body>
+</html>

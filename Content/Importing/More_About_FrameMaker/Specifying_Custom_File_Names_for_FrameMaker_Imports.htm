@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1219" MadCap:lastWidth="1121" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:re-importing;Adobe FrameMaker:custom import file names" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:concept term="FilterTopics" />Specifying Custom File Names for FrameMaker Imports</h1>
+        <p>If you import <MadCap:variable name="Outputs.Frame" /> documents, you can split those documents into multiple topics based on the styles in them. For example, you might decide to create a new topic at each "Heading 1" style in the FrameMaker document. You can also control the file names given to the new topics that are created from the imported Imported documents. To do this, you need to insert a custom "Filename" marker at the appropriate headings in the FrameMaker documents where new topics will be created.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify custom file names for framemaker imports</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are steps for creating these markers in <MadCap:variable name="Outputs.Frame"></MadCap:variable>. For more information, please refer to the documentation provided with <MadCap:variable name="Outputs.Frame"></MadCap:variable>. The following steps may vary in different versions of FrameMaker.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the FrameMaker document.</li>
+                    <li>In FrameMaker, create the filename marker type that is required for this feature. This is a one-time step in the document. Afterwards, you can simply select the newly created marker type when applying it to content. To create the filename marker type, do the following:<ol type="1" class="LowerAlpha"><li>In FrameMaker, select <span class="Emphasis">Special&gt;Marker</span>. The Marker dialog opens.</li><li>From the <span class="Emphasis">Marker Type</span> field, click the down arrow and select <span class="Emphasis">Edit</span>. The Edit Custom Marker Type dialog opens.</li><li>In the field, replace the existing text and type <span class="TypedEntry">Filename</span>.</li><li>Click <span class="Emphasis">Add</span>.</li><li>Click <span class="Emphasis">Done</span>.</li></ol></li>
+                    <li>In the FrameMaker document, place your cursor at the heading where you want to create a new file during the import.</li>
+                    <li>If it is not already displayed, open the Marker dialog (<span class="Emphasis">Special&gt;Marker</span>).</li>
+                    <li>If the filename marker type is not already displayed in the dialog, click the <span class="Emphasis">Marker Type</span> down arrow and select <span class="Emphasis">Filename</span>.</li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareTransitionFromFMGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Marker Text</span> field, enter the name you want to assign to the file (without the file extension).</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/FrameMaker/FilenameMarkerExample.flsnp" />
+                    </li>
+                    <li>Click <span class="Emphasis">New Marker</span>.</li>
+                    <li>Save the FrameMaker document.</li>
+                    <li>
+                        <p>In <MadCap:variable name="Other.Product" />, import the FrameMaker document. When you arrive at the "New Topic Styles" page in the Import FrameMaker Wizard or the "New Topic Styles" tab in the FrameMaker Import Editor,  select the style(s) where you inserted filename markers in the FrameMaker document.</p>
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteFmSupports7AndNewer.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

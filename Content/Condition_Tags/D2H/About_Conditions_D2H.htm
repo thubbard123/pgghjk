@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="2096" MadCap:lastWidth="1133" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HDocumentsTemplatesContent.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>
+            <MadCap:keyword term="Conditions" />Conditions</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/ConditionalText/ConditionTagSummary.flsnp" /> </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">What You Can Condition</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>What You Can Condition</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>With Doc-To-Help, you can condition the following:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Text and Images </span>See <MadCap:xref href="Marking Text as Conditional.htm">Marking Text as Conditional</MadCap:xref>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Text within variables can also be conditioned. See <MadCap:xref href="../../Variables/D2H/Inserting a Variable.htm">Inserting a Variable</MadCap:xref>.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Topics </span>See <MadCap:xref href="Setting Topic Conditions.htm">Setting Topic Conditions</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Documents </span>See <MadCap:xref href="../../Source_Documents/Setting Document Properties.htm">Setting Document Properties</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">Types of Conditions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Types of Conditions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can use three types of conditions: platforms, targets, and attributes.</p>
+                <p>Platforms are default output types, and targets will vary by project, but attributes are created by you to meet your specific needs. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Platforms</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can base conditions on an entire platform, or output type. This includes the following:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Eclipse Help </span>Conditioned text, topic, or document will be included in all Eclipse targets.</li>
+                            <li><span class="SetOffFirstLevel">EPUB </span>Conditioned text, topic, or document will be included in all EPUB targets.</li>
+                            <li><span class="SetOffFirstLevel">HTML (Any) </span>Conditioned text, topic, or document will be included in all HTML targets (includes JavaHelp).</li>
+                            <li><span class="SetOffFirstLevel">HTML Help 1.x </span>Conditioned text, topic, or document will be included in compiled HTML Help targets.</li>
+                            <li><span class="SetOffFirstLevel">JavaHelp </span>Conditioned text, topic, or document will be included in all JavaHelp targets.</li>
+                            <li><span class="SetOffFirstLevel">Microsoft Help 2.0 </span>Conditioned text, topic, or document will be included in MS Help 2.0 targets.</li>
+                            <li><span class="SetOffFirstLevel">Microsoft Help Viewer </span>Conditioned text, topic, or document will be included in Microsoft Help Viewer targets.</li>
+                            <li><span class="SetOffFirstLevel">NetHelp </span>Conditioned text, topic, or document will be included in NetHelp (browser-based uncompiled HTML Help) targets.</li>
+                            <li><span class="SetOffFirstLevel">Online Help </span>Conditioned text, topic, or document will be included in all online targets (i.e., all targets except Printed Manual).</li>
+                            <li><span class="SetOffFirstLevel">Printed Manual </span>Conditioned text, topic, or document will be included in Printed Manual targets (Word and PDF).</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Targets</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can base conditions on a particular topic. This includes the following new project defaults. You can add additional targets and delete those you don’t need.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; Eclipse Help </span>Conditioned text, topic, or document will be included in this Eclipse Help target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; EPUB </span>Conditioned text, topic, or document will be included in this EPUB target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; HTML Help 1.x </span>Conditioned text, topic, or document will be included in this compiled HTML Help target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; JavaHelp </span>Conditioned text, topic, or document will be included in this JavaHelp target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; Microsoft Help 2.0 </span>Conditioned text, topic, or document will be included in this MS Help 2.0 target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; Microsoft Help Viewer </span>Conditioned text, topic, or document will be included in this Microsoft Help Viewer target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; NetHelp </span>Conditioned text, topic, or document will be included in this NetHelp (browser-based uncompiled HTML Help) target.</li>
+                            <li><span class="SetOffFirstLevel">&lt;Your Project Name&gt; Manual </span>Conditioned text, topic, or document will be included in this Printed Manual target (Word and PDF).</li>
+                        </ul>
+                        <p class="MsoNormalIndent">Any custom targets you create will also be included.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Output/D2H/Creating Targets.htm">Creating and Deleting Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Targets Guide</span>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Attributes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul>
+                            <li>Two default attributes are included with Doc-To-Help (Internal and Release), but you create your own. See <MadCap:xref href="Creating and Using Attributes.htm">Creating and Using Attributes</MadCap:xref>.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Examples</p>
+                    <p>If you’d like specific images to appear only in your printed output, you can mark those graphics with the Platform condition named "Printed Manual."</p>
+                    <p>Let's say you’d like links to related topics to be included only in your NetHelp output (and excluded from your Manual targets). In that case, mark that text with the target condition named "NetHelp."</p>
+                    <p>Reminder notes to you and your team can be included in your project for reference, but can be marked with the "Internal" attribute so that they are not included with the targets delivered to customers.</p>
+                    <p>Suppose you’d like to output two different manuals: one for "Pharmacists" and one for "Nurses." The nurses do not need certain administrative information. Therefore, create an attribute condition for each audience. Mark the administrative information with the "Pharmacist" attribute.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">Including Conditions in Your Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Including Conditions in Your Output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you have applied platform or target conditions to your text, topics, and/or documents, you don’t need to do anything else but build your target(s). The appropriate information will automatically be included in or excluded from your output.</p>
+                <p>If you have created and applied custom attributes in your project, you need to choose the attributes for each target in the Help Targets dialog. See <MadCap:xref href="Creating and Using Attributes.htm">Creating and Using Attributes</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

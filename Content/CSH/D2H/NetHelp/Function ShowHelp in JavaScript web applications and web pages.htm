@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="949" MadCap:lastWidth="1357" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HCSH.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Context-sensitive Help;NetHelp" />Function ShowHelp in JavaScript (Web Applications and Web Pages)</h1>
+        <p>Following is information for Function ShowHelp in JavaScript.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Syntax</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Code">function nethelp.showHelp(options)</p>
+                <p>The function accepts only one parameter "options" which is an object with the following properties:</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Parameters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Query (String or Object) </span>Pass a string with a relative URL to open a topic by URL, or pass an object with two properties to perform a query by context ID, keyword, or group, or perform a search:</p>
+                    </li>
+                    <ul class="SecondLevel">
+                        <li>
+                            <p><span class="SetOffSecondLevel">Key (String) </span>Can be one of the following values: keyword, group, id, or search.</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffSecondLevel">Value (String) </span>Depends on the key parameter. If key is id, then value should contain a context ID; if key is keyword, then value should contain a keyword; and so on.</p>
+                        </li>
+                    </ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Tab (String) </span>This parameter specifies the tab (by index or name) that will be shown when NetHelp is loaded. If any other value is specified the parameter will be ignored. Possible values: for Contents 0 or toc; for Index 1 or index; for search 2 or search. The default value is 0.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">URL (String) </span>URL of the main web page of the Help or a direct topic URL. For example, the URL of a locally deployed NetHelp target can be a file path, although it still needs to be encoded as a URL with the prefix "file:///," such as file:///C:/Program Files (x86)/MadCap Software/DocToHelp/Samples/MyProject/NetHelp/index.html; or, for a server-deployed NetHelp target it can be http://www.mycompany.com/myproject/index.html. This parameter is used to identify the Help system containing the topic. It is necessary because you may use multiple Help systems in the same application or even on the same web page.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Window (String) </span>A frame or a browser window to display the topic. Using this parameter you can show the topic in any frame or in a separate browser window. This parameter has the same possible values as the TARGET attribute of the A (anchor) tag in HTML. If you want to display Help in a certain frame or in a separate browser window, set this parameter to that frame or window name. You can also use the standard names supported by the TARGET attribute of the A tag: _self, _blank, _parent, etc.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">topicOnly (Bool) </span>If true, the topic will display without the Contents, Index, and Search, and without header panel and toolbars. The user will still be able to navigate to other topics if this topic contains links to other topics, but the Contents, Index, and Search will be hidden. If false is passed, the complete Help system with Contents, Index, and Search, as well as header panel and toolbars, will display. The user will be able to navigate through the links in the topic and through the Contents, Index, and Search. The default value is false.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How To Enable the Function</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Include the D2H_ctxt.js file with your web pages, and add the following tag to the web pages where you want to use context-sensitive Help:</p>
+                <p class="Code">&lt;script language="JavaScript" src="D2H_ctxt.js"&gt;</p>
+                <p class="Code">&lt;/script&gt;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p class="Code">&lt;a href='JavaScript: nethelp.showHelp({ url: "../../../Samples/MyProject/NetHelp/index.html", query: { id: "91" } })'&gt;Show topic with Context ID = 91&lt;/a&gt;</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

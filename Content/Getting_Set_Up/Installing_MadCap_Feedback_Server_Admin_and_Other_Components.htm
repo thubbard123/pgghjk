@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="16558" MadCap:lastWidth="1366" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[Snippets.Snippet2] ">
+    <head><title></title>
+        <meta name="description" content="Installation requirements and step-by-step instructions about installing MadCap Feedback Server." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="GettingSetUp" />
+            <MadCap:keyword term="MadCap Feedback:MadCap Feedback;MadCap Feedback;Server:MadCap Feedback" MadCap:conditions="Products.Flare" />Installing MadCap Feedback Server</h1>
+        <p>If you purchase MadCap Feedback Server (as opposed to the MadCap Feedback Hosting Service), you need to install the Feedback Server Admin on the Microsoft Windows machine that will be used to host your Feedback data. Provide the individual who is responsible for the installation with these instructions.</p>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Requirements</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>requirements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Windows operating system (the following are supported):<ul class="SecondLevel"><li><MadCap:keyword term="Microsoft Windows Server 2003" />Microsoft Windows Server 2003 (32 and 64 bit)</li><li><MadCap:keyword term="Microsoft Windows Server 2008" />Microsoft Windows Server 2008 (32 and 64 bit)</li><li><MadCap:keyword term="Microsoft Windows 7" />Microsoft Windows 7 (32 and 64 bit)</li><li><MadCap:keyword term="Microsoft Windows XP" />Microsoft Windows XP</li><li><MadCap:keyword term="Microsoft Windows Vista" />Microsoft Windows Vista </li></ul><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order for the email functionality to work properly, you will also need to install a third-party SMTP server if using Windows 7 and Vista.</p></li>
+                    <li>
+                        <MadCap:keyword term="Microsoft .NET" />Microsoft .NET Framework (latest version)</li>
+                    <li>SQL Server (the following are supported):<ul class="SecondLevel"><li><MadCap:keyword term="SQL:Server 2005 Express" />SQL Server 2005 Express (free download from <a href="http://msdn.microsoft.com/" target="_blank">msdn.microsoft.com</a>)</li><li><MadCap:keyword term="SQL:Server Standard" />SQL Server 2005 Standard</li><li><MadCap:keyword term="SQL:Server 2008 Express" />SQL Server 2008 Express (free download from <a href="http://msdn.microsoft.com/" target="_blank">msdn.microsoft.com</a>)</li><li><MadCap:keyword term="SQL:Server 2008 Standard" />SQL Server 2008 Standard</li></ul></li>
+                    <li>
+                        <MadCap:keyword term="Microsoft Internet Information Services." />Microsoft Internet Information Services (IIS)</li>
+                    <li>
+                        <MadCap:keyword term="ASP.NET" />ASP.NET (latest version)</li>
+                    <li>MadCap Feedback Server Admin</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Keys</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>keys</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you purchase MadCap Feedback Server, you are issued two types of keys.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Feedback Server Key</span> You will be issued one key. Use this key to activate MadCap Feedback Server Admin on the machine hosting the Feedback data.</li>
+                    <li><span class="SetOffFirstLevel">Feedback License Keys</span> You will be issued a set number of keys. Authors use one of these keys for each of their Flare targets that they want to track.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Microsoft Windows Server 2003" />Steps—Microsoft Windows Server 2003</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Microsoft Windows Server 2003" />steps—microsoft windows server 2003</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer2.flsnp" />
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer3.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer4.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer5.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer6.flsnp" />
+                        <p>You can install IIS via the Server Manager dialog or via the Control Panel.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonumPosition="none" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you log on to the IIS machine, the user name must have "admin rights." In addition, you must have "sysadmin permission" on the SQL Server itself. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>installing iis via the server manager dialog</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>From the Start menu open the Server Manager dialog.</li>
+                                    <li>Click <span class="Emphasis">Add or remove a role</span>.</li>
+                                    <li>Click <span class="Emphasis">Next</span>.</li>
+                                    <li>Select <span class="Emphasis">Application server (IIS, ASP.NET)</span> and click <span class="Emphasis">Next</span>.</li>
+                                    <li>Click <span class="Emphasis">Enable ASP.NET</span> and click <span class="Emphasis">Next</span>.</li>
+                                    <li>Click <span class="Emphasis">Next</span>.</li>
+                                    <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>installing iis via the control panel</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                                    <li>Double-click <span class="Emphasis">Add or Remove Programs</span>.</li>
+                                    <li>Click <span class="Emphasis">Add/Remove Windows Components</span>.</li>
+                                    <li>In the list of components select <span class="Emphasis">Application Server</span> and then click <span class="Emphasis">Details</span>.</li>
+                                    <li>Click the check box next to <span class="Emphasis">Internet Information Services (IIS)</span> to add a check mark.</li>
+                                    <li>In the Windows Component Wizard, "Application Server" should now be selected. Click <span class="Emphasis">Next</span>.</li>
+                                    <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer7.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer8.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you did not perform one of the above steps, a dialog shows what is not yet installed (by displaying it in red text). If necessary, you can install ASP.NET from the dialog by clicking the button to the right of the red text. </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer9.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are connecting to an SQL Server on another machine, you must make sure that the machine running IIS and the machine running SQL Server are on the same domain. To verify this, you can right-click <span class="Emphasis">My Computer</span>, then select <span class="Emphasis">Properties</span>, then select the <span class="Emphasis">Computer Name</span> tab.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSQLNotAppearing.flsnp" />
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience connectivity issues, you can try entering the IP address for the SQL Server directly instead of selecting it from the drop-down list. When you do this, you need to replace only the computer name portion with the IP address (i.e., the part before the backslash).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer10.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Database Location field is unavailable if you are using a remote SQL Server. The default data directory of the SQL Server will be used instead.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer11.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFeedbackWebsiteAdminPreference.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer12.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/CommonUserExplanation.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer13.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>If you complete these fields, it is recommended that you use a password that does not expire. However, if necessary, you can later change an expired password via the Control Panel.  Following are steps for doing this.</p>
+                                <ol class="LowerRoman">
+                                    <li>Open the Control Panel.</li>
+                                    <li>Double-click <span class="Emphasis">Administrative Tools</span>.</li>
+                                    <li>Double-click <span class="Emphasis">Internet Information Services</span>.</li>
+                                    <li>In the Internet Information Services dialog, expand the <span class="Emphasis">Web Sites</span> folder.</li>
+                                    <li>Expand the website folder corresponding to the one specified in the Feedback Admin.</li>
+                                    <li>Right-click on <span class="Emphasis">Service.FeedbackExplorer</span> and select <span class="Emphasis">Properties</span>.</li>
+                                    <li>In the Properties dialog, select the <span class="Emphasis">Directory Security</span> tab.</li>
+                                    <li>Under <span class="Emphasis">Anonymous access and authentication control</span>, click the <span class="Emphasis">Edit</span> button.</li>
+                                    <li>In the Authentication Methods dialog, change your password.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer14.flsnp" />
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer15.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server is located on a different machine, this final step will (a) install two web services on the IIS machine and (b) install the Feedback Server Database on the SQL Server machine.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server and IIS are located on the same machine and you are using SQL Express, a Windows service will also be installed. The service handles the backing up of the database (configurable on the Maintenance tab of the Feedback Server Admin).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                        <p>
+                            <img src="../Resources/Images/feedback_server_setup_dialog_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer16.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Microsoft Windows Server 2008" />Steps—Microsoft Windows Server 2008</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Microsoft Windows Server 2008" />steps—microsoft windows server 2008</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer2.flsnp" />
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer3.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer4.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer5.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer6.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>From the Start menu open the Server Manager dialog.</li>
+                            <li>Click <span class="Emphasis">Add roles</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">Web Server (IIS)</span>.</li>
+                            <li>In the dialog that opens click <span class="Emphasis">Add Required Features</span>.</li>
+                            <li>In the Add Roles Wizard click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span> again.</li>
+                            <li>On the "Select Role Services" page of the wizard, expand <span class="Emphasis">Management Tools&gt;IIS 6 Management Compatibility</span> and click <span class="Emphasis">IIS 6 Metabase Compatibility</span>.</li>
+                            <li>On the Confirm Installation Selections page of the wizard, click <span class="Emphasis">Install</span>.</li>
+                            <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer7.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer8.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you did not perform one of the above steps, a dialog shows what is not yet installed (by displaying it in red text). If necessary, you can install ASP.NET from the dialog by clicking the button to the right of the red text.</p>
+                                            <p>
+                                                <img src="../Resources/Images/feedback_server_setup_2008_example7.png" class="MaxWidth90Percent" />
+                                            </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer9.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are connecting to an SQL Server on another machine, you must make sure that the machine running IIS and the machine running SQL Server are on the same domain. To verify this, you can right-click <span class="Emphasis">My Computer</span>, then select <span class="Emphasis">Properties</span>, then select the <span class="Emphasis">Computer Name</span> tab.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSQLNotAppearing.flsnp" />
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience connectivity issues, you can try entering the IP address for the SQL Server directly instead of selecting it from the drop-down list. When you do this, you need to replace only the computer name portion with the IP address (i.e., the part before the backslash).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer10.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Database Location field is unavailable if you are using a remote SQL Server. The default data directory of the SQL Server will be used instead.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer11.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFeedbackWebsiteAdminPreference.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer12.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/CommonUserExplanation.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer13.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>If you complete these fields, it is recommended that you use a password that does not expire. However, if necessary, you can later change an expired password via the Control Panel. Following are steps for doing this. </p>
+                                <ol class="LowerRoman">
+                                    <li>Open the Control Panel in an icon view, rather than Category view.</li>
+                                    <li>Select <span class="Emphasis">Administrative Tools</span>.</li>
+                                    <li>Open the Internet Information Services (IIS) Manager.</li>
+                                    <li>Expand the node with the computer name.</li>
+                                    <li>Expand the <span class="Emphasis">Sites</span> folder.</li>
+                                    <li>Expand the website folder corresponding to the one specified in the Feedback Admin.</li>
+                                    <li>Click <span class="Emphasis">Service.FeedbackExplorer</span>.</li>
+                                    <li>To the right, double-click <span class="Emphasis">Authentication</span>.</li>
+                                    <li>Right-click <span class="Emphasis">Anonymous Authentication</span> and select <span class="Emphasis">Edit</span>.</li>
+                                    <li>In the Edit Anonymous Authentication Credentials dialog, click <span class="Emphasis">Set</span>.</li>
+                                    <li>In the Set Credentials dialog, change your password.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer14.flsnp" />
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer15.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server is located on a different machine, this final step will (a) install two web services on the IIS machine and (b) install the Feedback Server Database on the SQL Server machine.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server and IIS are located on the same machine and you are using SQL Express, a Windows service will also be installed. The service handles the backing up of the database (configurable on the Maintenance tab of the Feedback Server Admin).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                        <p>
+                            <img src="../Resources/Images/feedback_server_setup_dialog_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer16.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Microsoft Windows 7" />Steps—Microsoft Windows 7</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Microsoft Windows 7" />steps—microsoft windows 7</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer2.flsnp" />
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer3.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer4.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer5.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer6.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Select <span class="Emphasis">Programs and Features</span>.</li>
+                            <li>Click <span class="Emphasis">Turn Windows features on or off</span>.</li>
+                            <li>Select <span class="Emphasis">Internet Information Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Internet Information Services&gt;Web Management Tools&gt;IIS 6 Management Compatibility</span></li>
+                            <li>Click <span class="Emphasis">IIS 6 Metabase and II6 configuration compatibility</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> After IIS is configured and installed the dialog closes automatically.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer7.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer8.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you did not perform one of the above steps, a dialog shows what is not yet installed (by displaying it in red text). If necessary, you can install ASP.NET from the dialog by clicking the button to the right of the red text.</p>
+                                            <p>
+                                                <img src="../Resources/Images/feedback_server_setup_2008_example7.png" class="MaxWidth90Percent" />
+                                            </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer9.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are connecting to an SQL Server on another machine, you must make sure that the machine running IIS and the machine running SQL Server are on the same domain. To verify this, you can right-click <span class="Emphasis">My Computer</span>, then select <span class="Emphasis">Properties</span>, then select the <span class="Emphasis">Computer Name</span> tab.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSQLNotAppearing.flsnp" />
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience connectivity issues, you can try entering the IP address for the SQL Server directly instead of selecting it from the drop-down list. When you do this, you need to replace only the computer name portion with the IP address (i.e., the part before the backslash).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer10.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Database Location field is unavailable if you are using a remote SQL Server. The default data directory of the SQL Server will be used instead.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer11.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFeedbackWebsiteAdminPreference.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer12.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/CommonUserExplanation.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer13.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>If you complete these fields, it is recommended that you use a password that does not expire. However, if necessary, you can later change an expired password via the Control Panel. Following are steps for doing this. </p>
+                                <ol class="LowerRoman">
+                                    <li>Open the Control Panel in an icon view, rather than Category view.</li>
+                                    <li>Select <span class="Emphasis">Administrative Tools</span>.</li>
+                                    <li>Open the Internet Information Services (IIS) Manager.</li>
+                                    <li>Expand the node with the computer name.</li>
+                                    <li>Expand the <span class="Emphasis">Sites</span> folder.</li>
+                                    <li>Expand the website folder corresponding to the one specified in the Feedback Admin.</li>
+                                    <li>Click <span class="Emphasis">Service.FeedbackExplorer</span>.</li>
+                                    <li>To the right, double-click <span class="Emphasis">Authentication</span>.</li>
+                                    <li>Right-click <span class="Emphasis">Anonymous Authentication</span> and select <span class="Emphasis">Edit</span>.</li>
+                                    <li>In the Edit Anonymous Authentication Credentials dialog, click <span class="Emphasis">Set</span>.</li>
+                                    <li>In the Set Credentials dialog, change your password.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer14.flsnp" />
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer15.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server is located on a different machine, this final step will (a) install two web services on the IIS machine and (b) install the Feedback Server Database on the SQL Server machine.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server and IIS are located on the same machine and you are using SQL Express, a Windows service will also be installed. The service handles the backing up of the database (configurable on the Maintenance tab of the Feedback Server Admin).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                        <p>
+                            <img src="../Resources/Images/feedback_server_setup_dialog_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer16.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Microsoft Windows XP" />Steps—Microsoft Windows XP</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Microsoft Windows XP" />steps—microsoft windows xp</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer2.flsnp" />
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer3.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer4.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer5.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer6.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonumPosition="none" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you log on to the IIS machine, the user name must have "admin rights." In addition, you must have "sysadmin permission" on the SQL Server itself (by default, administrators will usually have the correct permissions on the SQL Server). </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <ol class="LowerAlpha">
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Double-click <span class="Emphasis">Add or Remove Programs</span>.</li>
+                            <li>Click <span class="Emphasis">Add/Remove Windows Components</span>.</li>
+                            <li>In the list of components select <span class="Emphasis">Application Server</span> and then click <span class="Emphasis">Details</span>.</li>
+                            <li>Click the check box next to <span class="Emphasis">Internet Information Services (IIS)</span> to add a check mark.</li>
+                            <li>In the Windows Component Wizard, "Application Server" should now be selected. Click <span class="Emphasis">Next</span>.</li>
+                            <li>After the installation is completed, click <span class="Emphasis">Finish</span>. </li>
+                        </ol>
+                    </li>
+                    <li class="PageBreakBefore">
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer7.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer8.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you did not perform one of the above steps, a dialog shows what is not yet installed (by displaying it in red text). If necessary, you can install ASP.NET from the dialog by clicking the button to the right of the red text. </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer9.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are connecting to an SQL Server on another machine, you must make sure that the machine running IIS and the machine running SQL Server are on the same domain. To verify this, you can right-click <span class="Emphasis">My Computer</span>, then select <span class="Emphasis">Properties</span>, then select the <span class="Emphasis">Computer Name</span> tab.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSQLNotAppearing.flsnp" />
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience connectivity issues, you can try entering the IP address for the SQL Server directly instead of selecting it from the drop-down list. When you do this, you need to replace only the computer name portion with the IP address (i.e., the part before the backslash).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer10.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Database Location field is unavailable if you are using a remote SQL Server. The default data directory of the SQL Server will be used instead.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer11.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFeedbackWebsiteAdminPreference.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer12.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/CommonUserExplanation.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer13.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>If you complete these fields, it is recommended that you use a password that does not expire. However, if necessary, you can later change an expired password via the Control Panel. Following are steps for doing this.</p>
+                                <ol class="LowerRoman">
+                                    <li>Open the Control Panel.</li>
+                                    <li>Double-click <span class="Emphasis">Administrative Tools</span>.</li>
+                                    <li>Double-click <span class="Emphasis">Internet Information Services</span>.</li>
+                                    <li>In the Internet Information Services dialog, expand the <span class="Emphasis">Web Sites</span> folder.</li>
+                                    <li>Expand the website folder corresponding to the one specified in the Feedback Admin.</li>
+                                    <li>Right-click on <span class="Emphasis">Service.FeedbackExplorer</span> and select <span class="Emphasis">Properties</span>.</li>
+                                    <li>In the Properties dialog, select the <span class="Emphasis">Directory Security</span> tab.</li>
+                                    <li>Under <span class="Emphasis">Anonymous access and authentication control</span>, click the <span class="Emphasis">Edit</span> button.</li>
+                                    <li>In the Authentication Methods dialog, change your password.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer14.flsnp" />
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer15.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server is located on a different machine, this final step will (a) install two web services on the IIS machine and (b) install the Feedback Server Database on the SQL Server machine.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server and IIS are located on the same machine and you are using SQL Express, a Windows service will also be installed. The service handles the backing up of the database (configurable on the Maintenance tab of the Feedback Server Admin).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                        <p>
+                            <img src="../Resources/Images/feedback_server_setup_dialog_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer16.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Microsoft Windows Vista" />Steps—Microsoft Windows Vista</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Microsoft Windows Vista" />steps—microsoft windows vista</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer2.flsnp" />
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer3.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer4.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer5.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer6.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Complete one of the following sets of steps, depending on the view you are using.<p class="Subheading">home view</p><ol class="LowerRoman"><li>Select <span class="Emphasis">Programs</span>.</li><li>Under <span class="Emphasis">Programs and Features</span> click <span class="Emphasis">Turn Windows features on or off</span>.</li></ol><p class="Subheading">classic view</p><ol class="LowerRoman"><li><p>Double-click <span class="Emphasis">Programs and Features</span>.</p></li><li>Select <span class="Emphasis">Turn Windows features on or off</span>.</li></ol></li>
+                            <li>Select <span class="Emphasis">Internet Information Services</span>.</li>
+                            <li>Expand <span class="Emphasis">Internet Information Services&gt;Web Management Tools&gt;IIS 6 Management Compatibility</span></li>
+                            <li>Click <span class="Emphasis">IIS 6 Metabase and II6 configuration compatibility</span>.</li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <p>After IIS is configured and installed the dialog closes automatically.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer7.flsnp" />
+                        <ol class="LowerAlpha">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer8.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you did not perform one of the above steps, a dialog shows what is not yet installed (by displaying it in red text). If necessary, you can install ASP.NET from the dialog by clicking the button to the right of the red text.</p>
+                                            <p>
+                                                <img src="../Resources/Images/feedback_server_setup_2008_example7.png" class="MaxWidth90Percent" />
+                                            </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer9.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are connecting to an SQL Server on another machine, you must make sure that the machine running IIS and the machine running SQL Server are on the same domain. To verify this, you can right-click <span class="Emphasis">My Computer</span>, then select <span class="Emphasis">Properties</span>, then select the <span class="Emphasis">Computer Name</span> tab.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSQLNotAppearing.flsnp" />
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you experience connectivity issues, you can try entering the IP address for the SQL Server directly instead of selecting it from the drop-down list. When you do this, you need to replace only the computer name portion with the IP address (i.e., the part before the backslash).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer10.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Database Location field is unavailable if you are using a remote SQL Server. The default data directory of the SQL Server will be used instead.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer11.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFeedbackWebsiteAdminPreference.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer12.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/CommonUserExplanation.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer13.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>If you complete these fields, it is recommended that you use a password that does not expire. However, if necessary, you can later change an expired password via the Control Panel. Following are steps for doing this. </p>
+                                <ol class="LowerRoman">
+                                    <li>Open the Control Panel in Classic View.</li>
+                                    <li>Select <span class="Emphasis">Administrative Tools</span>.</li>
+                                    <li>Open the Internet Information Services (IIS) Manager.</li>
+                                    <li>Expand the node with the computer name.</li>
+                                    <li>Expand the <span class="Emphasis">Sites</span> folder.</li>
+                                    <li>Expand the website folder corresponding to the one specified in the Feedback Admin.</li>
+                                    <li>Click <span class="Emphasis">Service.FeedbackExplorer</span>.</li>
+                                    <li>To the right, double-click <span class="Emphasis">Authentication</span>.</li>
+                                    <li>Right-click <span class="Emphasis">Anonymous Authentication</span> and select <span class="Emphasis">Edit</span>.</li>
+                                    <li>In the Edit Anonymous Authentication Credentials dialog, click <span class="Emphasis">Set</span>.</li>
+                                    <li>In the Set Credentials dialog, change your password.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/Feedback/InstallFeedbackServer14.flsnp" />
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer15.flsnp" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server is located on a different machine, this final step will (a) install two web services on the IIS machine and (b) install the Feedback Server Database on the SQL Server machine.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the SQL Server and IIS are located on the same machine and you are using SQL Express, a Windows service will also be installed. The service handles the backing up of the database (configurable on the Maintenance tab of the Feedback Server Admin).</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                        <p>
+                            <img src="../Resources/Images/feedback_server_setup_dialog_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/Feedback/InstallFeedbackServer16.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you install MadCap Feedback Server Admin and the other necessary services, you can open the admin at any time to configure and maintain the various settings. This includes the ability to test your settings, set up an SMTP server for various email notifications, specify redirection web pages for end users who register, and schedule automatic backups of the database and transaction log. See <MadCap:xref href="Configuring_and_Maintaining_the_MadCap_Feedback_Server_Admin.htm">Configuring and Maintaining the MadCap Feedback Server Admin</MadCap:xref>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="GettingSetUp" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="223" MadCap:lastWidth="994">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>If you include a side menu—via a Menu proxy—that is not context-sensitive, this menu may display on generated pages, not just in regular topics. This is probably something you want to avoid.</p>
+        <p>Therefore, to prevent this issue, you may want to copy the following to your stylesheet via the Internal Text Editor.</p>
+        <p class="CodeBrown">html.templateTopic div.sideContent</p>
+        <p class="CodeNoSpaceAboveBelow">{</p>
+        <p class="CodeIndentNoSpaceAboveBelow"><span class="CodeRed">display: </span><span class="CodeBlue">none</span>;</p>
+        <p class="CodeNoSpaceAboveBelow">}</p>
+    </body>
+</html>

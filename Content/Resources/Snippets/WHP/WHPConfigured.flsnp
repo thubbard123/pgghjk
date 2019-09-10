@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1141" MadCap:lastWidth="852">
+    <body>
+        <ol>
+            <li>Open the Control Panel.</li>
+            <li>Open <span class="Emphasis">Administrative Tools</span>. The various operating systems have different ways to find this option.</li>
+            <li>Open <span class="Emphasis">Internet Information Services</span>.</li>
+            <li>Do the following (for <MadCap:keyword term="Microsoft Windows Server 2003" />Windows Server 2003 only).<ol class="LowerAlpha"><li>Browse to <span class="Emphasis">Web Service Extensions</span>.</li><li>In the pane on the right, select <span class="Emphasis">ASP.NET v4.0.30319</span>.</li><li>If its Status does not show "Allowed," click the <span class="Emphasis">Allow</span> button.</li></ol></li>
+            <li>Browse to the WebHelp Plus output folder under the website where it was published.</li>
+            <li>In the output folder, there is a folder called Service. This folder needs to be set up as a web application. Do the following, depending on the operating system.<ul class="FirstLevel"><li><MadCap:keyword term="Microsoft Windows XP" />(Windows XP and Windows Server 2003) Right-click the <span class="Emphasis">Service</span> folder and select <span class="Emphasis">Properties</span>.</li><li><MadCap:keyword term="Microsoft Windows 7" />(Windows 7, <MadCap:keyword term="Microsoft Windows Server 2008" />Windows Server 2008, and <MadCap:keyword term="Microsoft Windows Vista" />Windows Vista) Right-click the <span class="Emphasis">Service</span> folder, select <span class="Emphasis">Convert to Application</span>, and click <span class="Emphasis">OK</span>. If you do not see this option, but rather "Manage Application," it is already configured. Skip to step 10.</li></ul></li>
+            <li>Under the <span class="Emphasis">Directory</span> tab, inspect the <span class="Emphasis">Application Settings</span> area. If <span class="Emphasis">Application name</span> is grayed out, click the <span class="Emphasis">Create</span> button to its right.</li>
+            <li>The <span class="Emphasis">Execute Permissions</span> drop-down should contain <span class="Emphasis">Scripts only</span>.</li>
+            <li>Click the <span class="Emphasis">OK</span> button.</li>
+            <li>The <span class="Emphasis">Service</span> folder should have a special icon next to it rather than the usual icon that looks like a yellow folder.</li>
+            <li>
+                <p>Open a web browser and navigate to your WebHelp Plus output web service.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say your output resides at:</p>
+                            <p>http://localhost/MyWebHelpPlus</p>
+                            <p>In that case, navigate to:</p>
+                            <p> http://localhost/MyWebHelpPlus/Service/Service.asmx</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p>If the web service is configured correctly, you will be taken to a web page that looks like this:</p>
+                <p>
+                    <img src="../../Images/WH_plus_web_service_example.png" class="MaxWidth70Percent" />
+                </p>
+            </li>
+        </ol>
+        <p>In the WebHelp Plus output folder, there is an AutoMergeCache folder. This folder and the content inside it is automatically generated when the WebHelp panes (Table of Contents, Index, Glossary, etc.) need to be updated. It could be that the content in this folder was somehow corrupted. If so, delete the <span class="Emphasis">AutoMergeCache</span> folder. Then view the WebHelp Plus output in a web browser so the folder is re-created.</p>
+    </body>
+</html>

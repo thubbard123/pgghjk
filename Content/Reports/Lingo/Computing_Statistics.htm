@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.Lingo" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="1263" MadCap:lastWidth="999">
+    <head><title></title>
+        <meta name="description" content="Statistics, computing project statistics, compute translation project stats, translation statistics, translation statistics" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Reports" />
+            <MadCap:keyword term="Reports;Statistics" />Computing Statistics</h1>
+        <p>You can compute statistics for your <MadCap:variable name="Other.Product" /> project, displaying information about the translation work. This is a way to compare the project files against the translation memory database in order to see how much translation work has been completed and how much still needs to be done. This report can be useful if you are a translator and need to provide estimates to a client, or if you are an author who is using <MadCap:variable name="Other.Product" /> to manage the translation process. You can also export your statistics to XML&#160;if you want to complete additional analysis of the project in an outside tool.</p>
+        <p>
+            <img src="../../Resources/Images/translation_report_example.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to compute statistics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>In the File List window pane, make sure the files are displayed in a grid. If instead they are displayed in a folder structure, click <img src="../../Resources/Images/show_hide_folders_btn.png" class="ReduceButtonSize" /> in the local toolbar to switch to grid view.</li>
+                    <li>Select the files to be included in the statistics report. <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li>
+                    <li>
+                        <p>Select <span class="Emphasis">File&gt;Compute Statistics</span>. </p>
+                        <p>The statistics report opens as an HTML file, showing the following information (both for the entire project, as well as for individual documents in the project).</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Number of Segments</span>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Number of Words</span>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Number of Characters</span>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Number of Duplicates </span>These are segments that occur multiple times within the project. For example, the first time a segment occurs in the project and there is no match in the translation memory for it, it is counted as "No Match." If it shows up again 20 times in other places, it is counted as a "Duplicate."</li>
+                            <li><span class="SetOffFirstLevel">Number of Translated Segments and Words</span>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Matching Percentages of Segments and Words in Translation Memory </span> The number of segments and words that have a certain percentage match (e.g., 100%, 95%-99%, 85%-94%).</li>
+                            <li><span class="SetOffFirstLevel">Number of No Matches </span>These are segments that are not translated and have no useful suggestions in the translation memory.</li>
+                            <li><span class="SetOffFirstLevel">Total </span> The total number of segments, words, and characters in the report.</li>
+                        </ul>
+                    </li>
+                    <li>(Optional) You can print or save your report. In the local toolbar, click <img src="../../Resources/Images/print_icon_analyzer_window_pane.png" alt="" title="" class="ReduceButtonSize" /> to print the report. Click <img src="../../Resources/Images/save_statistics_lingo_btn.png" alt="" title="" class="ReduceButtonSize" /> to save the report as an HTML&#160;file or click <img src="../../Resources/Images/export_to_xml_btn.png" alt="" title="" class="ReduceButtonSize" /> to save the report as an XML&#160;file.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"> By default, statistics reports are compiled in the current target language, but you can run reports for all project languages. You can change your language settings in the Project Properties dialog. See <MadCap:xref href="../../Interface/UI_Elements/Project_Properties_Dialog_Lingo.htm">Project Properties Dialog</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You must have a translation memory (TM)&#160;enabled to compile statistics.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Filters/FiltersInReports.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

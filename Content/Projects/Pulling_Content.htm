@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Central\CentralProjectsBuilds.flmsp');" MadCap:conditions="Products.Central" MadCap:lastBlockDepth="10" MadCap:lastHeight="1000" MadCap:lastWidth="872">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:projects;Git;Projects:source control;Projects:pulling content;Pull" />Pulling Content</h1>
+        <p>If you are working in a single-bound model as opposed to a dual-bound model, you can pull—or download—content from Central (<MadCap:conditionalText MadCap:conditions="General.OnlineLive">see <MadCap:xref href="Using_Source_Control_with_Projects_in_Central.htm#SingleBoundOnline">Single-bound Projects</MadCap:xref> and <MadCap:xref href="Using_Source_Control_with_Projects_in_Central.htm#DualBoundOnline">Dual-bound Projects</MadCap:xref></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print">see <MadCap:xref href="Using_Source_Control_with_Projects_in_Central.htm#SingleBoundPrint">Single-bound Projects</MadCap:xref> and <MadCap:xref href="Using_Source_Control_with_Projects_in_Central.htm#DualBoundPrint">Dual-bound Projects</MadCap:xref></MadCap:conditionalText>). A lone writer would probably not need to do this, but if there are other writers on your team authoring in the same Flare project, you will periodically need to pull from Central to make sure your local files are in sync with those on Central.</p>
+        <p>If you are working in a dual-bound model, you cannot pull files from Central (unless you are bound to Git; see the note below). Instead, you would pull files  from your other third-party binding using Flare's built in source control system (for more information, see the Flare online Help). Once your files are up to date with that binding, you would push your files to Central. See <MadCap:xref href="Pushing_Content.htm">Pushing Content</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead MadCap:conditions="General.OnlineLive">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SourceControl/DualBoundPullingfromGit.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Central/ImportPull.flsnp" />
+        <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Pull Content in a Single-bound Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the project in MadCap Flare.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Projects/SelectViewMadCapCentral.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Projects/IfNotYetLoggedIn.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Pull</span>.</li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Pull</span>.</li>
+                        </ul>
+                    </li>
+                    <li>The Select Remote for Pull dialog opens. From the <span class="Emphasis">Remote</span> drop-down, select <span class="Emphasis">MadCap Central</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

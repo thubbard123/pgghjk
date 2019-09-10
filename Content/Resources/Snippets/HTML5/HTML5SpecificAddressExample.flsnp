@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>Let's say you generate regular <MadCap:variable name="Outputs.WebHelp">[%=Outputs.WebHelp%]</MadCap:variable> output, with the primary output file called "MyOutput.htm." When you view the output with the initial topic shown (say it's called "Welcome.htm"), the URL path in the browser might look something like this.</p>
+            <div class="IndentSmall">
+                <p>http://www.mycompany.com/docs/<span class="YellowBackground">MyOutput.htm</span></p>
+            </div>
+            <p>And if you then click on another topic (say, "WhatsNew.htm"), the same URL&#160;path will be shown. It does not change, even though you opened a different page.</p>
+            <p>On the other hand, suppose you generate <MadCap:variable name="Outputs.HTML5">[%=Outputs.HTML5%]</MadCap:variable> output. The URL in the browser may look the same as the path for regular WebHelp when the output is first displayed.</p>
+            <div class="IndentSmall">
+                <p>http://www.mycompany.com/docs/<span class="YellowBackground">MyOutput.htm</span></p>
+            </div>
+            <p>But if you click on the "WhatsNew.htm" page, the URL will change to this.</p>
+            <div class="IndentSmall">
+                <p>http://www.mycompany.com/docs/<span class="YellowBackground">MyOutput.htm#WhatsNew.htm</span></p>
+            </div>
+            <p>And if you click on the "Welcome.htm" page to return to it, the URL will change to this.</p>
+            <div class="IndentSmall">
+                <p>http://www.mycompany.com/docs/<span class="YellowBackground">MyOutput.htm#Welcome.htm</span></p>
+            </div>
+        </div>
+    </body>
+</html>

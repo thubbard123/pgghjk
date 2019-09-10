@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2008" MadCap:lastWidth="1118" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorials3Foldout.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/ProductFoldout3Fold.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Product Foldout" />
+            <MadCap:keyword term="Tables of contents" />
+            <MadCap:keyword term="Tables of contents:creating" />Creating a TOC</h1>
+        <p>At this point you've got two page layouts and two topics with similar names. Now we're going to tie them together so that the Front2 topic uses the Front2 page layout, and the Back2 topic uses the Back2 page layout. This is accomplished in a table of contents (TOC) file.</p>
+        <p>It might seem strange to be creating a TOC for a very short product foldout such as this. But remember, for print-based output (which is what you will be creating here), TOC files function as outlines, not as traditional TOCs.</p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a TOC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Open the Project Organizer on the left side of Flare, and expand the <span class="Emphasis">TOCs</span> folder. Notice the file under it called "ProductFoldout." This is a TOC file—or, more accurately, an "outline TOC"—which was created for the existing Front and Back topics and page layouts. We're going to create another TOC just like this for the Front2 and Back2 files.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_toc1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Right-click the <span class="Emphasis">TOCs</span> folder, and from the context menu select <span class="Emphasis">Add Table of Contents</span>. The Add File dialog opens.</p>
+                    </li>
+                    <li>The only factory TOC template should already be selected, so in the <span class="Emphasis">File Name</span> field, type <span class="TypedEntry">ProductFoldout2</span> as the name for the new TOC.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                    <li>
+                        <p>Click <span class="Emphasis">Add</span>. The TOC is added to the Project Organizer, and the TOC Editor opens to the right, displaying the TOC.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_toc2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Open the Content Explorer.</li>
+                    <li>Click the <span class="Emphasis">Front2</span> topic, then drag and drop it in the TOC Editor, above the two books. When you see a blue arrow, you will know that it can be dropped.</li>
+                    <li>Click the <span class="Emphasis">Back2</span> topic, then drag and drop it in the TOC Editor, below Front2.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                    <li>
+                        <p>Click on each of the books and press <span class="Emphasis">Delete</span> on your keyboard to remove them from the editor. It should now look like this:</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_toc3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>What you've added to the TOC Editor are not the topics themselves, but rather a link to each topic. Now we've got to provide a link to the relevant page layouts.</p>
+                    </li>
+                    <li>In the TOC Editor, double-click the <span class="Emphasis">Front2</span> entry. The Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Printed Output</span> tab.</li>
+                    <li>In the <span class="Emphasis">Break Type</span> field, select <span class="Emphasis">Page Layout Break</span>.</li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Page Layout</span> drop-down and select <span class="Emphasis">Front2</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_toc4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>In the TOC Editor, double-click the <span class="Emphasis">Back2</span> entry. The Properties dialog opens.</li>
+                    <li>In the <span class="Emphasis">Break Type</span> field, select <span class="Emphasis">Page Layout Break</span>.</li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Page Layout</span> drop-down and select <span class="Emphasis">Back2</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_toc5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about creating outline TOCs for print-based output, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about TOCs, see <MadCap:xref href="../../../TOCs/About_Tables_of_Contents.htm">About Tables of Contents</MadCap:xref> and <MadCap:xref href="../../../TOCs/Creating_a_TOC_Manually.htm">Creating a TOC Manually</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Adding_Content.htm">Adding Content to Topics</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3724" MadCap:lastWidth="1407" class="" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:keyword term="Menus:proxies;Proxies:menu" />Inserting the Menu Proxy</h1>
+        <p MadCap:conditions="">Our main Top Navigation skin is all set. But we still need to tell Flare what it should do with our Menu skin component, which will create the context-sensitive menus on each topic. We don't want to insert it into each topic separately; that would be too much work. So we'll insert it into a master page, which will be used by all of the topics.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Insert the Menu Proxy</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li MadCap:conditions="">In the Content Explorer, expand <span class="Emphasis">Resources&gt;MasterPages</span>.</li>
+                    <li MadCap:conditions="">
+                        <p>Double-click <span class="Emphasis">MasterPage.flmsp</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The master page opens to the right in the XML Editor.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>This master page already has a Breadcrumbs proxy (used to show "You are here" links at the top of topics) and a Topic Body proxy (used to display the topic content). There is also a lot of content below these proxies, which displays at the bottom of each topic. Let's remove this content. Right-click the div structure bar to the left of the footer content.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>From the context menu, select <span class="Emphasis">Delete</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <p>The master page should now look like this, with your cursor on an empty paragraph after the Topic Body proxy.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Select the <span class="Emphasis">Insert</span> ribbon at the top of Flare, and on the far right choose <span class="Emphasis">Proxy&gt;Insert Menu Proxy</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The Menu Proxy dialog opens.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the <span class="Emphasis">Linked TOC or Browse Sequence</span> field, select <span class="Emphasis">Project/TOCs/OnlineOutput</span>. We will keep all of the check boxes selected, as well as the default depth level.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the <span class="Emphasis">Skin File</span> field, select <span class="Emphasis">Project/Skins/TopNavMenu</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>
+                            <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The master page should now look like this:</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy8.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>Notice that the other two proxies are indented a bit more. That's because they are located within the same &lt;div&gt; tag.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy9.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>Let's move our Menu proxy inside the same tag.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Right-click the structure bar to the left of the Menu proxy, and from the context menu select <span class="Emphasis">Cut</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Right-click the structure bar to the left of the Topic Body proxy, and from the context menu select <span class="Emphasis">Paste After</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <p>The master page should now look like this:</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_insert_proxy12.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about targets, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../Proxies/About_Proxies.htm">About Proxies</MadCap:xref> and <MadCap:xref href="../../../../Proxies/Using_the_Menu_Proxy.htm">Creating a Topic Menu</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Other_Tasks.htm">Other Tasks</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

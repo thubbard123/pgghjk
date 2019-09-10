@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="dialog...;s;HtmlHelp;icon...;options...;LocationBar;StatusBar;www.acme.com);text.);3D;arrow...;anchors...;needs.)" MadCap:lastBlockDepth="11" MadCap:lastHeight="1689" MadCap:lastWidth="1410" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSkins.flmsp');">
+    <meta name="template" content="Flare.htt" />
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output:size;Skins:size;Positioning:output window;Size:output window;Size:skins" />
+            <MadCap:concept term="FilterSkins" />Specifying the Size and Position of the Output Window</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHPlus_WHAIR.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Skins/SkinSizePositionSummary.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify the size and position of the output window </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a Standard or <MadCap:variable name="Outputs.HTML5" /> skin.</li>
+                    <li>Click the <span class="Emphasis">Size</span> tab. </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>Click the <span class="Emphasis">Use Browser Default Size</span> check box so there is a check mark in it. This sets the output window's dimensions to the default window size of whichever browser is used to open the output.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p>Enter the size and position dimensions directly in each field (<span class="Emphasis">Top</span>, <span class="Emphasis">Bottom</span>, <span class="Emphasis">Left</span>, <span class="Emphasis">Right</span>, <span class="Emphasis">Width</span>, <span class="Emphasis">Height</span>). You can also use the up and down arrows to set a number. Use the down arrow to select a unit of measurement (point, pixel, centimeter, millimeter, inch, or pica). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/About_Units_of_Measurement.htm">About Units of Measurement</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>OR</p>
+                            </li>
+                            <li>Click the <span class="Emphasis">Preview Full Size</span><MadCap:keyword term="Output:previewing" /> button. Then click and drag the window to set its size and position. The fields on the tab change automatically as you resize and move the window.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>If you want to ensure the size and/or position of the output window, regardless of the size of your user's computer screen, click the appropriate <MadCap:keyword term="Anchors:skins;Skins:window anchors" />anchors (the arrows shown on the Size tab).</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">visual explanation of each anchor arrow</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../Resources/Images/anchors.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">more details about anchors</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Anchors "lock" the size or position of the window according to settings you provide – a nice feature if your users have different-sized computer screens. (However, users can always adjust the window size in the output to meet their needs.) The arrows on the outside of the box are used to anchor the Help window to the top, bottom, left, or right edge of the user’s screen. The arrows inside the box are used to anchor the height and width of the Help window. To set an anchor, click the appropriate arrow so that it is no longer gray. </p>
+                                <p>Sometimes window settings conflict with each other (e.g., cannot have a window that is 700 pixels high <span class="EmphasisItalic">and</span> 300 pixels from the top of the screen). In such cases, Flare adjusts the settings as necessary. When there is a conflict and anchors exist, Flare follows the anchored settings and adjusts the non-anchored settings. If all settings are anchored, Flare follows the settings for the top, bottom, left, and right arrows (and changes the settings for the height and width as necessary). </p>
+                                <p>If you want the output window to be a specific size, and your users have computer screens of various sizes, set the height and width dimensions. Then anchor the height and width of the window using the two arrows inside the box.</p>
+                                <p>If you want the output window to be "dynamic" depending on the user's screen resolution, anchor it to the edges of the screen using the four arrows outside the box. Then set the top, bottom, left, and right dimensions. Regardless of the resolution of the screen, the output window will always be the same distance from the edges of the screen, and the size of the window will grow or shrink accordingly. </p>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you use anchors for <MadCap:variable name="Outputs.WebHelp" /> outputs, the size of the window is computed at runtime on the end-user’s machine. Therefore, if you use anchors to position the window, say, 157 pixels from the right side of the screen, the generated <MadCap:variable name="Outputs.WebHelp" /> output will move/resize the window on the end-user’s machine at runtime when the user views the output in a browser.</p>
+                                    <p>However, <MadCap:variable name="Outputs.HTMLHelp" /> output works differently. The CHM viewer cannot move or resize itself. Therefore, the anchors are converted to absolute pixel coordinates based on <i>your</i> screen resolution during <i>compile time</i>. This means that the output on the end-user’s machine is hard coded, based on your screen resolution. </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSupportedTripaneNotTopnav.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The size settings in the skin will not work in Google Chrome or Mozilla Firefox browsers unless the output is invoked as a popup.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Make sure that you associate the skin with the target. See <MadCap:xref href="../Associating_Skins_with_Targets.htm" target="" title="" alt="">Associating Skins with Targets</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Skins" />
+        </p>
+    </body>
+</html>

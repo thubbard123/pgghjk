@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="3995" MadCap:lastWidth="981" MadCap:conditions="Products.Lingo" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Provides detail about MadCap Lingo bundles, which are ZIP files that contain your MadCap Flare so you can send projects to translators." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Bundles" />
+            <MadCap:keyword term="Bundles;Projects:bundles;ZIP file" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Bundles</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Bundles/BundleSummary.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Why Is Bundling Necessary?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>why is bundling necessary?  </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>So what is the benefit of using <MadCap:variable name="Other.Product" /> as a "middle man" in this translation effort? Why not just use Word, Flare, or another tool for the documentation and then send those files directly to the translator? You can certainly send a translator raw files and bypass <MadCap:variable name="Other.Product" /> altogether, but this only works well if your translator is very familiar with those kinds of files. And it is highly unlikely that your translator is an expert at Flare and understands all of the different types of files that make up a Flare project. Therefore, the best solution is usually one where the translator uses  <MadCap:variable name="Other.Product" /> for the translation work or when you (the content developer) use bundling in <MadCap:variable name="Other.Product" /> to manage the translator's work on your end, incorporating the translated files back into Flare (or whatever tool you are using).</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Ensure That All Files are Translated </span>One of the best reasons to use bundling is that <MadCap:variable name="Other.Product" /> tells you exactly what files need to be translated so that you do not accidentally miss some. This might not be necessary when translating a simple Word document. But if you have a Flare project that requires translation, there are likely many different types of files that are easy to forget about—files such as skins, glossaries, search filter sets, and many more. If you translate the Flare project in <MadCap:variable name="Other.Product" />, the File List window pane shows exactly what needs to be translated, so there is no guessing. But if you try to translate that same Flare project in a third-party tool, it can be extremely difficult to determine which files require translation.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Generate More Accurate Estimates</span> Another good reason to use bundling is the statistics feature in <MadCap:variable name="Other.Product" />. The statistics report lets you see exactly what has been translated and what still requires translation. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Reports/Lingo/Computing_Statistics.htm">Computing Statistics</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>This can positively affect a translator's estimates. For example, if you hire someone to translate a Flare project, the initial estimates given by the translator might be too low because several files may have been accidentally missed. After discovering the extra files, the translator needs to adjust the estimates. </p>
+                        <p>In addition, you can use the report to see how many matches were found in translation memory (TM) for the segments. This is important because it is much less expensive for translators to use existing translations in a TM database than to produce new translations. </p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Avoid Rework </span>When translating files, it's important for the translator to keep the folder structure that you have in place. Otherwise, the result could be lots of broken links and missing information. With a <MadCap:variable name="Other.Product" /> bundle, you can be assured that the folder structure is maintained throughout the process.</li>
+                </ul>
+                <p>By using bundling in <MadCap:variable name="Other.Product" />, you can avoid these issues. The translator will receive all of the files requiring translation work, and only those files. This allows the translator to give you a more accurate estimate for the necessary work, and for you to see the statistics yourself. When you receive the files back from the translator, you can use <MadCap:variable name="Other.Product" /> to verify that everything was translated and nothing was left behind.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Steps for Using Bundling</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for using bundling</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Bundling is different than most of the other features in <MadCap:variable name="Other.Product" /> because the individual using this feature in <MadCap:variable name="Other.Product" /> is typically the content developer, rather than a translator. The following steps show how it works:</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/StepsGeneral/BasicStepsLingoBundles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="Products.LingoPrintOnly" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Bob is a technical writer for a small company that does not have in-house translators. He uses MadCap Flare to create his English documentation and then sends that project to an outside vendor to translate the content into Spanish. The translation company uses SDL Trados, so when the translator looks at the Flare files, he's not sure which files need to be translated, how long it will take, or what it will cost. Bob also doesn't know how much translation work is involved. </p>
+                    <p>Therefore, Bob's company buys <MadCap:variable name="Other.Product" />. Using <MadCap:variable name="Other.Product" />, Bob creates a new project based on his Flare documentation and installs a TM database. In <MadCap:variable name="Other.Product" /> he bundles the files requiring translation and emails that ZIP file to the translator.</p>
+                    <p>
+                        <img src="../Resources/Images/prepare_translation_bundle_example.png" class="MaxWidth90Percent">
+                        </img>
+                    </p>
+                    <p>Using SDL&#160;Trados, the translator imports the ZIP file and translates the content. The translator puts the translated files back into a ZIP file—just like the one received—and returns it to Bob.</p>
+                    <p>Bob receives the email and saves the ZIP file to a folder on his computer. In his <MadCap:variable name="Other.Product" /> project, Bob selects the "Merge Completed Bundle" option and browses for the ZIP file received from the translator. <MadCap:variable name="Other.Product" /> takes the bundle, extracts the files, and merges them into the <MadCap:variable name="Other.Product" /> project.</p>
+                    <p>
+                        <img src="../Resources/Images/merge_completed_bundle_example.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide,LingoGuides.LingoGettingStartedGuide" />
+                    <p>Bob then selects <span class="Emphasis">File&gt;Compute Statistics</span>, which displays a report reflecting detailed information about the translated files. The report is designed to warn Bob of any files that the translator may have missed, and possibly consistency problems. </p>
+                    <p>
+                        <img src="../Resources/Images/translation_report_example.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide,LingoGuides.LingoGettingStartedGuide" />
+                    <p>In addition, Bob can look in the File List window pane to see the translation status of all of the files.</p>
+                    <p>
+                        <img src="../Resources/Images/file_list_window_translated_status_example.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>If necessary, Bob can inform the translator of any files that were not translated and request a new, updated ZIP file from the translator. After all of his files have been successfully translated, Bob exports the <MadCap:variable name="Other.Product" /> project to a new Flare project. So now he has two Flare projects—the original English project, and the new Spanish project.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteRenameBundle.flsnp" />
+                <div class="note" MadCap:conditions="General.OnlineLive">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also open bundle (ZIP) files when creating Lingo projects (see&#160;<MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>), and you can create ZIP files when exporting projects (see <MadCap:xref href="../Exporting/Exporting_Translated_Projects.htm">Exporting Translated Projects</MadCap:xref>). You can open bundle (LIPRJZIP) files in Lingo from the File menu.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Bundles" />
+        </p>
+    </body>
+</html>

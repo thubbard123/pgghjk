@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="15" MadCap:lastHeight="2586" MadCap:lastWidth="1011" MadCap:conditions="Products.Flare" class="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet4] exclude[Snippets.Snippet1 or Snippets.Snippet2] " style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareLanguageSupport.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Using the&#160;Manage Language Skins feature, you can create a customized lanugage skin to localize the user interface for your online Help system." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Language support:skins;WebHelp:language;Skins:language;WebHelp Plus:language;Language support:WebHelp;Language support:WebHelp Plus;HTML5:localization;Language support:HTML5" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="LanguageSupport" />
+            <MadCap:concept term="FilterLanguageSupport" />
+            <MadCap:concept term="FilterSkins" />Creating User-defined Language Skins</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <p>There are two pieces to the generated output: the content and the user interface (e.g., navigation buttons and labels). If you are generating an online Help output (<MadCap:keyword term="HTML5" /><MadCap:keyword term="WebHelp AIR" /><MadCap:keyword term="WebHelp Plus" /><MadCap:keyword term="WebHelp Mobile" /><MadCap:variable name="Outputs.HTML5">[%=Outputs.HTML5%]</MadCap:variable>, <MadCap:variable name="Outputs.WebHelp">[%=Outputs.WebHelp%]</MadCap:variable>, <MadCap:variable name="Outputs.WebHelpAIR">[%=Outputs.WebHelpAIR%]</MadCap:variable>, <MadCap:variable name="Outputs.WebHelp Mobile">[%=Outputs.WebHelp Mobile%]</MadCap:variable>, or <MadCap:variable name="Outputs.WebHelp Plus">[%=Outputs.WebHelp Plus%]</MadCap:variable>), you can select a specific language skin for displaying the user interface. You can then edit the language skin as necessary, adjusting text for buttons and labels. Normally, you would edit a skin in the Skin Editor. However if you want to display the output user interface in a particular language, you can use the Language Skin Editor instead.</p>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/LanguageSupport/LanguageSkinDefinition.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you want to display the user interface of the <MadCap:variable name="Outputs.HTML5">[%=Outputs.HTML5%]</MadCap:variable> output in Bulgarian. <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> does not provide a language skin in Bulgarian, so you can create your own skin, entering the Bulgarian text in the skin where appropriate. After you create the user-defined language skin with Bulgarian text, you can select it for use in the <MadCap:variable name="Outputs.HTML5">[%=Outputs.HTML5%]</MadCap:variable> output interface.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareLanguageSupportGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a user-defined language skin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/CreatingLanguageSkinSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">Important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/MultipleLanguageSkins.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/UsingCustomLanguageSkins.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteLanguageSkinsOtherOutputs.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/LanguageSkinValuesInMultiplePlaces.flsnp" MadCap:conditions="General.OnlineLive" />
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/DefaultLanguage.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can edit the language skin, adjusting the text on the buttons and labels.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="Editing_Language_Skins.htm">Editing Language Skins</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="LanguageSupport">
+            </MadCap:conceptLink>
+        </p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSkinsGuide" />
+    </body>
+</html>

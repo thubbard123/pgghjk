@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="940" MadCap:lastWidth="1059" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareHTMLHelp.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="List of CSH&#160;calls and syntax for software developers mapping an HTML&#160;Help system created with MadCap&#160;Flare to a software application. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="ConnectingHTMLHelp" />
+            <MadCap:keyword term="HTML Help:connecting to application;HTML Help:distributing" />
+            <MadCap:keyword term="Output:HTML Help;Context-sensitive Help:HTML Help;HTML Help:context-sensitive Help" />CSH Calls for HTML Help—Developers</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForDevelopers.flsnp" />
+        <p>Use the following information to connect <MadCap:variable name="Outputs.HTMLHelp" /> to an application:</p>
+        <ul>
+            <li>
+                <p>Use the following syntax to call a topic using a map number:</p>
+                <div class="example">
+                    <p class="Code">HWND HtmlHelp(Window(), "c:\path\MyHelp.chm", HH_HELP_CONTEXT, Number); </p>
+                </div>
+            </li>
+            <li>
+                <p>Use the following syntax to call a topic using a file name:</p>
+                <div class="example">
+                    <p class="Code">HWND HtmlHelp (Window(), "c:\path\MyHelp.chm", HH_DISPLAY_TOPIC, "welcome.htm"); </p>
+                </div>
+            </li>
+        </ul>
+        <p>To hook context-sensitive Help (CSH) to an application, the code looks something like this:</p>
+        <div class="example">
+            <p>HtmlHelp(hWnd, /*Window handle of program or dialog*/ </p>
+            <p class="Code">"CSHHelp.chm", /*Name of the CHM file*/ </p>
+            <p class="Code">HH_HELP_CONTEXT, </p>
+            <p class="Code">dwMapNumber); /*Number from header file*/ </p>
+        </div>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide,FlareGuides.FlareDNHGuide" />
+        <table style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0" class="TableStyle-BasicAlternateRows">
+            <col style="width: 13px;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                        <p class="TableTextHead">Name</p>
+                    </th>
+                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                        <p class="TableTextHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">HtmlHelp(hWnd</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p class="TableText">This is the window handle of a program or dialog. A window handle helps identify a window so the HTML Help engine knows which application is performing the specific action.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">MyHelp.chm</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p class="TableText">This is the name of a compiled HTML Help file (CHM) that includes the CSH. The actual name of the CHM file is determined by the Help author.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">HH_HELP_CONTEXT</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p class="TableText">This is the command sent to the HTML Help engine for window-level Help.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">dwMapNumber)</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                        <p class="TableText">A map number from the header file.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ConnectingHTMLHelp" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="7215" MadCap:lastWidth="1081" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Keep these considerations in mind as you prepare to import FrameMaker content into MadCap Flare. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FMQuickStart" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing" MadCap:conditions="General.OnlineLive" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:concept term="FilterImporting" />As You Import</h1>
+        <p>All of your file preparation is going to pay off in the import process. This <MadCap:conditionalText MadCap:conditions="General.OnlineLive">topic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print">section</MadCap:conditionalText> assumes you've followed the best practices in the previous Quick Start topics (<MadCap:xref href="About_MadCap_and_FrameMaker.htm">About Flare and FrameMaker</MadCap:xref> and <MadCap:xref href="Before_You_Import.htm">Before You Import</MadCap:xref>). You should have clean FrameMaker files that can locate all linked files.</p>
+        <p>When you're ready to import your files, you can do it in two ways:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Create a New Project </span>You can create a new <MadCap:variable name="Other.Product" /> project at the same time that you import your files. </li>
+            <li><span class="SetOffFirstLevel">Import Files into an Existing Project </span>You can import your files into a <MadCap:variable name="Other.Product" /> project that you've already created.</li>
+        </ul>
+        <p>See <MadCap:xref href="../Importing/Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">Pay Attention and Be Patient</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>pay attention and be patient</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you rush into opening the Import FrameMaker Wizard, specify a FrameMaker file, and click Finish, you're likely to hate the results. </p>
+                <p>The import process requires that you make decisions about what you want, based on what you have. Because the structure of the information in FrameMaker files can vary wildly, pay attention to the decisions you're being asked to make and take the time to make them. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Try It Several Ways</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>try it several ways</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Because <MadCap:variable name="Other.Product" /> offers you a lot of options on import, you may be uncertain what you need to select and why. At the end of the import process, we show you a preview of what your files look like. Take the time to scroll through the results and look at what happened.</p>
+                <p>If what you see is not what you wanted, click <span class="Emphasis">Cancel</span> and try other options. Rinse and repeat until what you see in the preview looks like what you want. We provide the preview so you can make an informed decision about your content before you bring it into <MadCap:variable name="Other.Product" />. Use that option and don't be afraid to cancel many times if needed to get what you want. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Topics;Styles:creating topics" />Slice Your Information Into Reasonable Chunks</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Topics;Styles:creating topics" />slice your information into reasonable chunks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The New Topics Styles page in the Import FrameMaker Wizard is one of the most important places to stop and think when you are importing FrameMaker files into <MadCap:variable name="Other.Product" />. </p>
+                <p>What you're doing is telling <MadCap:variable name="Other.Product" /> that you want your FrameMaker files chopped into topics, based on the paragraph formats you move to the right side of the screen. This is where the logically structured documents that you prepared will pay off. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>In the example below, <MadCap:variable name="Other.Product" /> will make topics out of sections that start with BookTitle, ChapterTitle, Heading1, and Heading2. No other formats will be used to create topics. </p>
+                    <p>
+                        <img src="../Resources/Images/fm_wizard_new_topic_styles.png" class="MaxWidth65Percent" />
+                    </p>
+                </div>
+                <p>At the end of the import process, carefully review the topics to see if the formats you selected are the information chunks you want. If they are too large or too small, cancel and select other formats to see if you like those better. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">
+            <MadCap:keyword term="Images:importing" />Use Special Settings When Importing Graphics</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Images:importing" />use special settings when importing graphics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Technical manuals typically use many graphics. It’s important these come through the conversion process as clean as possible, and you can use special settings on the Options page of the Import FrameMaker Wizard to help things along.</p>
+                <p>When you import, you have a few options for graphics. What you select depends on what you want to do and how your FrameMaker files are set up. The result also depends on settings in the <MadCap:keyword term="Distiller:images;Images:Distiller" />Adobe Distiller. See <MadCap:xref href="Before_You_Import.htm" MadCap:conditions="General.OnlineLive">Before You Import</MadCap:xref><MadCap:xref href="Before_You_Import.htm#Distiller" MadCap:conditions="General.Print">Distiller Settings for Importing Graphics</MadCap:xref>.</p>
+                <ul>
+                    <li>
+                        <MadCap:keyword term="Images:anchored frames;Anchored frames:images" />If your document contains graphics with callouts, you can select one of three options to determine how the images are imported. <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/AnchoredFrameImagesList.flsnp" /></li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+                    <li>To get the best resolution in the graphics after the import, clear the <span class="Emphasis">Preserve Image Size</span> check box. If you select this option, the original image is imported. However, the &lt;img&gt; tag is modified in the imported file to closely reflect the height and width of the image in the FrameMaker document. If you <span class="EmphasisItalic">do not</span> select this option, the &lt;img&gt; tag is not modified in the imported file. Instead, the image is referenced at 100% of its original value. You might then need to manually resize the image in <MadCap:variable name="Other.Product" />. But this will give you the cleanest looking graphic because it wasn’t reduced in size in the import process. For more information about resizing your graphics in <MadCap:variable name="Other.Product" />, see <MadCap:xref href="../Images/Editing_Images/Resizing_Images.htm" MadCap:conditions="General.OnlineLive">Resizing Images</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.Print">the online Help</MadCap:conditionalText>.</li>
+                </ul>
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../Resources/Images/import_images_example.png" class="MaxWidth70Percent" />
+                </p>
+                <p>Like so many options when you import, review the graphics in the Preview before you commit to the import. Make sure the graphics look the way you want. If not, click <span class="Emphasis">Cancel</span> and change the options. Also understand that some cleanup may be required, so factor that into your time estimates.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:preserve" />Preserve FrameMaker Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:preserve" />preserve framemaker styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have a robustly styled FrameMaker file that you like, and this is your first FrameMaker import, you probably want to preserve FrameMaker styles on import. </p>
+                <p>This serves two functions: (1) It makes your <MadCap:variable name="Other.Product" /> documents look very similar to your FrameMaker documents, and (2) it creates a template that you can easily reuse in future projects. While it may be some work up front, it results in less work down the line—always a good practice. </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you select this import option, you will get a lot of "child" formats in your eventual stylesheet. The names look like h1.Heading1 or h2.Heading2, where the part after the period comes from the style names in your FrameMaker files. These formats inherit some or all of their formatting from the parent (h1, h2, and so on) style. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">
+            <MadCap:keyword term="Styles:define during import" />Define Your Styles If You are Not Using an Existing Stylesheet</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:define during import" />define your styles if you are not using an existing stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you opted to preserve FrameMaker styles, you can edit the styles to look as you want them before you finish the import. Click the <span class="Emphasis">Conversion Styles</span> button if you want to change the formats.</p>
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../Resources/Images/fm_wizard_conversion_styles.png" class="MaxWidth70Percent" />
+                </p>
+                <p class="PageBreakBefore">You do not have to make the changes to the formats here—you can always do it after you import using the Stylesheet Editor, but it will seem easier to do it now. Your content will come through looking more like you expect.</p>
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../Resources/Images/fm_wizard_conversion_styles2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Cross-references:mapping;Mapping:cross-references;Styles:cross-references;Cross-references:styles" />Map and Create Cross-Reference Formats</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Cross-references:mapping;Mapping:cross-references;Styles:cross-references;Cross-references:styles" />map and create cross-reference formats</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Most technical material includes a lot of cross-references. This is a great practice because it helps the reader know where related information is in the manual. <MadCap:variable name="Other.Product" /> has a fairly robust cross-reference feature set.</p>
+                <p>You have two ways of managing cross-references: standard mapping and preservation styles conversion.</p>
+                <h3 MadCap:conditions="General.Print">Using the Standard Mapping During Import</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>using the standard mapping during import</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>This is in the Import FrameMaker Wizard, on the Cross-References page. This setting overrides any other settings you may use. The downside to using this area is that you have little control over the exact cross-reference structure. It’s best if your cross-references are heading and page style references. You can always change them later.</p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../Resources/Images/import_fm_map_xrefs_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+                <h3 class="PageBreakBefore" MadCap:conditions="General.Print">Using the Frame Styles Conversion Settings</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>using the frame styles conversion settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>On the Stylesheet page of the Import FrameMaker Wizard, you can click the Conversion Styles button if you are preserving FrameMaker styles. This opens the Import Styles Editor, which you can use to change the cross-reference formats in your FrameMaker files, mapping them to exactly what you want in <MadCap:variable name="Other.Product" />. This is a better method if you have a lot of unique cross-reference formats, such as Step # or other references.</p>
+                        <p>When you expand the Cross-Reference node, you see the cross-reference formats in your FrameMaker document(s). You can specify how these look when they come through the conversion.</p>
+                        <p>
+                            <img src="../Resources/Images/import_fm_map_xrefs_example2.png" class="MaxWidth80Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+                <h3 MadCap:conditions="General.Print">Conversion Table</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>conversion table</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The following table will help you understand how and what you are converting.</p>
+                        <table style="mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;caption-side: top;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Command</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Similar to FrameMaker’s Format</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{b}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start bold text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/b}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End bold text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{bg}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start new background color</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/bg}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End background color</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{color}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start new text color</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/color}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End text color</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{default}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Reset all font changes</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">[default]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{ext}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">File extension</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{family}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start new font family</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/family}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End font family</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{file}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">File name, including extension</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">[fullfilename]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{filename}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">File name, without extension</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">[filename]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{h1}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Text of first heading 1 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{h2}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Text of first heading 2 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{h3}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Text of first heading 3 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{h4}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Text of first heading 4 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{h5}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Text of first heading 5 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{h6}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Text of first heading 6 paragraph in topic</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None, although the running header/footer system variable comes close</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{i}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start italic text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/i}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End italic text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{page}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Page number</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">[pagenumonly]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{pagecount}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Page count</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText"><span class="InvisibleText">.</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{pageref}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Context-sensitive page reference automatically adjusts from a page number to "above," "below," "next," or "previous."</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{paranum}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">The autonumber text of bookmarked paragraph The bookmark is automatically added to the heading when you insert the cross-reference.</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">[paranum]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{paranumonly}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">The autonumber only of bookmarked paragraph The bookmark is automatically added to the heading when you insert the cross-reference.</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">[paranumonly]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{paratext}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Text of bookmarked paragraph The bookmark is automatically added to the heading when you insert the cross-reference.</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">[paratext]</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{paraxml}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Text and markup of bookmarked paragraph The bookmark is automatically added to the heading when you insert the cross-reference.</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{path}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">File path</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{size}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start new font size</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/size}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End font size</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{sub}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start subscript text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/sub}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End subscript text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{sup}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Start superscript text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{/sup}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">End superscript text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{title}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">Title of document</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">None</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{u}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">Start underlined text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableTextEmphasis">{/u}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                    <p class="TableText">End underlined text</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                    <p class="TableText">Managed in Character formats</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableTextEmphasis">{url}</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                    <p class="TableText">File path, URL syntax</p>
+                                </td>
+                                <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                    <p class="TableText">None, but HTML marker is close</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Remember, when you import cross-references, they show the page number from FrameMaker. Until you put the topics together into a TOC and create a target in <MadCap:variable name="Other.Product" />, the topics know nothing about pages and page numbering, except within a single topic.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Cross-references:mapping;Mapping:cross-references;Paragraphs:styles;Mapping:paragraph styles;Characters:styles;Mapping:character styles;Cross-references:styles;Styles:cross-references;Styles:paragraph;Styles:character" />Map All Your FrameMaker Styles to Those in Your Stylesheet</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Cross-references:mapping;Mapping:cross-references;Paragraphs:styles;Mapping:paragraph styles;Characters:styles;Mapping:character styles;Cross-references:styles;Styles:cross-references;Styles:paragraph;Styles:character" />map all your framemaker styles to those in your stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>When you reach the import pages for mapping your existing FrameMaker styles to <MadCap:variable name="Other.Product" /> styles, make sure you map all of them. You can map paragraph styles, character styles, and cross-reference styles.</p>
+                <p>Unmapped paragraph styles come through as p.whateverthestylenamewas, unmapped character styles come through as span.whateverthestylenamewas, and unmapped cross-reference styles come through as MadCap|xref.whateverthenamewas. This may result in lots of formats you did not actually want in the stylesheet and can take a lot to clean up. It is better to control the mapping up front and reduce the cleanup afterwards.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>You might have a paragraph style called "ChapterTitle." When you import this style, you might want it to be mapped to an h1 style in <MadCap:variable name="Other.Product" />. Therefore, if you map it to h1, the result will be a style called h1.ChapterTitle. If you do not map it, the result will be a style called p.ChapterTitle.</p>
+                    <p>
+                        <img src="../Resources/Images/fm_wizard_paragraph_style_mapping.png" class="MaxWidth80Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="FMQuickStart" />
+        </p>
+    </body>
+</html>

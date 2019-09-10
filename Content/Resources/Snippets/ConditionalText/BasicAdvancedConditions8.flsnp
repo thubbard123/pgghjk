@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="5" MadCap:lastHeight="2452" MadCap:lastWidth="893">
+    <body>
+        <p>Following are some examples of condition expression strings.</p>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—or</p>
+            <p class="TypedEntry">Primary.Website OR Primary.AllPrint</p>
+            <p>This is a simple expression that includes content that has either Website <span class="EmphasisItalic">or</span> AllPrint conditions applied to it.</p>
+            <p>So let's say you have a topic that looks like this.</p>
+            <p>
+                <img src="../../Images/conditions10.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+            <p>In the output, you will see this.</p>
+            <p>
+                <img src="../../Images/conditions11.png" class="MaxWidth90Percent" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—and</p>
+            <p class="TypedEntry">Primary.Website AND Primary.AllPrint</p>
+            <p>This expression includes content that has Website <span class="EmphasisItalic">and</span> AllPrint conditions applied to it. <span class="EmphasisItalic">However, the output can also include other conditions not listed in the expression, since they are not explicitly excluded.</span></p>
+            <p>So let's say you have a topic that looks like this.</p>
+            <p>
+                <img src="../../Images/conditions12.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+            <p>In the output, you will see this. </p>
+            <p>
+                <img src="../../Images/conditions13.png" class="MaxWidth90Percent" />
+            </p>
+            <p>Notice that the second sentence is included even though it contains not only the AllPrint and Website conditions, but also the PDFA and PDFB conditions.</p>
+        </div>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—and/and not</p>
+            <p class="TypedEntry">Primary.Website AND Primary.AllPrint AND&#160;NOT Primary.PDFA</p>
+            <p>This expression includes content that has Website <span class="EmphasisItalic">and</span> AllPrint conditions applied to it. In addition, it specifically excludes content with the PDFA condition.</p>
+            <p>So let's say you have a topic that looks like this.</p>
+            <p>
+                <img src="../../Images/conditions14.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+            <p>In the output, you will see this. </p>
+            <p>
+                <img src="../../Images/conditions15.png" class="MaxWidth90Percent" />
+            </p>
+            <p>The second sentence with both Website and AllPrint does not display in the output because the PDFA condition is in that sentence too, and it was set to be excluded.</p>
+        </div>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—and not (and)</p>
+            <p class="TypedEntry">Primary.Website AND NOT (Primary.AllPrint AND Primary.PDFB)</p>
+            <p>This expression includes any content with the Website condition applied to it. In addition, it specifically excludes content with both the AllPrint and PDFB conditions.</p>
+            <p>So let's say you have a topic that looks like this.</p>
+            <p>
+                <img src="../../Images/conditions16.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide" />
+            <p>In the output, you will see this.</p>
+            <p>
+                <img src="../../Images/conditions17.png" class="MaxWidth90Percent" />
+            </p>
+            <p>The sentence that had both the AllPrint and PDFB conditions was excluded. However, another sentence that has the Website and PDFB conditions was included. That's because the exclusion only occurs if <span class="EmphasisItalic">both</span> the AllPrint and PDFB conditions have been applied to the sentence.</p>
+        </div>
+    </body>
+</html>

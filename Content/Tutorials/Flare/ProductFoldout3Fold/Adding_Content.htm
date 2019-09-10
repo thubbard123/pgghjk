@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="8112" MadCap:lastWidth="889" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorials3Foldout.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/ProductFoldout3Fold.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Product Foldout" />Adding Content to Topics</h1>
+        <p>Adding your own content to your topics is relatively simple. But because the output is print-based, and a bit unique, there are a few things to keep in mind as you work in the XML Editor.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Layout Modes and Style Mediums</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Layout Modes and Style Mediums</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The way it is displayed in the XML Editor depends on the layout mode that is selected, as well as the medium. This is especially important with this template, because you really need to see the approrpriate page layout as you add content. If you are looking at a topic in Web Layout mode, you won't see this and it will be more difficult to work.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select the Correct Layout Mode</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <p>If your topic is not already shown in the XML Editor, open the Content Explorer and double-click <span class="Emphasis">Front2</span>.</p>
+                                <p>Chances are pretty good that your topic will initially be displayed in Web Layout mode with the default medium, like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Click the <span class="Emphasis">Layout (Web)</span> drop-down and select <span class="Emphasis">Print Layout</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content2.png" alt="" title="" class="MaxWidth40Percent" />
+                                </p>
+                                <p>The look of the topic changes to this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This is the Back page layout (not the one you created, but the original page layout that came with the template). It is being shown because it is the first page layout listed alphabetically in the Content Explorer.</p>
+                                <p>But what you really need is the Front2 page layout that you created.</p>
+                            </li>
+                            <li>
+                                <p>In the local toolbar click the <span class="Emphasis">Page Layout</span> drop-down and select <span class="Emphasis">Front2.flpgl</span>, and in the flyout menu select <span class="Emphasis">Normal</span>&#160;(the name of the only page in that layout).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                                <p>The display changes, showing the correct page layout:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                                <p>Also, notice that the medium selected is <span class="Emphasis">print</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content6.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This happened automatically when you switched from Web Layout mode to Print Layout mode. Flare anticipated that you might create both online and print-based output from your project, and the default medium is typically used for online output while the print medium is used for print-based output.</p>
+                            </li>
+                            <li>In the Content Explorer, double-click <span class="Emphasis">Back2.htm</span>.</li>
+                            <li>
+                                <p>If the topic displays in the wrong mode, click the Layout (Web) drop-down and select <span class="Emphasis">Print Layout</span>.</p>
+                                <p>The topic displays with the original Back.flpgl page layout. It looks correct, but lets sync it with the new page layout you created.</p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the local toolbar click the <span class="Emphasis">Page Layout</span> drop-down and select <span class="Emphasis">Back2.flpgl</span>, and in the flyout menu select <span class="Emphasis">Normal</span>&#160;(the name of the only page in that layout).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content12.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Inserting Variables and Adding Text</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Inserting Variables and Adding Text</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In this template, we've created some variables. On the first panel of the foldout, we used them for the company name and the title. We also used them for company information (e.g., address) on the back of the foldout. Variables can be useful if you plan to use the same page layout for multiple outputs. For one target you can use the default definitions for the variables, and you can override the variable definitions for any of the other targets you might generate<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Variables/More_About_Variables/Overriding_Variable_Definitions.htm">Overriding Variable Definitions in Targets</MadCap:xref>)</MadCap:conditionalText>. <MadCap:conditionalText MadCap:conditions="General.Print">For more about variables and overriding definitions in targets, see the online Help.</MadCap:conditionalText></p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Insert Variables and Text in the Front Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>In the XML Editor, click the <span class="Emphasis">Front2.htm</span> topic tab to bring it to the front.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content13.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the Front2 topic, delete the heading and paragraph that were added to the topic when you created it.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>With you cursor at the top of the first panel in the topic, click <img src="../../../Resources/Images/insert_variable_btn.png" class="ReduceButtonSize" /> in the local toolbar.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content7.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Variables dialog opens.</p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>With the <span class="Emphasis">General</span> variable set selected on the left side, choose the <span class="Emphasis">CompanyName</span> variable.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content8.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The variable is inserted into the topic.</li>
+                            <li>Press <span class="Emphasis">Enter</span> to create a new paragraph and click <img src="../../../Resources/Images/insert_variable_btn.png" class="ReduceButtonSize" /> again.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>This time select the <span class="Emphasis">Title</span> variable.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content9.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The variable is inserted into the topic.</li>
+                            <li>Press <span class="Emphasis">Enter</span> again to create a new paragraph.</li>
+                            <li>In the Content Explorer, double-click <span class="Emphasis">Front.htm</span>, the original topic included in the template.</li>
+                            <li>If necessary, click the <span class="Emphasis">Layout (Web)</span> drop-down in the local toolbar and select <span class="Emphasis">Print Layout</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Rather than making you type all of the text in the new topic, we'll just copy and paste it from the original topic. Highlight all of the text, starting with the first <span class="Emphasis">Heading</span> to the last paragraph.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content10.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Press <span class="Emphasis">CTRL+C</span> on your keyboard to copy it.</li>
+                            <li>Go back to your <span class="Emphasis">Front2.htm</span> topic.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Place your cursor on the empty paragraph, and press <span class="Emphasis">CTRL+V</span> on your keyboard to paste the copied text. Notice that the styles associated with the text were also retained, so we won't need to re-apply the styles to that text.</p>
+                                <p>The topic should look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content11.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Insert Variables and Text in the Back Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <p>Click the <span class="Emphasis">Back2.htm</span> tab to bring it to the front.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content14.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Delete the heading and paragraph that were added to the topic when you created it.</li>
+                            <li>
+                                <p>Type the following:</p>
+                                <p class="TypedEntry">This is the Back Panel</p>
+                            </li>
+                            <li>Press <span class="Emphasis">Enter</span> to create a new paragraph.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the local toolbar, click <img src="../../../Resources/Images/insert_variable_btn.png" class="ReduceButtonSize" />.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content15.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Variables dialog opens.</p>
+                            </li>
+                            <li>With the <span class="Emphasis">General</span> variable set selected on the left side, choose the <span class="Emphasis">CompanyName</span> variable.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The variable is inserted into the topic.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Repeat these these last few steps to insert the <span class="Emphasis">StreetAddress</span> and <span class="Emphasis">CityStateZip</span> variables in paragraphs below the first one. Then press Enter after the last variable and type the following:</p>
+                                <p class="TypedEntry">www.madcapsoftware.com</p>
+                                <p>The top-left part of the topic should look like this when you are finished:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content16.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>We're going to do the same thing that we did with the other topic, copying text from the original back topic. In the Content Explorer, double-click <span class="Emphasis">Back.htm</span>.</li>
+                            <li>If necessary, click the <span class="Emphasis">Layout (Web)</span> drop-down in the local toolbar and select <span class="Emphasis">Print Layout</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Highlight all of the text, starting with the first <span class="Emphasis">Heading</span> to the end of the example in the third panel.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content17.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Press <span class="Emphasis">CTRL+C</span> on your keyboard to copy it.</li>
+                            <li>Go back to your <span class="Emphasis">Back2.htm</span> topic.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>After the text <span class="Emphasis">www.madcapsoftware.com</span>, press <span class="Emphasis">Enter</span> to create a new paragraph. Then press <span class="Emphasis">CTRL+V</span> on your keyboard to paste the copied text. Notice that the styles associated with the text were also retained, so we won't need to re-apply the styles to that text.</p>
+                                <p>The topic should look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content18.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Inserting and Positioning Images</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Inserting and Positioning Images</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We've added all of the content into both topics, except for a couple of images. In the page layouts we set images in the background. In our topics, however, we are going to insert them directly into the content and then use absolute positioning to drag them where we want.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Insert and Position an Image in the Front Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open the <span class="Emphasis">Front2.htm</span> topic.</li>
+                            <li>In the Content Explorer, expand the <span class="Emphasis">Resources</span> folder, then expand <span class="Emphasis">Images</span> under it.</li>
+                            <li>
+                                <p>Click the <span class="Emphasis">Image2.png</span> file, then drag and drop it at the very beginning of the topic in the XML Editor.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content19.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the lower-right corner of the image, click the resize icon <img src="../../../Resources/Images/resize_image_icon.png" class="ReduceButtonSize" /> and drag it up and to the left to reduce the size of the image until you like it.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content20.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Right-click the image, and from the context menu select <span class="Emphasis">Text Wrap&gt;Square</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content21.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Hover over the middle of the image until the cursor changes to a cross. Then click and drag the image, dropping it between the second and third panels. You might need to resize the image again until it is positioned between the text just the way you want.</p>
+                                <p>When you are finished, the topic should look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content22.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Insert and Postition an Image in the Back Topic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Open the <span class="Emphasis">Back2.htm</span> topic.</li>
+                            <li>
+                                <p>In the Content Explorer, click the <span class="Emphasis">Image4.png</span> file, then drag and drop it at the very beginning of the heading in the second panel. We did not drag it to the beginning of the topic this time, because this topic is using two frames in the page layout, rather than one. And we want to make sure it is inserted into the second frame.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content23.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>(Optional) In the lower-right corner of the image, you can click the resize icon <img src="../../../Resources/Images/resize_image_icon.png" class="ReduceButtonSize" /> and drag it up and to the left if you want to reduce its size. But this image is smaller, so you may not need to.</p>
+                            </li>
+                            <li>Right-click the image, and from the context menu select <span class="Emphasis">Text Wrap&gt;Square</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Hover over the middle of the image until the cursor changes to a cross. Then click and drag the image, dropping it above the heading in the second panel until it is positioned the way you like.</p>
+                                <p>When you are finished, the topic should look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_content24.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You might find that you require more space to include all of the content that you want. In that case, you probably want to use one of the other Product Foldout templates that contains more panels (i.e., 4-Fold, 5-Fold, 6-Fold, 12-Fold).</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_foldout_templates.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="General.Print">For more information about the different kinds of content you can add, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about the different kinds of content you can add, see <MadCap:xref href="../../../Introduction_Topics/Flare/Steps/Add_Elements.htm">Adding Elements and Objects</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Creating_Styles.htm">Creating Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

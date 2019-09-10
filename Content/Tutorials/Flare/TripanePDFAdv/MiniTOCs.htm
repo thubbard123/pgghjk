@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="7123" MadCap:lastWidth="998" MadCap:conditions="Products.Flare" class="" MadCap:conditionTagExpression="include[Snippets.Snippet7] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTripane.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/TripanePDF.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Tripane and PDF" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Mini-TOC:proxies;Proxies:mini-TOC" />
+            <MadCap:keyword term="Snippets" />
+            <MadCap:concept term="FilterSnippets" />
+            <MadCap:concept term="FilterConditionTags" />
+            <MadCap:keyword term="Conditions" />
+            <MadCap:concept term="FilterPrintedOutput" />
+            <MadCap:keyword term="Mini-TOC:proxies;Proxies:mini-TOC;Styles:mini-TOCs" />
+            <MadCap:keyword term="Print-based output:tables of contents;Tables of contents:printed output;Styles:TOC headings;Tables of contents:styles;Heading levels;Headings;Tables of contents:heading levels;Tables of contents:depth" />
+            <MadCap:concept term="FilterTOCs" />Mini-TOCs</h1>
+        <p>Flare lets you create mini-TOCs for both online and print-based output. In this template, we used a mini-TOC, but only for our PDF output. We used it on the first page of chapters to let readers know the sections contained in the following pages. To make the mini-TOCs look and act the way we wanted, we performed a handful of short tasks.</p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../../Resources/Images/hdydt_minitocs2.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Creating a Snippet</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Creating a Snippet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We created a snippet because we wanted the same introductory text to always precede the mini-TOC. After the text, we inserted a mini-TOC proxy, setting its depth level to 2. The proxy is what actually produces the generated mini-TOC in the output.</p>
+                <p>Rather than typing this text and creating the mini-TOC proxy in each relevant topic, the easiest solution was to place both the text and mini-TOC in a snippet, then insert that snippet wherever needed.</p>
+                <ol>
+                    <li>
+                        <p>(Optional) In the Content Explorer, create a subfolder under <span class="Emphasis">Resources</span> and name it <span class="Emphasis">Snippets</span>.</p>
+                        <p>You can actually place your snippet anywhere you like in the Content Explorer, but Resources\Snippets is the traditional location. You can also give the folder any other name that you like.</p>
+                    </li>
+                    <li>Right-click on the <span class="Emphasis">Snippets</span> folder and from the context menu select <span class="Emphasis">New&gt;Snippet</span>. The Add File dialog opens.</li>
+                    <li>In the <span class="Emphasis">File Name</span> field at the bottom, give your new snippet a name. We called ours "MiniTOC."</li>
+                    <li>Click <span class="Emphasis">Add</span>. The snippet is created and opens in the XML Editor.</li>
+                    <li>
+                        <p>Replace the initial text in the editor with your own. In our snippet, we added the following text:</p>
+                        <p>"This chapter discusses the following. (This snippet is conditioned for PDF output)."</p>
+                        <p>You can also delete the text so that the snippet doesn't contain any at all.</p>
+                    </li>
+                    <li>Press <span class="Emphasis">Enter</span> to create an empty paragraph.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                    <li>
+                        <p>Select the <span class="Emphasis">Insert</span> ribbon. On the far right side in the <span class="Emphasis">Proxy</span> section, select <span class="Emphasis">Proxy&gt;Insert Mini-Toc Proxy</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The MiniToc Proxy dialog opens.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                    <li>
+                        <p>In the <span class="Emphasis">TOC Depth</span> field, select the number of heading levels you want to include in the generated mini-TOC. In our template, we set this to 2, with the intention that only h2 headings would show up in the mini-TOC.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The proxy is added to the snippet. You should see a gray bar representing the proxy. If you don't see it, chances are you need to turn on your markers from the <span class="Emphasis">Show Tags</span> <img src="../../../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> drop-down in the local toolbar of the XML Editor.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Inserting the Snippet</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Inserting the Snippet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>With our snippet completed, we inserted it in the topics that would serve as the first page of chapters in the PDF output.</p>
+                <ol>
+                    <li>Open a topic that will serve as the beginning of a chapter.</li>
+                    <li>Place your cursor where you want to insert the snippet.</li>
+                    <li>Press <span class="Emphasis">CTRL+R</span> on your keyboard. The Insert Snippet Link dialog opens.</li>
+                    <li>
+                        <p>Locate and select your new snippet, then click <span class="Emphasis">OK</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The snippet is added to the topic.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Putting a Condition Tag on the Snippet</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Putting a Condition Tag on the Snippet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Because this template project is designed to produce both online and print-based output, we put a condition on the snippets wherever we inserted them so that they would not accidentally show up in the online output.</p>
+                <ol>
+                    <li>Make sure you've created a condition tag so that you can easily include the snippet in your print output but exclude it from your online output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>In the topic, right-click on the snippet and from the context menu select <span class="Emphasis">Conditions</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</p>
+                    </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it. In our template, we selected a condition tag set that we named "General."</li>
+                    <li>
+                        <p>For each condition tag that you want to apply to the block of content, click the check box next to the tag. A check mark appears in the box. In our template, we selected a condition that we named "PDF."</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The condition is applied to the snippet in the topic.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also place a "print only" condition on the snippet file itself in the Content Explorer (like we did in the template), but placing a condition on the snippet where it is inserted will accomplish the same thing. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Condition_Tags/Applying_Condition_Tags_to_Content.htm">Applying Condition Tags to Content</MadCap:xref>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To ensure the correct content is included in or excluded from your target, you need to associate conditions with the target<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Condition_Tags/Associating_Condition_Tags_with_Targets.htm">Associating Condition Tags with Targets</MadCap:xref>)</MadCap:conditionalText>. In the PDF targets in our template, we told Flare to include content that has the "PDF" condition but to exclude content that has the "Online" condition.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Styling the Mini-TOC</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Styling the Mini-TOC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We used our stylesheet to adjust how the mini-TOC would look. This included setting margins and padding, as well as making the text very light since it would appear on a dark background.</p>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The PDF output is going to use the print medium settings, so that's where we're making our changes. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText></p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|miniTocProxy</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs8.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">border-top </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-left </span>Set it to <span class="Emphasis">0.25in</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-right </span>Set it to <span class="Emphasis">0.25in</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-left </span>Set it to <span class="Emphasis">0</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <li>
+                                        <p>On the left side of the Stylesheet Editor, expand the <span class="Emphasis">p</span> style and select the <span class="Emphasis">MiniTOC1</span> style under it.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs9.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When we created and inserted the proxy in our snippet, we told Flare to include a depth level of 2 in the mini-TOC proxy, with the intention of showing only h2 headings. Even though this style has the number 1, it refers to whatever content is included at the first level of the mini-TOC. In our case, that would be the h2 headings. If we had told Flare to include up to level 4, we could use the p.MiniTOC2 style to design a look for h3 headings, and we could use p.MiniTOC3 to design a look for h4 headings in the mini-TOC.</p>
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">E1E1E1</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">9pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-weight </span>Set it to <span class="Emphasis">normal</span>.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|miniTocProxy</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">border-top: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">margin-left: </span><span class="StyleValue">0.25in;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">margin-right: </span><span class="StyleValue">0.25in;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-left: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">p.MiniTOC1</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#e1e1e1;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">9pt;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-weight: </span><span class="StyleValue">normal;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When we created and inserted the proxy in our snippet, we told Flare to include a depth level of 2 in the mini-TOC proxy, with the intention of showing only h2 headings. Even though this style has the number 1, it refers to whatever content is included at the first level of the mini-TOC. In our case, that would be the h2 headings. If we had told Flare to include up to level 4, we could use the p.MiniTOC2 style to design a look for h3 headings, and we could use p.MiniTOC3 to design a look for h4 headings in the mini-TOC.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Using TOC Depth for Heading Levels</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Using TOC Depth for Heading Levels</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This is actually an optional step, but we set this option in our PDF targets so that Flare would automatically adjust the heading levels in the output, based on the outline TOC structure. This means that Flare automatically converts heading content (h1, h2, h3, etc.) to the appropriate level in the output. For example, we might have a topic that starts out with an h1 heading. But in the outline TOC, this topic is within not just one book, but within a second-level book as well; in other words, it's at the third level in the outline TOC. That means Flare will convert the h1 to an h3 when the PDF is generated. Setting this option in the Target Editor is easier than trying to figure it all out ahead of time and manually applying the correct heading styles throughout the project. This affects the mini-TOC because we've told Flare to limit its content to a depth level of 2. This means that Flare will look for headings that have an h2 in the chapter and include them in the mini-TOC, but it will exclude headings that are at a level of h3 or deeper.</p>
+                <ol>
+                    <li>Open the PDF target.</li>
+                    <li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Generated TOC</span> section, select <span class="Emphasis"> Use TOC depth for heading levels</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_minitocs10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about mini-TOCs, snippets, conditions, styles, and the heading levels for a print TOC, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Proxies/Using_the_Mini_TOC_Proxy.htm">Creating a Mini-TOC</MadCap:xref>, <MadCap:xref href="../../../Snippets/About_Snippets.htm">About Snippets</MadCap:xref>, <MadCap:xref href="../../../Condition_Tags/About_Condition_Tags.htm">About Conditions</MadCap:xref>, <MadCap:xref href="../../../Proxies/Using_Styles_to_Determine_the_Look_of_a_MiniTOC.htm">Using Styles to Determine the Look of a Mini-TOC</MadCap:xref>, and <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/TripanePDFTutorialWhatsNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

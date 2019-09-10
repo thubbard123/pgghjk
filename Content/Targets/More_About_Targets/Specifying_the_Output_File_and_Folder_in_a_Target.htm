@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="C;Manual.mchelp.&quot;;Manual.chm.&quot;" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="1074" MadCap:lastWidth="884" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output:files;Output:folders;Targets:output file;Targets:output folder" />
+            <MadCap:concept term="FilterTargets" />Specifying the Output File and Folder in a Target</h1>
+        <p>When you build the output for a target in your project, <MadCap:variable name="Other.Product" /> sends the output files to the Output folder where your project is located. It also uses a default name for the main entry file to the output. </p>
+        <p>However, you can specify a different location and main entry file name for a target's output files.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you have a project called "FictionSoftPro" and have stored it in your root C:\ directory. If you create a project based on the "Empty" template and then build a <MadCap:variable name="Outputs.DotNetHelp" /> target named "MyDotNetHelp,"<MadCap:variable name="Other.Product" /> places the output files in C:\FictionSoftPro\Output\MyName\MyDotNetHelp, with the default main entry file named "Manual.mchelp." If you build the output for an <MadCap:variable name="Outputs.HTMLHelp" /> target, <MadCap:variable name="Other.Product" /> places the output files in C:\FictionSoftPro\Output\MyName\MyHtmlHelp, with the main entry file (actually, the only file) named "Manual.chm."</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify the output file and folder in a target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the target.</li>
+                    <li>On the <span class="Emphasis">General</span> tab of the Target Editor, do one or both of the following.<ul class="FirstLevel"><li><p>To specify the main entry file name, type the desired name in the <span class="Emphasis">Output File</span> field. <MadCap:snippetText src="../../Resources/Snippets/Variables/IfYouWantInsertVariable.flsnp" /></p><p>For Word output, the default file type is <MadCap:keyword term="XML:file" />XML. However, you can enter one of the following extensions at the end of the file name to use that file type: <MadCap:keyword term="DOC file;DOCX file;Adobe PDF;Microsoft XPS" />.doc, .docx, .pdf, .xps.</p><p>For FrameMaker output, the default type is <MadCap:keyword term="BOOK file;FM file" />BOOK and/or FM. However, you can enter .pdf in the field to use that file type.</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This field affects the name of the .mcbook file (used for viewing XHTML output in the MadCap Book Viewer). It also affects the name of the .book file for FrameMaker output. If you are creating multiple output files using chapter breaks, you can specify the name of each chapter file in the Printed Output tab of the TOC Properties dialog.</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Output File field is not available for <MadCap:variable name="Outputs.EclipseHelp" /> targets.</p></li><li>To specify the location of the output files, click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> in the <span class="Emphasis">Output Folder</span> field. Then navigate to and select the location in your computer where you want to place the files.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

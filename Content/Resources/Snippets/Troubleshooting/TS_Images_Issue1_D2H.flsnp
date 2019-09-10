@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="730" MadCap:lastWidth="861">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Subheading">Images Not Displaying in Source Documents or Outputs</p>
+        <p>Images are not displaying in the Word source documents, and the message "The linked image cannot be displayed" is shown. In some cases, images are not showing in outputs as well.</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>The cause and solution may depend on one of the following:</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Image Does Display in Output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If the image <span class="EmphasisItalic">does</span> display in output, it exists in the project. However, there is an issue with the path to the folder where the files are stored. </p>
+                <ol>
+                    <li>Select the <span class="Emphasis">Project</span> ribbon.</li>
+                    <li>At the bottom of the <span class="Emphasis">Project</span> group, click <img src="../../Images/arrow_btn.png" class="ReduceButtonSize" />. The Project Settings dialog opens.</li>
+                    <li>In the <span class="Emphasis">Advanced</span> section, set the proper folder in the <span class="Emphasis">Media folder(s)</span> field. </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also verify and change the way links are set up for images in your Word document. In Word 2010/2013, click the <span class="Emphasis">File</span> tab, and on the far right under <span class="Emphasis">Related Documents,</span> click <span class="Emphasis">Edit Links to Files</span>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Image Does Not Display in Output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If the image <span class="EmphasisItalic">does not</span> display in output, it does not exist in the project.</p>
+                <p>You should check the path to the image by turning on Field Codes in Word. Sometimes the path to the image will point to a folder on another machine. Or the image may not be in that folder.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Image Cut and Pasted into Word</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If an image was cut and pasted into a Word document, then that document is copied into a Doc-To-Help project on another machine, the image may not appear in both the source document and the output.</p>
+                <p>You must find the original image and move it to the correct machine. If you can find the original image file, you should Insert and Link the image using the Insert Picture dialog, instead of using cut/paste.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

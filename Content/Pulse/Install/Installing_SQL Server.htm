@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="16" MadCap:lastHeight="12264" MadCap:lastWidth="1029" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Use these instructions to Microsoft SQL&#160;Server 2008 or Microsoft SQL&#160;Server 2008 R2 to use as the MadCap Pulse database. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Pulse:SQL Server;SQL:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="SQL Server" MadCap:conditions="Products.Pulse" />Installing&#160;Microsoft SQL&#160;Server</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:SQL Server;SQL:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="SQL Server" MadCap:conditions="Products.Pulse" />Installing Microsoft SQL&#160;Server</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForNetworkAdministrators.flsnp" />
+        <p>You can install a Microsoft SQL&#160;Server instance to use as the Pulse database. This instance can reside on the Pulse web server (this is the server running IIS) or on a different system with access to the Pulse web server. </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Before You Begin</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>before you begin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To begin the installation, log in to the server where you will be installing the SQL&#160;database instance. You must use the appropriate access credentials:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Built-In Administrator Account for Windows Server </span>This is the account that lets you run programs as an administrator, before a user account is created. </p>
+                        <p>OR</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Windows User Account with Local Administrator Privileges </span>This account must have local administrator privileges for the server.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Installing SQL Server</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>installing sql server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You must install a supported version of Microsoft SQL&#160;Server:</p>
+                <ul>
+                    <li>Microsoft SQL Server 2012</li>
+                    <li>Microsoft SQL Server 2008R2</li>
+                    <li>Microsoft SQL Server 2008</li>
+                </ul>
+                <p>You can use a full or express version of any of these, but the full version is recommended because it can store more data.</p>
+                <p>Regardless of your operating system (Windows Server 2012, 2008R2, or 2008), you should be able to use any of the versions of Microsoft SQL Server listed above. Following are general steps for all three. For the most part, the steps are identical for each, though there may be some minor variations.</p>
+                <p>It is recommended that you apply all available service packs and critical updates to your operating system prior to the installation. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Important</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you are running Windows Server 2012 or are installing Microsoft SQL&#160;Server 2012, be sure you have the most current version of Pulse. Microsoft SQL&#160;Server 2012 and Windows Server 2012 are not compatible with earlier versions of Pulse.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>How to Install Microsoft SQL Server</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Obtain the installation media.</li>
+                            <li>Log in to the server as an administrator.</li>
+                            <li>Run the setup program from a CD or  the network.<MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>if you are installing from a network</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p>If the Do You Want to Run This File dialog appears, click <span class="Emphasis">Run</span>. </p><p>If prompted by Windows User Account Control message asking if you want to allow the program to make changes to this computer, click <span class="Emphasis">Yes</span>.</p><p>Depending on your specific environment, you may also be prompted for access credentials to access the setup program on your network share. </p></MadCap:dropDownBody></MadCap:dropDown></li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>For SQL Server 2008: If you are performing the installation on a system Windows Server 2008 R2, the Program Compatibility Assistant appears. Read the message and then click <span class="Emphasis">Run Program</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_sql_2008_program_compability_assistant.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                        <ol MadCap:continue="true">
+                            <li>
+                                <p>In the Planning page of the Installation Center, review the information. When ready to proceed, click <span class="Emphasis">Installation </span>in the left pane.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_sql_2008r2_planning.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li><span class="SetOffFirstLevel">For SQL&#160;Server 2008 R2&#160;</span>In the Installation page, click the <span class="Emphasis">New installation or add features to an existing installation </span>option. <p><span class="SetOffFirstLevel">For SQL&#160;Server 2008 and 2012 </span>In the Installation page, click the <span class="Emphasis">New SQL&#160;Server stand-alone installation or add features to an existing installation </span>option. </p><p><img src="../../Resources/Images/pulse_sql_express_adv_installation_page.png" class="MaxWidth100Percent" /></p><p>If a dialog opens with a security warning, click <span class="Emphasis">Run</span>.</p><p>The wizard checks the system to detect potential issues. </p></li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Setup Support&#160;Rules dialog, do one of the following:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If the wizard finds any failed, warning, or skipped rules, click <span class="Emphasis">Show Details</span> and/or click <span class="Emphasis">View detailed report</span>. Any failures must be resolved before proceeding. When resolved, click <span class="Emphasis">Re-run</span> to perform another system check. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>
+                                        <p>If wizard determines that the system passes the system check, click <span class="Emphasis">OK</span>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_sql_2008r2_setup_support_rules.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>The wizard ensures that you have a valid product key. </p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Product Key page, validate the SQL&#160;Server instance:</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how to validate an sql instance </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ol class="LowerAlpha">
+                                            <li>In the Product Key page, select the <span class="Emphasis">Enter the product key </span>option. </li>
+                                            <li>
+                                                <p>Type your Microsoft license key in the box. </p>
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_sql_2008r2_productkey.png" class="MaxWidth100Percent" />
+                                                </p>
+                                            </li>
+                                            <li>Click <span class="Emphasis">Next </span>to open the License Terms page. </li>
+                                            <li>Place a check mark in the <span class="Emphasis">I accept the license terms</span> box. </li>
+                                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                            <li>
+                                                <p>(Optional) If you wish to send feature usage data, select the check box at the bottom of the dialog. </p>
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_sql_express_adv_license_terms.png" class="MaxWidth100Percent" />
+                                                </p>
+                                            </li>
+                                            <li>Click <span class="Emphasis">Next</span>. (If your system requires updates, you may see a page at this point showing available updates. You can click the check box to include updates in the installation and click <span class="Emphasis">Next</span>.)</li>
+                                            <li>Depending on the version of SQL Server, you may need to click <span class="Emphasis">Install</span> at this point. The setup program performs a system check to detect potential issues. </li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Setup Support&#160;Rules page, do one of the following:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If potential issues are found, click <span class="Emphasis">Show Details</span>. You can also click <span class="Emphasis">View detailed report</span> for more information. Issues must be resolved before proceeding. When resolved, click <span class="Emphasis">Re-run</span> to perform another check. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_sql_2008r2_setup_support_rules2.png" class="MaxWidth90Percent" />
+                                        </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>
+                                        <p>If the Setup Support Rules indicates the system has passed, click <span class="Emphasis">Next</span>.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                            <li MadCap:conditions="PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide,General.OnlineLive,FlareGuides.FlarePulseGuide">
+                                <p>In the Setup Role page, choose the appropriate installation type. Then click <span class="Emphasis">Next </span> to proceed.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to choose an installation type</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p> If you are not familiar with SQL&#160;Server, it is recommend that you choose the following:</p>
+                                        <ol class="LowerAlpha">
+                                            <li>Select <span class="Emphasis">SQL&#160;Server Feature Installation</span>. This lets you choose the features to install.</li>
+                                            <li>Click <span class="Emphasis">Next</span> to open the Feature Selection page.</li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel" MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You will not see this step if you are installing SQL Server 2008.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.2008InstallationGuide,PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide" />
+                            <li>
+                                <p>In the Feature Selection page, place check marks next to the desired features. Then click <span class="Emphasis">Next</span>.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to install the minimum required features</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>At a minimum, you should:</p>
+                                        <ol class="LowerAlpha">
+                                            <li>
+                                                <p>Select these check boxes:</p>
+                                                <ul class="FirstLevel">
+                                                    <li>
+                                                        <p><span class="SetOffFirstLevel">Database Engine Services </span>
+                                                        </p>
+                                                        <ul class="SecondLevel">
+                                                            <li><span class="SetOffSecondLevel">SQL&#160;Server Replication</span>
+                                                            </li>
+                                                            <li><span class="SetOffSecondLevel">Full-Text Search</span> or <span class="SetOffSecondLevel">Full-Text Search and Semantic Extractions for Search</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <p><span class="SetOffFirstLevel">Management Tools - Basic</span>
+                                                        </p>
+                                                        <ul class="SecondLevel">
+                                                            <li><span class="SetOffSecondLevel">Management Tools - Complete</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <p><span class="SetOffFirstLevel">SQL&#160;Client Connectivity SDK </span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                                <MadCap:dropDown class="FourthLevel">
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>SQL Server 2008/2008R2 Example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody>
+                                                        <p>
+                                                            <img src="../../Resources/Images/pulse_sql_2008r2_feature_selection.png" class="MaxWidth50Percent" />
+                                                        </p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                                <MadCap:dropDown class="FourthLevel">
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>SQL&#160;Server 2012 Example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <p>
+                                                            <img src="../../Resources/Images/pulse_sql_2012_feature_selection.PNG" class="MaxWidth85Percent" />
+                                                        </p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                            </li>
+                                            <li>Use the default shared feature directory.</li>
+                                            <li>
+                                                <p>Click <span class="Emphasis">Next</span>. </p>
+                                                <p>The setup program checks the system for potential issues.&#160;</p>
+                                            </li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li MadCap:conditions="PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide,FlareGuides.FlarePulseGuide,General.OnlineLive">
+                                <p>In the Installation&#160;Rules page, do one of the following:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If any issues are found, click <span class="Emphasis">Show Details</span>. You can also click <span class="Emphasis">View detailed report</span> for more information. Issues must be resolved before proceeding. When resolved, click <span class="Emphasis">Re-run</span> to perform another check. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>If all of the system configuration checks have passed, click <span class="Emphasis">Next</span>.</li>
+                                </ul>
+                                <p>The Instance Configuration page opens.</p>
+                                <MadCap:dropDown MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive" class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You will not see this step if you are installing SQL Server 2008.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                            <li>
+                                <p>In the Instance Configuration page, select one of these buttons:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Default instance </span>If this is the first time SQL&#160;Server instance is being installed on the system, use the default instance name. This is typically MSSQLSERVER.</p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Named instance </span>If you do not want to use the default instance, select this button and type a unique name in the <span class="Emphasis">Instance ID</span>&#160;box. For example, type <span class="TypedEntry">PULSE01</span>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_sql_express_adv_instance_config.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide" />
+                            <li>
+                                <p>Click <span class="Emphasis">Next</span> to open the Disk Space Requirements page and then:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If your system does not meet the disk space requirements, review the Disk Usage Summary and address any issues before proceeding. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>If your system meets the disk space requirements, click <span class="Emphasis">Next</span>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>In the Server Configuration page, under the <span class="Emphasis">Service Accounts</span> tab you must provision service accounts to each listed SQL&#160;service. When finished, click <span class="Emphasis">Next</span>. </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to provision sql service accounts</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Always contact your SQL&#160;Server Administrator and/or Windows Administrator for the appropriate service accounts to use in your environment.</p>
+                                        <ol class="LowerAlpha">
+                                            <li>
+                                                <p>Provision the appropriate accounts to the list of SQL&#160;services. </p>
+                                            </li>
+                                            <li>
+                                                <p>Make sure the <span class="Emphasis">Startup Type</span> for each service is set as follows, depending on the version of SQL Server:</p>
+                                                <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <thead>
+                                                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                                <p class="TableTextHead">Service</p>
+                                                            </th>
+                                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                                <p class="TableTextHead">Account Name/Password</p>
+                                                            </th>
+                                                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                                                <p class="TableTextHead">Startup&#160;Type</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Agent</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableText"><span MadCap:createDate="2014-06-30T16:05:38.3652026-07:00" MadCap:creator="kschneider" MadCap:initials="KS" MadCap:comment="Do these need emphasis/bold/table text style?" MadCap:editor="kschneider" MadCap:editDate="2014-06-30T16:05:48.7102370-07:00" class="SetOffFirstLevel">SQL&#160;Server 2008/2008R2 </span>There is no default account for this service. The account you use depends on your security requirements.</p>
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL Server 2012</span> This account defaults to NT Service\SQLAGENT$[Name of Instance].</p>
+                                                                <p class="TableText">There is no default account for this service. The account you use depends on your security requirements.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Database Engine</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL&#160;Server 2008/2008R2 </span>The account you use depends on your security requirements.</p>
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL Server 2012 </span>This account defaults to NT Service\MSSQL$[Name of Instance].</p>
+                                                                <p class="TableText">The account you use depends on your security requirements.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Full-text Filter Daemon Launcher</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL&#160;Server 2008/2008R2 </span>This account defaults to NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                                <p class="TableText">The account you use depends on your security requirements. Microsoft recommends using a low privilege account.</p>
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL Server 2012 </span>This account defaults to NT Service\MSSQLFDLauncher$[Name of Instance].</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                                <p class="TableText">Manual</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Browser</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                                <p class="TableText">The default logon account is NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                                <p class="TableText">You will typically keep this setting.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                                <MadCap:dropDown class="FourthLevel">
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>SQL&#160;Server2008 Example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody>
+                                                        <p>
+                                                            <img src="../../Resources/Images/pulse_sql_2008_service_accounts.png" class="MaxWidth100Percent" />
+                                                        </p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                                <MadCap:dropDown class="FourthLevel">
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>SQL&#160;Server 2008R2 Example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody>
+                                                        <p>
+                                                            <img src="../../Resources/Images/pulse_sql_2008r2_service_accounts.png" class="MaxWidth95Percent" />
+                                                        </p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                                <MadCap:dropDown class="FourthLevel">
+                                                    <MadCap:dropDownHead>
+                                                        <MadCap:dropDownHotspot>SQL&#160;Server 2012 Example</MadCap:dropDownHotspot>
+                                                    </MadCap:dropDownHead>
+                                                    <MadCap:dropDownBody class="Final">
+                                                        <p>
+                                                            <img src="../../Resources/Images/pulse_sql_2012_service_accounts.PNG" class="MaxWidth100Percent" />
+                                                        </p>
+                                                    </MadCap:dropDownBody>
+                                                </MadCap:dropDown>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                                <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                                    <thead>
+                                                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                                <p class="TableTextHead">Service</p>
+                                                            </th>
+                                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                                <p class="TableTextHead">Account Name/Password</p>
+                                                            </th>
+                                                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                                                <p class="TableTextHead">Startup&#160;Type</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Agent</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableText"><span class="SetOffFirstLevel">SQL&#160;Server 2008/2008R2 </span>There is no default account for this service. The account you use depends on your security requirements.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Database Engine</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                                <p class="TableText">The account you use depends on your security requirements.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Full-text Filter Daemon Launcher</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                                <p class="TableText">This account defaults to NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                                <p class="TableText">The account you use depends on your security requirements. Microsoft recommends using a low privilege account.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                                <p class="TableText">Manual</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                                <p class="TableTextEmphasis">SQL&#160;Server Browser</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                                <p class="TableText">The default logon account is NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                                <p class="TableText">You will typically keep this setting.</p>
+                                                            </td>
+                                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                                <p class="TableText">Automatic</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Database Engine Configuration page, under the <span class="Emphasis">Account Provisioning</span> tab (SQL Server 2008/2008 R2) or the <span class="Emphasis">Server Configuration</span> tab (SQL Server 2012), choose one of these options:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Windows authentication mode </span>If you choose this option and are not logged in as an administrator, it is recommended that you add an account that has sufficient permissions to perform all of the needed SQL&#160;administrative tasks. If you are logged in as an administrator, it is recommended you also click <span class="Emphasis">Add Current User</span>. </p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>SQL&#160;Server 2008/2008R2 Example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_sql_2008r2_database_engine_windows_auth.png" class="MaxWidth100Percent" />
+                                                </p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>SQL&#160;Server 2012 Example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_sql_2012_server_configuration_tab.PNG" class="MaxWidth100Percent" />
+                                                </p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Mixed Mode (SQL&#160;Server authentication and Windows authentication) </span>If you choose this option, you must specify the password to use for the SQL&#160;Server system administrator account. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_sql_2008r2_database_engine_sql.png" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>When finished, click <span class="Emphasis">Next</span>.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>In the&#160;Error Reporting page, select whether or not you want to send error reports to Microsoft. This is your preference. Then click <span class="Emphasis">Next</span>. </li>
+                            <li>
+                                <p>In the Installation Configuration&#160;Rules page, do the following:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If there are issues, you must address them before clicking <span class="Emphasis">Next</span>. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>If there are no issues, click <span class="Emphasis">Next</span>.</li>
+                                </ul>
+                            </li>
+                            <li>In the Ready to Install page, click <span class="Emphasis">Install</span>. A progress indicator shows you the status of the process. </li>
+                            <li>
+                                <p>When the installation is complete, you will see the "Installation Succeeded" message. Click <span class="Emphasis">Close</span>.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If a failure occurs, troubleshooting information may be available on the <MadCap:variable name="Other.CompanyName" /> knowledge base at: <a href="http://kb.madcapsoftware.com/" target="_blank">http://kb.madcapsoftware.com/</a></p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may also want to check with your SQL&#160;Server Administrator about any errors you experience during installation.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.Future">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to install sql server 2008 express with advanced services</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Not including this section in this version of Pulse. If someone complains, we can put it back inxxx Otherwise delete laterxxx</p>
+                        <p>It is recommended that you apply all available service packs and critical updates to your operating system prior to the installation. </p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you plan to install Microsoft SQL&#160;Server 2008 R2 Express, you <span class="EmphasisItalic">must</span> install the Express Edition with Advanced Services because it supports full-text search. </p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Microsoft SQL&#160;Server 2008 R2 Express Edition with Advanced Services is limited to a maximum database size of 10 GB, so is best suited for lab, test, or demonstration environment. It is not the best choice for production environments.</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If the system where you plan to install Microsoft SQL&#160;Server 2008 R2 Express Edition with Advanced Services is not running Windows PowerShell 1.0, it is recommended that you install it before installing SQL. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <ol>
+                            <li>Log in to the server as an administrator. </li>
+                            <li>(Optional) Create a directory on the server to store the installation media.</li>
+                            <li>
+                                <p>Download the installation media from the Microsoft Download Center at:&#160;</p>
+                                <p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=25174" target="_blank">http://www.microsoft.com/en-us/download/details.aspx?id=25174
+</a>
+                                </p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It is recommended that you store the installation media in a folder that you create on the server. </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>Run the setup program as an administrator:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">For 64-bit Platforms </span>This is the file named SQLEXPRADV_x64_ENU.exe.</li>
+                                    <li><span class="SetOffFirstLevel">For 32-bit Platforms </span>This is the file named SQLEXPRADV_x86_ENU.exe.</li>
+                                </ul>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to run the setup program as an administrator</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ol style="list-style-type: lower-alpha;">
+                                            <li>If you did not log into the server as an administrator, navigate to the setup program. </li>
+                                            <li>
+                                                <p>Right-click the appropriate setup program and select <span class="Emphasis">Run as administrator</span> from the context menu. </p>
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_sql_2008expressadv_run_as_admin.png" class="MaxWidth100Percent" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>The setup program begins extracting the files. When finished, the SQL&#160;Server Installation Center opens.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>On the Installation page, click <span class="Emphasis">New installation or add features to an existing installation</span>. </p>
+                                <p>The Setup Support Files page appears and the program performs a check to detect potential issues.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If errors are found, you must resolve them before continuing. When the Setup Support Rules operation is complete, click <span class="Emphasis">OK</span> to proceed to the Installation Type page.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>In the Installation&#160;Type Page, select the <span class="Emphasis">New installation or add shared features</span> button. Then click <span class="Emphasis">Next</span>.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For SQL&#160;Server 2008 R2 Express Edition with Advanced Services, you do not need to enter License Terms.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the&#160;Feature Selection page, set the options you want. Always ensure there are check marks in these boxes:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Database Engine Services </span>This is needed to store, process, and keep your data secure. </li>
+                                    <li><span class="SetOffFirstLevel">Management Tools - Basic </span>This provides the management tools needed by server administrators.</li>
+                                    <li><span class="SetOffFirstLevel">Full-Text Search </span>This is required to give users the ability to search in Pulse. </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">SQL&#160;Client Connectivity SDK </span>This feature installs the files needed to develop a SQL Server Native Client applications.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_sql_2008r2expressadv_feature_selection.png" class="MaxWidth100Percent" />
+                                        </p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead><span class="Emphasis" MadCap:conditions="General.OnlineLive">notes</span>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are not familiar with SQL&#160;Sever, it is recommended that you keep the default selections.</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If a gray check mark appears next to a check box, that feature has already been installed with another version of SQL. You will automatically be able to use that feature with your SQL&#160;instance.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>In the Feature Selection page, click <span class="Emphasis">Next</span>. The setup program performs a check to detect any potential issues.&#160;</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead><span class="Emphasis" MadCap:conditions="General.OnlineLive">note</span>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If issues are found, you must resolve them before proceeding. When resolved, click <span class="Emphasis">Next</span> to continue to the Instance Configuration page. </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p>In the Instance Configuration page, select one of these buttons:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Default instance </span>If this is the first time SQL&#160;Server is being installed on the system, you can use the default instance of SQL&#160;server. The name is <span class="TypedEntry">SQLExpress</span>. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Named instance </span>If you want to create a named instance, type the desired name. For example, type <span class="TypedEntry">PULSE01</span>.</p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Microsoft SQL&#160;Server&#160;Express supports a maximum database size of 10GB. It will not check your system to see if your system meets the disk space requirements.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">Next</span> to open the Server Configuration page.</li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Server Configuration page, under the <span class="Emphasis">Service Accounts</span> tab, make sure the <span class="Emphasis">Startup Type</span> selection is set as follows:</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_sql_2008_service_accounts.png" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <thead>
+                                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                <p class="TableTextHead">Service</p>
+                                            </th>
+                                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                                <p class="TableTextHead">Account Name/Password</p>
+                                            </th>
+                                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                                <p class="TableTextHead">Startup&#160;Type</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableTextEmphasis">SQL&#160;Server Database Engine</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">This account defaults to NT&#160;AUTHORITY\NETWORK.</p>
+                                                <p class="TableText">The account you use depends on your security requirements.</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Automatic</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableTextEmphasis">SQL&#160;Full-Text Filter Daemon Launcher</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                                <p class="TableText">This account defaults to NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                <p class="TableText">The account you use depends on your security requirements. Microsoft recommends using a low privilege account.</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                                <p class="TableText">Manual</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                                <p class="TableTextEmphasis">SQL&#160;Server Browser</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                                <p class="TableText">The default logon account is NT&#160;AUTHORITY\LOCAL&#160;SERVICE. </p>
+                                                <p class="TableText">You will typically keep this setting.</p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                                <p class="TableText">Automatic</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>When finished, click <span class="Emphasis">Next</span>.</p>
+                            </li>
+                            <li>
+                                <p>In the Database Engine Configuration page, choose one of these options:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Windows authentication mode </span>If you choose this option and are not logged in as an administrator, it is recommended that you add an account that has sufficient permissions to perform all of the needed SQL&#160;administrative tasks. </li>
+                                    <li><span class="SetOffFirstLevel">Mixed Mode (SQL&#160;Server authentication and Windows authentication) </span>If you choose this option, it is recommended you use a password that does not expire. If you do not follow this recommendation, you can later change an expired password via the Pulse application (File&gt;Set Admin Password).</li>
+                                </ul>
+                            </li>
+                            <li>When finished, click <span class="Emphasis">Next</span>.</li>
+                            <li>
+                                <p>In the Reporting Services Configuration page, choose <span class="Emphasis">Install the native mode default configuration</span>. Then click <span class="Emphasis">Next</span>.</p>
+                            </li>
+                            <li>
+                                <p>In the&#160;Error Reporting page, click <span class="Emphasis">Next</span>. </p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p>If there are no issues, the Installation Rules page appears for a moment and then the installation begins. </p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>If there are issues, you must first address them and then click <span class="Emphasis">Next</span>. In the Ready to Install page, click <span class="Emphasis">Next</span>.</li>
+                                </ul>
+                            </li>
+                            <li>On the Server Configuration page, click <span class="Emphasis">Next</span>. The Error and Usage Reporting page opens.</li>
+                            <li>On the Installation Rules page, click <span class="Emphasis">Next</span>. The Ready to Install page opens.</li>
+                            <li>On the Ready to Install page, click <span class="Emphasis">Install</span> to begin the installation.</li>
+                            <li>When the installation is complete, you will see the "Installation Succeeded" message. Click <span class="Emphasis">Close</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

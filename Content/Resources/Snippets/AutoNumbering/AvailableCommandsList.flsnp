@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Contributor" MadCap:lastBlockDepth="8" MadCap:lastHeight="691" MadCap:lastWidth="1121">
+    <body>
+        <ul class="FirstLevel">
+            <li><span class="SetOffFirstLevel">Show All </span>Displays all of the commands in the area below.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Show AutoNumber Commands </span>Displays only the autonumber commands in the area below. These include commands such as chapter, section, and volume numbers; counters; and series labels.</p>
+                <ul class="SecondLevel">
+                    <li><span class="SetOffSecondLevel">Chapter, Section, and Volume Number Commands </span>These commands ({chapnum}, {secnum}, {volnum}) let you organize your output into different areas and apply number sequences to them (e.g., Chapter 1, Chapter 2, Chapter 3).</li>
+                    <li colspan="2"><span class="SetOffSecondLevel">Counters are Commands </span>These commands (such as {n}, {n=1}, {n+}, {r}, {A}, and {Gn}) provide information about what types of numbers should be used and how they should be incremented.</li>
+                    <li colspan="2"><span class="SetOffSecondLevel">Series Labels </span>These are prefixes to a format (composed of one or two letters and a colon) that provide a way to limit numbering sequences for different purposes. Although <MadCap:variable name="Other.Product" /> includes H: in the list of available commands, that is simply one example of a series label. The letter that you use as a series label is arbitrary. You can replace H and choose any letter of the alphabet, followed by a colon. The exception to this is a two-letter series label, in which the first letter represents a series that encompasses more than just one topic. For example, CH is an example of a series label that applies across an entire chapter. The H can be replaced with another letter, but you must keep the C in order to use this command. Finally, it's important to note that a series label must always be the first element in an autonumber format.</li>
+                </ul>
+            </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Autonumbers:file commands" />Show File Commands </span>Displays only the file commands in the area below. These include commands that let you incorporate different parts of a file (such as the file name, file path, and file extension) in an autonumber format.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Autonumbers:format commands" />Show Format Commands </span>Displays only the format commands in the area below. These include commands such as {b}, {i}, {color red}, and {size 12pt}, which let you determine how an autonumber format will look. Many of these commands require a beginning command (e.g., {b}) and an ending command (e.g., {/b}). <MadCap:conditionalText MadCap:conditions="Products.Flare">However, if you plan to generate FrameMaker output from your project, you should not use these format commands, since they are not supported in FrameMaker. Instead, create and apply a span class to the autonumber format to change its look. To create a span class, open the Stylesheet Editor, select the <span class="Emphasis">span</span> tag on the left side of the editor, and follow the steps for creating a style (e.g., span.BoldGreen).</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Autonumbers:page commands" />Show Page Commands </span>Displays only the page commands in the area below. These let you include the page number and count in an autonumber format.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Autonumbers:text commands" />Show Text Commands </span>Displays only the text commands in the area below. These commands let you incorporate text from an area of your output into the autonumber format.</li>
+        </ul>
+    </body>
+</html>

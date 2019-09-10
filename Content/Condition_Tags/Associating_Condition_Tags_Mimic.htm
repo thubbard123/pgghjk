@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5469" MadCap:lastWidth="748" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieEditing.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Associating condition tags in MadCap Mimic with the target output for a project." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Conditions:associating" />
+            <MadCap:concept term="FilterConditionTags" />
+            <MadCap:concept term="ConditionTags" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />Associating Condition Tags</h1>
+        <p>After applying condition tags to the appropriate elements, you can tell Mimic to include or exclude those conditions in the output. This can be done in three places—at the movie level (if it is a standalone movie), at the collection level, or on individual targets. In most cases, you will probably associate condition tags with targets, which is recommended.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The following instructions are for the Basic method of associating condition tags, which uses Include and Exclude checkboxes. If you prefer to use the Advanced method—which uses manual AND, OR, and NOT&#160;statements—see <MadCap:xref href="#Advanced" >Instructions for the Advanced Method</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to associate condition tags with targets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Targets are very useful because they allow you to generate multiple outputs simultaneously. In addition, you can create targets for either collections or standalone movies.</p>
+                <ol>
+                    <li>If you have not done so already, create the target(s) to be used with your collection or standalone movie. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Targets/About_Targets_Mimic.htm">About Targets</MadCap:xref> and <MadCap:xref href="../Targets/Creating_Targets_Mimic.htm">Creating Targets</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Open the Mimic collection or standalone movie.</li>
+                    <li>Do one of the following, depending on whether you are working in a collection or standalone movie.<ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">Collection </span>In the Collection Editor, click the <span class="Emphasis">Targets</span> tab.</p></li><li><span class="SetOffFirstLevel">Standalone Movie </span>Select <span class="Emphasis">Movie&gt;Properties</span>. The Movie Properties dialog opens. Click the <span class="Emphasis">Targets</span> tab.</li></ul></li>
+                    <li>Select the target for which you want to set conditions and click the <span class="Emphasis">Edit</span> button. An editing window for that target opens.</li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Conditional Text</span> tab. All of the available condition tags—those that you have created, as well as those from a linked Flare project—are shown on the right. An Include and Exclude check box appears next to each condition tag.</p>
+                    </li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <li>
+                        <p>If you want to exclude a condition tag from the output for this target, click the <span class="Emphasis">Exclude</span> check box next to it. If you want to make sure a condition tag is included in the output for this target, click the <span class="Emphasis">Include</span> check box next to it. The primary reason for having Include check boxes is to account for possible conflicts.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ConditionalTextIncludeExampleMimicCapture.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/WarningIncludeExclude.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>If you want to associate conditions for another target, repeat steps 4-7.</li>
+                    <li>If you are working in a standalone movie, click <span class="Emphasis">OK</span> again.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to associate condition tags with standalone movies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the standalone movie.</li>
+                    <li>Select the <span class="Emphasis">Movie</span> ribbon.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Properties</span> section, click <span class="Emphasis">Properties</span>.</p>
+                        <p>The Movie Properties dialog opens.</p>
+                    </li>
+                    <li>Click the <span class="Emphasis">Conditional Text</span> tab. All of the available condition tags—those that you have created, as well as those from a linked Flare project—are shown on the right. An Include and Exclude check box appears next to each condition tag.</li>
+                    <li>
+                        <p>If you want to exclude a condition tag from the output for this movie, click the <span class="Emphasis">Exclude</span> check box next to it. If you want to make sure a condition tag is included in the output for this movie, click the <span class="Emphasis">Include</span> check box next to it. The primary reason for having Include check boxes is to account for possible conflicts.</p>
+                        <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ConditionalTextIncludeExampleMimicCapture.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/WarningIncludeExclude.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to associate condition tags with collections</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Mimic collection.</li>
+                    <li>In the Collection Editor, click the <span class="Emphasis">Conditions</span> tab. All of the available condition tags—those that you have created, as well as those from a linked Flare project—are shown on the right. An Include and Exclude check box appears next to each condition tag.</li>
+                    <li>
+                        <p>If you want to exclude a condition tag from the output for this collection, click the <span class="Emphasis">Exclude</span> check box next to it. If you want to make sure a condition tag is included in the output for this collection, click the <span class="Emphasis">Include</span> check box next to it. The primary reason for having Include check boxes is to account for possible conflicts.</p>
+                        <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ConditionalTextIncludeExampleMimicCapture.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/WarningIncludeExclude.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Advanced"></a>Instructions for the Advanced Method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/BasicAdvancedConditions4.flsnp" />
+                <p>You can use the Advanced method to associate conditions with targets, standalone movies, or collections.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>copy from basic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/BasicAdvancedConditions5.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide,CaptureGuides.CaptureEditingImagesGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>double-click tags</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/BasicAdvancedConditions6.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlareTargetsGuide,CaptureGuides.CaptureEditingImagesGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>warning icon</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/BasicAdvancedConditions7.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Now that you have associated your condition tags, you can build the output to see the results. See <MadCap:xref href="../Output/Building_Movie_Output.htm">Building Movie Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ConditionTags" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

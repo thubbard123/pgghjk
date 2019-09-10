@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1444" MadCap:lastWidth="1078" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareHTMLHelp.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareTargetsGuide,General.OnlineLive">
+            <MadCap:concept term="FilterMergingProjects" />
+            <MadCap:keyword term="Linking:HTML Help;Tables of contents:linking;Projects:merging;Merging:projects;HTML Help:merging;Tables of contents:merging;Merging:tables of contents" />
+            <MadCap:concept term="FilterHTMLHelp" />
+            <MadCap:concept term="FilterProjects" />Displaying Merged Navigation in HTML Help Child Outputs</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareHTMLHelpGuide">Target Tasks for HTML Help</h1>
+        <p MadCap:conditions="FlareGuides.FlareHTMLHelpGuide">There are various target-related tasks unique to <MadCap:variable name="Outputs.HTMLHelp" /> output that you can perform.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareHTMLHelpGuide">
+        </MadCap:snippetBlock>
+        <h2 MadCap:conditions="FlareGuides.FlareHTMLHelpGuide">
+            <MadCap:keyword term="Linking:HTML Help;Tables of contents:linking;Projects:merging;Merging:projects;HTML Help:merging;Tables of contents:merging;Merging:tables of contents" /><a name="DisplayingMergedNav"></a>Displaying Merged Navigation in HTML Help Child Outputs</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/HTMLHelp.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>You can merge HTML Help so that the navigation (table of contents, index, search) for each CHM file is displayed, regardless of which CHM file you open (parent or child). This can be done in a couple of ways, depending on whether you have access to all of the Flare projects or to the CHM files only.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to display merged navigation in html help—access to all flare projects</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the target to be used as the parent CHM.</li>
+                    <li>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Display merged navigation in HTML Help</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Follow the steps for merging based on HTML Help targets. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareProjectCreationGuide,General.OnlineLive">See <MadCap:xref href="../../TOCs/More_About_Tables_of_Contents/Merging_Flare_projects_using_targets.htm">Merging Flare Projects Using Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareHTMLHelpGuide" /></li>
+                    <li>
+                        <p>Generate the parent HTML Help target.</p>
+                        <p>The parent CHM file and all child CHM files are located in the same output folder, and when you open any of those CHM files, you can see the navigation for any of the other outputs.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareHTMLHelpGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlareProjectCreationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to display merged navigation in html help—access to chm files only</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Use this method if you <span class="EmphasisItalic">do not</span> have access to all of the Flare projects, but you <span class="EmphasisItalic">do</span> know the names of the other CHM files that will be created. This method is more of a manual setup and is useful if you are part of a team where different authors have access to different Flare projects that need to be merged. This method also lets you add or remove child CHM files without needing to recompile the parent project.</p>
+                <ol>
+                    <li>
+                        <p>The author for each project (parent <span class="EmphasisItalic">and</span> child) places a simple TXT file named <span class="EmphasisItalic">merge.txt</span> in the same folder where the Flare project file (.flprj) is located. This TXT file can be created with Notepad and should simply list the names of all CHM files to be included in the merged output (one on each line), with the name of the parent CHM appearing first.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>MyParent.chm</p>
+                            <p>MyFirstChild.chm</p>
+                            <p>MySecondChild.chm</p>
+                            <p>MyThirdChild.chm</p>
+                        </div>
+                    </li>
+                    <li>The author for each child project generates his output and provides the author of the parent project with the CHM file(s).</li>
+                    <li>The author for the parent project brings the child CHM files into the parent project and follows the steps for merging based on CHM files. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareHTMLHelpGuide,General.OnlineLive">See <MadCap:xref href="../../TOCs/More_About_Tables_of_Contents/Merging_output_from_HTML_Help_projects.htm">Merging Output from HTML Help Projects (CHM Files)</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>The author for the parent project generates the main HTML Help target.</p>
+                        <p>The parent CHM file and all child CHM files are located in the same output folder, and when you open any of those CHM files, you can see the navigation for any of the other outputs.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="MergingProjects">
+            </MadCap:conceptLink>
+        </p>
+    </body>
+</html>

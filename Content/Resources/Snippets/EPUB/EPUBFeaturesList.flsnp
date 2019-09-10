@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare" MadCap:lastBlockDepth="5" MadCap:lastHeight="935" MadCap:lastWidth="1142">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Following are some of the features of the EPUB format in <MadCap:variable name="Other.Product" />:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Reflowable </span>EPUB output allows for reflowable content, such as word wrap and resizeable text. Therefore, the content can be displayed optimally on different devices.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Single File </span>You only need to distribute a single EPUB&#160;file, rather than a collection of files and folders.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you extract the EPUB file using another tool, you will find that it contains one or more XHTML files. If you have used chapter breaks in the outline TOC<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter and Page Layout Breaks</MadCap:xref>)</MadCap:conditionalText>, a new XHTML file is created at each point where a chapter break occurs. If you do not use chapter breaks, the EPUB contains just one XHTML file.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="EPUB:metadata;Metadata:EPUB" />Embedded Metadata </span>In the EPUB target you can provide information such as a title, author, publisher, rights, ISBN, identifier, which become embedded in the final output. The document title you provide will usually be displayed at the top of the EPUB reader. If you do not provide a title, the target name will automatically be used instead. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm" target="" title="" alt="">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>For more information about EPUB metadata and the fields supported in Flare (except "Tag"), see:</p>
+                <p><a href="http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.2" target="_blank">http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.2</a>
+                </p>
+            </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:embedded;Embedded fonts" />Embedded Fonts </span>Flare includes all of your used fonts in the final EPUB output file. Therefore, if someone has a reader that does not have your fonts installed, that person will still be able to see your content as you designed it.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:cover for EPUB;EPUB:cover image" />Cover Page </span>You can use the Target Editor to quickly and easily select an image file to be used as the cover for your ebook. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="EPUB:validation;Validating:EPUB" />Validate EPUB Output </span>You can validate EPUB output so that it will be acceptable to most online stores, such as amazon.com. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="EPUB:MOBI;MOBI" />MOBI Output </span>MOBI is the standard format used for the <MadCap:keyword term="Amazon Kindle" />Amazon Kindle. You can use settings in the Target Editor in Flare to generate EPUB output that uses MOBI&#160;content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Equations;MathML" />MathML to PNG Conversion</span> If you use the Equation Editor to insert equations, you are in essence creating MathML markup<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Equations/About_Equations.htm">About Equations</MadCap:xref>)</MadCap:conditionalText>. This type of content is supported for EPUB output. If you need to produce output that can be displayed on older readers, you can select an option in the Target Editor to convert all of your MathML content to <MadCap:keyword term="PNG file" />PNG image files. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Dynamic effects" />Enable or Disable Dynamic Content Per Target </span> If you use dynamic content—togglers, popups, drop-downs, expanding text, slideshows, or help controls—in your output, you may want to enable dynamic content for your EPUB&#160;target so your users can take advantage of these features. Likewise, you may want to disable dynamic content if your users are using an e-reader that does not fully support dynamic content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></li>
+            <li>
+                <p><span class="SetOffFirstLevel">Select Reader to View Output </span>From the Builds window pane, you can select a specific EPUB reader (if you have more than one installed) to view the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Viewing_Output.htm">Viewing Output</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../Images/epub_view_output.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>

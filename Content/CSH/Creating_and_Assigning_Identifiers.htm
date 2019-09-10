@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);file.&quot;;IdentifierName.&quot;;allowed.);n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="14" MadCap:lastHeight="13523" MadCap:lastWidth="811" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareCSH.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Assigning topic IDs (topic identifiers)&#160;to topics for context sensitive help systems. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="csh" />
+            <MadCap:keyword term="Context-sensitive Help:identifiers;Identifiers:creating and assigning" />Creating and Assigning Identifiers</h1>
+        <p>The first steps in developing context-sensitive Help (CSH) for your project are to add a header file and add an alias file. After this, you need to work on the <MadCap:keyword term="Context-sensitive Help:identifiers;Identifiers" />identifiers for the header file.</p>
+        <ul>
+            <li>If it is decided that you are responsible for creating the header file in CSH, you need to create <span class="EmphasisItalic">and</span> assign identifiers in the Alias Editor.</li>
+            <li>If it is decided that the software developer is responsible for creating the header file in CSH, you only need to assign the identifiers, which should already be contained in the header file that the developer provides for you. Before assigning the identifiers in the alias file, you must first import the header file from the developer so that it is located in the Advanced folder in the Project Organizer. <MadCap:conditionalText MadCap:conditions="Products.Flare">See <MadCap:xref href="More_About_Header_Files/Importing_Header_Files.htm">Importing Header Files</MadCap:xref>.</MadCap:conditionalText></li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:conditionalText MadCap:conditions="General.OnlineLive">
+                    <MadCap:dropDownHotspot>
+                        <MadCap:keyword term="Topic IDs;Context-sensitive Help:topic IDs;Identifiers;Context-sensitive Help:identifiers" />
+                        <MadCap:keyword term="Skins:context-sensitive Help;Context-sensitive Help:skins" />creating and assigning identifiers</MadCap:dropDownHotspot>
+                </MadCap:conditionalText>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="FlareGuides.FlareCSHGuide">
+                    <MadCap:keyword term="Topic IDs;Context-sensitive Help:topic IDs;Identifiers;Context-sensitive Help:identifiers" />
+                    <MadCap:keyword term="Skins:context-sensitive Help;Context-sensitive Help:skins" />Creating and assigning identifiers means:</p>
+                <p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/CSH/CreateAssignIdentifiersBullets.flsnp" />
+                </p>
+                <p MadCap:conditions="Products.Flare">The following steps show you how to complete these tasks. Use whichever set of steps best applies to your situation:</p>
+                <ul MadCap:conditions="Products.Flare" class="Square">
+                    <li>
+                        <MadCap:xref href="#HowToAutomaticallyAllTopics">How to Automatically Generate Identifiers for All Topics</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="#HowToCreateAssignSameTime">How to Create and Assign Identifiers at the Same Time</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="#HowToIdentifiersOnly">How to Create Identifiers Only</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="#HowToAssignIDTopics">How to Assign Identifiers to Topics</MadCap:xref>
+                    </li>
+                </ul>
+                <MadCap:snippetBlock src="../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToAutomaticallyAllTopics"></a>How to Automatically Generate Identifiers for All Topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the alias file that you created.</li>
+                    <li>(Optional) You can set options for new identifiers in advance. This will supply some of the information (e.g., starting value, prefix, include topic in ID name, assign skin) for you automatically as you create new identifiers. See <MadCap:xref href="Setting_Identifier_Options.htm">Setting Identifier Options</MadCap:xref>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>In the local toolbar of the Alias Editor click <img src="../Resources/Images/generate_identifiers_btn.png" class="ReduceButtonSize" />.</li>
+                            <li>Right-click in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu select <span class="Emphasis">Auto Generate</span>.</li>
+                        </ul>
+                        <p>The Generate Identifiers dialog opens.</p>
+                    </li>
+                    <li>In the <span class="Emphasis">Header File</span> area select one of the following, depending on whether you need to create a new header file or have an existing one you can select.<ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">New from template</span> This lets you choose either a factory template file or one of your own customized template files as a starting point. The new file will take on all of the settings contained in the template.            <MadCap:conditionalText MadCap:conditions="General.Print">For more information about templates, see the online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Templates/About_Templates.htm" target="" title="" alt="">About Templates</MadCap:xref>.</MadCap:conditionalText></p><ol class="LowerAlpha"><li>If you want to use a factory template provided by <MadCap:variable name="Other.Product" />, expand the <span class="Emphasis">Factory Templates</span> folder and click on a template file. If you want to use your own customized template file, expand the appropriate folder and click on a file.</li><li>After selecting a template, use the <span class="Emphasis">File Name</span> field to enter a name for the new header file.</li><li>If you want the new header file to be placed at the root level (i.e., directly under the Advanced folder in the Project Organizer), leave the <span class="Emphasis">Folder</span> field set to <span class="Emphasis">(root folder)</span>. If instead you have created a subfolder within the Advanced folder and want to place the new header file there, click <img src="../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select that subfolder. </li></ol><MadCap:dropDown><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p class="note" MadCap:conditions="Products.Flare" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In some dialogs and wizards you can click the <span class="Emphasis">Manage Templates</span> button <img src="../Resources/Images/manage_templates_btn.png" class="ReduceButtonSize" /> if you want to open the Template Manager. This lets you manage any of your template files (e.g., add new templates, enter descriptions for templates). <MadCap:conditionalText MadCap:conditions="General.Print">For more information see the online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Templates/Managing_Templates.htm">Managing Templates</MadCap:xref>.</MadCap:conditionalText></p></MadCap:dropDownBody></MadCap:dropDown></li><li><span class="SetOffFirstLevel">Choose Existing</span> This lets you choose an existing header file in your project. To use this option, click the drop-down field and select a header file.</li></ul></li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>
+                        <p>(Optional) In the <span class="Emphasis">Identifier Options</span> area, you can override any of the values that are already set in the Identifier Options dialog (see Step 2).</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>starting value </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can specify the starting value for identifiers that you create, with the value for additional identifiers being incremented automatically based on that starting value.</p>
+                                <p>
+                                    <img src="../Resources/Images/csh_starting_value_example.png" class="MaxWidth80Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>prefix </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can specify a prefix to be added at the beginning of each new identifier that you create (e.g., ID_, Dialog, Module1).</p>
+                                <p>
+                                    <img src="../Resources/Images/csh_prefix_example.png" class="MaxWidth80Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>include topic name in identifier name </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can specify that new identifiers should automatically include the assigned topic in the name. </p>
+                                <p>
+                                    <img src="../Resources/Images/csh_include_topic_name_example.png" class="MaxWidth80Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>capitalize identifier names </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can specify that the name that is automatically added for new identifiers should have all caps.</p>
+                                <p>
+                                    <img src="../Resources/Images/csh_capitalize_id_names_example.png" class="MaxWidth80Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>skins </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can specify which skin should be assigned by default to new identifiers that are created. Of course, you can always manually select a different skin for any identifier, but when you first create a new identifier, it will initially be assigned to the default skin that you specified. </p>
+                                <p>
+                                    <img src="../Resources/Images/csh_default_skin_example.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>value format </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>You can specify whether the identifier values should use a decimal or <MadCap:keyword term="Hexadecimal" />hexadecimal format. Using hexadecimal values does not affect your CSH in a different way; it's simply another option in case your developers prefer that format.</p>
+                                <p>
+                                    <img src="../Resources/Images/csh_value_format1.png" class="MaxWidth100Percent" />
+                                </p>
+                                <p>
+                                    <img src="../Resources/Images/csh_value_format2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>Click in the <span class="Emphasis">Generate Identifiers for</span> field and select one of the following:<ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">Unassigned topics only</span> Select this if you already have some identifiers in the header file that are assigned to topics. New identifiers will be created only for topics in your project that are not yet assigned to an identifier.</p><p>OR</p></li><li><span class="SetOffFirstLevel">All topics</span> Select this if you want new identifiers to be created for all topics in your project, whether some topics are already assigned to new topics or not.</li></ul></li>
+                    <li>If you selected the All topics option in the previous step, select one of the following inthe <span class="Emphasis">Existing Identifiers</span> field:<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Keep</span> Select this if you want to keep the identifiers that you already have in the header file. As a result, you will have some topics that are assigned to multiple identifiers (i.e., the old identifier and the new one).</li><li><span class="SetOffFirstLevel">Delete</span> Select this if you want to delete the existing identifiers in the header file, creating new ones instead. This way, you will not have any topics that are assigned to multiple identifiers.</li></ul></li>
+                    <li>Click <span class="Emphasis">Create</span> and in the next dialog click <span class="Emphasis">OK</span>. In the Alias Editor, the header file is automatically selected in the local toolbar. Also, new rows are added in the Alias Editor with <img src="../Resources/Images/assigned_icon.png" class="ReduceButtonSize" /> (instead of <img src="../Resources/Images/not_assigned_icon.png" class="ReduceButtonSize" />) next to them. The green icon indicates that the identifiers are assigned to topics. If you have previously set identifier options (see Step 2), the identifier includes at least some of the appropriate information already. </li>
+                    <li>(Optional) If you want a certain identifier to point to a specific bookmark or header in the assigned topic, do the following:<ol class="LowerAlpha"><li>Select the identifier row. </li><li>Click the <img src="../Resources/Images/select_bookmark_btn.png" class="ReduceButtonSize" /> button located above the identifier list. </li><li>In the dialog that opens, select a bookmark or header. </li><li>Click <span class="Emphasis">OK</span>.</li></ol></li>
+                                     <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>
+                        <p>(Optional) If you want to change an identifier name, click twice in the <span class="Emphasis">Identifier</span> cell and type the name (e.g., Properties_Dialog). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Make sure you use underscores between words because spaces are not allowed.</p>
+                    </li>
+                    <li>(Optional) If you want to change the skin associated with one or more identifiers, do the following:<ol class="LowerAlpha"><li>Select the identifier row(s). <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li><li><MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" /><ul class="FirstLevel"><li><p>Click the arrow in the <span class="Emphasis">Select skin</span> button <img src="../Resources/Images/select_skin_btn.png" class="ReduceButtonSize" /> (located above the identifier list) and choose a skin from the drop-down.</p><p>OR</p></li><li>Right-click somewhere in the list. From the context menu select <b>Assign Skin</b> and then from the submenu choose the name of the skin.</li></ul><p><img src="../Resources/Images/select_skin_example.png" class="MaxWidth70Percent" /></p></li></ol></li>
+                    <li>
+                        <p>(Optional) If you want to change the numerical value for an identifier, click twice in the <span class="Emphasis">Value</span> cell and type the new value. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to use the horizontal scroll bar at the bottom of the editor to see this cell.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToCreateAssignSameTime"></a>How to Create and Assign Identifiers at the Same Time</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the alias file that you created.</li>
+                    <li>(Optional) You can set options for new identifiers in advance. This will supply some of the information (e.g., starting value, prefix, include topic in ID name, assign skin) for you automatically as you create new identifiers. See <MadCap:xref href="Setting_Identifier_Options.htm">Setting Identifier Options</MadCap:xref>.</li>
+                    <li>
+                        <p>If you have more than one header file in your project, click the down arrow at the top-left side of the Alias Editor and select the header file for which you want to create identifiers. Otherwise, you can just leave <span class="EmphasisItalic">(all identifiers)</span> in the field.</p>
+                        <p>What if you have multiple header files in your project and you do not select a header file, leaving <span class="EmphasisItalic">(all identifiers)</span> shown in the drop-down field? In that case, the changes you made in the Alias Editor are applied to the primary header file that you have selected when setting identifier options. See <MadCap:xref href="Setting_Identifier_Options.htm">Setting Identifier Options</MadCap:xref>.</p>
+                        <p>
+                            <img src="../Resources/Images/all_identifiers_primary_header_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>
+                        <p>On the left side of the Alias Editor, select one or more topics that you want to assign to new identifiers. </p>
+                        <p class="TableText">
+                            <img src="../Resources/Images/alias_editor_example.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>You can click the show and hide buttons to help you better locate topics. If you use the options to split the view into two halves, you can select multiple topics on the right side by holding down the SHIFT or CTRL keys as you click.</p>
+                        <p class="TableText">
+                            <img src="../Resources/Images/alias_editor_example2.png" class="MaxWidth55Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/UIElements/MultiViewTable6.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>Click the <img src="../Resources/Images/assign_new_btn.png" class="ReduceButtonSize"></img> button located above the file list.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Right-click a topic on the left side of the editor, and select <span class="Emphasis">Assign Topic to New Identifier</span> from the context menu.</li>
+                        </ul>
+                        <p>A new row is added with <img src="../Resources/Images/assigned_icon.png" class="ReduceButtonSize" /> (instead of <img src="../Resources/Images/not_assigned_icon.png" class="ReduceButtonSize" />) next to it. The green icon indicates that the identifier is assigned to a topic. If you have previously set identifier options (see Step 2), the identifier includes at least some of the appropriate information already.</p>
+                    </li>
+                    <li>(Optional) If you want the identifier to point to a specific bookmark or header in the topic, do the following:<ol class="LowerAlpha"><li>Select the identifier row.</li><li>Click the <img src="../Resources/Images/select_bookmark_btn.png" class="ReduceButtonSize" /> button located above the identifier list. </li><li>In the dialog that opens, select a bookmark or header.</li><li>Click <span class="Emphasis">OK</span>.</li></ol></li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>
+                        <p>(Optional) If you want to change the identifier name, click twice in the <span class="Emphasis">Identifier</span> cell and type the name (e.g., Properties_Dialog). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Make sure you use underscores between words because spaces are not allowed.</p>
+                    </li>
+                    <li>(Optional) If you want to change the skin associated with one or more identifiers, do the following:<ol class="LowerAlpha"><li>Select the identifier row(s). <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li><li><MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" /><ul class="FirstLevel"><li><p>Click the arrow in the <span class="Emphasis">Select skin</span> button <img src="../Resources/Images/select_skin_btn.png" class="ReduceButtonSize" /> (located above the identifier list) and choose a skin from the drop-down.</p><p>OR</p></li><li>Right-click somewhere in the list. From the context menu select <b>Assign Skin</b> and then from the submenu choose the name of the skin.</li></ul><p><img src="../Resources/Images/select_skin_example.png" class="MaxWidth70Percent" /></p></li></ol></li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>(Optional) If you want to change the numerical value for the identifier, click twice in the <span class="Emphasis">Value</span> cell and type the new value. You can enter a decimal or <MadCap:keyword term="Hexadecimal" />hexadecimal value. Using hexadecimal values does not affect your CSH in a different way; it's simply another option in case your developers prefer that format.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to use the horizontal scroll bar at the bottom of the editor to see this cell.</p>
+                    </li>
+                    <li>Repeat these steps for each identifier that you want to add. Each entry will represent a different dialog or window in the software application.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToIdentifiersOnly"></a>How to Create Identifiers Only</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the alias file that you created.</li>
+                    <li>
+                        <p>If you have more than one header file in your project, click the down arrow at the top-left side of the Alias Editor and select the header file for which you want to create identifiers. Otherwise, you can just leave <span class="EmphasisItalic">(all identifiers)</span> in the field.</p>
+                        <p>What if you have multiple header files in your project and you do not select a header file, leaving <span class="EmphasisItalic">(all identifiers)</span> shown in the drop-down field? In that case, the changes you made in the Alias Editor are applied to the primary header file that you have selected when setting identifier options. See <MadCap:xref href="Setting_Identifier_Options.htm">Setting Identifier Options</MadCap:xref>.</p>
+                        <p>
+                            <img src="../Resources/Images/all_identifiers_primary_header_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>In the local toolbar click <img src="../Resources/Images/new_identifier_btn.png" class="ReduceButtonSize"></img>.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Right-click in the <span class="Emphasis">Identifiers</span> side of the editor, and select <span class="Emphasis">New Identifier</span> from the context menu.</li>
+                        </ul>
+                        <p>A new row is added with <img src="../Resources/Images/not_assigned_icon.png" class="ReduceButtonSize" /> (instead of <img src="../Resources/Images/assigned_icon.png" class="ReduceButtonSize" />) next to it. The yellow icon indicates that the identifier is not yet assigned to a topic. If you have previously set identifier options (see Step 2), the identifier includes at least some of the appropriate information already.</p>
+                    </li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                    <li>
+                        <p>(Optional) If you want to change the identifier name, click twice in the <span class="Emphasis">Identifier</span> cell and type the name (e.g., Properties_Dialog). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Make sure you use underscores between words because spaces are not allowed.</p>
+                    </li>
+                    <li>(Optional) If you want to change the skin associated with one or more identifiers, do the following:<ol class="LowerAlpha"><li>Select the identifier row(s). <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li><li><MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" /><ul class="FirstLevel"><li><p>Click the arrow in the <span class="Emphasis">Select skin</span> button <img src="../Resources/Images/select_skin_btn.png" class="ReduceButtonSize" /> (located above the identifier list) and choose a skin from the drop-down.</p><p>OR</p></li><li>Right-click somewhere in the list. From the context menu select <b>Assign Skin</b> and then from the submenu choose the name of the skin.</li></ul><p><img src="../Resources/Images/select_skin_example.png" class="MaxWidth70Percent" /></p></li></ol></li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>(Optional) If you want to change the numerical value for the identifier, click twice in the <span class="Emphasis">Value</span> cell and type the new value. You can enter a decimal or <MadCap:keyword term="Hexadecimal" />hexadecimal value. Using hexadecimal values does not affect your CSH in a different way; it's simply another option in case your developers prefer that format.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to use the horizontal scroll bar at the bottom of the editor to see this cell.</p>
+                    </li>
+                    <li>Repeat the these steps for each identifier that you want to add (each one to represent a different dialog or window in the software application).</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToAssignIDTopics"></a>How to Assign Identifiers to Topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the alias file that you created.</li>
+                    <li>(Optional) If you want to see only the identifiers that are not yet assigned to topics, click <img src="../Resources/Images/hide_assigned_identifiers_btn.png" class="ReduceButtonSize" /> in the local toolbar of the Alias Editor. This hides identifiers that are already assigned to topics in the editor until you click the button again.</li>
+                    <li>On the right side of the Alias Editor, select an identifier that you want to assign to a topic.</li>
+                    <li>
+                        <p>On the left side of the Alias Editor, find a topic that you want to assign to the identifier that you selected in the previous step. </p>
+                        <p class="TableText">
+                            <img src="../Resources/Images/alias_editor_example.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>You can click the show and hide buttons to help you better locate topics.</p>
+                        <p class="TableText">
+                            <img src="../Resources/Images/alias_editor_example2.png" class="MaxWidth80Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/UIElements/MultiViewTable6.flsnp" />
+                    </li>
+                    <li>Do one of the following:<ul class="FirstLevel"><li><p>Double-click the topic.</p><p>OR</p></li><li><p>Click the <img src="../Resources/Images/assign_btn.png" class="ReduceButtonSize" /> button located above the file list.</p><p>OR</p></li><li>Right-click the topic and select <span class="Emphasis">Assign Topic to Selected Identifier</span> from the context menu.</li></ul><p>The topic name is added to the identifier row on the right side of the Alias Editor, and a green icon <img src="../Resources/Images/assigned_icon.png" class="ReduceButtonSize" /> (instead of <img src="../Resources/Images/not_assigned_icon.png" class="ReduceButtonSize" />) is displayed next to it. The green icon indicates that the identifier is assigned to a topic.</p></li>
+                    <li>(Optional) If you want the identifier to point to a specific bookmark or header in the topic, do the following:<ol class="LowerAlpha"><li>Select the identifier row.</li><li>Click the <img src="../Resources/Images/select_bookmark_btn.png" class="ReduceButtonSize" /> button located above the identifier list. </li><li>In the dialog that opens, select a bookmark or header.</li><li>Click <span class="Emphasis">OK</span>.</li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareCSHGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>button and context menu explanations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are explanations of the various buttons and context menu options in the Alias Editor, some of which have been included in the steps above.</p>
+                <table class="TableStyle-BasicAlternateRows" style="width: 100%;mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0">
+                    <col style="width: 35pt;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col style="width: 100%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">New</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/hide_assigned_identifiers_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Hide assigned identifiers </p>
+                                <p class="TableText">This hides the identifiers that already have topics assigned to them. By doing this, you can concentrate solely on the identifiers that need topics assigned to them.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/new_identifier_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Create new identifier</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu selecting <span class="Emphasis">New Identifier</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/delete_identifier_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Delete selected identifier</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking a selection in the <span class="Emphasis">Identifiers</span> side of the editor, and selecting <span class="Emphasis">Delete Identifier</span> from the context menu.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/generate_identifiers_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Generate identifiers</p>
+                                <p class="TableText">This lets you automatically generate new identifiers for all of the topics in your project. This is a good feature to use if you are creating identifiers in a header file for the first time. When you click this button, the Generate Identifiers dialog opens. In this dialog you can create a new header file or select an existing one. You can also see the identifier options—such as starting value, prefix, and skin—that will be applied to all of the new identifiers that are created.</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu selecting <span class="Emphasis">Auto Generate</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/change_identifier_options_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Change identifier options</p>
+                                <p class="TableText">This lets you specify options in advance for how new identifiers are created. See <MadCap:xref href="Setting_Identifier_Options.htm">Setting Identifier Options</MadCap:xref>.</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu selecting <span class="Emphasis">Options</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/identifier_warning_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Identifier warning</p>
+                                <p class="TableText">This lets you see if there are any issues with identifiers in the editor, such as identifiers that are not yet assigned to topics.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/previous_warning_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Previous warning</p>
+                                <p class="TableText">This highlights the previous identifier in the list that has an issue.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/next_warning_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Next warning</p>
+                                <p class="TableText">This highlights the next identifier in the list that has an issue.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/assign_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Assign topic to existing identifier</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking on the topic, and from the context menu selecting <span class="Emphasis">Assign Topic to Selected Identifier</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/assign_new_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Create new identifier and assign topic to it at the same time</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking on the topic, and from the context menu selecting <span class="Emphasis">Assign Topic to New Identifier</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/open_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Open selected topic</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking on the topic, and from the context menu selecting <span class="Emphasis">Open</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/locate_topic_in_header_file_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Locate topic in header file </p>
+                                <p class="TableText">This displays all header files where the selected topic is assigned to an identifier.</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking on the topic, and from the context menu selecting <span class="Emphasis">Locate the Topic in Headers</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/unassign_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Unassign topic from identifier</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu selecting <span class="Emphasis">Unassign Topic</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/select_bookmark_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Select bookmark in selected topic</p>
+                                <p class="TableText">First you can select an identifier row that has already been assigned to a topic and then click this new button. A dialog opens, letting you select a bookmark within that topic.</p>
+                                <MadCap:dropDown>
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also perform this task by right-clicking in the <span class="Emphasis">Identifiers</span> side of the editor, and from the context menu selecting <span class="Emphasis">Select Bookmark</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/select_skin_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Select skin for identifier</p>
+                                <p class="TableText">You can click the down arrow in the <span class="Emphasis">Select Skin</span> button and choose the appropriate skin for the identifier.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/not_assigned_icon.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Not assigned</p>
+                                <p class="TableText">This icon displays next to any identifiers that are not yet assigned to a topic.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/assigned_icon.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Assigned</p>
+                                <p class="TableText">This icon displays next to any identifiers that have already been assigned to a topic.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/duplicate_icon.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText">Broken</p>
+                                <p class="TableText">This icon displays next to any identifiers that are linked to topics that don't exist.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteCSHAliasHeaderIDOptional.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+                <p class="note" MadCap:conditions="Products.Flare" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can move identifiers from one header file to another by using the right-click context menu. See <MadCap:xref href="Moving_Identifiers_to_Different_Headers.htm" target="" title="" alt="">Moving Identifiers to Different Headers</MadCap:xref>.</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are importing FrameMaker documents, you can create topic alias markers in the source files as an alternative to creating identifiers in Flare. When you import the FrameMaker files, the identifiers will be created for you in Flare. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Importing/More_About_FrameMaker/Creating_Topic_Alias_Markers_for_CSH.htm" MadCap:conditions="General.OnlineLive">Creating Topic Alias Markers in FrameMaker for CSH</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you create and assign identifiers, you need to do the following:</p>
+                <ol>
+                    <li>Associate the alias file with the target that you want to build. This is required if you have more than one alias file in your project. See <MadCap:xref href="Associating_an_Alias_File_with_a_Target.htm">Associating an Alias File with a Target</MadCap:xref>.</li>
+                    <li>Provide the developer with a copy of the header file, if you are responsible for creating it. See <MadCap:xref href="Providing_a_Developer_with_a_Header_File.htm">Providing a Developer with a Header File</MadCap:xref>.</li>
+                    <li>Build the output for the target and provide the developer with a copy of the output files. See <MadCap:xref href="../Output/About_Building_Output.htm">Building and Distributing Output</MadCap:xref>.</li>
+                    <li>Test the CSH. See <MadCap:xref href="Testing_Context_Sensitive_Help.htm">Testing Context-sensitive Help</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="csh" />
+        </p>
+    </body>
+</html>

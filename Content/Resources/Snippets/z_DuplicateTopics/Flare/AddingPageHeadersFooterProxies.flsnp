@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="3035" MadCap:lastWidth="1186">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/FrameMaker_Word.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../PrintOutput/AddPageHeaderFooterProxiesSummary.flsnp" />&#160;</p>
+        <p>
+            <img src="../../../Images/print_master_page_example1.png" class="MaxWidth100Percent">
+            </img>
+        </p>
+        <p>
+            <img src="../../../Images/page_footer_proxy_example.png" class="MaxWidth100Percent" />
+        </p>
+        <p>
+            <img src="../../../Images/page_header_proxy_example.png" class="MaxWidth100Percent" />
+        </p>
+        <p MadCap:conditions="General.OnlineLive">For information, see <MadCap:xref href="../../../../Master_Pages/Creating_Master_Pages.htm">Creating Master Pages</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_Print_Master_Pages.htm">Creating Print Master Pages</MadCap:xref>.</p>
+        <p MadCap:conditions="General.Print">For information, see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_Print_Master_Pages.htm">Creating Print Master Pages</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add page header and footer proxies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../MasterPages/OpenMasterPageStep.flsnp" />
+                    </li>
+                    <li>Place your cursor at the location in the master page where you want to add a proxy.</li>
+                    <li>
+                        <MadCap:snippetText src="../../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Proxy</span> section select <span class="Emphasis">Page Header</span> or <span class="Emphasis">Page Footer</span>. Depending on the type of proxy you select, either the Page Header dialog or Page Footer dialog opens.</li>
+                    <li>
+                        <p>In the dialog, click the down arrow in the <span class="Emphasis">Stylesheet class</span> field and make a selection. Select either <span class="Emphasis">Odd Page</span>, <span class="Emphasis">Even Page</span>, or <span class="Emphasis">First Page</span> (depending on whether you want that particular header or footer content to be displayed on the odd pages, even pages, or first page of the printed output). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want a page footer or header to always display on certain page types by default, you can specify this in your stylesheet (using the mc-feader-type property). Therefore, that page type will always be used as the default setting, unless you override it at the spot where you have inserted the proxy. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Page_Type.htm">Using Styles to Determine the Page Type for Page Footers and Headers</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to limit yourself to one page header or one page footer per master page. If necessary, you can add three page headers (one for first pages, one for odd pages, and one for even pages), and you can add three page footers (one for first pages, one for odd pages, and one for even pages). This way, you only need to use one master page to specify what header content is to be used on which pages of the printed output.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p>The proxy is added to the master page. A holder for page numbering is automatically added. However, this does not mean that you <span class="EmphasisItalic">must</span> use page numbering for that header or footer. You can delete the page numbering holder if you want. It also does not mean that you cannot add anything else to the header or footer. You can add any content that you want to that header or footer by doing the following.</p>
+                        <ol class="LowerAlpha">
+                            <li>Place your cursor inside a particular page header or Page Footer proxy.</li>
+                            <li>Type or insert the content as you normally would in a regular topic.</li>
+                        </ol>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to tell if your cursor is placed within a page header or footer proxy</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Turn on the tag bars in the master page by clicking <img src="../../../Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> in the local toolbar at the bottom of the XML Editor.</p>
+                                <p>The tag bar to the left of the proxy will display the label (or at least the first part) for a "MadCap|pageHeader" or "MadCap|pageFooter."</p>
+                                <p>
+                                    <img src="../../../Images/print_master_page_example2.png" class="MaxWidth60Percent" />
+                                </p>
+                                <p class="PageBreakBefore">You can right-click on the tag bar to bring up a context menu. The menu confirms the type of proxy by showing the page header or page footer label at the top. </p>
+                                <p>
+                                    <img src="../../../Images/print_master_page_example3.png" class="MaxWidth70Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to tell which page(s) will display page header or footer content</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>To determine whether the page header or page footer will be displayed on odd pages, even pages, or the first page of the printed output, select <span class="Emphasis">Style Class</span> in the context menu. The appropriate page designation will have a check mark next to it.</p>
+                                <p>
+                                    <img src="../../../Images/print_master_page_example4.png" class="MaxWidth65Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:keyword term="Page numbers:starting page number" />If you want to specify a starting page number or change the format (e.g., alpha, Roman, uppercase, lowercase), you can do so from the TOC Properties dialog when you specify section breaks for the output. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm">Specifying Section Breaks and Master Pages</MadCap:xref>. </p>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In addition to any type of regular content (e.g., text, images) and page numbers, you can insert Heading variables or Running Head variables into master pages. These types of variables are a great way to automatically include text (such as the first paragraph using an h1 style). See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Inserting_Heading_Variables_Into_Master_Pages.htm">Inserting Heading Variables Into Master Pages</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Inserting_Running_Head_Variables_Into_Master_Pages.htm">Inserting Running Head Variables Into Master Pages</MadCap:xref>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputMasterPage" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

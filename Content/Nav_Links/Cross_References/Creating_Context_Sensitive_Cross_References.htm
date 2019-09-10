@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1875" MadCap:lastWidth="1159" MadCap:conditions="Products.Flare,Products.Contributor" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <head><title></title>
+        <meta name="description" content="You can create context-sensitive cross-references so the program updates there reference page with text such as &quot;see above&quot; and &quot;see below&quot;&#160;or provides the page number. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="CrossReferences" />
+            <MadCap:keyword term="Cross-references;Linking:cross-references;Context-sensitive cross-references" />
+            <MadCap:concept term="FilterCrossReferences" />Creating Context-sensitive Cross-References</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" MadCap:conditions="Products.Flare" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/NavLinks/ContextSensCrossRefSummary.flsnp" /> </p>
+        <p>Using context-sensitive cross-references is simply a matter of using the correct command. In other words, instead of using the simple {page} command, you can use the {pageref} command. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you use the plain {page} command. Perhaps the complete format that you create for a cross-reference style is this:</p>
+                    <p class="Indented">See "{paratext}" on page {page}.</p>
+                    <p>When you generate the output, this cross-reference will be converted to something like the following, regardless of where the link falls in relation to its destination:</p>
+                    <p class="Indented">See "My Information" on page 42.</p>
+                    <p>However, let's say that you use a slightly different format, something like this:</p>
+                    <p class="Indented">See "{paratext}" {pageref}.</p>
+                    <p>When you generate the output, what you see in place of {pageref} depends on the relative closeness of the link and the destination. It might be translated as any of the following:</p>
+                    <p class="Indented">See "My Information" below.</p>
+                    <p class="Indented">See "My Information" above.</p>
+                    <p class="Indented">See "My Information" on previous page.</p>
+                    <p class="Indented">See "My Information" on page 42.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create context-sensitive cross-references</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Go through the process of inserting or editing a cross-reference. See <MadCap:xref href="Inserting_Cross_References.htm">Inserting Cross-References into Topics</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide"> and <MadCap:xref href="Editing_Cross_References.htm">Editing Cross-References</MadCap:xref></MadCap:conditionalText>.</li>
+                    <li>In the Insert Cross-Reference dialog, select either <span class="Emphasis">New</span> or <span class="Emphasis">Edit</span>, depending on whether you want to create a new cross-reference style or edit an existing one.</li>
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Styles:cross-references;Cross-references:styles" />Provide a format in the <span class="Emphasis">Enter format</span> field. This format can be a combination of text and automated commands. </p>
+                        <p>When creating this format, make sure you include the {pageref} command in it. You can find the command by selecting either <span class="Emphasis">Show All</span> or <span class="Emphasis">Show Page Commands</span>. When you find the {pageref} command in the list, double-click it to add it to the format. Here is an example of a format that contains a context-sensitive cross-reference command: See "{paratext}" {pageref}.</p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../Resources/Images/context_sens_xref_example.png" class="MaxWidth70Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteDefaultXrefFormat.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You also have control over the text used in context-sensitive cross-references (e.g., instead of the text displaying "on next page," it can be customized to display "on following page"). You can customize this text through the use of a language skin. See <MadCap:xref href="Editing_Text_for_CS_Cross_References.htm" >Editing Text for Context-sensitive Cross-References</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="CrossReferences" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.Flare,Products.Lingo,Products.Pulse" MadCap:lastBlockDepth="8" MadCap:lastHeight="1111" MadCap:lastWidth="906" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <meta name="description" content="MadCap installing SQL, installing SQL&#160;Server, SQL server requirements, Install Microsoft SQL&#160;Server" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="SQL:Server" />
+            <MadCap:keyword term="MadCap Analyzer" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword MadCap:conditions="Products.Flare,Products.Analyzer" term="Auto suggestion;XML Editor:Auto Suggestion" />
+            <MadCap:keyword term="Translation memory" MadCap:conditions="Products.Lingo" />
+            <MadCap:keyword term="Translation memory:dictionaries;Dictionaries:translation memory" MadCap:conditions="Products.Lingo" />SQL</h1>
+        <p MadCap:conditions="Products.Flare">
+            <MadCap:snippetText src="../Resources/Snippets/SQL/SQLIntro.flsnp" />See <MadCap:xref href="../Pulse/About_Pulse.htm">About MadCap Pulse</MadCap:xref> and <MadCap:xref href="../Feedback/About_MadCap_Feedback.htm">About MadCap Feedback</MadCap:xref>.</p>
+        <p MadCap:conditions="Products.LingoOnlineOnly">You must install the latest version of Microsoft SQL Server  from <a href="http://microsoft.com/downloads/" target="_blank">http://www.microsoft.com/downloads/</a> in order to take advantage of features such as translation memory (TM) and termbases.</p>
+        <p MadCap:conditions="LingoGuides.LingoGettingStartedGuide">You must install the latest version of Microsoft SQL Server  from <a href="http://microsoft.com/downloads/" target="_blank">http://www.microsoft.com/downloads/</a> in order to take advantage of features such as TM and termbases.</p>
+        <h2 MadCap:conditions="Products.LingoPrintOnly" class="NoPageBreakBefore">Administrative Privileges for <MadCap:keyword term="Microsoft Windows Vista" />Windows Vista</h2>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">administrative privileges for <MadCap:keyword term="Microsoft Windows Vista" />windows vista</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are using Windows Vista or later versions, you do not automatically have administrative privileges when installing SQL Server 2012. However, you can manually add yourself as an SQL Server administrator by using the following steps.</p>
+                <p class="Subheading">how to add yourself as an sql server administrator</p>
+                <ol>
+                    <li>Select <span class="Emphasis">Start&gt;All Programs&gt;Microsoft SQL Server 2012&gt;SQL Server Surface Area Configuration</span>.</li>
+                    <li>Click <span class="Emphasis">Add New Administrator</span>.</li>
+                    <li>Highlight the server and click the button with the double arrows pointing to the right.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.LingoOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.LingoOnlineOnly,Products.FlareOnlineOnly">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="Products.Lingo" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are using <MadCap:keyword term="Microsoft Server 2005 Standard" />Microsoft Server 2012 Standard, you cannot specify a folder to install TM into from a remote machine. Therefore, all TM databases are initially installed into the default SQL location.</p>
+                <p class="note" MadCap:conditions="Products.LingoOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are having difficulty connecting to a remote Lingo database, it may be due to the security setting of SQL. To view a remote server, you must have administrator rights on that server. You can add users to a local machine as administrators or add users in SQL Management Studio. To do this in Management Studio: (1) open SQL Server Management Studio (see msdn.microsoft.com for more information); (2) expand the server and then expand <span class="Emphasis">Security</span>; you’ll probably have a login called "BUILTIN\Administrators," which will have "sysadmin" rights; in that case, any admin of your machine will have sysadmin rights because they’re part of that group; and (3) add anyone to this who will need to access your server.</p>
+                <p class="note" MadCap:conditions="Products.LingoOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your database is not displaying when you are setting up translation memory or termbase, your SQL browser service may not be enabled. To enable this service: (1) open SQL Server Management Studio (see msdn.microsoft.com for more information), (2) open the SQL Server Configuration Manager, (3) open the SQL Server Browser and go to the <span class="Emphasis">Service</span> tab, (4) change the Start Mode to <span class="Emphasis">Automatic</span>, and (5) click <span class="Emphasis">Apply</span>, and (6) start your <span class="Emphasis">SQL Server Browser</span>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="GettingSetUp;ContentAnalyzer;Auto Suggestion" />
+        </p>
+        <p MadCap:conditions="Products.LingoOnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory;Dictionaries" />
+        </p>
+    </body>
+</html>

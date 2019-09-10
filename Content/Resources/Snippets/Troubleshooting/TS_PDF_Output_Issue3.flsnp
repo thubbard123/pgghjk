@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="522" MadCap:lastWidth="630">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Empty pages</p>
+        <p>When I generate PDF output, sometimes an empty page is added before my next heading. Why does that happen and how can I fix it?</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>There could be a couple of reasons for this. Below are two of the most common.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Page layouts:empty pages" />One reason might have to do with the fact that you have an empty page included in your page layout.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>A second reason could have to do with empty paragraph or other tags at the end of topics. If you do not see an empty paragraph in the XML Editor, you can open the XHTML code for a topic. To do this, click the <span class="Emphasis">Text Editor</span> tab at the bottom of the XML Editor, or click and drag the bottom bar up to work in split view (seeing both the XML Editor and the Internal Text Editor). You can also right-click on the topic file in the Content Explorer and selecting <span class="Emphasis">Open with&gt;Internal Text Editor</span> or <span class="Emphasis">Open with&gt;Notepad</span>. See <MadCap:xref href="../../../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</p>
+                <p>An empty paragraph might look something like this in the code.</p>
+                <p>&lt;p&gt;&amp;#160;&lt;/p&gt;</p>
+                <p>You can delete that part of the code, save, and try to generate output again.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

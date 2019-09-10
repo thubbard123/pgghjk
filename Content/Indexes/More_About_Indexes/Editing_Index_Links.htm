@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2123" MadCap:lastWidth="1078" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareIndex.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Control the look and feel of index links. Customize the Index styles in the project Stylesheet. Change the look of the Index label." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Indexes:index links;Styles:indexes" />
+            <MadCap:concept term="FilterIndexing" />
+            <MadCap:concept term="FilterStyles" />Editing Index Links</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareIndexingGuide">Modifying Indexes</h1>
+        <p MadCap:conditions="FlareGuides.FlareIndexingGuide">You can modify indexes in different ways.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareIndexingGuide">
+            <MadCap:keyword term="Indexes:index links;Styles:indexes" /><a name="EditingIndexLinks"></a>Editing Index Links</h2>
+        <p>After creating index links, you may want to edit them.</p>
+        <p>One way to edit index links is to use span styles to change the look of the index links. For example, you might want to make sure that the link term is displayed in bold to make it stand out, like this:</p>
+        <p>
+            <img src="../../Resources/Images/index_link_example1.png" />
+        </p>
+        <p>There are two parts that you can modify. First, you can create a style to modify the look of the "See" or "See also" portion of the link. Second, you can create a style to modify the look of the index term to which the link is pointing (in the example above, this would be the word "Dogs").</p>
+        <p>Another way to edit index links is to change the "See" or See also" text labels (e.g., change "See also" to "Also see").</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Indexes:styles" />how to edit index links using span styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>Find the <span class="Emphasis">span</span> style, and expand it if you are using the Advanced view of the Stylesheet Editor. If necessary, you can use the filter field at the top-left of the editor to select <span class="Emphasis">All Styles</span>.</p>
+                        <p>
+                            <img src="../../Resources/Images/span_tag_example1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/span_tag_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareIndexingGuide" />
+                <ol MadCap:continue="true">
+                    <li>Under the main span style, select any of the following classes:<ul type="1" class="FirstLevel"><li><span class="SetOffFirstLevel">SeeIndex </span>This style class allows you to change the look of the word "See" in an index link.</li><li><span class="SetOffFirstLevel">SeeIndexTerms </span>This style class allows you to change the look of the index entry reference in a "See" an index link. This is a common style to use to set the index term apart from the rest of the index link. For example, after creating this style class, you might open the Font property group to the right and change the font-weight setting to "bold."</li><li><span class="SetOffFirstLevel">SeeAlsoIndex </span>This style class allows you to change the look of the words "See Also" in an index link.</li><li><span class="SetOffFirstLevel">SeeAlsoIndexTerms </span>This style class allows you to change the look of the index entry reference in a "See Also" an index link. This is a common style to use to set the index term apart from the rest of the index link. For example, after creating this style class, you might open the Font property group to the right and change the font-weight setting to "bold."</li></ul></li>
+                    <li>Using the Stylesheet Editor, change any properties for it. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../Resources/Snippets/Indexes/SpanStylesNotForWH.flsnp" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit index link label text</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>Double-click the <span class="Emphasis">Advanced </span>folder.</li>
+                    <li>Double-click a language skin to open it.</li>
+                    <li>From the list, select a language in bold or italic font.</li>
+                    <li>
+                        <p>On the right side of the editor, select <span class="Emphasis">Print and Online</span>.</p>
+                    </li>
+                    <li>
+                        <p>If necessary, on the left side of the editor, expand the <span class="Emphasis">Print and Online</span> group.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Name</span>&#160;column, locate the <span class="Emphasis">Index Entry</span> items , depending on which element you want to change. These are the translations you will want to edit. </p>
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">You may want to click the column header to sort the Name column alphabetically. Index Entry items are labeled "Index Entry."</p>
+                    </li>
+                    <li>
+                        <p>Double-click in any of the <span class="Emphasis">Value</span> fields  and change the text as necessary.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to change the look of index links in online output, you can do so by modifying styles within your skin. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Skins/Standard_Skin_Styles/Standard_Skin_Styles.htm" >Standard Skin Styles</MadCap:xref>, <MadCap:xref href="../../Skins/HTML5_Skin_Styles/HTML5_Skin_Styles.htm" >HTML5 Skin Styles</MadCap:xref>, and <MadCap:xref href="../../Skins/WebHelp_Mobile_Skin_Styles/WebHelp_Mobile_Skin_Styles.htm" >WebHelp Mobile Skins</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Indexes" />
+        </p>
+    </body>
+</html>

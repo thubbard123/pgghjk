@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1778" MadCap:lastWidth="1020" MadCap:conditions="Products.D2H">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>If necessary, you can create new styles in both your source and target templates (DOTX file). However, if you need to make modifications to the formatting of <span class="EmphasisItalic">styles</span> (e.g., change the font color for a style from black to red), you should do so in your target template instead of the source template or document. Keep in mind that style changes in the source template affect only the look of the source documents, which are for your eyes only. Editing the target template changes the look of your final output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> For a list of available templates, see <MadCap:xref href="../../../Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you change the Heading 1 style in the template to be blue. But in the source document you create based on that template, you change the color for the style to red. When you generate the target, Doc-To-Help ignores the formatting that you did in the source document, and you end up with blue headings.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>If you've selected a source template that includes a particular style that is not available in a target template that you select, the source style passes through to the target.</p>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you are using D2H_NOMARGIN.dotx as your source template. Within that template, you create a custom style called "BigText" that has a 48-point font.</p>
+                    <p>You then create a source document based on that template, and you apply the "BigText" style to some content.</p>
+                    <p>With D2H_PRNOMARGIN.dotx selected as your target template, you build the output. The "BigText" style is not part of that template, but it passes through and you see it anyway in the output.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tip</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">It is good practice to back up your original templates so that you can restore them if needed.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Open a Source or Target Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In Doc-To-Help, open the <span class="Emphasis">Home</span> ribbon.</li>
+                    <li>
+                        <p>To open source templates for editing:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>From the <span class="Emphasis">Source</span> group, click the <span class="Emphasis">Source Template</span> drop-down arrow. </li>
+                            <li>Choose <span class="Emphasis">Edit Template</span>. The selected template opens in Word.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>To open target templates for editing:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>From the <span class="Emphasis">Target Design</span> group, click the <span class="Emphasis">Target Template</span> drop-down arrow. </li>
+                            <li>Choose <span class="Emphasis">Edit Template</span>. The selected template opens in Word. </li>
+                        </ol>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Modify the formatting of a Style in a Template </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>After the Word template is open, select the <span class="Emphasis">Home</span> ribbon, and at the bottom of the <span class="Emphasis">Styles</span> group click <img src="../../Images/arrow_btn.png" class="ReduceButtonSize" />. The Styles window opens.</li>
+                    <li>Click the style you would like to edit from the list and click the drop-down next to it. Choose <span class="Emphasis">Modify</span>. The Modify Style dialog opens. </li>
+                    <li>Select the <span class="Emphasis">Format</span> drop-down, then select the attribute you want to modify and make the desired changes.</li>
+                    <li>When you are done, choose <span class="Emphasis">New documents based on this template</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Save the template file.</li>
+                </ol>
+                <p>This will only affect the look of a style.<MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,General.OnlineLive"> If you wish to change its behavior in the final output (e.g., its level or whether the style is automatically added to the TOC or index), see <MadCap:xref href="../../../Styles/D2H/About Project_Styles_and_Topic_Types.htm">About Project Styles and Topic Types</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add or Remove a Template in Doc-To-Help</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To add a template to the Source Template or Target Template drop-downs in the Doc-To-Help Home ribbon, choose <span class="Emphasis">Add Template</span>. To remove a template from the drop-downs, choose <span class="Emphasis">Remove Template</span>. Removing a template in this manner will only remove it from the drop-down list, not your machine.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../D2H/TemplateLocationNote.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="3" MadCap:lastHeight="3349" MadCap:lastWidth="1224">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Let's say you want to embed four YouTube videos in a topic. When viewed on a large screen, you want the videos to display like this, two videos above the other two:</p>
+            <p>
+                <img src="../../Images/responsive_layout8.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>You want this same configuration to be used when the topic is viewed on a smaller tablet device.</p>
+            <p>But when viewed on a smart phone, you want each video to be displayed by itself, like this:</p>
+            <p>
+                <img src="../../Images/responsive_layout10.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>To make this happen, you first open the topic where you want to insert the videos, and you also open the Responsive Layout window pane.</p>
+            <p>Make sure the <span class="Emphasis">Web</span> medium is selected in the Responsive Layout window pane.</p>
+            <p>
+                <img src="../../Images/responsive_layout12.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Then place the cursor where you want to insert the layout. We're going to assume you haven't created any row styles yet in your project, so in the Responsive Layout window pane, click <span class="Emphasis">New Style</span>.</p>
+            <p>
+                <img src="../../Images/responsive_layout11.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>In the New Row Style dialog, give the new style a name. Let's say you call it <span class="Emphasis">FourVideos</span>. Your stylesheet is already selected in the dialog, but you need to choose a template. Click <span class="Emphasis">Row-6-6</span>, which will start you out with two cells in the row, each taking up half the total space.</p>
+            <p>
+                <img src="../../Images/responsive_layout13.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>After you click <span class="Emphasis">OK</span>, the row style is added to your stylesheet and is selected in the Responsive Layout window pane. Also, your stylesheet will open behind the topic.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>Now click <span class="Emphasis">Insert Row</span>.</p>
+            <p>
+                <img src="../../Images/responsive_layout14.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>In your topic, you will see two cells, indicated by the dummy text "Cell 1" and "Cell 2."</p>
+            <p>
+                <img src="../../Images/responsive_layout15.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>Click in either of the cells. The Responsive Layout window pane will change, showing the buttons that you can select, as well as the current style settings for that cell.</p>
+            <p>
+                <img src="../../Images/responsive_layout16.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>You've got two cells, but you need two more. So click <span class="Emphasis">Add Cell</span>. This inserts a third cell in your topic. Click <span class="Emphasis">Add Cell</span> again. This adds a fourth cell.</p>
+            <p>
+                <img src="../../Images/responsive_layout17.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>So you've got four cells for the four videos, but you need to adjust their widths. Click in the third cell and in the Responsive Layout window pane, change the <span class="Emphasis">Cell Width</span> to <span class="Emphasis">6</span>. Do the same for the fourth cell. Now each of the four cells has a width of 50%.</p>
+            <p>
+                <img src="../../Images/responsive_layout18.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>Next, click in each cell and replace the default text with your embedded YouTube videos<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Multimedia/Movies/Inserting_Movies_Flare.htm">Inserting Movies</MadCap:xref>)</MadCap:conditionalText>. In the XML Editor, it might look something like this:</p>
+            <p>
+                <img src="../../Images/responsive_layout20.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>You can also apply other styles to your content as needed. For example, you might want to center your content.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>At the top of the Responsive Layout window pane, click <span class="Emphasis">Tablet</span>. The layout view and medium in the XML Editor change automatically.</p>
+            <p>
+                <img src="../../Images/responsive_layout21.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Set all four cells to the same width (6 columns, 50%).</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+            <p>At the top of the Responsive Layout window pane, click <span class="Emphasis">Mobile</span>. The layout view and medium in the XML Editor change automatically.</p>
+            <p>
+                <img src="../../Images/responsive_layout22.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Click in each cell and in the Responsive Layout window pane, make sure the <span class="Emphasis">Cell Width</span> is set to <span class="Emphasis">12</span>. This results in a width of 100% for each cell.</p>
+            <p>When you generate your HTML5 output, you should see the configuration shown at the beginning of this example for each of the three layouts (Web, Tablet, Mobile).</p>
+        </div>
+    </body>
+</html>

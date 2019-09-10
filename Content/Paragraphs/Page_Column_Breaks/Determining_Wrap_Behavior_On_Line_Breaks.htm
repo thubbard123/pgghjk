@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Contributor,Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="5927" MadCap:lastWidth="832" MadCap:ignoredWords="nowrap;F2" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Line breaks;Breaks:line" />
+            <MadCap:keyword term="Formatting:paragraphs" />
+            <MadCap:keyword term="Paragraphs:white space" />Determining Wrap Behavior on Line Breaks Using Styles</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllPrint.flsnp" MadCap:conditions="Products.Flare" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>You can <span class="state" MadCap:conditions="Products.Flare">apply line breaks and then</span> determine the wrap behavior on line breaks using styles. </p>
+        <p MadCap:conditions="Products.Flare">The line break tag in XHTMLis &lt;br/&gt;. Line breaks end the current line and the text or image after it will be moved to the very next line, in a way similar  to pressing the Return key in a word processor. </p>
+        <p MadCap:conditions="Products.Flare">However, there is a difference. Pressing the Return key will start a new paragraph with a &lt;p&gt; tag. Using the line break tag will start a new line without creating a new paragraph tag.</p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Below are two lines that were created by pressing Return. Notice that they are contained in separate paragraph &lt;p&gt; tags.</p>
+                    <p>
+                        <img src="../../Resources/Images/line_break_ex1.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+                    <p>Here is what these lines look like when viewing the XHTML code in the Internal Text Editor. </p>
+                    <p>
+                        <img src="../../Resources/Images/line_break_ex2.png" alt="" title="" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+                    <p>If you insert the line break tag into the XHTML code, it might look like this.</p>
+                    <p>
+                        <img src="../../Resources/Images/line_break_ex3.png" alt="" title="" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+                    <p>Here is how that code will appear in the XML Editor. Notice that the first two lines are in the same paragraph, even though they are on separate lines.</p>
+                    <p>
+                        <img src="../../Resources/Images/line_break_ex4.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <p MadCap:conditions="Products.Flare">You might want to use line breaks for adjusting particular areas of a topic or for placing text immediately below images. You can use the line break tag inside many other XHTML elements such as tables, lists and headings.</p>
+        <p MadCap:conditions="Products.Flare">  Line breaks are best used for solving minor formatting issues on individual cases. Large formatting issues across many topics are best handled by using styles.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Line breaks" />how to insert line breaks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a topic.</li>
+                    <li>At the bottom of the XML Editor, click the <span class="Emphasis">Text Editor</span> tab to see the markup. You can also use split the editor between the XML Editor and the Internal Text Editor. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>With the topic open in the Internal Text Editor, identify the location in the code where you want the line break to be. This will usually be in a paragraph element. Then type the following.</p>
+                        <p class="TypedEntry">&lt;br/&gt;</p>
+                        <p> This is the line break tag.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <p>Wrap behavior on line breaks determines how and when the line ends  and begins (or "wraps") on &lt;br/&gt; tags from one line to the next. It also determines how white space is treated when the line wraps. Wrap behavior is controlled by the <span class="Emphasis">white-space</span> property.</p>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:keyword term="Line breaks" />
+                <MadCap:dropDownHotspot>how to determine wrap behavior on line breaks using styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" MadCap:conditions="Products.Flare" /><span class="state" MadCap:conditions="Products.Contributor">Open the stylesheet you want to modify.</span>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Paragraphs/ParagraphSelectStyleStep.flsnp" />
+                                    </li>
+                                    <li>In the upper-left corner of the editor, click the <span class="Emphasis">Hide Properties</span> check box so that it is unchecked. The properties for each style will appear. </li>
+                                    <li>Scroll horizontally until you reach the <span class="Emphasis">white-space</span> property column.</li>
+                                    <li>Click the cell where it intersects with the white-space property column and press <span class="Emphasis">F2</span> to edit the cell.</li>
+                                    <li>
+                                        <p>In the cell, enter one of the following.</p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Paragraphs/WhiteSpaceOptions.flsnp" />
+                                    </li>
+                                    <li>Press <span class="Emphasis">Enter</span>.</li>
+                                </ol>
+                                <p>
+                                    <img src="../../Resources/Images/white_space_style_sheet_ex2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Paragraphs/ParagraphSelectStyleStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>If you are using the group view, expand the <span class="Emphasis">Block</span> group.</p>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>To the right of <span class="Emphasis">white-space</span>, click in the column and select one of the following from the drop-down menu.</p>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Paragraphs/WhiteSpaceOptions.flsnp" />
+                                    </li>
+                                </ol>
+                                <p>
+                                    <img src="../../Resources/Images/white_space_style_sheet_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li value="3">
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:keyword term="Line breaks" />
+                <MadCap:dropDownHotspot>how to determine wrap behavior on line breaks using styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" MadCap:conditions="Products.Flare" /><span class="state" MadCap:conditions="Products.Contributor">Open the stylesheet you want to modify.</span>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Paragraphs/ParagraphSelectStyleStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>If you are using the group view, expand the <span class="Emphasis">Block</span> group.</p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To the right of <span class="Emphasis">white-space</span>, click in the column and select one of the following from the drop-down menu.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Paragraphs/WhiteSpaceOptions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/white_space_style_sheet_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also insert non-breaking spaces. See <MadCap:xref href="../../Characters_and_Symbols/Inserting_Special_Characters_and_Symbols.htm">Inserting Special Characters and Symbols</MadCap:xref> and <span class="state" MadCap:conditions="Products.Flare"><MadCap:xref href="../../Interface/UI_Elements/XML_Editor.htm">XML Editor</MadCap:xref>.</span><span class="state" MadCap:conditions="Products.Contributor"><MadCap:xref href="../../Interface/UI_Elements/XML_Editor_Contributor.htm">XML Editor</MadCap:xref>.</span></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information about CSS styles, properties, and settings, visit the World Wide Web Consortium at <a href="http://www.w3.org/">www.w3.org</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="QuickCharacters" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

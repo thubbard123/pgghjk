@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="3082" MadCap:lastWidth="1062">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Editing font properties to change how the text looks in a project. Provides a complete list of font properites that can be customzied to suit your needs. " />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Fonts:editing;Styles:fonts;Formatting:fonts" />
+            <MadCap:concept term="FilterFonts" />
+            <MadCap:concept term="FilterLocalFormatting" />Font Properties Dialog</h1>
+        <p>This dialog is used to affect the look and behavior of text in your content in various ways. These settings can be applied locally (i.e., directly) to the text or by applying a style to selected text. Modifying the style is typically preferable to changing the settings locally. Different settings are available depending on the user interface you are using to apply the font properties (e.g., the dialog may have an Advanced tab or it may not, depending on where you open it).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">How to Open the Font Properties Dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> At the bottom of the <span class="Emphasis">Font</span> section click <img src="../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+B</span>. </li>
+                        </ul>
+                        <p>The Font Properties dialog opens.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What You Can Do in the Font Properties Dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">Following are the primary tasks that you can perform in the Font Properties dialog:</p>
+                <ul>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:font sets" />Create Font Sets </span>You can create font sets where you can specify alternate fonts to use in your content. If the first font in the set is not available, the system uses the second font; if the second font is also not available, the system uses the third font; and so on. Click <span class="Emphasis">Font Sets</span> to use this feature. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Font_Sets/Creating_Font_Sets.htm">Creating Font Sets</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Delete Font Sets </span>If you do not need a font set anymore, you can delete it from the Font Set Manager. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Contributor">See <MadCap:xref href="../../Fonts/Font_Sets/Deleting_Font_Sets.htm">Deleting Font Sets</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Edit Font Properties </span>You can select font styles and effects to change the appearance of text. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="#Ways">Ways to Edit Font Properties</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Edit Font Sets </span>You can edit font sets after you create them if you want to add or remove fonts from the font set. You can also change the order of fonts in the set if you want to give a different font a higher or lower priority in the font set. Click <span class="Emphasis">Font Sets</span> to use this feature.
+                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">
+                   See <MadCap:xref href="../../Fonts/Font_Sets/Editing_Font_Sets.htm">Editing Font Sets</MadCap:xref>.        </MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:font groups" />Group Fonts </span>
+                        <MadCap:conditionalText MadCap:conditions="Products.Flare">The font list contains groups for pinned fonts, recently used fonts, font sets, and all system fonts. </MadCap:conditionalText>
+                        <MadCap:conditionalText MadCap:conditions="Products.Contributor">The font list contains groups for all fonts, recently used fonts, and all system fonts. </MadCap:conditionalText>You can expand or collapse each group to limit the list of fonts to those that you use the most and hide from view those that you do not use. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Contributor">See <MadCap:xref href="../../Fonts/Using_Font_Groups.htm">Using Font Groups</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:pinning" />Pin Fonts </span>
+                        <MadCap:conditionalText MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">and Font Sets </span>
+                        </MadCap:conditionalText>You can pin your favorite fonts <MadCap:conditionalText MadCap:conditions="Products.Flare">and font sets </MadCap:conditionalText>to the top of the font list so you can easily find them again later. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Pinning_Fonts.htm">Pinning Fonts</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Preview Font Properties </span>As you select different font styles and effects, the Preview bar at the bottom of the Font Properties dialog shows you how your text will appear in your document.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive"><a name="Ways"></a>Ways to Edit Font Properties</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are some of the more common ways that you can edit font properties.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Bold;Fonts:bold" />Bold </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SetBoldTextSummary.flsnp">
+                                </MadCap:snippetText>
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Bold/Setting_Bold_Text.htm">Setting Bold Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Case;Fonts:case;Lowercase;Uppercase;Capitalize" />Case </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SetCaseOfTextSummary.flsnp">
+                                </MadCap:snippetText>
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Case/Setting_the_Case_of_Text.htm">Setting the Case of Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Color:background;Background:color;Fonts:background color" />Color of Background </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> You can set a background color for text. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Color/Setting_the_Background_Color_for_Text.htm">Setting the Background Color for Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Color:font;Fonts:color" />Color of Text </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> You can select a color for text. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Color/Setting_the_Color_for_Text.htm">Setting the Color for Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:font family" />Font Family </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more…  </MadCap:expandingHead>
+                            <MadCap:expandingBody>You can select a font family (e.g., Arial, Verdana) for text to change its look. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Selecting_Fonts.htm">Selecting Fonts</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Italic;Fonts:italic" />Italics </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SetItalicsSummary.flsnp">
+                                </MadCap:snippetText>
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Italic/Setting_Italic_Text.htm">Setting Italic Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:spacing;Spacing:fonts;Italic:correction" />Italic Correction </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Paragraphs/ItalicCorrectionSummary.flsnp" />
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Italic/Setting_Italic_Correction.htm">Setting Italic Correction</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:spacing;Spacing:fonts;Letter spacing" />Letter Spacing </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/LetterSpacingSummary.flsnp" />
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Spacing/Setting_Letter_Spacing.htm">Setting Letter Spacing</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Overline;Fonts:overline" />Overline </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> You can specify that a horizontal line should be placed above text (opposite of underlined text). <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Effects/Setting_an_Overline_on_Text.htm">Setting an Overline on Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Redacted text;Text:redacted;Styles:redacted text" />Redacted Text </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Redacted_Text/RedactionTypesOfContent.flsnp" />
+                                <MadCap:snippetText src="../../Resources/Snippets/Redacted_Text/RedactedTextSummary2.flsnp" />
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Redacted_Text/Setting_Redacted_Text_on_Content.htm">Setting Redacted Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:size;Size:fonts" />Size&#160;</span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>  You can specify the size of text, choosing from many different units of measurement. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Size/Setting_the_Font_Size.htm">Setting the Font Size</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Smallcaps;Fonts:smallcaps" />Smallcaps </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> You can specify that text should be displayed in all capital letters, but in a small size. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Effects/Setting_Smallcaps_on_Text.htm">Setting Smallcaps on Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Strikethrough;Fonts:strikethrough" />Strikethrough&#160;</span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>  You can specify that a horizontal line should be added through the middle of the text, providing the effect of content that has been "striked through." <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Effects/Setting_a_Strikethrough_Effect_on_Text.htm">Setting a Strikethrough Effect on Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Subscript;Fonts:subscript" />Subscript </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SubscriptTextSummary.flsnp">
+                                </MadCap:snippetText>
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Effects/Setting_Subscript_Text.htm">Setting Subscript Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Superscript;Fonts:superscript" />Superscript </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SuperscriptTextSummary.flsnp">
+                                </MadCap:snippetText>
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Effects/Setting_Superscript_Text.htm">Setting Superscript Text</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Underline;Fonts:underline" />Underline </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> You can easily underline text. <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare">See <MadCap:xref href="../../Fonts/Effects/Setting_Underlined_Text.htm">Setting Underlined Text</MadCap:xref>.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Fonts:spacing;Spacing:fonts;Word spacing" />Word Spacing </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody>
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/WordSpacingSummary.flsnp" />
+                                <MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> See <MadCap:xref href="../../Fonts/Spacing/Setting_Word_Spacing.htm">Setting Word Spacing</MadCap:xref>.</MadCap:conditionalText>
+                            </MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/ExplainIndividualButtonsSections.flsnp" MadCap:conditions="General.OnlineLive" />
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <table style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;caption-side: top;width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col style="width: 77px;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Button/Section</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Font</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">You can select a font family (e.g., Arial, Verdana) for text to change its look. </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/pin_pinned_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">This image appears next to a font <MadCap:conditionalText MadCap:conditions="Products.Flare">or font set </MadCap:conditionalText>that has been pinned to the font list.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/pin_unpinned_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">This image appears next to a  font <MadCap:conditionalText MadCap:conditions="Products.Flare">or font set </MadCap:conditionalText>that has not yet been pinned to the font list.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/font_group_expanded_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">This arrow indicates a font group that is expanded. Click the arrow to collapse the group.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/font_group_collapsed_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">This arrow indicates a font group that is collapsed. Click the arrow to expand the group.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Pinned Fonts</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">This font group displays all fonts <MadCap:conditionalText MadCap:conditions="Products.Flare">or font sets </MadCap:conditionalText>you have pinned to the list of fonts.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Recently Used Fonts</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">This font group displays the five most recently used fonts<MadCap:conditionalText MadCap:conditions="Products.Flare"> or font sets</MadCap:conditionalText>.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" MadCap:conditions="">
+                                <p class="TableTextEmphasis">Defined Font Sets</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows" MadCap:conditions="">This font group displays any font sets you have created.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">All Fonts</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">This font group displays all system fonts.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Size</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">You can specify the size of text, choosing from many different units of measurement. </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Style</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">You can apply a style (e.g., bold, italic, bold italic) to a font.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Effects</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">You can apply effects to a font (e.g., underline, superscript, smallcaps) to a font.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Colors</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">You can change the font's color or background color.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/color_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Changes the text's color.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/background_color2_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Change's the text's background color.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" MadCap:conditions="">
+                                <p class="TableTextEmphasis">Font Sets</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows" MadCap:conditions="">Opens the Font Set Manager dialog, where you can create, edit, and delete a font set.</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Transform</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/SetCaseOfTextSummary.flsnp">
+                                </MadCap:snippetText>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Italic Correction</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <MadCap:snippetText src="../../Resources/Snippets/Paragraphs/ItalicCorrectionSummary.flsnp" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Redacted Text</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <MadCap:snippetText src="../../Resources/Snippets/Redacted_Text/RedactionTypesOfContent.flsnp" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Letter Spacing</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/LetterSpacingSummary.flsnp" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Word Spacing</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <MadCap:snippetText src="../../Resources/Snippets/Formatting/WordSpacingSummary.flsnp" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">[Preview Bar]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">This is the area at the bottom of the window pane. As you select different font styles and effects, the Preview area at the bottom of the Font Properties dialog shows you how your text will appear in your document.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Fonts" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1278" MadCap:lastWidth="878" MadCap:conditions="General.Future">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>
+            <img src="../../../Resources/Images/FlareLogoAndLine.png" class="MaxWidth100PercentNoThumbnail" />
+        </p>
+        <p class="CheatSheet">MadCap Styles Cheat Sheet</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-BasicAlternateRows-Head-Header1" MadCap:conditions="">
+                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1" colspan="2" MadCap:conditions="">
+                        <p class="TableTextHead">Concepts</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Class</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>A "child" of one of the main "parent" styles (e.g., h1, p, img) that gives you more variety and flexibility. Inherits settings from the parent style, but you can override them on the child. For example: <span class="Emphasis">p.Tip</span>,  <span class="Emphasis">h1.Appendix</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Generic Class</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p>A class that can be associated with any parent style. For example: <span class="Emphasis">.center</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">ID</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>Similar to a class, except that IDs are unique. An element in your stylesheet can have only one ID on it, and each page of your output can have only one element with a particular ID. Useful for those using Javascript. For example: <span class="Emphasis">#Content</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Inheritance</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p class="TableText">The idea that elements in your document can inherit style settings from other elements. Occurs when one style element is added within another, therefore creating a parent-child relationship. The child inherits all of the style settings that the parent has, unless you override those settings on the child.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Media Query</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p>An alternative group of settings in a stylesheet that are automatically used under certain conditions, such when a screen of a certain size is displaying the output. <span class="EmphasisItalic">You do not tell a Flare target to use a media query; it just happens automatically.</span> For example: <span class="Emphasis">tablet</span>, <span class="Emphasis">mobile</span>, <span class="Emphasis">@media only screen and (max-width: 905px)</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Medium</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p>An alternative group of settings in a stylesheet that can be useful when generating multiple kinds of outputs. <span class="EmphasisItalic">You need to explicitly tell Flare which medium you want a particular target to use (Advanced tab of Stylesheet Editor).</span> For example: <span class="Emphasis">print</span>, <span class="Emphasis">blueonline</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                        <p class="TableTextEmphasis">Precedence</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                        <p class="TableText">When the same information comes from different places, there are rules of precedence.</p>
+                        <p class="TableText">Local Properties &gt; Table Stylesheet Settings &gt; Regular Stylesheet Settings &gt; External Stylesheet Settings</p>
+                        <p class="TableText"> Stylesheet at File Level &gt; Stylesheet at Target Level &gt; Stylesheet at Project Level</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                        <p class="TableTextEmphasis">Pseudo Class</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                        <p class="TableText">Classes that pertain to elements when they're in a certain state (e.g., the font turns orange when a user hovers over it). Often (but not exclusively) used for styles associated with hyperlinks. For example: <span class="Emphasis">a:hover</span></p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-BasicAlternateRows-Body-LightRows">
+                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                        <p class="TableTextEmphasis">Selector</p>
+                    </td>
+                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                        <p class="TableText">A way to associate HTML content with style settings based on various information—most often its type, class, or ID. Sometimes the word "selector" is used interchangeably with the term "style," but a selector can be much more than just a simple style. Complex (i.e., advanced) selectors are typically combinations of one or more simple selectors.</p>
+                        <p class="TableText">For example (simple selectors): <span class="Emphasis">p</span>, <span class="Emphasis">h1</span>, <span class="Emphasis">img</span></p>
+                        <p class="TableText">For example (complex selectors): <span class="Emphasis">li.Example1 a:hover</span>, <span class="Emphasis">ol ol</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

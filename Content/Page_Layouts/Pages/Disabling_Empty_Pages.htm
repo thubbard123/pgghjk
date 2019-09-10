@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.);output.);output...;level.&quot;;TOC1;TOC2;TOC3;TOC9;Index1;Index2;Index3;C;project.);TOC.);medium...;page.&quot;" MadCap:lastBlockDepth="9" MadCap:lastHeight="1347" MadCap:lastWidth="1279" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="An empty page is part of a page layout and typically one that is devoid of content. You can disable the display of empty pages in your printed output." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Page layouts:empty;Empty pages" />
+            <MadCap:concept term="FilterPageLayouts" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />Disabling Empty Pages</h1>
+        <p>You can use empty pages to ensure that your chapters always start on a right or left page when creating printed output. See <MadCap:xref href="Using_Empty_Pages.htm">Using Empty Pages</MadCap:xref>.</p>
+        <p>If you do not want to have an empty page before certain chapters, the simplest solution is to use a page layout that does not include an empty page in it. That way, your new chapters will start either on a right page or on a left page, whichever it comes to first.</p>
+        <p>However, let's say that you want to use a page layout that includes an empty page, but you want to specify that certain chapters should not have an empty page before them. To accomplish this, you can disable the empty pages for those chapters.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to disable empty pages</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Double-click the TOCs folder.</li>
+                    <li>Double-click the TOC that you plan to use for the printed output. The TOC Editor opens to the right.</li>
+                    <li>Select the entry in the TOC where you want to a new chapter to start, but you do not want to force an empty page before it.</li>
+                    <li>In the local toolbar, click <img src="../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. </li>
+                    <li>Click the <span class="Emphasis">Printed Output</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Chapters</span> section, click the down arrow in the field <span class="Emphasis">Auto-end on 'left' page</span> and select <span class="Emphasis">Disabled</span>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You should already have completed the other fields in this section in order to specify a chapter break. See <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <p>Now select the entry in the TOC where the previous chapter starts. You need to disable the empty page for that entry as well.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say your outline TOC looks like this.</p>
+                            <p>
+                                <img src="../../Resources/Images/disable_empty_pages_example.png" class="MaxWidth100Percent" />
+                            </p>
+                            <p>Suppose that, for each entry that signifies the start of a chapter (e.g., Welcome, Chapter 1 Start, Chapter 2 Start, Chapter 3 Start, Chapter 4 Start), you are using a page layout that includes an empty page. However, you want to override that setting for Chapter 3. In other words, your page layout would ordinarily force an empty page at the end of Chapter 2 to ensure that Chapter 3 starts on a right (odd) page. But if you don't want it to do that, you would disable the empty page for the entry where Chapter 3 starts (in this example, the "Chapter 3 Start" entry). That is what you have already accomplished with the steps above. But now you also need to do this for the "new chapter" entry before it (in this example, "Chapter 2 Start").</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteMeaningOfChapter.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PageLayouts" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4815" MadCap:lastWidth="1144" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorials3Foldout.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/ProductFoldout3Fold.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Product Foldout" />
+            <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Creating Styles</h1>
+        <p>You are almost finished. The page layouts, topics, and TOC have been created. And you've added all of the content to the topics. Most of the content is already using the appropriate styles, but there are a few pieces in the topics that still need to be formatted.</p>
+        <p>All of the styles you need already existing in the stylesheet in the template. But we're going to show you how we created a few of the styles so you can see how it is done.</p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../../Resources/Images/hdydt_styles19.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../../Resources/Images/hdydt_styles20.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Identifying Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Identifying STyles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before we create new styles, we want to show you how to identify existing styles. If you've ever looked at a section of content and thought, "I wonder how they got it to look like that," you can easily find out. It's just a matter of knowing where to look.</p>
+                <ol>
+                    <li>Open the <span class="Emphasis">Back2.htm</span> topic.</li>
+                    <li>In the third panel, locate the bulleted list and click in it somewhere.</li>
+                    <li>
+                        <p>Look to the far left side of the XML Editor and notice the structure bars. If your structure bars are not turned on, click <img src="../../../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the editor.</p>
+                        <p>The structure bars that are related to the list are those with the ul and li labels. The ul structure bar represents the list as a whole, and each li bar represents an item in that list.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Now look above the topic. You should see a span bar. If your span bars are not turned on, click <img src="../../../Resources/Images/toggle_show_spans_btn.png" class="ReduceButtonSize" /> at the bottom of the editor.</p>
+                        <p>Span bars represent formatting that is done inline. In our list, we have some text at the beginning of each item that is shown in light green. Each of these is using a span style.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                    <li>
+                        <p>Let's investigate the ul and li styles first. Right-click the <span class="Emphasis">ul</span> structure bar and select <span class="Emphasis">Style Class&gt;Edit Style Class</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The stylesheet opens and automatically selects the style class. In this case, the style class is named "ul.DarkBackground."</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the local toolbar, click <img src="../../../Resources/Images/styles_group_view_btn.png" class="ReduceButtonSize" />. This changes the view of the properties on the right from groups to an alphabetical list.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>On the right side of the local toolbar, click the <span class="Emphasis">Show</span> drop-down field and select <span class="Emphasis">Show: Set Properties</span>. This filters the properties below to only those that have been explicitly set in the stylesheet for the selected style, as well as any properties explicitly set in an inherited stylesheet.</p>
+                        <p>As you can see, only two properties were set on this style. One points to a small image that serves as the bullet. The other property sets the left margin at 60 pixels.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>But there is one other style to look at. Notice that the text is very light so that it shows up on the dark background. This was caused by a generic style class, which is a class that is not associated with any parent style.</p>
+                        <p>In this example, the class we've looked at is called "ul.DarkBackground." A generic class with the same name (.DarkBackground) also exists in the stylesheet.</p>
+                    </li>
+                    <li>
+                        <p>In the list of styles, expand <span class="Emphasis">(Generic Classes)</span>, and click <span class="Emphasis">DarkBackground</span>. The property set for that class (a light gray color) is shown to the right.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles8.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Scroll down the list of styles until you find <span class="Emphasis">li</span>, and click on it. The properties to the right show what has been set for the individual list items.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles9.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Now you know how the list was designed. So let's take a look at the inline formatting that created the light green text at the beginning of the list items. Go back to the <span class="Emphasis">Back2.htm</span> topic.</li>
+                    <li>
+                        <p>With your cursor still placed in the list, right-click the <span class="Emphasis">span</span> bar above the topic, and from the context menu select <span class="Emphasis">Style Class&gt;Edit Style Class</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The stylesheet opens with the relevant style class selected. In this case, it is a class called "span.Light." And its property settings are shown to the right. You can see that it has a light green color and the font is bold.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>You can use these steps to identify settings for any styles you find in the Front and Back topics.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Creating Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>creating Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Let's re-create a couple of the style classes that are used in this template. If you look at the original Front topic, you will see that the first two paragraphs (which have variables) are designed to look differently than a normal paragraph. There is more space above the first paragraph, and the second paragraph is larger with a green font.</p>
+                <p>
+                    <img src="../../../Resources/Images/product_foldout_tutorial_create_styles12.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <p>We are going to create duplicate style classes that we will apply to our front topic.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">p</span> style.</li>
+                    <li>
+                        <p>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles13.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the New Selector dialog, click in the <span class="Emphasis">Class Name</span> field and type the following:</p>
+                        <p class="TypedEntry">ManualTitle1New</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The new class is added under the p style and is selected.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                    <li>
+                        <p>On the right side of the local toolbar, click in the <span class="Emphasis">Show</span> drop-down field and select <span class="Emphasis">Show: All Properties</span>. This displays all of the available properties below.</p>
+                        <p>
+                            <img src="../../../Resources/Images/product_foldout_tutorial_create_styles14.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Scroll down the list of properties until you find each of the following properties, and give them the values shown.<ul><li><span class="SetOffFirstLevel">column-break-before </span>always</li><li><span class="SetOffFirstLevel">font-family </span>Century Gothic</li><li><span class="SetOffFirstLevel">font-size </span>9pt</li><li><span class="SetOffFirstLevel">margin-bottom </span>0</li><li><span class="SetOffFirstLevel">margin-left </span>50px</li><li><span class="SetOffFirstLevel">padding-top </span>80px</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> </li>
+                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                    <li>
+                        <p>In the New Selector dialog, click in the <span class="Emphasis">Class Name</span> field and type the following:</p>
+                        <p class="TypedEntry">ManualTitle2New</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The new class is added under the p style and is selected.</li>
+                    <li>In the list of properties, set the following for the new style class:<ul><li><span class="SetOffFirstLevel">color </span>#bed230</li><li><span class="SetOffFirstLevel">font-family </span>Century Gothic</li><li><span class="SetOffFirstLevel">font-size </span>22pt</li><li><span class="SetOffFirstLevel">line-height </span>0</li><li><span class="SetOffFirstLevel">margin-bottom </span>0</li><li><span class="SetOffFirstLevel">margin-left </span>50px</li><li><span class="SetOffFirstLevel">margin-top </span>0</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about styles and creating them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about styles and creating them, see <MadCap:xref href="../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref> and <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating Selectors</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Applying_Styles.htm">Applying Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

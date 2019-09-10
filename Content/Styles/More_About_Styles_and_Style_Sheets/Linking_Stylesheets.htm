@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="(.css;Stylesheets.”;s;Stylehseet" MadCap:lastBlockDepth="8" MadCap:lastHeight="2825" MadCap:lastWidth="759" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');" MadCap:conditionTagExpression="exclude[Snippets.Snippet2] ">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:keyword term="Linking:style sheets;Styles:stylesheets" />
+            <MadCap:concept term="FilterStyles" />Linking Stylesheets</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Styles/LinkingStyleSheetsSummary.flsnp" />
+        </p>
+        <p>If the linked stylesheets share the same style and have conflicting settings, the stylesheet that is most closely associated with the content file has precedence (e.g., the stylesheet is the most recent one associated with the topic, or the stylesheet is set as the master at the project or target level).</p>
+        <p>However, if there are shared styles between the linked stylesheets but the primary stylesheet (which would normally have precedence) does not have a value explicitly set for a certain property while the other stylesheet does, that explicitly set value will be seen. Therefore, you should use caution with this feature.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you have two stylesheets: Stylesheet A and Stylesheet B. You select Stylesheet A in the Project Properties dialog, making it the master stylesheet for the entire project.</p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets1.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p>After opening Stylesheet A in the Stylesheet Editor, you link it to Stylesheet B.</p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets2.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <p>If you open Stylesheet A in the Internal Text Editor, you would see this at the top of it, indicating the link:</p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets3.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <p>Each stylesheet has the h1 style. In Stylesheet A you've made the font blue, but in Stylesheet B you've made it red. Because Stylesheet A is the master stylesheet for the project, the XML Editor and the output would display h1 content in blue.</p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets4.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets5.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <p>If you look at the h1 properties in the Stylesheet Editor for Stylesheet A, you will notice that the text-decoration property is not set; it is using the default value. </p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets6.png" alt="" title="" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <p>Let's say you open Stylesheet B and set the text-decoration for h1 to underline. </p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets7.png" alt="" title="" class="MaxWidth75Percent" />
+                    </p>
+                    <p>Even though Stylesheet A is the master stylesheet, it does not have that value explicitly set, so Flare will use the value from Stylesheet B. As a result, in the output you will see h1 text that is blue (from Stylesheet A) and underlined (from Stylesheet B).</p>
+                    <p>
+                        <img src="../../Resources/Images/linking_stylesheets8.png" alt="" title="" class="MaxWidth50Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to link stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a stylesheet that you want to link to another stylesheet. The stylesheet being opened will adopt the styles from the stylesheet(s) that you link it to.</li>
+                    <li>In the local toolbar of the Stylesheet Editor, click the <span class="Emphasis">Options</span> button and select <span class="Emphasis">Stylesheet Links</span>. The Stylesheet Links dialog opens.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>On the left side of the dialog, select the stylesheet(s) that you want to link to the current stylesheet. Then click <img src="../../Resources/Images/move_item_to_right_btn.png" class="ReduceButtonSize" /> to add the stylesheet(s) to the Current Links section on the right.</li>
+                            <li>Double-click the stylesheet(s) that you want to link to the current stylesheet. The stylesheet is added to the Current Links section on the right. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:annotation MadCap:createDate="2016-08-04T14:20:58.7973616-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="View Inherited Stylesheet Via Double-Click" MadCap:editor="KSchneider" MadCap:editDate="2016-08-04T14:21:22.8547906-07:00">Note</MadCap:annotation>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../Resources/Snippets/Styles/ViewInheritedStylesheet.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[General.OnlineLive or Snippets.Snippet1] " />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Styles" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

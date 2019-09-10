@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Lingo" MadCap:lastBlockDepth="11" MadCap:lastHeight="4339" MadCap:lastWidth="689" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:branch;Branch:switch" />
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />Switching Branches<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SelectingBranchesIntro.flsnp" />
+        </p>
+        <p>You can use branches so multiple <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">translators </MadCap:conditionalText>can work in individual <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authoring </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">work</MadCap:conditionalText>spaces, or you can use them as a space to make major changes in your <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">document </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">project </MadCap:conditionalText>without affecting the original <MadCap:conditionalText MadCap:conditions="Products.Lingo">(e.g., when translating large sections of text, using new translation memories or machine translation)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">(e.g., when documenting a new feature, rewriting large sections of a topic, or making layout changes)</MadCap:conditionalText>.  Changing branches allows you to save your commits to a new development environment that is separate from the original.  When you change branches, you can edit existing files or create new files. When you commit your changes to the branch, they will not affect the files on your other branches.</p>
+        <p>There are <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Lingo">three </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Analyzer">two </MadCap:conditionalText>ways to switch branches:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Submenu </span> Use this method if you already know which branch you want to use.</li>
+            <li><span class="SetOffFirstLevel">Branch Management Dialog </span> Use this method if you want to perform additional management tasks before switching to a branch.</li>
+            <li MadCap:conditions="Products.Flare,Products.Lingo"><span class="SetOffFirstLevel">Source Control Explorer </span> Use this method if you want to pick a branch based on whether it is published or unpublished.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Warning</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">You should commit all of your current changes before switching branches. If you have uncommitted changes when you switch branches, they will be lost.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Switch Branches—Submenu</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section, click the arrow under <span class="Emphasis">Branch</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Switch Branch</span>. </li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Switch Branch</span>. </li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Switch Branch</span>. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>From the submenu, select the branch you want to use.  If you do not have any pending modifications, your branch switches.</p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_submenu.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_submenu_lingo.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Your current branch is marked in the submenu.</p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>(Optional) If there are pending modifications on your current branch, a dialog asks if you want to switch branches and discard your modifications. This is because the changes were made on the current branch, and do not carry over when you switch branches.</p>
+                        <ul>
+                            <li>Click <span class="Emphasis">Yes</span> to switch branches. Your changes will be lost.</li>
+                            <li>Click <span class="Emphasis">No</span> to cancel the switch. Commit your changes before attempting the switch again. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Switch <MadCap:keyword term="Branch Management dialog" />Branches—Branch Management Dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are not sure which branch you want to use, or if you want to perform additional management tasks before switching to a branch, you should use the Branch Management dialog.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Branch</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Branch</span>. </li>
+                        </ul>
+                        <p>The Branch Management dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">All branches</span> list, select the branch you want to switch to.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Your current branch is shown at the bottom of the dialog.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Switch</span>. If you do not have any pending modifications, your branch switches. </p>
+                        <p>
+                            <img src="../../../Resources/Images/branch_switch_dialog.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                <ol MadCap:conditions="Products.Flare,Products.Lingo" MadCap:continue="true">
+                    <li>
+                        <p>(Optional) If there are pending modifications on your current branch, a dialog asks if you want to switch branches and discard your modifications. </p>
+                        <ul>
+                            <li>Click <span class="Emphasis">Yes</span> to switch branches. Your changes will be lost.</li>
+                            <li>Click <span class="Emphasis">No</span> to cancel the switch. Click <span class="Emphasis">Close</span> in the Branch Management dialog and commit your changes before attempting the switch again. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>You will see the new branch's name in the <span class="Emphasis">Current branch</span> field when the switch is complete.</p>
+                        <p>
+                            <img src="../../../Resources/Images/branch_switch_dialog2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Switch Branches—Source Control Explorer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can also switch branches using the Source Control Explorer. You can view a list of published and unpublished branches in the Source Control Explorer, so this method is preferable if you want to pick a branch by its publication status.</p>
+                <ol>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li MadCap:conditions="Products.Lingo">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Pane</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Branches</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Branches pane" />Branches pane opens. In the pane, you can see your current branch, as well as lists of your published and unpublished branches. </p>
+                    </li>
+                    <li>
+                        <p>Select the branch you want to switch to.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Select Branch</span>.  If you do not have any pending modifications, your branch switches.</p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_switch_explorer_flare.png" alt="" title="" class="MaxWidth70Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_switch_explorer.png" alt="" title="" class="MaxWidth70Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>
+                        <p>(Optional) If there are pending modifications on your current branch, a dialog asks if you want to switch branches and discard your modifications. </p>
+                        <ul>
+                            <li>Click <span class="Emphasis">Yes</span> to switch branches. Your changes will be lost.</li>
+                            <li>Click <span class="Emphasis">No</span> to cancel the switch. Commit your changes before attempting the switch again. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>You will see the new branch's name in the <span class="Emphasis">Current </span> field when the switch is complete.</p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_switch_explorer2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_switch_explorer2_flare.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

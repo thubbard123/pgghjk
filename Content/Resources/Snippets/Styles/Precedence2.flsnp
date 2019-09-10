@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="1651" MadCap:lastWidth="1185">
+    <body>
+        <p>When you are working on a topic in the XML Editor, this is how precedence will work if you have multiple stylesheets.</p>
+        <ol>
+            <li>Local Stylesheet Associated with Topic
+</li>
+            <li>Master Stylesheet (styles from only one master stylesheet can be used):
+<ol class="LowerAlpha"><li><span class="EmphasisItalic">Primary</span> Target 
+</li><li>Project </li></ol></li>
+        </ol>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Let's say you have a project and you want to use multiple stylesheets in it.</p>
+            <p>When you first open a topic, it looks very plain, because no stylesheets are yet associated with in the project.</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide" />
+            <p>You add the following stylesheets and associate them at different levels:</p>
+            <ul>
+                <li><span class="SetOffFirstLevel">LocalRedTopic </span>You set this stylesheet locally on a topic. And you tell Flare to use a red font for the H1 style.</li>
+                <li><span class="SetOffFirstLevel">MasterMainTargetGreen </span>You associate this stylesheet with your primary target (called "Main Target"). And you tell Flare to use a green font for the H1, H2, and ol styles.</li>
+                <li><span class="SetOffFirstLevel">MasterSecondTargetOrange </span>You associate this stylesheet with another target (called "Second Target"). And you tell Flare to use an orange font for the H1, H2, and ol styles.</li>
+                <li><span class="SetOffFirstLevel">MasterProjectBlue </span>You associate this stylesheet with the entire project. And you tell Flare to use a blue font for the H1, H2, and p styles.</li>
+            </ul>
+            <p>
+                <img src="../../Images/stylesheet_precedence1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>For all of the master stylesheets, you tell Flare to allow local stylesheets. In other words, you can use any of the stylesheets in your project.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>Now when you open the topic, it looks like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence3.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>The first-level heading is red because that's what we set in the local stylesheet that is associated with the topic. The other stylesheets have different colors for this style, but the local stylesheet has precedence, so red wins.</p>
+            <p>The next stylesheet that has precedence is the one for the primary target that has green fonts. That's why you see the second-level heading and the numbered list (which uses the ol style) in green. We didn't set anything for the H2 and ol styles in the local stylesheet, so Flare goes to the next one (the primary target stylesheet) and uses its settings.</p>
+            <p>What about the regular paragraphs? They look better, but they're not displaying in any color. Well, the only stylesheet where we specified a setting for the p style is the master stylesheet at the project level. But because there's another master stylesheet on the primary target that has precedence, the blue from the project master stylesheet is completely ignored. Instead, Flare uses the default settings from a factory stylesheet where Flare is installed, and that's why the font family is different from the plain font that you first saw.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>So what happens if you make a change? Suppose you remove the master stylesheet that is set on the primary target.</p>
+            <p>In that case, you would see this in the XML Editor:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence4.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>The first-level heading is the same because it is coming from the local stylesheet. But now that the master stylesheet on the primary target is gone, Flare moves to the next master stylesheet at the project level, which shows the second-level heading and the regular paragraphs in blue. The numbered list no longer has a color because the ol style is not set in either the local stylesheet or the project master stylesheet. It is set in the secondary target, but Flare doesn't use those settings to display content in the XML&#160;Editor. It only uses the settings from the primary target. Of course, you can always use the drop-down field on the left side of the local toolbar in the XML Editor to preview the topic as it will be seen in the secondary target, and in that case you will see some orange text.</p>
+        </div>
+    </body>
+</html>

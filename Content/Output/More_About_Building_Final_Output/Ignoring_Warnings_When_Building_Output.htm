@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="2344" MadCap:lastWidth="673" MadCap:conditions="Products.Flare">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:keyword term="Building:output;Targets:building output;Output:building targets" />Ignoring Warnings When Building Output</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Output/IgnoreWarningsSummary.flsnp" />
+        </p>
+        <p>By default, Flare will use the global settings that are specified in the Options dialog. So if you want all of your projects and targets to have the same settings for ignoring warnings, it's best to just use the Options dialog. However, if you want the settings to be unique for a particular target, you can override the global settings by using the Target Editor.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to ignore warnings globally</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select <span class="Emphasis">File&gt;Options</span>.<p>The Options dialog opens.</p></li>
+                    <li>Select the <span class="Emphasis">Build</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Warnings</span> section of the tab, you can remove check marks next to any warning that you want Flare to ignore. By default, all check boxes are initially selected.</p>
+                        <p>
+                            <img src="../../Resources/Images/ignore_warnings1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>If you want to return to the default settings where all of the check boxes are selected, you can click <span class="Emphasis">Reset Warnings</span> at the bottom of the tab.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+                <p>If you are building targets, the Ignored Warnings column in the Builds window pane indicates how many warnings were ignored during the build.</p>
+                <p>
+                    <img src="../../Resources/Images/ignored_compiler_warnings_count2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to ignore warnings for a target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a target.</li>
+                    <li>Select the <span class="Emphasis">Warnings</span> tab.</li>
+                    <li>Click <span class="Emphasis">Use target build warnings instead of global settings</span>. This enables the area below with all of the check boxes.</li>
+                    <li>
+                        <p>You can remove check marks next to any warning that you want Flare to ignore for that target. By default, all check boxes are initially selected.</p>
+                        <p>
+                            <img src="../../Resources/Images/ignore_warnings2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>search by id</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Each type of warning has a numerical ID to the left of it. You can use the search field to quickly jump to a particular warning.</p>
+                <p>
+                    <img src="../../Resources/Images/search_warnings.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">It is recommended that you be careful with which compiler warnings you choose to ignore. Only ignore warnings that you are certain you do not need to receive.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only ignore warnings; you cannot ignore errors, which prevent output from being generated.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you open a target that contains old accessibility warning settings from previous versions of <MadCap:variable name="Other.Product" />, that target file will become "dirty" (i.e., an asterisk is shown next to the file name in the Target Editor) and you will see a message indicating that <MadCap:variable name="Other.Product" /> is updating the file to use the new report warning system. You can then simply save the target file with the new settings. This does not affect your target in any other way.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="BuildOutput" />
+        </p>
+    </body>
+</html>

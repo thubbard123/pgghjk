@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="3181" MadCap:lastWidth="1048" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Step-by-step instructions for creating Concepts, Search Filter Sets, and lists of Concepts." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:keyword term="Concepts;Linking:concepts" />
+            <MadCap:concept term="Concepts" />
+            <MadCap:concept term="FilterConceptLinks" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Concepts</h1>
+        <h1 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:keyword term="Concepts;Linking:concepts" />Lists of Concepts</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">A concept is a marker that you can insert into related topic files in order to "tie" them together. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">You can then add a Concepts proxy in a topic to generate a list of concepts in the output. See <MadCap:xref href="../Proxies/Creating_a_List_of_Concepts.htm">Creating a List of Concepts</MadCap:xref>.</MadCap:conditionalText></p>
+        <h2 MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">Reasons for Using Concepts</h2>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>reasons for using concepts</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In <MadCap:variable name="Other.Product" /> concept markers can be used for various reasons, depending on whether you are creating online or print-based output.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>concept links—online output</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Concepts can be used to create concept (or "see also") links at the bottom of topics. <MadCap:snippetText src="../Resources/Snippets/NavLinks/ConceptLinkSummary.flsnp" /></p>
+                        <p>
+                            <img src="../Resources/Images/concept_link_example.png" class="MaxWidth70Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>
+                                <MadCap:snippetText src="../Resources/Snippets/NavLinks/ConceptLinkExample.flsnp" />
+                            </p>
+                        </div>
+                        <p MadCap:conditions="General.OnlineLive">Also see <MadCap:xref href="Concept_Link_Example.htm">Concept Link Example</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>search filters —online output</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Concepts can be used to create search filters so that end users can quickly narrow searches.</p>
+                        <p>
+                            <img src="../Resources/Images/search_filter_example1.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">Also see <MadCap:xref href="../Search/Search_Filter_Sets/Search_Filter_Set_Example.htm">Search Filter Set Example</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>lists of concepts—print-based output</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Concepts can be used along with a proxy to generate a list of concepts in output. Although lists of concepts can be created in either online or print-based output, they are typically used more often in print-based output.</p>
+                        <p>
+                            <img src="../Resources/Images/concepts_proxy_example2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">Steps for Creating Concept Links</h2>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for creating concept links</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the main steps for using concepts to create concept links.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Create Concepts </span>
+                        <MadCap:snippetText src="../Resources/Snippets/ConceptKeywords/CreateConceptsSummary.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConceptKeywords/CreateConceptsMethodsList.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel">Insert Concept Link </span>After you create concepts keywords, you can insert concept links in topics. See <MadCap:xref href="Inserting_Concept_Links.htm">Inserting Concept Links into Topics</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Modify Look of Concept Link </span>If you want to change the way the link looks, you can modify the style of the concept link. For more information see <MadCap:xref href="Editing_Concept_Links.htm">Editing Concept Links</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for creating search filters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the main steps for using concepts to create search filters.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search" />Add Search Filter Set </span>To use search filters in your online output, you must add a search filter set file to the project. See <MadCap:xref href="../Search/Search_Filter_Sets/Adding_Search_Filter_Sets_to_Projects.htm">Adding Search Filter Sets to Projects</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Create Concepts </span>
+                        <MadCap:snippetText src="../Resources/Snippets/ConceptKeywords/CreateConceptsSummary.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConceptKeywords/CreateConceptsMethodsList.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Concepts:search filters;Search" />Create Search Filters </span>After you add a new search filter set and insert concepts into topics, you can create search filters, which let users narrow their search based on concepts that you have inserted into topics. See <MadCap:xref href="../Search/Search_Filter_Sets/Creating_Search_Filters.htm">Creating Search Filters</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Enable Search in Skin</span>You need to enable the search feature in the skin you want to use for the target. See <MadCap:xref href="../Search/Enabling_Search_in_Skins.htm">Enabling Search in Skins</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Associate Skin with Target</span> Now that the search feature is enabled in the skin, you need to associate that skin with the target you are building. See <MadCap:xref href="../Skins/Associating_Skins_with_Targets.htm">Associating Skins with Targets</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Associate Search Filter Set with Target</span> You also need to associate that search filter set with the target you are building. See <MadCap:xref href="../Search/Search_Filter_Sets/Associating_a_Search_Filter_Set_with_a_Target.htm">Associating a Search Filter Set with a Target</MadCap:xref>.</li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When merging projects in WebHelp, DotNet, and HTML 5 output, only the parent project's concepts and search filter sets retained after the merge. You will not be able to find the child project's topics even if the concept links are identical. A workaround is to create an external resources folder that all the projects share and put the search filter set in that folder. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../External_Resources/Adding_Folders_to_External_Resources.htm">Adding Folders to External Resources</MadCap:xref></MadCap:conditionalText>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">Steps for Creating Lists of Concepts</h2>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for creating lists of concepts</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are the main steps for using concepts to create a list of concepts.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Create Concepts </span>
+                        <MadCap:snippetText src="../Resources/Snippets/ConceptKeywords/CreateConceptsSummary.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/ConceptKeywords/CreateConceptsMethodsList.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Concepts:proxy;Proxies:concepts" />Add Topic with Concepts Proxy </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Proxies/ConceptsProxySummary.flsnp" /> When you generate the output, the proxy is replaced with a list of the paragraph text found wherever a concept has been inserted. See <MadCap:xref href="../Proxies/Creating_a_List_of_Concepts.htm">Creating a List of Concepts</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Modify Look of List</span> After you use the Concepts proxy to create a list of concepts, you can change the look of that list by using styles. You can modify the look of individual entries in the list, as well as the entire container. For more information see <MadCap:xref href="../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Look_of_a_List_of_Concepts.htm">Using Styles to Determine the Look of a List of Concepts</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Add Topic to Outline TOC</span> Add the topic with the Concepts proxy to the outline TOC. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../TOCs/Creating_a_TOC_Manually.htm">Creating a Table of Contents</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" /></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Concepts" />
+        </p>
+    </body>
+</html>

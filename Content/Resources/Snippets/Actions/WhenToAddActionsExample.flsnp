@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Mimic" MadCap:lastBlockDepth="7" MadCap:lastHeight="1654" MadCap:lastWidth="1046">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Actions are useful if you have a frame containing a cursor that has a position keyframe (trajectory), and you want to give users a choice of performing a task (e.g., clicking an area in your movie) or watching as the task is performed for them (watching the cursor move along its trajectory and click the area). In a situation such as this, you might do the following:</p>
+            <p>1. Add a rectangle shape and place it around the area that you want the user to click. Then click that rectangle and select an action for it in the Object Properties window pane, such as "Go to Next Frame." <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Objects/Shapes/Adding_Shapes_to_Frames.htm">Adding Shapes to Frames</MadCap:xref> and <MadCap:xref href="../../../Actions/Selecting_Actions_for_Objects.htm">Selecting Actions for Objects</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/action_example1.png" class="MaxWidth90Percent" />
+            </p>
+            <p>2. Add a callout, pointing it to that rectangle area. Add text to the callout, providing instructions for the user (e.g., "Click this area. Otherwise, click the button below to see it done."). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Objects/Callouts/Adding_Callouts.htm">Adding Callouts</MadCap:xref> and <MadCap:xref href="../../../Text/Adding_Text_Mimic.htm">Adding Text</MadCap:xref>.</MadCap:conditionalText></p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+            <p>3. Make the cursor an action object. This allows you to apply actions—specifically end actions—to the cursor. To do this, right-click the cursor, then select <span class="Emphasis">Advanced&gt;Convert to Action Object</span> from the context menu. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Objects/Converting_an_Object.htm">Converting an Object</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/action_example2.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+            <p>4. Add a button. Give it an appropriate label (e.g., "Do it for me"), then apply the correct action to the button. To do this, click the button. In the Object Properties window pane, expand the <span class="Emphasis">Action</span> section. Click <span class="Emphasis">Add Action</span>. In the <span class="Emphasis">Event</span> field, select <span class="Emphasis">Click</span>. In the <span class="Emphasis">Action</span> field, select <span class="Emphasis">Play Action Object</span>. In the <span class="Emphasis">Shape</span> field, select the cursor object. This triggers the cursor to move from its starting location to the rectangle, in the event that the user clicks the "Do it for me"&#160;button. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Objects/Buttons/Adding_Buttons.htm">Adding Buttons</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/action_example3.png" class="MaxWidth90Percent" />
+            </p>
+            <p><i>Note:&#160;Buttons include a default click action. You should select and delete this click action before creating a new click action. </i>
+                <MadCap:conditionalText MadCap:conditions="General.OnlineLive"><i>See </i>
+                    <MadCap:xref href="../../../Actions/Removing_Actions_from_Objects.htm" style="font-style: italic;">Removing Actions from Objects</MadCap:xref><i>.</i>
+                </MadCap:conditionalText>
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+            <p>5. Select an end action for the cursor. Click the cursor on the frame. In the Object Properties window pane, expand the <span class="Emphasis">Action</span> section. Click <span class="Emphasis">Add Action</span>. In the <span class="Emphasis">Event</span> field, select <span class="Emphasis">End</span>. In the <span class="Emphasis">Action</span> field, select <span class="Emphasis">Go to Next Frame</span>.  This is needed in case the user opts to click the "Do it for me" button. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Objects/Cursors/Selecting_an_End_Action_for_a_Cursor.htm">Selecting an End Action for a Cursor</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/action_example4.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+            <p>6. Pause the timing of the frame. To do this, double-click the frame. In the Frame Properties window pane, expand the <span class="Emphasis">Frame Transition</span> section, then select <span class="Emphasis">Pause movie at end of frame</span> from the Time Span section. This will ensure that the frame waits for the user to perform an action (either clicking in the rectangle area or clicking the button) before moving on. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Frames/Pausing_Frames.htm">Pausing Frames</MadCap:xref>.</MadCap:conditionalText></p>
+            <p>
+                <img src="../../Images/action_example5.png" class="MaxWidth90Percent" />
+            </p>
+        </div>
+    </body>
+</html>

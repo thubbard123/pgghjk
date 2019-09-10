@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="660" MadCap:lastWidth="1130" MadCap:conditions="Products.Flare">
+    <body>
+        <ol>
+            <li>Create an XML file and name it SortOrder.xml. You can do this by opening an editor such as Notepad. When you save the file, type the xml file extension at the end of the name.</li>
+            <li>
+                <p>Enter the following code into the blank file.</p>
+                <p><span class="TypedEntry">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;SortOrder&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;ProjectA&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;ProjectB&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;ProjectC&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;/SortOrder&gt;</span>
+                </p>
+            </li>
+            <li>
+                <p>Replace "ProjectA," "ProjectB," and "ProjectC" with the names of your own child targets. You can add or remove line items as necessary.</p>
+                <p>If you were to use the example at the top of this topic, you would enter the following.</p>
+                <p><span class="TypedEntry">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;SortOrder&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;Third Child&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;First Child&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;Item&gt;Second Child&lt;/Item&gt;</span>
+                </p>
+                <p><span class="TypedEntry">&lt;/SortOrder&gt;</span>
+                </p>
+            </li>
+            <li>Save the file.</li>
+            <li>Copy and paste the SortOrder.xml file into the AutoMerge directory of your published <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /> output. This file sits beside the child output folders that you are using for the automerge. </li>
+        </ol>
+    </body>
+</html>

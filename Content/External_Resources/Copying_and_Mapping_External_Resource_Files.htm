@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="1478" MadCap:lastWidth="599" MadCap:conditions="Products.Flare">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="How to map external resources stored in a local or network location to a project. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="External Resources;External Resources:copying;External Resources:mapping" />
+            <MadCap:concept term="ExternalResources" />Copying and Mapping External Resource Files</h1>
+        <p>After you add folders to the External Resources window pane, you can copy any of the files to your project, mapping them to the source files at the same time.</p>
+        <p>This is a different process than that of importing files, which you can do elsewhere in <MadCap:variable name="Other.Product" />. Files that are brought into a project using a traditional import process can be connected to the source file, but only in one direction (i.e., files can be updated from the source to the imported file in the project). On the other hand, files that are copied from the External Resources window pane can be connected via mappings to the source files in two directions (i.e., files can be updated from the source to the copied file or from the copied file to the source). </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to copy and map external resource files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Make sure the External Resources window pane is open. If it isn't, select <span class="Emphasis">View&gt;External Resources</span>.</li>
+                    <li>
+                        <p>Locate the file that you want to add to the project. You can use the "multi-view" to do this.</p>
+                        <p class="TableText">
+                            <img src="../Resources/Images/external_resources_example9.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/UIElements/MultiViewTable.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>In the local toolbar click <img src="../Resources/Images/copy_file_to_project_btn.png" class="ReduceButtonSize" />.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Right-click on the file and from the context menu select <span class="Emphasis">Copy to Project</span>.</li>
+                        </ul>
+                    </li>
+                    <li>In the dialog that opens, find and select the location in your project that you want to add the file. Again, you can use the multi-view buttons to navigate to folders in your project.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>In the Copy to Project dialog select <span class="Emphasis">Keep file synchronized (create mapping)</span>.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The file is added to the project, as you can see by opening the Content Explorer. If you selected to map the file, a small orange icon <img src="../Resources/Images/mapped_resource_icon.png" class="ReduceButtonSize"></img> is shown next to it.</p>
+                        <p>
+                            <img src="../Resources/Images/mapped_files_example.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you map project files to source files located elsewhere, you can synchronize them to ensure that each file contains the same content. This process allows you to import content from external files, export content from files in the project, or keep the most recently modified content. See <MadCap:xref href="Synchronizing_External_Resource_Files.htm">Synchronizing External Resource Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ExternalResources" />
+        </p>
+    </body>
+</html>

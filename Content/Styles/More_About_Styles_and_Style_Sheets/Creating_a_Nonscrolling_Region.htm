@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2897" MadCap:lastWidth="1064" MadCap:ignoredWords="Nonscrolling" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles:stylesheets;Nonscrolling region;Styles:nonscrolling region" />
+            <MadCap:concept term="FilterStyles" />Creating a Nonscrolling Region</h1>
+        <p>For online output you can specify that a certain portion of the content (usually a heading and breadcrumbs, if included) should remain fixed in place. This means that when the end user scrolls down to see more content, the fixed areas do not scroll with the rest of the text. You can see an example of this in any <MadCap:variable name="Other.Product" /> online Help topic.</p>
+        <p>In order to create this type of effect, you need to make changes to multiple properties for at least two or three different styles—body, the heading style (usually h1 or a variant of it), and MadCap|breadcrumbsProxy (if you include breadcrumbs).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a nonscrolling region</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectMediumStep1.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/SelectMediumStep2.flsnp" />
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/RemembersLastMedium.flsnp" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareTopicsGuide">
+                            <img src="../../Resources/Images/medium_example1.png" class="MaxWidth100Percent">
+                            </img>
+                        </p>
+                        <p>In the case of nonscrolling regions, you probably want at least some of the settings described below to be different for online outputs than for print-based outputs.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterHeadingStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, select the <span class="Emphasis">h1</span> tag (or whatever tag you are using for headings at the top of topics).</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using group view, you can expand a property group (e.g., Block, Box, Border) to see the actual properties within it. </li>
+                    <li>
+                        <p> Make changes to the following properties in the list. <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /> Depending on the type of property, you can either type the value, select it from a drop-down list, or complete the value entries in a popup box. </p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">background-color</span> To select the background color you want for your nonscrolling region, expand the <span class="Emphasis">Background</span> property group. Then <MadCap:snippetText src="../../Resources/Snippets/Formatting/FormattingSetColorStepWithPaintBucket.flsnp" /> If you already have a background color set for your breadcrumbs (using the MadCap|breadcrumbsProxy style), you might want to use the same color.</li>
+                            <li><span class="SetOffFirstLevel">border-bottom</span> To change the border line that appears at the bottom of the nonscrolling region, expand the <span class="Emphasis">Borders</span> property group. Then click <img src="../../Resources/Images/browse_ellipses.png" /> in the right column next to <span class="Emphasis">border-bottom</span>, set the border width, unit of measurement, color, and/or style in the small drop-down window. <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> You can also use the other cells in this property group to add borders above, to the left, or to the right of the topic toolbar.</li>
+                            <li><span class="SetOffFirstLevel">left</span> To set the distance from the left edge of the browser window, expand the <span class="Emphasis">Positioning</span> property group. Then click in the field next to <span class="Emphasis">left</span> and enter the distance. This should be <span class="Emphasis">0</span>.</li>
+                            <li><span class="SetOffFirstLevel">margin</span> To change the amount of space below the nonscrolling region, expand the <span class="Emphasis">Box</span> property group. Then click <img src="../../Resources/Images/browse_ellipses.png" /> in the right column next to <span class="Emphasis">margin</span>, set the margin value in the small drop-down window, and click <span class="Emphasis">OK</span>. Start with <span class="Emphasis">0</span> and adjust as necessary. You may need to adjust the values for top, bottom, left, and right separately.</li>
+                            <li><span class="SetOffFirstLevel">padding</span> To change the amount of empty space (padding) below the text within the nonscrolling region, expand the <span class="Emphasis">Box</span> property group. Then click <img src="../../Resources/Images/browse_ellipses.png" /> in the right column next to <span class="Emphasis">padding</span>, set the padding value in the small drop-down window, and click <span class="Emphasis">OK</span>. Again, the values for the top, bottom, left, and right may vary.</li>
+                            <li><span class="SetOffFirstLevel">position</span> To keep the content from scrolling, expand the <span class="Emphasis">Positioning</span> property group. Click in the column to the right of the position property, and select <span class="Emphasis">fixed</span> from the drop-down.</li>
+                            <li><span class="SetOffFirstLevel">right</span> To set the distance from the right edge of the browser window, expand the <span class="Emphasis">Positioning</span> property group. Then click in the field next to <span class="Emphasis">right</span> and enter the distance. This should be <span class="Emphasis">0</span>.</li>
+                            <li><span class="SetOffFirstLevel">top</span> To set the distance from the left edge of the browser window, expand the <span class="Emphasis">Positioning</span> property group. Then click in the field next to <span class="Emphasis">top</span> and enter the distance. If you are not using breadcrumbs then enter <span class="Emphasis">0</span>. Otherwise enter enough space to clear the breadcrumbs (e.g., 30px).</li>
+                            <li><span class="SetOffFirstLevel">width</span> To to make sure that the nonscrolling region fills the width of the page, expand the <span class="Emphasis">Positioning</span> property group. Then click <img src="../../Resources/Images/browse_ellipses.png" /> in the column next to <span class="Emphasis">width</span> and enter the percentage in the small popup.  This should be <span class="Emphasis">100%</span>. </li>
+                        </ul>
+                        <p>Here is an example of how the settings might look in the Stylesheet Editor. The properties relevant for nonscrolling regions are highlighted.</p>
+                        <p>
+                            <img src="../../Resources/Images/nonscrolling_region_example1.png" class="MaxWidth70Percent" />
+                        </p>
+                        <p>&#160;</p>
+                    </li>
+                    <li>(Optional—complete the next three steps only if you are using breadcrumbs) <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterReusableContentStylesStep.flsnp" /></li>
+                    <li>On the left side of the editor, select the <span class="Emphasis">MadCap|breadcrumbsProxy</span> tag.</li>
+                    <li>
+                        <p>Make adjustments to the same attributes as you did for the h1 style. You may need to make minor variations so that the breadcrumbs render above the h1 text. </p>
+                        <p>Here is an example of how the settings might look in the Stylesheet Editor. The properties relevant for nonscrolling regions are highlighted.</p>
+                        <p>
+                            <img src="../../Resources/Images/nonscrolling_region_example2.png" class="MaxWidth65Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTopicsGuide" />
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, select the <span class="Emphasis">body</span> tag.</li>
+                    <li>
+                        <p>Expand the <span class="Emphasis">Box</span> property group.</p>
+                    </li>
+                    <li>Click <img src="../../Resources/Images/browse_ellipses.png" /> in the column to the right of the <span class="Emphasis">margin-top</span> property and in popup enter a value high enough to ensure that none of the topic text ends up hidden behind the nonscrolling region. A value of 100px might work well for some people, but 50px might work better for others. Enter a number somewhere in that range, preview a topic, and adjust the value as necessary.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

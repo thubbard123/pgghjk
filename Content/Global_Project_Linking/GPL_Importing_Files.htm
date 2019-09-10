@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="15" MadCap:lastHeight="9370" MadCap:lastWidth="798" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet2]exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet11 or Snippets.Snippet12 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9]" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareGPL.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="CrossProjectSingleSourcing" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:keyword term="Single-sourcing;Importing:files from projects;Projects:importing;Projects:files;Projects:Global Project Linking;Global Project Linking" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareImportGuide,FlareGuides.FlareProjectCreationGuide">Global Project Linking—</MadCap:conditionalText>Importing Files from Other Projects</h1>
+        <p>You can import files from another Flare project in one of the following ways:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Import Flare Project Wizard </span>
+                <MadCap:snippetText src="../Resources/Snippets/Importing/ImportFlareProjectWizardIntro.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.Print">See <MadCap:xref href="#Wizard">How to Import Files using the Import Flare Project Wizard</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel">Project Import Editor </span>
+                <MadCap:snippetText src="../Resources/Snippets/Importing/ProjectImportEditorIntro.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.Print">See <MadCap:xref href="#ImportEditor">How to Import Files Using the Project Import Editor</MadCap:xref>.</MadCap:conditionalText></li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Wizard"></a>How to Import Files using the Import Flare Project Wizard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Importing/ImportFlareProjectWizardSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="ImportEditor"></a>How to Import Files Using the Project Import Editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Importing/ProjectImportEditorSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you manually import files from the parent project, you will see the Accept Imported Documents dialog. This dialog lets you manually check or uncheck the files to be imported or excluded from the import. It is sort of a last chance to take a look at the files and make changes (include or exclude) before the actual import takes place. It also remembers whether you have checked or unchecked certain files during previous imports. However, when you use the "auto-reimport before generate output" feature, the import takes place automatically, so you do not see the Accept Imported Documents dialog. This means that <span class="EmphasisItalic">all files will be imported automatically based on the criteria you provide, regardless of whether you have previously deselected a file during a manual import</span>. This is one reason it is recommended you use conditions during Global Project Linking; with conditions, you are more assured of importing the correct files during an automatic import.</p>
+                    <p>For example, let's say you have four topics—TopicA, TopicB, TopicC, and TopicD—and you have not conditioned any of them before importing. In your project import file, you specify that all topic files should be imported. You then perform the import. The Accept Imported Documents dialog opens, listing all four of your topics with check marks next to each one. However, you decide that you really do not want to import TopicD, so you remove the check mark next to it. After completing the manual import, TopicA, TopicB, and TopicC are imported, but TopicD is not. Later, let's say you have made changes to your files and need to re-import. After you click <span class="Emphasis">Reimport</span>, you again see the Accept Imported Documents dialog. Again, check marks are automatically shown next to TopicA, TopicB, and TopicC. However, <MadCap:variable name="Other.Product" /> remembered that you removed the check mark next to TopicD previously, so the check mark remains absent from it. You finish the re-import and everything goes according to plan.</p>
+                    <p>Now let's say that after a few manual re-imports, you decide to use the "auto-reimport" feature. Therefore, in your import file, you click the check box next to <span class="Emphasis">Auto-reimport before "Generate Output"</span> and save. When you build the output, which topics are imported? The answer is TopicA, TopicB, TopicC, and TopicD. </p>
+                    <p>In this example, one of the best ways to use the auto-reimport feature and be assured that the correct topics are included and excluded is to use condition tags at the file level. Therefore, in your source project, you create one condition tag (let's say you name it "YesImport") and you apply it to TopicA, TopicB, and TopicC. Then you create a second condition tag (let's say you name it "NoImport") and apply it to TopicD. Then in the child project, you open your import file. You click the <span class="Emphasis">Edit</span> button next to <span class="Emphasis">Import Conditions</span>, and within the dialog that opens you tell <MadCap:variable name="Other.Product" /> to include the "YesImport" condition and exclude the "NoImport" condition. Now, the next time you build the output, which topics are imported? The answer is TopicA, TopicB, and TopicC.</p>
+                </div>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteLinkIcon.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteProjectImportEditorImportedFilesTab.flsnp" />
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteProjectImportEditorRemovedLinksTab.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="CrossProjectSingleSourcing" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="867" MadCap:lastWidth="830">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Breadcrumbs proxy displays the incorrect pathway</p>
+        <p>If  a single topic has more than one  entry in a particular TOC, the breadcrumbs path displays either (1) the  Content Explorer folder location of the topic or (2) the breadcrumb for the last entry of the topic in the TOC, rather than the breadcrumbs for the separate locations of the topic in the TOC.</p>
+        <p>
+            <img src="../../Images/TS_Proxies_Issue1_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p class="Subheading">Cause</p>
+        <p>When the output is generated with Flare, the breadcrumb trail is written into the topic file (it is not dynamic) so it can't change depending on which TOC entry you click on.</p>
+        <p class="Subheading">Solution</p>
+        <p>Here is the workaround for this problem. </p>
+        <ol>
+            <li>Create the necessary number of empty topics and place them in the desired positions within the Content Explorer. Make sure they all have the same name. See <MadCap:xref href="../../../Topics/Creating_New_Topics.htm">Creating Topics</MadCap:xref>.</li>
+            <li>Create a snippet out of the topic content that you require. See <MadCap:xref href="../../../Snippets/Creating_New_Snippets_from_Existing_Content.htm">Creating New Snippets from Existing Content</MadCap:xref>.</li>
+            <li>Insert the snippet into each of the topics. See <MadCap:xref href="../../../Snippets/Inserting_Snippets.htm">Inserting Snippets</MadCap:xref>.</li>
+            <li>
+                <p>Mark <span class="EmphasisItalic">all but one</span> of the topics as un-searchable, so that users do not retrieve multiple instances of the same topic when performing searches. To make topics un-searchable, perform the following steps.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to  exclude topics in search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol class="LowerAlpha">
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/MakeSureContentExplorerOpen.flsnp" />
+                            </li>
+                            <li>In the Content Explorer,  select one of the topic files you created.</li>
+                            <li>In the local toolbar of the Content Explorer, click <img src="../../Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog for the topic opens.</li>
+                            <li>Click the <span class="Emphasis">Topic Properties</span> tab. </li>
+                            <li>Click the check box labeled <span class="Emphasis">Include topic when full-text search database is generated</span> so that it is unchecked.</li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In <MadCap:variable name="Outputs.HTMLHelp" />, all topics are always searchable.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ol>
+        <p>For more information on this process see <MadCap:xref href="../../../Topics/More_About_Topics/Including_or_Excluding_Topics_in_Search.htm">Including or Excluding Topics in Search</MadCap:xref>.</p>
+    </body>
+</html>

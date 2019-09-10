@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="3177" MadCap:lastWidth="1100">
+    <body>
+        <ol>
+            <li>
+                <MadCap:snippetText src="../UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Content</span> section select <span class="Emphasis">Import&gt;Flare Project</span>. The Import Flare Project Wizard opens.</li>
+            <li>Next to the <span class="Emphasis">Project file</span> field click <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />.</li>
+            <li>
+                <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep1.flsnp" />
+            </li>
+            <li>(Optional) <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep8.flsnp" /> the <span class="Emphasis">Auto-reimport before "Generate Output"</span> check box. If you select this "Easy Sync" option, the changes to the source files will be re-imported automatically when you generate output. If you do not select this option, you can re-import future changes from the other project manually.</li>
+            <li>
+                <p>(Optional) If you want outdated files (e.g., files that have been deleted, renamed, or moved in the parent project) to be deleted from the child project automatically, click the <span class="Emphasis">Delete stale files</span> check box.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../SingleSourcing/GPLDeleteStaleFilesExample.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../SingleSourcing/WarningMasterProjectLinkingRemoveDuplicateFile.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+            <li>
+                <p>(Optional) You can select <span class="Emphasis">Delete unreferenced files</span>. <MadCap:snippetText src="../SingleSourcing/GPLDeleteUnreferencedFiles1.flsnp" /></p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../SingleSourcing/GPLDeleteUnreferencedFilesExample.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../SingleSourcing/GPLDeleteUnreferencedFiles2.flsnp" />
+            </li>
+            <li>Click <span class="Emphasis">Next</span>.</li>
+            <li>
+                <p>Use the <span class="Emphasis">Include Files</span> and <span class="Emphasis">Exclude Files</span> fields <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep2.flsnp" /> Completing the Include Files field is mandatory. Completing the Exclude Files field is optional.</p>
+                <p>
+                    <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep3.flsnp" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You are not limited to importing all files of a single file type. The following steps explain how to add more than one file type to the field, as well as how to select specific files to be imported while excluding others.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>(Optional) <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep4.flsnp" /><ol class="LowerAlpha"><li><MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep5.flsnp" /></li><li><p><MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep6.flsnp" /></p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><MadCap:snippetBlock src="../SingleSourcing/CreateCustomImportProjectFilePatternExample.flsnp" /></MadCap:dropDownBody></MadCap:dropDown></li><li><MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /></li><li><MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep7.flsnp" /></li></ol></li>
+            <li>(Optional) Let's say that the files you are importing contain links to other files. If you want <MadCap:variable name="Other.Product" /> to automatically import those files as well, click <span class="Emphasis">Auto-include linked files</span>. <MadCap:snippetText src="../SingleSourcing/ImportProjectFilesAutoIncludeLinkedFiles2.flsnp" /></li>
+            <li>(Optional) <MadCap:snippetText src="../SingleSourcing/ImportProjectFilesConditions.flsnp" /></li>
+            <li>(Optional) <MadCap:snippetText src="../SingleSourcing/ImportProjectFilesAutoExcludeNonTagged.flsnp" /><span class="Emphasis"> Auto-Exclude Non-Tagged Files</span>.</li>
+            <li>Click <span class="Emphasis">Finish</span>. <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep9.flsnp" /></li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep10.flsnp" />
+                </p>
+                <p>
+                    <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep11.flsnp" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Notes/NoteImportProjectFileSameFiles.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Tip</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">You might find it useful to click on the column headings in the Accept Imported Documents dialog. Doing this reorganizes the contents in alphabetical order of the column that you click. For example, by clicking the <span class="Emphasis">Status</span> column, you can easily group together all of the files that have red or green backgrounds (i.e., files that are newer in the local project or newer in the source project). This can be especially useful when re-importing project files.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Global_Project_Linking/Reimporting_Files_from_Other_Projects.htm">Re-importing Files from Other Projects</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>Click <span class="Emphasis">Accept</span>. <MadCap:snippetText src="../SingleSourcing/ImportProjectFileStep12.flsnp" /></li>
+        </ol>
+    </body>
+</html>

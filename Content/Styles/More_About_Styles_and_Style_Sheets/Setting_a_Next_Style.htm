@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="1015" MadCap:lastWidth="897" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles:stylesheets;Next style;Styles:next" />
+            <MadCap:concept term="FilterStyles" />Setting a "Next" Style</h1>
+        <p>You can specify that a particular style should be used when you press Enter at the end of the current style. For example, after you type text for a heading and press Enter, you might want the next style to be something like p.TopicText, rather than the main p style.</p>
+        <p>In this version of <MadCap:variable name="Other.Product" />, you cannot specify this setting in the user interface. Instead, you need to open the stylesheet in the Internal Text Editor, or another editor such as Notepad, and enter the settings manually.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set a "next" style</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>In the Content Explorer, right-click on the stylesheet, and from the context menu select <span class="Emphasis">Open with&gt;Internal Text Editor</span> or <span class="Emphasis">Open with&gt;Notepad</span>.</li>
+                    <li>Find the "current" style (i.e., the style that will immediately precede the "next" style). </li>
+                    <li>
+                        <p>Within the curly brackets in the CSS file, enter the following text if the next style is a primary style (e.g., p, li).</p>
+                        <div class="IndentSmall">
+                            <p><span class="TypedEntry">mc-next-tag:[tag];</span>
+                            </p>
+                        </div>
+                        <p>OR</p>
+                        <p>Within the curly brackets, enter the following text if the next style is a class.</p>
+                        <div class="IndentSmall">
+                            <p><span class="TypedEntry">mc-next-tag:[tag];</span>
+                            </p>
+                            <p><span class="TypedEntry">mc-next-class:[class];</span>
+                            </p>
+                        </div>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If the current style is h2 and the next style should be p, it would look like this:</p>
+                                    <p>
+                                        <img src="../../Resources/Images/next_tag_example1.png" />
+                                    </p>
+                                    <p>On the other hand, if the current style is h2 and the next style should be a class of p called "TopicText," you would enter this:</p>
+                                    <p>
+                                        <img src="../../Resources/Images/next_tag_example2.png" />
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Save your changes.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

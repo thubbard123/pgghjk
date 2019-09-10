@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="1530" MadCap:lastWidth="1140" MadCap:conditionTagExpression="include[Snippets.Snippet10]exclude[Snippets.Snippet11 or Snippets.Snippet9]" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareHTML5.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Runtime merging of HTML5 help output with MadCap Flare. Learn the steps to merge multiple Help targets at run time." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterMergingProjects" />
+            <MadCap:concept term="AutoMerge" />
+            <MadCap:keyword term="Projects:merging;Merging:projects;Merging:HTML5;HTML5:merging" />
+            <MadCap:concept term="MergingProjects" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:concept term="FilterHTML5" />
+            <MadCap:concept term="HTML5" />Merging Server-based HTML5 Output at Runtime</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/WHP/AutomaticRuntimeMerging.flsnp" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/WHP/ScenarioLink.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareWebHelpGuide" />
+        <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareProjectCreationGuide">The following information is necessary only for server-based output. If you do not require server-based HTML5 output, see <MadCap:xref href="../../../TOCs/More_About_Tables_of_Contents/Merging_Flare_projects_using_targets.htm">Merging Flare Projects Using Targets</MadCap:xref> instead.</p>
+        <p MadCap:conditions="FlareGuides.FlareHTML5Guide">The following information is necessary only for server-based output. If you do not require server-based HTML5 output, see the instructions to merge Flare projects using targets instead. For more, see the online Help.</p>
+        <h2 MadCap:conditions="FlareGuides.FlareHTML5Guide">Tasks Associated with Merging Server-based <MadCap:variable name="Outputs.HTML5" /> Output</h2>
+        <p MadCap:conditions="FlareGuides.FlareHTML5Guide">Following are basic tasks involved with merging server-based <MadCap:variable name="Outputs.HTML5" /> output at runtime.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to merge Server-based HTML5 output at runtime</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Output/MergingOutputRuntimeSteps.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are testing <MadCap:variable name="Outputs.HTML5" /> server-based output on your local machine, you need view the output at least one time. <MadCap:snippetText src="../../../Resources/Snippets/HTML5/MCPreviewFolderHTML5.flsnp" /> When testing the automerge feature on your computer, you need to place the secondary ("child") outputs in the AutoMerge subfolder at this location (as opposed to the output folder that was generated where your Flare project is located). </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteWaitWHPIndexing.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../../../Resources/Snippets/WHP/WHPNotVista.flsnp" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Search/TopNavSkinNoMergingNote.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="MergingProjects;AutoMerge" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+    </body>
+</html>

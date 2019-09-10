@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="5" MadCap:lastHeight="3338" MadCap:lastWidth="949">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>Let's say you have are planning on generating a PDF with the following structure:</p>
+            <p>
+                <img src="../../Images/page_type_selection1.png" alt="" title="" class="MaxWidth50Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The topic linked to "1 Company"&#160;is set to be the first page of a new chapter.You've configured your page layout to use the "First Right" page type for the first page of a chapter. Here is how that page looks in your layout:</p>
+            <p>
+                <img src="../../Images/page_type_selection2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The other pages in the layout are used for Left, Empty Left, and Right pages. Each of these has a white background and different footer content.</p>
+            <p>
+                <img src="../../Images/page_type_selection3.png" alt="" title="" class="MaxWidth75Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The topic immediately after "1 Company" is called "1.1 Introduction."</p>
+            <p>
+                <img src="../../Images/page_type_selection4.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>Although it can be difficult to determine  which page types will use each topic  (or even parts of a topic) in the generated output, you know enough about these two topics to get an accurate representation of them in the XML Editor. You know that the "1 Company" topic will use the First Right page type, and you also know that there is so little content in that topic that it will not continue to the next page. Furthermore, you know that the "1.1 Introduction" topic will not be displayed on the first page of the chapter, because you have placed a page break on the heading, ensuring that it begins on the second page of the chapter, which, in this case, uses a Left page type.</p>
+            <p>
+                <img src="../../Images/page_type_selection5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>When you open the "1 Company" topic, it might look like this in the XML Editor initially:</p>
+            <p>
+                <img src="../../Images/page_type_selection6.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>This certainly isn't what you had in mind. The topic looks this way because the XML Editor is currently set to the Web Layout mode and the default style medium, which are usually both intended for online output, not PDF. Therefore, you change to Print Layout mode and the Print style medium.</p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>By doing this alone, you may or may not see the appropriate page type used for the topic. In the following example, the correct First Right page layout is being used to display the "1 Company" topic.</p>
+            <p>
+                <img src="../../Images/page_type_selection7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>Now let's say you open the "1.1 Introduction" topic, which will display on the next page of the output, using the Left page type. Initially, it might look like this, with the First Right page type.</p>
+            <p>
+                <img src="../../Images/page_type_selection9.png" alt="" title="" class="MaxWidth65Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The topic doesn't look like it will in the output, because it's pointing to the wrong page type in the XML Editor. To fix this, you click the <span class="Emphasis">Page Layout</span> drop-down in the local toolbar. After hovering over the <span class="Emphasis">Chapters</span> page layout, which is already selected, a submenu shows the list of page types from that layout. You select <span class="Emphasis">Left</span>.</p>
+            <p>
+                <img src="../../Images/page_type_selection10.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTopicsGuide" />
+            <p>As a result the topic displays in the correct page type. The main difference between this and the output is that an h1 heading is being shown in the XML Editor (that's why the autonumber shows a 1). That's correct, but the PDF target has been configured so that this is automatically adjusted to an h2 heading in the output because of the TOC depth (and the autonumber will adjust to 1.1). So it will be a bit different in the output, but the page type it's using in the XML Editor is now correct.</p>
+            <p>
+                <img src="../../Images/page_type_selection11.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+        </div>
+    </body>
+</html>

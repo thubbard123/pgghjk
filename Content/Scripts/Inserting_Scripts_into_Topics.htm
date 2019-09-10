@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="javascript;jscript;vbscript;n;b;s;reimport;(.css;Reimport;flsfs;SearchFilterSet;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;VariableName;N;M;m;.tif;JPEG;PNG;NameOfFile.png;hr.short.;hr.short;h;hh" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1043" MadCap:lastWidth="836">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Scripts" />
+            <MadCap:keyword term="Scripts:inserting;Topics:scripts" />
+            <MadCap:concept term="FilterScripts" />Inserting Scripts into Topics</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline.flsnp" />
+        <p>If you are an advanced user, you can insert a script using <MadCap:keyword term="JavaScript" />JavaScript, <MadCap:keyword term="VBScript" />VBScript, or <MadCap:keyword term="JScript" />JScript into your topics. You can insert a script directly into a content file (e.g., topic, master page) with the user interface or directly in the markup (which allows you to place the script within the &lt;head&gt; tags). If you insert a script into a topic, it is used just for that topic; if you insert a script into a master page, it is used for all topics associated with that master page.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a script with the user interface</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>In the XML Editor, place your cursor where you want to insert the script.</li>
+                    <li>Select <span class="Emphasis">Insert&gt;Script</span>. The Insert Script dialog opens.</li>
+                    <li>From the <span class="Emphasis">Language</span> drop-down menu, select <span class="Emphasis">text/javascript</span>, <span class="Emphasis">text/jscript</span>, or <span class="Emphasis">text/vbscript</span>.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <ul type="1" class="FirstLevel">
+                            <li>
+                                <p>In the <span class="Emphasis">Script Code</span> area, type the code for the script.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Next to the <span class="Emphasis">Script Link</span> field, click the <span class="Emphasis">Browse</span> button to find and select a script file.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The script is added to the topic, with the script icon displayed at the spot of the insertion.</p>
+                        <p>
+                            <img src="../Resources/Images/script_icon_added.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a script directly in the markup</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>At the bottom of the XML Editor, click the <span class="Emphasis">Text Editor</span> tab to see the markup. You can also use split the editor between the XML Editor and the Internal Text Editor. See <MadCap:xref href="../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</li>
+                    <li>Enter the script text into the markup.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you enter a script directly into the &lt;head&gt; of a topic (in the markup), it will be overwritten in the output if a master page is applied to the topic. However, an alternative is to add a script file to your project (perhaps by using the external resources or SharePoint integration features<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—see <MadCap:xref href="../External_Resources/About_External_Resources.htm">About External Resources</MadCap:xref> and <MadCap:xref href="../Sharepoint/About_SharePoint_Integration.htm">About SharePoint Integration</MadCap:xref></MadCap:conditionalText>) and link to it from the &lt;head&gt; area in the topic markup. In that case, the master page will not overwrite the topic script. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Scripts" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

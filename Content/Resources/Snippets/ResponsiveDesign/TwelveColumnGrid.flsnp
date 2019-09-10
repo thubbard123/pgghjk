@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="3" MadCap:lastHeight="1416" MadCap:lastWidth="783">
+    <body>
+        <p>Both the Flare and Foundation systems are based on a 12-column grid system (i.e., a row has the potential of using 12 "columns" of content). But keep this very important point in mind:</p>
+        <div class="IndentSmall">
+            <p><span class="EmphasisItalic">Responsive content columns are not the same as the columns you are used to with tables. With responsive content, columns are purely used for measuring width (in percentages).</span>
+            </p>
+        </div>
+        <p>Flare considers the entire width of the screen displaying your output, and it divides this into 12 imaginary columns. The maximum width is 100% of the space, so 12 columns equals 100%. Half the width of the available screen space is 50%, or 6 imaginary columns. One-third of the width is 33.333%, or 4 columns. It is no more complicated than that. Assigning a number of columns in this type of layout is simply a shortcut; it is a quick way to tell Flare how wide a particular area should be.</p>
+        <p>When you create a new row using the Responsive Layout window pane, it contains a certain number of cells, and you can add more cells to the row as necessary. Then you assign a certain number of imaginary columns to each cell to set its width.</p>
+        <p>
+            <img src="../../Images/responsive_layout26.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>Why is this called a "grid" if it has only one row? Well, it has to do with what the end user perceives when looking at the output. Although each responsive layout consists of only one row (i.e., all of the content is contained within one &lt;div&gt; tag), the widths that you assign to the various cells can cause the layout to look like multiple rows in the output. Therefore, it appears to the end user to be a grid.</p>
+        <div class="IndentSmall">
+            <p><span class="EmphasisItalic">The key to this is the fact that for any row, you can exceed 100%. This usually happens when you assign column widths to cells for tablet and mobile screens.</span>
+            </p>
+        </div>
+        <p>For your large web layouts, you usually want the total number of columns in a row to add up to 100%. However, you can use fewer columns if you want (e.g., you might end up using only 10 columns, or roughly 83% of the space). In fact, there might be times when you use more than 100%, even for the large web view.</p>
+        <p>But for smaller devices to show the same content, you are likely to exceed 100% for the entire row. When the total width exceeds 12 columns (100%), the next cell moves downward. That way the content can be reconfigured and will be easier to see on a small screen. To the end user, it might look like you're using extra rows to display the same content. But it's actually still just one row, with the extra content shifted downward.</p>
+        <p>
+            <img src="../../Images/responsive_layout27.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>You can also use the Offset field in the Responsive Layout window pane to give any cell a left margin percentage (by assigning a number of columns to it). As far as right margins are concerned, you can accomplish that by editing your stylesheet<MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet2"> (see <MadCap:xref href="../../../Responsive_Web_Design/Responsive_Content.htm#ResponsiveLayoutStyles">Responsive Layout Styles</MadCap:xref>)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet4"> (see <MadCap:xref href="../../../z_DuplicateTopics/Flare/Responsive_Content.htm#ResponsiveLayoutStyles">Responsive Layout Styles</MadCap:xref>)</MadCap:conditionalText>.</p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide" />
+        <p>The following graphic illustrates how the 12-column grid system works. Three different layouts are shown with various column (cell width) settings. One layout also uses offset (left margin) settings.</p>
+        <p>
+            <img src="../../Images/responsive_layout_example.png" class="MaxWidth100Percent" />
+        </p>
+    </body>
+</html>

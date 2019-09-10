@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5204" MadCap:lastWidth="1360" MadCap:conditions="Products.Flare,Products.Analyzer" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlVSS.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterSourceControlVSS" />
+            <MadCap:keyword term="Source control:merging;Merging:source control" />Merging Source Control Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Visual SourceSafe</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/MergingSCFilesIntro.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to merge source control files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Go through the process of getting the latest version of files from source control or checking in files. See <MadCap:xref href="../Getting_the_Latest_Version_of_Source_Control_Files_vss.htm">Getting the Latest Version of Source Control Files</MadCap:xref> and <MadCap:xref href="../Checking_In_Source_Control_Files_vss.htm">Checking In Source Control Files</MadCap:xref>. If your local copy of the file is different from the server copy (e.g., another author has already checked in the same file), the Resolve Conflicts dialog opens.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">Auto Merge All</span>. If changes from the other author do not conflict with your changes, this will merge all changes. A message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Backups/About_Backups.htm">About Backups</MadCap:xref>. </MadCap:conditionalText>You do not need to complete the rest of the steps below.</p>
+                        <p>However, if your changes conflict with those from another author, a message displays to tell you. In this case, continue with the next step.</p>
+                    </li>
+                    <li> Click <span class="Emphasis">OK</span> on the conflict message.</li>
+                    <li>In the Resolve Conflicts dialog click <span class="Emphasis">Resolve</span>. The Resolve Version Conflict dialog opens. From this dialog, you can choose from the following options.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Merge changes for me </span>Automatically merges changes within the same file that are not part of the same element. If changes have been made to the same element (for example, the same &lt;p&gt; tag or &lt;h1&gt; tag), <MadCap:variable name="Other.Product" /> will display a prompt to merge the changes using the merge tool.<br>uf</br></li><li><span class="SetOffFirstLevel">Merge changes in merge tool </span>Opens a merging interface, which lets you see exactly what changes were made and choose which to keep.<br /></li><li><span class="SetOffFirstLevel">Undo my local changes </span>Automatically removes your changes and keeps changes from other authors.</li><li><span class="SetOffFirstLevel">Discard external changes </span>Automatically removes changes from other authors and keeps your changes.</li></ul></li>
+                    <li>If you selected the option to use the merge tool, the Merge Changes dialog opens. Use this dialog to view and select changes. You can take actions in the following ways. <ul class="FirstLevel"><li><span class="SetOffFirstLevel">Right-click icon </span>You can right-click on the icon next to a change on either the server or local side. This displays a context menu, which lets you either keep or ignore a particular change.</li><li><span class="SetOffFirstLevel">Left-click icon </span>You can left-click on the icon next to a change on either the local or server side. When you do this, the change from one side is kept and the change from the other side is ignored. If you left-click the icon again, the results are toggled; the first change is ignored and the other is kept.</li><li><span class="SetOffFirstLevel">Type content </span>If you want to use your changes as well as those from another author, and even tweak the paragraph a bit more, you can click in the area at the bottom of the dialog and simply type content.</li><li><span class="SetOffFirstLevel">Previous/next conflict </span>When you are finished resolving the first conflict, you can use the "Previous Conflict" and "Next Conflict" buttons at the bottom of the dialog to work on other conflicts in the file.</li></ul><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you selected "Merge as Text" in the local toolbar and are working in the code, you can click on text with a hatched background to keep the change in it. After you click on text with a hatched background, the hatched lines are removed, leaving a solid color.</p></li>
+                    <li>After all conflicts have been resolved, a message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version. Click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—no conflicting changes</p>
+                    <p>Let's say two authors—Bob and Jill—are working on the same project, using source control to manage the files.</p>
+                    <p>Bob checks out the topic "FAQs" and starts making changes to it.</p>
+                    <p>Jill also checks out the "FAQs" topic and makes some changes to it. Jill's changes are in a different location in the topic than Bob's changes; there are no conflicts. She finishes before Bob and checks the file in to source control.</p>
+                    <p>Bob finishes his changes and tries to check in the file. Before the file can be checked in, Bob is prompted with a dialog, indicating that changes from another author have already been checked in.</p>
+                    <p>Bob selects <span class="Emphasis">Auto Merge All</span>. The changes from Bob and Jill are now both shown in the merged topic.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example.png" class="MaxWidth75Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example_analyzer.png" class="MaxWidth75Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—conflicting changes</p>
+                    <p>Let's say two authors—Bob and Jill—are working on the same project, using source control to manage the files.</p>
+                    <p>Bob checks out the topic "FAQs" and starts making changes to it.</p>
+                    <p>Jill also checks out the "FAQs" topic and makes some changes to it. Jill's changes are in the same paragraph in the topic as Bob's changes; thus, there is a conflict. She finishes before Bob and checks the file in to source control.</p>
+                    <p>Bob finishes his changes and tries to check in the file. Before the file can be checked in, Bob is prompted with a dialog, indicating that changes from another author have already been checked in.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example1.png" class="MaxWidth75Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example1_analyzer.png" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                    <p>Bob selects <span class="Emphasis">Auto Merge All</span>. However, he receives another message, stating that his changes conflict with those of Jill.</p>
+                    <p>
+                        <img src="../../../Resources/Images/merging_files_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Bob clicks <span class="Emphasis">OK</span>. Then in the Resolve Conflicts dialog he clicks <span class="Emphasis">Resolve</span>. This opens the Resolve Version Conflict dialog. From this dialog, Bob can choose from a few different options.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example3_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                    <p>Bob selects <span class="Emphasis">Merge changes in merge tool</span>. The Merge Changes dialog opens.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example4.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example4_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>So what action can Bob take at this point for merging the file changes?</p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                    <p>Bob can right-click on the icon next to the change on either the local or server side. This displays a context menu, which lets Bob either keep or ignore a particular change.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example5.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example5_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example6.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example6_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Another way of accomplishing the same thing is to left-click on an icon. When you do this, the change from one side is kept and the change from the other side is ignored. If you left-click the icon again, the results are toggled; the first change is ignored and the other is kept.</p>
+                    <p>What if Bob wants to use his changes as well as Jill's, and possibly tweak the paragraph a bit more? He can click in the area at the bottom of the dialog and simply type content.</p>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                    <p>When he is finished resolving the first conflict, Bob can use the "Previous Conflict" and "Next Conflict" buttons at the bottom of the dialog to work on other conflicts in the file.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example7.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example7_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>After all conflicts have been resolved, Bob clicks <span class="Emphasis">OK</span>. The merged topic is now checked in to source control.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS">Icons for File Differences</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>icons for file differences</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are descriptions of the icons you might see in the Merge Changes dialog when merging files.</p>
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Icon</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconContentChangedConflict.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Content—Conflict</span> This indicates that the content has changed and a conflict exists. Therefore, user action is required. This icon appears in both the left and right panes of the Merge Changes dialog at the spot of the conflict. You must click on one of the icons to "Accept" that particular change.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconContentChangedKeep.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Change—Accepted</span> This indicates that a change with a conflict has been accepted after clicking on <img src="../../../Resources/Images/DifferenceIconContentChangedConflict.png" class="ReduceButtonSize" />. The bottom pane of the Merge Changes dialog updates to show the accepted content.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconContentChangedDenied.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Change—Not Accepted</span> This indicates that a change with a conflict will not be accepted. When you accept a conflict change and that side of the Merge Changes dialog displays <img src="../../../Resources/Images/DifferenceIconContentChangedKeep.png" class="ReduceButtonSize" />, the opposite pane where the conflict exists will display <img src="../../../Resources/Images/DifferenceIconContentChangedDenied.png" class="ReduceButtonSize" />.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconTagChangedConflict.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Tag—Conflict</span> This indicates that the tag has changed and a conflict exists. Therefore, user action is required. This icon appears in both the left and right panes of the Merge Changes dialog at the spot of the conflict. You must click on one of the icons to "Accept" that particular change.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconTagchangedConflictKeep.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Tag—Accepted</span> This indicates that a change with a conflict in a tag has been accepted after clicking on <img src="../../../Resources/Images/DifferenceIconTagChangedConflict.png" class="ReduceButtonSize" />. The bottom pane of the Merge Changes dialog updates to show the accepted content.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Resources/Images/DifferenceIconTagChangedConflictIgnore.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Tag—Not Accepted</span> This indicates that a change with a conflict in a tag will not be accepted. When you accept a conflict change and that side of the Merge Changes dialog displays <img src="../../../Resources/Images/DifferenceIconTagchangedConflictKeep.png" class="ReduceButtonSize" />, the opposite pane where the conflict exists will display <img src="../../../Resources/Images/DifferenceIconTagChangedConflictIgnore.png" class="ReduceButtonSize" />.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control VSS" />
+        </p>
+    </body>
+</html>

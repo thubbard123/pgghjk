@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="18" MadCap:lastHeight="3328" MadCap:lastWidth="960">
+    <head>
+        <link href="../../TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <ol>
+            <li>
+                <MadCap:snippetText src="../Topics/OpenContentFileDocument.flsnp" />
+            </li>
+            <li>Highlight the text that you want to use as the link (or "hotspot").</li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                </p>
+                <ul class="FirstLevel">
+                    <li><span class="SetOffFirstLevel">Ribbon </span>
+                        <MadCap:snippetText src="../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Links</span> section, select <span class="Emphasis">Hyperlink</span>.</li>
+                    <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+K</span>.</li>
+                    <li><span class="SetOffFirstLevel">Local Toolbar</span> In the local toolbar of the XML Editor, click <img src="../../Images/insert_a_hyperlink_btn.png" class="ReduceButtonSize" />. </li>
+                    <li><span class="SetOffFirstLevel">Right-Click </span>Right-click in the editor and select <span class="Emphasis">Insert&gt;Hyperlink</span>. This context menu option is available only when your cursor is located in certain places in the editor (e.g., not in a drop-down effect).</li>
+                </ul>
+                <p>The Insert Hyperlink dialog opens.</p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+            <li>
+                <p>From the <span class="Emphasis">Link to</span> drop-down field, select a way to identify the topic, bookmark, or file to which you want to link. Based the option you choose, the section below gives you a list of selections or additional fields to complete.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>file in project&#160;</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="FileInProjectOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>place in this document </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="PlaceInThisDocumentOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>external file&#160;</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="ExternalFileOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>website</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="WebsiteOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>email&#160;</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="EmailOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>html help file&#160;</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="HTMLHelpFileOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>(Optional) The<span class="Emphasis"> Link text</span> field displays the text that you highlighted in the topic, which will be used as the hyperlink. Leave the text as it is, unless you decide you would like to change it. If you want to change the link text, type the new text in the field. It will replace the previously selected text in the topic. <MadCap:snippetText src="../Variables/IfYouWantInsertVariable.flsnp" /></li>
+            <li>
+                <p>(Optional) In the <span class="Emphasis"><MadCap:keyword term="Screen tip" />Screen Tip</span> field you can type a phrase that will appear when the end user hovers over the hyperlink in the output. <MadCap:snippetText src="../Variables/AgainInsertVariable.flsnp" /></p>
+                <p>When you enter a screen tip, it is added as a &lt;title&gt; tag in the markup. In addition, an &lt;alt&gt; (<MadCap:keyword term="Alternate text"></MadCap:keyword>alternate text) tag is added with the same text. This is useful when it comes to accessibility.</p>
+                <p MadCap:conditions="Products.Flare">
+                    <MadCap:keyword term="Section 508;Accessibility;WCAG" />For more information see <MadCap:xref href="../../../Accessibility/Flare/About_Accessibility.htm" class="seepara" MadCap:conditions="General.OnlineLive">About Accessibility</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.Print">the online Help</MadCap:conditionalText>.</p>
+            </li>
+            <li>(Optional) Next to the<span class="Emphasis"> Style Class</span> field click the <span class="Emphasis">Select</span> button. This opens the Select Class dialog, which lets you apply one of the defined hyperlink styles from your stylesheet to the link. You can change the appearance of the link in the Stylesheet Editor. After you select a style class in the dialog, click <span class="Emphasis">OK</span>. The Style Class field displays the selected style. (If you do not specify a style class, <MadCap:variable name="Other.Product" /> uses the parent "a" style.)</li>
+            <li>(Optional) <MadCap:keyword term="Framesets;Target frames" />In the <span class="Emphasis">Target Frame</span> field, click the drop-down arrow to select the way the linked destination will open (e.g., in another window, in a popup).<MadCap:snippetBlock src="TargetFrameDescriptionsBullets.flsnp" /></li>
+            <li>
+                <p>(Optional) In the <span class="Emphasis"><MadCap:keyword term="Images:tab index;Tab index" /><MadCap:keyword term="Text hyperlinks:tab index;Tab index" />Tab Index</span> field you can enter a value to specify the order in which users can tab through hyperlinks in a topic. So when a user presses the Tab key the first time in a topic, the hyperlink with an index value of 1 will be selected first, the hyperlink with a value of 2 will be selected next, and so on. If you want to skip a hyperlink, enter -1 in that field.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This feature is supported only in web outputs—<MadCap:snippetText src="../Output/AllWebHelpOutputsAndHTML5.flsnp" />.</p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /> The hyperlink is added to the topic.</li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.);output.);output...;level.&quot;;TOC1;TOC2;TOC3;TOC9;Index1;Index2;Index3;C;project.);TOC.);medium...;page.&quot;;Examples..." MadCap:lastBlockDepth="8" MadCap:lastHeight="1891" MadCap:lastWidth="1282" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Use section breaks in MadCap Flare to create autonumbered sections when building FrameMaker and Word output types." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Sections:section breaks;Sections:printed output;Master pages:printed output;Print-based output:section breaks;Print-based output:master pages" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="PrintedOutputMasterPage" MadCap:conditions="Products.Flare" />Specifying Section Breaks and Master Pages</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/Feature_Supported/FrameMaker_Word.flsnp" />
+        <p>In <MadCap:variable name="Other.Product" />, you can specify section breaks for print-based output. Doing this allows you to accomplish the following:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Add Section Breaks </span>You can add actual section breaks into Microsoft Word output. Section breaks are a feature unique to Word.</li>
+            <li><span class="SetOffFirstLevel">Autonumber Sections </span>You can take advantage of section autonumbering. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Autonumbers/About_Autonumbers.htm" class="seepara">About Autonumbers</MadCap:xref>.</MadCap:conditionalText></li>
+            <li>
+                <p><span class="SetOffFirstLevel">Start a New Section Using Master Pages</span> You can use a section break to apply a master page to Microsoft Word or FrameMaker output, starting at that location in the content. Master pages can be used to add header and footer content, insert page numbers, and specify the page size and orientation. The rest of this topic deals with using section breaks to apply master pages. </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">As an alternative to master pages, you can use page layouts for print-based output. Whereas master pages are used only for Word and FrameMaker outputs, page layouts can be used for all print-based outputs. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm" >About Page Layouts</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ul>
+        <p>If you create one or more master pages for Word or FrameMaker output, you need to specify how those master pages will be used. You have a couple of options.</p>
+        <ul>
+            <li>
+                <p>You can use one or more master pages for specific sections of your print-based output (specify section breaks and master pages).</p>
+                <p>OR</p>
+            </li>
+            <li>You can use just one master page for every page of the output (associate a master page with a target).</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify section breaks and master pages for print-based output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">If you are producing Microsoft Word or Adobe FrameMaker output, you can specify places in your outline TOC where you want to create section breaks for your print-based output. A primary reason for using a section break is to specify that a particular chunk of Word or FrameMaker output should use a certain print master page. The output uses the specified master page for the rest of the document, or until it comes across another section break/master page that you have included in the outline TOC. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                    <p MadCap:conditions="">Let's say you are producing a print-based document that includes a title page, a TOC, 15 chapters, and an index. If you want to include page numbering in the printed document, starting with the first chapter (i.e., no page numbers on the title page or TOC) and continuing to the end of the document, you can create a print master page for this purpose. You can specify in the print master page that the even numbers are placed at the bottom-left of those pages and the odd numbers are placed at the bottom-right of those pages. Then, in your outline TOC, you can create a section break where the first page of the first chapter occurs and associate the master page with that section.</p>
+                </div>
+                <p MadCap:conditions="">Use these steps if you want to use this method:</p>
+                <ol type="1">
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Double-click the <span class="Emphasis">TOCs</span> folder. </li>
+                    <li>Double-click the TOC that you plan to use for the print-based output. The TOC Editor opens to the right.</li>
+                    <li>Select the entry in the TOC where you want to insert a section break, and where you want a print master page to start being displayed in the print-based output. </li>
+                    <li>In the local toolbar, click <img src="../../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog for the TOC entry opens.</li>
+                    <li>Click the <span class="Emphasis">Printed Output</span> tab.</li>
+                    <li>Click <span class="Emphasis">Start a new section</span>.</li>
+                    <li>Click the down arrow in the field <span class="Emphasis">Configure section using this Master Page</span>, and select the print master page that you want to use.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                    <li>
+                        <p>Repeat steps 4-9 for each print master page that you want to associate with a particular section. </p>
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want to apply the same settings to many TOC entries, you can hold down the CTRL or SHIFT key and select those entries. Then open the Properties dialog and specify the settings.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not have to follow these steps for every single TOC entry within that section—only for the first TOC entry in that section. The master page will be used in the print-based output starting at that location in the content and continuing to the end of the document, or until it comes across another section break/master page that you have designated.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to associate a master page with a print target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use the following steps if you want to include only one master page in your Word or FrameMaker output, displaying that master page on every page of the output.</p>
+                <ol>
+                    <li>Open the Word or FrameMaker target that you are using to create the output.</li>
+                    <li>Click the <span class="Emphasis">Advanced</span> tab.</li>
+                    <li>Click the drop-down arrow in the <span class="Emphasis">Master Page</span> field, and select the print master page that you want to associate with the target.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After specifying section breaks and master pages, you can move on to any of the remaining tasks for creating printed output. See <MadCap:xref href="../Creating_Printed_Output.htm" target="" title="" alt="">Creating Print-based Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputMasterPage" />
+        </p>
+    </body>
+</html>

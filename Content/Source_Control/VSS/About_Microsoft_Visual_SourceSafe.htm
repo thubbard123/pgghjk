@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="5083" MadCap:lastWidth="1075" MadCap:conditionTagExpression="include[Snippets.Snippet10 or Snippets.Snippet2] exclude[Snippets.Snippet1 or Snippets.Snippet11 or Snippets.Snippet12 or Snippets.Snippet13 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlVSS.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control VSS" />
+            <MadCap:concept term="FilterSourceControlVSS" />
+            <MadCap:keyword term="Microsoft Visual SourceSafe;Source control:VSS" />
+            <MadCap:keyword term="Source control;Multi-authoring" />About Microsoft Visual SourceSafe</h1>
+        <p>Because <MadCap:variable name="Other.Product" /> uses an open architecture,  <MadCap:variable name="Other.Product" /> projects are compatible with all source control systems. In addition to this native support for all source control applications, <MadCap:variable name="Other.Product" /> provides integrated support with some source control applications. </p>
+        <p>Please reference the source control topics in this section if you are using <MadCap:variable name="Other.Product" />'s integrated source control with Microsoft Visual SourceSafe.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Common Source Control Terms </h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>common source control terms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are definitions for some of the common phrases used in <MadCap:variable name="Other.Product" />'s integrated source control with Microsoft Visual SourceSave.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind </span>This means to connect your project to Microsoft Visual SourceSafe. After doing this, you can then take advantage of all the automated source control tasks (such as check in, check out, instant messaging, and so on). </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check in;Check in" />Check In </span>This means to copy your local <MadCap:variable name="Other.Product" /> files to Microsoft Visual SourceSafe, overwriting the copies stored in Microsoft Visual SourceSafe. This enables other authors on your team to access and edit the latest files.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check out;Check out" />Check Out </span>This means to copy the latest source control files to your local <MadCap:variable name="Other.Product" /> project and remove the "Read Only" designation from them so that you can edit the files.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:get latest version" />Get Latest Version </span>This means to copy the latest source control files to your local project without necessarily checking out the files. This means that the "Read Only" designation will remain associated with the files until you check them out. </li>
+                </ul>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:variable name="Other.Product" /> integrates with multiple source control providers to provide built-in source control support. Each of the source control providers built-in to <MadCap:variable name="Other.Product" /> uses different terms. As such, <MadCap:variable name="Other.Product" />'s source control interface is different depending on which source control provider you use. Please refer to the sections for each source control provider if you need to see information about the terms used by other built-in systems.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Source Control Icons</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>source control icons</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are descriptions for the primary icons that you may see next to files when using source control. </p>
+                <table class="TableStyle-Simple" style="mc-table-style: url('../../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                    <col style="width: 22px;" class="TableStyle-Simple-Column-Column1" />
+                    <col class="TableStyle-Simple-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlCheckedOut.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Checked Out</span>
+                                </p>
+                                <p class="TableText">This indicates that the file has been checked out from source control. You can check in the file when you are ready (if you are the user who has checked it out). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Checking_In_Source_Control_Files_vss.htm">Checking In Source Control Files</MadCap:xref> and <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p class="TableText">
+                                    <MadCap:keyword term="Source control:lock" />You may see this icon in conjunction with the <img src="../../Resources/Images/source_control_GreenLock.png" class="ReduceButtonSize" /> icon, indicating that you have checked out and locked the file. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlNewFile.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">New File (Pending Add)</span>
+                                </p>
+                                <p class="TableText">This indicates that you have a file in your project but have not yet added it to the integrated source control application. This might occur, for example, if you create a new topic and do not add the file to source control during the topic creation process. To resolve this, simply right-click on the file and select <span class="Emphasis">Source Control&gt;Add</span>. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_vss.htm">Adding Files to Source Control</MadCap:xref>. </MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlLocked.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Not Checked Out</span>
+                                </p>
+                                <p class="TableText">This indicates that the file is added to source control but is not currently checked out, which means that it contains a "Read Only" designation in its properties. In order to edit the file, you must check it out from source control. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/source_control_RedLock.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Locked by Another User</span>
+                                </p>
+                                <p class="TableText">This indicates that another user has locked the file. You cannot check in the file while it is locked by another user. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/source_control_GreenLock.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Locked by You</span>
+                                </p>
+                                <p class="TableText">This indicates that you have locked the file. You can lock a file when you check it out. Other users cannot check in the file while it is locked. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlCheckedOutByOtherUser.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Checked Out By Other User</span>
+                                </p>
+                                <p class="TableText">This indicates that the file is currently checked out to another user. You can send a request to the user, asking that person to check in the file so that you can check it out. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Requesting_a_User_to_Check_In_Source_Control_Files_vss.htm">Requesting a User to Check In VSS Files</MadCap:xref>. </MadCap:conditionalText></p>
+                                <p class="TableText">You may see this icon in conjunction with the <img src="../../Resources/Images/source_control_RedLock.png" /> icon, indicating that another user has checked out and locked the file. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlOutOfDate.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Out of Date</span>
+                                </p>
+                                <p class="TableText">This indicates that the file is not current (i.e., the local copy of the file is older than the source control copy). This might happen, for example, if another user checks out the file, makes changes to it, and checks it back in to source control. If this occurs, you can check the file out or get the latest version of the file from source control. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref> or <MadCap:xref href="Getting_the_Latest_Version_of_Source_Control_Files_vss.htm">Getting the Latest Version of Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="">
+                            <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlDeleted.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                <p class="TableTextEmphasis"><span class="SetOffFirstLevel">Deleted</span>
+                                </p>
+                                <p class="TableText">This indicates that the file is deleted from source control, but you still have a copy of the file on your local machine. If necessary, you can add the file to source control. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_vss.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS">General Workflow (Multi-Author Team)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (multi-author team)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s source control integration for a multi-author team.                     </p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2a.flsnp" />
+                                </p>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing Flare project on your local machine, bind the project to the source control application. See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_vss.htm">Binding a Project to Microsoft Visual SourceSafe</MadCap:xref>.</li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only one of the authors needs to perform this task. The other authors on the team can follow Step 3 below. </p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:importing projects" />Import Project </span>Other users on the team can easily import the project from source control. This creates a copy of the <MadCap:variable name="Other.Product" /> project on the author's computer. See <MadCap:xref href="Importing_a_Project_from_Source_Control_vss.htm">Importing a Project from Microsoft Visual SourceSafe</MadCap:xref>. </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:get latest version" />Get Latest Version </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlGetLatestVersionSummary.flsnp" /> When working with other authors, it is a good idea to do this frequently (e.g., at the beginning of each day) in order to ensure you have the latest changes that those authors have made, and that they have the latest changes you've made. See <MadCap:xref href="Getting_the_Latest_Version_of_Source_Control_Files_vss.htm" target="" title="" alt="">Getting the Latest Version of Source Control Files</MadCap:xref>.</p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                <ol MadCap:continue="true">
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check out" />Check Out Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCheckOutSummary.flsnp" /> See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check in" />Check In Files </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCheckInSummary.flsnp" /> See <MadCap:xref href="Checking_In_Source_Control_Files_vss.htm">Checking In Source Control Files</MadCap:xref>.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:merging;Merging:source control" />Merging </span>If you are set up in a source control application to allow multiple authors to have the same files checked out, there may be times when you need to merge changes from different authors when checking in a file. The merge occurs automatically if there are no conflicting changes (i.e., changes do not occur in the same location). If there are conflicting changes, a dialog opens, allowing you to determine how changes are merged. See <MadCap:xref href="More_About_Source_Control/Merging_Source_Control_Files_vss.htm">Merging Source Control Files</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" /> See <MadCap:xref href="Adding_Files_to_Source_Control_vss.htm">Adding Files to Source Control</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:request check in;Instant messaging;Source control:instant messages;Source control:email;Email:source control" />Request to Check In Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlRequestCheckInSummary.flsnp" /> See <MadCap:xref href="Requesting_a_User_to_Check_In_Source_Control_Files_vss.htm">Requesting a User to Check In VSS Files</MadCap:xref>. </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:request view;Instant messaging:request view" />Request to View Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlRequestViewFilesSummary.flsnp" /> See <MadCap:xref href="Requesting_a_User_to_View_Files_vss.htm">Requesting a User to View Files</MadCap:xref>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS">General Workflow (Single Author)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (single author)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s source control integration for a single author.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>
+                                    <MadCap:keyword term="Source control:bind" />
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2a.flsnp" />
+                                </p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing Flare project on your local machine, bind the project to the source control application. See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_vss.htm">Binding a Project to Microsoft Visual SourceSafe</MadCap:xref>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check out;Multi-authoring;Check out" />Check Out Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCheckOutSummary.flsnp" /> See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check in;Multi-authoring;Check in" />Check in Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCheckInSummary.flsnp" /> See <MadCap:xref href="Checking_In_Source_Control_Files_vss.htm">Checking In Source Control Files</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" /> See <MadCap:xref href="Adding_Files_to_Source_Control_vss.htm">Adding Files to Source Control</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS">Additional Source Control Tasks and Features</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>additional source control tasks and features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are some additional tasks and features related to source control.                     </p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:API;API:source control" />API </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlUseAPI.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotMandatoryToUseSourceControlAPI.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:status updates" />Automatic Status Checks </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAutoStatusChecks.flsnp" /> See <MadCap:xref href="More_About_Source_Control/Enabling_Source_Control_Status_Checks_vss.htm">Enabling Source Control Status Checks</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:differences;Differences:source control" />Differences </span>You can view differences between files in various ways. For more information see <MadCap:xref href="More_About_Source_Control/Viewing_Differences_in_Source_Control_Files_vss.htm">Viewing Differences in Source Control Files</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Disable Prompt for Get Latest </span>By default, when you open a project that is bound to source control, a message automatically asks if you want to get the latest version of files. However, you can disable this prompt in the Options dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Disabling_Get_Latest_Prompt_vss.htm">Disabling the Get Latest Prompt for Source Control</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS"> See <MadCap:xref href="More_About_Source_Control/Disabling_Get_Latest_Prompt_vss.htm#DisableGetLatestPrompt">Disabling the Get Latest Prompt for Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:history;History:source control" />History </span>You can view the history of a particular source control file. See <MadCap:xref href="More_About_Source_Control/Viewing_the_History_of_Source_Control_Files_vss.htm">Viewing the History of Source Control Files</MadCap:xref>.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/SourceControlHistoryOptionsListVSS.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15] " />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:check out;Multi-authoring;Check out;Locks:source control" />Locks </span>You can lock files so that other users cannot check in those same files when you have them checked out. You might use this feature to prevent conflicting changes from occurring and having to merge files as a result. You can set files to be locked automatically when you check out files. This can be done from the Options dialog (Source Control tab). Another option is to manually set files to be locked whenever you check out files. This can be done from the Check Out dialog. See <MadCap:xref href="Checking_Out_Source_Control_Files_vss.htm">Checking Out Source Control Files</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Unbind </span>You can unbind a project from source control. See <MadCap:xref href="More_About_Source_Control/Unbinding_a_Project_from_Source_Control_vss.htm" target="" title="" alt="">Unbinding a Project from Source Control</MadCap:xref>. </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pending changes;Source control:check out;Check out" />View Checked-Out Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlViewFilesCheckedOutSummary.flsnp" /> See <MadCap:xref href="More_About_Source_Control/Viewing_Files_That_are_Checked_Out_vss.htm">Viewing Files That are Checked Out</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> and <MadCap:xref href="../../Interface/UI_Elements/File_List_Window.htm">File List Window Pane</MadCap:xref></MadCap:conditionalText>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Because of the way Visual SourceSafe is designed, when you remove files from your project and check in your changes, you still need to perform a "get latest" in order for those files to be removed from the client.</p>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you unpack a zipped project that is bound to source control, the files in the unpacked project become editable. See <MadCap:xref href="../../Zip/Opening_Zipped_Projects.htm">Opening Zipped Projects</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control VSS" />
+        </p>
+    </body>
+</html>

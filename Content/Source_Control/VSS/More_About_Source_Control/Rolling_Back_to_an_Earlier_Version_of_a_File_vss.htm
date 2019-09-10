@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="3086" MadCap:lastWidth="960" MadCap:conditions="Products.Flare,Products.Analyzer" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlVSS.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:roll back;Roll back:source control" />
+            <MadCap:keyword term="Source control:differences;Differences:source control" />
+            <MadCap:keyword term="Source control:history;History:source control" />
+            <MadCap:concept term="FilterSourceControlVSS" />Rolling Back to an Earlier Version of a File<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Visual SourceSafe</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/RollingBackIntro.flsnp" />
+        </p>
+        <p MadCap:conditions="Products.Flare">See <MadCap:xref href="Viewing_the_History_of_Source_Control_Files_vss.htm">Viewing the History of Source Control Files</MadCap:xref> and <MadCap:xref href="Viewing_Differences_in_Source_Control_Files_vss.htm">Viewing Differences in Source Control Files</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/SourceControlRollbackExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to roll back to an earlier version of a file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol MadCap:conditions="Products.Flare">
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlWindowPaneSelectFile.flsnp" />
+                        </p>
+                        <p>OR</p>
+                        <p>Open a file.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">View History</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, <MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Source Control Explorer, Pending Changes window pane, or File List open, right-click the file you want to roll back and select <span class="Emphasis">Source Control&gt;View History</span>.</li>
+                        </ul>
+                        <p>The History dialog opens.</p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" />
+                <ol MadCap:conditions="Products.Flare" MadCap:continue="true">
+                    <li>(Optional) View the differences between two versions of the file. This may help you decide which version of the file you want to retrieve. (Another way is to look at the dates for each version in the History dialog.)<p>To view the differences, follow these steps.</p><ol class="LowerAlpha"><li>Select the first file version from the list.</li><li>Hold the <span class="Emphasis">CTRL</span> key and select the second file version from the list.</li><li><p>Click <span class="Emphasis">Show Differences</span>. The Differences Editor opens to the right, showing content from the backup file on the left and the current version of the file on the right.</p></li><li>In the local toolbar of the Differences Editor, you can click any of the following to make adjustments.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Options </span>Click this to open the File Differences dialog, which lets you change the colors used to display content differences between the files. See <MadCap:xref href="Setting_Color_Options_for_Project_File_Differences_vss.htm">Setting Color Options for Project File Differences</MadCap:xref>.</li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" /><li><p><span class="SetOffFirstLevel">Show WYSIWYG </span>Click this to switch from tag view to WYSIWYG (What You See Is What You Get) view.</p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p><img src="../../../Resources/Images/backup_differences_example3.png" class="MaxWidth90Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" /><li><p><span class="SetOffFirstLevel">Ignore Case </span>Click this to ignore changes in case when viewing differences. This option can be used in "text view" only; it is not available in WYSIWYG view.</p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p>If a word is not capitalized in the original file but it is capitalized in the current file, this option does not highlight those differences.</p><p><img src="../../../Resources/Images/ignore_case_example1.png" class="MaxWidth90Percent" /></p><p><img src="../../../Resources/Images/ignore_case_example2.png" class="MaxWidth90Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideVSS" /><li><p><span class="SetOffFirstLevel">Ignore Whitespace </span>Click this to ignore whitespace when viewing differences. </p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p>Let's say a paragraph is identical in both files, except for an extra space that was added within the paragraph in one of those files. If you click this option, that difference is not highlighted.</p><p><img src="../../../Resources/Images/ignore_whitespace_example1.png" class="MaxWidth90Percent" /></p><p><img src="../../../Resources/Images/ignore_whitespace_example2.png" class="MaxWidth90Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></li></ul></li><li>When you are finished viewing the differences, close the window pane.</li></ol></li>
+                    <li>In the History dialog, select the version of the file to which you want to roll back.</li>
+                    <li>Click <span class="Emphasis">Get Selected Version</span>. That file is downloaded from source control and replaces the local copy of the file in your project.</li>
+                    <li>In the History dialog, click <span class="Emphasis">Close</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control VSS" />
+        </p>
+    </body>
+</html>

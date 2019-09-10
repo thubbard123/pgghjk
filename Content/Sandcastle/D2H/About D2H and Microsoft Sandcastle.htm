@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="1910" MadCap:lastWidth="702" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HSandcastle.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Microsoft Sandcastle" />About Microsoft Sandcastle Integration with Doc-To-Help</h1>
+        <h1 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Introduction</h1>
+        <p>Microsoft's Sandcastle utility automatically creates MSDN style reference documentation from .NET assemblies and XML comment files. This makes it possible for you to document a class library—plus add narrative information—quickly and efficiently. Doc-To-Help integrates Sandcastle's XML output into your projects, automatically creating topics, index, TOC, and other elements. With this information added to your project, you can edit/add your own topics, and easily link to namespaces.</p>
+        <p>Doc-To-Help's integration with Sandcastle extends the functionality of the plug-in by providing an interface for Sandcastle, and giving authors more power to connect narrative and reference content. </p>
+        <p>To use the Doc-To-Help Sandcastle plug-in, you must first install Sandcastle and its patch. If you have an older version of Sandcastle on your machine, uninstall that version first.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">How to Install Sandcastle</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>How to Install Sandcastle</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Download the Sandcastle Help File Builder version 2.7.10.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Currently, Doc-To-Help only supports the official Microsoft release of Sandcastle.</p>
+                    </li>
+                    <li>Run <span class="Emphasis">InstallResources\Sandcastle_2710.msi</span>. </li>
+                    <li>
+                        <p>After you have completed the Sandcastle Help File Builder installation, go to <span class="Emphasis">C:\Program Files (x86)\MadCap Software\DocToHelp\Plugins\Sandcastle</span>.</p>
+                    </li>
+                    <li>Double-click <span class="Emphasis">SandcastlePatch.exe</span> to install it. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Tasks Associated With Sandcastle</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Tasks Associated with Sandcastle</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary tasks associated with using Sandcastle in Doc-To-Help:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Create Project </span>Using the New Project Wizard, you can create a new Sandcastle project. See <MadCap:xref href="Creating a Project with Sandcastle.htm">Creating a Project with Sandcastle</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Convert Documenter for NET Projects </span>If you have reference documentation originally created in Doc-To-Help’s Documenter for .NET, you can convert those projects to Sandcastle. See <MadCap:xref href="Converting Documenter for NET projects to Sandcastle projects.htm">Converting Documenter for .NET Projects to Sandcastle Projects</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Configure Sandcastle Reference Section </span>In the Properties for Generating Reference dialog, you can import a Documenter for .NET project file and/or configure your Sandcastle reference section. See <MadCap:xref href="Configuring the Sandcastle Reference Section.htm">Configuring the Sandcastle Reference Section</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Configure CodeBlock Component Dialog </span>The Configure CodeBlock Component dialog is used to configure the elements of the CodeBlock component. See <MadCap:xref href="Configure CodeBlock Component dialog box.htm">Configure CodeBlock Component Dialog</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Configure PostTransform Component Dialog </span>The Configure PostTransform Component dialog is used to configure the elements of the PostTransform component. See <MadCap:xref href="Configure PostTransform Component dialog box.htm">Configure PostTransform Component Dialog</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">CodeBlock and PostTransform Components </span>The Doc-To-Help Sandcastle plug-in includes Eric Woodruff's components (with his permission) that complement Sandcastle functionality for better display of code blocks in various languages, including syntax highlighting and connecting code blocks to the language filter. Normally, you don't need to change the settings for those components, but the XML source document's Properties for Generating Reference allows you to do so (double-click on the plug-in document to open the Properties for Generating Reference dialog). See <MadCap:xref href="CodeBlock and PostTransform components.htm">CodeBlock and PostTransform Components</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Exclude Elements without Description </span>You can exclude elements that do not have descriptions (to add them to the filter). See <MadCap:xref href="Excluding elements without description.htm">Excluding Elements without Description</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Create Links from Narrative Text to Reference Text </span>To create a link from your text to a generated topic (or to an added topic), all you need to do is to format a word or a phrase in your text (usually it is a name of a property, method, class, and so on) with an appropriate style. See <MadCap:xref href="Using Styles to Create Links.htm">Creating Links from Narrative Text to Reference Text</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">XSLT Transformation of the Source Code Comments XML </span>The XSLT file is specified in the Generation node of the Properties for Generating Reference dialog. To open the Properties for Generating Reference dialog, double-click on the plugin document.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Class libraries cannot be exported to Manual or EPUB Targets. It is suggested you exclude the Sandcastle plug-in from those outputs using a condition.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Source_Documents/Setting Document Properties.htm">Setting Document Properties</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

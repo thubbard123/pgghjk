@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="3992" MadCap:lastWidth="1342">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:conditions="General.Print">First-Level Drop-Downs</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>first-level drop-downs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We used the parent drop-down style for first-level drop-downs.</p>
+                <p MadCap:conditions="Snippets.Snippet3">
+                    <img src="../../Images/hdydt_dropdowns3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="Snippets.Snippet4">
+                    <img src="../../Images/top_nav_tutorial_dropdowns9.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open).</p><p class="note" MadCap:conditions="Snippets.Snippet3" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The online output is going to use the default settings, so that's where we're making our changes. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="General.Print" /></p></li><li><MadCap:snippetText src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../Styles/FilterDynamicEffectsStylesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|dropDown</span> style.</li><li><MadCap:snippetText src="../Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../Images/top_nav_tutorial_dropdowns1.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">margin-bottom </span>Set it to <span class="Emphasis">6px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-top </span>Set it to <span class="Emphasis">6px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-closed-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used when the drop-down is in a closed (or collapsed) state. In our template, we selected an image called "DropDownClosed" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                            <li><span class="SetOffFirstLevel">mc-open-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used when the drop-down is in an open (or expanded) state. In our template, we selected an image called "DropDownOpen" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Now you need to give the first-level drop-down a bottom border. On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|dropDownBody</span> style.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_dropdowns2.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv,FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:<![CDATA[  ]]></p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">border-bottom </span>Set it to <span class="Emphasis">1px #bed230</span> (you can choose another color besides #bed230 if you want).</li>
+                                        </ul>
+                                    </li>
+                                    <li>Next, let's account for the final drop-downs that we don't want to have borders. On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|dropDownBody</span> style.</li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>. The New Selector dialog opens.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type a name for the new style class (we named ours "Final").</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_dropdowns3.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                                    </li>
+                                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv,FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>With that new style class selected, on the right side of the Stylesheet Editor, set the following:  </p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">border-bottom </span>Set it to <span class="Emphasis">0</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>And finally, you need to give a unique look to the drop-down link, including a different color when users hover over it. On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|dropDownHotspot</span> style.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_dropdowns4.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">404040</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">0.9em</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-weight </span>Select <span class="Emphasis">bold</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Now expand the <span class="Emphasis">MadCap|dropDownHotspot</span> style. Then expand <span class="Emphasis">(Pseudo Classes)</span> under that, and select <span class="Emphasis">hover</span>.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_dropdowns5.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv,FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the default medium in the stylesheet (replacing the example images with your own):</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDown</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="TypedEntry"><span class="StyleProperty">margin-bottom: </span><span class="StyleValue">6px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">margin-top: </span><span class="StyleValue">6px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-closed-image: </span><span class="StyleValue">url('../Images/DropDownClosed.png');</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-open-image: </span><span class="StyleValue">url('../Images/DropDownOpen.png');</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDownBody</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="TypedEntry"><span class="StyleProperty">border-bottom: </span><span class="StyleValue">solid 1px#bed230;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDownBody.Final</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="TypedEntry"><span class="StyleProperty">border-bottom: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDownHotspot</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#404040;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">0.9em;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-weight: </span><span class="StyleValue">bold;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv,FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|dropDownHotspot:hover</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#bed230;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                        </p>
+                        <p>Now that you've got your styles, you just need to apply them to the correct parts of the drop-down.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

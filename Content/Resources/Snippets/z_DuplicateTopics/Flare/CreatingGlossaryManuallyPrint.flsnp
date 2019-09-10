@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1887" MadCap:lastWidth="1112">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Glossaries/CreatingAGlossary.flsnp" /> Alternatively, you can let Flare auto-generate one for you (see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Auto_Generating_Glossaries_for_Print.htm">Auto-generating Glossaries for Print</MadCap:xref>).</p>
+        <p>The following explains how to use the manual method.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>
+                        <img src="../../../Images/glossary_proxy_example.png" class="MaxWidth60Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Images/glossary_proxy_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create glossary manually for print</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add a new topic as you normally would.</li>
+                    <li>At the top of the topic, enter a title for your glossary. If you apply any of <MadCap:variable name="Other.Product" />'s h1 through h6 styles to it, the glossary title will be displayed in the print TOC (if you create one). </li>
+                    <li>Most likely, you will want to remove any text after the glossary title.</li>
+                    <li>
+                        <MadCap:snippetText src="../../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Proxy</span> section select <span class="Emphasis">Proxy&gt;Insert Glossary Proxy</span>. <p>The Glossary Proxy dialog opens.</p></li>
+                    <li>If you want headings (e.g., A, B, C, D) to be added automatically at the top of each section in the glossary, click the down arrow in the <span class="Emphasis">Generate Headings</span> field and select <span class="Emphasis">Yes</span>.</li>
+                    <li>
+                        <p>(Optional) From the <span class="Emphasis">Stylesheet class</span> field, you can select a style for the glossary.</p>
+                        <p>For example, you might create and use style classes if you want to generate multiple glossaries with different looks for each output. Otherwise, the glossary will use the style settings from the parent MadCap|glossaryProxy style. You can create a style class for this purpose in the Stylesheet Editor. To do this, select the <span class="Emphasis">MadCap|glossaryProxy</span> style and click <span class="Emphasis">Add Class</span> to create a class. The class will then be available from this field in the Glossary Proxy dialog. <MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to affect the look of the individual entries in the generated glossary, you can also use the following in the Stylesheet Editor, which can be found by expanding the parent div style: GlossaryPageDefinition, GlossaryPageEntry, GlossaryPageHeading, and GlossaryPageTerm. For example, if you want to use blue font for each term in the generated glossary, you can change the font color setting on the div.GlossaryPageTerm style class. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Glossaries/More_About_Glossaries/Using_Styles_to_Change_the_Look_of_a_Glossary.htm">Using Styles to Change the Look of a Glossary</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" /> The proxy is added to the topic.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>auto-generate versus manual proxies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateVersusManualProxies.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For<MadCap:keyword term="Adobe PDF" /><MadCap:variable name="Outputs.PDF" />,<MadCap:keyword term="Microsoft XPS" /><MadCap:variable name="Outputs.XPS" />, and <MadCap:keyword term="XHTML" /><MadCap:variable name="Outputs.XHTML" /> output, you can insert glossary-related Heading variables into page layouts. These variables let you automatically display glossary headings and terms at the top of pages. See <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Heading_Variables_Into_Frames.htm" >Inserting Heading Variables Into Frames</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Make sure to add the topic with the proxy to the outline TOC. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Adding_Print_Topics_to_an_Outline_TOC.htm">Adding Print Topics to an Outline TOC</MadCap:xref>.</p>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="">In addition to creating a topic for a print glossary, you can create a topic for a print TOC and/or a topic for a print index. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm">Creating a TOC Manually for Print</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating an Index Manually for Print</MadCap:xref>.</p>
+                <p MadCap:conditions="">Then you need to include these print topics in an outline TOC in your project. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Adding_Print_Topics_to_an_Outline_TOC.htm">Adding Print Topics to an Outline TOC</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

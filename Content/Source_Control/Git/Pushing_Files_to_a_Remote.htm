@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="14" MadCap:lastHeight="2120" MadCap:lastWidth="1086" class="" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[Snippets.Snippet1] " style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />
+            <MadCap:keyword term="Source control:push;Push" />
+            <MadCap:keyword term="Source control:remote repository" />Pushing Files to a Remote Repository<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>After you commit the changes from your  project to the local Git repository, you can push them to the remote Git repository. Performing a push sends all of the files you have committed on your current branch to the remote repository. This is a way to back them up to source control and for other users to have access the changes you have made. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Pushing Files to MadCap Central</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are not using MadCap Central<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Central/About_Central_and_Flare.htm">About MadCap Central and Flare</MadCap:xref>)</MadCap:conditionalText>, you can simply use the standard method (described below) for pushing files to a repository. If you are using Central and your project is bound to it, you can use the MadCap Central window pane to push your files<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Central/Pushing_Changes_to_Central.htm">Pushing Content to Central</MadCap:xref>)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> (for more information, see the online Help)</MadCap:conditionalText>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Push Files To a Remote Repository</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Push</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Push</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>In the File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Push</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Push</span>. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>(Optional) If you did not commit your files before starting the push, a dialog asks if you want to commit your files. Click <span class="Emphasis">Yes</span> to continue. See <MadCap:xref href="Committing_Source_Control_Files_git.htm">Committing Source Control Files—Git</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You must commit <span class="EmphasisItalic">all</span> modified files to proceed with the push.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>The Select Remote for Push dialog opens. From the <span class="Emphasis">Remote</span> drop-down, select the repository you want to push to. </p>
+                    </li>
+                    <li>
+                        <p>(Optional) To add or remove a remote repository, click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. The Remote Repositories dialog opens.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Add a Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/AddRemoteRepository.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Remove a Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/RemoveRemoteRespository.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>In the Select Remote for Push dialog, click <span class="Emphasis">OK</span>. <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlLoginDialogSimple.flsnp" /></li>
+                    <li>
+                        <p>If the local changes are different from those in the remote, you will see an error in the Progress dialog during the push. Perform a pull, then attempt the push again. See <MadCap:xref href="Pulling_Files_from_a_Remote.htm">Pulling Files from a Remote Repository—Git</MadCap:xref>.</p>
+                        <p>
+                            <img src="../../Resources/Images/push_error.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead class="FlareandLingoOnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/SourceControlCloudForgeGitError.flsnp" MadCap:conditions="Products.Flare,Products.Lingo" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

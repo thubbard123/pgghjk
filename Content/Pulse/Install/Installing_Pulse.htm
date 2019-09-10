@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Pulse_Downloads" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="6029" MadCap:lastWidth="815" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <meta name="description" content="Use the setup program to install MadCap Pulse on the web server. This installs the Pulse server application and provides users with access to the Pulse Dashboard and Flare community features." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Pulse:installation;MadCap Pulse:web server;Installation:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Installation;Web server" MadCap:conditions="Products.Pulse" />Installing and Activating Pulse</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:installation;MadCap Pulse:web server;Installation:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Installation;Web server" MadCap:conditions="Products.Pulse" />Installing and Activating Pulse</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForNetworkAdministrators.flsnp" />
+        <p>After preparing the Pulse web server and database server for the installation process, you can install Pulse. </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">List of Pulse Components</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>list of pulse components</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse setup program installs the following components and features on your server:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Pulse Server Application </span>This is the server application that you install on the Pulse web server. Pulse Administrators use this tool to perform the initial server configuration.</li>
+                    <li><span class="SetOffFirstLevel">Pulse Dashboard </span>This is the web dashboard that Pulse Administrators use to view different configuration settings and to manage the embedded discussion forms in the output. Registered users can access the dashboard using the Pulse URL. </li>
+                    <li><span class="SetOffFirstLevel">Community Tab and Embedded Discussion Forms </span>This is the Community tab (optional) and the embedded discussion form that integrates with your published Flare output. It gives users the ability to share knowledge and expertise by posting status updates, asking and responding to questions about topics, creating articles, and more. </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">List of Windows Service Applications</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>list of windows service applications</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Pulse runs the following Windows service applications:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">MadCap&#160;Pulse&#160;Management Service </span>This service supports the Pulse application.</li>
+                    <li><span class="SetOffFirstLevel">Pulse Service </span>This service also supports the Pulse application.</li>
+                    <li><span class="SetOffFirstLevel">RabbitMQ </span>This service supports communication between IIS and SQL&#160;Server. It also monitors the amount of RAM&#160;on the server. When free space becomes low, this service raises alarms and block connections for the server.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Installing the Pulse Server Application</h2>
+        <p MadCap:conditions="General.Print">Do the following on the web server (this is the server running IIS): </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to install the pulse server application </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">Do the following on the web server (this is the server running IIS): </p>
+                <ol>
+                    <li>Install the prerequisite software. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">See <MadCap:xref href="2012/Installing_the_Prerequisites_2012.htm">Installing the&#160;Prerequisites for Windows Server 2012</MadCap:xref>, <MadCap:xref href="2008R2/Installing_the_Prerequisites_2008R2.htm">Installing the&#160;Prerequisites for Windows Server 2008R2</MadCap:xref>, or <MadCap:xref href="2008/Installing_the_Prerequisites_2008.htm">Installing the&#160;Prerequisites for Windows Server 2008</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2012InstallationGuide">See <MadCap:xref href="2012/Installing_the_Prerequisites_2012.htm">Installing the&#160;Prerequisites for Windows Server 2012</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2008R2InstallationGuide">See <MadCap:xref href="2008R2/Installing_the_Prerequisites_2008R2.htm">Installing the&#160;Prerequisites for Windows Server 2008R2</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="PulseGuides.2008InstallationGuide">See <MadCap:xref href="2008/Installing_the_Prerequisites_2008.htm">Installing the&#160;Prerequisites for Windows Server 2008</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Install a Microsoft SQL&#160;Server instance for the Pulse database. See <MadCap:xref href="Installing_SQL Server.htm">Install&#160;Microsoft SQL&#160;Server</MadCap:xref>.</li>
+                    <li>
+                        <p>Obtain the installation media and a license code from <MadCap:variable name="Other.CompanyName" />:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">CD </span>Insert the installation CD.</li>
+                            <li><span class="SetOffFirstLevel">Online </span>Download the setup program using the link that you received from <MadCap:variable name="Other.CompanyName" />. </li>
+                        </ul>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can obtain the Pulse license code from your <MadCap:variable name="Other.CompanyName" /> Sales Representative. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can create an unlimited number of Flare communities with your Pulse license code. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Pulse/PulseIISLoginAdministrator.flsnp" />
+                        <br />
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                    <li>
+                        <p>Right-click the Pulse setup program and select <span class="Emphasis">Install</span> from the context menu. This is the Windows Installer Package file named "SetupMadCapPulse.msi."</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_install_setup_program_install_menu.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if you are not logged in as an administrator</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>If the Install context menu command does not appear, you are not logged in as an administrator. You can use the steps below to run the program as an administrator:</p>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <p>Navigate to the Pulse setup program. This is the Windows installer package named "SetupMadCapPulse.msi."</p>
+                                    </li>
+                                    <li>Right-click the setup program and select <span class="Emphasis">Run as Administrator</span> from the context menu.</li>
+                                    <li>If prompted by Windows User Account Control (UAC), click <span class="Emphasis">Yes</span> or <span class="Emphasis">Continue</span>.</li>
+                                    <li>If you are logged in with a different account, you may be prompted to enter the user name and password for the administrator account.&#160;After entering the account information, click <span class="Emphasis">Yes</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>When the Welcome page of the MadCap Pulse Setup Wizard appears, click <span class="Emphasis">Next</span>.</li>
+                    <li>Select the <span class="Emphasis">I&#160;Agree </span>option to accept the terms of the license agreement. Then click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Select Installation Folder</span> page, browse to the desired installation folder or accept the default folder. Then click <span class="Emphasis">Next</span>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To view a list of drives where you can install Pulse and to see the available/required space on the drives, click the <span class="Emphasis">Disk Cost</span> button.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To make the Pulse application available to any user who logs into the server, click <span class="Emphasis">Everyone</span>. To make the program available only to the logged in user account, click <span class="Emphasis">Just Me</span>.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Confirm Installation</span> page, click <span class="Emphasis">Next</span>. A progress indicator shows the status of the process.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if you are prompted to install the visual c++ 2010 redistributable</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>If the Microsoft Visual C++ 2010 Redistributable is not installed on the server, a dialog will prompt you to install it. Here is how you proceed through the system check:</p>
+                                <ol class="LowerAlpha">
+                                    <li>Place a check mark in the <span class="Emphasis">I have read and accept license terms</span> box. Then click <span class="Emphasis">Install</span>. A progress indicator appears to show you the status.</li>
+                                    <li>
+                                        <p>If the following message appears, click <span class="Emphasis">Retry</span>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_install_msvisualc_retry.png" class="MaxWidth75Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                    <li>
+                                        <p>Depending on your system, one of the following occurs:</p>
+                                        <ul class="FirstLevel">
+                                            <li>If you do not have the correct distributable, you will be prompted to install it.</li>
+                                            <li>
+                                                <p>If the <MadCap:annotation MadCap:createDate="2013-11-01T10:55:08.3745684-07:00" MadCap:creator="snelson" MadCap:initials="SN" MadCap:comment="See Bug 51891. The documentation is correct as of today. However, if the bug is fixed, we may need to rewrite this procedure. " MadCap:editor="snelson" MadCap:editDate="2013-12-02T11:16:17.1047007-08:00">following message reappears</MadCap:annotation>, click <span class="Emphasis">Cancel</span>. In most situations, this means the setup program has detected a newer version of Visual C++&#160;on your system and is installing the required elements. The remaining steps show you how to proceed. </p>
+                                                <p>
+                                                    <img src="../../Resources/Images/pulse_install_msvisualc_cancel.png" class="MaxWidth75Percent" />
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>In the Installation Did Not Succeed dialog, click the <span class="Emphasis">log file</span> link. </li>
+                                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                    <li>
+                                        <p>In the Installation Log, place a check mark in the <span class="Emphasis">Verbose</span> box.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_install_msvisualc_verbose.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                                    <li>
+                                        <p>Scroll down the log and determine if the operating system is running a newer version of the redistributable:</p>
+                                        <p>
+                                            <img src="../../Resources/Images/pulse_install_msvisualc_newer.png" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are running a newer version of the redistributable, you do not need to install version 2010.</p>
+                                    </li>
+                                    <li>Close the Installation Log.</li>
+                                    <li>Click <span class="Emphasis">Finish</span> in the Installation Did Not Succeed dialog. </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>In the <span class="Emphasis">Installation Complete</span> page, click <span class="Emphasis">Close</span>.</li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">After completing the installation, use Windows Update to run any available .NET&#160;Framework updates on the server.  For information about Windows Update, visit this Microsoft link: <a href="http://windows.microsoft.com/en-us/windows/help/windows-update" target="_blank">http://windows.microsoft.com/en-us/windows/help/windows-update</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+        <h2 MadCap:conditions="General.Print">Activating Pulse</h2>
+        <p MadCap:conditions="General.Print">After successfully installing Pulse, you must activate the product.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to activate pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="General.OnlineLive">After successfully installing Pulse, you must activate the product.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Pulse/PulseIISLoginAdministrator.flsnp" /> </li>
+                    <li>
+                        <p>Launch the Pulse server application.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to launch the pulse server application</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">From the Desktop </span>Hold down the <span class="Emphasis">Shift</span> key and right-click to select <span class="Emphasis">MadCap Pulse</span> from a context menu. To use this method, you must be logged in as an administrator.</p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">On 64-bit Systems </span>Double-click the <span class="Emphasis">Pulse.exe</span> file.&#160;The path to this file is C:\Program Files\MadCap Software\MadCap Pulse\Pulse.app\Pulse.exe.</p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">On 32-bit Systems </span>Double-click the <span class="Emphasis">Pulse.exe</span> fie. The path to this file is C:\Program Files (x86)\MadCap Software\MadCap Pulse\Pulse.app\Pulse.exe.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>In the Trial/Activation dialog, do one of the following in the <span class="Emphasis">Provide Your License Code</span> field:</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>Type the license code that you received from <MadCap:variable name="Other.CompanyName" />.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p>Copy the license code from your download notification email and paste it into the field.</p>
+                                <p>A check mark appears when you enter a valid code.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_activate_license_code.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>. </li>
+                    <li>&#160;In the Enter Your Information page, type your name and email address in the fields provided. </li>
+                    <li>Click <span class="Emphasis">Next</span>. </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                    <li>
+                        <p>Select the desired activation method:</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Internet Activation </span>If you are connected to the Internet, select this option. If you are behind a firewall, you may need to enter your Proxy Server information. </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to activate with a proxy server</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ol class="LowerAlpha">
+                                            <li>If you are behind a firewall, place a check mark in the <span class="Emphasis">Use Proxy Server</span> box:</li>
+                                            <li>Enter the required proxy server and authentication information for your network.</li>
+                                            <li>Click <span class="Emphasis">Next</span>.</li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Manual Activation </span>To activate by email, select this option. Then enter the license code and machine ID. </li>
+                        </ul>
+                    </li>
+                    <li>Click <b>Next</b>.&#160;</li>
+                    <li>Copy and paste the activation code included in the email that was sent to the provided address.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">Next</span>.</p>
+                        <p>The system activates your product.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if you encounter activation issues </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>If you encounter an activation issue, an error message similar to the one below appears. Take note of the error message text as it can help you troubleshoot the issue.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_activate_network_external.png" class="MaxWidth50Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                <p>Possible issues that might be encountered during the activation process include:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Entering an Invalid License Code </span>Try re-entering your code to make sure it was typed correctly. If you have purchased other MadCap products, make sure the code you typed is for the Pulse product. </li>
+                                    <li><span class="SetOffFirstLevel">Entering a License Code that Has Already Been Activated </span>If Pulse has already been activated on another system, you will need to deactivate it before using the license code on a different system. </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Your System Cannot Communicate With the Activation Server </span>The system where you are installing Pulse is not able to communicate with the MadCap Activation Service. We suggest checking your network and Internet connection and after waiting a few minutes, try to activate the product again.</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">You Must Use a Proxy Server </span>If you are using the Internet Activation method, a notification message like the one below typically indicates that you will need to use a proxy server to access external URLs. To obtain your proxy server information, see your Network Administrator. Then try to activate your product again. If you experience an issue, the<MadCap:variable name="Other.CompanyName" /> knowledge base has a helpful tip about registration behind a proxy server: <a href="http://kb.madcapsoftware.com/default.htm#cshid=GEN1004Z" target="_blank">http://kb.madcapsoftware.com/default.htm#cshid=GEN1004Z</a></p>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+                <p>The Welcome page of the Pulse Configuration Wizard appears so you can configure Pulse for first time use. See <MadCap:xref href="Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

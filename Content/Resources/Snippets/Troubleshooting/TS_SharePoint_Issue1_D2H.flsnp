@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="451" MadCap:lastWidth="893">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Subheading">User Name or Password Incorrect</p>
+        <p>I uploaded documents to SharePoint using the Share button in Doc-To-Help, and the next time I opened the project and attempted to synchronize the documents, I received the message "The user name or password is incorrect."</p>
+        <p class="Subheading">Cause</p>
+        <p>If you change your SharePoint password after uploading documents, you will no longer be able to synchronize your documents.</p>
+        <p class="Subheading">Solution</p>
+        <p>You can fix this by clearing your Windows credentials. </p>
+        <ol>
+            <li>
+                <p>In Windows, go to <span class="Emphasis">Control Panel&gt;User Accounts and Family Safety&gt;Credential Manager</span>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This is the path for Windows 7. The path may be different depending on your operating system.</p>
+            </li>
+            <li>Find the SharePoint Server credentials and remove them. </li>
+            <li>Restart Doc-To-Help. </li>
+        </ol>
+        <p>You will be prompted to enter your new password the next time you try to connect to SharePoint.</p>
+    </body>
+</html>

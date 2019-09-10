@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2149" MadCap:lastWidth="1033" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsGettingStarted.flmsp');" MadCap:conditions="Products.Flare">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/GettingStarted.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Getting Started" />
+            <MadCap:keyword term="Cross-references;Linking:cross-references" />Inserting Cross-References</h1>
+        <p>It is fairly common to link to other topics in a project. One way to link between topics is a cross-reference. You may have noticed several cross-references in this tutorial already.</p>
+        <p>A benefit of using a cross-reference over a standard hyperlink is that cross-references use format commands to update the link automatically. Format commands allow you to tell the cross-reference to provide page number information, the title of the topic, or even a file path.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In this project and in the San Diego template, the default cross-reference style (MadCap:xref) creates context-sensitive cross-references. In web-based output, these cross-references look like a regular link. In print-based output, the text in the link is based on the relationship of the cross-reference and the target location (e.g., see "Topic" on page 26, see "Topic" on the next page).</p>
+                    <p>
+                        <img src="../../../../Resources/Images/tutorial/cross_references3.png" alt="" title="" class="MaxWidth80Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>We are going to add two cross-references to our project using two different methods:&#160;the standard method and the drag-and-drop method.</p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Insert Cross-References using the Standard method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Content Explorer, double-click <span class="Emphasis">SanDiegoCuisine.htm</span>. The topic opens in the XML&#160;Editor.</li>
+                    <li>At the end of the paragraph, type <span class="TypedEntry">See .</span> (Be sure to leave a space after <span class="TypedEntry">See</span> and then type a period.)</li>
+                    <li>Move your cursor back, and click just in front of the final period.</li>
+                    <li>Select the <span class="Emphasis">Insert</span> ribbon. In the <span class="Emphasis">Links </span>section, select <span class="Emphasis">Cross-Reference</span>. The Insert Cross-Reference dialog opens.</li>
+                    <li>In the <span class="Emphasis">Link to:</span> section, make sure <span class="Emphasis">Topic in Project</span> is selected from the drop-down.</li>
+                    <li>In the area below, you can select the topic to which you want to create a cross-reference. Select <span class="Emphasis">Food.htm</span>.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>At the bottom of the dialog is the <span class="Emphasis">Cross-Reference Properties</span> section. On the left side of this section you can select the  cross-reference style you want to use. You can also create a new style or edit an existing one. The right side shows you the format command and a preview of how the cross-reference appears in Flare. </p>
+                        <p>Scroll to the bottom of the <span class="Emphasis">XRef Class</span> field and notice the style called "MadCap:xref." This is the default cross-reference style and will be used by default when you insert a new cross-reference.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/cross_references2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">OK</span>. Flare creates a cross-reference to Food.htm using the MadCap:xref style. </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Insert Cross-References using the Drag-and-Drop method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Another common way to insert cross-references is using drag-and-drop. This method automatically uses the main MadCap:xref style, so if you don't need to choose a different style, this is a good way to insert a cross-reference.</p>
+                <ol>
+                    <li>
+                        <p>The SanDiegoCuisine.htm topic file should still be open in the XML&#160;Editor. We're going to add some text and another cross-reference after the "Food"&#160;cross-reference you already added. Your cursor should be placed between the cross-reference (the word "Food" and the period). You want it to display as a left bracket.</p>
+                        <p>Like this: </p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/cross_references4.png" alt="" title="" />
+                        </p>
+                        <p>Not like this:</p>
+                        <p> <img src="../../../../Resources/Images/tutorial/cross_references5.png" alt="" title="" /></p>
+                        <p>If necessary, you can press the right arrow twice on your keyboard to change a right bracket to a left bracket.</p>
+                        <p>Facing the bracket away from the cross-reference ensures that the new content you type will not become part of the link.</p>
+                    </li>
+                    <li>Once your cursor is facing the correct way, type <span class="TypedEntry"> and </span>. (Be sure to leave a space before and after <span class="TypedEntry">and</span>.)</li>
+                    <li>In the Content Explorer, select <span class="Emphasis">Beer.htm</span> and drag it after the word <span class="TypedEntry">and</span> (just before the period) in the XML Editor. </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>A red line appears when you can drop the topic. When the line is in the correct location, release the mouse button. Flare creates a cross-reference to Beer.htm using the MadCap:xref style. </p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/cross_references1.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about cross-references, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../Nav_Links/Cross_References/About_Cross_References.htm">About Cross-References</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Drop_Down_Text.htm">Inserting Drop-Down Text</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="3294" MadCap:lastWidth="1088" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[Snippets.Snippet2] " class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlTFS.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:pending changes;Source control:check out;Check out" />
+            <MadCap:concept term="FilterSourceControlTFS" />Viewing Files that are Checked Out<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Team Foundation Server</MadCap:conditionalText></h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/SourceControlViewFilesCheckedOutSummary.flsnp" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to view files that you and others have checked out—pending Changes window pane</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Changes</span> section select <span class="Emphasis">Pending Changes</span>. The Pending Changes window pane opens.</li>
+                    <li>
+                        <p>(Optional) You can use the <span class="Emphasis">Filter</span> field to limit the files that are displayed.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/UIElements/FilterFieldDescriptionList.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+                    <li>
+                        <p>(Optional) You can use the following toggle buttons in the local toolbar to limit the files that are displayed.</p>
+                        <table class="TableStyle-BasicAlternateRows" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0">
+                            <col style="width: 35pt;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col style="width: 100%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../../Resources/Images/show_check_outs_from_others_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">This filters the Pending Changes window pane to show or not show files that other users have checked out. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../../Resources/Images/show_out_of_date_files_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">This filters the Pending Changes window pane to show or not show files that are out of date. </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../../Resources/Images/source_control_deleted_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">This filters the Pending Changes window pane to show or not show files that have been deleted.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../../Resources/Images/source_control_locked_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">This filters the Pending Changes window pane to show or not show files that are locked.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Take note of the <span class="Emphasis">Status</span> and <span class="Emphasis">User</span> columns. (You may need to use the scroll bar to view these columns.)</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Status </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlFileListStatusDescription.flsnp" />
+                                </p>
+                                <p>
+                                    <ul class="SecondLevel">
+                                        <li><span class="SetOffSecondLevel">Checked Out </span>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlCheckedOutStatusDescription.flsnp" />
+                                        </li>
+                                        <li><span class="SetOffSecondLevel">Pending Add </span>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlPendingAddStatusDescription.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Linked_Topics/Adding_Files.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                                        <li><span class="SetOffSecondLevel">Out of Date </span>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlOutOfDateStatusDescription.flsnp" />
+                                        </li>
+                                    </ul>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteSourceControlRefreshStatusChecks.flsnp" />
+                                </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">User </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlFileListUserDescription.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to view files that are checked out by others—file list window pane</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">File List</span>.</li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+J</span>.</li>
+                        </ul>
+                        <p>The File List window pane opens.</p>
+                    </li>
+                    <li>
+                        <p>(Optional) You can use the <span class="Emphasis">Filter</span> field to limit the files that are displayed.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/UIElements/FilterFieldDescriptionList.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+                    <li>
+                        <p>Take note of the <span class="Emphasis">Status</span> and <span class="Emphasis">User</span> columns. (You may need to use the scroll bar to view these columns.)</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Status </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlFileListStatusDescription.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteSourceControlRefreshStatusChecks.flsnp" MadCap:conditions="Products.Flare" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">User </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlFileListUserDescription.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to View Files that you have checked out—Source Control Explorer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Pending Changes</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Pending Changes pane opens. Files that you have changed appear in the <span class="Emphasis"><MadCap:keyword term="Source control:include changes" />Included Changes</span> or <span class="Emphasis"><MadCap:keyword term="Source control:exclude changes" />Excluded Changes</span> section (depending on whether you are going to include or exclude them in your next check-in; see <MadCap:xref href="../Checking_In_Source_Control_Files_tfs.htm">Checking In Source Control Files</MadCap:xref>).</p>
+                    </li>
+                    <li>
+                        <p>Take note of the file's status. The status is written in brackets next to the file name (e.g., edit, add).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can click the refresh navigation button <img src="../../../Resources/Images/refresh_btn.png" class="ReduceButtonSize" /> in the Source Control Explorer  to make sure you have the most recent status for each file. Another option is that you can use a feature to automatically ping the source control repository periodically, thus refreshing this information frequently. However, you may experience slower performance with this automatic status update option set. See <MadCap:xref href="Enabling_Source_Control_Status_Checks_tfs.htm" >Enabling Source Control Status Checks</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to View Files that you have checked out</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Pane</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Pending Changes</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Pending Changes pane opens. Files that you have changed appear in the <span class="Emphasis"><MadCap:keyword term="Source control:include changes" />Included Changes</span> or <span class="Emphasis"><MadCap:keyword term="Source control:exclude changes" />Excluded Changes</span> section (depending on whether you are going to include or exclude them in your next check-in; see <MadCap:xref href="../Checking_In_Source_Control_Files_tfs.htm">Checking In Source Control Files</MadCap:xref>).</p>
+                    </li>
+                    <li>
+                        <p>Take note of the file's status. The status is written in brackets next to the file name (e.g., edit, add).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can click the refresh navigation button <img src="../../../Resources/Images/refresh_btn.png" class="ReduceButtonSize" /> in the Source Control Explorer  to make sure you have the most recent status for each file. Another option is that you can use a feature to automatically ping the source control repository periodically, thus refreshing this information frequently. However, you may experience slower performance with this automatic status update option set. See <MadCap:xref href="Enabling_Source_Control_Status_Checks_tfs.htm" >Enabling Source Control Status Checks</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/CheckingOutXLFs.flsnp" />
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/SKLFiles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control TFS" />
+        </p>
+    </body>
+</html>

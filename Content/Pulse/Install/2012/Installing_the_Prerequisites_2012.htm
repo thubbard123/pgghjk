@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="21" MadCap:lastHeight="5253" MadCap:lastWidth="964" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet1]exclude[Snippets.Snippet2]" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Before installing MadCap Pulse, ensure that you have installed all of the prerequisite software on the server(s)." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="MadCap Pulse:installation prerequisites;Installation:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Installation:prerequisites" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Installing the&#160;Prerequisites<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive"> for Windows Server 2012</MadCap:conditionalText></h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:installation prerequisites;Installation:Pulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Installation:prerequisites" MadCap:conditions="Products.Pulse" />Installing the Prerequisites for Windows Server 2012</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/InformationForNetworkAdministrators.flsnp" />
+        <p>To prepare for a Pulse installation, you need to prepare the systems that will be hosting the Pulse server application and the Microsoft SQL&#160;Server instance for the Pulse database. </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Before You Begin</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>before you begin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to download and install the prerequisites, you need an Internet connection. </p>
+                <p>You also need the ability to log on the server(s) as a user who has access permissions to install software and change configuration settings on the system. This requires you to have access credentials for one of these accounts:</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseServerAdminAccounts.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Installing the&#160;Prerequisites</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>installing the prerequisites</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>First, install Windows Server 2012 on the system acting as the Pulse web server and Pulse database server. Whether you are setting up a new server or just using an existing Windows server, you should also ensure that the operating system is updated with all of the latest service packs, critical patches, and security updates from Microsoft. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you are not familiar with how to install a server operating system, contact your Windows Administrator and/or Network&#160;Administrator for assistance. This will help to ensure that your server is in compliance with any security and network requirements specific to your environment.  See <MadCap:xref href="Pulse_System_Requirements_2012.htm">Pulse System Requirements for Windows Server 2012</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="HowToInstallIIS"></a>How to Install IIS</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/InstallIIS1.flsnp" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/InstallIIS2.flsnp" />
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/InstallIIS3.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">IIS&#160;is a built-in component of the Windows OS.  For Windows Server 2012,  the OS&#160;lets you install IIS&#160;8.0. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <ol>
+                            <li>
+                                <p>Log in to the system that you selected to be the Pulse web server using one of these accounts:</p>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/InstallIIS4.flsnp" />
+                            </li>
+                            <li>
+                                <p>Determine if IIS&#160;is installed on the operating system. To do this, press the <span class="Emphasis">Windows</span> key on your keyboard.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/windows_key.png" alt="" title="" /> </p>
+                                <p>Click the <b>Server Manager</b> tile to open the Server Manager.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_sql_2012_server_manager_tile.png" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                <p>If IIS is installed, this should be indicated on the Server Manager.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_sql_2012_iis_installed.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>&#160;If you need to install IIS on the server, add the <span class="Emphasis">Web Server (IIS)</span>&#160;role service:<MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:conditionalText MadCap:conditions="General.OnlineLive"><MadCap:dropDownHotspot>how to add the web server (iis) role</MadCap:dropDownHotspot></MadCap:conditionalText></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><ol class="LowerAlpha"><li><p>In the Server Manager, click <span class="Emphasis">Add roles and features</span>.</p><p><img src="../../../Resources/Images/pulse_sql_2012_iis_add_roles_and_features.png" class="MaxWidth100Percent" /></p><p>The Add Roles and Features Wizard opens.</p></li><li>Click <span class="Emphasis">Next</span>.</li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" /><li><p>Make sure <span class="Emphasis">Role-based or feature-based installation</span> is selected. Then click <span class="Emphasis">Next</span>.</p><p>The local server should be listed.</p><p><img src="../../../Resources/Images/pulse_sql_2012_iis_select_destination_server.png" class="MaxWidth100Percent" /></p></li><li>Click <span class="Emphasis">Next</span>. The list of roles is shown.</li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" /><li><p>Scroll down and place a check mark in the <span class="Emphasis">Web Server (IIS)</span>&#160;box.</p><p><img src="../../../Resources/Images/pulse_sql_2012_iis_select_server_roles.png" class="MaxWidth100Percent" /></p><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" /><p>A dialog opens.</p><p><img src="../../../Resources/Images/pulse_sql_2012_iis_select_server_roles_required_features.png" class="MaxWidth100Percent" /></p></li><li><p>Click <span class="Emphasis">Add Features</span>.</p><p>The Web Server (IIS) check box now has a check mark.</p></li><li><p>Click <span class="Emphasis">Next</span>.</p><p>By default you should see options for .NET 3.5 and .NET 4.5. Only the option for .NET 4.5 should be selected.</p></li><li><p>Scroll down and select <span class="Emphasis">Windows Identity Foundation 3.5</span>.</p></li><li>Click <span class="Emphasis">Next</span>.</li><li>Click <span class="Emphasis">Next</span> again.</li><li><p>Place a check mark next to all of the role services in the list below. When finished, click <span class="Emphasis">Next</span>.</p><p><img src="../../../Resources/Images/pulse_install_iis_select_role_services.png" class="MaxWidth100Percent" /></p><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" /><MadCap:dropDown class="FourthLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">list of role services</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p>Select the desired services using the recommended role services listed below. <span class="EmphasisItalic">Role services required by Pulse are marked with an asterisk (*).</span></p><table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0"><col class="TableStyle-BasicAlternateRows-Column-Regular" /><col class="TableStyle-BasicAlternateRows-Column-Regular" /><thead><tr class="TableStyle-BasicAlternateRows-Head-Header1"><th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1"><p class="TableTextHead">Role Services Category</p></th><th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1"><p class="TableTextHead">Select These Role Service Check Boxes</p></th></tr></thead><tbody><tr class="TableStyle-BasicAlternateRows-Body-LightRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows"><p class="TableTextEmphasis">Common HTTP Features</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows"><p class="TableText">*Static Content</p><p class="TableText">Default Document</p><p class="TableText">Directory Browsing</p><p class="TableText">HTTP Errors</p></td></tr><tr class="TableStyle-BasicAlternateRows-Body-DarkerRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows"><p class="TableTextEmphasis">Application Development</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows"><p class="TableText">*ASP.NET 4.5</p><p class="TableText">.NET Extensibility 4.5</p><p class="TableText">ISAPI&#160;Extensions</p><p class="TableText">ISAPI&#160;Filters</p><MadCap:dropDown MadCap:conditions="General.OnlineLive"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p>When you select ASP.NET 4.5, you will be prompted to install additional required services (this occurs only if the services are not already installed on the system), click <span class="Emphasis">Add Features</span>.</p><p><img src="../../../Resources/Images/pulse_sql_2012_iis_required_features_for_aspnet45.png" class="MaxWidth100Percent" /></p></div></MadCap:dropDownBody></MadCap:dropDown></td></tr><tr class="TableStyle-BasicAlternateRows-Body-LightRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows"><p class="TableTextEmphasis">Health and Diagnostics</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows"><p class="TableText">HTTP Logging</p></td></tr><tr class="TableStyle-BasicAlternateRows-Body-DarkerRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows"><p class="TableTextEmphasis">Security</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows"><p class="TableText">*Basic Authentication</p><p class="TableText">*Windows Authentication</p><p class="TableText">Request Filtering</p></td></tr><tr class="TableStyle-BasicAlternateRows-Body-LightRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows"><p class="TableTextEmphasis">Performance</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows"><p class="TableText">Static Content Compression</p><p class="TableText">Dynamic Content Compression</p></td></tr><tr class="TableStyle-BasicAlternateRows-Body-DarkerRows"><td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows"><p class="TableTextEmphasis">Management Tools</p></td><td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows"><p class="TableText">IIS Management Console</p></td></tr><tr class="TableStyle-BasicAlternateRows-Body-LightRows"><td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows"><p class="TableTextEmphasis">IIS 6 Management Compatibility</p></td><td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows"><p class="TableText">*IIS 6 Metabase Compatibility</p></td></tr></tbody></table></MadCap:dropDownBody></MadCap:dropDown></li><li>Confirm your selections and click <span class="Emphasis">Install</span>.</li><li>After the installation finishes, click <span class="Emphasis">Close</span>.</li></ol></MadCap:dropDownBody></MadCap:dropDown></li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

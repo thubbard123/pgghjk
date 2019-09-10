@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2100" MadCap:lastWidth="1203" class="" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:keyword term="Projects:creating" />
+            <MadCap:concept term="FilterProjects" />Creating Projects</h1>
+        <p>You probably already have a Flare project that you want to convert to Top Navigation output. For the purposes of this tutorial, we are going to create two Flare projects to illustrate how you might convert your project to one that produces Top Navigation output. Here are the projects we will create:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Legacy Project </span>We will create a Flare project that uses the older Tripane format, pretending it is your existing project that you want to convert. In an actual conversion process, you <span class="EmphasisItalic">will not</span> need to perform these steps, because you will just use your existing project.</li>
+            <li><span class="SetOffFirstLevel">Temp Project </span>We will also create a simple Flare project based on one of the Top Navigation templates. This will be a temporary project. Its only purpose is that we will use it to import into the legacy project the files that we need. In an actual conversion process, you <span class="EmphasisItalic">will</span> perform these steps.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create the Legacy Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select <span class="Emphasis">File&gt;New Project</span>. The Start New Project Wizard opens.</li>
+                    <li>In the <span class="Emphasis">Project name</span> field, name your project <span class="TypedEntry">Legacy</span>.</li>
+                    <li>
+                        <p>(Optional) In the <span class="Emphasis">Project folder</span> field, you can enter a location where you want to save your project. By default, projects are saved in your Documents&gt;My Projects folder.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_create_project1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>Under <span class="Emphasis">Factory Templates</span>, expand the <span class="Emphasis">Online &amp; Print</span> folder and select the <b>Tripane and PDF Advanced</b> template.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tripane_pdf_advanced.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>Click <span class="Emphasis">Finish</span>. The project is created and loaded into Flare.</p>
+                        <p>If you were to build and view the HTML5 target in this project right away, it would look something like this:</p>
+                        <p>
+                            <img src="../../../../Resources/Images/topnav_simple_example1.png" alt="" title="" class="MaxWidth90Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create the Temp Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a new session of Flare. This way you can have both projects open at the same time.</li>
+                    <li>Select <span class="Emphasis">File&gt;New Project</span>. The Start New Project Wizard opens.</li>
+                    <li>In the <span class="Emphasis">Project name</span> field, name your project <span class="TypedEntry">Temp</span>.</li>
+                    <li>In the <span class="Emphasis">Project folder</span> field, use the same folder where your legacy project is located.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>Because Flare's Top Navigation project templates contain some elements that we wanted to use (e.g., the look and feel of the Home page and the side context-sensitive menus), we will borrow those pieces and make changes to them in our legacy project. Under <span class="Emphasis">Factory Templates</span>, expand the <span class="Emphasis">Online</span> folder and select the <b>Top Navigation Advanced</b> template.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_create_projects1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>Click <span class="Emphasis">Finish</span>. The project is created and loaded into Flare.</p>
+                        <p>If you were to build and view the HTML5 target in this project right away, it would look something like this:</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_create_projects2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about using this wizard, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about using this wizard, see <MadCap:xref href="../../../../Projects_Starting/Creating_a_Project.htm">Creating a New Project</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Reorganizing_the_TOC.htm">Reorganizing the TOC</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

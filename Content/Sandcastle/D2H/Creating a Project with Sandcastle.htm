@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="814" MadCap:lastWidth="1159" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HSandcastle.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft Sandcastle" />Creating a Project with Sandcastle</h1>
+        <p>Using the New Project Wizard, you can create a new Sandcastle project.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create a New Sandcastle Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Create a new Doc-To-Help project using the New Project Wizard (<span class="Emphasis">File&gt;New Project</span>).</li>
+                    <li>Select <span class="Emphasis">Project&gt;Project Styles</span>. The Project Styles dialog opens.</li>
+                    <li>For paragraph styles Heading 1-Heading 5 on the left, change the <span class="Emphasis">Topic type</span> to <span class="Emphasis">Conceptual</span>.</li>
+                    <li>Select <span class="Emphasis">Project&gt;Plugins</span> and choose <span class="Emphasis">Create New Plugin Document</span> to add a new Sandcastle plug-in document.</li>
+                    <li> For the .xmlprop file in the XMLDocuments subdirectory, enter a name, such as <span class="TypedEntry">Reference</span>. </li>
+                    <li>From the Choose Plugin Type dialog, select the Sandcastle plugin type and click <span class="Emphasis">OK</span>. A new document (XMLDocuments\Reference) is created.</li>
+                    <li>Double-click <span class="Emphasis">Reference</span>. The <c1hjump>Properties for Generating Reference dialog opens</c1hjump>.</li>
+                    <li>Select the assemblies you want to document and the source XML comment file(s) for them. You can also specify the framework version, the types and members to include, and the syntax to include.</li>
+                </ol>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <ol start="9">
+                    <li>
+                        <p>In the Documents window pane, right-click on <span class="Emphasis">Reference</span>  and choose <span class="Emphasis">Generate</span>. This generates the Reference.xml file.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If any of the dependent properties are changed later, Doc-To-Help will automatically regenerate the reference section when the &#160;plug-in is closed, or when building the target.</p>
+                    </li>
+                    <li>
+                        <p>Open the file your narrative will reside in.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If it is not using the D2H_sandcastle_src.dotx template, you should apply it now. See <MadCap:xref href="Using Styles to Create Links.htm">Creating Links from Narrative Text to Reference Text</MadCap:xref>.</p>
+                    </li>
+                    <li>Add text.</li>
+                    <li>If you would like to create a link from the narrative document to the reference document, highlight the text to link and select the appropriate toolbar button or style.</li>
+                    <li>Select <span class="Emphasis">Home&gt;Select Target</span> to choose the target.</li>
+                    <li>Click the <span class="Emphasis">Rebuild Target</span> button. The target will be formatted with the MSDN reference style.&#160;</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

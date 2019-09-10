@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="2007" MadCap:lastWidth="1185">
+    <body>
+        <p>When you generate output, this is how precedence will work if you have multiple stylesheets.</p>
+        <ol>
+            <li>Local Stylesheet Associated with Topic
+</li>
+            <li>Local Stylesheet Associated with Master Page
+</li>
+            <li>Master Stylesheet (styles from only one master stylesheet can be used):
+<ol class="LowerAlpha"><li><span class="EmphasisItalic">Any</span> Target </li><li>Project</li></ol></li>
+        </ol>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Take a look at the previous example for precedence in the XML Editor before continuing with this example.</p>
+            <p>Let's say you add another stylesheet to your project to be used for a master page.</p>
+            <ul>
+                <li><span class="SetOffFirstLevel">LocalPurpleMasterPage </span>You set this stylesheet locally on a master page. And you tell Flare to use a purple font for the p style.</li>
+            </ul>
+            <p>
+                <img src="../../Images/stylesheet_precedence5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>You've also reset the "MasterMainTargetGreen" stylesheet on your primary target. So you now have all of the stylesheets from the previous example set as they were, and you've added one more local stylesheet to the mix. The master page content does not come into play when you're working in the XML&#160;Editor, but what happens in the output? For the primary target, it initially it would look like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence6.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>It's similar to what you saw in the previous example when looking at the XML Editor. But now you see that the regular paragraphs are purple. That's because the local stylesheet for the topic didn't specify a color, and the next stylesheet with precedence is the one used on the master page. You'll also see an extra paragraph at the bottom ("Master text"); this content is coming from the master page, not the topic.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>If you generate the secondary target, it would look like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>It's much like the other output, except the green text is now orange, because it's coming from the secondary target stylesheet, which has precedence over the master stylesheet at the project level.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>But if you remove the master stylesheet link from either of the targets, the output will look like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence8.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Now that the target master stylesheets are out of the way, Flare looks to the master project stylesheet, which uses blue for the second-level heading. Most of the regular paragraphs remain purple because they are coming from the local master page stylesheet, which has a higher precedence. However, notice the long sentence near the end of the topic. That sentence is blue because it is actually using a class of the main paragraph style (p.SpecialClass). This class is found in the master project stylesheet, but not in the local stylesheet for the master page. That's why it's blue instead of purple.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>If you remove the stylesheet link on the master page, the output will look like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence9.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Now we see more blue. </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlarePrintedOutputGuide" />
+            <p>And finally, if you remove the local stylesheet link on the topic, the output will look like this:</p>
+            <p>
+                <img src="../../Images/stylesheet_precedence10.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Now it's all about the project-level master stylesheet, because all of the others are out of the way. But the numbered list is still getting its look from the default factory stylesheet because the project-level master stylesheet doesn't tell Flare to change it in any way.</p>
+        </div>
+    </body>
+</html>

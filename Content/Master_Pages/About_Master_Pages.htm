@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);file.&quot;;IdentifierName.&quot;;allowed.);option...;default.);CorporateGlossary.&quot;;CorporateGlossary.flglo&quot;;MyGlossary.&quot;;change.&quot;;Snippets.&quot;;page...;system...;n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;h;hh" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2054" MadCap:lastWidth="884" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="A master page lets you apply common features such as breadcrumb links, mini-tocs, and footers across multiple pages in print-based and online outputs." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Master pages" />
+            <MadCap:concept term="MasterPages" />
+            <MadCap:concept term="FilterMasterPages" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Master Pages</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline_FM_Word.flsnp" MadCap:conditions="Products.Flare" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/MasterPages/MasterPageSummary.flsnp" />
+        </p>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/PageLayouts/PageLayoutsVsMasterPages.flsnp" /> See <MadCap:xref href="../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>.</p>
+        <p>Like all other files in Flare, a master page is an XML file. It has an <MadCap:keyword term="FLMSP file" />.flmsp extension. The traditional location to store it in the Content Explorer is in the Resources\MasterPages folder. However, you can store it anywhere in the Content Explorer that you like.</p>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example" MadCap:conditions="Products.FlareOnlineOnly">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you want every topic in your Help system to include a footer with contact information about your company. Rather than having to type this content or insert a snippet in every topic, you can create a master page and enter the footer in just that one location. Then you associate the master page with any of the targets in your project. The footer is automatically included at the bottom of every topic when you build and view any of those associated targets.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>steps for using master pages</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol MadCap:conditions="General.OnlineLive">
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:creating" />Create Master Page</span> This process might involve any of the following: adding the master page to the project, adding proxies to the master page, removing proxies from a master page, and adding header and footer content around a Body proxy. See <MadCap:xref href="Creating_Master_Pages.htm" MadCap:conditions="General.OnlineLive">Creating Master Pages</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Associate Master Page with the Appropriate Content</span> To make sure the master page is being displayed for the right content, you can do any of the following:<ul class="FirstLevel"><li><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:targets" />Associate Master Page with Target </span>If you want the same master page to be applied to all topics in the output, you can associate that master page with the target that you are building. This is useful, for example, if you want to create elements such as breadcrumbs, search bars, menus, mini-TOCs, header content, or footer content for your online outputs. See <MadCap:xref href="Associating_Master_Pages_with_Targets.htm" MadCap:conditions="General.OnlineLive">Associating Master Pages with Targets</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:topics;Topics:master pages" />Associate Master Page with Topics </span>You can associate a master page with individual topics, which is useful if you want some topics to use one master page and other topics to use a different master page. See <MadCap:xref href="Associating_Master_Pages_with_Topics.htm" MadCap:conditions="General.OnlineLive">Associating Master Pages with Topics</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:TOC" />Associate Master Page with TOC Entry </span>If you are creating Microsoft Word or Adobe FrameMaker targets, you can apply master pages to the different sections of the print-based output. For example, you might want to display different header content for your front matter, the various chapters in the manual, your index, and so on. To accomplish this, you can apply the appropriate master page to the outline TOC entry where a new section will start in the output. This is the most common approach when using master pages in print-based output. See <MadCap:xref href="../Output/Printed_Output/Creating_Printed_Output.htm" MadCap:conditions="General.OnlineLive">Creating Print-based Output</MadCap:xref> and <MadCap:xref href="../Output/Printed_Output/More_About_Printed_Output/Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm">Specifying Section Breaks and Master Pages</MadCap:xref>.</li></ul></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Proxies" />
+                    <MadCap:keyword term="Master pages:proxies" />proxies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">You can add a proxy to a master page to let Flare know you want to include a certain type of content in the master page. <MadCap:snippetText src="../Resources/Snippets/Proxies/ProxySummary.flsnp" /> See <MadCap:xref href="../Proxies/About_Proxies.htm" MadCap:conditions="General.OnlineLive">About Proxies</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../Resources/Snippets/MasterPages/DisableMasterPagesSummary.flsnp" /> See <MadCap:xref href="More_About_Master_Pages/Disabling_Use_of_Master_Pages.htm">Disabling the Use of Master Pages</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="MasterPages" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

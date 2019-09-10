@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="1164" MadCap:lastWidth="871" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareReviewsContributions.flmsp');">
+    <head><title></title>
+        <meta name="description" content="You can lock elements of a topic or snippet so it can no longer be edited. Locks can be applied to blocks of information at the paragraph-level." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Locks;Elements:locked" />
+            <MadCap:concept term="Locks" />
+            <MadCap:concept term="ReviewContributions;FilterReviewsContributions" />
+            <MadCap:concept term="FilterReviewsContributions" />Locking Elements</h1>
+        <p>You can lock areas within topics, such as paragraphs, so that they cannot be edited. You might take advantage of this feature, for example, when you are using <MadCap:variable name="Other.Product" />'s file review and contributions process<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Reviews_and_Contributions/About_Reviews_and_Contributions.htm">About  Reviews and Contributions</MadCap:xref>)</MadCap:conditionalText>. If you want a reviewer to see portions of a file, but you do not want that individual to alter them, you can lock those parts. After the file is returned, you can unlock those areas of the file. See <MadCap:xref href="Unlocking_Elements.htm">Unlocking Elements</MadCap:xref>.</p>
+        <p>When you mark areas in a file to be locked, the background of that area turns gray. However, you can turn this background on or off, depending on whether you want to see it when working on the file.</p>
+        <p>
+            <img src="../Resources/Images/lock_elements_example.png" class="MaxWidth75Percent" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareReviewsAndContributionsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to lock elements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p style="mc-locked: unlocked;">Place your cursor on a paragraph that you want to lock, or highlight multiple paragraphs.</p>
+                        <p class="note" style="mc-locked: unlocked;" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only entire blocks of content or paragraphs can be locked, not portions of paragraphs.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectReviewRibbon.flsnp" /> Select <span class="Emphasis">Lock&gt;Lock</span> to add a check mark.</p>
+                        <p>The paragraphs display a gray background, which will not show up in the output.</p>
+                        <p>If you want to hide this shading from the XML Editor, but still keep the locks on the paragraphs, select <span class="Emphasis">Review&gt;Lock&gt;Show Locked Elements</span> (in the ribbon view). You can also click the down arrow next to the <span class="Emphasis">Show tags</span> button <img src="../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> in the XML Editor. Then select <span class="Emphasis">Show Locked Elements</span>.</p>
+                        <p>Notice that you can still click in the paragraphs and edit the text. That is because the elements have only been marked for locking, but they have not yet been locked.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectReviewRibbon.flsnp" /> Select <span class="Emphasis">Lock&gt;Enable Locks</span> to add a check mark.</p>
+                        <p>The paragraphs marked for locking are now locked, and you cannot edit the text within them.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Annotations, which are used in the file review process, cannot be added to areas of a file that have been locked.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This feature is to be used for locking areas of a file, not the file itself.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>When you are ready to edit the text again, you can unlock the paragraphs. See <MadCap:xref href="Unlocking_Elements.htm">Unlocking Elements</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Locks;ReviewContributions" />
+        </p>
+    </body>
+</html>

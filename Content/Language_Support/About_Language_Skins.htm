@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="2814" MadCap:lastWidth="1091" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareLanguageSupport.flmsp');">
+    <head><title></title>
+        <meta name="description" content="A Language Skin in MadCap&#160;Flare gives you the opportunity to localize a Help system's user interface into different languages." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Language support:language skins;Language support:skins;Skins:language skins;Skins:language" />
+            <MadCap:concept term="LanguageSupport" />
+            <MadCap:concept term="FilterLanguageSupport" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Language Skins</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" />
+        <p>A regular skin controls the interface that users see for online outputs. They are stored in the Skins folder of the Project Organizer. By default, the text in these skins is in English, and they are used not only for editing text but also to control the look of the skin in the output (e.g., color, navigation elements). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Skins/About_Skins.htm">About Skins</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>On the other hand, a language skin can be used to display the interface in a specific language for online outputs. Language skins also control some text-based items, like cross-reference links. Language skins hold only text used for the output; they do not control the look of the output. To control that, you must also use a regular skin.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareLanguageSupportGuide,FlareGuides.FlareSkinsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide">Completed Versus User-defined Language Skins</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>completed versus user-defined language skins</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><MadCap:variable name="Other.Product" /> provides completed language skins for certain languages, such as French, German, and Spanish. These are languages that are already identified as being "localized" skins when you select the project or target language<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="Selecting_a_Language.htm">Selecting a Language</MadCap:xref>)</MadCap:conditionalText>. </p>
+                <p>For other languages, you can create language skins so that they can be applied to a project or target too (see <MadCap:xref href="Creating_User_Defined_Language_Skins.htm">Creating User-Defined Language Skins</MadCap:xref>). After you create a user-defined language skin, it too is identified as "localized." User-defined language skins are stored in the Advanced folder of the Project Organizer.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you select French as the project language. </p>
+                    <p>
+                        <img src="../Resources/Images/language_skin_example.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide" />
+                    <p>If you generate output, the French skin is automatically used, so the output looks something like this:</p>
+                    <p>
+                        <img src="../Resources/Images/language_skin_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide" />
+                    <p>Now suppose that you want to use Filipino as the project language. Notice in the example above that Filipino does not have a "Yes" next to it. This means that you need to create a language skin for it from the Add File dialog (<span class="Emphasis">Project&gt;New&gt;Advanced&gt;Add Language Skin</span>). </p>
+                    <p>
+                        <img src="../Resources/Images/language_skin_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>In the Add File dialog, you can select a language to use for your language skin.</p>
+                    <p>After you do this, the new language skin opens in the Language Skin Editor, which you can use to edit text labels and make other changes (see <MadCap:xref href="Editing_Language_Skins.htm">Editing Language Skins</MadCap:xref>).</p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide" />
+                    <p>After you are finished, you can select the language for the project or a specific target. When you do this, you'll notice that the language now has a "Yes" next to it in the Localized Skins column.</p>
+                    <p>
+                        <img src="../Resources/Images/language_skin_example4.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareLanguageSupportGuide">Tasks for Using Language Skins</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>tasks for using language skins</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps involved with language skins.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">(Optional) Create </span>If you are using a language for which <MadCap:variable name="Other.Product" /> has already provided a completed language skin, you do not need to complete this step. However, if you want to use a language that does not have default translations, or if you want to edit the default translations, you can create a custom language skin. See <MadCap:xref href="Creating_User_Defined_Language_Skins.htm">Creating User-Defined Language Skins</MadCap:xref>.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">(Optional) Edit </span>If you create a new user-defined language skin, you need to edit it to make sure it provides all the correct translations. You can also open a completed language skin to edit the translated text if you want. See <MadCap:xref href="Editing_Language_Skins.htm">Editing Language Skins</MadCap:xref>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to make other changes to a skin to affect how it looks in the output, you can edit a regular skin in the Project Organizer<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Skins/Editing_Skin_Settings.htm">Editing Skin Settings</MadCap:xref>)</MadCap:conditionalText>.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Select </span>You need to tell <MadCap:variable name="Other.Product" /> which language you are working with so that it knows which skin to use in the output. This can be done when you are first creating the project. You can also change the language for the entire project later by using the Project Properties option. You can also override the project language and set it for the individual targets or topics. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareLanguageSupportGuide"> See <MadCap:xref href="Selecting_a_Language.htm">Selecting a Language</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSkinsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">Important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/MultipleLanguageSkins.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/DisablingLanguageSkinTargets.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteLanguageSkinsOtherOutputs.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/DefaultLanguage.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="LanguageSupport" />
+        </p>
+    </body>
+</html>

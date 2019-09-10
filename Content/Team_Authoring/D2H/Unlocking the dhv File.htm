@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="634" MadCap:lastWidth="1245" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Team authoring" />Unlocking the DHV File</h1>
+        <p>Most team authoring actions create a temporary lock in the repository for the duration of the action. This is done to prevent conflicts between different team members who are using the repository simultaneously. This temporary lock is created in a special file, &lt;project_name&gt;.dhv, located in the D2HTeamInfo folder created by Doc-To-Help. Normally, these locks are only temporary. However, if a team authoring action is not normally closed due to an unexpected crash or power failure, it may leave the project permanently locked in the repository. If this happens, no team members will be able to use the repository, and Doc-To-Help will display errors saying the repository is busy doing other tasks, although no author is actually doing anything with the repository. This is a very rare occurrence, but it may happen. If it does, the administrator can use C1D2HTeamAdmin.exe to remove the lock from the &lt;project_name&gt;.dhv file. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Unlock the DHV File in the Repository</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Double-click <span class="Emphasis">C1D2HTeamAdmin.exe</span>. See <MadCap:xref href="Team Authoring Administrative Functions.htm">Team Authoring Administrative Functions</MadCap:xref>.</li>
+                    <li>Select <span class="Emphasis">File&gt;Open Team Project</span> to connect to the repository. The Load Remote Project dialog opens. </li>
+                    <li>Select the <span class="Emphasis">Repository Type</span>. (If necessary, enter your login credentials.)</li>
+                    <li>Select a team project (or from the drop-down choose <span class="Emphasis">Select Team Project</span>  to browse for a project) and click <span class="Emphasis">OK</span>. </li>
+                    <li>On the left click the <span class="Emphasis">Version info</span> node and on the right select the <span class="Emphasis">&lt;project name&gt;.dhv</span> file.</li>
+                    <li>On the toolbar click the <span class="Emphasis">Unlock</span> button or from the right-click menu choose <span class="Emphasis">Unlock</span>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can use the Unlock All button on the toolbar to release all locks from all files, but this should be done with extreme caution.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For other tasks, see <MadCap:xref href="Team Authoring Administrative Functions.htm" >Team Authoring Administrative Functions</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+    </body>
+</html>

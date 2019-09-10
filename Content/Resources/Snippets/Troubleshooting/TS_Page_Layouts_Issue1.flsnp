@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="624" MadCap:lastWidth="681">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Page layouts at the target or project level do not work</p>
+        <p class="Subheading">Cause</p>
+        <p>This issue may be caused by having a page layout set on a TOC entry (which is at a lower level than the target and project) that is overriding the page layouts set at higher levels. Page layouts set closer to content override settings further away from the content. </p>
+        <p class="Subheading">Solutions</p>
+        <p>Remove the page layout set on the TOC entry. To accomplish this, perform the following steps.</p>
+        <ol>
+            <li>Open the TOC.</li>
+            <li>Select the TOC entry.</li>
+            <li>In the local toolbar, click <img src="../../Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog opens.</li>
+            <li>Select the <span class="Emphasis">Printed Output</span> tab.</li>
+            <li>
+                <p>In the <span class="Emphasis">Page Layout</span> field, select <span class="Emphasis">Default</span>.</p>
+                <p>
+                    <img src="../../Images/TS_page_layout_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+        <p>The page layout set on the TOC level will be removed, allowing the page layout set at the target or project level to be used. See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>.</p>
+    </body>
+</html>

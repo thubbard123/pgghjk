@@ -1,0 +1,1047 @@
+/*<meta conditions="Products.Contributor" />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+}
+
+html.HomePage
+{
+	mc-master-page: url('../MasterPages/HomePageContributor.flmsp');
+	mc-community-features: disabled;
+}
+
+/* Hyperlinks*/
+
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Generic Classes*/
+
+.centered-text
+{
+	text-align: center;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.whiteheader
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.tab-bar .nav-search .search-bar
+{
+	display: none;
+}
+
+.inner-wrap .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/* Headings*/
+
+h1
+{
+	font-size: 2.75em;
+}
+
+h3
+{
+	font-size: 1.6785em;
+}
+
+h3.SubCenter
+{
+	text-align: center;
+	margin-bottom: 1.2em;
+}
+
+/* Images*/
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+img.Slideshow
+{
+	border-style: none;
+	margin-bottom: 15px;
+}
+
+/* Paragraphs*/
+
+p
+{
+	color: #5a5a5a;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+p.Copyright
+{
+	font-size: 0.9em;
+	text-align: left;
+	color: #888888;
+	line-height: 1.6em;
+	margin: 0 0 10px 0;
+}
+
+p.TOC2
+{
+	margin-left: 20px;
+	display: none;
+}
+
+/* Responsive Header Styles*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Home Page Button Styles */
+
+.button
+{
+	cursor: pointer;
+	background-color: transparent;
+	width: 200px;
+	height: 35px;
+	font-weight: bold;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.button.black
+{
+	border: solid 2px black;
+	color: black;
+}
+
+.button.black:hover
+{
+	background-color: #ccc;
+}
+
+.button a
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/* Home Page Content Section */
+
+#content-section
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e6e6e6;
+	margin-top: -50px;
+}
+
+#content-section h3
+{
+	font-weight: normal;
+}
+
+.right-section div.button-group,
+.left-section div.button-group
+{
+	margin-top: 20px;
+}
+
+#content-section .left-section
+{
+	padding-right: 20px;
+}
+
+#content-section .right-section
+{
+	padding-left: 20px;
+}
+
+.left-section .left-content,
+.right-section .right-content
+{
+	height: 270px;
+}
+
+#content-section .right-section .table-images:first-of-type
+{
+	margin-bottom: 20px;
+}
+
+#content-section.mc-blurb p
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#content-section.mc-blurb .mc-bullets
+{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content-section.mc-blurb .mc-bullets > li
+{
+	color: #5a5a5a;
+	list-style-image: url('../Images/Bullet1Green.png');
+	font-size: 14px;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	background-image: url('../Images/hero_image_contributor.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	height: auto;
+	padding-bottom: 150px;
+}
+
+div.topichero h1
+{
+	font-size: 3.6em;
+	margin-top: 1.11em;
+	margin-bottom: 0.5em;
+	line-height: 100%;
+}
+
+div.topichero h3
+{
+	font-size: 1.8em;
+	margin-bottom: 80px;
+	line-height: 100%;
+}
+
+.search,
+.search-bar
+{
+	margin: 0 auto;
+}
+
+/* Home Page Slide Show */
+
+div.slidingshow
+{
+	margin-top: -79px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+.mc-wrapper .mc-caption
+{
+	background: none;
+}
+
+MadCap|slideshow
+{
+	border-style: none;
+	box-shadow: none;
+}
+
+MadCap|slideshowCaption
+{
+	background: none;
+	color: #000000;
+	padding: 0px;
+	padding-top: 0px;
+}
+
+/* Home Page Video Section */
+
+.video-section
+{
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.video-section img
+{
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.video-wrapper
+{
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Home Master Page Footer */
+
+.footer
+{
+	background-color: #292928;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+.footer > div.outer-row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+/* Mad Cap Proxies */
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+/*Responsive Layout Styles.*/
+
+div.HomeHeroSection	/*Controls the look of the Hero section at the top of the Home page.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeHeroSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeHeroSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeHeroSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeHeroSection > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter	/*Controls the look of the footer in the Home master page.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeMasterPageFooter > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection	/*Controls the look of the overall Welcome and PDF section on the Home page.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(2)
+{
+	width: 41.667%;
+	margin-left: 0%;
+}
+
+.right-content
+{
+	margin-bottom: 0;
+}
+
+.left-content
+{
+	margin-bottom: 0;
+}
+
+div.ReviewWorkflowSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ReviewWorkflowSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ReviewWorkflowSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ReviewWorkflowSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.ReviewWorkflowSection > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.ReviewWorkflowSection > div:nth-child(2)
+{
+	width: 66.667%;
+	margin-left: 8.3333%;
+}
+
+div.HomePDFSectionContributor	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFSectionContributor::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFSectionContributor::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFSectionContributor > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.HomePDFSectionContributor > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 16.667%;
+}
+
+div.HomePDFSectionContributor > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.HomePDFSectionContributor > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSectionContributor > div:nth-child(4)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.HomePDFSectionContributor > div:nth-child(5)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.HomeVideoSectionContributor	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeVideoSectionContributor::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeVideoSectionContributor::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeVideoSectionContributor > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeVideoSectionContributor > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooterContributor	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooterContributor::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooterContributor::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooterContributor > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeMasterPageFooterContributor > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooterContributor > div:nth-child(2)
+{
+	width: 41.667%;
+	margin-left: 8.3333%;
+}
+
+div.HomeMasterPageFooterContributor > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+html
+{
+	mc-community-features: disabled;
+}
+
+/* Medium Layout */
+
+@media tablet
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.left-section div.button-group > div
+	{
+		margin-bottom: 20px;
+	}
+
+	div.slidingshow
+	{
+		width: 100%;
+	}
+
+	/* Responsive Layout Styles */
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 50%;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 66.667%;
+		margin-left: 8.3333%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 16.667%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(4)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(5)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSectionContributor > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(2)
+	{
+		width: 41.667%;
+		margin-left: 8.3333%;
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 907px)
+{
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 58.333%;
+		margin-left: 16.667%;
+	}
+}
+
+/* Small Layout */
+
+@media mobile
+{
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 100%;
+	}
+
+	div.topichero h1
+	{
+		font-size: 2em;
+	}
+
+	div.topichero h3
+	{
+		font-size: 1.2em;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+
+	.footer-links,
+	p.Copyright,
+	.footer-icons
+	{
+		text-align: center;
+	}
+
+	.video-section
+	{
+		padding-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.video-section .columns
+	{
+		padding: 0;
+	}
+
+	/* Responsive Layout Styles */
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	.left-section div.button-group
+	{
+		margin-top: 0px;
+	}
+
+	div.HomeWelcomeButtons > div
+	{
+		margin-top: 0px;
+	}
+
+	.left-content
+	{
+		margin-bottom: 0px;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 75%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 16.667%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(2)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(3)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(4)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSectionContributor > div:nth-child(5)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSectionContributor > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 40px;
+	}
+
+	div.HomePDFSectionContributor > div
+	{
+		
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	div.HomeMasterPageFooterContributor > div:nth-child(3)
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 634px)
+{
+	div.ReviewWorkflowSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 66.667%;
+		margin-left: 8.333%;
+	}
+}
+
+@media only screen and (max-width: 489px)
+{
+	div.ReviewWorkflowSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 58.333%;
+		margin-left: 16.667%;
+	}
+}
+
+@media only screen and (max-width: 400px)
+{
+	div.ReviewWorkflowSection > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+
+	div.ReviewWorkflowSection > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 25%;
+		margin-bottom: 10px;
+	}
+}
+

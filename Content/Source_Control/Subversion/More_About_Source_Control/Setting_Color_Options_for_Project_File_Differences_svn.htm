@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet1 or Snippets.Snippet3]exclude[Snippets.Snippet2 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="11" MadCap:lastHeight="1050" MadCap:lastWidth="999" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlSubversion.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterColor" />
+            <MadCap:keyword term="Source control:differences;Color:source control;Differences:source control" />
+            <MadCap:concept term="FilterSourceControlSubversion" />Setting Color Options for Project File Differences<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Subversion</MadCap:conditionalText></h1>
+        <p>If you are using <MadCap:variable name="Other.Product" />'s integrated source control features, you can view differences between files in various ways. One way is to view file differences between a local version of a <MadCap:variable name="Other.Product" /> project and the source control version. </p>
+        <p> When viewing file differences between a local version of a <MadCap:variable name="Other.Product" /> project and the source control version, you can select color options to display the files. Color coding makes it easier to discern where differences between files occur. </p>
+        <p MadCap:conditions="Products.Flare">For more information see <MadCap:xref href="Viewing_Differences_in_Source_Control_Files_svn.htm">Viewing Differences in Source Control Files</MadCap:xref> and <MadCap:xref href="../About_Apache_Subversion.htm">About Apache Subversion</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>By default the files that are included only in your local copy are displayed as green in the Differences Editor, and the files that are included only in source control are displayed in red. You can use this dialog to change the local-only files to blue and the source control–only files to yellow.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set color options for project file differences</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlWindowPaneSelectFile.flsnp" />
+                        </p>
+                        <p>OR</p>
+                        <p>Open a file.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Show Differences</span>. </p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, <MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Source Control Explorer, Pending Changes window pane, or File List open, right-click the file you want to view and select <span class="Emphasis">Source Control&gt;Show Differences</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the <MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Source Control Explorer or File List open, right-click the file you want to view and select <span class="Emphasis">Source Control&gt;Show Differences</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the File List, select the file(s) you want to view. In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Show Differences</span>.</li>
+                        </ul>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlDifferencesEditorOpens.flsnp" />
+                        </p>
+                    </li>
+                    <li>In the local toolbar of the Differences Editor, click <span class="Emphasis">Options</span>. The File Differences dialog opens.</li>
+                    <li>Change the text or background color for any of the difference types. To do this, simply click in the appropriate <span class="Emphasis">Text</span> or <span class="Emphasis">Background</span> cell and select <span class="Emphasis">Pick Color</span>. In the Color Picker dialog, choose the new color.</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Subversion" />
+        </p>
+    </body>
+</html>

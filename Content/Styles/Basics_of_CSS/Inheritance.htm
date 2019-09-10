@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3614" MadCap:lastWidth="570" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:keyword term="Styles:inheritance;Inheritance" />
+            <MadCap:concept term="StyleBasics" />Inheritance</h1>
+        <p MadCap:conditions="">One of the features of cascading stylesheets (CSS) that makes it much more powerful than other style systems is inheritance. This is simply the idea that elements in your document can inherit the style settings from other elements. This occurs when one style element is added within another, therefore creating a parent-child relationship. The child inherits all of the style settings that the parent has, unless you override those settings on the child. This can be a very powerful feature because it allows you to set properties on a parent element once rather than setting the same thing on all of its children.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                    <p MadCap:conditions="">Let's say you want all of your block-level elements to use Arial as the font type. Rather than setting Arial on all of the various styles (h1, p, div, ul, li), you can set it on the body style. That way, the setting will "trickle down" automatically to all of the child elements. </p>
+                    <p MadCap:conditions="">
+                        <img src="../../Resources/Images/inheritance.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="">After some time you might decide that you want to continue using Arial for all of those elements except the p styles. In that case, you can simply set the other font type on the p style. The rest of the elements will continue to use Arial.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareWebHelp">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>see the movie</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://youtu.be/1PXaQlxjQCc" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Inheritance from Outside Your Project</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Inheritance from Outside Your Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">If you do not set values for certain styles in your stylesheet, those values are inherited from elsewhere.</p>
+                <p MadCap:conditions="">First, there are several application stylesheets within the folder where you installed Flare. The stylesheets that you add to your projects inherit the style definitions that are written in those external application stylesheets. But anything you set in your project stylesheet takes precedence over the same styles that might be found in an application stylesheet.</p>
+                <p MadCap:conditions="">Taking it one step beyond that, if values for a particular style are not explicitly set in either your project stylesheet or in one of Flare's application stylesheets, the default values from the browser are used.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">Inherited Styles Identified in the Stylesheet Editor</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Inherited Styles Identified in the Stylesheet Editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/InheritedStylesGray.flsnp" />
+                <p>
+                    <img src="../../Resources/Images/inherited_styles_gray1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <p>Also, if you hover over an inherited style, Flare displays the path to the stylesheet from which the style is inherited.</p>
+                <p>
+                    <img src="../../Resources/Images/inheritance2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/inheritance3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="General.Future">
+                    <MadCap:snippetText src="../../Resources/Snippets/Styles/ViewInheritedStylesheet.flsnp" MadCap:conditionTagExpression="exclude[Snippets.Snippet1 or Snippets.Snippet2] " />
+                    <MadCap:annotation MadCap:createDate="2016-08-04T14:37:44.7435341-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="View Inherited Stylesheet Via Double-Click" MadCap:editor="KSchneider" MadCap:editDate="2016-08-04T14:37:51.9181130-07:00">xxx</MadCap:annotation>
+                </p>
+                <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.Future">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:annotation MadCap:createDate="2016-08-04T14:37:55.9213619-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="View Inherited Stylesheet Via Double-Click" MadCap:editor="KSchneider" MadCap:editDate="2016-08-04T14:37:56.8671603-07:00">Example</MadCap:annotation>
+                        </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/ViewInheritedStylesheetExample.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StyleBasics" />
+        </p>
+    </body>
+</html>

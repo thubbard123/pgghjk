@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="1294" MadCap:lastWidth="994" MadCap:conditions="Products.Analyzer">
+    <head><title></title>
+        <meta name="description" content="Use MadCap Analyzer to view a list backlinks (inbound links) to a page. This lets you view the incoming links and fix them before publishing a page." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="Links" />
+            <MadCap:concept term="Topics" />
+            <MadCap:concept term="FilterLinks" />
+            <MadCap:keyword term="Linking:incoming;Incoming links" />Viewing Incoming Links</h1>
+        <h1 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Linking:incoming;Incoming links" />Incoming Links</h1>
+        <p>You can <MadCap:snippetText src="../../Resources/Snippets/NavLinks/IncomingLinksWindowSummary.flsnp" /></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to view incoming links to a file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a project.</li>
+                    <li>Open any window pane that contains a "File" column (e.g., Broken Links window pane, Variable Suggestions window pane, Style Suggestions window pane). The majority of window panes in Analyzer include this column.</li>
+                    <li>Click on a row in the window pane<MadCap:conditionalText MadCap:conditions="Products.Analyzer"> that contains the "File" column</MadCap:conditionalText>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Analysis</span> section, select <span class="Emphasis">Browse Links</span>.<p MadCap:conditions="Products.Flare">If any links are shown (pointing to the file that is currently active in the interface), clicking this button will change the window pane to show the incoming links for that file.</p><MadCap:dropDown MadCap:conditions="Products.Flare" class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">Example</p><p>Let's say you are currently viewing the incoming links for a file called "Topic1," and one of the files in the list is "Topic2." That means the Topic2 file contains a link pointing to Topic1. Now, let's say that you click the Browse Links button and the window pane changes, showing a file called "Topic3." This means that the Topic3 file contains a link that points to Topic2.</p></div></MadCap:dropDownBody></MadCap:dropDown><p>The Incoming Links window pane is populated with information about the links pointing to the selected file row.</p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteOpeningTopicsIncomingOutgoingLinks.flsnp" /></MadCap:dropDownBody></MadCap:dropDown></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DragDividerToSeeMore.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">File </span>Displays the name of the other file that contains the link pointing to the file in question.</li>
+                            <li><span class="SetOffFirstLevel">Link Text </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/NavLinks/LinkTextDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Link Tag </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/NavLinks/LinkTagDescription.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Bookmark </span>Displays the name of the bookmark (if any) contained in the link pointing to the file.</li>
+                            <li><span class="SetOffFirstLevel">Extension </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/NavLinks/ExtensionDescription.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/UIElements/PageNavButtons.flsnp" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../../Resources/Images/page_nav_buttons_example2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Links;Topics" />
+        </p>
+    </body>
+</html>

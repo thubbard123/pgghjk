@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1236" MadCap:lastWidth="923" MadCap:ignoredWords="cond" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSearch.flmsp');">
+    <head>
+        <meta name="description" content="Learn how to enable the partial word search capabilities for your online Help projects. This lets end users enter part of a word as a search query." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Search:partial-word;Partial-word search" />
+            <MadCap:concept term="FilterSearch" />
+            <MadCap:concept term="ConfiguringSearchDatabase" />Enabling Partial-word Search</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Search:partial-word;Partial-word search" />Enabling Partial-word Search</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTML5_WebHelp_WHMobile_WHPlus_WHAIR.flsnp" />
+        <p>For some online outputs, you can provide end users with partial-word search capabilities. This lets users type part of a word or any string (including numbers), press <span class="Emphasis">Enter</span> or click the <span class="Emphasis">Search</span> button, and see search results matching those characters.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Partial search for: <span class="TypedEntry">cond</span></p>
+                    <p>Search finds matches in "conditioning" and "second."</p>
+                    <p>
+                        <img src="../../Resources/Images/partial_word_search2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <p>This feature is not limited to words only. It works with any string (including numbers) that starts and ends with a space.  For example, let's say that the IP&#160;address numbered "192.168.10.1" is included in one of your topics. To find the topic that includes the match, simply type <span class="TypedEntry">10.1</span> in the search field.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable partial-word search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Project Organizer, open the target.</li>
+                    <li>Select the <span class="Emphasis">Performance</span> tab.</li>
+                    <li>In the <span class="Emphasis">Search Database</span> section, place a check mark in the <span class="Emphasis">Enable Partial Word Searching</span> box.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Minimum Word Size</span> field, enter the number of characters a user must type before seeing results.&#160;The minimum value is 3.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The higher the minimum word size that you enter, the smaller the search database.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Partial-word search is not supported in server-based output.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Enabling partial-word search in client-based outputs increases the size of the search database included with your target output. It also increases the amount of time it takes to build and publish the output. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ConfiguringSearchDatabase" />
+        </p>
+    </body>
+</html>

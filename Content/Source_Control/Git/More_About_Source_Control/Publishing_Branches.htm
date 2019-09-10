@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Lingo" MadCap:lastBlockDepth="12" MadCap:lastHeight="2852" MadCap:lastWidth="676" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:branch;Branch:publish" />
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />Publishing Branches<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/PublishingBranchesIntro.flsnp" />
+        </p>
+        <p>You can publish branches in the following ways:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Automatic </span> If your current branch is unpublished, pushing, pulling, or synchronizing automatically publishes the branch. See <MadCap:xref href="../Pushing_Files_to_a_Remote.htm">Pushing Files to a Remote Repository</MadCap:xref>, <MadCap:xref href="../Pulling_Files_from_a_Remote.htm">Pulling Files from a Remote Repository</MadCap:xref>, and <MadCap:xref href="../Synchronizing_Files.htm">Synchronizing Source Control Files</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Manual </span> Select an unpublished branch in the Source Control Explorer <MadCap:conditionalText MadCap:conditions="Products.Analyzer">in Flare </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">in Lingo</MadCap:conditionalText> and manually publish it. You can select any branch, even if it is not your current branch.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Manually Publish Branches</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li MadCap:conditions="Products.Lingo">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Pane</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Branches</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Branches pane" />Branches pane opens. In the pane, you can see your current branch, as well as lists of your published and unpublished branches.</p>
+                    </li>
+                    <li>
+                        <p>Select the unpublished branch you want to publish. </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>
+                        <p>Click <span class="Emphasis">Publish Branch</span>. </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_publish.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_publish_flare.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>(Optional) If you did not commit your files before publishing the branch, a dialog asks if you want to commit your files. Click <span class="Emphasis">Yes</span> to continue. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You must commit <span class="EmphasisItalic">all</span> modified files before you can publish the branch.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p MadCap:conditions="">The Select Remote for Publish dialog opens. From the <span class="Emphasis">Remote</span> drop-down, select the repository you want to push to.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:conditions="" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have pending changes that you are committing while publishing your branch, you will see the Select Remote for Push dialog. However, the steps for pushing while publishing a branch are the same. See <MadCap:xref href="../Pushing_Files_to_a_Remote.htm">Pushing Files to a Remote Repository</MadCap:xref> for additional information.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p MadCap:conditions="">(Optional) To add or remove a remote repository, click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. The Remote Repositories dialog opens.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Add a <MadCap:keyword term="Source control:remote repository" />Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p MadCap:conditions="">
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/RemoteRepositoryAdd1.flsnp" />
+                                        </p>
+                                        <p class="note" MadCap:conditions="" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to obtain this information from your system administrator.</p>
+                                    </li>
+                                    <li>
+                                        <p MadCap:conditions="">
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/RemoteRepositoryAdd2.flsnp" />
+                                        </p>
+                                        <p MadCap:conditions="">
+                                            <img src="../../../Resources/Images/remote_repository_add.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p class="note" MadCap:conditions="" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Repository names cannot include spaces.</p>
+                                    </li>
+                                    <li>
+                                        <p MadCap:conditions="">
+                                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/RemoteRepositoryAdd3.flsnp" />
+                                        </p>
+                                        <p MadCap:conditions="">
+                                            <img src="../../../Resources/Images/remote_repository_available.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" MadCap:conditions="" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Remove a <MadCap:keyword term="Source control:remote repository" />Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li MadCap:conditions="">From the <span class="Emphasis">Remote Repository</span> list, select the repository you want to delete.</li>
+                                    <li MadCap:conditions="">Click <span class="Emphasis">Remove</span>. The repository is removed from the list of available repositories.</li>
+                                    <li>
+                                        <MadCap:snippetBlock src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" MadCap:conditions="" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li MadCap:conditions="">
+                        <p>In the Select Remote for Publish dialog, click <span class="Emphasis">OK</span>. <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlLoginDialogSimple.flsnp" /> Your branch is published and added to the <span class="Emphasis">Published Branches</span> list.</p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_publish2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_publish2_flare.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

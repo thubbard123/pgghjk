@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Capture" MadCap:lastBlockDepth="11" MadCap:lastHeight="2730" MadCap:lastWidth="994">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Profiles:applying;Profiles:images;Images:profiles" />
+            <MadCap:concept term="Profiles" />Applying Profiles to Images</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Profiles/ApplyProfilesSummary.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say that you have created two profiles—ProfileA and ProfileB.</p>
+                    <p>Suppose that some of the settings for Profile A are: red border, scale background to a setting of .8, and a shade factor of 3. On the other hand, the only unique setting for ProfileB is torn edges on each side.</p>
+                    <p>If you initially use ProfileA when you capture an image, that image will automatically have the qualities associated with that profile (i.e., red border, scaled to a setting of .8, and shade factor of 3). Later, perhaps you change your mind and want to use the settings from ProfileB for that image. Instead of recapturing the image, you can simply apply ProfileB to the image. That way, you do not need to manually remove the old settings and specify the torn edges. When you apply the profile to the image, all of the settings are changed automatically.</p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you have created hundreds of images and inserted them into a MadCap Flare project. Later, you might decide that you want all of those images to have a 1-pixel black border. Rather than opening each image and adding the border manually, you can add a profile with border settings, create a batch, and choose to apply that profile to the images in your folder. </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureCreatingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Profiles:applying" />how to apply a profile to a single image</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Open the image and do one of the following, depending on the part of the user interface you are using.</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> Select the <span class="Emphasis">Edit</span> Ribbon. In the <span class="Emphasis">Profile</span> section, click <img src="../Resources/Images/apply_profile_btn_ribbon.png" alt="" title="" class="ReduceButtonSize" />.</p>
+                                <p MadCap:conditions="General.OnlineLive">
+                                    <MadCap:snippetBlock src="../Resources/Snippets/UIElements/SwitchBetweenRibbonsMenusToolbars.flsnp" />
+                                </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Tool Strip </span>Select <span class="Emphasis">File&gt;Apply Profile</span>.</li>
+                            <li><span class="SetOffFirstLevel">Local Toolbar</span> In the bottom toolbar of the Capture Editor, click <img src="../Resources/Images/apply_profile_btn.png" class="ReduceButtonSize" />.</li>
+                        </ul>
+                        <p>The Apply Profile dialog opens.</p>
+                    </li>
+                    <li>In the drop-down, select the profile that you want to use.</li>
+                    <li>
+                        <MadCap:keyword term="Profiles:shapes" />If the profile contains shapes, select any of the following options to determine how those shapes are handled.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Do not apply the profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> Even if the profile contains shapes, they will not be added to the image. Any shapes currently on the image will be left alone.</MadCap:expandingBody></MadCap:expanding></li><li><span class="SetOffFirstLevel">Add profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. Any shapes currently on the image will be left alone.</MadCap:expandingBody></MadCap:expanding></li><li><span class="SetOffFirstLevel">Replace profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. If the image currently contains any shapes that were previously added from a profile, those shapes will be removed. However, other shapes currently on the image that were previously added manually (rather than via a profile) will be left alone.</MadCap:expandingBody></MadCap:expanding></li><li><span class="SetOffFirstLevel">Replace all shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. Any shapes currently on the image will be removed (whether those shapes were previously added from a profile or manually).</MadCap:expandingBody></MadCap:expanding></li><li><span class="SetOffFirstLevel">Put profile shapes beneath other shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> By default, profile shapes are added to the top layer of the image when the process takes place. However, you can select this option to specify that the profile shapes are added to the bottom layer instead.</MadCap:expandingBody></MadCap:expanding></li></ul></li>
+                    <li>Click <span class="Emphasis">Apply</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureCreatingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Profiles:batch;Batch:profiles" />how to apply a profile to many images in a batch</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        </p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon</span> Select <span class="Emphasis">File&gt;New&gt;New Batch Job</span>. </li>
+                            <li><span class="SetOffFirstLevel">Tool Strip </span>Select <span class="Emphasis">File&gt;New Batch Job</span>.</li>
+                        </ul>
+                        <p>A new batch file <MadCap:keyword term="CAJOB file" />(CAJOB file) opens in the Batch Job Editor.</p>
+                    </li>
+                    <li>Next to the <span class="Emphasis">Folder to scan</span> field, click <span class="Emphasis">Browse</span>.</li>
+                    <li>Find and select the folder containing the images that you want to work with. <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /></li>
+                    <li>(Optional) If you want all images in subfolders to be scanned as well, click <span class="Emphasis">Recursive</span> so that it contains a check mark.</li>
+                    <li>
+                        <p>(Optional) You can use the <span class="Emphasis">Include Pattern</span> field to select the type of image files to be included in the scan. Click the down arrow and select the file type.</p>
+                        <p>For example, you might have a folder containing both BMP and GIF files. If you want only the GIF files to use the profile settings, you can specify this.</p>
+                        <p> You can also type the file types into the field manually, separating each of them with a semi-colon (e.g., *.gif; *.jpg).</p>
+                        <p>If you want to scan all types of files, select <span class="Emphasis">All Images</span>.</p>
+                    </li>
+                    <li>
+                        <p>Click in the <span class="Emphasis">Profile To Apply</span> field and select the profile that you want to use.</p>
+                        <p>In addition to all of your custom profiles listed, you can also select "No Profile." This option is useful if you are a newly registered user and want to remove the trial-mode watermarks on all of your images.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Profiles:shapes" />(Optional) If the profile contains shapes, you can make a selection in the <span class="Emphasis">Replace Shapes Option</span> area to determine how those shapes are handled.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Do not apply the profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> Even if the profile contains shapes, they will not be added to the image. Any shapes currently on the image will be left alone.</MadCap:expandingBody></MadCap:expanding></li>
+                            <li><span class="SetOffFirstLevel">Add profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. Any shapes currently on the image will be left alone.</MadCap:expandingBody></MadCap:expanding></li>
+                            <li><span class="SetOffFirstLevel">Replace profile shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. If the image currently contains any shapes that were previously added from a profile, those shapes will be removed. However, other shapes currently on the image that were previously added manually (rather than via a profile) will be left alone.</MadCap:expandingBody></MadCap:expanding></li>
+                            <li><span class="SetOffFirstLevel">Replace all shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> If the profile contains shapes, they will be added to the image. Any shapes currently on the image will be removed (whether those shapes were previously added from a profile or manually).</MadCap:expandingBody></MadCap:expanding></li>
+                            <li><span class="SetOffFirstLevel">Put profile shapes beneath other shapes</span> <MadCap:expanding><MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead><MadCap:expandingBody> By default, profile shapes are added to the top layer of the image when the process takes place. However, you can select this option to specify that the profile shapes are added to the bottom layer instead.</MadCap:expandingBody></MadCap:expanding></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>(Optional) You have the option of specifying an output folder where the images are saved as a result of the process. To do this, next to the <span class="Emphasis">Output Folder</span> field, click <span class="Emphasis">Browse</span>. Then find and select the folder containing the images that you want to work with, and click <span class="Emphasis">OK</span>. </p>
+                        <p>If you do not specify an output folder, the images are saved in the same folder that you selected to scan.</p>
+                    </li>
+                    <li> Select the <span class="Emphasis">Apply</span> tab.</li>
+                    <li>Click <span class="Emphasis">Scan</span>. The folder is scanned for images that match your settings. When it is finished, the image names are listed on the tab.</li>
+                    <li>Click <span class="Emphasis">Apply Profile</span>. The profile you selected is applied to all of the images.</li>
+                    <li>Click <span class="Emphasis">Save Files</span>. The files are saved with the new profile settings.</li>
+                    <li>(Optional) If you want to reuse the batch in the future, you can save it. To do this, press <span class="Emphasis">CTRL+S</span> or select <span class="Emphasis">File&gt;Save</span>to save your work. Then find a folder where you want to store the batch file, provide a name for it, and click <span class="Emphasis">Save</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Profiles" />
+        </p>
+    </body>
+</html>

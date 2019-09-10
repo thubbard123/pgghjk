@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="1868" MadCap:lastWidth="1020" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Themes;NetHelp" />Using the Settings List Editor for Localization and More</h1>
+        <p>The Settings List Editor manages all of the settings for your theme customizations and localization strings. </p>
+        <p>When you make theme customizations—add a logo to the header, rearrange the toolbar buttons, etc.—those changes are saved to the settings.xml file in the theme settings. You can reuse this file in other themes.&#160; </p>
+        <p>Doc-To-Help includes 14 localization files that can be used to change all of the text strings within a NetHelp theme. Once a configuration file is chosen, all of the strings will be displayed within the Theme Designer and can be edited if desired. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Localization Files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <table border="0" style="mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">English = settings.en-us.xml </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextEmphasis">Swedish = settings.sv-se.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Danish = settings.da-dk.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Hebrew = settings.he-il.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">German = settings.de-de.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextEmphasis">Chinese = settings.zh-cn.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Spanish = settings.es-es.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Japanese = settings.ja-jp.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Norwegian = settings.nb-no.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextEmphasis">Italian = settings.it-it.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Portuguese = settings.pt-pt.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">French = settings.fr-fr.xml</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableTextEmphasis">Russian = settings.ru-ru.xml</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableTextEmphasis">Dutch = settings.nl-nl.xml</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>Doc-To-Help merges the theme settings and the target settings together when your target is built. </p>
+        <p>By saving the theme settings separately from the target settings, you can make your main customizations in one place (the theme settings) and keep your localizations in another (the target settings). Then you can build different versions of the same theme in different languages.</p>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>You can add a logo to your theme, rearrange the buttons, and hide the breadcrumbs. This will be saved to settings.xml in the theme settings.</p>
+                    <p>Then you can add the French localization file (settings.fr-fr.xml) to your target settings.</p>
+                    <p>You can then build an English version and a French version of the same theme. </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Manage Theme Settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Open the Theme Designer and click the <span class="Emphasis">Wrench</span> button in the upper-right. </p>
+                        <p>
+                            <img src="../Resources/Images/D2H/theme_settings_wrench.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The Settings List Editor opens. This editor has two sections: Theme Settings and Target Settings. </p>
+                        <p>
+                            <img src="../Resources/Images/D2H/theme_target_settings.png" height="252" class="MaxWidth100Percent" />
+                        </p>
+                        <p>This means you can manage the settings for your theme and target separately. Plus, you can keep several theme and target settings in your list.</p>
+                        <p>Doc-To-Help merges all the files together when you build your target. </p>
+                    </li>
+                    <li>To add or remove settings files, click in the appropriate area and use the <span class="Emphasis">+</span> or <span class="Emphasis">–</span> buttons. You can rearrange the files by using the up and down arrows. If you make changes to one of the default configuration files using the Theme Designer, a copy of that file will be created in your theme’s folder. This serves two purposes. First, the changes won’t affect other themes; second, the edited settings file you create can be imported into other themes.</li>
+                    <li>(Optional) You can also create new files if you wish. After clicking the <span class="Emphasis">+</span> button, in the Add Settings dialog choose <span class="Emphasis">Add new file</span>.</li>
+                    <li>Select the settings file you would like to use and/or edit in the Theme Designer and click <span class="Emphasis">OK</span>. That file name is displayed at the top of the Settings Editor.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Settings List Editor can store a "chain" of files for both your theme and for the current target. It merges the files from start to end, with the latest file overriding each previous file. If the settings file you are editing is not the last in the chain, what you see in the Theme Preview will not be the same as what you see in the Settings Editor, because the Settings Editor displays the settings up to the current point in the chain, whereas the Theme Preview will reflect the entire chain. If you choose the last file in the chain, the Theme Preview will match the Settings Editor.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Edited configuration files are stored in the \\My Doc-To-Help Projects\Doc-To-Help\Themes\NetHelp 2.0\Themes\name of new theme folder. These files can be used in other themes. Just copy them into the folder of the new theme and add them using the Settings List Editor.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

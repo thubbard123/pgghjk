@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="2305" MadCap:lastWidth="911" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Contributor" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles:disabling" />
+            <MadCap:concept term="FilterStyles" />Disabling and Hiding Styles</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>You can <MadCap:snippetText src="../../Resources/Snippets/Styles/DisableStylesSummary.flsnp" /></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>
+                        <img src="../../Resources/Images/disable_styles_example1.png" class="MaxWidth40Percent" />
+                    </p>
+                    <p>
+                        <img src="../../Resources/Images/disable_styles_example2.png" class="MaxWidth40Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to disable styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>In the local toolbar, click the <span class="Emphasis">Options</span> button and select <span class="Emphasis">Disable Styles</span>. The Disable Styles dialog opens.</li>
+                    <li>On the right side of the dialog, select the styles that you want to disable. You can hold down the <span class="Emphasis">SHIFT</span> or <span class="Emphasis">CTRL</span> key and click, selecting a range of styles or many individual styles not next to each other.</li>
+                    <li>Click <img src="../../Resources/Images/left_double_arrow2_btn.png" class="ReduceButtonSize" />. The selected styles are moved to the left side of the dialog.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The style classes are removed from view in the stylesheet.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Hide styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you don't want a style to be visible in the interface, but you also don't want to completely disable it, you can choose to hide it instead. This is slightly different from disabling a style because it is still accessible from the stylesheet, but it is still hidden in the interface.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>On the left side of the dialog, select the style that you want to hide.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand the <span class="Emphasis">Unclassified</span> group. <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                    <li>
+                        <p>Locate the <span class="Emphasis">mc-hidden</span> property. From the drop-down to the right of the property, select <span class="Emphasis">hidden</span>. </p>
+                        <p>To unhide a hidden property, select <span class="Emphasis">unhidden</span>.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warnings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">Even if you have some styles that you never modify, you may want to avoid disabling them in your stylesheet. The reason for this is that disabling a style in a stylesheet also disables its use in the rest of the interface. <MadCap:conditionalText MadCap:conditions="Products.Flare">For example, let's say that you have inserted several images in your project. When you do this, an &lt;img&gt; tag is used. Therefore, although you may never edit the properties for the img style, you still require it in order to insert images in the future. Otherwise, features such as the option to insert images become disabled in the interface. The bottom line is that you should use caution when disabling styles, making sure that you truly will not need to use those styles.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Styles" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

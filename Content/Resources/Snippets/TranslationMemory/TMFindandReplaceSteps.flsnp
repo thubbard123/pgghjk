@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1220" MadCap:lastWidth="841" MadCap:conditions="Products.Lingo">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p><span class="SetOffFirstLevel">Ribbon </span>
+                            <MadCap:snippetText src="../UIElements/SelectResourcesRibbon.flsnp" /> In the <span class="Emphasis">Translation Memory</span> section, select <span class="Emphasis">Edit TM</span> and choose the database. </p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Translation Editor</span> In the <span class="Emphasis">TM Suggestions</span> area at the bottom of the editor, right-click on the segment and from the context menu select <span class="Emphasis">Edit Text</span>.</li>
+                </ul>
+                <p>The Translation Memory Editor opens.</p>
+            </li>
+            <li>
+                <p>In the local toolbar of the editor, click <img src="../../Images/TM_metadata_cleanup_btn.png" alt="" title="" class="ReduceButtonSize" />. From the drop-down, select <span class="Emphasis">TM—Find and Replace</span>.</p>
+                <p>The TM Cleanup: Find and Replace dialog opens.</p>
+            </li>
+            <li>
+                <p>In the dialog, enter the word you want to find in the TM, and the word you want to replace it with. Then use the drop-downs to filter the segments in the TM so you only replace words in the appropriate location. <MadCap:snippetText src="MetadataFilters.flsnp" /></p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoWhatsNewGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say your client changed her terminology and you need to make a global change to a word in your documentation. You decide to search for words in a specific project for a specific client.</p>
+                    <p>Enter the word you want to find, the word you want to replace it with, and set your filters.</p>
+                    <p>
+                        <img src="../../Images/TM_metadata_find1.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                    <p>When the filter processes, the word is replaced in your translation memory.</p>
+                    <p>
+                        <img src="../../Images/TM_metadata_find2.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoWhatsNewGuide" />
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Making changes using Find and Replace updates the word you are searching for, but it does not update the corresponding translation or source word. Remember to make any necessary changes to the corresponding source or target segment as well, so your translations are accurate. </p>
+                            <p>For example, if your client changes the word "airplane" to "bus," and you make this change in the source segment but forget to update the target segment, the TM will not know that the word is incorrect and will show this as a match in future translations.</p>
+                        </div>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Any changes you make to the TM&#160;only affect future translations. They do not replace any previous translations you have done.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ol>
+    </body>
+</html>

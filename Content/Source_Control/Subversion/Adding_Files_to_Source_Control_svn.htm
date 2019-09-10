@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet3]exclude[Snippets.Snippet1 or Snippets.Snippet2 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="11" MadCap:lastHeight="1467" MadCap:lastWidth="1114" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlSubversion.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Subversion" />
+            <MadCap:concept term="FilterSourceControlSubversion" />
+            <MadCap:keyword term="Source control:adding files;Multi-authoring" />Adding Files to Source Control<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Subversion</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" />&#160;</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add files to source control</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol MadCap:conditions="Products.Flare">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Add</span>. </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click the file you want to add and select <span class="Emphasis">Source Control&gt;Add</span>.</li>
+                        </ul>
+                        <p>The Commit dialog opens. The selected files are listed with check boxes next to them.</p>
+                    </li>
+                </ol>
+                <ol MadCap:conditions="Products.Flare" start="2">
+                    <li>(Optional) <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCommitCommentOption.flsnp" /></li>
+                    <li>(Optional) If you want to see all files with pending changes (rather than only those you selected), click <img src="../../Resources/Images/show_all_pending_changes_btn.png" class="ReduceButtonSize" />.</li>
+                    <li>Make sure to click the check box next to each file you want to commit so that it contains a check mark.</li>
+                    <li>Click <span class="Emphasis">Commit</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add files to source control—Source Control Explorer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol MadCap:conditions="Products.Flare">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis"><MadCap:keyword term="Source Control Explorer:Pending Changes pane" />Pending Changes</span>.</p>
+                        <p>The Pending Changes pane opens. Files that will be committed are listed under <span class="Emphasis"><MadCap:keyword term="Source control:include changes" />Included Changes</span>, and files that will not be committed are listed under <span class="Emphasis"><MadCap:keyword term="Source control:exclude changes" />Excluded Changes</span>. You can identify newly added files because they say <span class="Emphasis">[add]</span> next to the file name.</p>
+                        <p>
+                            <img src="../../Resources/Images/source_control_explorer_new_vs_edit_svn.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>(Optional) <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlExplorerAddCommentCommit.flsnp" /></li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" />
+                <ol MadCap:conditions="Products.Flare" MadCap:continue="true">
+                    <li>(Optional) If you want to select the files or folders that you include in the commit, right-click a file or folder and select one of the following options from the context menu.<ul MadCap:conditions="Products.Flare"><li><p><span class="SetOffFirstLevel">Exclude </span> Excludes the selected file from the commit</p></li><li><p><span class="SetOffFirstLevel">Exclude Unselected </span> Excludes all unselected files from the commit</p></li><li><p><span class="SetOffFirstLevel">Include </span> Includes the selected file in the commit</p></li><li><p><span class="SetOffFirstLevel">Include Unselected </span> Includes all unselected files in the commit</p></li></ul></li>
+                    <li>
+                        <p>Click <span class="Emphasis">Commit</span> to commit all of the files in the <span class="Emphasis">Included Changes </span> list. The Messages pane opens and displays a list of files that were committed.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Adding files from other areas of the <MadCap:variable name="Other.Product" /> interface (e.g., Pending Changes window pane, Source Control ribbon) will only add new files. However, if you use the Source Control Explorer to commit your files, it will commit all of your pending changes: both new files and modified files. If you do not want to include all of your files in the commit, you can right-click them and select <span class="Emphasis">Exclude</span>. Files you exclude will not be committed.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Subversion" />
+        </p>
+    </body>
+</html>

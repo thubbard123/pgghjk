@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:lastBlockDepth="12" MadCap:lastHeight="1323" MadCap:lastWidth="830" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTermbase.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Add a termbase in MadCap Lingo. Learn the steps for creating a project termbase and how to manage the termbase." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Termbases:adding;Databases:termbase" />
+            <MadCap:concept term="Termbase" />
+            <MadCap:concept term="FilterTermbase" />Adding Termbases</h1>
+        <p>Adding a termbase is different from creating a termbase (see <MadCap:xref href="Creating_Termbases.htm">Creating Termbases</MadCap:xref>). Whereas creating a termbase generates a new, empty termbase, adding a termbase takes a termbase that already exists on your computer, network, or server and adds it to the list of available termbases in Lingo so that you can associate it with your Lingo project. This is useful if you had removed a termbase from the list of available termbases, but and need to use it again.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTermbaseGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add a termbase</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the <span class="Emphasis">Termbase</span> section, select <span class="Emphasis">Choose Termbase</span>.</p>
+                        <p>The Manage Termbases dialog opens.</p>
+                    </li>
+                    <li>In the local toolbar, click <img src="../Resources/Images/add_termbase_small_btn.png" alt="" title="" class="ReduceButtonSize" />.</li>
+                    <li>
+                        <p>From the submenu, select one of the following:</p>
+                        <ul class="FirstLevel">
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">Local </span> Select this option if you want to select a termbase that resides on your computer or network. Next to the Select existing Termbase field, click <b>Browse</b>. A dialog opens where you can locate the termbase. Click <b>Open</b>.</li>
+                            <li MadCap:conditions="">
+                                <p><span class="SetOffFirstLevel">Server </span> Select this option if you want to use a termbase that resides on your SQL Server. This opens a dialog with fields for the name, server, and security information related to the database.</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Termbase/SQLCompatability.flsnp" />
+                            </li>
+                        </ul>
+                        <p>For a server termbase, locate the termbase you want to use on the server. Next to the <span class="Emphasis">Termbase server</span> field, click <span class="Emphasis">Browse</span>. The Select Database dialog opens, displaying a list of usable servers after Lingo scans your network. On the right side of the dialog, available databases display. Select the database you want to use, then click <span class="Emphasis">OK</span>. The name of the database appears in the <span class="Emphasis">Termbase name</span> field.  In the <span class="Emphasis">Authentication</span> section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary). If you elect to use <MadCap:keyword term="Windows Integrated Security" />Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided. If you want to create a new server termbase instead of using an existing termbase, click <span class="Emphasis">Create New Server Termbase</span>. See <MadCap:xref href="Creating_Termbases.htm">Creating Termbases</MadCap:xref>.</p>
+                    </li>
+                    <li>After completing the fields in the appropriate dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>(Optional) If you want to select a termbase from the list of termbases already added to Lingo, select the <span class="Emphasis">Use</span> check box next to the termbase you want to add to your project.</li>
+                    <li>
+                        <p>(Optional) Select a rank for each enabled termbase. From the <span class="Emphasis">Rank</span> drop-down, select a numeric value for each enabled termabse, where <span class="Emphasis">1</span> is the preferred termbase. You do not have to select a value; unranked termbases will take lowest priority.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only rank enabled termbases. The Rank drop-down is disabled if a termbase is not selected for the project.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="">After adding a termbase, you need to add terms to it. See <MadCap:xref href="Adding_Terms_to_Termbases.htm">Adding Terms to Termbases</MadCap:xref>.</p>
+                <p MadCap:conditions="">You can also import a TermBase eXchange (TBX) file into the termbase. See <MadCap:xref href="Importing_TBX_Files.htm">Importing TBX Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Termbase" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="963" MadCap:lastWidth="968" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareLanguageSupport.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Workspace:language;Language support:interface" />
+            <MadCap:concept term="LanguageSupport" />
+            <MadCap:concept term="FilterLanguageSupport" />Selecting a Language for the Interface</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/LanguageSupport/SelectUILanguage.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to select a language for the flare interface</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Launch <MadCap:variable name="Other.Product" />. The Select UI Language dialog opens. </p>
+                        <p>If you have previously selected to disable this dialog when launching <MadCap:variable name="Other.Product" />, you can overrule that selection. To do this:</p>
+                        <ol style="list-style-type: lower-alpha;" class="LowerAlpha">
+                            <li>Select <span class="Emphasis">File&gt;Options</span>.<p>The Options dialog opens.</p></li>
+                            <li>Select the <span class="Emphasis">General</span> tab.</li>
+                            <li>Click the check box <span class="Emphasis">Show Select UI Language Dialog on Startup</span>.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Launch <MadCap:variable name="Other.Product" /> again.</li>
+                        </ol>
+                    </li>
+                    <li value="2">Select the language that you want to move in the list. (The language displayed highest in the list will be the first choice in displaying the interface. If that language is not available for a particular element, the next language in the list is used, and so on.)</li>
+                    <li>Click the <span class="Emphasis">Up</span> or <span class="Emphasis">Down</span> button until that language is in the proper location in the list.</li>
+                    <li>Repeat steps 2 and 3 until the list displays the languages in the order that you want.</li>
+                    <li>(Optional) If you do not want the dialog to display the next time you launch <MadCap:variable name="Other.Product" />, click <span class="Emphasis">Show this dialog on startup</span> to remove the check mark. If you later decide that you do want to see this dialog when launching <MadCap:variable name="Other.Product" />, open the Options dialog and click the box to open this dialog on startup.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />&#160;<MadCap:variable name="Other.Product" /> is displayed according to your language selections.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareLanguageSupportGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The MadCap Help Viewer also supports multiple languages in the interface. Therefore, if you build and distribute DotNet Help, users will be able to select from the available languages to view the interface for your online Help.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="LanguageSupport">
+            </MadCap:conceptLink>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="1001" MadCap:lastWidth="672" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects;Modular projects" />Creating a Child Project </h1>
+        <p>Child projects are tied together with the hub project (see <MadCap:xref href="Creating a Hub Project.htm">Creating a Hub Project</MadCap:xref>). There are no special mappings in child projects, just a few settings and other options that need to be handled. You can create as many child projects as needed.</p>
+        <p>Before creating your child projects, set up your file system for the entire modular system. See <MadCap:xref href="About Modular Projects.htm#FileOrganization">File Organization</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set Up a Child Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Create your child project. The project name should contain no spaces. </li>
+                    <li>Build the output for the child project. This will generate the project's topics and allow you to create cross-project links.</li>
+                    <li>In Doc-To-Help, select the <span class="Emphasis">Home</span> tab. At the bottom of the <span class="Emphasis">Target</span> group, click <img src="../../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>
+                        <p>On the left, choose the target (can be HTML Help, NetHelp, or Eclipse Help).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The hub project, and all of the child projects, must use the same target. </p>
+                    </li>
+                    <li>If you are using HTML Help, in the <span class="Emphasis">Advanced</span> section, clear the <span class="Emphasis">Binary index</span> and <span class="Emphasis">Binary table of contents</span> check boxes.</li>
+                    <li>Build the output.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Cross-project links may be created between child projects. See <MadCap:xref href="CrossProject Linking.htm" >Cross-Project Linking</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Child projects using automatic context ID creation need to have offsets added. See <MadCap:xref href="Modifying Context IDs in Modular Projects.htm" >Modifying Context IDs in Modular Projects</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Glossaries may be used in Modular hub projects, but HTML Help targets require a few adjustments to avoid duplicate items. See <MadCap:xref href="Modular Output Glossaries.htm" >Modular Output Glossaries</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">One issue with modular HTML Help is that the child projects do not contain the entire table of contents (TOC). The Modular TOC Utility removes the TOC limitation by automatically adding the full TOC to each Help file in the modular project. See <MadCap:xref href="Modular TOC Utility.htm" >Modular TOC Utility</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+    </body>
+</html>

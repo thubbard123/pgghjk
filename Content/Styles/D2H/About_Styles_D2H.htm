@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1492" MadCap:lastWidth="1159" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Styles</h1>
+        <p>To control the look (and sometimes behavior) of your content, you will use styles associated with Word and Doc-To-Help. Local formatting (changing the look of content directly on the text) is also possible, but not recommended. Styles are better because they let you control the look of content in many places by changing a single style property. There are a few ways to use styles and some important concepts to know when you are working on a Doc-To-Help project.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide">Word Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Word Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are used to working in Microsoft Word, you know that there are several styles already in place for you to use, in addition to custom styles that you can create. </p>
+                <p>Doc-To-Help uses Word's built-in heading styles (Heading 1, 2, 3, 4, 5, 6) to do the following automatically:</p>
+                <ul>
+                    <li>Divide your document into topics in online outputs.</li>
+                    <li>Create your table of contents (TOC). If desired, you can edit your TOC, creating a customized TOC for each target.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../TOCs/D2H/Creating a Table of Contents.htm">Creating a Table of Contents</MadCap:xref> and <MadCap:xref href="../../Interface/UI_Elements/D2H/Contents pane.htm">Contents Window Pane</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Create "See Also" links. For example, Heading 1 styles automatically become parent topics, and all of the Heading 2 styles under it are its children (subtopics). Parent topics automatically include "See Also" links to subtopics.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Nav_Links/D2H/Managing Related Topics.htm">Managing Related Topics</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide"> See the online Help or the <span class="EmphasisItalic">Documents, Templates, and Content Guide</span>.</MadCap:conditionalText></li>
+                </ul>
+                <p>Therefore, you need to use at least the Heading 1 style in your documents to create online and print-based output. You can then use Heading 2, 3, 4, 5, and 6 for subsections if you need to. </p>
+                <p>However, if you have older documents that use other heading styles (e.g., you named Heading 1 "Main Heading"), you don't need to change all of your documents. Instead, you can open the Project Styles dialog (in the Doc-To-Help <span class="Emphasis">Project</span> ribbon, click the <span class="Emphasis">Project Styles</span> button) and add that style to the list of <span class="Emphasis">Paragraph Styles</span>. Then in the <span class="Emphasis">Topic type</span> field on the right select <span class="Emphasis">Contents</span>.</p>
+                <p>In addition to the heading styles, you can use Word's other built-in styles as you like, applying them to content in your template or source document.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Doc-To-Help Templates and Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to Word's built-in styles and those you create, there are several styles created by Doc-To-Help that you will use because they let you create features not otherwise available in Word. You can easily identify these special styles because they all begin with the prefix C1 or C1H (e.g., C1 Section Collapsed, C1H Link Tag, C1H Popup).</p>
+                <p>As you may be aware, Word uses template files (DOTX)  whenever you create a new Word document. Depending on the template you use, various styles are already available for you to use. Doc-To-Help uses predefined templates to determine how your content will look and work. These templates contain both Word styles and Doc-To-Help's special styles. </p>
+                <p>For more information, see <MadCap:xref href="../../Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</MadCap:xref>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Tasks Associated with Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are the primary tasks you will perform with styles:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Applying Styles in Word </span>There are two ways to apply a style in Microsoft Word: using the Doc-To-Help ribbons or the Word Styles window. If necessary, you can apply styles to content in your template file, but mostly this task will be done in your Word source document, as you create new content and associate the appropriate styles with those areas. See <MadCap:xref href="Applying Styles in Microsoft Word.htm">Applying Styles in Microsoft Word</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Doc-To-Help Markup Language </span>In your source documents, you are also likely to use what is called "Doc-To-Help Markup Language (D2HML)." This is a set of predefined styles that you can use to mark up your source documents when performing unique Doc-To-Help tasks, such as creating topic links, keywords, groups, and conditional text, as well as inserting variables. You don’t need to learn any special language. The correct styles are applied automatically when you use the Doc-To-Help ribbon in your source document to create these features. See <MadCap:xref href="D2HML/About D2HML DocToHelp Markup Language.htm">About Doc-To-Help Markup Language</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Editing Templates and Styles </span>Because document and content creation really begins with template files, you may find that you need to adjust styles (e.g., change the font color for a style from black to red) in Doc-To-Help's template files, or even create custom templates. Technically, you can make modifications to styles  in either your template file or in the source document you create for your project. But it is best to make style formatting changes in your template, because those changes then become available for any new source documents that you may create based on that template. Also, be aware that any formatting changes that you make in your source document will be for your eyes only. Your target template controls the look of your output (unless your source template includes styles not available in your target template. In that case, the source style passes right through to the target. Once you have your template the way you like it, you may find that you rarely, if ever, need to go back to make changes in it. See <MadCap:xref href="../../Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Project Styles and Topic Types </span>As mentioned, Doc-To-Help includes many predefined styles. Although you can make formatting changes to these styles in the template file, there are some style-related changes that may need to be done within Doc-To-Help instead. The Project Styles dialog can be used to modify character styles, paragraph styles, and topic types, or to add new styles to the project. If you create a new style and want it to employ a special authoring behavior, you must define those behaviors in this dialog. See <MadCap:xref href="About Project_Styles_and_Topic_Types.htm">About Project Styles and Topic Types</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2035" MadCap:lastWidth="1169">
+    <head>
+        <link href="../../../TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>If you attempt to synchronize files and <MadCap:variable name="Other.Product" /> detects a conflict (i.e., a mapped file has been modified both locally and in its mapped location), a dialog opens so that you can take the appropriate action. </p>
+        <p>In the Synchronize Files dialog, you can tell if a conflict exists because a warning icon will display next to the files in question.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to merge mapped files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Go through the process of synchronizing external or SharePoint files. See <MadCap:conditionalText MadCap:conditions="General.OnlineLive"><MadCap:xref href="../../../../External_Resources/Synchronizing_External_Resource_Files.htm">Synchronizing External Resource Files</MadCap:xref> <![CDATA[ ]]></MadCap:conditionalText>and <MadCap:xref href="../../../../Sharepoint/Synchronizing_Sharepoint_Files.htm">Synchronizing SharePoint Files</MadCap:xref>. After you click the <span class="Emphasis">Synchronize</span> button, the Resolve Conflicts dialog opens if a conflict exists.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">Auto Merge All</span>. </p>
+                        <p>If changes in the files do not conflict with each other (i.e., if the changes occur in different parts of the files so that they will not affect one another), this will merge all changes. A message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version <MadCap:conditionalText MadCap:conditions="General.OnlineLive">(see <MadCap:xref href="../../../../Backups/About_Backups.htm">About Backups</MadCap:xref>). </MadCap:conditionalText>You do not need to complete the rest of the steps below. </p>
+                        <p>However, if your the changes in the files do conflict with each other (i.e., they occur in the same places in the files), a message displays to tell you. In this case, continue with the next step.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option is not available if you are synchronizing a file that is not native to <MadCap:variable name="Other.Product" />.</p>
+                    </li>
+                    <li> Click <span class="Emphasis">OK</span> on the conflict message.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSharePointGuide" />
+                <ol MadCap:continue="true">
+                    <li>In the Resolve Conflicts dialog click <span class="Emphasis">Resolve</span>. The Resolve Conflict dialog opens. From this dialog, you can choose from the following options:<ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">Merge changes in merge tool </span>Opens a merging interface, which lets you see exactly what changes were made and choose which to keep.</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option is not available if you are synchronizing a file that is not native to <MadCap:variable name="Other.Product" />.</p></li><li><span class="SetOffFirstLevel">Undo my local changes </span>Automatically removes changes in the local file in your project and keeps changes from the file in the mapped location.</li><li><span class="SetOffFirstLevel">Discard external changes </span>Automatically removes changes from the file in the mapped location and keeps changes in the local file in your project.</li></ul></li>
+                    <li>If you selected the first option, the Merge Changes dialog opens. Use this dialog to view and select changes. You can take actions in the following ways:<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Right-click icon </span>You can right-click on the icon next to a change on either the local or external side. This displays a context menu, which lets you either keep or ignore a particular change.</li><li><span class="SetOffFirstLevel">Left-click icon </span>You can left-click on the icon next to a change on either the local or external side. When you do this, the change from one side is kept and the change from the other side is ignored. If you left-click the icon again, the results are toggled; the first change is ignored and the other is kept.</li><li><span class="SetOffFirstLevel">Type content </span>If you want to use the local changes as well as those from the external file, and even tweak the paragraph a bit more, you can click in the area at the bottom of the dialog and simply type content.</li><li><span class="SetOffFirstLevel">Previous/next conflict </span>When you are finished resolving the first conflict, you can use the "Previous Conflict" and "Next Conflict" buttons at the bottom of the dialog to work on other conflicts in the file.</li></ul></li>
+                    <li>(Optional) If you want to change the colors associated with the changes, you can click <span class="Emphasis">Options</span>.</li>
+                    <li> (Optional) By default the files are shown in a WYSIWYG (What You See Is What You Get) view. But you can click <span class="Emphasis">Merge as Text</span> to work in the markup instead.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSharePointGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>After all conflicts have been resolved, a message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version. Click <span class="Emphasis">OK</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Backups/About_Backups.htm">About Backups</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>Click <span class="Emphasis">OK</span> in the other dialogs that open. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSharePointGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>icons for file differences</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are descriptions of the various basic icons you might see in the Merge Changes dialog when merging files.</p>
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Icon</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconContentChanged.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Content </span>This indicates that the content has changed but there is no conflict. Therefore, no action is needed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconTagChanged.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Tag </span>This is the same as the "Changed Content" icon, except the content has not changed, just a tag, such as a style or span.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconNew.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">New Content </span>This indicates that there is new content, but there is no conflict with your changes. Therefore, no action is needed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconDeleted.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Deleted </span>This indicates that content was deleted, but there is no conflict with your changes. Therefore, no action is needed.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSharePointGuide" />
+                <p>Following are descriptions of conflict icons.</p>
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular">
+                    </col>
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Conflict Icon</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconContentChangedConflict.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Content—Conflict </span>This indicates that the content has changed and a conflict exists. Therefore, user action is required. This icon appears in both the left and right panes of the Merge Changes dialog at the spot of the conflict. You must click on one of the icons to "Accept" that particular change.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconContentChangedKeep.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Change—Accepted </span>This indicates that a change with a conflict has been accepted after clicking on <img src="../../../Images/DifferenceIconContentChangedConflict.png" class="ReduceButtonSize" />. The bottom pane of the Merge Changes dialog updates to show the accepted content.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconContentChangedDenied.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Change—Not Accepted </span>This indicates that a change with a conflict will not be accepted. When you accept a conflict change and that side of the Merge Changes dialog displays <img src="../../../Images/DifferenceIconContentChangedKeep.png" class="ReduceButtonSize" />, the opposite pane where the conflict exists will display <img src="../../../Images/DifferenceIconContentChangedDenied.png" class="ReduceButtonSize" />.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconTagChangedConflict.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Changed Tag—Conflict </span>This indicates that the tag has changed and a conflict exists. Therefore, user action is required. This icon appears in both the left and right panes of the Merge Changes dialog at the spot of the conflict. You must click on one of the icons to "Accept" that particular change.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconTagchangedConflictKeep.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Tag—Accepted </span>This indicates that a change with a conflict in a tag has been accepted after clicking on <img src="../../../Images/DifferenceIconTagChangedConflict.png" class="ReduceButtonSize" />. The bottom pane of the Merge Changes dialog updates to show the accepted content.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../../Images/DifferenceIconTagChangedConflictIgnore.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">Conflict Tag—Not Accepted </span>This indicates that a change with a conflict in a tag will not be accepted. When you accept a conflict change and that side of the Merge Changes dialog displays <img src="../../../Images/DifferenceIconTagchangedConflictKeep.png" class="ReduceButtonSize" />, the opposite pane where the conflict exists will display <img src="../../../Images/DifferenceIconTagChangedConflictIgnore.png" class="ReduceButtonSize" />.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ExternalResources" />
+        </p>
+    </body>
+</html>

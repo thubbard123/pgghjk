@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="1859" MadCap:lastWidth="858" MadCap:conditions="Products.Pulse,Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <meta name="description" content="How to manage Flare communities in MadCap Pulse." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="AdminMenu" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Managing Communities</h1>
+        <h1 MadCap:conditions="PulseGuides.PulseWhatsNewGuide">Published URL—Links Open Feeds in Context</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Managing Communities</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" />
+        <p>A community is a collection of registered users that have access to a set of social features. When a Flare community is integrated with a Pulse system, users have access to the same type of community functions that one would find on a social media site.</p>
+        <p>You can manage communities using either the Pulse dashboard or the Flare interface (i.e., the Target Editor).</p>
+        <p>In the Pulse dashboard, the Administration&gt;Settings menu command is available to members of the Administrators group. This gives you the ability to click <span class="Emphasis">Communities</span> to view a list of the Flarecommunities that have been integrated with Pulse.</p>
+        <p>Managing a community means that you can add, delete, rename, or provide a published URL for that community. However, for best results, it is recommended that you always add, delete, or rename a Flare community using the Flare user interface, rather than using the Pulse dashboard<MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePulseGuide,General.OnlineLive"> (see <MadCap:xref href="../../Install/Integrating_Flare_and_Pulse.htm">Integrating Flare and Pulse</MadCap:xref>)</MadCap:conditionalText>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Manage Flare Communities From the Pulse Dashboard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                <ol start="3">
+                    <li>
+                        <p>Click <span class="Emphasis">Communities</span>. The Communities page opens. This shows a list of all the communities that have been integrated with Pulse. A key is shown, along with the name of the community. This key is automatically created for you when you install the SQL&#160;Server Database.</p>
+                        <p>
+                            <img src="../../../Resources/Images/pulse_admin_communities_view.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Make any necessary changes. If you want to provide a published URL for a community, in the <span class="Emphasis">Published Url</span> field type the path to the folder containing your main landing page. Make sure you include http:// at the beginning of the URL.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you've generated a target called "FlareOutput" and you've uploaded the output so that users access it here:&#160;help.mycompany.com/FlareOutput/Default.htm. In that case, enter http://help.mycompany.com/FlareOutput in the Published Url field. </p>
+                        </div>
+                        <p>Why is it a good idea to assign a URL path to a community? Because it allows topic feeds to open in context.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you have not provided a published URL&#160;for your community. You receive an email notification stating that a user has posted a comment in one of your topics. So you click the topic name link in the email notification to see the feed where the comment was posted. The feed opens in the dashboard view of Pulse, which shows only the feed and not the topic associated with it.</p>
+                            <p>
+                                <img src="../../../Resources/Images/pulse_feed_context1.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p>On the other hand, let's say you provide a published URL to your community. In that case, when you click the topic link, the topic opens in the actual Flare output. You see both the topic and the Pulse feed below it, therefore giving context to the post.</p>
+                            <p>
+                                <img src="../../../Resources/Images/pulse_feed_context2.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </li>
+                    <li>When you are finished, click <span class="Emphasis">Save Changes</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AdminMenu" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+    </body>
+</html>

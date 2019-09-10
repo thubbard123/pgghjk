@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5864" MadCap:lastWidth="882" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlPerforce.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterSourceControlPerforce" />
+            <MadCap:keyword term="Source control:merging;Merging:source control" />Merging Source Control Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Perforce</MadCap:conditionalText></h1>
+        <p>There may be times when you need to merge changes from different <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>when submitting a file. The merge occurs automatically if there are no conflicting changes (i.e., changes do not occur in the same location in the file). If there are conflicting changes, a dialog opens, allowing you to determine how changes are merged.</p>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuidePerforce" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to merge source control files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Go through the process of getting the latest version of files from source control or submitting files. See <MadCap:xref href="../Getting_the_Latest_Version_of_Source_Control_Files_per.htm">Getting the Latest Version of Source Control Files</MadCap:xref> and <MadCap:xref href="../Submitting_Source_Control_Files_per.htm">Submitting Source Control Files</MadCap:xref>. If your local copy of the file is different from the server copy (e.g., another <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user </MadCap:conditionalText>has already submitted the same file), the Resolve Conflicts dialog opens.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">Auto Merge All</span>. If changes from the other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user </MadCap:conditionalText>do not conflict with your changes, this will merge all changes. A message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Backups/About_Backups.htm">About Backups</MadCap:xref>) </MadCap:conditionalText>. You do not need to complete the rest of the steps below.</p>
+                        <p>However, if your changes conflict with those from another <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user</MadCap:conditionalText>, a message displays to tell you. In this case, continue with the next step.</p>
+                    </li>
+                    <li> Click <span class="Emphasis">OK</span> on the conflict message.</li>
+                    <li>In the Resolve Conflicts dialog click <span class="Emphasis">Resolve</span>. The Resolve Version Conflict dialog opens. From this dialog, you can choose from the following options.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Merge changes for me </span>Automatically merges changes within the same file that are not part of the same element. If changes have been made to the same element <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">(e.g., the same &lt;p&gt; tag or &lt;h1&gt; tag)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">(e.g., the same segment)</MadCap:conditionalText>, <MadCap:variable name="Other.Product" /> will display a prompt to merge the changes using the merge tool.</li><li><span class="SetOffFirstLevel">Merge changes in merge tool </span>Opens a merging interface, which lets you see exactly what changes were made and choose which to keep.<br /></li><li><span class="SetOffFirstLevel">Undo my local changes </span>Automatically removes your changes and keeps changes from other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users</MadCap:conditionalText>.</li><li><span class="SetOffFirstLevel">Discard external changes </span>Automatically removes changes from other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>and keeps your changes.</li></ul></li>
+                    <li>If you selected the option to use the merge tool, the Merge Changes dialog opens. Use this dialog to view and select changes. You can take actions in the following ways. <ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">Click a change </span>You can click a change on either the remote or local side. This lets you select a particular change. Use the key at the top of the merge changes dialog, as well as the color coding on the local and server sides, to determine if a change has been added (new), deleted, changed, or moved.</p><p>When you select a change, the change you selected will display with a solid colored background, and the conflicting change will display with a striped background. If you select the other change, the background shading will switch.</p></li><li><span class="SetOffFirstLevel">Type content </span>If you want to use your changes as well as those from another <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user</MadCap:conditionalText>, and even tweak the paragraph a bit more, you can click in the area at the bottom of the dialog and simply type content.</li><li><span class="SetOffFirstLevel">Previous/next conflict </span>When you are finished resolving the first conflict, you can use the "Previous Conflict" and "Next Conflict" buttons at the bottom of the dialog to work on other conflicts in the file.</li></ul><p class="note" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you selected "Merge as Text" in the local toolbar and are working in the code, you can click on text with a hatched background to keep the change in it. After you click on text with a hatched background, the hatched lines are removed, leaving a solid color.</p></li>
+                    <li>After all conflicts have been resolved, a message lets you know that a backup of your local copy has been made. This allows you to restore that file if you do not want to keep the merged version. Click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuidePerforce" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:conditionalText MadCap:conditions="General.OnlineLive">example</MadCap:conditionalText>
+                    <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">s</MadCap:conditionalText>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example<MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">—no conflicting changes</MadCap:conditionalText></p>
+                    <p>Let's say two <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">translators</MadCap:conditionalText>—Bob and Jill—are working on the same project, using source control to manage the files.</p>
+                    <p MadCap:conditions="Products.Analyzer,Products.Flare">Bob checks out the "FAQs" topic and starts making changes to it.</p>
+                    <p MadCap:conditions="Products.Lingo">Bob checks out the glossary and starts making changes to it.</p>
+                    <p MadCap:conditions="Products.Flare,Products.Analyzer">Jill also checks out the "FAQs" topic and makes some changes to it. Jill's changes are in a different location in the topic than Bob's changes; there are no conflicts. She finishes before Bob and submits the file to source control.</p>
+                    <p MadCap:conditions="Products.Lingo">Jill also checks out the glossary and makes some changes to it. Jill's changes are in a different segment in the glossary than Bob's changes; there are no conflicts. She finishes before Bob and submits the file to source control.</p>
+                    <p>Bob finishes his changes and tries to submit the file. Before the file can be submitted, Bob is prompted with a dialog, indicating that changes from another <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user </MadCap:conditionalText>have already been submitted.</p>
+                    <p>Bob selects <span class="Emphasis">Auto Merge All</span>. The changes from Bob and Jill are now both shown in the merged topic.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example.png" class="MaxWidth75Percent" /> </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example_analyzer.png" class="MaxWidth75Percent" /> </p>
+                    <p MadCap:conditions="Products.Lingo">
+                        <img src="../../../Resources/Images/merging_files_example_lingo.png" class="MaxWidth75Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuidePerforce" />
+                <div class="example" MadCap:conditions="Products.Flare,Products.Analyzer">
+                    <p class="exampleHeadTextEmpty">example—conflicting changes</p>
+                    <p>Let's say two authors—Bob and Jill—are working on the same project, using source control to manage the files.</p>
+                    <p MadCap:conditions="Products.Analyzer,Products.Flare">Bob checks out the "FAQs" topic and starts making changes to it.</p>
+                    <p MadCap:conditions="Products.Lingo">Bob checks out the glossary and starts making changes to it.</p>
+                    <p MadCap:conditions="Products.Flare,Products.Analyzer">Jill also checks out the "FAQs" topic and makes some changes to it. Jill's changes are in the same paragraph in the topic as Bob's changes; thus, there is a conflict. She finishes before Bob and commits the file to source control.</p>
+                    <p MadCap:conditions="Products.Lingo">Jill also checks out the glossary and makes some changes to it. Jill's changes are in the same translation segment as Bob's changes; thus, there is a conflict. She finishes before Bob and commits the file to source control.</p>
+                    <p>Bob finishes his changes and tries to submit the file. Before the file can be submitted, Bob is prompted with a dialog, indicating that changes from another author have already been submitted.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example1.png" class="MaxWidth75Percent" /> </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example1_analyzer.png" class="MaxWidth75Percent" /> </p>
+                    <p MadCap:conditions="Products.Lingo">
+                        <img src="../../../Resources/Images/merging_files_example1_lingo.png" class="MaxWidth75Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuidePerforce" />
+                    <p>Bob selects <span class="Emphasis">Auto Merge All</span>. However, he receives another message, stating that his changes conflict with those of Jill.</p>
+                    <p>
+                        <img src="../../../Resources/Images/merging_files_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Bob clicks <span class="Emphasis">OK</span>. Then in the Resolve Conflicts dialog he clicks <span class="Emphasis">Resolve</span>. This opens the Resolve Version Conflict dialog. From this dialog, Bob can choose from a few different options.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example3_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Lingo">
+                        <img src="../../../Resources/Images/merging_files_example3_lingo.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuidePerforce" />
+                    <p>Bob selects <span class="Emphasis">Merge changes in merge tool</span>. The Merge Changes dialog opens.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example4.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example4_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuidePerforce" />
+                    <p>So what action can Bob take at this point for merging the file changes?</p>
+                    <p>Bob can right-click on the icon next to the change on either the local or server side. This displays a context menu, which lets Bob either keep or ignore a particular change.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example5.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example5_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example6.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example6_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>Another way of accomplishing the same thing is to left-click on an icon. When you do this, the change from one side is kept and the change from the other side is ignored. If you left-click the icon again, the results are toggled; the first change is ignored and the other is kept.</p>
+                    <p>What if Bob wants to use his changes as well as Jill's, and possibly tweak the paragraph a bit more? He can click in the area at the bottom of the dialog and simply type content.</p>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuidePerforce" />
+                    <p>When he is finished resolving the first conflict, Bob can use the "Previous Conflict" and "Next Conflict" buttons at the bottom of the dialog to work on other conflicts in the file.</p>
+                    <p MadCap:conditions="Products.Flare">
+                        <img src="../../../Resources/Images/merging_files_example7.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p MadCap:conditions="Products.Analyzer">
+                        <img src="../../../Resources/Images/merging_files_example7_analyzer.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>After all conflicts have been resolved, Bob clicks <span class="Emphasis">OK</span>. The merged topic is now submitted to source control.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Perforce" />
+        </p>
+    </body>
+</html>

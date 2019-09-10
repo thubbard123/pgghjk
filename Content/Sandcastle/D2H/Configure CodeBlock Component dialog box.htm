@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="4" MadCap:lastHeight="785" MadCap:lastWidth="1185" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HSandcastle.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft Sandcastle" />Configure CodeBlock Component Dialog</h1>
+        <p>The Configure CodeBlock Component dialog is used to configure the elements of the CodeBlock component.&#160; </p>
+        <p>To access the Configure CodeBlock Component dialog, open the Properties for Generating Reference dialog, select the <span class="Emphasis">Components</span> tab of the <span class="Emphasis">Output</span> node and click the <span class="Emphasis">Configure</span> button next to "CodeBlock component." See <c1hjump><MadCap:xref href="Configuring the Sandcastle Reference Section.htm" >Configuring the Sandcastle Reference Section</MadCap:xref></c1hjump>.</p>
+        <p>Also see <c1hjump><MadCap:xref href="CodeBlock and PostTransform components.htm" >CodeBlock and PostTransform Components</MadCap:xref></c1hjump>.</p>
+        <p>
+            <img src="../../Resources/Images/D2H/ConfigureCodeblockComponent.png" height="417" class="MaxWidth100Percent" />
+        </p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Base path for relative paths in &lt;code&gt;'source' attributes </span>Sets the base path to use for relative paths in the source attributes of code blocks. If this field is left blank, the current folder at the time of build is used as the base path.</li>
+            <li><span class="SetOffFirstLevel">Language syntax configuration file used for colorization </span>Sets the path to the .xml file that holds the syntax definitions for the languages supported by the colorizer.</li>
+            <li><span class="SetOffFirstLevel">XSLT transformation file used for colorization </span>Sets the path to the .xslt file that defines the XSLT transformation used to convert the parsed code block into colorized HTML.&#160; </li>
+            <li><span class="SetOffFirstLevel">Location of the "Copy Code" image file </span>Sets the path to the image file used for the "Copy Code" link.</li>
+            <li><span class="SetOffFirstLevel">Default language drop-down </span>Choose a language from the drop-down list to override the default language specified in the component's configuration.</li>
+            <li><span class="SetOffFirstLevel">Default tab size </span>Use this element to override the default setting of a language's tab size. If this is set to zero, the default syntax file setting will be used.</li>
+            <li><span class="SetOffFirstLevel">Enable line numbering </span>Check this box to add line numbers to your code examples.</li>
+            <li><span class="SetOffFirstLevel">Enable collapsible #region and #if/#else/#endifblocks </span>When checked, this feature makes #if, #else, and #endifblocks expandable and collapsible in your example code blocks.</li>
+            <li><span class="SetOffFirstLevel">Connect code blocks to the language filter </span>When this option is enabled, the code blocks in your reference section can be shown or hidden based on the user's language filter setting.</li>
+            <li><span class="SetOffFirstLevel">Reset </span>Click the <span class="Emphasis">Reset</span> button to return to the CodeBlock component's default settings.</li>
+        </ul>
+    </body>
+</html>

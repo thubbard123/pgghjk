@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet1 or Snippets.Snippet5]exclude[Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet6]" MadCap:lastBlockDepth="11" MadCap:lastHeight="1182" MadCap:lastWidth="999" MadCap:conditions="Products.Flare,Products.Analyzer" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlTFS.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterInstantMessaging" />
+            <MadCap:keyword term="Source control:request check in;Instant messaging:request check in;Email:source control;Source control:email" />
+            <MadCap:concept term="Source Control TFS" />
+            <MadCap:concept term="FilterSourceControlTFS" />Requesting a User to Check In Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Team Foundation Server</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlRequestCheckInSummary.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <p MadCap:conditions="Products.Flare">How do you know if another user has a file checked out? Open the Pending Changes window pane—select <span class="Emphasis">Source Control&gt;Pending Changes</span> (if using the ribbon view) or <span class="Emphasis">View&gt;Pending Changes</span> (if using the menu view). You can also open the File List window pane (<span class="Emphasis">View&gt;File List</span>). If you have files checked out, you will see the phrase "Checked Out" in the Status column, with your user name displayed in the User column. If another person has a particular file checked out, you will see that individual's user name in the User column, and the Status column will be blank. If this is the case, you can use the steps below to request that user to check in the file. See <MadCap:xref href="More_About_Source_Control/Viewing_Files_That_are_Checked_Out_tfs.htm">Viewing Files That are Checked Out</MadCap:xref>.</p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:conditions="Products.Flare" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You cannot use this feature if you have disabled instant messaging. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Instant_Messaging/Enabling_Disabling_Instant_Messaging.htm">Enabling and Disabling Instant Messaging</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to request a user to check in source control files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol MadCap:conditions="Products.Flare">
+                    <li>
+                        <p>In one of the window panes (e.g., Content Explorer, File List, Project Organizer, Pending Changes window pane), select the relevant file(s).</p>
+                        <p>OR</p>
+                        <p>Open a file.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Instant Messaging</span> section select <span class="Emphasis">Request Check In</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click the file  and select <span class="Emphasis">Source Control&gt;Request Check In</span>.</li>
+                        </ul>
+                        <p>The Send Request Check-In Message dialog opens. The individual who has the file(s) checked out is automatically selected in the dialog.    </p>
+                    </li>
+                    <li>Select either <span class="Emphasis">Send Instant Message</span> or <span class="Emphasis">Send Email</span>.</li>
+                    <li>
+                        <p>(Optional) Enter a message to the other user. </p>
+                        <p>If you leave the <span class="Emphasis">Message</span> field blank, <MadCap:variable name="Other.Product" /> sends a default message. </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Send</span>. A popup indicates that the instant message or email has been sent to the other user.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <p>If you are working from the Project Properties dialog, click <span class="Emphasis">OK</span>.</p>
+                        <p>When the other user receives the instant message, that person can click a button in the message that automatically checks the file in.</p>
+                        <p>When the other user receives the email, it will contain an attachment. When that person opens the attachment, the file is automatically checked in.</p>
+                        <p>Afterwards, you will receive a message indicating that the file has been checked in, and you can click a button in that message to automatically check the file out.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control TFS" />
+        </p>
+    </body>
+</html>

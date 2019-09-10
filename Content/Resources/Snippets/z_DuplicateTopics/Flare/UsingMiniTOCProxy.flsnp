@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="5318" MadCap:lastWidth="1020">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/AllOnline_AllPrint.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Proxies/MiniTOCProxySummary.flsnp" />
+        </p>
+        <h2 MadCap:conditions="General.Print">How It Works</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>how it works</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/MiniTOCProxySummary2.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">examples for online output</p>
+                    <p MadCap:conditions="">
+                        <img src="../../../Images/mini_toc_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+                    <p MadCap:conditions="">Here is how a mini-TOC might look in the output for a Help system:</p>
+                    <p MadCap:conditions="">
+                        <img src="../../../Images/mini_toc_example.png" class="MaxWidth80Percent" />
+                    </p>
+                </div>
+                <div class="example">
+                    <p MadCap:conditions="" class="exampleHeadTextEmpty">Examples for Print-based Output</p>
+                    <p>
+                        <img src="../../../Images/mini_toc_print_example1.png" class="MaxWidth60Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Images/mini_toc_print_example2.png" class="MaxWidth60Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../Proxies/MiniTOCProxyStylesMethodExample.flsnp" />
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+                <MadCap:snippetBlock src="../../Proxies/MiniTOCProxyStructureMethodExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a mini-toc</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a topic.</li>
+                    <li>Select <span class="Emphasis">Insert&gt;Proxy&gt;Insert Mini-Toc Proxy</span>. The Mini-TOC Proxy dialog opens.</li>
+                    <li>(Optional) From the <span class="Emphasis"><MadCap:keyword term="TOC depth" />TOC Depth</span> field, select a number to dictate the depth of the mini-TOC. For example, if the proxy is intended for print output and you want the mini-TOC to be based on heading levels in the topics, you might place the proxy after an h1 heading and select 4 as the depth. In that case, the proxy will include headings that are using h2, h3, and h4 styles (but not h5 or h6).</li>
+                    <li>
+                        <p>(Optional) From the <span class="Emphasis">Stylesheet class</span> field, you can select a style for the mini-TOC. </p>
+                        <p>You might create and use style classes if you want to generate multiple mini-TOCs with different looks for each output. Otherwise, the generated mini-TOC will use the style settings from the parent MadCap|miniTocProxy style. You can create a style class for this purpose in the Stylesheet Editor. To do this, select the <span class="Emphasis">MadCap|miniTocProxy</span> style and click <span class="Emphasis">Add Class</span> to create a class. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to affect the look of the individual entries in the generated mini-TOC, you can use the MiniTOC1 through MiniTOC9 styles (classes of the p style) in the Stylesheet Editor. For example, let's say that you want to use blue font for the first-level headings in the generated mini-TOC. You can change the font color setting on the p.MiniTOC1 style. You can also modify the entire container holding the mini-TOC. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTablesOfContentsGuide">See <MadCap:xref href="../../../../Proxies/Using_Styles_to_Determine_the_Look_of_a_MiniTOC.htm" >Using Styles to Determine the Look of a Mini-TOC</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoAboutStylesOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp">
+                        </MadCap:snippetText> The proxy is added to the topic.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In previous versions of Flare, the code for styling Mini-TOC proxy links was .MCMiniTOCLink. Starting in Flare V4, the style class used for this purpose is p.MiniTOC1. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref> and <MadCap:xref href="../../../../Proxies/Using_Styles_to_Determine_the_Look_of_a_MiniTOC.htm">Using Styles to Determine the Look of a Mini-TOC</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../../Notes/NoteProxiesExcludeContent.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

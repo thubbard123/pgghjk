@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5161" MadCap:lastWidth="981" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieEditing.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Effects" />
+            <MadCap:concept term="FilterAppearance" />
+            <MadCap:concept term="FilterEffects" />
+            <MadCap:keyword term="Effects:adding" />Adding Effects</h1>
+        <p>Effects allow you to change the look of an object.  Although the effect area can be spread out over the frame or moved off of the object completely, it is still associated with that object and is applied only to that object. If you delete an object to which an effect is applied, even if the effect area is not on top of the object, the effect is also removed. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">exampleS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Examples—Opacity, Gray Scale, and Blur</p>
+                    <p>You can associate opacity, gray scale, and blur effects with image objects.</p>
+                    <p>Here is an example of an image object on a frame with a yellow background without any effects applied.</p>
+                    <p>
+                        <img src="../../Resources/Images/effects_example1.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>This is an example of an opacity effect with the mask set to inside. The area inside of the red effect area is a little more translucent than the rest of the frame, so you can see the frame's yellow background through the image object.</p>
+                    <p>
+                        <img src="../../Resources/Images/effects_example2.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>This is an example of a gray scale effect with the mask set to outside. Only the area outside of the effect area is gray. The effect only changes the color of the image object, so the frame's yellow background is not affected, even though it is outside of the red effect area frame.</p>
+                    <p>
+                        <img src="../../Resources/Images/effects_example3.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>This is an example or a blur effect with the mask set to inside and the blur radius set to 20, meaning that only the two penguins on the left are blurred.</p>
+                    <p>
+                        <img src="../../Resources/Images/effects_example4.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Effects/ExampleClippingEffect.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add an Effect</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a movie that contains objects, or add an object to a frame. </li>
+                    <li>Double-click the object. <MadCap:snippetText src="../../Resources/Snippets/Objects/ObjectPropertiesWindowPaneOpensMimic.flsnp" /></li>
+                    <li>
+                        <p>In the Timeline window pane (<span class="Emphasis">View&gt;Timeline</span>), do one of the following:</p>
+                        <ul>
+                            <li>For all standard object types, click <span class="Emphasis">Frame View</span>. Any action objects converted to objects will also be in this view.</li>
+                            <li>For action object types, click <span class="Emphasis">Action View</span>. Any objects converted to action objects will also be in this view.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Select the <span class="Emphasis">Home</span> ribbon. In the <span class="Emphasis">Insert</span> section, select <span class="Emphasis">Effects</span>, then select one of the following effect types:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Clip</span> Adds a clipping mask that allows you to hide part or all of the frame. You can apply clip effects to any object type.</p>
+                                <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>See the Movie</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>
+                                            <object src="https://youtu.be/Es6Z1AVyYsI" style="width: 560px;height: 315px;">
+                                            </object>
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Opacity</span> Sets the level of transparency of the effect area. You can apply opacity effects to image objects.</li>
+                            <li><span class="SetOffFirstLevel">Gray Scale</span> Changes the effect area to shades of gray. You can apply gray scale effects to image objects.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Blur</span> Blurs the effect area. You can apply blur effects to image objects.</p>
+                            </li>
+                        </ul>
+                        <p>After an effect is selected, a red effect area frame appears on the object that was selected, and the effect bar appears on the Timeline. Additionally, the Object Properties window pane will change to the Effect Properties window pane.</p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <li>
+                        <p>In the Effect Properties window pane, do the following, if necessary:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Change the Position and Size of the Effect Area</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul>
+                                    <li>Expand the <span class="Emphasis">Object Layout</span> section and make the desired adjustments:<ul class="SecondLevel"><li><span class="SetOffSecondLevel">Position </span>Select a different position on the frame for the effect area. The first field sets the horizontal position, and the second field sets the vertical position. Manually change the position of the effect area by clicking on the red effect area frame and dragging it to a new place in the Frame Editor.</li><li><span class="SetOffSecondLevel">Size </span>Select a different size for the effect area. The first field sets the width, and the second field sets the height. Manually change the size of the effect area by clicking on the edges of the red effect area frame and dragging them to the desired height or width.</li></ul></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Change the Direction of the Effect Area </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul>
+                                    <li>Expand the <span class="Emphasis">Mask</span> section and select from the following:<ul class="SecondLevel"><li><span class="SetOffSecondLevel">Inside </span>Everything inside of the red effect area frame will have the effect applied to it.</li><li><span class="SetOffSecondLevel">Outside </span>Everything outside of the red effect area frame will have the effect applied to it.</li></ul></li>
+                                </ul>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Masks are not available for clip effects. You can only clip inside the red effect area frame.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Change the Mask Properties </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>The mask properties are only applicable to blur and opacity effects.</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Opacity </span>Expand the <span class="Emphasis">Opacity Mask</span> section and drag the slider to the desired percentage. The higher the percentage, the more opaque the effect area will become. In other words, if you set the opacity to 100%, the object will be displayed as a fully opaque object. If you set the opacity to 50%, the background will show through the object. If you set the opacity to 0%, the object will be completely transparent, and you will be able to clearly see the background.</li>
+                                    <li><span class="SetOffFirstLevel">Blur </span>Expand the <span class="Emphasis">Blur Mask</span> section and enter a number in the <span class="Emphasis">Blur Radius</span> field. The higher the number, the more blurred the effect area will become.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tip</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/PositionKeyframeTip.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">noteS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can add clip and shadow effects to any object type. You can add opacity, gray scale, and blur effects to image objects.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteOneClippingMaskPerObject.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The shadow effect is applied using the  Object Properties window pane. See <MadCap:xref href="Shadow_Effects/Adding_Shadow_Effects_Mimic.htm">Adding Shadow Effects</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When applying position keyframes to an object or effect, the position is measured from the upper left corner of the object.</p>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Each effect area is tied to a particular object and does not affect other objects or background elements. Although you can move the red effect area frame completely off the object, the effect is still only applied to the object itself. For example, if you apply an inside gray scale effect to an image object and move the effect frame partially off the image object, the effect will gray the area of the object it covers, but the background covered by the effect is not grayed.</p>
+                    <p>
+                        <img src="../../Resources/Images/grayscale_effect_example2.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Effects">
+            </MadCap:conceptLink>
+        </p>
+    </body>
+</html>

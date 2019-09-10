@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet2]exclude[Snippets.Snippet1 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:lastBlockDepth="10" MadCap:lastHeight="2659" MadCap:lastWidth="1138" MadCap:conditions="Products.Flare">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="Source Control" />
+            <MadCap:concept term="FilterSourceControl" />
+            <MadCap:keyword term="Source control;Multi-authoring" />About Source Control</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS">
+            <MadCap:keyword term="Source control;Multi-authoring" />Introduction</h1>
+        <p>Source control is a process that allows you to store your project files in a central location and determine which individuals have access to those files. By using a source control system to manage access to files, you can ensure that there are no file conflicts when many individuals are working on the same project (multi-authoring teams). You can also revert back to earlier versions of source control files if necessary. Source control is even useful for single authors because it provides a means for maintaining a constant backup of all project files.                     </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/SourceControl/SourceControlSummary.flsnp" />
+        <p MadCap:conditions="General.OnlineLive"><MadCap:variable name="Other.Product" /> provides integrated support for the following source control applications:</p>
+        <ul MadCap:conditions="General.OnlineLive">
+            <li><span class="SetOffFirstLevel">Apache Subversion </span>See <MadCap:xref href="Subversion/About_Apache_Subversion.htm">About Apache Subversion</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Git </span>See <MadCap:xref href="Git/About_Git.htm">About Git</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Microsoft Team Foundation Server </span>See <MadCap:xref href="TFS/About_Microsoft_Team_Foundation_Server.htm">About Microsoft Team Foundation Server</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Microsoft Visual SourceSafe </span>See <MadCap:xref href="VSS/About_Microsoft_Visual_SourceSafe.htm">About Microsoft Visual SourceSafe</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Perforce </span>See <MadCap:xref href="Perforce/About_Perforce.htm">About Perforce</MadCap:xref>.</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Is the Source Control Application Inside Flare?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>is the source control application inside flare?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>No. <MadCap:variable name="Other.Product" /> does not use a proprietary source control system within the  application. Instead, <MadCap:variable name="Other.Product" /> allows you to connect (or "bind") your project to an existing third-party source control application that is separate from <MadCap:variable name="Other.Product" />.                      </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Which Source Control Programs are Integrated with Flare?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>which source control programs are integrated with Flare?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Built-in support is available for <MadCap:keyword term="Source control:Microsoft Visual SourceSafe" />Microsoft Visual SourceSafe, <MadCap:keyword term="Source control:Microsoft Team Foundation Server" />Microsoft Team Foundation Server, <MadCap:keyword term="Perforce;Source control:Perforce" />Perforce, <MadCap:keyword term="Source control:Git;Git" />Git, and <MadCap:keyword term="Apache Subversion;Source control:Subversion" />Apache Subversion. In addition, an <MadCap:keyword term="Source control:API" />API allows you to configure your project for integration with other source control tools<MadCap:conditionalText MadCap:conditions="General.OnlineLive">(see <MadCap:xref href="Third_Party_Plug_Ins/Using_an_API_to_Integrate_Source_Control.htm">Using an API to Integrate Source Control</MadCap:xref>)</MadCap:conditionalText>. You also have the option of manually adding your project files to any source control tool, rather than using <MadCap:variable name="Other.Product" />'s built-in integration.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Who is Involved with Source Control?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>who is involved with source control?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This depends on how you work in your company. Someone (perhaps a network administrator) needs to set up your source control program (such as Microsoft Visual SourceSafe) and create the necessary database(s) in it. This individual may also set up the "rights" to all persons who have access to the necessary databases and files. If you are working on a multi-author team, each writer on the team needs to have a local copy of the <MadCap:variable name="Other.Product" /> project and will be responsible for checking in and checking out files as necessary.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideVSS" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS" class="NoPageBreakBefore">Which Files Can Be Included?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>which files can be included in the integrated source control?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The files that can be included in source control depends on whether you are adding them manually or using the built-in integration.</p>
+                <h3 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuideVSS">If Including Files Manually in Your Source Control Client</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>if including files manually in your source control client</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you are manually adding files to a source control application (rather than using the built-in <MadCap:variable name="Other.Product" /> integration), you can transfer any appropriate files in a <MadCap:variable name="Other.Product" /> project. Appropriate files include the following.</p>
+                        <ul>
+                            <li>The main <MadCap:keyword term="FLPRJ file" MadCap:conditions="Products.Flare" />FLPRJ file</li>
+                            <li>All files from the Content folder</li>
+                            <li>All files from the Project folder, except those in the Project/Users subfolder</li>
+                            <li>
+                                <p>Files from a specific Output subfolder</p>
+                                <p>You might transfer output files to source control, for example, if you are integrating your Help into a desktop application, and programmers need access to your output files to build the application. However, if you do this, make sure you map the source control to the appropriate output subfolder, and not to the Temporary subfolder or to the main Output folder, which contains the Temporary subfolder.</p>
+                                <p>
+                                    <img src="../Resources/Images/source_control_map_to_output.png" class="MaxWidth85Percent" />
+                                </p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <h3 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS">If Using the Source Control Integration in the Flare Interface</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>if using the source control integration in the flare interface</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If you are using <MadCap:variable name="Other.Product" />'s built-in source control integration, you can transfer the following types of files.</p>
+                        <ul>
+                            <li>The main FLPRJ file</li>
+                            <li>All files from the Content folder</li>
+                            <li>All files from the Project folder, except those in the Project/Users subfolder</li>
+                            <li>Files from a specific Output subfolder, if using source control publishing<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Output/Creating_Publishing_Destinations.htm">Creating Publishing Destinations</MadCap:xref>)</MadCap:conditionalText></li>
+                        </ul>
+                        <p>In most workflows, you only need to transfer the content and project files mentioned, and when you are ready to generate output, you would publish the output files to another location where users can access them (such as a website or network drive). However, if you want to use Flare to directly publish your output to source control so you can keep a copy of your finished output for future reference, you can also create a source control publishing destination. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Output/Creating_Publishing_Destinations.htm">Creating Publishing Destinations</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Microsoft Visual SourceSafe (VSS) does not support source control publishing. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,FlareGuides.FlareSourceControlGuideGit,FlareGuides.FlareSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideVSS">MadCap Central and Source Control</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>MadCap Central and Source Control</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>
+                    <MadCap:snippetText src="../Resources/Snippets/Central/CentralIntegration2.flsnp" />&#160;<MadCap:snippetText src="../Resources/Snippets/Central/CentralIntegration3.flsnp" />&#160;<MadCap:snippetText src="../Resources/Snippets/Central/CentralIntegration4.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Central/About_Central_and_Flare.htm">About MadCap Central and Flare</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <MadCap:snippetText src="../Resources/Snippets/SourceControl/SourceControlCentral1.flsnp" />
+                    <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Projects/Using_Source_Control_with_Projects_in_Central.htm">Using Source Control with Projects in Central</MadCap:xref>.</MadCap:conditionalText>
+                    <MadCap:conditionalText MadCap:conditions="General.Print"> <MadCap:snippetText src="../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" /></MadCap:conditionalText>
+                </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteCentralSoldSeparately.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control" />
+        </p>
+    </body>
+</html>

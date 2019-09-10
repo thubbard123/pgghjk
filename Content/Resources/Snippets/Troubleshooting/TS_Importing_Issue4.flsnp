@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="969" MadCap:lastWidth="910">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Topics imported into Flare do not scroll when generated</p>
+        <p>Topics imported into Flare do not have a scroll bar when generated with the rest of the project. Consequently, all content after the first screen is not viewable. </p>
+        <p class="Subheading">Cause</p>
+        <p>This is the result of a change in the stylesheet's html and/or body styles during the importing process. </p>
+        <p class="Subheading">Solution</p>
+        <p>Perform the following steps.</p>
+        <ol>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../Styles/EditStyleStep1.flsnp" MadCap:conditions="Products.Flare" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">warning about mediums</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">When editing styles, make sure the proper medium is selected in the Stylesheet Editor before you begin (you can do this from the <span class="Emphasis">Medium</span> drop-down list). <MadCap:variable name="Other.Product" /> remembers the last medium that you used when working in the stylesheet, so it may or may not be the one that you want to use the next time around. If you want all mediums to use the same setting, select the "default" medium and the properties will "trickle down" to the other mediums. If you are not using different mediums, you do not need to worry about selecting one when you edit styles. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide">See <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm#StyleSheetMediums">Stylesheet Mediums</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide" /></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <MadCap:snippetText src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+            </li>
+            <li>In the upper-left corner of the editor, click in the <span class="Emphasis">Show Styles</span> field and select <img src="../../Images/show_styles_field.png" class="ReduceButtonSize" />. </li>
+            <li>Select the <span class="Emphasis">html</span> style.</li>
+            <li>
+                <MadCap:snippetText src="../Styles/SelectShowAllPropertiesStep.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+            </li>
+            <li>
+                <p>If you are using the group view, expand the <span class="Emphasis">Positioning</span> group.</p>
+                <p>
+                    <MadCap:snippetText src="../Styles/PropertyNameLeftValueRight.flsnp" />
+                </p>
+            </li>
+            <li>
+                <p>To the right of <span class="Emphasis">overflow</span>,  select <span class="Emphasis">default</span> from the column.</p>
+            </li>
+            <li>Repeat steps 5 through 7 for the <span class="Emphasis">body</span> style.</li>
+            <li>Regenerate the project.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="3161" MadCap:lastWidth="1278" MadCap:conditions="Products.Central,Products.Flare">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example—Git/Central Integration</p>
+            <p>Let's say you are working on a team of writers and your project is bound to Git. Therefore, that is your primary source control provider, and the source control connection between Flare and Central serves as a secondary source control provider.</p>
+            <p>When you first start working with Central, you have to upload (or bind) the project to Central. To do this, click <img src="../../Images/central_bind_btn.png" alt="" title="" /> in the MadCap Central window pane. Binding the project will establish the connection between Flare and Central, and creates a copy of the project in Central.</p>
+            <p>
+                <img src="../../Images/single_bound1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git5.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>After you upload the project to Central, you should push the project to your Git repository. After you bind the project to Central, a Central ID&#160;is added to the Flare project file, and you need to push the updated project file to Git so other users on your team can access it. To do this, click <span class="Emphasis">Push</span> in the Flare Source Control ribbon.</p>
+            <p>
+                <img src="../../Images/dual_bound_git1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>If any writers on the team do not already have a local copy of the project, they should import the project from Git so they can work on the project locally. Importing the project will ensure that they have the Central ID&#160;in their project, which links their copy of the project to Central. This is the dual binding. Importing from Git (rather than Central) also ensures that each writer can also push changes to and pull changes from both Git and Central. To import the project, they will use the Import Project From Source Control Wizard. <MadCap:conditionalText MadCap:conditions="Products.Central,Products.FlarePrintOnly">For more information about importing projects from source control, see the Flare online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">For more information about importing projects from source control, see <MadCap:xref href="../../../Source_Control/Linked_Topics/Importing_Projects.htm">Importing a Project from Source Control</MadCap:xref>. </MadCap:conditionalText><![CDATA[  ]]></p>
+            <p>
+                <img src="../../Images/dual_bound_git6.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide" />
+            <p>Writers on your team who already have the project locally do not need to re-import. They simply need to pull the project from Git by clicking <span class="Emphasis">Pull</span> in the Flare Source Control ribbon. This ensures that they have the Central ID&#160;in their project, linking it to Central.</p>
+            <p>
+                <img src="../../Images/dual_bound_git12.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Now that everyone has the updated project file, you can all work on the project and make changes using Git. However, a user with permission also needs to add your teammates to the project in Central so you can assign them project tasks, or if other users on the team will be uploading and pulling files from Flare to Central <MadCap:conditionalText MadCap:conditions="Products.Flare,CentralGuides.CentralProjectsAndBuildsGuide">(see the Central online Help)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.CentralOnlineOnly">(see <MadCap:xref href="../../../Users/Assigning_Users_to_Teams_and_Projects.htm">Assigning Users to Teams and Projects</MadCap:xref>)</MadCap:conditionalText>.</p>
+            <p>
+                <img src="../../Images/dual_bound_git7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide" />
+            <p>As you work on files in Flare, you can push your changes to and pull changes from either Git or Central. You can push files by clicking <img src="../../Images/central_push_btn.png" alt="" title="" /> in the MadCap Central window pane or by clicking <span class="Emphasis">Push </span>in Flare's Source Control ribbon. You can pull files by clicking <span class="Emphasis">Pull </span>in Flare's Source Control ribbon. When using a Git/Central dual-binding, it does not matter which location you push to or pull from first, as long as you push the files to both Git and Central and that everyone on your team uses the same workflow.</p>
+            <p>
+                <img src="../../Images/dual_bound_git2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git4.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git3.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>It is possible that the files in the main Git repository and the files in Central will become out-of-sync if changes are made in one repository (i.e., Git or Central) and not made in the other. If this happens, you will see the Resolve Conflicts dialog. You can use this dialog to accept or reject other users' changes.</p>
+            <p>
+                <img src="../../Images/dual_bound_git8.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git9.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git10.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>
+                <img src="../../Images/dual_bound_git11.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralProjectsAndBuildsGuide,FlareGuides.FlareMadCapCentralIntegrationGuide" />
+            <p>When you and your teammates are finished making changes, you need synchronize your local copy of the project  with the copy of the project in Central. To do this, click <img src="../../Images/central_push_btn.png" alt="" title="" /> in the MadCap Central window pane or by clicking <span class="Emphasis">Push </span>in Flare's Source Control ribbon, and make sure you are pushing to the <span class="Emphasis">MadCap Central</span> remote. This will upload your local copy back to Central.</p>
+            <p>
+                <img src="../../Images/dual_bound7.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>Once your files are up in Central, you can publish Help and manage your project. </p>
+        </div>
+    </body>
+</html>

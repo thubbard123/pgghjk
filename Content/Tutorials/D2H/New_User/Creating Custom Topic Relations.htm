@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="11" MadCap:lastHeight="1769" MadCap:lastWidth="1094" class="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HNewUserTutorial.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Tutorials;Topics:relations" />Creating Custom Topic Relations</h1>
+        <p>When you open your NetHelp output and click the San Diego Attractions topic in the table of contents (TOC), you will notice that at the bottom of the topic, there is a section that begins with "More:" and is followed by links to "Balboa Park," "San Diego Zoo," and "Petco Park." These are called "subtopic links" and they are created automatically by Doc-To-Help, based on the structure of your document.</p>
+        <p>
+            <img src="../../../Resources/Images/D2H/topic_relations.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>In the SanDiegoQuickTour.doc file, San Diego Attractions has a Heading 1 style, and Balboa Park, San Diego Zoo, and Petco Park have Heading 2 styles immediately following it. If there were phrases using Heading 3 styles under Balboa Park, they would appear as subtopic links in that topic.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Steps</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>By default, the word "More" appears before the subtopic links, but you can change that. Simply open the Help Targets dialog, select your target, and change the text in the <span class="Emphasis">Label</span> field.</p>
+                <p>You can change the word appearing before subtopic links for individual topics by selecting a topic in the Topics window, opening the <span class="Emphasis">Topics</span> ribbon, and changing the <span class="Emphasis">Related Links Label</span>. </p>
+                <p>
+                    <img id="_x0000_i1072" src="../../../Resources/Images/D2H/RelatedLinksLabel.png" height="120" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide" />
+                <p>It is easy to add your own custom topic relations using the Related Topics window pane. </p>
+                <ol>
+                    <li>In the lower-left corner of Doc-To-Help, click <span class="Emphasis">Related Topics</span>. </li>
+                    <li>In the Related Topics window pane, select <span class="Emphasis">San Diego Attractions</span> from the list. Balboa Park, San Diego Zoo, and Petco Park are automatically displayed at the bottom of the Related Topics window pane. </li>
+                    <li>
+                        <p>From the Topics window, select <span class="Emphasis">San Diego Colleges and Universities</span>  and drag it into the lower <span class="Emphasis">Related Topics</span> area. It is now related, and it is marked as a "Custom related topic."</p>
+                        <p>
+                            <img id="_x0000_i1073" src="../../../Resources/Images/D2H/CustomRelatedTopic.png" height="283" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide" />
+                    <li>
+                        <p>In Doc-To-Help, rebuild your target. On the <span class="Emphasis">Home</span> ribbon, click <span class="Emphasis">Rebuild</span>. </p>
+                        <p>
+                            <img id="_x0000_i1074" src="../../../Resources/Images/D2H/RebuildButton.png" height="120" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If desired, you could rebuild your target from the Doc-To-Help Build panel in Word (<span class="Emphasis">Doc-To-Help&gt;Build Panel&gt;Rebuild</span>). However, since we were working in the Doc-To-Help application, it is easier to rebuild from the Doc-To-Help application in this situation.</p>
+                    </li>
+                </ol>
+                <p>Look at the new list of subtopic links for San Diego Attractions. San Diego Colleges and Universities has been added to the list.</p>
+                <p>
+                    <img src="../../../Resources/Images/D2H/topic_relations2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HNewUserTutorialGuide" />
+                <p>If you prefer that the subtopic links are not displayed in a specific topic, choose that topic in the Topics window, choose the <span class="Emphasis">Topics</span> ribbon, and select the <span class="Emphasis">Hide subtopic links</span> check box.</p>
+                <p>
+                    <img id="_x0000_i1075" src="../../../Resources/Images/D2H/HideSubtopicLinks.png" height="122" class="MaxWidth100Percent" />
+                </p>
+                <p>As you can see, automatic and custom topic relations give you a lot of options for navigating your output. For example, you can create custom links to other topics that users may find useful—and the links are very clear and noticeable. You can create custom links from subtopics to their "parent" topics—this directs users back to the parent, which may lead them to other topics of interest. Relating topics helps to eliminate information "dead ends"—the user has links to other information and could be saved the trouble of using search, or checking the TOC or index.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="General.OnlineLive">Next, let's add a new document. See <MadCap:xref href="Adding a Document.htm">Adding a Document</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

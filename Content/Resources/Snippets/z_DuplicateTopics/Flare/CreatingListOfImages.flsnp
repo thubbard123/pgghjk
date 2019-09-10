@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1137" MadCap:lastWidth="1141">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/All.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Proxies/ListOfProxySummary.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a list of images</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add a new topic as you normally would.</li>
+                    <li>At the top of the topic, enter a title for your list (e.g., "List of Figures"). </li>
+                    <li>Select <span class="Emphasis">Insert&gt;Proxy&gt;Insert List-Of Proxy</span>. The List-Of Proxy dialog opens.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Tag Name</span> field, select the parent tag to be used for creating the list.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you have added a caption below each image in your project (e.g., Figure 5: My Image Caption). Perhaps you created a class of the p style called "ImageCaption" (i.e., p.ImageCaption). In a case such as this, you would select p from the Tag Name field when inserting the List-Of proxy. </p>
+                        </div>
+                    </li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+                    <li>
+                        <p>(Optional) In the <span class="Emphasis">Tag Class</span> field, select the style class to be used for creating the list.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Using the example above, you would select "ImageCaption" from this field.</p>
+                        </div>
+                    </li>
+                    <li>(Optional) In the <span class="Emphasis">Stylesheet class for each generated entry</span> field, you can select yet another style class. This class can be used to determine how each item in the generated list looks. You would use this style class, for example, if you want to change the font of the entries or add a leader (e.g., series of dots) between the entries and the page numbers. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Look_of_a_List_of_Elements.htm">Using Styles to Determine the Look of a List of Elements</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoAboutStylesOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="General.Print" /></li>
+                    <li>(Optional) In the <span class="Emphasis">Stylesheet class for proxy</span> field, you can select a class to affect the look of the entire list. You might create and use a proxy style class, for example, if you want to add a border around the generated list. If you do not select a class from this field, the list will use the style settings from the parent MadCap|listOfProxy style. You have the option of creating a class for this proxy style in the Stylesheet Editor. To do this, select the <span class="Emphasis">MadCap|listOfProxy</span> style and click <span class="Emphasis">Add Class</span> to create a class. The class will then be available from this field.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" /> The proxy is added to the topic.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Notes/NoteProxiesExcludeContent.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you are creating print-based output, make sure to add the topic with the proxy to the outline TOC. See <MadCap:xref href="../../../../TOCs/Creating_a_TOC_Manually.htm">Creating a Table of Contents</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ListOf" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="7" MadCap:lastHeight="3395" MadCap:lastWidth="761">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p> A table stylesheet lets you create a look that can be applied to several tables throughout your project. If you need to change the look of general topic content, you can use a regular stylesheet instead. In fact, a regular stylesheet is another way to control the look of tables. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide">See <MadCap:xref href="../../../../Styles/About_Regular_Stylesheets.htm">About Regular Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../../ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide">Where Table Stylesheets are Stored</h2>
+        <p MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,Products.Flare">You can create as many table stylesheets as you need. The traditional location to store a table stylesheet in the Content Explorer is in the Resources\TableStyles folder. However, you can store it anywhere in the Content Explorer that you like.</p>
+        <p MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,Products.Flare">
+            <img src="../../../Images/table_stylesheets.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide">Example</h2>
+        <p MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide">Here is an example showing how you might use table stylesheets.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>You might use two different types of tables in your project—a basic one (with simple borders and no shading) and a patterned one (with customized borders and colored shading in certain rows and columns). So you create one table stylesheet (let's say it's called "Basic.css") and format it the way you want, and then you create a second table stylesheet (let's say it's called "RowPatternStyleSheet.css") and format it. Then, as you insert tables into your topics, you can associate the new table with one of these two table stylesheets. </p>
+                    <p>
+                        <img src="../../../Images/table_style_sheet_pattern_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Images/table_style_sheet_pattern_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareWebHelp">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>see the movie</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://youtu.be/Md2_KLRI0dU" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Table styles:Editor" />Table Style Editor</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Table styles:Editor" />table style editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you open a table stylesheet, it is displayed in the Table Style Editor, which contains multiple tabs and fields for specifying settings such as patterns, borders, backgrounds, alignment, and margins.</p>
+                <p MadCap:conditions="">
+                    <img src="../../../Images/table_style_editor_example.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:stylesheets;Tables:stylesheets;RTL languages:table styles;Table styles:RTL" />Table Styles and RTL Languages</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:stylesheets;Tables:stylesheets;RTL languages:table styles;Table styles:RTL" />table styles and rtl languages</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Products.Flare">If you are using a right-to-left (RTL) language, table styles in your project need to write additional CSS rules behind the scenes in order to work correctly with RTL tables. Because this can potentially double the size of the table style file, this behavior does not happen by default if you create and save a new table style. However, the behavior kicks in automatically in the following two scenarios. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../../Language_Support/About_Language_Support.htm">About Language Support</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" /></p>
+                <ul>
+                    <li MadCap:conditions="Products.Flare">If you open a topic in the XML Editor and an RTL table references an old table stylesheet, Flare updates and saves the table stylesheet in your Content folder.</li>
+                    <li MadCap:conditions="Products.Flare">If you generate output and an RTL table references an old table stylesheet, the table style in the output will be updated.</li>
+                </ul>
+                <p MadCap:conditions="Products.Contributor">If you are using a right-to-left (RTL) language, table styles in your project need to write additional CSS rules behind the scenes in order to work correctly with RTL tables. Because this can potentially double the size of the table style file, this behavior does not happen by default if you create and save a new table style.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesGuide" />
+        <h2 MadCap:conditions="General.Print">Steps for Using Table Stylesheets</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for using table stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary steps when working with table stylesheets:</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Create a New Table Stylesheet </span>You can add a stylesheet to be used specifically for tables. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.FlareOnlineOnly">See <MadCap:xref href="../../../../Styles/Creating_New_Table_Style_Sheets.htm">Creating New Table Stylesheets</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Setting_Table_Styles_for_Print_Output.htm" target="" title="" alt="">Setting Table Styles for Print Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Setting_Table_Styles_for_Print_Output.htm" target="" title="" alt="">Setting Table Styles for Print Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Contributor">See <MadCap:xref href="../../../../Styles/Creating_New_Table_Style_Sheets_Contributor.htm">Creating New Table Stylesheets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareTablesGuide" /></li>
+                    <li><span class="SetOffFirstLevel">Edit </span>After you create a new table stylesheet, you can edit it. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,Products.Contributor,General.OnlineLive,FlareGuides.FlareTablesGuide">See <MadCap:xref href="../../../../Styles/Editing_Table_Stylesheets.htm">Editing Table Stylesheets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></li>
+                    <li><span class="SetOffFirstLevel">Apply a Table Stylesheet to a Table </span>After you edit a table stylesheet, you can apply the stylesheet to a table. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,General.OnlineLive,Products.Contributor,FlareGuides.FlareTablesGuide">See <MadCap:xref href="../../../../Styles/Applying_Table_Stylesheets_to_Tables.htm">Applying Table Stylesheets to Tables</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Notes/NoteNotSupportedLingoReviewFiles.flsnp" MadCap:conditions="Products.Contributor" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For the differences between regular stylesheets, table stylesheets, and local properties—and when you should use one over the other—see <MadCap:xref href="../../../../Styles/Using_Styles_and_Stylesheets/Regular_Stylesheets_Table_Stylesheets_or_Properties.htm">Regular Stylesheets, Table Stylesheets, or Local Properties?</MadCap:xref></p>
+                <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are importing Adobe FrameMaker documents and have tables that you have formatted in a certain way, you can create matching table styles as a result of the import. This can be specified on the Options page of the Import FrameMaker Wizard. In the <MadCap:variable name="Other.Product" /> project, the new table styles will be named after the format named applied to the table in FrameMaker (e.g., "Format_A.css," "Format_B.css," and so on). You can rename these table stylesheets in <MadCap:variable name="Other.Product" /> after the import. Even if you do not use this mapping feature, the table formatting still comes across when you import the files. The only difference is that table stylesheets make it easier to maintain the formatting of your tables within <MadCap:variable name="Other.Product" />. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Importing/Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StylesUsingFlare;Tables" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

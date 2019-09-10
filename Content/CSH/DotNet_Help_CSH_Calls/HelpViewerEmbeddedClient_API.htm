@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="helpsystem;bool;HelpSystem;HelpViewerEmbeddedClientTester;flare020;ke5g.asp;GroupBox;mTopicPanel;mTopicPanel.Location;System.Drawing.Point;mTopicPanel.Name;Drawing.Point;mTopicPanel.Text;client.TryLoad;C;Manual.mchelp" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1506" MadCap:lastWidth="1033" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareDNH.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Using the MadCap Flare HelpViewer Embedded Client, making CSH calls to DotNet Help, and embedding CSH calls in .Net applications." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="CSHCallsDNH" />
+            <MadCap:keyword term="HelpViewerEmbeddedClient;API:HelpViewerEmbeddedClient" />
+            <MadCap:keyword term="DotNet Help:connecting to application;DotNet Help:distributing" />
+            <MadCap:keyword term="Output:DotNet Help;Context-sensitive Help:DotNet Help;DotNet Help:context-sensitive Help" /> HelpViewerEmbeddedClient API</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/InformationForDevelopers.flsnp" />
+        <p>The HelpViewerEmbeddedClient API is used to make calls to the DotNet Help system, including <MadCap:keyword term="Context-sensitive Help" />context-sensitive Help  (CSH) calls. This API supports <MadCap:keyword term="Embedded Help" />embedded CSH calls and can also provide <MadCap:keyword term="Dynamic Help window" />Dynamic Help functionality. When you use this API, the <MadCap:keyword term="MadCap Help Viewer" />MadCap Help Viewer opens in the same process as your application. If instead you require detached Help, opening the Help Viewer in a separate process from your application, see <MadCap:xref href="HelpViewerClient_API.htm">HelpViewerClient API</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use the help viewer embedded client api</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Create an instance of the class using the constructor. </li>
+                    <li>Call <span class="Emphasis">Load() </span>or <span class="Emphasis">TryLoad()</span> to load the Help system of your choice. </li>
+                    <li>Use the functionality of the Help System object. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="IEmbeddedHelpSystem.htm">IEmbeddedHelpSystem API</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+                <table style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;caption-side: top;width: 100%;" cellspacing="0" class="TableStyle-BasicAlternateRows">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p>&#160;</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public void <span class="TableCodeBlue">HelpViewerEmbeddedClient</span>()</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Creates an instance of the HelpViewerEmbeddedClient.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public void <span class="TableCodeBlue">HelpViewerEmbeddedClient</span>( string title )</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Creates an instance of the HelpViewerEmbeddedClient. Sets the title of the Help system to the string specified in <span class="Emphasis">title</span>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public void <span class="TableCodeBlue">HelpViewerEmbeddedClient</span>( string title, Icon icon )</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Creates an instance of the HelpViewerEmbeddedClient. Sets the title of the Help system to the string specified in <span class="Emphasis">title</span>. Sets the icon of the help system to the icon specified in <span class="Emphasis">icon</span>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public void <span class="TableCodeBlue">Load</span>( string helpsystem )</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Loads the Help system at the path specified in the <span class="Emphasis">helpsystem </span>parameter. This method must be called once before calling <span class="Emphasis">Search()</span> or <span class="Emphasis">ShowTopic()</span>. If the Help system does not exist, an <span class="Emphasis">ArgumentException </span>is thrown. See also <span class="Emphasis">TryLoad()</span>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public bool <span class="TableCodeBlue">TryLoad</span>(&#160;string helpsystem )</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">See <span class="Emphasis">Load()</span>. This method is equivalent to the Load()&#160;method. However, instead of throwing an exception, it returns true if the Help system was loaded successfully; it returns false otherwise.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public <span class="TableCodeBlue">IEmbeddedHelpSystem HelpSystem</span></p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Gets an interface to the Help system. See <MadCap:xref href="IEmbeddedHelpSystem.htm">IEmbeddedHelpSystem API</MadCap:xref> for more information.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows" style="font-size: 9pt;font-family: 'Courier New';">
+                                <p class="TableTextEmphasis">public virtual string <span class="TableCodeBlue">Title</span></p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableText">Gets the title of the Help system.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareDNHGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">examples</p>
+                    <p>Refer to the sample application called "HelpViewerEmbeddedClientTester" for a fully functional application that uses the HelpViewerEmbeddedClient API. This sample application is available in the SDK, which you can download from:</p>
+                    <p><a href="http://www.madcapsoftware.com/downloads/redistributables.aspx" target="_blank">http://www.madcapsoftware.com/downloads/redistributables.aspx</a>
+                    </p>
+                    <p class="CodeIndented">// Create a group box where the embedded help topic will be displayed</p>
+                    <p class="CodeIndented">GroupBox mTopicPanel = new GroupBox();</p>
+                    <p class="CodeIndented">mTopicPanel.Location = new System.Drawing.Point( 32, 204 );</p>
+                    <p class="CodeIndented">mTopicPanel.Name = "mTopicPanel";</p>
+                    <p class="CodeIndented">mTopicPanel.Text = "Help Topic";</p>
+                    <p class="CodeIndented">// Display a topic embedded in the group box</p>
+                    <p class="CodeIndented">HelpViewerEmbeddedClient client = new HelpViewerEmbeddedClient();</p>
+                    <p class="CodeIndented">if ( client.TryLoad( @"C:\My Project\Manual.mchelp" ) )</p>
+                    <p class="Code">{ </p>
+                    <p class="CodeIndented">client.HelpSystem.DynamicHelpPanel = mTopicPanel;</p>
+                    <p class="CodeIndented"> client.HelpSystem.LoadTopic( "MyID1" ); </p>
+                    <p class="Code">}</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="CSHCallsDNH" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+    </body>
+</html>

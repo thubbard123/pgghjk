@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords=".css;.htm;.xhtml;F9;.chm;J;.jpg;.pdf,;.doc,;.txt),;.flimp;'Empty';.xpj,;.hhp;framesets;frameset;hotspot...;.htm,;.html,;.xml,;pdf;file...;(.exe;sent...;WPARAM;LPARAM;AutoFit;Toggler;toggler;e.g.,;i.e.,;Website;g.,;www.acme.com).;a.&lt;name;style.);etc.).;g;Jump1;Jump2;HtmlHelp;URLs;www.acme.com;Support.htm;s;website;chm;acme.com;htm;subfolder;TOC;subfolders;i;e.,;DotNet;WebHelp;RoboHelp;system...;(.chm;.mchelp;.mcwebhelp;mchelp;mcwebhelp;C;Master.chm,;AnotherHelpSystem.chm).;temp.hhc,&quot;;.hhc;MyHelp.chm#MyToc.hhc).;hhc;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;AnotherHelpSystem.mchelp),;Master.mcwebhelp,;AnotherHelpSystem.mcwebhelp).;AnotherHelpSystem.mcwebhelp),;Only.&quot;;Example...;H2;Company.&quot;;F12;Dockable;K;Examples...;p;XML;MiniTOC;Toc;Stylesheet;miniTocProxy;xref;XRef;b;OddPage;EvenPage;FirstPage;etc.);TOCs;W;Default.&quot;;MyDestination.&quot;;MyGlossary.&quot;;Master.&quot;;MyVariables.&quot;;BrowseSequence;project.);ve;ConditionTag;ConditionTagSet;H1;H6;H3;RelatedTopic;extensions...;xml;TableStyles;Configure...&quot;;F6;Url;SearchFilterSet;HotDogs;(.flsfs;DotNetHelp;TocEntry;ToolbarItem;px;pc;needs.);Box.&quot;;CSH;MadCap;icon...;LocationBar;StatusBar;Resizable;JavaScript;AccordionItem;IndexEntry;AccordionTitle;CollapseAll;ExpandAll;RemoveHighlight;ToggleNavigationPane;BorderLeft;BorderRight;BorderTop;BorderBottom;FontFamily;Arial;FontSize;FontWeight;FontStyle;BackgroundColor;BackgroundGradient;BackgroundGradientHover;ItemHeight;PressedIcon;HoverIcon;SelectionColor;SelectionBackgroundColor;TocIcons;TopicIcon;BookIcon;BookOpenIcon;HtmlHelpIconIndex;MarkAsNew;ControlType;OnClick;onclick;F7;DoohickeyPro;program.);MyTemplates;target.&quot;;TableStyle;(.css;Stylesheets; .htm; .css; .xhtml; .chm; .jpg; .pdf,; .doc,; .txt),; .flimp; 'Empty'; .xpj,; .hhp; .htm,; .html,; .xml,;Togglers; .mchelp; .mcwebhelp;MyHelpSystem; .hhc" MadCap:lastBlockDepth="18" MadCap:lastHeight="20869" MadCap:lastWidth="630" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Contributor" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Shared\TouringWorkspace.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="template" content="Flare.htt" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Styles:Stylesheet Editor;Stylesheet Editor" />
+            <MadCap:concept term="FilterStyles" />Stylesheet <MadCap:annotation MadCap:createDate="2016-03-17T10:27:42.5846229-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="need to fix conditons on links in this topic when condition in expanding text bug is fixed" MadCap:editor="KSchneider" MadCap:editDate="2016-03-17T10:28:00.7802638-07:00">Editor</MadCap:annotation></h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/UIElements/StylesheetEditor1.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StylesAdvancedSimplifiedViews.flsnp" />
+        <p MadCap:conditions="Products.Analyzer,Products.FlareOnlineOnly">For more information<MadCap:conditionalText MadCap:conditions="Products.Analyzer"> about styles</MadCap:conditionalText>, <MadCap:conditionalText MadCap:conditions="Products.Flare">see <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref> and <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Analyzer">see the online Help in Flare</MadCap:conditionalText>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/HowToOpenThisEditor.flsnp" />
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" MadCap:conditions="Products.Flare" class="Decimal">
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/MakeSureContentExplorerOpen.flsnp" />
+                    </li>
+                    <li>
+                        <p>Locate and double-click a stylesheet (<MadCap:keyword term="CSS file" />CSS) file. </p>
+                        <p>If you used the default location when you added the stylesheet to the project, the stylesheet is located in the <span class="Emphasis">Resources\Stylesheets</span> subfolder of the Content Explorer.</p>
+                        <p>If you imported the stylesheet from another authoring tool, the stylesheet is located in the same subfolder (if any) where it was stored in the source project, or at the root level of the Content Explorer.</p>
+                    </li>
+                </ol>
+                <ol MadCap:conditions="Products.Analyzer">
+                    <li>Open one of the window panes having to do with styles (e.g., Undefined Styles window pane, Duplicate Styles window pane).</li>
+                    <li>
+                        <p>In the list of styles that displays in the window pane, double-click a row.</p>
+                    </li>
+                </ol>
+                <ol MadCap:conditions="Products.Contributor">
+                    <li>Open a document that you created (not using a contribution template).</li>
+                    <li>In the menus view, select <span class="Emphasis">Tools&gt;Edit Stylesheet</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>what you can do in this editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can accomplish many things in this editor. Some of the primary tasks that you can perform are listed below:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:stylesheets;Styles:comments;Comments:styles" />Comments (Add) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/AddingStyleComments.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See </MadCap:conditionalText><MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Adding_Comments_to_Styles.htm" MadCap:conditions="General.OnlineLive">Adding Comments to Styles</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:keyword term="Fonts:font sets" /><span class="SetOffFirstLevel">Font Sets (Manage) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/LinkingStyleSheetsSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See </MadCap:conditionalText><MadCap:xref href="../../Fonts/Font_Sets/Creating_Font_Sets.htm" MadCap:conditions="General.OnlineLive">Creating Font Sets</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">, </MadCap:conditionalText><MadCap:xref href="../../Fonts/Font_Sets/Editing_Font_Sets.htm" MadCap:conditions="General.OnlineLive">Editing Font Sets</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">, and </MadCap:conditionalText><MadCap:xref href="../../Fonts/Font_Sets/Deleting_Font_Sets.htm" MadCap:conditions="General.OnlineLive">Deleting Font Sets</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:keyword term="Media queries:creating;Styles:media queries" /><span class="Emphasis"><span class="SetOffFirstLevel">Media Queries (Create) </span></span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/MediaQueries1.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Mediums/Creating_Media_Queries.htm">Creating Media Queries</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:keyword term="Mediums:creating;Styles:mediums" /><span class="Emphasis"><span class="SetOffFirstLevel">Mediums (Create) </span></span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/MediumTypeSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See </MadCap:conditionalText><MadCap:xref href="../../Styles/Mediums/Creating_Medium_Types.htm" MadCap:conditions="General.OnlineLive">Creating Mediums</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" /><span class="SetOffFirstLevel">Selectors (Create) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectorSummary.flsnp" /> <MadCap:snippetText src="../../Resources/Snippets/Styles/CreateSelectorsSummary.flsnp" /><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See </MadCap:conditionalText><MadCap:xref href="../../Styles/Creating_Selectors.htm" MadCap:conditions="General.OnlineLive">Creating Selectors</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:renaming;Styles:classes" />Selectors (Rename) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/RenameStyleClassSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See </MadCap:conditionalText><MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Renaming_Selectors.htm" MadCap:conditions="General.OnlineLive">Renaming Selectors</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="General.Future"><span class="SetOffFirstLevel"><MadCap:annotation MadCap:createDate="2016-08-05T11:25:40.6714014-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Styles Cut Copy Paste Delete" MadCap:editor="KSchneider" MadCap:editDate="2016-08-05T11:25:49.9977827-07:00">Style </MadCap:annotation>Property Values (Cut, Copy, Paste) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyValues1.flsnp" /> <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyValues2.flsnp" /> See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Cutting_Copying_Pasting_Style_Property_Values.htm">Cutting, Copying, and Pasting Style Property Values</MadCap:xref>.</li>
+                    <li MadCap:conditions="General.Future"><span class="SetOffFirstLevel"><MadCap:annotation MadCap:createDate="2016-08-05T11:25:53.5194577-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Styles Cut Copy Paste Delete" MadCap:editor="KSchneider" MadCap:editDate="2016-08-05T11:26:01.2711423-07:00">Style </MadCap:annotation>Property Values (Delete) </span>In addition to copy, cut, and paste, you <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyValues4.flsnp" /> See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Deleting_Style_Property_Values.htm">Deleting Style Property Values</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:disabling" />Styles (Disable) </span>You can <MadCap:snippetText src="../../Resources/Snippets/Styles/DisableStylesSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See </MadCap:conditionalText><MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Disabling_Styles.htm" MadCap:conditions="General.OnlineLive">Disabling Styles</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:keyword term="Styles:stylesheets;Styles:stylesheets;Cascading stylesheets" /><span class="SetOffFirstLevel">Styles (Edit) </span>After you create a new regular stylesheet, you can edit the styles within it. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Contributor">See <MadCap:xref href="../../Styles/Editing_Styles_Contributor.htm" target="" title="" alt="">Editing Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Importing:styles;Styles:importing" />Styles (Import) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/ImportStylesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See </MadCap:conditionalText>
+                        <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Importing_Styles.htm" MadCap:conditions="General.OnlineLive">Importing Styles</MadCap:xref>
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText>
+                    </li>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:keyword term="Linking:style sheets;Styles:stylesheets" /><span class="SetOffFirstLevel">Stylesheets (Link) </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/LinkingStyleSheetsSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See </MadCap:conditionalText><MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Linking_Stylesheets.htm" MadCap:conditions="General.OnlineLive">Linking Stylesheets</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Inheritance;Styles:inherited" />Why are Some Styles Gray?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/InheritedStylesGray.flsnp" />
+                <p>
+                    <img src="../../Resources/Images/inherited_styles_gray1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+                <p>Also, if you hover over an inherited style, <MadCap:variable name="Other.Product" /> displays the path to the stylesheet from which the style is inherited.</p>
+                <p>
+                    <img src="../../Resources/Images/inheritance2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/inheritance3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="General.Future">
+                    <MadCap:snippetText src="../../Resources/Snippets/Styles/ViewInheritedStylesheet.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[General.OnlineLive or Snippets.Snippet2] " />
+                    <MadCap:annotation MadCap:createDate="2016-08-04T14:45:51.1393078-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="View Inherited Stylesheet Via Double-Click" MadCap:editor="KSchneider" MadCap:editDate="2016-08-04T14:45:52.1173202-07:00">xxx</MadCap:annotation>
+                </p>
+                <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.Future">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:annotation MadCap:createDate="2016-08-04T14:37:55.9213619-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="View Inherited Stylesheet Via Double-Click" MadCap:editor="KSchneider" MadCap:editDate="2016-08-04T14:37:56.8671603-07:00">Example</MadCap:annotation>
+                        </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/ViewInheritedStylesheetExample.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p MadCap:conditions="Products.FlareOnlineOnly">For more information, see <MadCap:xref href="../../Styles/Basics_of_CSS/Inheritance.htm">Inheritance</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>local toolbar</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="width: 100%;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0" class="TableStyle-BasicAlternateRows">
+                    <col style="width: 20%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Button/Section</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/advanced_view_btn.png" />
+                                </p>
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/simplified_view_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Toggles between an Advanced view and a Simplified view of the Stylesheet Editor.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/add_class_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Opens the New Selector dialog opens, which lets you create a new selectors of varying levels of complexity. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/Creating_Selectors.htm">Creating Selectors</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectorSummary.flsnp" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" MadCap:conditions="">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/manage_font_sets_btn.png" alt="" title="" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows" MadCap:conditions="">
+                                <p class="TableText">Opens the Font Set Manager, which lets you add, edit, and delete a font set. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Products.FlareOnlineOnly">See <MadCap:xref href="../../Fonts/Font_Sets/Creating_Font_Sets.htm">Creating Font Sets</MadCap:xref>, <MadCap:xref href="../../Fonts/Font_Sets/Editing_Font_Sets.htm">Editing Font Sets</MadCap:xref>, and <MadCap:xref href="../../Fonts/Font_Sets/Deleting_Font_Sets.htm">Deleting Font Sets</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/options_btn2.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableText">Opens a submenu that lets you select from the following options:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Import Styles </span>Opens the Import Styles dialog, which lets you import individual styles from another stylesheet to the current one. You can import from one of <MadCap:variable name="Other.Product" />'s factory stylesheets or any other CSS file that you have access to. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Importing_Styles.htm">Importing Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Rename </span>Lets you rename a selector (e.g., class, ID). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Renaming_Selectors.htm">Renaming Selectors</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Add Medium </span>Opens the New Medium dialog, which lets you create a new medium or media query. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Mediums/Creating_Medium_Types.htm">Creating Mediums</MadCap:xref> and <MadCap:xref href="../../Styles/Mediums/Creating_Media_Queries.htm">Creating Media Queries</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Delete Medium </span>Deletes the medium or media query that is active in the Stylesheet Editor. You cannot delete the default medium.</li>
+                                    <li><span class="SetOffFirstLevel">Stylesheet Links </span>Opens the Stylesheet Links dialog, which lets you link another stylesheet to the current stylesheet. The style classes within the linked stylesheet are therefore copied into the current stylesheet.</li>
+                                    <li><span class="SetOffFirstLevel">Disable Styles </span>Opens the Disable Styles dialog, which lets you <MadCap:snippetText src="../../Resources/Snippets/Styles/DisableStylesSummary.flsnp" />&#160;<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Disabling_Styles.htm" MadCap:conditions="Products.Flare">Disabling Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>advanced view</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="caption-side: top;margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0" class="TableStyle-BasicAlternateRows">
+                    <col style="width: 20%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Button/Section</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">[Styles]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesShowStylesOption.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StyleTypesDescriptions.flsnp" class="TableText" MadCap:conditions="General.OnlineLive" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Hide Inherited</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesHideInheritedOption.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Basics_of_CSS/Inheritance.htm">Inheritance</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/styles_group_view_btn.png" alt="" title="" class="ReduceButtonSize">
+                                    </img>
+                                </p>
+                                <p>
+                                    <img src="../../Resources/Images/styles_alphabetical_view_btn.png" alt="" title="" class="ReduceButtonSize" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Toggles between showing the properties in grouped view or alphabetical view.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/expand_all_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">If you are using the grouped view, this expands all of the property groups.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">
+                                    <img src="../../Resources/Images/collapse_all_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">If you are using the grouped view, this collapse all of the property groups.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Medium: [Name of Medium]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StylesMediumOption.flsnp" class="TableText" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Show:&#160;[Properties] </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">You can use this field to filter the style properties that are displayed in the Stylesheet Editor.</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Set (Locally) Properties </span>Displays properties that have been set explicitly in the stylesheet. An "Add Property" field is also shown at the top of the properties. You can use this field to quickly add another property to the list so you can edit it.</li>
+                                    <li><span class="SetOffFirstLevel">Set Properties </span>Displays properties that have been set explicitly in the stylesheet. It will also show properties that have been set in an imported stylesheet or inherited properties that have been set in a factory stylesheet. An "Add Property" field is also shown at the top of the properties. You can use this field to quickly add another property to the list so you can edit it.</li>
+                                    <li><span class="SetOffFirstLevel">Assorted Relevant Properties </span>Displays  the properties that are used most often for the selected style type.</li>
+                                    <li><span class="SetOffFirstLevel">All Properties </span>Displays all available properties.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">[Styles]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Lists the styles. After you select a style on the left, you can edit its properties on the right.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">[Properties]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Lists the properties relevant to the style that is selected to the left. If the properties are displayed in group view, expand the group to see the actual properties. The property name is displayed on the left. Use the options on the right to specify the value settings for the property. Depending on the property, you might set the value by typing an entry, selecting an option from a drop-down list, or specifying settings in a small popup. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Comments</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">You can select the style and then type a comment in the field at the bottom of the <span class="Emphasis">Styles</span> section. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Adding_Comments_to_Styles.htm">Adding Comments to Styles</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <img src="../../Resources/Images/style_comments4.png" class="MaxWidth70Percent" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableTextEmphasis">[Preview]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/AsYouMakeChangesPreview.flsnp" />
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>simplified view</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <table style="caption-side: top;margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0" class="TableStyle-BasicAlternateRows">
+                    <col style="width: 20%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Button/Section</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">[Styles]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesShowStylesOption.flsnp" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StyleTypesDescriptions.flsnp" class="TableText" MadCap:conditions="General.OnlineLive" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Hide Inherited</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StylesHideInheritedOption.flsnp" class="TableText" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Hide Properties</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Hides the properties in the main portion of the Stylesheet Editor. By hiding the properties you can make the editor load faster than it would otherwise.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Medium: [Name of Medium]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StylesMediumOption.flsnp" class="TableText" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/run_properties2_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Opens the Properties dialog for the selected style. From this dialog, you can provide various settings for the style(s), such as changing the font or the background color.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/bold_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Applies bold typeface to the font for the selected style. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/italic_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Applies italic typeface to the font for the selected style. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/underline_btn1.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Underlines the font for the selected style. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/font_type_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Lets you select a font type (e.g., Arial, Times New Roman), applying it to the selected style.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/font_size_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Lets you select a font size, applying it to the selected style.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/color_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Lets you choose and apply a color to the font for the selected style. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/background_color_btn.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Lets you choose and apply a color to the background of the selected style. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableTextEmphasis">[Styles Grid]</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableText">Columns and rows in the grid display the various styles and classes in the stylesheet, as well as some of the more common property settings. These grid cells are populated based on the settings you provide in the Properties dialog (which is opened by clicking <img src="../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />) or by selecting certain buttons (e.g., bold, font size) in the editor.</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">Name </span>Displays the full name of the style class (the XML tag followed by a period and the name of the class, if any). For example, if you create a class of the p style called "tip," this column will display "p.tip."</li>
+                                    <li><span class="SetOffFirstLevel">Tag </span>Displays the XML tag upon which the class is based.</li>
+                                    <li><span class="SetOffFirstLevel">Class </span>Displays the class name if you have created one (based on the XML tag). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#classes">Classes</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">ID </span>Displays the identifier (ID) name if you have created one (based on the XML tag). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#Identifiers">Identifiers</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Pseudo Class </span>Displays the pseudo class, if one exists (e.g., active, hover, visited). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#PseudoClasses">Pseudo Classes</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li><span class="SetOffFirstLevel">Preview </span>Displays a preview of the style class as you make changes to the property settings.</li>
+                                    <li><span class="SetOffFirstLevel">Comment </span>You can click twice (or click once and press <span class="Emphasis">F2</span>) in this cell and type comment text related to the style. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/More_About_Styles_and_Style_Sheets/Adding_Comments_to_Styles.htm">Adding Comments to Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

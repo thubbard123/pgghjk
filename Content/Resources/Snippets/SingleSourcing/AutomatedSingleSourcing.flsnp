@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="11" MadCap:lastHeight="3544" MadCap:lastWidth="1128">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Although you can start out with just a single Word document (or you might have several Word documents in your project), <MadCap:variable name="Other.Product" /> does several things to make it easier to single-source, creating multiple outputs from all of that one document, or even just parts of it.</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">Structure (Documents to <MadCap:keyword term="Topics" />Topics) </span>Word documents can be relatively easy to work with, but they aren't necessarily the most conducive format when it comes to online output. That's because online output (e.g., a website or online Help system) is typically broken up into several somewhat small pages, whereas a Word document is a single presentation of information, and sometimes a quite long one at that. To make your Word document more useful for online output, it is broken up into smaller elements called "topics," which are based on the heading styles in the document<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Topics/D2H/About_Topics_D2H.htm">About Topics</MadCap:xref>)</MadCap:conditionalText>. After you create a Doc-To-Help project and build some output from it<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/D2H/Building a Target.htm">Building a Target</MadCap:xref>)</MadCap:conditionalText>, <MadCap:variable name="Other.Product" /> automatically creates multiple topics as a result, structuring the content for online documentation. Heading 1 styles in your Word document automatically become parent topics, and all of the Heading 2 styles under a Heading 1 style become subtopics. Just keep in mind that these topics are not created until you build at least one target in your project.</p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Topics/TopicsExampleD2H.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Linking;Subtopic links" />Navigation </span>Parent topics automatically include "See Also" links to subtopics.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See  <MadCap:xref href="../../../Nav_Links/D2H/Managing Related Topics.htm">Managing Related Topics</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>The following shows a parent topic containing links to its three subtopics.</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics3.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Linking;Cross-references" />Links </span>Cross-references (with page numbers in print-based Manual targets) are automatically converted to hyperlinks in online output. Also, manuals can be set up to include both hyperlinks and page number cross-references. This is useful for both types of end users—those who prefer to read on screen or print out the manual.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Nav_Links/Cross_References/D2H/Inserting Cross References.htm">Inserting Cross-References</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>Here is how a cross-reference might look in the Word source document:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics4.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+                            <p>When you generate and view the PDF, the link looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics5.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+                            <p>But when you generate and view NetHelp online output, the link looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics6.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Drop-down text" />Drop-Downs and <MadCap:keyword term="Expanding text" />Expanding Text </span>Your text can be flagged so that it appears as drop-down or expanding text in online output. This text will automatically be included in the print-based output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Nav_Links/D2H/Creating Expanded Dropdown or Popup Text.htm">Creating Expanded, Drop-Down, or Popup Text</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>Here is how a drop-down might look in the Word source document:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics7.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+                            <p>When you generate and view NetHelp online output, the link initially looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics8.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p>When the drop-down is clicked, it looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics9.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HGettingStartedGuide" />
+                            <p>When you generate and view the PDF, the drop-down looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/structure_topics10.png" alt="" title="" class="MaxWidth60Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Margin notes;Notes:margin" />Margin Notes </span>Margin notes included in printed outputs automatically become popups in online output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Margin_Notes/Creating Margin Notes.htm">Creating Margin Notes</MadCap:xref>.</MadCap:conditionalText></p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Front matter;Back matter" />Front matter and Back matter </span>For print-based manuals, <MadCap:variable name="Other.Product" /> automatically generates the title page, table of contents, and index so you don't have to. This occurs if the front matter and back matter elements are part of the target template that you use. When you open the target template or generate output, you will see these elements, but when you edit your source document, you won't see them.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</MadCap:xref>.</MadCap:conditionalText></p>
+            </li>
+        </ul>
+    </body>
+</html>

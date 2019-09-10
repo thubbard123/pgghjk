@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Central" MadCap:lastBlockDepth="16" MadCap:lastHeight="4008" MadCap:lastWidth="641" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Central\CentralUsersTeams.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Users:adding" />Adding Users</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Users/AddingUsers.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Users/AddingUsers2.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Central/UserAdminPerm.flsnp" />
+        <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralUsersAndTeamsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add a Single User</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <img src="../Resources/Images/users_btn.png" alt="" title="" class="ReduceButtonSize" />. The Users page opens.</li>
+                    <li>In the toolbar click <img src="../Resources/Images/add_btn2.png" alt="" title="" class="ReduceButtonSize" />. The Add User dialog opens.</li>
+                    <li>Complete the name and email address fields.</li>
+                    <li>Click the down arrow next to <span class="Emphasis">Set Permissions</span>. The area expands, showing permission check boxes.</li>
+                    <li>
+                        <p>Select any of the check boxes to give the user the appropriate permissions in the system.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Users:permissions;Permissions" />Permissions</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Users/PermissionsList.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Click <span class="Emphasis">Send Invitation</span>. If the invitation is successful, an email is sent to the user. The user must click the link in the email to activate the account. Until the user activates the account, he or she is listed as "Invited" in the system.</li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If no user seats are remaining, you will be informed. You must purchase more user seats before adding the new one. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Server/Purchasing_Seats_Space.htm">Purchasing User Seats and Storage Space</MadCap:xref>.</MadCap:conditionalText></p>
+                    <p>Alternatively, you can deactivate an existing user to free up a user seat. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Deactivating_Users.htm">Deactivating Users</MadCap:xref>.</MadCap:conditionalText></p>
+                    <p MadCap:conditions="CentralGuides.CentralUsersAndTeamsGuide">For more information, see the online Help.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="CentralGuides.CentralUsersAndTeamsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add Multiple Users in Bulk</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>Create, or make sure you have access to, a comma-separated value (CSV) file containing the information for the users you want to add. The CSV file should have three columns, with the following in the top cells of each column:</p>
+                        <ul>
+                            <li>Email</li>
+                            <li>FirstName</li>
+                            <li>LastName</li>
+                        </ul>
+                    </li>
+                    <li>Click <img src="../Resources/Images/users_btn.png" alt="" title="" class="ReduceButtonSize" />. The Users page opens.</li>
+                    <li>In the toolbar click <img src="../Resources/Images/add_btn2.png" alt="" title="" class="ReduceButtonSize" />. The Add User dialog opens.</li>
+                    <li>Click <span class="Emphasis">Bulk Add Users</span>. The Bulk Add Users dialog opens.</li>
+                    <li>Click <span class="Emphasis">Browse</span>.</li>
+                    <li>Find and select the CSV file. Then click <span class="Emphasis">Open</span>.</li>
+                    <li>Click the down arrow next to <span class="Emphasis">Set Permissions</span>. The area expands, showing permission check boxes.</li>
+                    <li>
+                        <p>Select any of the check boxes to give the users the appropriate permissions in the system. All of the users in the CSV file will receive the same permissions that you choose. However, you can always edit the permissions for a particular user later (see <MadCap:xref href="Setting_Permissions.htm">Setting User Permissions</MadCap:xref>).</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Users:permissions;Permissions" />Permissions</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/Users/PermissionsList.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Click <span class="Emphasis">Upload File</span>. The dialog indicates the new users that will be added. Also, it will show if any of the selected users are already on the license, as well as any invalid emails that are found in the CSV file.</li>
+                    <li>Click <span class="Emphasis">Accept &amp; Send Invitation</span>. If the invitations are successful, an email is sent to each user. The user must click the link in the email to activate the account. Until the user activates the account, he or she is listed as "Invited" in the system.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can change the user's permissions any time. In addition, you can set permissions globally for all projects or separately for individual projects. See <MadCap:xref href="Setting_Permissions.htm">Setting User Permissions</MadCap:xref>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

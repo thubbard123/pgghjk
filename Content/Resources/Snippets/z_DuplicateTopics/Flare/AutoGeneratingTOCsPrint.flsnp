@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="5489" MadCap:lastWidth="846">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" />
+        <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">If you want to include a generated table of contents (TOC) in your output, you can do so by following these steps.</p>
+        <ol MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+            <li>Do one of the following, depending on whether you want to create the TOC automatically or manually:<ul><li><span class="SetOffFirstLevel">Automatic Method </span>In the target, select the <span class="Emphasis">Advanced</span> tab and select <span class="Emphasis">Generate TOC Proxy</span>. See <MadCap:xref href="#Auto-gen">Auto-generating TOCs for Print</MadCap:xref>.</li><li><span class="SetOffFirstLevel">Manual Method </span>Create a topic with a TOC proxy that will be used as a placeholder for the generated TOC. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm">Creating a TOC Manually for Print</MadCap:xref>.</li></ul><MadCap:snippetBlock src="../../Proxies/AutoGenerateVersusManualProxies.flsnp" /></li>
+            <li>Use one of the following methods to determine which headings show up in the generated TOC, and at which level. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Outline TOC depth</span> You can use the structure in your "outline TOC" to determine which headings are included in the TOC.  For more information about your outline TOC, see <MadCap:xref href="../../../../TOCs/About_Tables_of_Contents.htm">About Tables of Contents</MadCap:xref>.</li><li><span class="SetOffFirstLevel">Heading Styles</span> You can use heading styles and the "mc-heading-level" property to determine which headings are included in the TOC.</li></ul></li>
+            <li>Use styles to determine the look of the generated TOC. <MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" /></li>
+        </ol>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"><a name="Auto-gen"></a>
+            <MadCap:keyword term="Auto-generating:tables of contents;Tables of contents:proxies;Proxies:tables of contents;Tables of contents:auto-generating" />Auto-generating TOCs for Print</h2>
+        <p>For print-based output, you can let Flare auto-generate a  table of contents (TOC) for you. Alternatively, you can create a unique topic and insert a TOC proxy into it (see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm">Creating a TOC Manually for Print</MadCap:xref>).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to auto-generate a toc</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a print-based target.</li>
+                    <li>
+                        <p>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Generate TOC Proxy</span>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option is disabled by default for existing targets, but enabled for new targets. If a TOC proxy is already present in a topic or snippet that is being included in the output, this auto-generate option has no effect.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>When you generate the target, a TOC will be created and inserted at the beginning of the output. If your page layout includes a Title page type<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../../Page_Layouts/Pages/Inserting_Pages_in_Page_Layouts.htm">Inserting Pages in Page Layouts</MadCap:xref>)</MadCap:conditionalText>, the TOC is added after the title page in the output.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>which page layout is used?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateProxiesWhichLayout.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>auto-generate versus manual proxies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateVersusManualProxies.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>editing attributes for generated tocs, indexes, and glossaries</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateProxiesEditAttributes.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateProxiesExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Notes/NoteAutoGenerateProxies3.flsnp">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="GlossaryIndexTOCProxies;TOCs" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

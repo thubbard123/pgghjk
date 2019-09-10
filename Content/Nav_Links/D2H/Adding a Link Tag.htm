@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="723" MadCap:lastWidth="1219" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HDocumentsTemplatesContent.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Linking;Link tags" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">Adding </MadCap:conditionalText>Link Tags</h1>
+        <p>A link tag is a unique identifier for a topic, and makes it possible to create a jump or popup link to a topic. If a paragraph style has the Auto Link check box selected, then Doc-To-Help will automatically create a link tag for every topic using that style<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Styles/D2H/About Project_Styles_and_Topic_Types.htm">About Project Styles and Topic Types</MadCap:xref>).</MadCap:conditionalText> Automatic link tags are identical to the topic title, but spaces, hyphens, and periods are replaced by underscores.</p>
+        <p>Sometimes you may need to manually create a unique link tag for a topic, particularly if you have two or more topics with the same name, and therefore the same link tag. The Link Tag dialog makes this possible. A topic can have more than one link tag, and can be viewed in the Topics window (right-click and from the <span class="Emphasis">Columns</span> menu, choose <span class="Emphasis">Link Tag</span>).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add a Link Tag Manually</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Word source document, select text where you want to add the link tag.</li>
+                    <li>Select the <span class="Emphasis">Doc-To-Help</span> ribbon.</li>
+                    <li>In the <span class="Emphasis">D2HML Styles</span> group, click the <span class="Emphasis">Link Tag</span> button. The Link tag dialog opens. The selected text is displayed at the top of the dialog.</li>
+                    <li>(Optional) By default, the link tag will be the selected text. The phrase "Link tag defined by Text" is displayed in the Link Tag field. If you would prefer to use another link tag, use one of these options:<ul><li><p>If you would like to assign a link tag to the text, select it in the <span class="Emphasis">Link tags</span> area.</p></li><li>If you would prefer to use another link tag, you can add a new link tag to the list. To do this, in the <span class="Emphasis">Link tags</span> area, click <span class="Emphasis">Add New Link Tag</span>. An editable link tag is created, titled "New Link Tag." Type the new link tag within the box and press <span class="Emphasis">Enter</span>.</li></ul></li>
+                    <li>(Optional) If you want to hide the tag, you can select the <span class="Emphasis">Hide properties in document</span>. Clearing the <span class="Emphasis">Visible</span> check box will hide the text in your source document.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Styles/D2H/D2HML/Showing Hidden Hotspots.htm">Showing Hidden Hotspots</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Making It Look Good Guide</span>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tip</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want to link to a topic title that will change with each build (e.g., some text is conditioned or it includes a dynamic variable), create a link tag and link to it to avoid broken links when the text changes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

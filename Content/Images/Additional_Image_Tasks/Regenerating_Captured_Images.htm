@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1534" MadCap:lastWidth="897" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareImages.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Use the Regenerate Captured Images command to update image properties stored in PROPS&#160;files or to remove trial version watermarks from images." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Images:regenerating;Images:updating" />
+            <MadCap:concept term="FilterPictures" />Regenerating Images</h1>
+        <p>You can quickly regenerate (update) all of the images in your project. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to regenerate images</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li>Select <span class="Emphasis">Tools&gt;Regenerate Captured Images</span>.</li>
+                </ul>
+                <p>The two primary reasons for using this option are:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Watermarks:images;Images:watermarks" />Remove Trial Watermarks </span>If you install <MadCap:variable name="Other.Product" /> on a trial basis before purchasing the product, watermarks appear on all images that you capture and insert during the trial period. After you become a licensed user, you can use this option to remove the watermarks on all images.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Modify <MadCap:keyword term="PROPS file" />PROPS Files </span>If you manipulate the PROPS file that accompanies an image file, the image file becomes out of sync with the PROPS file. The "Regenerate Captured Images" option updates the images based on the latest PROPS files.</p>
+                        <p>What is a PROPS (or "Properties") file? It is a file created along with an image file in MadCap Capture to hold all of the property information about that image.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you use MadCap Capture to create a JPG image and you name it "MyImage." You add a text callout to the image in Capture. Therefore, when you are finished you will have one file called "MyImage.jpg," which is the raw image file. Along with this file, you will have another file called "MyImage.jpg.props," which contains the information about the text callout that you added to the image.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+                        <p>One reason to manipulate the PROPS file is to translate the text into another language.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you write an English version of your <MadCap:variable name="Other.Product" /> project, and you have it translated into Spanish as well. This includes any text found in your images, such as this one.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/my_name_is_simon1.png" class="MaxWidth45Percent" />
+                                    </p>
+                                    <p>You make a copy of this image file and the associated PROPS file, and you add them to the Spanish version of your <MadCap:variable name="Other.Product" /> project. Now you need to translate the callout text for the image. So you open the PROPS file in Notepad and you change the text. </p>
+                                    <p>But when you look at the image in the Spanish version of the <MadCap:variable name="Other.Product" /> project, the callout text for the image is still in English. Therefore, you select <span class="Emphasis">Tools&gt;Regenerate Captured Images</span>. The image is updated and now looks like this in your project.</p>
+                                    <p>
+                                        <img src="../../Resources/Images/my_name_is_simon2.png" class="MaxWidth45Percent" />
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you need to translate image callouts in a <MadCap:variable name="Other.Product" /> project, it is recommended that you use MadCap Lingo, rather than manually editing each PROPS file in an editor such as Notepad.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Pictures" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

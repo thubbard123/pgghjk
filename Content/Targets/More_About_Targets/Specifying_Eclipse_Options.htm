@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="19" MadCap:lastHeight="2385" MadCap:lastWidth="956" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareEclipse.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterEclipseHelp" />
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:keyword term="Eclipse Help;Output:Eclipse Help" />
+            <MadCap:concept term="Eclipse Help" />Specifying Eclipse Options</h1>
+        <p>If you are sending output to the <MadCap:variable name="Outputs.EclipseHelp" /> format, you can access&#160;Eclipse options in the Target Editor. </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify eclipse options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a target that is using the <MadCap:variable name="Outputs.EclipseHelp" /> format.</li>
+                    <li>Select the <span class="Emphasis">Eclipse Options</span> tab.</li>
+                    <li>
+                        <p>Complete the options as necessary:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to set the plug-in options</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <p>Use the <span class="Emphasis">Plug-in Options</span> area to define information for the org.eclipse.help API, which provides the core Help system for the Eclipse platform. </p>
+                                    <ul class="FirstLevel">
+                                        <li><span class="SetOffFirstLevel">Provider Name </span>Type the desired provider name. For example, type <span class="TypedEntry">MadCap Software</span>.</li>
+                                        <li><span class="SetOffFirstLevel">Plug-in Name </span>Type a name for your plug-in. For example, name it <span class="TypedEntry">MadCap Flare</span>.</li>
+                                        <li><span class="SetOffFirstLevel">Plug-in ID </span>Type the desired identifier for your plug-in. Use the <span class="TypedEntry">com.&lt;your plug-in name&gt;.&lt;default&gt;</span> naming convention. For example, type <span class="TypedEntry">com.madcapflare.help</span>.</li>
+                                        <li>
+                                            <p><span class="SetOffFirstLevel">Plug-in&#160;Version </span>Set the desired version number for the plug-in.The default value is <span class="TypedEntry">1.0.0.*</span>. This corresponds to the version of Eclipse that your plug-in is targeted for. In the following example, the plug-in is being targeted for Eclipse Standard SDK version <span class="TypedEntry">2.0.1.20130919</span>.</p>
+                                            <p>
+                                                <img src="../../Resources/Images/eclipse-target-editor-eclipse-options-tab.png" class="MaxWidth90Percent" />
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><span class="SetOffFirstLevel">Help System Name </span>Choose one of these options:</p>
+                                            <ul class="SecondLevel">
+                                                <li>
+                                                    <p><span class="SetOffSecondLevel">Use Label </span>
+                                                        <MadCap:snippetText src="../../Resources/Snippets/EclipseHelp/EclipseHelpSystemNameUseLabel.flsnp" />
+                                                    </p>
+                                                    <MadCap:snippetBlock src="../../Resources/Snippets/EclipseHelp/EclipseHelpSystemNameUseLabelExample.flsnp" />
+                                                </li>
+                                            </ul>
+                                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                                            <ul class="SecondLevel">
+                                                <li>
+                                                    <p><span class="SetOffSecondLevel">Use Topic </span>
+                                                        <MadCap:snippetText src="../../Resources/Snippets/EclipseHelp/EclipseHelpSystemNameUseTopic.flsnp" /> </p>
+                                                    <MadCap:snippetBlock src="../../Resources/Snippets/EclipseHelp/EclipseHelpSystemNameUseTopicExample.flsnp" />
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><span class="SetOffFirstLevel">(Optional) Generate Index </span>This check box is selected by default. </li>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                                        <li>
+                                            <p><span class="SetOffFirstLevel">(Optional) Archive to JAR </span>This packages the published output as a single, executable file with the Java archive (JAR)&#160;file name extension. This check box is blank by default. </p>
+                                            <div class="example">
+                                                <p class="exampleHeadTextEmpty">example</p>
+                                                <p>If the <span class="Emphasis">Archive to JAR</span>&#160;check box is selected, the <MadCap:variable name="Outputs.EclipseHelp" /> output publishes the plug-in as a single JAR&#160;file:</p>
+                                                <p>
+                                                    <img src="../../Resources/Images/eclipse_build_executable_jar_file.png" class="MaxWidth90Percent" />
+                                                </p>
+                                                <p>If the check box is not selected, the <MadCap:variable name="Outputs.EclipseHelp" /> output packages the plug-in as a collection of files in a folder:</p>
+                                                <p>
+                                                    <img src="../../Resources/Images/eclipse_build_directory_of_files.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareEclipseHelpGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to set the viewing options</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>
+                                    <p>In the <span class="Emphasis">Viewing Options</span> area, do the following:</p>
+                                    <ol class="LowerAlpha">
+                                        <li>Make sure you have completed the steps for installing Eclipse.  See <MadCap:xref href="../../Output/Eclipse_Output/Creating_an_Eclipse_Help_Plug-in.htm">Creating an Eclipse Help Plug-In</MadCap:xref>.</li>
+                                        <li>After downloading the ZIP file to your computer, click the browse button.&#160;Then navigate to the Eclipse application file that you downloaded to your computer. </li>
+                                    </ol>
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Eclipse Help" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

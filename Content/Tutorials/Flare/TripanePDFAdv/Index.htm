@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="21" MadCap:lastHeight="22950" MadCap:lastWidth="526" class="" MadCap:conditionTagExpression="include[Snippets.Snippet5] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTripane.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/TripanePDF.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Tripane and PDF" />
+            <MadCap:keyword term="Indexes" />
+            <MadCap:concept term="FilterIndexing" />
+            <MadCap:concept term="FilterHTML5" />
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:concept term="FilterSkins" />
+            <MadCap:keyword term="Styles:HTML5;Output:HTML5;Skins:styles;Skins:HTML5;HTML5:styles" />
+            <MadCap:keyword term="HTML5:navigation pane;Navigation pane:HTML5" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Styles:indexes;Indexes:styles" />Indexes</h1>
+        <p>We included indexes in both the online and print-based outputs in this template. Inserting index keywords is the same process, regardless of the type of output. However, there are differences when it comes to telling Flare how to include an index in the output, as well as determining how the index should look.</p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../../Resources/Images/hdydt_indexes2b.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p MadCap:conditions="General.OnlineLive">
+            <img src="../../../Resources/Images/hdydt_indexes3b.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>In this template, we made adjustments to the skin, CSS styles, and page layouts.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Skin</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>skin</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For online output, we used a skin to tell Flare to include an index and to design it.</p>
+                <ol>
+                    <li>In the Project Organizer, open an HTML5 Tripane skin. (There are also Standard and Mobile skins, as well as an HTML5 Top Navigation skin, but the online output in this template is HTML5.Therefore, we used an HTML5 Tripane skin.)</li>
+                    <li>On the <span class="Emphasis">General</span> tab, place a check mark in the <span class="Emphasis">Index</span> box.</li>
+                    <li>Select the <span class="Emphasis">Styles</span> tab.</li>
+                    <li>
+                        <p>Following are some of the main tasks you might perform to style the index pane and its content.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">We used responsive design in the skin<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Responsive_Web_Design/About_Responsive_Web_Design.htm">About Responsive Web Design</MadCap:xref>)</MadCap:conditionalText>. As a result, some style settings were placed in the Web medium and were then inherited by the Tablet and Mobile mediums. For other elements where the Web design is different than the Tablet and Mobile design, one group of settings was placed on the Web medium and a different group of settings placed in the Tablet medium, which the Mobile medium then inherited. <MadCap:snippetText src="../../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="General.Print" /></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>text color—active tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>
+                                        <p>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (active)</span>. You'll notice there are children classes under this style for the different kind of tabs, including Index. However, because we wanted all of the tabs to use the same color when the tab is active, we set the color on the parent style instead of on each child style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/hdydt_indexes6.png" alt="" title="" class="MaxWidth70Percent" />
+                                        </p>
+                                    </li>
+                                    <li>Expand the <span class="Emphasis">Font</span> node.</li>
+                                    <li>In the <span class="Emphasis">Color</span> field, enter <span class="TypedEntry">#bed230</span>. This happens to be the hexadecimal number for the shade of green we want to use. You can also click one of the buttons to the right of the field to select a color.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>text color—inactive tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (inactive)</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Font</span> node.</li>
+                                    <li>In the <span class="Emphasis">Color</span> field, enter <span class="TypedEntry">#818182</span>. You can also click one of the buttons to the right of the field to select a color.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>icon for web medium—active tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes7.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (active)</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> child style node.</li>
+                                    <li>Expand the <span class="Emphasis">Icon</span> node.</li>
+                                    <li>Click in the button to the right of the <span class="Emphasis">Icon</span> field.</li>
+                                    <li> In the dialog that opens, either select an image from the list or click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select an image outside of the project.</li>
+                                </ol>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The PNG image used in our skin is 14X14 pixels. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>icon for web medium—inactive tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes9.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (inactive)</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> child style node.</li>
+                                    <li>Expand the <span class="Emphasis">Icon</span> node.</li>
+                                    <li>Click in the button to the right of the <span class="Emphasis">Icon</span> field.</li>
+                                    <li> In the dialog that opens, either select an image from the list or click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select an image outside of the project.</li>
+                                </ol>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The PNG image used in our skin is 14X14 pixels. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>icon for tablet and mobile medium—active tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes8.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Tablet Medium</span> is selected. (The Mobile medium will inherit the settings from the Tablet medium.)</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (active)</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> child style node.</li>
+                                    <li>Expand the <span class="Emphasis">Icon</span> node.</li>
+                                    <li>Click in the button to the right of the <span class="Emphasis">Icon</span> field.</li>
+                                    <li> In the dialog that opens, either select an image from the list or click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select an image outside of the project.</li>
+                                </ol>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The PNG image used in our skin is 18X18 pixels. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>icon for tablet and mobile medium—inactive tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes10.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Tablet Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (inactive)</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> child style node.</li>
+                                    <li>Expand the <span class="Emphasis">Icon</span> node.</li>
+                                    <li>Click in the button to the right of the <span class="Emphasis">Icon</span> field.</li>
+                                    <li> In the dialog that opens, either select an image from the list or click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select an image outside of the project.</li>
+                                </ol>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The PNG image used in our skin is 18X18 pixels. </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>search bar for web medium</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes11.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>In our template, we just used the default settings. But if you want to make changes or disable the search bar, do the following:</p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel Search Bar</span>.</li>
+                                    <li>If you want to make changes, you can do so under any of the following nodes: <span class="Emphasis">Background</span>, <span class="Emphasis">Border</span>, <span class="Emphasis">Font</span>, <span class="Emphasis">Padding</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> child style node.</li>
+                                    <li>If you want to disable the search bar, expand the <span class="Emphasis">Layout</span> node. Then click the <span class="Emphasis">Display</span> drop-down field and select <span class="Emphasis">none</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>search bar for tablet and mobile medium</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes12.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>In outputs using the Tablet or Mobile medium, the same search bar is used for general content, the index, and the glossary.</p>
+                                <p>In our template, we just used the default settings. But if you want to make changes or disable the search bar, do the following:</p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Tablet Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Header</span> section, expand <span class="Emphasis">Search Bar</span>.</li>
+                                    <li>If you want to make changes, you can do so under any of the following nodes: <span class="Emphasis">Height</span>, <span class="Emphasis">Border</span>, <span class="Emphasis">Box Shadow</span>.</li>
+                                    <li>If you want to disable the search bar, expand the <span class="Emphasis">Layout</span> node. Then click the <span class="Emphasis">Display</span> drop-down field and select <span class="Emphasis">none</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>tab background—active tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes13.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (active)</span>.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <li>Expand the <span class="Emphasis">Background</span> node.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/Skins/BackgroundFields.flsnp" />
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>tab background—inactive tab</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes14.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Tab (inactive)</span>.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <li>Expand the <span class="Emphasis">Background</span> node.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/Skins/BackgroundFields.flsnp" />
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>pane background</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes15.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel</span>. You'll notice there are children classes under this style for the different kind of tabs, including Index. However, because we wanted all of the tabs to use the same pane color when the tab is active we set the color on the parent style instead of on each child style.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <li>Expand the <span class="Emphasis">Background</span> node.</li>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/Skins/BackgroundFields.flsnp" />
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>index keyword items</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>As for the actual index keyword items in the Index pane, we adjusted the text and sometimes the background, depending on its state—normal, hover, selected.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes16.png" alt="" title="" class="MaxWidth50Percent" />
+                                </p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes17.png" alt="" title="" class="MaxWidth50Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel Item</span>. This lets us specify a style for keyword items when they are in their normal state.</li>
+                                    <li>Expand the <span class="Emphasis">Font</span> node.</li>
+                                    <li>In the <span class="Emphasis">Color</span> field, enter or select a color for the text. In our case, the background is dark for the item, so we used <span class="Emphasis">#e1e1e1</span> (the color's hex number) because it is a very light gray.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel Item (hover)</span>. This lets us specify a style for keyword items when they are in their hover state.</li>
+                                    <li>Expand the <span class="Emphasis">Font</span> node.</li>
+                                    <li>In the <span class="Emphasis">Color</span> field, enter or select a color for the text. In our case, the background is dark for the item, so we used <span class="Emphasis">#e1e1e1</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Background</span> node.</li>
+                                    <li>Select a color or image for the background. In our case, we clicked in the <span class="Emphasis">Color</span> field and used <span class="Emphasis">#6c6c6c</span>. We left the Gradient fields set to transparent, and we did not set the Image field so that the Color field would not be overwritten.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel Item (selected)</span>. This lets us specify a style for keyword items when they are in their selected state.</li>
+                                    <li>Expand the <span class="Emphasis">Font</span> node.</li>
+                                    <li>In the <span class="Emphasis">Color</span> field, enter or select a color for the text. In our case, the background will be light for the item, so we used <span class="Emphasis">#1a1919</span> because it is a dark gray.</li>
+                                    <li>Expand the <span class="Emphasis">Background</span> node.</li>
+                                    <li>Select a color or image for the background. In our case, we clicked in the <span class="Emphasis">Color</span> field and used <span class="Emphasis">#bebebe</span>. We left the Gradient fields set to transparent, and we did not set the Image field so that the Color field would not be overwritten.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>expand/collapse icons</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>For index items that have subkeywords, we specified that a triangle icon should be placed next to them. And when those keywords are expanded in the Index pane, we specified that a different icon should be used.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_indexes18.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <ol class="LowerAlpha">
+                                    <li>At the top of the HTML5 Skin Editor, make sure <span class="Emphasis">Web Medium</span> is selected.</li>
+                                    <li>On the left side of the tab, under the <span class="Emphasis">Navigation</span> section, expand <span class="Emphasis">Navigation Panel</span>.</li>
+                                    <li>Expand the <span class="Emphasis">Index</span> node.</li>
+                                    <li>Expand the <span class="Emphasis">Icons</span> node.</li>
+                                    <li>Click the button next to the <span class="Emphasis">Expanded Icon</span> field and select an image to use for multi-level items when they are in their expanded state.</li>
+                                    <li>Click the button next to the <span class="Emphasis">Collapsed Icon</span> field and select an image to use for multi-level items when they are in their collapsed state.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">CSS Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>css styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We used CSS styles to control the look of the following in PDF&#160;output: first page heading, alphabetical headings, index entries, cross-reference page numbers, and footers.</p>
+                <p>
+                    <img src="../../../Resources/Images/hdydt_indexes19.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open). First, we'll create some style classes and then switch to the print medium to set the styles for the PDF&#160;output.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">p</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes1.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span> The New Selector dialog opens.</li>
+                                    <li>In the <span class="Emphasis">Class Name</span> field, type a name for each new style class and click <span class="Emphasis">OK</span>. In this template, we named our style classes as follows:<ul><li><p><span class="SetOffFirstLevel">IndexPrintHead </span>This is a special style class that we used for the large heading in the index.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes2.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p><span class="SetOffFirstLevel">FrameFooterText </span>This is a special style class that we used for content in the footer area of pages, especially page numbers.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes3.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p><span class="SetOffFirstLevel">FrameFooterText2 </span>This is a second special style class that we used for content in the footer area of pages. It has a smaller font size than the other style class.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes4.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><p>These style classes are added in the stylesheet under the parent p style.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes5.png" alt="" title="" class="MaxWidth100Percent" /></p><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><p>In addition to the above custom styles, we'll use the following styles that already exist:</p><ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">MadCap|indexProxy </span>This style is used for the basic content and container holding the generated index entries.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes6.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p><span class="SetOffFirstLevel">MadCap|xref.IndexPageNumber </span>This style is used to change the look of the page numbers shown after each index entry.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes7.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p><span class="SetOffFirstLevel">p.IndexHeading </span>This style is used to control the look of the alphabetical headings above index entries.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes8.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul></li>
+                                    <li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>. Some of the existing styles already have settings in the default medium, but we want to overwrite some of those properties or add others in the print medium.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>On the left side of the Stylesheet Editor, expand <span class="Emphasis">p</span> and select the <span class="Emphasis">IndexPrintHead</span> style class.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_indexes9.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">3E3E3E</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-family </span>Set it to <span class="Emphasis">Century Gothic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">90pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">letter-spacing </span>Set it to <span class="Emphasis">-1px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-heading-level </span>Select <span class="Emphasis">1</span>.</li>
+                                            <li><span class="SetOffFirstLevel">page-break-before </span>Select <span class="Emphasis">always</span>.</li>
+                                            <li><span class="SetOffFirstLevel">text-align </span>Select <span class="Emphasis">right</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>Under <span class="Emphasis">p</span>, select the <span class="Emphasis">FrameFooterText</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">font-family </span>Set it to <span class="Emphasis">Century Gothic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">24pt</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Under <span class="Emphasis">p</span>, select the <span class="Emphasis">FrameFooterText2</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">404040</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-family </span>Set it to <span class="Emphasis">Century Gothic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">11pt</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Under <span class="Emphasis">p</span>, select the <span class="Emphasis">IndexHeading</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">11pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">16px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">text-align </span>Set it to <span class="Emphasis">left</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>On the left side of the Stylesheet Editor, scroll up and select the <span class="Emphasis">MadCap|indexProxy</span> style. Then set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">border-top </span>Set it to <span class="Emphasis">none</span>.</li>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">E1E1E1</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>On the left side of the Stylesheet Editor, expand <span class="Emphasis">MadCap|xref</span> and select the <span class="Emphasis">IndexPageNumber</span> style class under it. Then set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter the following in the default medium in the stylesheet. (Even though these properties are empty in the default medium, we're adding the styles because doing so allows us to select the style in case we're working with the default medium set in the XML Editor.)</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap.indexProxy</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                    <p class="Style">MadCap.xref.IndexPageNumber</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.FrameFooterText</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.FrameFooterText2</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.IndexHeading</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.IndexPrintHead</p>
+                                    <p class="Style">{</p>
+                                    <p class="Style">}</p>
+                                </div>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap.indexProxy</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">border-top: </span><span class="StyleValue">none;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#E1E1E1;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">MadCap.xref.IndexPageNumber</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#BED230;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.FrameFooterText</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">font-family: </span><span class="StyleValue">'Century Gothic';</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">24pt;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.FrameFooterText2</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#404040;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-family: </span><span class="StyleValue">'Century Gothic';</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">11pt;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                                    <p class="Style">p.IndexHeading</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">11pt;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">padding-top: </span><span class="StyleValue">16px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">text-align: </span><span class="StyleValue">left;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">p.IndexPrintHead</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#3E3E3E;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-family: </span><span class="StyleValue">'Century Gothic';</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-size: </span><span class="StyleValue">90pt;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">letter-spacing: </span><span class="StyleValue">-1px;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-heading-level: </span><span class="StyleValue">1;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">page-break-before: </span><span class="StyleValue">always;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">text-align: </span><span class="StyleValue">right;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                    <li>Now you just need to apply the following styles to the appropriate content<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>)</MadCap:conditionalText>.<ul class="FirstLevel"><li><p><span class="SetOffFirstLevel">p.IndexPrintHead </span>Apply this style to the main heading in the topic where the Index proxy is inserted. In our template, this is the topic named "Index.htm" and located in the "Print Only Topics" folder in the Content Explorer.</p><p><img src="../../../Resources/Images/hdydt_indexes22.png" alt="" title="" class="MaxWidth100Percent" /></p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_indexes10.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" /><li><p><span class="SetOffFirstLevel">p.FrameFooterText </span>Apply this style to page layout footer frame content that you want to have a larger font. In our template, we applied it to page number variables that we inserted into footer frames.</p><p><img src="../../../Resources/Images/hdydt_indexes23.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" /><li><p><span class="SetOffFirstLevel">p.FrameFooterText2 </span>Apply this style to page layout footer frame content that you want to have a smaller font. For example, in our template, we applied it to frame footer content showing the word "INDEX" and the name of the PDF guide.</p><p><img src="../../../Resources/Images/hdydt_indexes24.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul><p>As far as the other styles are concerned, you do not need to apply them to anything because they are used on auto-generated content.</p></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Page Layouts</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>page layouts</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For PDF output, we created a couple of page layouts—one for 7 X 9 manuals and the other for 8½ X 11 manuals. The page layouts allowed us to specify how the first, right, and left pages of the index are formatted (e.g., where index content appears, multiple columns), and what footer content they should include (e.g., text, images, page numbers).<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Future">For more information about how the page layouts for the index (and other elements) were created, see <MadCap:xref href="HDYDT_Page_Layouts.htm">How Did You Do That? Page Layouts</MadCap:xref>.xxx</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about indexes and editing them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Indexes/About_Indexes.htm">About Indexes</MadCap:xref>, <MadCap:xref href="../../../Indexes/Inserting_Index_Keywords.htm">Inserting Index Keywords</MadCap:xref>, <MadCap:xref href="../../../Skins/HTML5_Skin_Styles/Navigation_in_HTML5_Skins.htm">Navigation in HTML5 Skins</MadCap:xref>, and <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Determining_the_Look_of_Your_Print_Index.htm">Determining the Look of Your Print Index</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/TripanePDFTutorialWhatsNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

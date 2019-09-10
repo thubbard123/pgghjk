@@ -1,0 +1,16 @@
+#define Dynamic_Help_Window 1
+#define Help_Favorites_Window 3
+#define Help_Glossary_Window 4
+#define Help_Index_Window 5
+#define Help_Search_Window 6
+#define Help_TOC_Window 7
+#define Index_Results_Window 9
+#define Manage_Window_Layouts_Dialog 10
+#define Manage_Windows_Dialog 11
+#define Messages_Window 12
+#define New_Updates_Available_Dialog 13
+#define Options_Dialog_General_Tab 14
+#define Welcome 17
+#define Select_UI_Language_Dialog 23
+#define Crash 24
+#define Start_Page 25

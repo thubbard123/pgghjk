@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="505" MadCap:lastWidth="681">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">There are missing arrowheads on lines in SVG images imported from MS Visio</p>
+        <p class="Subheading">Cause</p>
+        <p>The reason for this problem is that Microsoft Visio fails to write the style correctly, causing the arrowheads on lines to disappear.</p>
+        <p class="Subheading">Solution</p>
+        <p>To solve this problem, perform the following steps.</p>
+        <ol>
+            <li>Open the SVG file in Notepad.</li>
+            <li>Select <span class="Emphasis">Edit&gt;Replace</span>.</li>
+            <li>
+                <p>In the <span MadCap:createDate="2013-01-11T08:48:53.3019024-08:00" MadCap:creator="pstoecklein" MadCap:initials="PJS" MadCap:comment="This should have an Emphasis span tag on it." MadCap:editor="pstoecklein" MadCap:editDate="2013-01-11T08:48:55.1620088-08:00" class="Emphasis">Find</span> field, enter the following.</p>
+                <p class="TypedEntry">orient="auto"</p>
+            </li>
+            <li>
+                <p>In the <span MadCap:createDate="2013-01-11T08:49:03.6074919-08:00" MadCap:creator="pstoecklein" MadCap:initials="PJS" MadCap:comment="This should have an Emphasis span tag on it." MadCap:editor="pstoecklein" MadCap:editDate="2013-01-11T08:49:04.9615693-08:00" class="Emphasis">Replace</span> field, enter the following.</p>
+                <p class="TypedEntry"> orient="auto" style="overflow:visible;"</p>
+            </li>
+            <li>Open the file in a web browser to verify the arrowheads are now part of the image.</li>
+            <li>Import the image into Flare.</li>
+        </ol>
+    </body>
+</html>

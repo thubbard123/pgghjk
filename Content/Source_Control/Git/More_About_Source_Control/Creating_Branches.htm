@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Lingo" MadCap:lastBlockDepth="11" MadCap:lastHeight="1798" MadCap:lastWidth="843" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:branch;Branch:create" />
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />Creating Branches<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlBranchesSummary.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Create Branches—<MadCap:keyword term="Branch Management dialog" />Branch Management Dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Branch</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Branch</span>. </li>
+                        </ul>
+                        <p>The Branch Management dialog opens.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Create</span>. The Create Branch dialog opens.</li>
+                    <li>From the <span class="Emphasis">Source Branch </span> drop-down, select the existing branch you want to use to create the new branch. Your new branch will copy the existing files from the source branch, but commits you make on the new branch will not affect the source branch.</li>
+                    <li>In the <span class="Emphasis">Branch Name </span> field, enter a name for your branch. Names cannot include spaces.</li>
+                    <li>
+                        <p>(Optional) If you want to <MadCap:keyword term="Branch:switch" />switch the branch when you create it, select the <span class="Emphasis">Switch to branch </span> check box.</p>
+                        <p>
+                            <img src="../../../Resources/Images/branches_create.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">You will not see a confirmation message when switching to a newly created branch. Be sure all of your current changes are committed before creating and switching to a new branch. If you have uncommitted changes, they will be lost. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Create</span>. Your new branch is added to the "All branches" list. If you chose to switch to the branch, you can now begin working on the branch.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Create Branches—Source Control Explorer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li MadCap:conditions="Products.Lingo">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Pane</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Branches</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Branches pane" />Branches pane opens. In the pane, you can see your current branch, as well as lists of your published and unpublished branches. </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Create Branch</span>. The Create Branch dialog opens.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>From the <span class="Emphasis">Source Branch </span> drop-down, select the existing branch you want to use to create the new branch. Your new branch will copy the existing files from the source branch, but commits you make on the new branch will not affect the source branch.</li>
+                    <li>In the <span class="Emphasis">Branch Name </span> field, enter a name for your branch. Names cannot include spaces.</li>
+                    <li>
+                        <p>(Optional) If you want to switch the branch when you create it, select the <span class="Emphasis">Switch to branch </span> check box.</p>
+                        <p>
+                            <img src="../../../Resources/Images/branches_create.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">You will not see a confirmation message when switching to a newly created branch. Be sure all of your current changes are committed before creating and switching to a new branch. If you have uncommitted changes, they will be lost. See <MadCap:xref href="../Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Create</span>. Your new branch is added to the "Unpublished Branches" list. If you chose to switch to the branch, you can now begin working on the branch.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="9" MadCap:lastHeight="3808" MadCap:lastWidth="1331" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output" />
+            <MadCap:keyword term="Targets;NetHelp" />Embedding NetHelp Targets into Web Pages</h1>
+        <p>Doc-To-Help’s NetHelp is architected to make it easy to embed a single topic, or an entire Help system, into a web page. This allows you to stream updated content to your website without web development.</p>
+        <p>There is some lightweight front-end configuration that must be made to your website. Your output does not need to be hosted on the same web server as your main site. In that case, you would add an iframe, because using an iframe makes it possible to place the web site and the NetHelp target on different servers (domains). If both your output and your website will be hosted on the same web server, an iframe is not needed.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Embed a NetHelp Target in an Iframe</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This method allows to place the website and NetHelp output on different servers (domains).</p>
+                <ol>
+                    <li>
+                        <p>Publish your built NetHelp output to a server.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>Here is an example of a published NetHelp location: http://mysite.com/help/mytarget/<br />The full  URL to the NetHelp output would be: http://mysite.com/help/mytarget/index.html</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>Add an iframe element to your web page that contains the NetHelp output. The iframe tag must have the "src" attribute set to the default NetHelp page ("index.html") in the target folder.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>To embed full NetHelp output without parameters add the following:</p>
+                                    <p>&lt;iframe src="http://mysite.com/help/mytarget/index.html"&gt;&lt;/iframe&gt;</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <p>The URL in the "src" attribute can be used to set NetHelp output parameters if desired.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> For explanations of these parameters, see <MadCap:xref href="../../../CSH/D2H/NetHelp/NetHelp Supported Parameters and How to Use Them.htm">NetHelp Supported Parameters</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> For explanations of these parameters, see the online Help or the <span class="EmphasisItalic">Context-sensitive Help Guide</span>.</MadCap:conditionalText></p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Iframe Embedded in Website</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Iframe Embedded in Website</p>
+                            <p>Here is an example of code used for an iframe embedded in a website:</p>
+                            <p class="Code">&lt;iframe src="http://helpcentral.componentone.com/nethelp/c1intellispell/index.html" width="1000px" height="350px"&gt;&lt;/iframe&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p>To embed a single topic on a web page, use the following:</p>
+                <p class="Code">&lt;iframe src="http://mysite.com/help/mytarget/index.html?topiconly=true"&gt;&lt;/iframe&gt;</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Single-Topic Irame Embedded in Website</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Single-Topic Iframe Embedded in Website</p>
+                            <p>Here is an example of code used for a single-topic iframe embedded in a website:</p>
+                            <p class="Code">&lt;iframe src="http://helpcentral.componentone.com/nethelp/c1intellispell/index.html?topiconly=true" width="300px" height="500px"&gt;&lt;/iframe&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Generic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Generic</p>
+                            <p>Here is a generic example:</p>
+                            <p class="Code">&lt;!DOCTYPE html&gt;</p>
+                            <p class="Code">&lt;html&gt;</p>
+                            <p class="Code">&lt;head&gt;</p>
+                            <p class="CodeIndented">&lt;title&gt;IFrame example&lt;/title&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/head&gt;</p>
+                            <p class="Code">&lt;body style="padding: 10px;"&gt;</p>
+                            <p class="CodeIndented">&lt;p&gt;Some text before help frame.&lt;/p&gt;</p>
+                            <p class="CodeIndented">&lt;!-- HELP FRAME --&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;iframe src="http://mysite.com/help/mytarget/index.html"&gt;&lt;/iframe width="800px" height="400px" &gt;</span>
+                            </p>
+                            <p class="CodeIndented">&lt;!-- END OF HELP FRAME --&gt;</p>
+                            <p class="CodeIndented">&lt;p&gt;Some text after help frame.&lt;/p&gt;</p>
+                            <p class="Code">&lt;/body&gt;</p>
+                            <p class="Code">&lt;/html&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Embed a NetHelp Target without an Iframe</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can embed NetHelp output into any HTML element (e.g., into a DIV element).</p>
+                <p>This option is only available if the NetHelp output and the container page (into which you embed the NetHelp output) are placed in the same domain.</p>
+                <ol>
+                    <li>
+                        <p>Publish your built NetHelp output to a server.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>Here is an example of a published NetHelp location: http://mysite.com/help/mytarget/<br />The full  URL to the NetHelp output would be: http://mysite.com/help/mytarget/index.html</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>Add a container element (any HTML element) to your page, which will contain the NetHelp output.</p>
+                        <p>The container must have the CSS property <span class="Emphasis">position</span> set to either the <span class="Emphasis">relative</span>, <span class="Emphasis">absolute</span>, or <span class="Emphasis">fixed</span> value. This is a restriction of the Doc-To-Help standard themes (Tabs and Accordion). You must also set the height for the container if you want to display NetHelp output in full mode (you do not need to do this for topic-only mode).</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>Here is an example:</p>
+                                    <p class="Code">&lt;div id="mytarget" style="position:relative; height:500px;"&gt;&lt;/div&gt;</p>
+                                    <p>If you want to display the NetHelp output in topic-only mode, the container element may look like this:</p>
+                                    <p class="Code">&lt;div id="mytarget"&gt;&lt;/div&gt;</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                    <li>Add the "script" tag to the "head" section of the page. This script tag must have the "src" attribute set to the "js/nethelp.connect.js" file located in the NetHelp target folder. You can also set the following optional attributes for this tag to set up the target:</li>
+                    <ul>
+                        <li>
+                            <p><span class="SetOffFirstLevel">"data-placeholder" </span>This specifies the jQuery-selector of the container element created in step 2. If this attribute is missed, the NetHelp engine will search for an element with the attribute "data-c1-role" equal to the "nethelp" value. If no such element is found, the "body" element will be used as a container for the NetHelp output. The NetHelp output is placed into a container element and replaces all its content.</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffFirstLevel">"data-start" </span>This specifies the URL of the topic that will be shown instead of the default topic when the NetHelp output is loaded.</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffFirstLevel">"data-topiconly" </span>If set to "true," the NetHelp output will be displayed in the topic-only mode (without header, toolbars, and Contents, Index and Search tabs).</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffFirstLevel">"data-settings" </span>This specifies the URL of the NetHelp target settings file (by default it is the "settings.xml" file in the root target folder).</p>
+                        </li>
+                        <li>
+                            <p><span class="SetOffFirstLevel">"data-responsive" </span>This is used only for Responsive themes, set to "true."</p>
+                        </li>
+                    </ul>
+                </ol>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Tabs and Accordion Themes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Tabs and Accordion Themes</p>
+                            <p>Here is an example for Tabs and Accordion themes:</p>
+                            <p class="Code">&lt;script type="text/javascript" src="/help/mytarget/js/nethelp.connect.js" data-placeholder="#mytarget"&gt;&lt;/script&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Responsive Theme</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Responsive Theme</p>
+                            <p>Here is an example for the Responsive theme:</p>
+                            <p class="Code">&lt;script type="text/javascript" src="/help/mytarget/js/nethelp.connect.js"data-placeholder="#mytarget" data-responsive="true"&gt;&lt;/script&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"> If you are viewing the website from the local file system, the NetHelp output folder must be located in a subfolder of your site. Otherwise your browser may block the NetHelp files.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example—Generic</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Generic</p>
+                            <p>Here is a generic example:</p>
+                            <p class="Code">&lt;!DOCTYPE html&gt;</p>
+                            <p class="Code">&lt;html&gt;</p>
+                            <p class="Code">&lt;head&gt;</p>
+                            <p class="CodeIndented">&lt;title&gt;Inline example&lt;/title&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;script type="text/javascript" src="/help/mytarget/js/nethelp.connect.js"</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">data-settings="/help/mytarget/settings.xml"</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">data-start="/help/mytarget/Documents/home_topic.htm"&gt;&lt;/script&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/head&gt;</p>
+                            <p class="Code">&lt;body style="padding: 10px;"&gt;</p>
+                            <p class="CodeIndented">&lt;p&gt;Some text before help frame.&lt;/p&gt;</p>
+                            <p class="CodeIndented">&lt;!-- HELP FRAME --&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div data-c1-role="nethelp" style="position:relative; width:800px; height:400px;"&gt;&lt;/div&gt;</span>
+                            </p>
+                            <p class="CodeIndented">&lt;!-- END OF HELP FRAME --&gt;</p>
+                            <p class="CodeIndented">&lt;p&gt;Some text after help frame.&lt;/p&gt;</p>
+                            <p class="Code">&lt;/body&gt;</p>
+                            <p class="Code">&lt;/html&gt;</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+    </body>
+</html>

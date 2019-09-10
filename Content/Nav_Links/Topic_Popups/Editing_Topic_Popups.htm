@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords=".htm,;.html,;.xml,;.pdf,;Website;www.acme.com).;Stylesheet;style.);n;b;s;reimport;(.css;Reimport;flsfs;SearchFilterSet;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;VariableName;N;M;m;h;hh" MadCap:lastBlockDepth="20" MadCap:lastHeight="5867" MadCap:lastWidth="943" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <meta name="template" content="Flare.htt" />
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="There are several ways to edit a topic popup for MadCap Flare online outputs. You can edit the destination, properties, and style of the popup link." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:keyword term="Topic popups:editing;Styles:topic popups;Popups:editing;Linking:topic popups" />
+            <MadCap:concept term="TopicPopups" />
+            <MadCap:concept term="FilterPopups" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">Editing </MadCap:conditionalText>Topic Popups</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline_EPUB.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide" />
+        <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">You can edit topic popups that you have inserted into a topic in at least three different ways: (1) edit the destination and properties of the topic popup, (2) edit the style of the topic popup, and (3) <MadCap:keyword term="Unbinding:topic popups;Topic popups:unbinding or removing;Popups:unbinding or removing" />unbind (or remove) the hyperlink from the topic popup. </p>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit the destination and properties of a topic popup</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">The first way to edit topic popups is to change the destination and other properties (link text, target frame, screen tip). </p>
+                <div class="example" MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">
+                    <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide" class="exampleHeadTextEmpty">example</p>
+                    <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">Let's say that you test the topic containing the popup and you notice that the wrong destination topic is opening when you click the hyperlink. So you use the steps below to associate the correct destination topic with the hyperlink.</p>
+                </div>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/NavLinks/ClickInsideLinkStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/NavLinks/EditLinkClickSpanBarStep.flsnp" />
+                    </li>
+                    <li>Select <span class="Emphasis">Edit Hyperlink</span>. The Insert Topic Popup dialog opens.</li>
+                    <li>
+                        <p>From the <span class="Emphasis">Link to</span> drop-down field, select a way to identify the topic, bookmark, or file to which you want to link. Based the option you choose, the section below gives you a list of selections or additional fields to complete.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>file in project&#160;</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/NavLinks/FileInProjectOption.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>external file&#160;</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/NavLinks/ExternalFileOption.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>website</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/NavLinks/WebsiteOption.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>html help file&#160;</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/NavLinks/HTMLHelpFileOption.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>(Optional) The<span class="Emphasis"> Link text</span> field displays the text that you highlighted in the topic, which will be used as the hyperlink. Leave the text as it is, unless you decide you would like to change it. If you want to change the link text, type the new text in the field. It will replace the previous text in the topic.</li>
+                    <li>(Optional) In the <MadCap:keyword term="Screen tip" /><span class="Emphasis">Screen Tip</span> field, you can type a phrase that will appear when the end user hovers over the hyperlink in the output.</li>
+                    <li>(Optional) Next to the<span class="Emphasis"> Style Class</span> field, click the <span class="Emphasis">Select</span> button. This opens the Select Class dialog, which lets you apply one of the defined hyperlink styles from your stylesheet to the link. After you select a style class in the dialog, click <span class="Emphasis">OK</span>. The Style Class field displays the selected style. (If you do not specify a style class, <MadCap:variable name="Other.Product" /> uses the "a.Popup" style class.)</li>
+                    <li>In the <MadCap:keyword term="Framesets;Target frames" /><span class="Emphasis">Target Frame</span> field, leave <span class="Emphasis">Popup Window</span> as the selection.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The hyperlink for the topic popup is added to the topic. By default the hyperlink is displayed in blue, underlined font. You can change the appearance of the link by modifying the style in the Stylesheet Editor. </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit the style of a topic popup hyperlink</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can edit the style (e.g., font, color) of the hyperlink for a topic popup. When you do this, the style changes for all topic popups in any topics in your project. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you want to change the font for your topic popups to dark green with no underline. The following steps show you how to accomplish this.</p>
+                </div>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesCompleteFollowingAdvancedSimplified.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/StylesAdvancedSimplifiedViews.flsnp" />
+                    </li>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ol class="LowerAlpha">
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterLinkStylesStep.flsnp" />
+                                </li>
+                                <li>From the grid in the bottom portion of the editor, find and select the <span class="Emphasis">a.Popup</span> tag.</li>
+                                <li>
+                                    <p>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </p>
+                                    <p>
+                                        <img src="../../Resources/Images/topic_popup_style_example_simplified.png" class="MaxWidth100Percent" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Use the tabs and fields in the Properties dialog to change values for any of the style's properties. </p>
+                                    <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm" target="" title="" alt="">About Styles and Stylesheets</MadCap:xref>, as well as <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</p>
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                                </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody class="Final">
+                            <ol class="LowerAlpha">
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterLinkStylesStep.flsnp" />
+                                </li>
+                                <li>On the left side of the editor, find and select the <span class="Emphasis">a.Popup</span> tag.</li>
+                                <li>
+                                    <p>
+                                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowRelevantPropertiesStep.flsnp" />
+                                    </p>
+                                    <p>
+                                        <img src="../../Resources/Images/topic_popup_style_example.png" alt="" title="" class="MaxWidth100Percent" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                </li>
+                                <li>
+                                    <p>If you are using the group view, expand a property group and change values for any of the style's properties. <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></p>
+                                    <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm" target="" title="" alt="">About Styles and Stylesheets</MadCap:xref>, as well as <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref> and <MadCap:xref href="Customizing_the_Size_of_Topic_Popup_Windows.htm">Customizing the Size of Topic Popups</MadCap:xref>.</p>
+                                </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to edit the style of a topic popup hyperlink</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can edit the style (e.g., font, color) of the hyperlink for a topic popup. When you do this, the style changes for all topic popups in any topics in your project. </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to change the font for your topic popups to dark green with no underline. The following steps show you how to accomplish this.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterLinkStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, find and select the <span class="Emphasis">a.Popup</span> tag.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowRelevantPropertiesStep.flsnp" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/topic_popup_style_example.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand a property group and change values for any of the style's properties. <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Topic popups:unbinding or removing" />how to unbind or remove the topic popup hyperlink</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide">The third way to edit a topic popup is to unbind (or remove) the hyperlink effect. If you decide that you no longer want the content to serve as a hyperlink, you can use the steps below to remove the hyperlink, converting the content to regular text.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/NavLinks/ClickInsideLinkStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/NavLinks/EditLinkClickSpanBarStep.flsnp" />
+                    </li>
+                    <li>Select <span class="Emphasis">Unbind</span>. The hyperlink effect is removed. </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSupportedTripaneNotTopnav.flsnp" />
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><span class="Emphasis"><MadCap:keyword term="Topic popups:size" /></span>If you want to change the size of the topic popup, see <MadCap:xref href="Customizing_the_Size_of_Topic_Popup_Windows.htm">Customizing the Size of Topic Popups</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TopicPopups" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Contributor" MadCap:lastBlockDepth="16" MadCap:lastHeight="5739" MadCap:lastWidth="632">
+    <head>
+        <link href="../../TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <ol>
+            <li>
+                <MadCap:snippetText src="../Topics/OpenContentFileDocument.flsnp" />
+            </li>
+            <li>In the XML Editor place your cursor where you want to insert the cross-reference. </li>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                </p>
+                <ul class="FirstLevel">
+                    <li MadCap:conditions="Products.Flare,Products.Contributor"><span class="SetOffFirstLevel">Ribbon </span>
+                        <MadCap:snippetText src="../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Links</span> section, select <span class="Emphasis">Cross-Reference</span>.</li>
+                    <li><span class="SetOffFirstLevel">Keyboard Shortcut </span>Press <span class="Emphasis">CTRL+SHIFT+R</span>.</li>
+                    <li><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the XML Editor, click <img src="../../Images/insert_new_cross_reference_btn.png" class="ReduceButtonSize" />. </li>
+                    <li><span class="SetOffFirstLevel">Right-Click </span>Right-click in the editor and select <span class="Emphasis">Insert&gt;Cross-Reference</span>. This context menu option is available only when your cursor is located in certain places in the editor (e.g., not in a drop-down effect).</li>
+                </ul>
+                <p>The Insert Cross-Reference dialog opens.</p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareNavigationLinksGuide" />
+            <li MadCap:conditions="Products.Flare">
+                <p>From the <span class="Emphasis">Link to</span> drop-down field, select a way to identify the topic or bookmark to which you want to link. Based on the option you choose, the section below gives you a list of selections or additional fields to complete.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>topic in project&#160;</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="TopicInProjectOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>place in this document </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="PlaceInThisDocumentOption.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p MadCap:conditions="Products.Flare">
+                    <img src="../../Images/insert_cross_reference_example.png" class="MaxWidth90Percent" />
+                </p>
+            </li>
+                         <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                       <li>
+                <p>In the <span class="Emphasis">Cross-Reference Properties</span> section, select the MadCap|xref style that you want to use for the cross-reference. </p>
+                <p>Initially, you may see only the parent MadCap|xref style in the list. In the XRef Format area to the right, you can see the current format associated with that tag. Initially this format is as follows for the different mediums:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Default Medium </span>{paratext}</li>
+                    <li><span class="SetOffFirstLevel">Print Medium </span>"{paratext}" {pageref}</li>
+                </ul>
+                <p>The command {paratext} means that the text of the paragraphed bookmark—or the text of the first paragraph found in the topic—will be displayed at that spot. The {pageref} command in the print medium format allows for context-sensitivity<MadCap:conditionalText MadCap:conditions="Products.Contributor,Products.Flare"> (see <MadCap:xref href="../../../Nav_Links/Cross_References/Creating_Context_Sensitive_Cross_References.htm">Creating Context-sensitive Cross-References</MadCap:xref>)</MadCap:conditionalText>.</p>
+                <p>You can: (1) use the parent MadCap|xref style with its current format, (2) use the parent MadCap|xref style and change the format to something else, (3) create a new class of the MadCap|xref style and provide a custom format for it, or (4) use a class that you have already created previously.</p>
+                <p>It is a good idea to create classes because you may eventually want to use multiple kinds of cross-references<MadCap:conditionalText MadCap:conditions="Products.Flare"> in your project</MadCap:conditionalText>. Each class that you create can be used to display cross-references in a different format. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating Selectors</MadCap:xref> and <MadCap:xref href="../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../ForMoreInfo/ForMoreInfoAboutStylesOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,FlareGuides.FlarePrintedOutputGuide" /></p>
+            </li>
+            <li>If you want to use the parent MadCap|xref style with its current format, or a class that you have created previously, click <span class="Emphasis">MadCap:xref</span> or the name of the class, respectively. <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">Then continue with Step 13.</MadCap:conditionalText></li>
+            <li>If you want to use the parent MadCap|xref style but change the format, click <span class="Emphasis">MadCap:xref</span> and then <span class="Emphasis">Edit</span>. The Edit Cross-Reference Style Class dialog opens.<MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer"> Continue with Step 10.</MadCap:conditionalText></li>
+            <li MadCap:conditions="Products.Flare,Products.Analyzer">If you want to create a new class of the parent MadCap|xref style, click <span class="Emphasis">New</span>. The New Cross-Reference Style Class dialog opens.</li>
+            <li MadCap:conditions="Products.Flare,Products.Analyzer">In the <span class="Emphasis">XRef Class</span> field, give your new class a name.</li>
+            <li>In the <span class="Emphasis">Stylesheet to modify</span> field, select the appropriate stylesheet (if different from the one shown). <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">If you are using a master stylesheet (recommended), only that stylesheet is shown in this field. If you are not using a master stylesheet, the stylesheet that you select needs to be applied to the topic in which you are inserting the cross-reference. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../Styles/Associating_Master_Stylesheets_with_All_Files.htm">Associating Master Stylesheets with All Files</MadCap:xref> and <MadCap:xref href="../../../Styles/Associating_Stylesheets_with_Specific_Files.htm">Associating Stylesheets Locally with Specific Files</MadCap:xref>.</MadCap:conditionalText></MadCap:conditionalText></li>
+            <li>
+                <MadCap:keyword term="Styles:cross-references;Cross-references:styles" />In the <span class="Emphasis">Enter format</span> field, provide the format for the style. This format can be a combination of text that you type and automated commands that you select. You can select commands from the list by double-clicking them. They are then added to the "Enter format" field. <MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">available commands</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody><MadCap:snippetBlock src="CrossRefCommandsTable.flsnp" /></MadCap:dropDownBody></MadCap:dropDown><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><MadCap:snippetBlock src="CrossRefExample1.flsnp" /></MadCap:dropDownBody></MadCap:dropDown><p MadCap:conditions="Products.Contributor,Products.FlareOnlineOnly">For additional information and examples, see <MadCap:xref href="../../../Nav_Links/Cross_References/About_Cross_References.htm">About Cross-References</MadCap:xref>.</p><MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly" class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:snippetText src="ContextSensCrossRefSummary.flsnp" /> See <MadCap:xref href="../../../Nav_Links/Cross_References/Creating_Context_Sensitive_Cross_References.htm">Creating Context-sensitive Cross-References</MadCap:xref>. </p></MadCap:dropDownBody></MadCap:dropDown></li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+            </li>
+            <li MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,Products.Contributor,Products.FlareOnlineOnly">
+                <p>(Optional) <MadCap:keyword term="Framesets;Target frames" />In the <span class="Emphasis">Target Frame</span> field of the Insert Cross-Reference dialog, click the drop-down arrow to select the way the linked destination will open. <MadCap:conditionalText MadCap:conditions="Products.Flare">This option can be used to open the destination topic or file in a popup. </MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="TargetFrameDescriptionsBullets.flsnp" />
+            </li>
+            <li MadCap:conditions="Products.FlareOnlineOnly,Products.Contributor,FlareGuides.FlareNavigationLinksGuide">
+                <p>(Optional) In the <span class="Emphasis"><MadCap:keyword term="Screen tip" />Screen Tip</span> field, you can type a phrase that will appear when the end user hovers over the cross-reference in the output.</p>
+                <p>When you enter a screen tip, it is added as a &lt;title&gt; tag in the markup. In addition, an &lt;alt&gt; (<MadCap:keyword term="Alternate text" />alternate text) tag is added with the same text. This is useful when it comes to accessibility.</p>
+                <p MadCap:conditions="Products.Flare">
+                    <MadCap:keyword term="Section 508;Accessibility;WCAG" />For more information see <MadCap:xref href="../../../Accessibility/Flare/About_Accessibility.htm" class="seepara" MadCap:conditions="General.OnlineLive">About Accessibility</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.Print">the online Help</MadCap:conditionalText>.</p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /> The cross-reference is added to the topic. You can change the appearance of the link (e.g., color, underline) by modifying the style (e.g., MadCap|xref or MadCap|xref.MyStyle) in the Stylesheet Editor.</li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

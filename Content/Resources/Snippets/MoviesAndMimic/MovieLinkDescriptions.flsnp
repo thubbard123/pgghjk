@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="n;b;(.mimov;Tooltip;s;(.swf" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="12" MadCap:lastHeight="853" MadCap:lastWidth="1092">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul class="FirstLevel">
+            <li><span class="SetOffFirstLevel">File </span>Displays the path to the movie or collection file after you select it.</li>
+            <li>
+                <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />  Lets you find and select a different movie or collection file.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Format </span>You can use this drop-down to select the type of output to be generated.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>If you have Mimic 8 or Newer</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">(default) </span>If you build a <MadCap:variable name="Outputs.HTMLHelp" />, <MadCap:variable name="Outputs.WebHelp" />, <MadCap:variable name="Outputs.HTML5" />, or <MadCap:variable name="Outputs.WebHelp Plus" /> target, the movie uses the <MadCap:variable name="Outputs.HTML5" /> movie format. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you generate a DotNet or WebHelp AIR target when using a Mimic 8 movie, the target will not generate. This is because the associated movie formats are not supported by Mimic 8.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="HTML5:movie format;Movies:HTML5" />HTML5 </span>The movie is generated in the HTML5 movie format.</li>
+                            <li MadCap:conditions="Snippets.Snippet20"><span class="SetOffFirstLevel">HTML5 (Embed) </span>The movie is generated in the HTML5 movie format and is embedded in your output.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>If you have Mimic 7 or older</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="MovieOutputFormatOptions.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li><span class="SetOffFirstLevel">Style Class </span>Select the kind of style class to be used for the link to affect the way it looks and behaves. You can select the main hyperlink style (a) or a class of that style. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText></li>
+            <li>
+                <p><span class="SetOffFirstLevel">Link Text </span>Displays the text that you highlighted in the topic, which will be used as the movie link. Leave the text as it is, unless you decide you would like to change it. If you want to change the link text, type the new text in the field. It will replace the previously selected text in the topic. If you do not provide link text, the file name for the movie or collection will be used.</p>
+            </li>
+            <li><span class="SetOffFirstLevel">Screen Tip </span>Type a phrase that will appear when the end user hovers over the movie link in the output.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Stylesheets;basic.css&quot;);fancy.css&quot;);automatically.);s;step...;Help.);p" MadCap:lastBlockDepth="14" MadCap:lastHeight="4931" MadCap:lastWidth="745" MadCap:conditions="Products.Flare,Products.Contributor,Products.Analyzer" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="template" content="Flare.htt" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="Styles" />
+            <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />
+            <MadCap:concept term="FilterStyles" />Creating Selectors</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareStylesGuide">
+            <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Creating Selectors</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Styles/SelectorSummary.flsnp" />
+        </p>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Styles/CreateSelectorsSummary.flsnp" />
+            <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> For more information about the different kinds of selectors, see <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm">Important Style Terms and Concepts</MadCap:xref>.</MadCap:conditionalText>
+            <MadCap:conditionalText MadCap:conditions="General.Print"> For more information about the different kinds of selectors, see <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#SelectorsPrint">Selectors</MadCap:xref>.</MadCap:conditionalText>
+        </p>
+        <p>You can create selectors from the Stylesheet Editor or from a content file (i.e., topic, snippet, master page). If you use the Stylesheet Editor, you can create more kinds of selectors. If you use the content file, the process can sometimes be faster.</p>
+        <MadCap:dropDown MadCap:conditions="Products.FlareWebHelp">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>see the movie</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://youtu.be/8M74IBVS8HM" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a new Selector from the stylesheet editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>In the local toolbar, click <img src="../Resources/Images/add_class_btn.png" class="ReduceButtonSize" />. The New Selector dialog opens.</li>
+                    <li>
+                        <p>Complete any of the fields in the dialog. The two most common fields are the <span class="Emphasis">HTML Element</span> and <span class="Emphasis">Class Name</span>, but you can click <span class="Emphasis">Advanced Options</span> for more fields.</p>
+                        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css'); margin-left: 0; margin-right: auto;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Field</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">HTML Element</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/Classes1.flsnp" />
+                                        </p>
+                                        <p class="TableText">In this field, you can select an HTML element (or "parent" style) if you want your new class or other "child" (e.g., ID) to be directly associated with it.</p>
+                                        <p class="TableText">Alternatively, you can clear this field or select <span class="Emphasis">(generic)</span>. This allows you to create a generic class or ID that stands alone and can be applied in the content file to any HTML element. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#GenericClasses">Generic Classes</MadCap:xref>. </MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Styles:classes;Classes;Selectors:classes;Styles:selectors" />Class Name</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">If you want to create a simple class (e.g., a special paragraph intended to serve as a tip), enter a name for it. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#classes">Classes</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Styles:advanced selectors;Selectors:advanced;Styles:selectors" />Advanced Selector</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p>As you complete the different fields in this dialog, the Advanced Selector field is populated accordingly. The reverse is also true. You can enter text in the Advanced Selector field directly, and the other fields in the dialog will be automatically populated. However, you need to enter the correct syntax if you type directly in the field. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#AdvancedSelectors">Advanced Selectors</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" />Pseudo Class</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">If you want to add a pseudo class to your selector, choose it from this field.</p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/PseudoClasses1.flsnp" />
+                                        <p class="TableText" MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#PseudoClasses">Pseudo Classes</MadCap:xref>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" />Pseudo Class Expression</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/PseudoClassExpressions.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#PseudoClassExpressions">Pseudo Class Expressions</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" />Pseudo Element</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">
+                                            <MadCap:snippetText src="../Resources/Snippets/Styles/PseudoElements1.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#PseudoElements">Pseudo Elements</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">
+                                            <MadCap:keyword term="Identifiers;Styles:identifiers;Selectors:identifiers" />Identifier (ID)</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Styles/IDSummary.flsnp" />
+                                        <p class="TableText">If you want to create an ID, enter a name for it in this field. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#Identifiers">Identifiers</MadCap:xref>.</MadCap:conditionalText></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Comments</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableText">You can add comments to your selector as a way to remind you or others about information related to the style (e.g., which situations are appropriate to use a certain style).</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The new selector is added to the stylesheet.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a new style class from a Content File</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p>Do one of the following, depending on whether you want to use the Styles window pane or structure bars:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Styles Window Pane</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p>Place your cursor on the content that you want to use as a foundation for your new style.</p>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p>If you place your cursor on content that currently has the p style applied to it, the new style will start out with the same property values as the p style.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" />In the <span class="Emphasis">Styles</span> section select <span class="Emphasis">Style Window</span>. The Styles window pane opens on the right side of the interface.</li>
+                                    <li>In the Styles window pane, click <span class="Emphasis">Create Style</span>. The Create Style dialog opens.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Structure Bars</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>If the structure bars are not already shown, click <img src="../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the editor to display them to the left of the content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li>
+                                        <p>Right-click the appropriate structure bar next to the content that you want to use as a foundation for your new style.</p>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p>If you right-click the li tag bar next to a list in the topic, the new style will start out with the same property values as the li style.</p>
+                                        </div>
+                                    </li>
+                                    <li>In the context menu, select <span class="Emphasis">Style Class&gt;Create Style Class</span> or <span class="Emphasis">Style ID&gt;Create Style ID</span>. The Create Style dialog opens.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>On the left side of the dialog, select one of the following:<ul><li><span class="SetOffFirstLevel">Class </span>Select this if you want to create a simple class (e.g., a special paragraph intended to serve as a tip or note).<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#classes">Classes</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel">ID </span><MadCap:snippetText src="../Resources/Snippets/Styles/IDSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#Identifiers">Identifiers</MadCap:xref>.</MadCap:conditionalText></li></ul></li>
+                    <li>In the  field after your selection, type a name for the new style class or ID, without using spaces.</li>
+                    <li>Select the appropriate stylesheet(s) on the right side of the dialog (if the topic is associated with more than one stylesheet). </li>
+                    <li>The property values already applied to the selected content are shown. If you do not want to include certain property values in the new selector, click the check box next to the value (in the <span class="Emphasis">Include</span> column) to remove the check mark.</li>
+                    <li>If you want the new style to immediately be applied to the content selected in the topic, select <span class="Emphasis">Create style and update the source element</span>. If you do not want the new style to immediately be applied to the content selected in the topic, select <span class="Emphasis">Create style without updating the source element</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Analyzer">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a new style class from a Content File</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p>If the structure bars are not already shown, click <img src="../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the editor to display them to the left of the content. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <p>Right-click the appropriate structure bar next to the content that you want to use as a foundation for your new style.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>If you right-click the li tag bar next to a list in the topic, the new style will start out with the same property values as the li style.</p>
+                        </div>
+                    </li>
+                    <li>In the context menu, select <span class="Emphasis">Style Class&gt;Create Style Class</span> or <span class="Emphasis">Style ID&gt;Create Style ID</span>. The Create Style dialog opens.</li>
+                    <li>On the left side of the dialog, select one of the following:<ul><li><span class="SetOffFirstLevel">Class </span>Select this if you want to create a simple class (e.g., a special paragraph intended to serve as a tip or note).<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#classes">Classes</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel">ID </span><MadCap:snippetText src="../Resources/Snippets/Styles/IDSummary.flsnp" /><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#Identifiers">Identifiers</MadCap:xref>.</MadCap:conditionalText></li></ul></li>
+                    <li>In the  field after your selection, type a name for the new style class or ID, without using spaces.</li>
+                    <li>Select the appropriate stylesheet(s) on the right side of the dialog (if the topic is associated with more than one stylesheet). </li>
+                    <li>The property values already applied to the selected content are shown. If you do not want to include certain property values in the new selector, click the check box next to the value (in the <span class="Emphasis">Include</span> column) to remove the check mark.</li>
+                    <li>If you want the new style to immediately be applied to the content selected in the topic, select <span class="Emphasis">Create style and update the source element</span>. If you do not want the new style to immediately be applied to the content selected in the topic, select <span class="Emphasis">Create style without updating the source element</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also import existing styles from another stylesheet. See <MadCap:xref href="More_About_Styles_and_Style_Sheets/Importing_Styles.htm" target="" title="" alt="">Importing Styles</MadCap:xref>.</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You also might want to add comments to styles that you create. This helps you keep track of the specific purpose of each style. See <MadCap:xref href="More_About_Styles_and_Style_Sheets/Adding_Comments_to_Styles.htm">Adding Comments to Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you create a new selector, you can edit its properties (e.g., font, background, border). See <MadCap:xref href="Editing_Styles.htm" target="" title="" alt="">Editing Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Styles" />
+        </p>
+    </body>
+</html>

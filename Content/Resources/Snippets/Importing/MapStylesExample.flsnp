@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2432" MadCap:lastWidth="1185" MadCap:conditions="Products.Analyzer,Products.Flare">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—preserve styles</p>
+            <p>Let's say you have a style in your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> source document called "Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"> </MadCap:conditionalText>1" that is using Arial 14 pt and is red, like this.</p>
+            <p style="font-size: 14pt;color: #ff0000;">Hello</p>
+            <p>During the process of importing your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> document using the Import <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Microsoft Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> Wizard, you select the option to <span class="EmphasisItalic">preserve</span> your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> styles.</p>
+            <p MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">
+                <img src="../../Images/import_word1.png" class="MaxWidth90Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <img src="../../Images/import_fm1.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide,FlareGuides.FlareImportGuide,FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The next page of the wizard looks something like this.</p>
+            <p MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">
+                <img src="../../Images/import_word2.png" class="MaxWidth90Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <img src="../../Images/import_fm2.png" class="MaxWidth90Percent" />
+            </p>
+            <p>When you finish importing, the content that was associated with Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"> </MadCap:conditionalText>1 in the source document is still using Arial 14 pt and is red, just like it was before in <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText>. However, the style is now called "h1.Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"> </MadCap:conditionalText>1." In the world of cascading style sheets (CSS)—which is what Flare uses for controlling the look of content—you've created a class of the h1 style (h1 is the standard style for first-level headings). But because you wanted to keep the look of the <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> style, Flare added it as a child under its parent, h1.</p>
+            <p>If you make any future changes in Flare to the h1 style, they will trickle down to the h1.Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"> </MadCap:conditionalText>1 child (unless the child style has explicit settings that conflict with the parent). You can also apply style properties directly to the h1.Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"> </MadCap:conditionalText>1 child. So while it is generally a good idea to use standard CSS parent styles (such as h1) when possible in Flare, the mapping performed in this import process—and the subsequent creation of a child style—lets you keep the Arial 14 pt red look.</p>
+        </div>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example—do not preserve styles</p>
+            <p>Let's say you have a style in your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> source document called "Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"><![CDATA[  ]]></MadCap:conditionalText>1" that is using Arial 14 pt and is red, like this.</p>
+            <p style="font-size: 14pt;color: #ff0000;">Hello</p>
+            <p>During the process of importing your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> document using the Import <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Microsoft Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> Wizard, you select the option to <span class="EmphasisItalic">not preserve</span> your <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> styles.</p>
+            <p MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">
+                <img src="../../Images/import_word3.png" class="MaxWidth90Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <img src="../../Images/import_fm3.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide,FlareGuides.FlareImportGuide,FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareTopicsGuide" />
+            <p>The next page of the wizard looks something like this.</p>
+            <p MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">
+                <img src="../../Images/import_word4.png" class="MaxWidth95Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">
+                <img src="../../Images/import_word5.png" class="MaxWidth90Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <img src="../../Images/import_fm4.png" class="MaxWidth95Percent" />
+            </p>
+            <p MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <img src="../../Images/import_fm5.png" class="MaxWidth90Percent" />
+            </p>
+            <p>When you finish importing, the content that was associated with Heading<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4"><![CDATA[  ]]></MadCap:conditionalText>1 in the source document is no longer using Arial 14 pt, red. Instead, it looks something like this.</p>
+            <p style="font-size: 14pt;font-family: 'Times New Roman';color: #000000;">Hello</p>
+            <p>Also, the style is now called "h1." (Keep in mind that, even if you had mapped the style to "h1.(<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> Style) in this case, the formatting would still be removed.)</p>
+            <p>So although the formatting was not retained, you were able to map to the standard CSS style for first-level headings—h1 .</p>
+        </div>
+    </body>
+</html>

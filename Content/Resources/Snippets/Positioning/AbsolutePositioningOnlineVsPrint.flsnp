@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="4505" MadCap:lastWidth="923">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Absolute positioning is supported in PDF, XPS, and all online outputs. But due to some differences between these outputs and the viewing modes in the XML editor, there are some important things to consider.</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">No Square Text Wrap in Web Layout Mode and Online Outputs </span>The Square wraparound text option is available only in PDF and XPS&#160;outputs. For online output, absolute positioning is limited to placing elements either in front of or behind content. Browsers require floats in order to position elements next to text<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Positioning_Elements/Using_Floats_for_Positioning_Elements.htm">Using Floats for Positioning Elements</MadCap:xref>)</MadCap:conditionalText>, but you cannot wrap text all around the element like you can in print-based outputs. So if you select the Square wraparound text option in Web Layout mode, it will float the element to the left text and that's how it will be shown in the online output as well.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>In Web Layout mode, you can do this:</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning32.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p>But you can't do this:</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning33.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p>If you use the Square wraparound option to position an image, in print output it might look like this:</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning47.png" alt="" title="" class="MaxWidth80Percent" />
+                    </p>
+                    <p>But when you generate online output, it would automatically be adjusted to look something like this: </p>
+                    <p>
+                        <img src="../../Images/absolute_positioning48.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Content May Shift in Output </span>Third, you will notice that content can shift in output, but absolutely positioned elements do not move along with that content because they are not anchored to it. Rather, elements with absolute positioning are simply freed from the main flow of content, so if the main content shifts, the absolutely positioned element stays in place as the rest of the content is adjusted. This is especially noticeable in online outputs, where end users can resize the browser window.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning36.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../Images/absolute_positioning37.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <p>Also, an absolutely positioned element in Print Layout mode will usually display in a different location than in Web Layout mode. That's because Print Layout mode is based on specific page sizes that do not change, so the positioned element doesn't shift when you resize the XML Editor in Flare, unlike Web Layout mode. However, if you use conditions to exclude some content, you might see content shifting in print output while absolutely positioned elements stay in place.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you have a topic with absolutely positioned images in three successive paragraphs.</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning38.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p>If you decide to condition the second image so that it is excluded from the output, the text below shifts up to compensate for the space no longer used by that picture. But the image in the third paragraph does not move up with that text.</p>
+                    <p>
+                        <img src="../../Images/absolute_positioning39.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Use Conditions to Separate Online Elements from Print Elements </span>If you want to position an element and have it look a certain way in online output and a different way in print-based outputs, we suggest you insert the element twice (one for online output and one for print output) and use conditions to separate them accordingly. In the XML Editor you can use the condition preview button <img src="../../Images/conditions_btn3.png" alt="" class="ReduceButtonSize" /> in the upper-left corner to display only the appropriate one while you are editing, depending on the layout mode (Web or Print).</p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">Example</p>
+                    <p MadCap:conditions="">Let's say you want to position an image so that text flows all around it in PDF output. You realize that this same image will automatically be floated to the left of content in HTML5 output. But suppose you would prefer the image to be floated to the right in the HTML5 output. Therefore, you decide to have a second copy of the picture positioned to the right, with content flowing to the left of it. So you insert both images, using absolute positioning for the PDF version and a float for the HTML5 version.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning40.png" alt="" title="" class="MaxWidth85Percent" />
+                    </p>
+                    <p MadCap:conditions="">Next, you apply an online condition tag to the image using the float and a print condition tag to the image using absolute positioning.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning41.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p MadCap:conditions="">Because the topic is currently being displayed in Print Layout mode, you only want to see the image to be used for print outputs while you are editing. So on the left side of the top local toolbar, you click the condition preview button <img src="../../Images/conditions_btn3.png" alt="" class="ReduceButtonSize" />. This opens the Conditional Text dialog. In this dialog, you can select which conditions to include or exclude from view while you are editing. The quickest way to do this is to click the <span class="Emphasis">Target Expressions</span> drop-down and select a target that already has these conditions properly set for inclusion and exclusion.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning42.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p MadCap:conditions="">After clicking <span class="Emphasis">OK</span> in the dialog, the correct image is shown in the XML Editor while the other one is hidden.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning43.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p MadCap:conditions="">Now you click the toggle button to switch to Web Layout mode with the default style medium. But the preview conditions are still as you last set them, so the image for print is still shown. Also, because that image is set with the "Square" wraparound option, it is automatically floated left because that is the default behavior when that option is viewed for online outputs (and therefore in Web Layout mode).</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning44.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p MadCap:conditions="">So once again you click the condition preview button <img src="../../Images/conditions_btn3.png" alt="" class="ReduceButtonSize" />. This time in the Conditional Text dialog, you select a target designed for online output.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning45.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+                    <p MadCap:conditions="">After clicking <span class="Emphasis">OK</span> in the dialog, the image for online output is shown in the XML Editor, correctly floated to the right, while the image for print output is hidden.</p>
+                    <p MadCap:conditions="">
+                        <img src="../../Images/absolute_positioning46.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

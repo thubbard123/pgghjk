@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Stylesheets;basic.css&quot;);fancy.css&quot;);automatically.);s;step...;Help.)" MadCap:lastBlockDepth="15" MadCap:lastHeight="3769" MadCap:lastWidth="560" MadCap:conditions="Products.Flare,Products.Analyzer" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="template" content="Flare.htt" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="Styles" />
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Stylesheets:creating" />
+            <MadCap:concept term="FilterStyles" />Creating New Regular Stylesheets</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareStylesGuide">
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="Styles" />
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Stylesheets:creating" />Creating New Styles and Stylesheets</h1>
+        <p MadCap:conditions="FlareGuides.FlareStylesGuide">You can create new regular stylesheets, although you may only need to use just one for your project, or even for all of your projects. In addition, you can create new classes of existing parent styles.</p>
+        <h2 MadCap:conditions="FlareGuides.FlareStylesGuide"><a name="CreatingNewStyleSheets"></a>
+            <MadCap:keyword term="Styles:stylesheets;Cascading stylesheets;Stylesheets:creating" />Creating New Regular Stylesheets</h2>
+        <p>The first step in using styles in your topics is to add a new stylesheet. However, if a stylesheet was included in the template when you created the project, you can use that one instead of creating a new one. The traditional location to store a regular <MadCap:keyword term="CSS file" />CSS stylesheet in the Content Explorer is in the Resources\Stylesheets folder. However, you can store it anywhere in the Content Explorer that you like.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.FlareWebHelp">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>see the movie</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <object src="https://youtu.be/oKU5uX97oR8" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a new regular stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        </p>
+                        <ul type="1" class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">(Recommended) Right-Click</span> In the Content Explorer, right-click on a folder and from the context menu select <span class="Emphasis">New&gt;Stylesheet</span>.</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/TipAddNewContentFile.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Content</span> section select <span class="Emphasis">New&gt;Stylesheet</span>. </li>
+                        </ul>
+                        <p>The Add File dialog opens.</p>
+                    </li>
+                    <li>In the <span class="Emphasis">File Type</span> field at the top, make sure <span class="Emphasis">Stylesheet</span> is selected.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Templates/InSourceAreaTemplateStep.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/Templates/TemplateOptionsStep.flsnp" />
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Each factory template has different style settings in it. You might want to try different ones to see which suits you best. </p>
+                            <p>For example, one of the factory templates is called "Modern." This template includes special custom properties that let you set the border radius on a paragraph style (i.e., to create rounded corners). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Paragraphs/Borders/Setting_Borders_for_Paragraphs.htm" target="" title="" alt="">Setting Borders for Paragraphs</MadCap:xref>.</MadCap:conditionalText></p>
+                            <p>You will also see a factory template called "SearchHighlight." This template has a very specific purpose—to let you change how highlighted terms look when users perform a search. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Search/Search_Highlighting/Customizing_the_Highlight_Color_for_Search_Hits.htm">Customizing the Highlight Color for Search Hits</MadCap:xref>.</MadCap:conditionalText></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SelectSubfolderContentExplorerStep.flsnp" /> </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/TableTraditionalDefaultFoldersNonTopicFiles.flsnp" />
+                    </li>
+                    <li>In the <span class="Emphasis">File Name</span> field, type a new name for the stylesheet. </li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:04:28.8860843-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—Condition Tags\r\nAdd File Dialog—File Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:04:48.7363581-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/ConditionalText/ExpandAttributesSection2.flsnp"></MadCap:snippetText></li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:04:52.2515878-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—Condition Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:04:58.8155118-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/ConditionalText/SelectRelevantConditionTags.flsnp" /> <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Condition_Tags/Applying_Condition_Tags_to_Content.htm">Applying Conditions to Content</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="General.Future">(<MadCap:annotation MadCap:createDate="2016-07-29T15:05:02.6279181-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Add File Dialog—File Tags" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T15:05:13.8635399-07:00">Optional</MadCap:annotation>) <MadCap:snippetText src="../Resources/Snippets/FileTags/SelectRelevantFileTags.flsnp" /> <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../File_Tagging/Associating_Tags_with_Files.htm">Associating Tags with Files</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>Click <span class="Emphasis">Add</span>. The stylesheet is added to the Content Explorer and opens in its own page in the Stylesheet Editor. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also add stylesheets specifically to be used for tables. See <MadCap:xref href="Creating_New_Table_Style_Sheets.htm" target="" title="" alt="">Creating New Table Stylesheets</MadCap:xref>.</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also import an existing stylesheet from outside your project. See <MadCap:xref href="More_About_Styles_and_Style_Sheets/Importing_Style_Sheets.htm" target="" title="" alt="">Importing Stylesheets</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you create a new stylesheet, you can edit the stylesheet, adding new styles and changing properties of existing styles. See <MadCap:xref href="Editing_Styles.htm">Editing Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Styles" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

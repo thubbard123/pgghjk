@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Lingo" MadCap:lastBlockDepth="14" MadCap:lastHeight="5186" MadCap:lastWidth="1071" MadCap:conditionTagExpression="include[Snippets.Snippet11 or Snippets.Snippet2] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet12 or Snippets.Snippet13 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlSubversion.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Subversion" />
+            <MadCap:concept term="FilterSourceControlSubversion" />
+            <MadCap:keyword term="Apache Subversion;Source control:Subversion" />
+            <MadCap:keyword term="Source control;Multi-authoring" />About Apache Subversion</h1>
+        <p>Because <MadCap:variable name="Other.Product" /> uses an open architecture,  <MadCap:variable name="Other.Product" /> projects are compatible with all source control systems. In addition to this native support for all source control applications, <MadCap:variable name="Other.Product" /> provides integrated support with some source control applications. </p>
+        <p>Please reference the source control topics in this section if you are using <MadCap:variable name="Other.Product" />'s integrated source control with Apache Subversion.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion" />
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideSubversion" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion" class="NoPageBreakBefore">Common Source Control Terms </h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>common source control terms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are definitions for some of the common phrases used in <MadCap:variable name="Other.Product" />'s built-in source control system.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind </span>This means to connect your project to Apache Subversion. After doing this, you can take advantage of all the automated source control tasks (such as commit, revert, update, and so on). </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit;Commit" />Commit </span>This means to send changes from your working copy of a <MadCap:variable name="Other.Product" /> file to the Subversion repository, on a server.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:revert;Revert" />Revert </span>This means to undo changes you have made to a <MadCap:variable name="Other.Product" /> file. Changes are reverted to the way they were at the last commit. </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:update" />Update </span>This means to update your working copy of a <MadCap:variable name="Other.Product" /> file with changes from the repository.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:lock;Lock" />Lock </span>This means to prevent other users from committing changes to a <MadCap:variable name="Other.Product" /> file in the repository.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:unlock;Unlock" />Unlock </span>This means to remove an existing lock from a <MadCap:variable name="Other.Product" /> file in the repository so other users can commit changes to the file.</li>
+                </ul>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:variable name="Other.Product" /> integrates with multiple source control providers to provide built-in source control support. Each of the source control providers built-in to <MadCap:variable name="Other.Product" /> uses different terms. As such, <MadCap:variable name="Other.Product" />'s source control interface is different depending on which source control provider you use. Please refer to the sections for each source control provider if you need to see information about the terms used by other built-in systems.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideSubversion" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion" class="NoPageBreakBefore">Source Control Icons </h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>source control icons</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are descriptions for the primary icons that you may see next to files when using source control. </p>
+                <table class="TableStyle-Simple" style="mc-table-style: url('../../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                    <col style="width: 22px;" class="TableStyle-Simple-Column-Column1" />
+                    <col class="TableStyle-Simple-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlCheckedOut.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Modified</span>
+                                </p>
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlModifiedSVN.flsnp" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlNewFile.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText"><span class="SetOffFirstLevel">New File (Add)</span>
+                                </p>
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlRenamedSVN.flsnp" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="Products.Lingo">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlNewFile.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText"><span class="SetOffFirstLevel">New File</span>
+                                </p>
+                                <p class="TableText">This indicates that you have a file in your project but have not yet committed it to Subversion. This might occur if you import a Lingo project from source control and have not yet checked in your files to the server, or if you update a project and new files are added from the source project. To resolve this, simply right-click on the file(s) and select <span class="Emphasis">Source Control&gt;Commit</span>. <MadCap:conditionalText MadCap:conditions="Products.LingoOnlineOnly">See <MadCap:xref href="Committing_Source_Control_Files_svn.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/source_control_RedLock.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Locked by Another User</span>
+                                </p>
+                                <p class="TableText">This indicates that another user has locked the file. You will often see this icon in conjunction with the <img src="../../Resources/Images/SourceControlCheckedOutByOtherUser.png" class="ReduceButtonSize" /> icon, indicating that another user is using the file and has locked the file. You can make changes to this file even if another user has locked it.</p>
+                                <p class="TableText">If you need to commit the file in while another user is working on it, you can steal their lock. To do this, right-click on the file and select <span class="Emphasis">Source Control&gt;Lock</span>. In the Lock dialog, select <span class="Emphasis">Steal the lock</span>, then click <span class="Emphasis">Lock</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Locking_a_File_svn.htm">Locking a File</MadCap:xref> and <MadCap:xref href="More_About_Source_Control/Unlocking_a_File_svn.htm">Unlocking a File</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/source_control_GreenLock.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Locked by You</span>
+                                </p>
+                                <p class="TableText">This indicates that you have locked the file. You will often see this icon in conjunction with the <img src="../../Resources/Images/SourceControlCheckedOut.png" /> icon, indicating that you have locked and modified the file. Other users can make changes to this file even if you have locked it, but they cannot commit it unless they steal the lock from you first. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Locking_a_File_svn.htm">Locking a File</MadCap:xref> and <MadCap:xref href="More_About_Source_Control/Unlocking_a_File_svn.htm">Unlocking a File</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlCheckedOutByOtherUser.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">In Use by Other User</span>
+                                </p>
+                                <p class="TableText">This indicates that the file is currently being modified by another user. You will often see this icon in conjunction with the  <img src="../../Resources/Images/source_control_RedLock.png" class="ReduceButtonSize" /> icon, indicating that another user is using the file and has locked it.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="Products.Flare">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlCursor.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1" MadCap:conditions="">
+                                <p class="TableText"><span class="SetOffFirstLevel">Renamed</span>
+                                </p>
+                                <p class="TableText">This indicates that a file has been renamed, but not modified in any other way. If you make any additional changes to the file, such as editing the text or adding a condition tag, the renamed <img src="../../Resources/Images/SourceControlCursor.png" class="ReduceButtonSize" /> icon is replaced by a <img src="../../Resources/Images/SourceControlCheckedOut.png" class="ReduceButtonSize" /> icon.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1" MadCap:conditions="">
+                            <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/SourceControlOutOfDate.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                <p class="TableText"><span class="SetOffFirstLevel">Out of Date</span>
+                                </p>
+                                <p class="TableText">
+                                    <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlOutofDateSVN.flsnp" />
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion">General Workflow (Multi-<MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">Author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">User </MadCap:conditionalText>Team)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (multi-
+					<MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">
+					author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">
+						User
+				</MadCap:conditionalText>team)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s source control integration for a <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">multi-author </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">multi-user </MadCap:conditionalText>team.                     </p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Set Up Subversion </span>Install Subversion and set up the database and any folders where you want to place the project. Also, assign permissions to the proper individuals. This task may be performed by someone else, such as a network administrator.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Create and Bind New Project </span>Create a new <MadCap:variable name="Other.Product" /> project and simultaneously bind it to Subversion. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Projects_Starting/Creating_a_Project.htm">Creating a New Project</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.LingoOnlineOnly">See <MadCap:xref href="../../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" /></p>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing <MadCap:variable name="Other.Product" /> project on your local machine, bind the project to Subversion. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_svn.htm">Binding a Project to Apache Subversion</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only one of the <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>needs to perform this task. The other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>on the team can follow Step 3 below. </p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:importing projects" />Import Project </span>Other users on the team can easily import the project from source control. This creates a copy of the <MadCap:variable name="Other.Product" /> project on the <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author's </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user's </MadCap:conditionalText>computer. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Importing_a_Project_from_Source_Control_svn.htm">Importing a Project from Subversion</MadCap:xref>. </MadCap:conditionalText></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:update" />Update </span>After you bind a <MadCap:variable name="Other.Product" /> project to Subversion, you can update any of the source control files. When you do this, you are copying the most current files stored in Subversion to your local <MadCap:variable name="Other.Product" /> project. When working with other <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users</MadCap:conditionalText>, it is a good idea to do this frequently (e.g., at the beginning of each day)  to ensure you have the latest changes that those <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">authors </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">users </MadCap:conditionalText>have made, and that they have the latest changes you've made. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Updating_Source_Control_Files_svn.htm" target="" title="" alt="">Updating Subversion Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:modify" />Modify Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlModifyFilesSVN.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:lock;Source control:unlock" />Lock/Unlock Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlLockFilesSVN.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Locking_a_File_svn.htm">Locking a File</MadCap:xref> and <MadCap:xref href="More_About_Source_Control/Unlocking_a_File_svn.htm">Unlocking a File</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideSubversion" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit" />Commit Files </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCommittingSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Committing_Source_Control_Files_svn.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:merging;Merging:source control" />Merging </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlMergingCommitSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Merging_Source_Control_Files_svn.htm">Merging Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="Adding_Files_to_Source_Control_svn.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideSubversion" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion">General Workflow (Single <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">Author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">User</MadCap:conditionalText>)</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general workflow (Single
+					<MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">
+					author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">
+						User
+				</MadCap:conditionalText>)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic steps for using <MadCap:variable name="Other.Product" />'s Subversion integration for a single <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Flare">author</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Lingo">user</MadCap:conditionalText>.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Set Up Subversion </span>Install Subversion and set up the database and any folders where you want to place the project. Also, assign permissions to the proper individuals. This task may be performed by someone else, such as a network administrator.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlBasicWorkflowStep2.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Create and Bind New Project </span>Create a new <MadCap:variable name="Other.Product" /> project and simultaneously bind it to Subversion. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Projects_Starting/Creating_a_Project.htm">Creating a New Project</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.LingoOnlineOnly">See <MadCap:xref href="../../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion" /></p>
+                                <p>OR</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:bind;Projects:source control" />Bind Existing Project </span> If you have an existing <MadCap:variable name="Other.Product" /> project on your local machine, bind the project to Subversion. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Binding_an_Existing_Project_to_Source_Control_svn.htm">Binding a Project to Apache Subversion</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:modify" />Modify Files </span>When you need to work on a <MadCap:variable name="Other.Product" /> project file connected to Subversion, you can modify it in the same way you would modify a file in a project that is not connected to source control. When you use Subversion, there is no need to "check out"&#160;a file from source control before you make changes to it. A red check mark  is displayed next to each file that you have modified.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:commit" />Commit Files </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCommittingSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Committing_Source_Control_Files_svn.htm">Committing Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:adding files;Multi-authoring" />Add Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAddFilesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="Adding_Files_to_Source_Control_svn.htm">Adding Files to Source Control</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideSubversion,FlareGuides.FlareSourceControlGuideSubversion" />
+        <h2 MadCap:conditions="FlareGuides.FlareSourceControlGuideSubversion,LingoGuides.LingoSourceControlGuideSubversion">Additional Source Control Tasks and Features</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>additional source control tasks and features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are some additional tasks and features related to source control.                     </p>
+                <ul>
+                    <li MadCap:conditions="Products.Flare">
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:API;API:source control" />API </span>
+                            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlUseAPI.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteNotMandatoryToUseSourceControlAPI.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:status updates" />Automatic Status Checks </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlAutoStatusChecksSvn.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Enabling_Source_Control_Status_Checks_svn.htm">Enabling Source Control Status Checks</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:differences;Differences:source control" />Differences </span>You can view differences between files in various ways. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Viewing_Differences_in_Source_Control_Files_svn.htm">Viewing Differences in Source Control Files</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:get latest version;Projects:source control" />Disable Prompt for Get Latest </span>By default, when you open a project that is bound to source control, a message automatically asks if you want to get the latest version of files. However, you can disable this prompt in the Options dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Disabling_Get_Latest_Prompt_svn.htm">Disabling the Get Latest Prompt for Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:disconnect" />Disconnect from Source Control </span>There may be times that you need to disconnect from source control to work offline. You can disconnect from source control and reconnect at any time.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="More_About_Source_Control/Disconnecting_from_Source_Control_svn.htm">Disconnecting from Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:history;History:source control" />History </span>You can view the history of a particular source control file. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Viewing_the_History_of_Source_Control_Files_svn.htm">Viewing the History of Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/SourceControlHistoryOptionsListSVN.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15] " />
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:lock;Locks:source control" />Locks </span>You can lock files so other users cannot commit those same files unless they steal the lock from you first. Likewise, other users can lock files to prevent you from committing the files they are working on. You would have to steal their lock if you needed to commit that file before they unlocked the file. However, locks only prevent you from committing another user's files; you can modify files at any time. You can set files to be locked automatically when you modify files. This can be done from the Options dialog (Source Control tab). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Locking_a_File_svn.htm">Locking a File</MadCap:xref> and <MadCap:xref href="More_About_Source_Control/Unlocking_a_File_svn.htm">Unlocking a File</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/SVNCheckOutandLock.flsnp" />
+                    </li>
+                    <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:publishing;Publishing:source control" />Publish to Source Control </span>You can use <MadCap:variable name="Other.Product" /> to directly publish your output to source control, rather than having to upload it to source control separately. Publishing your output to source control is beneficial because it you can keep previous versions of your output in source control and access them if necessary. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Publishing_to_Source_Control_svn.htm">Publishing to Source Control</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:unbind;Projects:source control;Unbinding:source control" />Unbind </span>You can unbind  a project from source control. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Unbinding_a_Project_from_Source_Control_svn.htm" target="" title="" alt="">Unbinding a Project from Subversion</MadCap:xref>. </MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:network settings;Network settings:modify" />View and Modify Network Settings </span>You can view and modify your current source control network settings without having to close <MadCap:variable name="Other.Product" />. You can make changes to several settings, including SSL, HTTP&#160;proxy, and caching options. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="More_About_Source_Control/Modifying_Network_Settings_svn.htm">Modifying Network Settings</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pending changes;Source control:check out;Check out" />View Modified Files </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlViewModifiedFilesSummarySVN.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="More_About_Source_Control/Viewing_Modified_Files_svn.htm">Viewing Modified Files</MadCap:xref> and <MadCap:xref href="../../Interface/UI_Elements/File_List_Window.htm">File List Window Pane</MadCap:xref>.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Subversion" />
+        </p>
+    </body>
+</html>

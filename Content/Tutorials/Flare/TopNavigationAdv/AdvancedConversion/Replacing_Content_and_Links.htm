@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');" MadCap:lastBlockDepth="11" MadCap:lastHeight="8483" MadCap:lastWidth="1336">
+    <head>
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:concept term="FilterTopics" />
+            <MadCap:concept term="FilterTextHyperlinks" />
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="FilterHyperlinks" />Replacing Content and Links</h1>
+        <p MadCap:conditions="">Now that the borrowed files are in our Legacy project, we can make some adjustments to them. This means replacing some content and links in the Home topic and the imported master page.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Replace Content and Links in the Home Topic</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Complete the following steps in the Legacy project.</p>
+                <ol>
+                    <li MadCap:conditions="">
+                        <p>In the Content Explorer, double-click the <span class="Emphasis">Home.htm</span> topic.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The topic opens to the right in the XML Editor.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>The topic doesn't look much like the output from the Temp project, but it will once we associate the correct stylesheet with it and perform a few other edits.</p>
+                    </li>
+                    <li MadCap:conditions="">Currently, there is a stylesheet (styles.css) that is set at the project level. This is the stylesheet that we want to use for most of the topics in the Legacy project. However, we want the Home.htm topic to use the special stylesheet that we imported from the Temp project. At the top of Flare, select the <span class="Emphasis">Project</span> ribbon, and to the far right-click <span class="Emphasis">Properties</span>. The Project Properties dialog opens.</li>
+                    <li MadCap:conditions="">Select the <span class="Emphasis">Defaults</span> tab. Notice the styles.css file selected in the Master Stylesheet field.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Click <span class="Emphasis">Allow local stylesheets</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are working in a project where you have a master stylesheet set in the affected target (often the primary target), you need to open that target and allow local stylesheets on the <span class="Emphasis">General</span> tab.</p>
+                            <p>
+                                <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content28.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>
+                            <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The look of the topic changes.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>This occurred because the StylesForHomePage.css stylesheet was already linked to the Home.htm topic. We simply had to allow it to be used since a project-level stylesheet was also set.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li>
+                        <p>Normally you would replace a lot more of the content in this topic than we are going to replace in this tutorial. We are going to replace only some of the content and links, just for demonstration purposes and to make sure there are no errors when we build the output. Let's start with the top of the topic and work our way down.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Slideshow</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <p>Near the top of the topic you will see a slideshow. We imported three of the four images, which we will reuse. In an actual situation, you might have your graphic designer replace these images with others, or you might delete the slideshow altogether. First, let's redirect the link for the first image, which has the words "Getting Started" after it. Right-click the image and select <span class="Emphasis">Hyperlink Image</span>. (If you do not see this option in the context menu, try clicking off the image and then right-clicking it again.)</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content5.png" alt="" title="" class="MaxWidth90Percent" />
+                                        </p>
+                                        <p>The Insert Hyperlink dialog opens.</p>
+                                    </li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Link to</span> section, select <span class="Emphasis">File in Project</span>. Then expand <span class="Emphasis">A_Introduction Topics</span> and click <span class="Emphasis">Headings.htm</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content6.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>To the left of the image, click the <span class="Emphasis">Slide 2</span> structure bar to bring the next image into view.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content7.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The image in the next slide displays, with the text "Basic Steps" under it.</p>
+                                    </li>
+                                    <li>Use the same steps as above to link this image with the <span class="Emphasis">DropDowns.htm</span> topic in the project. We realize that the image doesn't really have anything to do with drop-downs, but this is just for demonstration purposes to show how to create hyperlinks on images. In your real project, you would replace this image with one that is more appropriate and/or you would link it to a different topic that you've already created.</li>
+                                    <li>Select the <span class="Emphasis">Slide 3</span> structure bar and repeat these steps to link the image to the <span class="Emphasis">Images.htm</span> topic, which is located under the <span class="Emphasis">D_Images</span> folder in the Content Explorer.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Right-click the <span class="Emphasis">Slide 4</span> structure bar, and from the context menu click <span class="Emphasis">Remove Slide</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content8.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Right-click the main <span class="Emphasis">MadCap:slideshow</span> structure bar, and from the context menu select <span class="Emphasis">Edit Slideshow</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content9.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The Edit Slideshow dialog opens.</p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>In the <span class="Emphasis">Slides</span> section, the first slide row should be selected. In the <span class="Emphasis">Caption</span> field, change the text to <span class="TypedEntry">Headings</span> (to correspond with the topic you selected as the link).</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content10.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Select the second slide row and change the caption to <span class="TypedEntry">Drop-Downs</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content11.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Select the third slide row and change the caption to <span class="TypedEntry">Images</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content12.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <p>Scroll down in the topic until you see the buttons (i.e., rectangles with text) under the "Meet FictionSoft Pro" and "PDF Guides" sections.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content13.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You probably have noticed that something looks wrong with the bulleted list. The style controlling the look of the list is pointing to a bullet image that we did not include in the import. We will direct the style to a different bullet image when we edit styles in this tutorial. See <MadCap:xref href="Editing_Styles.htm" >Editing Styles</MadCap:xref>.</p>
+                                            <p>Also, in the image above, the organization of the PDF images looks incorrect. This is happening due to the current size of the XML Editor. If we maximize Flare, the editor will show three PDF images on top of the other three, just as it appears in the output. This entire section that shows the bulleted list, the PDF guides, and the buttons is made up of responsive layouts. This feature lets you structure content so that it adapts as the size of the screen changes in the output. When we edit styles in this tutorial, we will briefly adjust one of these responsive layouts in the master page. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">If you would like to know more about this feature, see <MadCap:xref href="../../../../Responsive_Web_Design/Responsive_Content.htm">Responsive Content</MadCap:xref> and <MadCap:xref href="../../../../Responsive_Web_Design/Creating_Responsive_Layouts.htm">Creating Responsive Layouts</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help to learn about responsive layouts.</MadCap:conditionalText></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Select the text in the first button ("Where Do I Begin?") and replace it with <span class="TypedEntry">Headings</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content14.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>Right-click the text you added, and in the context menu select <span class="Emphasis">Edit Hyperlink</span>. The Insert Hyperlink dialog opens.</li>
+                                    <li>In the <span class="Emphasis">Link to</span> section, select <span class="Emphasis">File in Project</span>. Then expand <span class="Emphasis">A_Introduction Topics</span> and click <span class="Emphasis">Headings.htm</span>. Then click <span class="Emphasis">OK</span>.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Select the text in the second button ("Basic Steps") and replace it with <span class="TypedEntry">Drop-Downs</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content15.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>Right-click the text you added, and in the context menu select <span class="Emphasis">Edit Hyperlink</span>. The Insert Hyperlink dialog opens.</li>
+                                    <li>In the <span class="Emphasis">Link to</span> section, select <span class="Emphasis">File in Project</span>. Then expand <span class="Emphasis">A_Introduction Topics</span> and click <span class="Emphasis">DropDowns.htm</span>. Then click <span class="Emphasis">OK</span>.</li>
+                                    <li>Let's say you do not want to keep the third button ("View More PDFs"), so let's remove it. Click on the button text.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Right-click the outer <span class="Emphasis">div</span> structure bar that accompanies the button, and from the context menu select <span class="Emphasis">Delete</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content16.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Videos</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Like the sections above it, the video section uses a responsive layout. If you do not have videos, or if you do not want them on your Home topic, you can delete the main div structure bar to the left of it. In this tutorial, we are going to keep the video section, but we will replace the link in the first YouTube video, just to show how it is done.</p>
+                                <ol class="LowerAlpha">
+                                    <li>Go to YouTube and find any video you want to use in place of the first video on the Home page. Using the Share option in YouTube, copy the URL address for the video. For example, the URL for the first video on the Home page is https://youtu.be/WWcJoqGJ1E0.</li>
+                                    <li>
+                                        <p>Go back to the Flare project, right-click the first video ("Sample Movie 1") in the Home topic, and from the context menu select <span class="Emphasis">Edit Multimedia</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content17.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The Edit Multimedia dialog opens.</p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>On the <span class="Emphasis">General</span> tab, highlight the current URL text in the <span class="Emphasis">Multimedia from Web</span> field and paste your URL. A preview of the video displays to the right.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content18.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p> <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The new video replaces the old one in the Home topic.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content19.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Replace Content and Links in the Master Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Complete the following steps in the Legacy project.</p>
+                <ol>
+                    <li MadCap:conditions="">
+                        <p>In the Content Explorer, expand the <span class="Emphasis">Resources</span> folder and then the <span class="Emphasis">MasterPages</span> subfolder. There are three master pages in this folder. The file "MasterPage.flmsp" is the one that already belonged to the old project. We will no longer use this master page. The other two were part of the import.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content20.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Double-click <span class="Emphasis">HomePage.flmsp</span>. The file opens to the right in the XML&#160;Editor. The area with the dark background is the footer area for the Home page topic.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content21.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In an actual conversion, you would probably change most of the content in this master page with your own information and links (logo, text, variables, links on the text and images). In this tutorial, we will change just a few things.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Logo</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <p>Right-click the gray <span class="Emphasis">Missing file</span> bar, and from the context menu select <span class="Emphasis">Image Properties</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content22.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The Image Properties dialog opens.</p>
+                                    </li>
+                                    <li>Find and select a small image that you want to use as a logo.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The image is added to the master page. In the example below, we selected our Flare logo.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content23.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Text and Hyperlinks</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <p>To the right of the logo, click on the first piece of text—<span class="Emphasis">PDFs</span>. Notice the span bars at the top of the topic. There are four bars with "a" on each, indicating that they are text hyperlinks. Even though the text runs together in the editor, the styles will separate them in the output.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content24.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>Highlight the PDFs text and replace it with the word <span class="TypedEntry">Lists</span>.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>Above the topic, right-click the first "<span class="Emphasis">a</span>" span bar, which is associated with your new text.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content25.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>From the context menu, select <span class="Emphasis">Edit Hyperlink</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content26.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                                    <li>
+                                        <p>In the <span class="Emphasis">Link to</span> section, select <span class="Emphasis">File in Project</span>. Then expand <span class="Emphasis">B_Links and Lists</span> and click <span class="Emphasis">Lists.htm</span>.</p>
+                                        <p>
+                                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_replace_content27.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                    </li>
+                                    <li>Redirect the other three text links to any topics in the project, so that you do not experience errors when you build the output. You can also change the text for each link if you want.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;" MadCap:conditions="">If you keep the Twitter and/or Facebook images in your real project, make sure you change the hyperlinks on them to your own pages.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about working in the XML Editor and editing text hyperlinks, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information about working in the XML Editor and editing text hyperlinks, see <MadCap:xref href="../../../../Interface/UI_Elements/XML_Editor.htm">XML Editor</MadCap:xref> and <MadCap:xref href="../../../../Nav_Links/Text_Hyperlinks/Editing_Text_Hyperlinks.htm">Editing Text Hyperlinks</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Editing_Styles.htm">Editing Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

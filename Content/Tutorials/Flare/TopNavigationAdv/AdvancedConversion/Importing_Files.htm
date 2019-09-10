@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');" MadCap:lastBlockDepth="8" MadCap:lastHeight="3712" MadCap:lastWidth="1446">
+    <head>
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="FilterProjects" />Importing Files</h1>
+        <p MadCap:conditions="">You now have two projects—Legacy and Temp (which holds the Top Navigation files). Now we need to get the appropriate files from one project to the other.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Important Questions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">Before we import anything, there are a few questions we must ask ourselves.</p>
+                <ul>
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">Question 1 </span><span class="EmphasisItalic">Should we transfer all of the files from the Legacy to Temp, or should we transfer the necessary files from Temp into Legacy?</span> In this tutorial, both projects are relatively small. But in an actual situation, your legacy project is likely to be much larger than the temporary one. And because importing fewer files is always easier than importing many of them, we are going to transfer the few files from the Temp project into the Legacy project.</li>
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">Question 2 </span><span class="EmphasisItalic">How should we transfer the files into the Legacy project?</span> One option is to simply open the project folders in Windows and manually copy the files from one project to the other. Another option is to use Flare's interface to import different types of files separately. A third option is to use Global Project Linking to create an import file in the Legacy project and import only the files we want all at once. There isn't really a wrong answer, and regardless of the method, we will likely have to do a little bit of cleanup in the Legacy project. Therefore, we are going with the third option—Global Project Linking—which seems like the easiest, most streamlined way to do it.</li>
+                    <li MadCap:conditions=""><span class="SetOffFirstLevel">Question 3 </span><span class="EmphasisItalic">Which of the files from the Temp project do we want to import?</span> Obviously we want the Top Navigation skin and its related files that give the Top Navigation project template its look and feel. We also want to bring the Home page into our Legacy project, including some images. But we don't need most of the topics and many of the images, as well as most of the project files. In the steps below, we will indicate each file that we want to import (in an actual conversion, your list of files might be different).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareHTML5Guide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareTutorialsGuideTopNavAdv" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import Files from the Temp to the Legacy Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Complete the following steps in the Legacy project.</p>
+                <ol>
+                    <li MadCap:conditions="">
+                        <p>To bring the desired files into our project, we first need to create a project import file. In the Project Organizer, right-click the <span class="Emphasis">Imports</span> folder, and select <span class="Emphasis">Add Flare Project Import File</span>.</p>
+                        <p MadCap:conditions="">
+                            <img src="../../../../Resources/Images/topnav_output44.png" alt="" title="" class="MaxWidth90Percent" />
+                        </p>
+                        <p>The Add File dialog opens.</p>
+                    </li>
+                    <li MadCap:conditions="">in the <span class="Emphasis">File Name</span> field at the bottom of the dialog, enter <span class="TypedEntry">Import from Temp</span>.</li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Click <span class="Emphasis">Add</span>. The import file is added to the Project Organizer, and the Project Import Editor opens to the right.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">Under the <span class="Emphasis">Source Project</span> field, click <span class="Emphasis">Browse</span>.</li>
+                    <li MadCap:conditions="">
+                        <p>In the dialog that opens, find and select <span class="Emphasis">Temp.flprj</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Click <span class="Emphasis">Open</span>. The path to the project file is loaded into the Source Project field in the Project Import Editor.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the <span class="Emphasis">Include Files</span> field, click the down arrow and select <span class="Emphasis">All Files (*)</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>We actually do not want to import all of the files, but because we are bringing in a variety of files, this is the quickest and easiest option to use at this point. In a moment, we will limit the files to import. </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <MadCap:snippetText src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>In the local toolbar, click <span class="Emphasis">Import</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <p>The Accept Imported Documents dialog opens. This lists and automatically selects all of the files in the Temp project that do not already exist in the Legacy project.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>Notice that there are several files that Flare has found in both projects. That's due to the fact that many of Flare's project templates contain similar files. In an actual situation, you probably won't see many (if any) files that are the same in both your existing project and the temporary project you are importing from.</p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                    <li MadCap:conditions="">
+                        <p>Remember, we do not want to import all of the files, but rather only a few of them. So at the bottom of this dialog, click <span class="Emphasis">Clear All</span> to remove all of the check marks.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/top_nav_tutorial_advanced_import7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="">
+                        <p>Click the check boxes for the following files:</p>
+                        <ul class="FirstLevel">
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">Home.htm </span>This is the only topic file we want to import. It is the unique topic used for the Home page in the template. We will replace the startup topic in our Legacy project with this topic.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">BackgroundImage.png </span>This is the large "hero" background image seen on the Home page.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">BasicSteps.png </span>This is one of the circular images used in the slideshow on the Home page. We wanted to use the same image in the same kind of slideshow, so this was an easy decision.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">FacebookIcon.png </span>This is the small Facebook image seen in the footer of the Home page.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">KeyFeatures.png </span>This is another slideshow image we wanted to use.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">PDF Cover.png </span>This is the image used for the PDF guides on the Home page. We will import it for this tutorial, just so there isn't a broken link. But in an actual conversion, you would probably replace this image with your own.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">TwitterIcon.png </span>This is the small Twitter image seen in the footer of the Home page.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">WhatsNew.png </span>This is the third slideshow image we wanted to use.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">HomePage.flmsp </span>This is the master page that is associated with the Home topic. It contains a unique configuration and references to styles we needed, so we definitely want this file, even though we already have a master page (which we will no longer use).</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">OtherTopics.flmsp </span>This is a second master page in the Temp project that is used for all of the topics except the Home page. Again, it has a unique configuration, especially with its inclusion of a Topic Toolbar proxy and the context-sensitive Menu proxy, which we want to add to our output.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">StylesForHomePage.css </span>This is the stylesheet created specifically for use by the Home page. This is where a lot of the hard work exists to get the Home page to look the way it does, so it is one of the most important files we want to import. However, we will not import the other stylesheet in the Temp project because we already have our own stylesheet for the rest of our topics. However, there is one style in the Temp project's main stylesheet that we want to use, because it affects the look of the context-sensitive menu. But because it is just one style, we will import it later into the main stylesheet in our Legacy project.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">HomeSearchBar.flskn </span>This is a special skin component that the Temp project uses for the central search bar on the Home page. It's already designed the way we want, so we will bring it into our Legacy project.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">HTML5 - TopNavigation.flskn </span>This is the main HTML5 Top Navigation skin that provides the look for the top menu and search bar, as well as the side flyout menu when the output is displayed on smaller devices.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">SideMenu.flskn </span>This is a special skin component used for the context-sensitive menu that appears next to each topic when it is opened. It is already modified with the look we want, so we will import this too.</li>
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">TopicToolBar.flskn </span>This is a special skin component used for the topic toolbar that appears above each topic. It is already modified with the look and alignment we want, so we will choose this file as well.</li>
+                        </ul>
+                        <div class="warning">
+                            <p class="warningInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">Use caution when selecting files to import. As mentioned, you likely won't have many files with the same names in your existing project, but you want to avoid overwriting any of your files that you want to keep.</p>
+                        </div>
+                    </li>
+                    <li MadCap:conditions="">At the bottom of the dialog, click <span class="Emphasis">Accept</span>. The files are imported into the Legacy project. The imported files are placed in the same locations where they existed in the Temp project, ensuring that any links to and from each other are not broken. This will save us some work.</li>
+                    <li MadCap:conditions="">Click the <span class="Emphasis">x</span> on the tab of the Project Import Editor to close it.</li>
+                    <li MadCap:conditions="">
+                        <p>In the Project Organizer, click the <span class="Emphasis">Import from Temp</span> file and delete it.</p>
+                        <p MadCap:conditions="">We did this for a few reasons. First, we won't need it anymore. Second, Global Project Linking creates a link from the files in the source project to those in the child project, so anytime we try to edit one of these files in our Legacy project, Flare will give us a warning. And third, there is an option in the Project Import Editor that, if not deselected, will automatically import all of the files from the Temp project (not just the ones we want) if we begin to generate output. But we do not plan to use the import file the way you might normally use it for Global Project Linking, and we are all done with it. So by deleting the file, Flare removed any links between the Temp and Legacy projects. Therefore, we will not see any warnings when we try to edit a file, and we will not accidentally import files we don't want.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about Global Project Linking, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../Global_Project_Linking/About_Global_Project_Linking.htm">About Global Project Linking</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Replacing_Content_and_Links.htm">Replacing Content and Links</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

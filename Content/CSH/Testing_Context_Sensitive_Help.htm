@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);file.&quot;;IdentifierName.&quot;;allowed.);n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;h;hh" MadCap:lastBlockDepth="13" MadCap:lastHeight="2112" MadCap:lastWidth="1348" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareCSH.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Test your context sensitive Help project to verify that the correct Help topics open. You can test CSH API&#160;calls in a MadCap Flare project or from your application." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="csh" />
+            <MadCap:keyword term="Context-sensitive Help:testing" />Testing Context-sensitive Help</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareCSHGuide">Additional Tasks for CSH</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHPlus.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="FlareGuides.FlareCSHGuide">In addition to working with header and alias files, there are some additional tasks that you may perform when it comes to context-sensitive Help (CSH).</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareCSHGuide"><a name="TestingCSH"></a>Testing Context-sensitive Help</h2>
+        <p>After you create context-sensitive Help (CSH), you should test it to verify that it works. You can do this a couple of different ways, and it is not a bad idea to do both. </p>
+        <p>First, you can test your CSH identifiers from inside your project. If you are testing <MadCap:variable name="Outputs.DotNetHelp" />, <MadCap:variable name="Outputs.HTMLHelp" />, <MadCap:variable name="Outputs.WebHelp" />, or <MadCap:variable name="Outputs.WebHelp Plus" />, you use the Context-sensitive Help API Tester dialog. If you are testing <MadCap:variable name="Outputs.HTML5" /> output, you use the CSH&#160;Test page. Second, you can test the CSH using a new build of the software application. The following steps show you the different ways to test CSH.</p>
+        <p MadCap:conditions="FlareGuides.FlareCSHGuide">There are different ways to test CSH calls from inside a project. The method you use depends on the output type.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>how to test context-sensitive help from inside a project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">There are different ways to test CSH calls from inside a project. The method you use depends on the output type.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to use the test csh api call dialog—dotnet help, html help, webhelp, and webhelp plus</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol type="1" class="Decimal">
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Ribbon </span>If you want to test the CSH for the primary target, select the <span class="Emphasis">Tools</span> ribbon. In the <span class="Emphasis">Context Sensitive Help</span> section, select <span class="Emphasis">Test CSH API Calls</span>.  </p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">Right-Click </span>In the Project Organizer, right-click a target under the <span class="Emphasis">Targets</span> folder, and select <span class="Emphasis">Test CSH API Calls</span>.</li>
+                                </ul>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the target's output is not up-to-date, click <span class="Emphasis">Yes</span> when prompted to regenerate it.</p>
+                                <p>The Context-sensitive Help API Tester dialog opens.</p>
+                            </li>
+                            <li>
+                                <p>(Optional)&#160;In the <span class="Emphasis">Skin</span> drop-down list, select the desired skin for viewing the topic.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Skins/About_Skins.htm">About Skins</MadCap:xref>.</MadCap:conditionalText></p>
+                            </li>
+                            <li>
+                                <p>Next to each identifier, click <img src="../Resources/Images/test_btn.png" class="ReduceButtonSize" />. If the correct Help topic opens, the CSH link works.</p>
+                            </li>
+                            <li>When you have finished testing your topics, click <span class="Emphasis">Close</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to use the csh test page—html5</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol type="1" class="Decimal">
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Ribbon </span>If you want to test the CSH for the primary target, select the <span class="Emphasis">Tools</span> ribbon. In the <span class="Emphasis">Context Sensitive Help</span> section, select <span class="Emphasis">Test CSH API Calls</span>.  </li>
+                                    <li><span class="SetOffFirstLevel">Right-Click </span>In the Project Organizer, right-click a target under the <span class="Emphasis">Targets</span> folder, and select <span class="Emphasis">Test CSH API Calls</span>.</li>
+                                </ul>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the target's output is not up-to-date, click <span class="Emphasis">Yes</span> when prompted to regenerate it.</p>
+                                <p>The CSH Test page opens in a web browser. For Chrome, Firefox, and Internet Explorer users, the page opens in a new tab. For Safari users, the page opens in a new window.</p>
+                            </li>
+                            <li>
+                                <p>Test the desired topic(s)&#160;using one of these options:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Enter a Topic ID&#160;and Value </span>In the <span class="Emphasis">Topic ID</span>&#160;box, enter a topic value and select the topic identifier. You can find this information in the Value and Identifier columns of your alias file.</p>
+                                        <p>OR</p>
+                                    </li>
+                                    <li><span class="SetOffFirstLevel">Search for a Topic </span>Type a keyword in the <span class="Emphasis">Search</span> box.&#160;Then under the <span class="Emphasis">First Pick</span> label select <span class="Emphasis">None</span>, <span class="Emphasis">True</span>, or <span class="Emphasis">False</span>.</li>
+                                </ul>
+                            </li>
+                            <li>(Optional)&#160;In the <span class="Emphasis">Skin</span> drop-down list, select the desired skin for viewing the topic.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Skins/About_Skins.htm">About Skins</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li>
+                                <p>If you published your output to a web server and want to test a CSH&#160;call, type the web site path in the <span class="Emphasis">Path to Help System</span> box. If you leave this box blank, <MadCap:variable name="Other.Product" /> will test the CSH&#160;call to the Output folder. </p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">examples</p>
+                                    <p>If you published your help system to  the root directory on a web server, you might type:</p>
+                                    <p><span class="TypedEntry">http://help.example.com</span>
+                                    </p>
+                                    <p>OR</p>
+                                    <p><span class="TypedEntry">https://help.example.com</span>
+                                    </p>
+                                    <p>If you are publishing multiple outputs on the same web server, you might type one of the following (where [Flare Target Name] = the publishing destination folder of the target):</p>
+                                    <p><span class="TypedEntry">http://help.example.com/[Flare Target Name]</span>
+                                    </p>
+                                    <p>OR</p>
+                                    <p><span class="TypedEntry">https://help.example.com/[Flare Target Name]</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>Click <span class="Emphasis">Show Help (Javascript)</span>. If the correct topic opens, the CSH link works.</li>
+                            <li>When you have finished testing your topics, close your web browser.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to test context-sensitive help using a build from the application</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>After the developer finishes "hooking" the identifiers in the application, obtain a new build from the developer.</li>
+                    <li>Launch the application build that you obtained from the developer.</li>
+                    <li>Open a dialog or window that should be tied to a CSH topic.</li>
+                    <li>Click the <span class="Emphasis">Help</span> button in the dialog or window, or press <span class="Emphasis">F1</span> on your keyboard. The topic associated with the dialog or window should open accordingly.</li>
+                    <li>Test all of the CSH-related dialogs or windows in this same way.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="csh" />
+        </p>
+    </body>
+</html>

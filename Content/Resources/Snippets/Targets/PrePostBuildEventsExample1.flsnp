@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="3" MadCap:lastHeight="579" MadCap:lastWidth="1220">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example—Copy Files to Output Folder</p>
+            <p>Let’s say you need to place copies two PDF files—named “MyPDF1” and “MyPDF2”—into your Output folder after the target is generated.</p>
+            <p>Instead of doing this manually after the output is compiled, you open the target and select the <span class="Emphasis">Build Events</span> tab. Then you enter a command in the <span class="Emphasis">Post-Build Event Command</span> field. In this case, the command is as follows:</p>
+            <p class="Code">for %I in (C:\Users\myusername\Desktop\MyPDF1.pdf C:\Users\myusername\Desktop\MyPDF2.pdf) do copy %I "$(OutputDirectory)"</p>
+            <p>
+                <img src="../../Images/post_build_process_example_copy_files1.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+            <p>With this particular command, Flare will copy the PDF files from your desktop, so that’s where you place these two original files. After you save your changes in Flare, you generate the target. When you look in the output folder in Windows, you will see the two PDF files.</p>
+            <p>
+                <img src="../../Images/post_build_process_example_copy_files2.png" alt="" title="" class="MaxWidth90Percent" />
+            </p>
+        </div>
+    </body>
+</html>

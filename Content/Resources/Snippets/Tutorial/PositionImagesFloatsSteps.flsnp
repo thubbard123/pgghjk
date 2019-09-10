@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2348" MadCap:lastWidth="1368">
+    <body>
+        <ol>
+            <li>
+                <p>
+                    <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol class="LowerAlpha">
+                            <li>Open a stylesheet and select the following:<ul><li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open).</li><li><MadCap:snippetText src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../Styles/FilterParagraphStylesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">div</span> style.</li><li><MadCap:snippetText src="../Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../Images/top_nav_tutorial_images5.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                            <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                            <li>In the <span class="Emphasis">Class Name</span> field, type a name for the new style class and click <span class="Emphasis">OK</span>. In this template, we created the following div style classes related to images:<ul><li><p><span class="SetOffFirstLevel">ImagesFloatLeft </span>This style class is used on images that we want to be positioned to the left of the main body text.</p><p><img src="../../Images/top_nav_tutorial_images6.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p><span class="SetOffFirstLevel">ImagesFloatRight </span>This style class is used on images that we want to be positioned to the right of the main body text.</p><p><img src="../../Images/top_nav_tutorial_images7.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul><p>The two style classes are added in the stylesheet under the parent div style.</p><p><img src="../../Images/top_nav_tutorial_images8.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                            <li>
+                                <p>Select the <span class="Emphasis">ImageFloatLeft</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">clear </span>Set it to <span class="Emphasis">both</span>.</li>
+                                    <li><span class="SetOffFirstLevel">float </span>Set it to <span class="Emphasis">left</span>.</li>
+                                    <li><span class="SetOffFirstLevel">margin-right </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                    <li><span class="SetOffFirstLevel">padding </span>Set it to <span class="Emphasis">5px</span>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Select the <span class="Emphasis">ImageFloatRight</span> class, and on the right side of the Stylesheet Editor, set the following:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">clear </span>Set it to <span class="Emphasis">both</span>.</li>
+                                    <li><span class="SetOffFirstLevel">float </span>Set it to <span class="Emphasis">right</span>.</li>
+                                    <li><span class="SetOffFirstLevel">margin-right </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                    <li><span class="SetOffFirstLevel">padding </span>Set it to <span class="Emphasis">5px</span>.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Enter this in the default medium in the stylesheet:</p>
+                        <div class="IndentSmall">
+                            <p class="Style">div.ImagesFloatLeft</p>
+                            <p class="Style">{</p>
+                            <div class="IndentMedium">
+                                <p class="TypedEntry"><span class="StyleProperty">clear: </span><span class="StyleValue">both;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">float: </span><span class="StyleValue">left;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">margin-right: </span><span class="StyleValue">10px;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">padding: </span><span class="StyleValue">5px;</span>
+                                </p>
+                            </div>
+                            <p class="Style">}</p>
+                            <p class="Style">div.ImagesFloatRight</p>
+                            <p class="Style">{</p>
+                            <div class="IndentMedium">
+                                <p class="TypedEntry"><span class="StyleProperty">clear: </span><span class="StyleValue">both;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">float: </span><span class="StyleValue">right;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">margin-left: </span><span class="StyleValue">10px;</span>
+                                </p>
+                                <p class="TypedEntry"><span class="StyleProperty">padding: </span><span class="StyleValue">5px;</span>
+                                </p>
+                            </div>
+                            <p class="Style">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+            <li>Now that you've got your styles, you just need to apply them to the appropriate images. For example, let's say you've inserted an image that you want to float to the left, so that the main topic text floats to the right. To accomplish this, do the following:<ol class="LowerAlpha"><li>Click in the middle of the inserted image to select it.</li><li>Press <span class="Emphasis">Tab</span> on your keyboard.</li><li>In the Create Group dialog, select <span class="Emphasis">div.ImagesFloatLeft</span>.</li><li>Click <span class="Emphasis">OK</span>.</li></ol></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2532" MadCap:lastWidth="1107" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareGPL.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="CrossProjectSingleSourcing" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:keyword term="Single-sourcing;Importing:files from projects;Projects:importing;Projects:files;Projects:Global Project Linking;Global Project Linking" />Rules for Global Project Linking</h1>
+        <p>If you use the Global Project Linking feature to import files from other projects, you should be aware of the various rules at play, depending on the settings you choose. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="GPL_Importing_Files.htm">Global Project Linking—Importing Files from Other Projects</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Rules for Global Project Linking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li><span class="SetOffFirstLevel">Include Files Required </span>The Include Files field is mandatory. You can use wildcards, add specific file names, and specify multiple kinds of file types to include.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Auto-reimport" />Auto-reimport Memory </span>If you use the Auto-Reimport check box, <MadCap:variable name="Other.Product" /> will remember to not import any files that you have told it to exclude (either by using the Exclude Files field or by deselecting check marks in the Accept Imported Documents dialog). <MadCap:variable name="Other.Product" /> will only import files that you told it to include (or did not specifically tell it to exclude), thus bringing in any new files added to the source project or any changes to files that you have imported before. If a file in the current project is newer than the same file in the source project, the source file will not automatically replace the current file.</li>
+                    <li><span class="SetOffFirstLevel">Exclude Files Not Required </span>The Exclude Files field is optional. You can use wildcards, add specific file names, and specify multiple kinds of file types to exclude.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Importing:conditions" />Condition Tags Not Required, But Recommended </span>The Import Conditions section is optional. It lets you include or exclude files that have any condition tags applied to them at the file level. If you decide to take advantage of Global Project Linking, it is highly recommended that you use condition tags when doing so. By applying condition tags to your files (e.g., topics, images, stylesheets, page layouts), you can more easily control which files are imported into (or excluded from) a particular project. This is especially true if you elect to use the "auto-reimport" feature, which automatically imports files that you specify when you generate targets.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Conditions:including files;Conditions:excluding files" />Condition Tags&gt;Include Files </span>If you complete both the Include Files field and the Import Conditions section, the condition tags specified take precedence over what you have specified in the Include Files field. </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you tell <MadCap:variable name="Other.Product" /> to include all topic files, but you have excluded condition tags that are applied to some of those topic files, then those topics will not be imported.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Exclude Files&gt;Include Files </span>If you complete both the Include Files field and the Exclude Files field, the exclude files that are specified take precedence over the include files. </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you accidentally specify "All Topic Files" in both fields, then no topic files will be imported.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Exclude Files&gt;Condition Tags&gt;Include Files </span>If you complete the Include Files field, the Exclude Files field, and the Import Conditions section, the exclude files field takes highest precedence, then the condition tags, then the include files.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say that you have specified "All Topic Files" in the Include Files field. Furthermore, 30 percent of those files have an "advanced user" condition tag applied to them, and the other 70 percent have a "beginning user" condition tag applied. You have told <MadCap:variable name="Other.Product" /> to include the files with the "advanced user" condition tags and to exclude the files with the "beginning user" condition tags. Finally, in the Exclude Files field, you have specifically typed the file name "My Big Topic.htm," which has an "advanced user" condition tag applied to it. In a case such as this, <MadCap:variable name="Other.Product" /> imports all topic files that have the "advanced user" condition tag applied, except for the file "My Big Topic.htm," which it will not import.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Auto-include" />Exclude Files&gt;Auto-include Linked Files&gt;Condition Tags </span>If you complete the Exclude Files field and the Import Conditions section, as well as select the "Auto-include linked files" check box, the exclude files takes highest precedence, then the auto-include files, and finally the condition tags.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say that you have specified "All Topic Files" in the Include Files field. Furthermore, 30 percent of those files have an "advanced user" condition tag applied to them, and the other 70 percent have a "beginning user" condition tag applied. You have told <MadCap:variable name="Other.Product" /> to include the files with the "advanced user" condition tags and to exclude the files with the "beginning user" condition tags. You have also told <MadCap:variable name="Other.Product" /> to automatically include files that are linked from the files that you are specifically importing. Finally, in the Exclude Files field, you have specifically typed the file name "My Big Topic.htm," which has a "beginning user" condition tag applied to it, but there is an "advanced user" topic that links to that file. In a case such as this, <MadCap:variable name="Other.Product" /> will import all topic files that have the "advanced user" condition tag applied. It will also import any "beginning user" files that are linked from any "advanced user" files. However, because you have specifically told <MadCap:variable name="Other.Product" /> to exclude the file "My Big Topic.htm," it will not be included in the import.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">"Domino" Effect for Auto-include Linked Files </span>If you select the "Auto-include linked files" check box, <MadCap:variable name="Other.Product" /> will import any linked files it finds, even beyond the first level. <MadCap:snippetText src="../Resources/Snippets/SingleSourcing/ImportProjectFilesAutoIncludeLinkedFiles2.flsnp" /></p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say that you have told <MadCap:variable name="Other.Product" /> to import just one topic called "My Big Topic.htm," but you also tell it to automatically include any linked files. If "My Big Topic.htm" contains a cross-reference to a topic called "My Little Topic.htm" and it also contains a picture called "My Image.png," <MadCap:variable name="Other.Product" /> will import all three of those files. Furthermore, let's say that "My Little Topic.htm" contains a hyperlink to yet another topic called "My Medium Topic.htm" and a link to a snippet called "My First Snippet.flsnp." Therefore, <MadCap:variable name="Other.Product" /> will also import those two files, and it will scan those files for further links that may need to be imported.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Files Without Condition Tags Included </span> If you use the Import Conditions section to include and exclude files based on condition tags applied to them, but a few files do not have condition tags, those files will be included in the import. However, you have the option of removing the check mark from those files in the Accept Imported Documents dialog to exclude them from the import. </li>
+                    <li><span class="SetOffFirstLevel">Memory in Accept Imported Documents Dialog </span>After you perform an import the first time, all of the files in the Accept Imported Documents dialog will have check marks next to them, meaning they will be imported. However, you can deselect any specific files in that dialog if you decide not to import them. The next time you perform a re-import, those files will still show up in the Accept Imported Documents dialog, but they will remain unchecked because <MadCap:variable name="Other.Product" /> remembers that you wanted to leave them out of a previous import. If you click the check boxes next to them to add check marks, those files will be imported.</li>
+                    <li><span class="SetOffFirstLevel">New Files Contain Check Marks </span>After you have performed an import, you might add new files to the source project. If you then perform a re-import, those new files will automatically have check marks next to them in the Accept Imported Documents dialog (unless you specify beforehand that they should be excluded).</li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareGlobalProjectLinkingGuide" />
+                    <li><span class="SetOffFirstLevel">Green=Source Newer, Red=Local Newer </span>Let's say that you have imported several files from a source project, and then later you perform a re-import. If <MadCap:variable name="Other.Product" /> recognizes that the same files in the two projects are not identical, it color-codes them in the Accept Imported Documents dialog. If the source file is newer than the file in the current (local) project, the file is shaded in green and a check mark appears next to it (indicating that it will be imported and therefore replace the local file). If the local file is newer than the file in the source project, the file is shaded in red in the Accept Imported Documents dialog, and a check mark does not appear next to it (indicating that the file will not be imported, replacing the local file, unless you manually add a check mark).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="CrossProjectSingleSourcing" />
+        </p>
+    </body>
+</html>

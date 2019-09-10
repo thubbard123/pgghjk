@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="4" MadCap:lastHeight="1063" MadCap:lastWidth="956">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p><MadCap:variable name="Other.Product" /> now includes integrated support for Git. When binding your project to Git, you can select whether you want to bind to a remote repository, whether you want to push to the remote when you bind it, and whether to save your files to your user account or to the project. </p>
+        <p>
+            <img src="../../Images/source_control_bind1_git.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p> <MadCap:variable name="Other.Product" />'s Git integration allows you to work locally and then push your changes to a remote repository. You can also create branches so you can work on multiple iterations of a file (e.g., if you are documenting a new feature or making other major changes in your output, or if you are working with multiple authors), and then select the version you like best.</p>
+        <p>Flare's integration with Git includes the following new functionality:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:pull" />Pull Files </span>
+                <MadCap:snippetText src="SourceControlPull.flsnp" />
+            </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:synchronize" />Push Files </span>
+                <MadCap:snippetText src="SourceControlPush.flsnp" />
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:synchronize" />Synchronize </span>
+                    <MadCap:snippetText src="SourceControlSynchronize.flsnp" />
+                </p>
+            </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch" />Create Branches </span>
+                <MadCap:snippetText src="SourceControlBranchesSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Source_Control/Git/More_About_Source_Control/Creating_Branches.htm">Creating Branches</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch" />Select Branch </span>If you have created more than one branch, you can select the branch you want to work with. You will see the files associated with the selected branch, and new commits will be sent to the selected branch. By default, the master branch is selected. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Source_Control/Git/More_About_Source_Control/Selecting_Branches.htm">Selecting Branches</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch" />Publish Branch </span> If you want to push to, pull from, or synchronize using a branch you have created, you must publish the branch. You can still commit to an unpublished branch, but until you publish, you will not be able to send your commits to source control for backup. It is a good idea to publish branches unless you are only using a branch for a short period of time. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Source_Control/Git/More_About_Source_Control/Publishing_Branches.htm">Publishing Branches</MadCap:xref>.</MadCap:conditionalText></li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Source control:branch" />Delete Branch</span> If you no longer need a branch, you can delete it. This also deletes any commits on that branch. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Source_Control/Git/More_About_Source_Control/Deleting_Branches.htm">Deleting Branches</MadCap:xref>.</MadCap:conditionalText></li>
+        </ul>
+        <p MadCap:conditions="General.OnlineLive">For more information about Git, see <MadCap:xref href="../../../Source_Control/Git/About_Git.htm">About Git</MadCap:xref>.</p>
+        <p MadCap:conditions="General.Print">For more information about Git, see the online Help.</p>
+    </body>
+</html>

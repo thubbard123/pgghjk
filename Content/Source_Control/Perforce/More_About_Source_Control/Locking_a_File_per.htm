@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="11" MadCap:lastHeight="765" MadCap:lastWidth="999" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlPerforce.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Perforce" />
+            <MadCap:concept term="FilterSourceControlPerforce" />
+            <MadCap:keyword term="Source control:lock;Lock" />Locking a File<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Perforce</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlLockFilesPER.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,Products.LingoOnlineOnly">See <MadCap:xref href="Unlocking_a_File_per.htm">Unlocking a File</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Lock a File</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlWindowPaneSelectFile.flsnp" />
+                        </p>
+                        <p>OR</p>
+                        <p>Open a file.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Lock</span>. </p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click the files you want to lock and select <span class="Emphasis">Source Control&gt;Lock</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>In the File List, right-click the files you want to lock and select <span class="Emphasis">Source Control&gt;Lock</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the File List, select the file(s) you want to lock. In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Lock</span>.</li>
+                            <li><span class="SetOffFirstLevel">Source Control Explorer </span>Right-click the files you want to lock and select <span class="Emphasis">Lock</span>.</li>
+                        </ul>
+                        <p>The Lock dialog opens. The selected files are listed with check boxes next to them.</p>
+                    </li>
+                    <li>Make sure to select the check box next to each file you want to lock so it contains a check mark.</li>
+                    <li>Click <span class="Emphasis">Lock</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You cannot lock files with <MadCap:conditionalText MadCap:conditions="Products.Flare">Pending Add or </MadCap:conditionalText>Checked In status.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="942" MadCap:lastWidth="1205">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>A Menu skin component can work in tandem with a Menu proxy that you insert into a topic or master page. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Proxies/Using_the_Menu_Proxy.htm">Using the Menu Proxy</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>
+            <img src="../../Images/topnav_output20.png" alt="" title="" class="MaxWidth100Percent">
+            </img>
+        </p>
+        <p>
+            <img src="../../Images/topnav_output19.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>The styles for a Menu skin component are quite similar to those for the full Top Navigation skin. However, there are some differences and some options that are unique to each. </p>
+        <p>The primary thing to remember about a Menu  component is that it can be context-sensitive, meaning it refers only to the topic that is open and, depending on your settings, the parent, sibling, and child items from the TOC as well. On the other hand, the menu styles in the full Top Navigation skin are always concerned with your TOC file structure as a whole.</p>
+        <p>That being said, the menu item style levels in a Menu component can mean something different than they do for the full Top Navigation skin. </p>
+        <p>
+            <img src="../../Images/skin_styles_menu_component1.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>When you set values directly under the Menu Item or Menu Item (hover) node, you are controlling the look for the menu items that are at the top level of the menu. If you insert a context-sensitive Menu proxy that includes the parent, the root Menu Item style refers to the parent topic.</p>
+        <p>
+            <img src="../../Images/skin_styles_menu_component2.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSkinsGuide" />
+        <p>If you don't include the parent, but you do include the siblings, the root Menu Item style refers to those sibling topics in the TOC.</p>
+        <p>
+            <img src="../../Images/skin_styles_menu_component3.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSkinsGuide" />
+        <p>The 1st Level style refers to the first level under the root, followed by 2nd Level, 3rd Level, and 4th Level. The same kind of inheritance used for menu items in the full Top Navigation skin is used for a Menu component.</p>
+        <p>
+            <img src="../../Images/skin_styles_menu_component4.png" alt="" title="" class="MaxWidth90Percent" />
+        </p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSkinsGuide" />
+        <p>There is also a style called "Selected" for Menu components. This lets you apply a unique look to the menu item that refers to the topic that is currently open.</p>
+        <p>
+            <img src="../../Images/skin_styles_menu_component5.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+    </body>
+</html>

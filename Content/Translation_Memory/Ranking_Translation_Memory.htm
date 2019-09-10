@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="2321" MadCap:lastWidth="1110" MadCap:conditions="Products.Lingo" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title>Ranking Translation Memory</title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <h1>
+            <MadCap:concept term="TranslationMemory" />
+            <MadCap:keyword term="Translation memory:ranking" />
+            <MadCap:concept term="FilterTM" />
+            <MadCap:keyword term="Translation memory:databases;Databases:translation memory" /><a name="Ranking"></a>Ranking Translation Memories</h1>
+        <p>If you use multiple translation memories (TMs), you can assign them rankings to specify which database should take priority in translation suggestions. You can set these priority rankings when creating a new project or by using the Manage Translation Memory dialog (<span class="Emphasis">Resources&gt;Choose TM</span>).</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/RankedTMIntro.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Rank a tm database</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Make sure you have created at least one TM database.<MadCap:conditionalText MadCap:conditions="Products.Lingo"> See <MadCap:xref href="Creating_a_Translation_Memory_Database.htm">Creating a Translation Memory Database</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li MadCap:conditions="Products.Lingo">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the Translation Memory section select <span class="Emphasis">Choose TM</span>. </p>
+                        <p>The Manage Translation Memory dialog opens.</p>
+                    </li>
+                    <li MadCap:conditions="Products.Align">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the Translation Memory section select <span class="Emphasis">Choose TM</span>. </p>
+                        <p>The Manage Translation Memory dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>Next to each TM in the grid that you want to associate with the project, click <span class="Emphasis">Use</span>.</p>
+                        <p>
+                            <img src="../Resources/Images/multiple_tms1.png" class="MaxWidth90Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>From the <span class="Emphasis">Rank</span> drop-down, select a numeric ranking for each enabled TM, where <span class="Emphasis">1</span> is the preferred TM. You do not have to select a value; unranked TMs will take lowest priority. </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/RankTMsNote.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SameRankTMs.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/RankingTMsExample1.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/RankingsandFuzzyMatches.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

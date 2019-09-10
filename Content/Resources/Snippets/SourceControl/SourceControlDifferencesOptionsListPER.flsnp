@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="8" MadCap:lastHeight="1334" MadCap:lastWidth="985">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul class="FirstLevel">
+            <li>
+                <p><span class="SetOffFirstLevel">Two Versions of Same Source Control File (History/Roll Back) </span>
+                    <MadCap:snippetText src="SourceControlRollbackSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../Source_Control/Perforce/More_About_Source_Control/Rolling_Back_to_an_Earlier_Version_of_a_File_per.htm">Rolling Back to an Earlier Version of a File</MadCap:xref> and <MadCap:xref href="../../../Source_Control/Perforce/Getting_the_Latest_Version_of_Source_Control_Files_per.htm">Getting the Latest Version of Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="SourceControlRollbackExample.flsnp" />
+            </li>
+            <li MadCap:conditions="General.Future">
+                <p><span class="SetOffFirstLevel">Two Different Source Control Files </span>You can view code and content differences between the source control version of two different files.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you have two topics that are quite similar in some aspects, but different in others. Rather than trying to scan the two topics with your eyes to determine the differences, you can select the two files in the Flare interface and use this feature. Flare will retrieve the source control versions of the two topic files and display the content and code of each side-by-side, highlighting the areas where differences occur.</p>
+                </div>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS,Snippets.Snippet2" />
+            <li>
+                <p><span class="SetOffFirstLevel">Local Versus Source Control Version of a File </span>   You can view code and content differences between the local version of a file and the source control version of that file.</p>
+                <div class="example" MadCap:conditions="Products.Flare">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you check out a procedure topic from source control and then add some lines of text to your local copy of that topic file. You save your changes. Later that day, you want to revisit the new content that you wrote, but you cannot remember exactly which lines of text you added. Therefore, you use this feature to highlight the text differences between your local version of the file and the version stored in the source control application. The new lines of text are highlighted on the side displaying the local version of the file.</p>
+                </div>
+                <div class="example" MadCap:conditions="Products.Lingo">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you check out a topic from source control and then make changes to some of the translations in your local copy of that file. You save your changes. Later that day, you want to revisit the new translations, but you cannot remember exactly which translations you added and which were there before. Therefore, you use this feature to highlight the text differences between your local version of the file and the version stored in the source control application. The new text is highlighted on the side displaying the local version of the file.</p>
+                </div>
+            </li>
+            <li MadCap:conditions="General.Future">
+                <p><span class="SetOffFirstLevel">Local Versus Source Control Version of All Files in a Folder&#160;</span>You can view file differences between the local version of the files in a folder and the source control version. Most likely, you will use this to view all of the difference between the local files and source control files in either your Content Explorer or Project Organizer.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you are working on a large Flare project. During the course of the day, you edit several topics in the project. At the end of the day, you submit most of your files, but forget to submit a few files. Afterward, you realize that you missed a few files, and now those files are out-of-date. Therefore, you use this feature to see the file-level differences between your local copy of the Content Explorer root folder and the source control copy. The differences are color coded, so you can easily identify the files in question. (By default, the files that are included only in your local copy are green, and the files that are included only in source control are red.) You can then right-click on the files that were added only to the local copy, and you can select to add them to source control.</p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="813" MadCap:lastWidth="889" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:concept term="FilterTargets" />
+            <MadCap:keyword term="DOCTYPE;Topics:DOCTYPE;Output:DOCTYPE declaration;Browser:DOCTYPE declaration;Strict mode;Quirks mode" />Adding the DOCTYPE Declaration to Generated Topics</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_WebHelp_WHPlus_WHAIR.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Targets/DoctypeDeclarationSummary.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Targets/DoctypeDeclarationsSummary2.flsnp" />
+        <p>Why use the DOCTYPE declaration? You might find the need to use the DOCTYPE declaration feature if you have text boxes, images, tables, or other objects that have float, margin, or padding settings applied to them. With settings such as this, you might notice slight alignment issues when generating online output. For example, margin or padding settings might be pushing aligned text a bit further than you want. To fix this, add the DOCTYPE declaration to the target.&#160;<MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information about document structure, see <a href="http://www.w3.org/TR/REC-html40/struct/global.html" target="_blank">http://www.w3.org/TR/REC-html40/struct/global.html</a>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add the doctype declaration to generated topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a target used for online output.</li>
+                    <li>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Add DOCTYPE declaration to generated topics</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Enabling this feature for HTML Help targets may be necessary to avoid certain custom JavaScript errors. However, for some languages (e.g., right-to-left, Russian, Asian languages), this option may not function properly in HTML Help. Therefore, it is recommended that you disable the option for non-English language content when generating HTML Help.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The DOCTYPE declaration will exist in the main output file whether or not this option is enabled.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option is not necessary for <MadCap:variable name="Outputs.WebHelp Mobile" /> output because that output type always includes the standard mobile DOCTYPE.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2154" MadCap:lastWidth="884" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Meta tags;Metadata" />
+            <MadCap:concept term="FilterTargets" />Adding Custom Meta Tags</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline.flsnp" />
+        <p>For online outputs, you can add custom meta tags in the Advanced tab of the Target Editor. These are added between the &lt;head&gt; and &lt;/head&gt; tags in your content when you generate output.</p>
+        <p>There is a default meta tag provided. You can keep this tag, remove it, and/or add other valid tags.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you have embedded HTML5 movies in your topics, and you are generating DotNet Help. However, DotNet Help uses Internet Explorer 7, which does not support HTML5 movies. Therefore, you use the default meta tag in the DotNet Help target to ensure that the latest version of Internet Explorer is used, therefore allowing the movies to play.</p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>You might want to enhance search engine optimization for your output, so you add the following tag to the target: &lt;meta name="googlebot"/&gt;</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add custom meta tags</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a target.</li>
+                    <li>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Add meta tags to content</span>.</li>
+                    <li>
+                        <p>In the area below, you can add any valid meta tags. You can also keep the default tag. <MadCap:snippetText src="../../Resources/Snippets/Variables/IfYouWantInsertVariable.flsnp" /></p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>default tag for most output formats</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>For most output formats, the default tag is as follows:</p>
+                                <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</p>
+                                <p>This tag tells Internet Explorer to render with the latest version.</p>
+                                <p>
+                                    <img src="../../Resources/Images/meta_tags1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>default tag for dotnet help</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>For <MadCap:variable name="Outputs.DotNetHelp" /> targets, the default tag looks like this:</p>
+                                <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=7,8,9,10" /&gt;</p>
+                                <p> That's because IE=Edge can cause rendering issues on some systems.</p>
+                                <p>
+                                    <img src="../../Resources/Images/meta_tags2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>default tag for html help</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>For <MadCap:variable name="Outputs.HTMLHelp" /> targets, the default tag looks like this:</p>
+                                <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=7" /&gt;</p>
+                                <p> That's because IE=Edge can cause rendering issues on some systems.</p>
+                                <p>
+                                    <img src="../../Resources/Images/meta_tags3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Previously, HTML Help targets used the same default meta tag as DotNet Help. Starting in Version 11, it changed to the meta tag shown above. The reason for this is that HTML Help is an older output type that does not support newer CSS styles. So while using the new meta tag may fix some issues (such as those dealing with lists), it does not help with others (such as rounded borders that are used in slideshows).</p>
+                                    <p>You can always change the meta tags back to "IE=7,8,9,10" if you want to revert to the previous behavior.  If you have never edited the default meta tags in your HTML Help target, your preference has not been recorded in the target. Therefore, upon opening your project in Version 11 and later, your tags will update to "IE=7" and your may see different behavior in your output.  If you have made an edit to the meta tag at some point, those changes are preserved and you will continue to see the same behavior as before.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" />
+        </p>
+    </body>
+</html>

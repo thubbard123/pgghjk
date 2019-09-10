@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1606" MadCap:lastWidth="1094" MadCap:conditions="Products.Analyzer">
+    <head><title></title>
+        <meta name="description" content="Applying Accessibility Suggestions can resolve accessibility issues like missing captions, labels, or table headers." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterAccessibility" />
+            <MadCap:concept term="Accessibility" />
+            <MadCap:keyword term="Section 508;Accessibility:suggestions;WCAG;Suggestions:accessibility" />Resolving Accessibility Issues</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Section 508;Accessibility:suggestions;WCAG;Suggestions:accessibility" />Resolving Accessibility Issues</h1>
+        <p>When you see issues listed in the Accessibility Suggestions window pane, you can resolve them in a couple of different ways. If the issue has to do with missing <MadCap:keyword term="Alternate text" />alternate text, you can use the Apply Accessibility Suggestions Wizard to automatically add this to the elements in question; you can also add empty alt text to multiple images at once. If the issue has to do with alternate text or something else—such as missing captions, labels, or table header elements—you can fix the issue manually in the user interface.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to resolve accessibility issues (alt text) automatically in a wizard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Accessibility Suggestions window pane. See <MadCap:xref href="Viewing_Accessibility_Suggestions.htm" target="" title="" alt="">Viewing Accessibility Suggestions</MadCap:xref>.</li>
+                    <li>In the Accessibility Suggestions window pane, select all "alt text" issues that you want to resolve. <MadCap:snippetText src="../../Resources/Snippets/UIElements/IfSelectAllSomeRows.flsnp" /></li>
+                    <li>In the local toolbar, click the <span class="Emphasis">Apply Alt Text</span> button. </li>
+                    <li>A message asks if you want to apply the selected suggestions. <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The Apply Accessibility Suggestions Wizard opens.</li>
+                    <li>Select one or more items in the list. (Select multiple items if you want the same alt text to apply to them all.)</li>
+                    <li>(Optional) If you selected only one item, you can click <span class="Emphasis">View</span>, which opens the Media Viewer and lets you see a preview of the object (e.g., equation, QR code, image, video). For videos and images, file information is displayed in addition to a list of files that link to the media file. Click <span class="Emphasis">OK</span> when you are finished.</li>
+                    <li>Click <span class="Emphasis">Set Text</span>. The Change Alt Text dialog opens.</li>
+                    <li>In the <span class="Emphasis">Alt Text</span> field, you can enter the alternate text for the object (e.g., description of the image that you want screen readers to interpret). If you want to apply empty alt text to image(s) that you selected, leave the field blank.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>If you are setting different alternate text for different items, repeat steps 5-9 for each item in the wizard.</li>
+                    <li>Click <span class="Emphasis">Next</span>. A preview of your settings is shown.</li>
+                    <li>Click <span class="Emphasis">Finish</span>.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <MadCap:dropDown>
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteCanUseBackupsWindow.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to resolve accessibility issues manually in the interface</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the Accessibility Suggestions window pane. See <MadCap:xref href="Viewing_Accessibility_Suggestions.htm" target="" title="" alt="">Viewing Accessibility Suggestions</MadCap:xref>.</li>
+                    <li>
+                        <p>You can open any file in the list to view or modify it in an editor. You can open the file in the <MadCap:variable name="Other.Product" /> interface or in the Flare project. </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/FixIssue2.flsnp" />
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/FixIssue3.flsnp" />
+                    </li>
+                    <li>
+                        <p>Depending on the type of issue, use the appropriate areas of the interface to make changes. See the online Help in Flare for more information about using different features.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Image Elements </span>You can fix the issue by editing the image and entering a description in the <span class="Emphasis">Alternate Text</span> field. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Images/Editing_Images/Editing_Images_Analyzer.htm">Editing Images</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">Equation Elements </span>You can fix the issue by editing the equation and entering a description in the <span class="Emphasis">Alternate Text</span> field. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Equations/Editing_Equations.htm">Editing Equations</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">QR Code Elements </span>You can fix the issue by editing the QR code and entering a description in the <span class="Emphasis">Alternate Text</span> field. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../QR_Code/Editing_QR_Codes.htm">Editing QR Codes</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">Tables </span>You can fix the issue by editing the table properties and entering caption text (above the table) and/or adding a header row. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Tables/More_About_Tables/Editing_Table_Properties.htm">Editing Table Properties</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">Form Elements </span>You can fix the issue by opening the markup for the document and adding a label to the form. To edit the markup, you can use the Internal Text Editor or Notepad. For more information about working with form elements (and labels within them), see <a href="http://w3.org/" target="_blank">w3.org</a>.</li>
+                            <li><span class="SetOffFirstLevel">Frame Elements </span>You can fix the issue by opening the markup for the document and adding a title to the frame element. To edit the markup, you can use the Internal Text Editor or Notepad. For more information about working with frame elements (and titles/names within them), see <a href="http://w3.org/" target="_blank">w3.org</a>.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Accessibility" />
+        </p>
+    </body>
+</html>

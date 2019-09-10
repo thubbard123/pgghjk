@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1776" MadCap:lastWidth="1140" MadCap:conditions="Products.Flare">
+    <body>
+        <p>Keep in mind the following rules when working with these types of styles.</p>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>font color on link styles only</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can set many different properties on Help controls. However, font color can be set only on styles that deal specifically with links (e.g., a, helpControlListItemLink<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1">, conceptLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2">, keywordLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3">, relatedTopicsControlListItemLink</MadCap:conditionalText>).</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you want to use red on<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> concept</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> keyword</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> related topic</MadCap:conditionalText> links. You can set that color on<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlListItemLink</MadCap:conditionalText>, because it controls the links specifically. But if you set the color on<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlList</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlList</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlList</MadCap:conditionalText> or <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlListItem</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlListItem</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlListItem</MadCap:conditionalText>, the color setting will have no effect because those styles deal with lists and list items, not links.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:inheritance" />inheritance from main list and link styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p> Because these Help control styles are based on the main styles for unnumbered lists (ul), list items (li), and hyperlinks (a), they inherit properties from those standard styles.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you set a purple font on the "a" style. If you do not make any changes to your Help control styles, all of the links will use a purple font. But suppose you want <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> concept</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> keyword</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> related topic</MadCap:conditionalText> links to use a green font instead. In that case, you can set the <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlListItemLink</MadCap:conditionalText> style to green.<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> If you do that, regular text hyperlinks, keyword links, and related topic links will all display in purple, but concept links will display in green.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> If you do that, regular text hyperlinks, concept links, and related topic links will all display in purple, but keyword links will display in green.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> If you do that, regular text hyperlinks, concept links, and keyword links will all display in purple, but related topic links will display in green.</MadCap:conditionalText></p>
+                </div>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If setting a property on the "a" style does not seem to have an effect on the Help control links, check the heading style. For example, if you set purple on the "a" style but <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopics</MadCap:conditionalText> has blue, then <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlListItemLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlListItemLink</MadCap:conditionalText> will use blue. That's because <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLink</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopics</MadCap:conditionalText> overrules "a."</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>inheritance from general help control styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Because the general "helpControl" styles (helpControlList, helpControlListItem, helpControlListItemLink) are used to determine the look of all three types of Help control links, the more specific styles (e.g., conceptLinkControl, keywordlinkControl, relatedTopicsConrol) inherit properties from them.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you set a 12-pt font on the MadCap|helpControlListItem style. If you do not make changes to any of the more specific styles (MadCap|conceptLinkControlListItem, MadCap|keywordLinkControlListItem, MadCap|relatedTopicsControlListItem), all of them will use a 12-pt font. But suppose you want <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> concept</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> keyword</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> related topic</MadCap:conditionalText> links to use a 14-pt font instead. In that case, you can set the<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> MadCap|conceptLinkControlListItem</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> MadCap|keywordLinkControlListItem</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> MadCap|relatedTopicsControlListItem</MadCap:conditionalText> style to 14 pt.<MadCap:conditionalText MadCap:conditions="Snippets.Snippet1"> If you do that, keyword links and related topic links will display in 12 pt, but concept links will display in 14 pt.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet2"> If you do that, concept links and related topic links will display in 12 pt, but keyword links will display in 14 pt.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet3"> If you do that, concept links and keyword links will display in 12 pt, but related topic links will display in 14 pt.</MadCap:conditionalText></p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>no inheritance between specific styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>As shown, there is inheritance from main styles (e.g., a, li) and from the general "helpControl" styles. That's because the main styles are at a higher level than all of the Help control link styles, and the general "helpControl" styles are at a higher level than the more specific styles. But all of the specific Help control styles are at the same level; therefore, none of them inherit properties from any of the others.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you set a 10-pt font on the MadCap|keywordLinkControlList style (which controls <span class="Emphasis">entire lists for keyword links</span>). Neither the MadCap|keywordLinkControlListItem style nor the MadCap|keywordLinkControlListItemLink style will inherit that font size. Instead, the MadCap|keywordLinkControlListItem style (which controls <span class="Emphasis">list items for keyword links</span>) will either inherit from li or MadCap|helpControlListItem. And MadCap|keywordLinkControlListItemLink (which controls the <span class="Emphasis">actual links for keywords</span>) will either inherit from "a" or MadCap|helpControlListItemLink. Or you can set different colors on those styles specifically.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <p MadCap:conditions="Snippets.Snippet1">The following diagram shows how inheritance and precedence works with Help control styles. In this example, concept link styles are shown. But the same type of structure applies to keyword and related topic links as well. The arrows show inheritance. The numbers show precedence; in other words, if multiple styles have different settings for the same property, the style with a lower number has precedence over those with higher numbers.</p>
+        <p MadCap:conditions="Snippets.Snippet1">
+            <img src="../../Images/help_control_inheritance.png" class="MaxWidth100Percent" />
+        </p>
+    </body>
+</html>

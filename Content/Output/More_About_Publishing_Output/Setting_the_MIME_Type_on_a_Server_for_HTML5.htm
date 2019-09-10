@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="604" MadCap:lastWidth="804" MadCap:conditions="Products.Mimic">
+    <head><title></title>
+        <meta name="description" content="Add MIME&#160;Types in IIS to handle file names extensions for HTML5 output built with MadCap Mimic. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="HTML5;Output:HTML5;MIME type;Server:MIME type" />Setting the MIME Type on a Server for HTML5</h1>
+        <p class="InfoForDevelopers">Provide the information in this topic to your server administrator.</p>
+        <p>  If you have <MadCap:keyword term="Full-motion video" />full-motion video (FMV) files and put your movie on a server, you also need to install MIME types for HTML5 output. For more about FMV, see <MadCap:xref href="../../Frames/About_Frames.htm">About Frames</MadCap:xref>.</p>
+        <p>The exact steps vary for different machines, but the following can serve as a guide.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set the mime type on server for html5</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open IIS Manager and navigate to the level you want to manage.</li>
+                    <li>In <span class="Emphasis">Features View</span>, double-click <span class="Emphasis">MIME Types</span>.</li>
+                    <li>In the <span class="Emphasis">Actions</span> pane, click <span class="Emphasis">Add</span>.</li>
+                    <li>In the <span class="Emphasis">Add MIME Type</span> dialog, type a file name extension in the <span class="Emphasis">File name extension</span> text box. For example, type <span class="TypedEntry">.xyz</span>.</li>
+                    <li>In the MIME type text box, enter a MIME type. For example, type <span class="TypedEntry">application/octet-stream</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information, see <a href="http://technet.microsoft.com/en-us/library/cc725608(WS.10).aspx" target="_blank">http://technet.microsoft.com/en-us/library/cc725608(WS.10).aspx</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

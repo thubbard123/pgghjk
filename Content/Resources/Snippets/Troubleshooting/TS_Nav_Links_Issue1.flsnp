@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="682" MadCap:lastWidth="882" MadCap:ignoredWords="FileSync">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">"Unhandled exception" error occurs when inserting hyperlinks</p>
+        <p>Flare returns an "unhandled exception" error when the user attempts to insert a hyperlink:</p>
+        <p class="Bold">Unhandled exception has occurred in a component in your application. If you click Continue, the application will ignore this error and attempt to continue.</p>
+        <p class="Bold">Access to path "C:\[pathway]" is denied.</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>This issue may have one of the following causes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Flare is trying to reference a file whose pathway does not exist.</p>
+                <p>Make sure that the topic you are trying to link to is checked out from  source control.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/soluton 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Flare is trying to reference a file  whose attribute has been set to "Read-only." </p>
+                <p>Make sure that the following Flare project files are <span class="EmphasisItalic">not</span> set with a "Read-only" attribute: Analyzer, Users, Output, and FileSync. </p>
+                <ol>
+                    <li>Navigate to the Flare project folder's location and open the folder.</li>
+                    <li>Right-click the <span class="Emphasis">Analyzer</span> folder and from context menu, select <span class="Emphasis">Properties</span>.</li>
+                    <li>
+                        <p>In the Properties dialog, locate the <span class="Emphasis">Attributes</span> field and click the <span class="Emphasis">Read-only</span> check box so that it is completely empty.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Apply</span>.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p>
+                            <img src="../../Images/TS_nav_links_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>Repeat steps 1 through 5 for the <span class="Emphasis">Users</span>&#160;(the Users folder is located inside the Project folder), <span class="Emphasis">Output</span>, and <span class="Emphasis">FileSync</span> folders.</li>
+                    <li>Insert the hyperlink again. It should now work.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

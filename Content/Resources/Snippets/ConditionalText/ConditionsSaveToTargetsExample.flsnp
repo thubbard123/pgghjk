@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Capture" MadCap:lastBlockDepth="5" MadCap:lastHeight="2801" MadCap:lastWidth="1072">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example—Conditions and Multiple Profile Targets</p>
+            <p>Let's say you need to use an image for two purposes in two different locations. Therefore, you create two profiles to serve your needs. Profile1 contains the settings for Location1, and Profile2 contains the settings for Location2.</p>
+            <p>In addition, perhaps each image copy needs to have a callout object on it. Maybe you want Callout 1 to be shown only with your Profile1 output, and you want Callout 2 to be shown only with your Profile2 output. </p>
+            <p>In the end, you want something like this for Profile1:</p>
+            <p>
+                <img src="../../Images/save_to_targets_example3.png" class="MaxWidth90Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide,CaptureGuides.CaptureGettingStartedGuide" />
+            <p>And you want something like this for Profile 2:</p>
+            <p>
+                <img src="../../Images/save_to_targets_example4.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <p>Now, you could just create two different images and put Callout 1 on the first image and Callout 2 on the second image. But with condition tags and the ability to save to profile targets, you can have both callouts on one image.</p>
+            <p>
+                <img src="../../Images/save_to_targets_example1.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <p>In order to direct the image copies to the correct places with the appropriate settings (i.e., the correct callout on each image), you create condition tags. In each profile, you create one condition tag called "Location1" and another called "Location2." (If you integrate the image into a Flare project, you may not even need to create the condition tags; you can simply use the ones already contained in the project.)</p>
+            <p>In addition, you use the Conditional Text tab in each profile to tell Capture how to handle the conditions. </p>
+            <p>In Profile1, you specify that Location1 should be included and Location2 should be excluded.</p>
+            <p>
+                <img src="../../Images/save_to_targets_example9.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <p>In Profile2, you specify that Location1 should be excluded and Location2 should be included.</p>
+            <p>
+                <img src="../../Images/save_to_targets_example10.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <p>Now you can select one of those two profiles when you perform the initial capture. That way, the image itself will also have the condition tags in it, which allows you to preview the image with the condition tags applied.</p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureGettingStartedGuide,CaptureGuides.CaptureEditingImagesGuide" />
+            <p>After performing the screen capture, you can add your two callouts to the image. Then you double-click on each callout object and use the Conditional Text tab to tell Capture which condition tag each object should use.</p>
+            <p>Let's say that for Callout 1, you specify it this way:</p>
+            <p>
+                <img src="../../Images/save_to_targets_example5.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureGettingStartedGuide,CaptureGuides.CaptureEditingImagesGuide" />
+            <p>And for Callout 2, you specify this:</p>
+            <p>
+                <img src="../../Images/save_to_targets_example6.png" class="MaxWidth90Percent">
+                </img>
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureGettingStartedGuide,CaptureGuides.CaptureEditingImagesGuide" />
+            <p>When you are done, a blue square will be shown on Callout 1, and a pink square will be shown on Callout 2.</p>
+            <p>
+                <img src="../../Images/save_to_targets_example2.png" class="MaxWidth100Percent">
+                </img>
+            </p>
+            <p>The squares are there simply to show condition tags. In the actual output, the squares will not be visible.</p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureGettingStartedGuide,CaptureGuides.CaptureEditingImagesGuide" />
+            <p>Now you are ready to save the image. Instead of clicking the usual Save button, you select <span class="Emphasis">File&gt;Save&gt;Save To Targets</span> (ribbon) or <span class="Emphasis">File&gt;Save To Targets</span> (menu). And this is what you see:</p>
+            <p>
+                <img src="../../Images/save_to_targets_example7.png" class="MaxWidth85Percent">
+                </img>
+            </p>
+            <p>Because you want that one image to use settings from both Profile1 and Profile2, you place check marks next to those profiles and save.</p>
+            <p>
+                <img src="../../Images/save_to_targets_example8.png" class="MaxWidth85Percent">
+                </img>
+            </p>
+            <p>The end result is that one copy of the image displays only Callout 1 and the other copy displays only Callout 2.</p>
+        </div>
+    </body>
+</html>

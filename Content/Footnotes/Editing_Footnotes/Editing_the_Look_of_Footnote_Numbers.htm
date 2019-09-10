@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="12" MadCap:lastHeight="1428" MadCap:lastWidth="1092" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterFootnotes" />
+            <MadCap:keyword term="Footnotes;Endnotes;Footnotes:numbers;Endnotes:numbers" />Editing the Look of Footnote Numbers</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Footnotes/EditFootnoteNumberLook.flsnp" /> First you need to create the span class and provide your settings (e.g., font color, size, and so on). After inserting a footnote, you can open its properties and select the span class to change the look.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Footnotes:styles" />how to create and edit a span class for footnote numbers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, find and select the <span class="Emphasis">span</span> tag.</li>
+                    <li>In the local toolbar, click <img src="../../Resources/Images/add_class_btn.png" class="ReduceButtonSize" />. The New Selector dialog opens.</li>
+                    <li>In the <span class="Emphasis">Class Name</span> field, type a name for the new style class, without using any spaces (e.g., MyInTextFootnoteNumber).</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The new style class is added under the tag you selected.</li>
+                    <li>Edit the properties for the span class. The most common settings to change are those for the font. <MadCap:conditionalText MadCap:conditions="Products.Flare">See <MadCap:xref href="../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Complete the following steps for selecting the span class for the footnote.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to select a span class for a footnote</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Make sure markers are turned on. (Click the down arrow next to the <span class="Emphasis">Show tags</span> button <img src="../../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> in the XML Editor. Then select <span class="Emphasis">Show Markers</span>.)</li>
+                    <li>Right-click on the footnote marker icon where it is inserted in the topic, and from the menu select <span class="Emphasis">Footnote Properties</span>. The Footnote Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Footnote</span> tab.</li>
+                    <li>
+                        <p>From one of the <span class="Emphasis">Style</span> fields, select the appropriate span class. If you select a span class in the first Style field, it will affect the look of the footnote number that appears in the topic content. If you select a span class in the second Style field, it will affect the look of the footnote number that appears before the footnote comment wherever you have positioned it (e.g., end of page, end of chapter).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The span class can also be set on a style in the Advanced view of the Stylesheet Editor using the <span class="Emphasis">mc-footnote-style</span>and <span class="Emphasis">mc-footnote-comment-style</span> properties. The mc-footnote-style property will select the span class for footnotes and the mc-footnote-comment-style will select the span class for footnote comments. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm" >About Styles and Stylesheets</MadCap:xref>, <MadCap:xref href="../../Styles/Editing_Styles.htm" >Editing Styles</MadCap:xref>, and <MadCap:xref href="../../Interface/UI_Elements/Stylesheet_Editor.htm" target="" title="" alt="" >Stylesheet Editor</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Contributor">See <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm" >About Styles and Stylesheets</MadCap:xref>, <MadCap:xref href="../../Styles/Editing_Styles_Contributor.htm" >Editing Styles</MadCap:xref>, and <MadCap:xref href="../../Interface/UI_Elements/Stylesheet_Editor.htm" target="" title="" alt="" >Stylesheet Editor</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This task lets you change the footnote number only (either the number in the topic text or the number in the footnote comment). If instead you want to change the look of both numbers, as well as the comment text, see <MadCap:xref href="Editing_Footnote_Comment_Font_Settings.htm" >Editing Footnote Comment Font Settings</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Footnotes" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

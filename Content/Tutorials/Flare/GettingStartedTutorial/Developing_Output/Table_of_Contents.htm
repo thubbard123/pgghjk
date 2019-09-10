@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2542" MadCap:lastWidth="1020" MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsGettingStarted.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/GettingStarted.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Getting Started" />
+            <MadCap:keyword term="Tables of contents" />Using a Table of Contents</h1>
+        <p>Let's create a table of contents (TOC) to organize the topics that will go into our targets. </p>
+        <p>But as you do this, keep something very important in mind. A TOC file in online output acts as your online navigation. But for print-based outputs, a TOC file acts more like an outline; it's simply used to tell Flare which topics should be included in the print output and in what order. The actual generated TOC in print-based outputs is done a bit differently. It uses something called a "TOC Proxy."<MadCap:conditionalText MadCap:conditions="FlareGuides.FlareNewUserTutorial"> See the online Help for more information.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See </MadCap:conditionalText><MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm" MadCap:conditions="General.OnlineLive">Creating a TOC Manually for Print</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></p>
+        <p> In the San Diego template, there are two TOC files already created for you: one for printed output and one for online output. Since we added a topic to this project earlier (FamousSanDiegans.htm; see <MadCap:xref href="../Adding_Elements/Topics.htm">Creating Topics</MadCap:xref>), we need to add that topic to these TOCs before we can build our outputs.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add a Topic to the Online TOC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Project Organizer, expand the <span class="Emphasis">TOCs</span> folder.</li>
+                    <li>Double-click <span class="Emphasis">Online TOC</span>. The TOC Editor opens to the right.</li>
+                    <li>Open the Content Explorer.</li>
+                    <li>
+                        <p>In the Content Explorer, select <span class="Emphasis">FamousSanDiegans.htm</span> and drag it to the TOC Editor on the right. You will see a blue arrow when you can drop it. Drop the topic under <span class="Emphasis">San Diego Cuisine</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/TOC1.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/TOC2.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/Tutorial/DroppingInTheTOC.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add a Topic to the Print TOC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Adding a topic to the Print TOC&#160;follows basically the same steps. However, there are a few additional steps because you must set printed output settings for the new topic.</p>
+                <ol>
+                    <li>In the Project Organizer, expand the <span class="Emphasis">TOCs</span> folder.</li>
+                    <li>Double-click <span class="Emphasis">Print TOC</span>. The TOC Editor opens to the right.</li>
+                    <li>
+                        <p>In the Content Explorer, select <span class="Emphasis">FamousSanDiegans.htm</span> and drag it to the Print TOC. You will see a blue arrow when you can drop it. Drop the topic under <span class="Emphasis">San Diego Cuisine</span> and before <span class="Emphasis">References</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/TOC7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the TOC Editor, double-click <span class="Emphasis">Famous San Diegans</span>. The Properties dialog opens.</p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If double-clicking a TOC&#160;entry opens the topic instead of the Properties dialog, click    <img src="../../../../Resources/Images/toggle_double_click_toc_entry_btn.png" alt="" title="" class="ReduceButtonSize" /> in the local toolbar of the TOC&#160;Editor to toggle the double-click behavior.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Select the <span class="Emphasis">Printed Output</span> tab.</p>
+                        <p>Famous San Diegans should be a new chapter in our PDF guide, so we will set it up to use these settings.</p>
+                    </li>
+                    <li>In the <span class="Emphasis">Break Type</span> field, select <span class="Emphasis">Chapter Break</span>. </li>
+                    <li>In the <span class="Emphasis">Page Layout</span> field, select <span class="Emphasis">Chapters</span>. This is a page layout that is included with the San Diego template.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Page Type</span> field, select <span class="Emphasis">First Right</span>. This will automatically start the chapter on a right page.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/TOC5.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">OK</span>. When you build the PDF&#160;output, you will notice these settings.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">There's more to preparing a project for print-based output than what we're showing you here. How much is involved depends on how intricate you want to get with your output.<MadCap:conditionalText MadCap:conditions="FlareGuides.FlareNewUserTutorial"> See the online Help for more information.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See </MadCap:conditionalText><MadCap:xref href="../../../../Output/Printed_Output/Creating_Printed_Output.htm" MadCap:conditions="General.OnlineLive">Creating Print-based Output</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive">.</MadCap:conditionalText></p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNewUserTutorial" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a TOC&#160;to a Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Print TOC file is already associated with our PDF target. But we still need to assign the Online TOC file to our HTML5 target. </p>
+                <ol>
+                    <li>In the Project Organizer, expand the <span class="Emphasis">Targets</span> folder.</li>
+                    <li>Double-click the <span class="Emphasis">All About San Diego HTML5</span> target. The Target Editor opens to the right.</li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Master TOC</span>&#160;field, select <span class="Emphasis">Online TOC</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/TOC6.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about TOCs, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../TOCs/About_Tables_of_Contents.htm">About Tables of Contents</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="../Building_Output/Building_Output.htm">Building Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

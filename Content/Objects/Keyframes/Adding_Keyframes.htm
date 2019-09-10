@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="9748" MadCap:lastWidth="722" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieEditing.flmsp');">
+    <head>
+        <meta name="description" content="Learn how to apply keyframes to objects in MadCap Mimic. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Keyframes:adding" />Adding Keyframes</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/WhatsNew/MimicV8/Keyframes3.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add Keyframes to Objects</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a movie that contains objects, or add an object to a frame. </li>
+                    <li>Double-click the object. <MadCap:snippetText src="../../Resources/Snippets/Objects/ObjectPropertiesWindowPaneOpensMimic.flsnp" /></li>
+                    <li>
+                        <p>In the Timeline window pane (<span class="Emphasis">View&gt;Timeline</span>), do one of the following:</p>
+                        <ul>
+                            <li>For all standard object types, click <span class="Emphasis">Frame View</span>. Any action objects converted to objects will also be in this view.</li>
+                            <li>For action object types, click <span class="Emphasis">Action View</span>. Any objects converted to action objects will also be in this view.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Add one of the following keyframe types:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Opacity</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Altering the object opacity within keyframes can make an object appear to fade in or out of a frame.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframeOpacity.flsnp" />
+                                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want to make an object gradually go from 0-100% opacity (or the other way around), you really only have to set two keyframes. Set the first one at the beginning of the object, then set the final state at the very end of the object. The object is automatically set to have a linear interpolation, so the transition will happen gradually over the duration of the object's time span.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Color</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>A&#160;timed, subtle change to an object's color can redirect attention to that object when the transition begins.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframeColor.flsnp" />
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want a gradient to display for one or more keyframes but want a solid color for the rest of the object's keyframes, choose one of the gradient background types for the object. For the keyframes you want to remain solid, pick the same color for both gradient fields.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Position</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>When you create keyframes in order to move the position of an object, a trajectory is automatically shown in the Frame Editor. Each movement point is indicated by a blue circle on the trajectory's dotted line. </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframePosition.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Size</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You might want to show an object becoming smaller to accommodate other objects taking over the focal point of the frame.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframesSize.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Rotation</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Rotating an object on the frame will create a spinning effect.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframeRotation.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Text</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Changing the text on an object allows you to reuse that object.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/AddKeyframeText.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">All objects do not have the same keyframe options. For example, cursor objects do not have a rotation property.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Continue adding keyframes as needed.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="AddKeyframestoEffects"></a>How to Add Keyframes to <MadCap:keyword term="Effects:clip" />Clip Effects</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can apply keyframes to clip effects. </p>
+                <ol>
+                    <li>Open a movie that contains an object to which a clip effect has been applied. </li>
+                    <li>
+                        <p>In the Timeline window pane (<span class="Emphasis">View&gt;Timeline</span>), do one of the following:</p>
+                        <ul>
+                            <li>For all standard object types, click <span class="Emphasis">Frame View</span>. Any action objects converted to objects will also be in this view.</li>
+                            <li>For action object types, click <span class="Emphasis">Action View</span>. Any objects converted to action objects will also be in this view.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>In the Timeline, right-click the effect bar and select <span class="Emphasis">Properties</span>.</p>
+                        <p>The Effect Properties window pane opens.</p>
+                    </li>
+                    <li>
+                        <p>Add one of the following keyframe types:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Position</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>When you create keyframes in order to move the position of a clip effect, a trajectory is automatically shown in the Frame Editor. Each movement point is indicated by a blue circle on the trajectory's dotted line. </p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>In the Effect Properties window pane, expand the <span class="Emphasis">Object Layout</span> section.</li>
+                                    <li>
+                                        <p>Manually set the starting position of the clip effect area by dragging the red effect frame to the desired location in the Frame Editor, or set it using the Position fields in the Effect Properties window pane:</p>
+                                        <ol style="list-style-type: lower-roman;">
+                                            <li>In the first <span class="Emphasis">Position</span> field, select the starting horizontal position for the effect area. Increase the number to move the effect area to the right, or decrease the number to move the effect area to the left.</li>
+                                            <li>In the second <span class="Emphasis">Position</span> field, select the starting vertical position for the effect area. increase the number to move the effect area down, or decrease the number to move the effect area up.</li>
+                                        </ol>
+                                    </li>
+                                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                                    <li>
+                                        <p>From beside the <span class="Emphasis">Position</span> fields, click <img src="../../Resources/Images/keyframe_btn.png" class="ReduceButtonSize" />.</p>
+                                        <p>In the Timeline, a position keyframe bar will nest under the effect bar. Additionally, a small blue circle will appear beside the red effect frame in the Frame Editor. As you add position keyframes, these circles will represent each new position, and a dotted path will form between them, showing you the effect area motion.</p>
+                                    </li>
+                                    <li>In the Timeline, drag the playhead to the point of time when the first position transition should begin.</li>
+                                    <li>
+                                        <p>Manually set the starting position of the effect area by dragging the red effect area frame to the desired location in the Frame Editor, or set it using the Position fields in the Effect Properties window pane:</p>
+                                        <ol style="list-style-type: lower-roman;">
+                                            <li>In the first <span class="Emphasis">Position</span> field, select the next horizontal position for the effect area. Increase the number to move the effect area to the right, or decrease the number to move the effect area to the left.</li>
+                                            <li>
+                                                <p>In the second <span class="Emphasis">Position</span> field, select the next vertical position for the  effect area. increase the number to move the  effect area down, or decrease the number to move the  effect area up.</p>
+                                                <p>Once you set one of the positions, a new keyframe will automatically appear in the position keyframe bar. You do not need to click <img src="../../Resources/Images/keyframe_btn.png" class="ReduceButtonSize" /> again.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>(Optional) Repeat step d and e to continue adding position keyframes.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Size</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>You might want an effect area to increase to create the feeling of a big reveal, or decrease to closing in on important information.</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>In the Effect Properties window pane, expand the <span class="Emphasis">Object Layout</span> section.</li>
+                                    <li>
+                                        <p>Manually set the starting size of the object by clicking and dragging the red effect area frame, or set it using the Size fields in the Object Layout section:</p>
+                                        <ol style="list-style-type: lower-roman;">
+                                            <li>In the first <span class="Emphasis">Size</span> field, increase the number to add width, or decrease the number to shrink the width to set the starting size of the effect area.</li>
+                                            <li>In the second <span class="Emphasis">Size</span> field, increase the number to add length, or decrease the number to shorten the height to set the starting size of the effect area.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>From beside the Size fields, click <img src="../../Resources/Images/keyframe_btn.png" class="ReduceButtonSize" />.</p>
+                                        <p>In the Timeline, the Size keyframe bar will nest under the effect bar.</p>
+                                    </li>
+                                    <li>In the Timeline, drag the playhead to the point of time when the first size transition should begin.</li>
+                                    <li>
+                                        <p>Manually set the next size of the effect area by clicking and dragging the red effect area frame, or set it using the Size fields in the Object Layout section:</p>
+                                        <ol style="list-style-type: lower-roman;">
+                                            <li>In the first <span class="Emphasis">Size</span> field, select the next width for the effect area.</li>
+                                            <li>
+                                                <p>In the second <span class="Emphasis">Size</span> field, select the next height for the effect area.</p>
+                                                <p>Once you resize the effect area, a new keyframe will automatically appear in the size keyframe bar. You do not need to click <img src="../../Resources/Images/keyframe_btn.png" class="ReduceButtonSize" /> again.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>(Optional) Repeat steps e-g to continue adding size keyframes.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                </ol>
+                <ol MadCap:continue="true">
+                    <li>Continue adding keyframes as needed.</li>
+                    <li>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNew/MimicV8/Keyframes1.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/MoviesAndMimic/KeyframesEffects.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tip</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/PositionKeyframeTip.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSnaptoKeyframe.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can add size and position keyframes to clip effects. Clip is the only effect that supports keyframes. Note that the opacity <span class="EmphasisItalic">keyframe</span> (which can be applied to any object) is not the same as an opacity <span class="EmphasisItalic">effect</span> (which can only be applied to image objects).</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/MoviesAndMimic/HiddenShapesOpacity.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Objects/CopyingKeyframes.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you are creating another keyframe within the same object or clip effect and keyframe type, you do not need to click the keyframe button again. Any keyframes added after the first are automatically created when the property is changed.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to change the way the keyframe transitions from one state to the next, you will need to edit each keyframe. This includes editing the trajectory (position keyframes). See <MadCap:xref href="Editing_Keyframes.htm" >Editing Keyframes</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #31b6f0;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you add an object that contains keyframes to a palette, it will retain those keyframes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you add keyframes, you can make changes to the transition effects between them. See <MadCap:xref href="Editing_Keyframes.htm">Editing Keyframes</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Keyframes" />
+        </p>
+    </body>
+</html>

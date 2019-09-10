@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo,Products.Align" MadCap:lastBlockDepth="11" MadCap:lastHeight="2923" MadCap:lastWidth="843" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoAlignment.flmsp');">
+    <head><title></title>
+        <link href="../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Align source and translated files, and correct alignment issues for reuse in translation memory." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Alignment projects:files;Files:aligning" />
+            <MadCap:concept term="FilterProjects" />
+            <MadCap:concept term="FilterAlignment" />
+            <MadCap:concept term="AlignmentProjects" />Aligning Files</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Aligning Files</h1>
+        <p>When you create an alignment project, the original and translated files are matched and aligned by name. Although it might not be a common occurrence, there are a variety of reasons that a file from the original project might not be aligned with the same file in the translated project. The important thing is that you identify any misalignment and then correct it. You can do this by using the File Map window pane in MadCap Align.</p>
+        <p>The File Map window pane groups files found in both projects by file type. For each type, you can match the files together when necessary. There are a few operations for aligning files; you can shift the selected cells up and down, or swap two selected cells. After the files are aligned, you can manually upload them to your <MadCap:keyword term="Translation memory:databases" />translation memory database.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoAlignmentGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>After creating an alignment project, let's say you open the File Map window pane and notice that all of the file rows are aligned with identical names, except for two skin files—"HTML5.flskn" and "Default.flskn." </p>
+                    <p>
+                        <img src="../Resources/Images/align_files_example1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide" />
+                    <p>To fix this you can select one of the misaligned cells (say, the "HTML5.flskn" file in the first column) and click the appropriate swap button.</p>
+                    <p>
+                        <img src="../Resources/Images/align_files_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide" />
+                    <p>The files become aligned, like this:</p>
+                    <p>
+                        <img src="../Resources/Images/align_files_example3.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>You can then upload the aligned files to the translation memory database.</p>
+                </div>
+                <p class="PageBreakBefore">You also might encounter situations where one file should actually align with two or more files.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p> Let's say that during the original translation, the topic "Topic.htm" was translated into Spanish and the resulting topic file name was also "Topic.htm." Later, however, an author split the topic in the original version into two separate files—Topic.htm and Topic2.htm. In the File Map window pane of an alignment project, the results might look like this (notice that about half of the segments are in the source Topic.htm file and the other half are in the source Topic2.htm file):</p>
+                    <p>
+                        <img src="../Resources/Images/align_files_example4.png" class="MaxWidth100Percent" />
+                    </p>
+                    <p> You can align and upload the files in order to store all of the translated data in translation memory. To do this, you would begin by aligning the first topic with the translated file. In the image above, this is already done (Topic.htm is aligned with Topic.htm on the right). Then you would double-click the row with the aligned files (Topic.htm and Topic2.htm). In the Alignment Tool, you would make sure the aligned segments are translated properly and use one of the buttons in the local toolbar to upload the file or selected segments to translation memory.</p>
+                    <p>After this, you would close the Alignment Tool. Then, in the File Map window pane, you would align the Topic2.htm source file with the Topic.htm target file. For example, with the Topic.htm source cell selected, you can click <img src="../Resources/Images/swap_cell_with_below_btn.png" class="ReduceButtonSize" />. This will swap that cell with the Topic2.htm cell, like this:</p>
+                    <p>
+                        <img src="../Resources/Images/align_files_example5.png" class="MaxWidth100Percent" />
+                    </p>
+                    <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide" />
+                    <p>Once this is done, you would double-click the row with the aligned files (i.e., Topic2.htm and Topic.htm). In the Alignment Tool, you would make sure the aligned segments are translated properly and use one of the buttons in the local toolbar to upload the file or selected segments to translation memory.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoAlignmentGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Alignment projects:files" />how to align files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li MadCap:conditions="Products.Lingo">Select <span class="Emphasis">Tools&gt;MadCap Align</span>.</li>
+                    <li>
+                        <p>In MadCap Align, open the aligned project. Unless you specify otherwise, these types of projects are stored in the Documents\My Aligned Projects folder on your computer. (Lingo creates the My Aligned Projects folder when you install the program).</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteVistaMyDocuments.flsnp" />
+                    </li>
+                    <li>The File Map window pane should already be open. If it is not, do one of the following, depending on the part of the interface you are using.<ul style="list-style-type: square;"><li><p><span class="SetOffFirstLevel">Ribbon</span>  Select <span class="Emphasis">Home&gt;File Map</span>.          </p></li><li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+R</span>.</li></ul></li>
+                    <li>(Optional) In the File Map window pane, you can use the <span class="Emphasis">Filter</span> field in the local toolbar to choose the types of files to see in the window pane.</li>
+                    <li>
+                        <p>Select the appropriate cell(s) on either the source language side or the target language side. You can hold down your <span class="Emphasis">SHIFT</span> or <span class="Emphasis">CTRL</span> key to click and select multiple cells.</p>
+                    </li>
+                    <li>
+                        <p>In the local toolbar, click one of the buttons to perform an alignment action (so that the source files on the left are aligned with the proper target files on the right).</p>
+                        <table style="mc-table-style: url('../Resources/TableStyles/Simple.css');width: 100%;" cellspacing="0" class="TableStyle-Simple">
+                            <col style="width: 35px;" class="TableStyle-Simple-Column-Column1" />
+                            <col class="TableStyle-Simple-Column-Column1" />
+                            <tbody>
+                                <tr class="TableStyle-Simple-Body-Row1">
+                                    <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                        <p class="TableText">
+                                            <img src="../Resources/Images/swap_two_selected_cells.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                        <p class="TableText">If you have selected two cells (one above and one below) and click this button, the positions of those two cells will be swapped.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Simple-Body-Row1">
+                                    <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                        <p class="TableText">
+                                            <img src="../Resources/Images/swap_cell_with_below_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                        <p class="TableText">Click this button if you want to swap the selected cell(s) with those below it.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Simple-Body-Row1">
+                                    <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                        <p class="TableText">
+                                            <img src="../Resources/Images/swap_cell_with_above_btn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                        <p class="TableText">Click this button if you want to swap the selected cell(s) with those above it.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only swap a cell with the cell above or below it if the files have the same extension. If you cannot swap a cell, one or more alignment buttons will be grayed out.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you align files, you may need to double-click a particular file and align segments within it. See <MadCap:xref href="Aligning_Segments.htm">Aligning Segments</MadCap:xref>. </p>
+                <p>You will also want to upload the aligned files to your translation memory database. To do this, you can double-click any of the aligned files in the File Map window pane. Then, in the Alignment Tool, you can select specific segments and click <img src="../Resources/Images/upload_selected_btn.png" class="ReduceButtonSize" /> in the local toolbar, or you can click <img src="../Resources/Images/upload_file_btn.png" class="ReduceButtonSize" /> to upload all of the segments in the file.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AlignmentProjects" />
+        </p>
+    </body>
+</html>

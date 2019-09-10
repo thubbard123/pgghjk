@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="1449" MadCap:lastWidth="1081">
+    <body>
+        <p>Most of the editing for a responsive layout can be done in the XML Editor and in the Responsive Layout window pane. When you make changes in the Responsive Layout window pane, they affect the appropriate styles automatically in your stylesheet. However, the number of settings you can select in the Responsive Layout window pane is limited (e.g., width, left margin, gutter). Therefore, if you want to make additional style changes to your layout, you need to open and edit your stylesheet.</p>
+        <ol type="1" class="Decimal">
+            <li>
+                <MadCap:snippetText src="../Styles/EditStyleStep1.flsnp" /> Alternatively, you can click <span class="Emphasis">Edit</span> in the Responsive Layout window pane; this opens the stylesheet, selecting the style related to the cell currently selected in the XML Editor.</li>
+            <li>Open the Advanced view of the Stylesheet Editor. <MadCap:snippetText src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li>
+            <li>
+                <MadCap:snippetText src="../Styles/FilterAllStylesStep.flsnp" />
+            </li>
+            <li>On the left side of the editor, select the style that you want to edit, depending on whether you want to make changes for the entire row or for a particular cell:<ul type="1"><li><p><span class="SetOffFirstLevel">Entire Responsive Layout Row </span>You can expand the <span class="Emphasis">div</span> style and choose the class you created for the layout.</p><p><img src="../../Images/responsive_layout_edit_styles1.png" alt="" title="" class="MaxWidth100Percent" /></p><p>Alternatively, you can expand <span class="Emphasis">(Complex Selectors)</span> at the top of the styles list, and choose the first selector with the name of your class.</p><p><img src="../../Images/responsive_layout_edit_styles2.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p><span class="SetOffFirstLevel">Specific Responsive Layout Cell </span>Expand <span class="Emphasis">(Complex Selectors)</span>. Then choose the selector with the class you created, with a number at the end. The number indicates which cell in the layout will be changed (e.g., 1=first cell, 2=second cell).</p><p><img src="../../Images/responsive_layout_edit_styles3.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ul></li>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide" />
+            <li>(Optional) From the <span class="Emphasis">Show</span> drop-down list  on the upper-right side of the editor, select any of the options shown to determine which properties are displayed below. This is simply a way to find the appropriate property as quickly as possible.<ul type="1" class="FirstLevel"><li><MadCap:keyword term="Properties:set locally" /><span class="SetOffFirstLevel">Set (Locally) Properties </span>Displays properties that have been set explicitly in the stylesheet.</li><li><MadCap:keyword term="Set properties;Properties:set" /><span class="SetOffFirstLevel">Set Properties </span>Displays properties that have been set explicitly in the stylesheet. It will also show properties that have been set in an imported stylesheet or inherited properties that have been set in a factory stylesheet.</li><li><MadCap:keyword term="Assorted relevant properties;Properties:assorted relevant" /><span class="SetOffFirstLevel">Assorted Relevant Properties </span>Displays the property groups that are used most often for the selected style type.</li><li><MadCap:keyword term="Properties:groups" /><span class="SetOffFirstLevel">All Properties</span> Displays all the different groups holding the properties for the selected style. This is simply a way to organize the properties intro groups so that they are easy for you to find. If you want to see the values for a given property group, expand it.</li></ul></li>
+            <li>
+                <MadCap:snippetText src="../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+            </li>
+            <li>
+                <p>If you are using the group view, locate the specific property that you want to change in the appropriate medium/media query.</p>
+                <p>Making your changes in the correct medium is important. If you want to make changes that affect large screens, edit the <span class="Emphasis">default</span> medium. If you want to make changes to medium-sized screens, edit the <span class="Emphasis">tablet</span> media query. And if you want to make changes to small screens, edit the <span class="Emphasis">mobile</span> media query. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Mediums/Selecting_Mediums_and_Media_Queries.htm">Selecting Mediums and Media Queries</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <MadCap:snippetText src="../Styles/PropertyNameLeftValueRight.flsnp" />
+                </p>
+                <p MadCap:conditions="General.OnlineLive">For more information about stylesheets and the many types of changes you can make to styles, see <MadCap:xref href="../../../Styles/About_Regular_Stylesheets.htm">About Regular Stylesheets</MadCap:xref> and <MadCap:xref href="../../../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref>.</p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../Styles/ClickInValueColumn.flsnp" />
+                <p>
+                    <MadCap:snippetText src="../Styles/AsYouMakeChangesPreview.flsnp" />
+                </p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

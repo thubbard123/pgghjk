@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="14" MadCap:lastHeight="6638" MadCap:lastWidth="1204">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/AllPrint.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Indexes/LookOfPrintIndexSummary.flsnp" />
+        </p>
+        <p>A style called "MadCap|IndexProxy" is used to control the look of the entire container. Other styles—such as p.IndexHeading, p.Index1, p.Index2, and p.Index3—are used to control the look of individual entries in the index. Style properties—such as margin-left, font-size, and mc-reference-initial-separator—are used to affect the look in different ways.</p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>
+                        <img src="../../../Images/index_print_determine_look.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+        <p>Settings for the individual entries (e.g., p.IndexHeading, p.Index1) override those from MadCap|IndexProxy.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">examples</p>
+                    <p>Let's say you set a blue font on MadCap|IndexProxy. Because this style controls the entire container, and everything within it, the index headings and all of the keywords and page numbers are blue. The top border of the container is black, 1 px.</p>
+                    <p>
+                        <img src="../../../Images/index_print_determine_look1.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+                    <p>However, if you set a red font on p.Index2, second-level index entries will have a red font while everything else remains blue.</p>
+                    <p>
+                        <img src="../../../Images/index_print_determine_look2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a print index (entire container)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                            </MadCap:snippetText>
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Some of the necessary style properties can also be changed in the Simplified view in the Stylesheet Editor.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <p>On the left side of the editor, scroll down and select the <span class="Emphasis">MadCap|IndexProxy</span> style or a class that you have created under it (e.g., MadCap|IndexProxy.myclass). </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Notes/NoteAssortedRelevantProperties.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand a property group (e.g., Font, Block, Box) to see the actual properties within it. </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" />
+                        <p>For example, if you want to change the width of the entire index, you would first expand the <span class="Emphasis">Box</span> property group. Then you would click <img src="../../../Images/browse_ellipses.png" /> to the right of the <span class="Emphasis">width</span> property and set the value in the popup.</p>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+                        <p class="Subheading">about column count </p>
+                        <p>By default, there are usually two columns used in a generated index. However, you can change this:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">PDF, XPS, XHTML </span>For <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, and <MadCap:variable name="Outputs.XHTML" /> outputs, the column count is set in a page layout. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Page_Layouts/Frames/Creating_Columns.htm">Creating Columns</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li><span class="SetOffFirstLevel">FrameMaker, Word </span>For <MadCap:variable name="Outputs.Frame" /> and <MadCap:variable name="Outputs.Word" /> outputs, the default setting for the index column count is modified in the stylesheet. With the <span class="Emphasis">MadCap|IndexProxy</span> style selected, open the <span class="Emphasis">Unclassified</span> property group and change the <span class="Emphasis">mc-column-count</span> property. However, you can also override this default setting by right-clicking the actual Index proxy wherever you have inserted it, selecting <span class="Emphasis">Edit Index Proxy</span>, and editing the <span class="Emphasis">Column Count</span> field. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareIndexingGuide">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>.</MadCap:conditionalText></li>
+                        </ul>
+                        <MadCap:snippetBlock src="../../Notes/NoteForMoreInfoComponentsPropsStylesheetEditor.flsnp" MadCap:conditions="General.OnlineLive" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to determine the look of a print index (individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Styles/StylesCompleteFollowingAdvancedSimplified.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Styles/StylesAdvancedSimplifiedViews.flsnp" />
+                    </li>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ol class="LowerAlpha">
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/FilterGeneratedContentStylesStep.flsnp" />
+                                </li>
+                                <li>
+                                    <p>From the grid in the bottom portion of the editor, find and select the index class that you want to customize (e.g., <span class="Emphasis">p.IndexHeading</span>, <span class="Emphasis">p.Index1</span>, <span class="Emphasis">p.Index2</span>, <span class="Emphasis">p.Index3</span>).</p>
+                                    <p>The class p.Index1 is used for the first-level keyword in the print index, p.Index2 is used for the second-level keyword, and so on. The p.IndexHeading class is used for customizing the letter heading (e.g., A, B, C, D) displayed at the beginning of each section in the index.</p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look different, you can modify the MadCap|xref.IndexPageNumber style.</p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                </li>
+                                <li>Use the tabs and fields in the Properties dialog to change values for any of the style's properties. <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>, as well as <MadCap:xref href="../../../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</p></li>
+                                <li>
+                                    <MadCap:snippetText src="../../StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                                </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:dropDown class="SecondLevel">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody class="Final">
+                            <ol class="LowerAlpha">
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/FilterGeneratedContentStylesStep.flsnp" />
+                                </li>
+                                <li>On the left side of the editor, expand the <span class="Emphasis">p</span> style. Classes of the style are shown below it.</li>
+                                <li>
+                                    <p>Find and select the p.Index class that you want to customize (e.g., <span class="Emphasis">p.Index1</span>, <span class="Emphasis">p.Index2</span>, <span class="Emphasis">p.Index3</span>). </p>
+                                    <p>The class p.Index1 is used for the first-level keyword in the print index, p.Index2 is used for the second-level keyword, and so on. The p.IndexHeading class is used for customizing the letter heading (e.g., A, B, C, D) displayed at the beginning of each section in the index.</p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look different, you can modify the MadCap|xref.IndexPageNumber style.</p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>
+                                    <p>
+                                        <MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" />
+                                    </p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <MadCap:snippetBlock src="../../Notes/NoteAssortedRelevantProperties.flsnp" />
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>
+                                    <MadCap:snippetText src="../../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                </li>
+                                <li>
+                                    <p>If you are using the group view, expand a property group (e.g., Font, Block, Box, Unclassified) to see the actual properties within it. </p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Do not use the "PrintSupport" property group for the Index1 through Index9 style classes.</p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>
+                                    <p>Locate the specific property that you want to change. <MadCap:snippetText src="../../Styles/PropertyNameLeftValueRight.flsnp" /> Depending on the type of property, you can either type the value, select it from a drop-down list, or complete the values in a popup box.</p>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody>
+                                            <div class="example">
+                                                <p class="exampleHeadTextEmpty">example</p>
+                                                <p>If you want to change the font size to 10 pt, you would expand <span class="Emphasis">Font</span>. Then you would click in the right column next to <span class="Emphasis">font-size</span>, set the font size in the small popup, and click <span class="Emphasis">OK</span>.</p>
+                                            </div>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                    <MadCap:dropDown class="ThirdLevel">
+                                        <MadCap:dropDownHead>
+                                            <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                        </MadCap:dropDownHead>
+                                        <MadCap:dropDownBody class="Final">
+                                            <p class="note" MadCap:conditions="FlareGuides.FlareStylesGuide,General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information about the style tasks that you can perform, see <MadCap:xref href="../../../../Styles/Editing_Styles.htm">Editing Styles</MadCap:xref>.</p>
+                                        </MadCap:dropDownBody>
+                                    </MadCap:dropDown>
+                                </li>
+                                <li>(Optional) If you want to change the actual characters (e.g., A, B, C, D) that are used for the headings, do the following:<ol style="list-style-type: lower-alpha;"><li>Under the <span class="Emphasis">p</span> tag on the left side of the editor, make sure <span class="Emphasis">IndexHeading</span> is selected.</li><li><MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../Styles/ExpandUnclassifiedGroupStep.flsnp" /></li><li><p>Click in the cell to the right of <span class="Emphasis">mc-heading-format</span> and type the new format. Make sure you place the character within { and } brackets.</p><MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p>The default format is {A}. This means that the headings will simply look like this: A, B, C, D, and so on. If you change it to {a}, the headings will be lowercase: a, b, c, d, and so on. If you change it to -{A}-, the headings will look like this: -A-, -B-, -C-, -D-, and so on.</p></div></MadCap:dropDownBody></MadCap:dropDown></li></ol></li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to determine the look of a print index (individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/FilterGeneratedContentStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, expand the <span class="Emphasis">p</span> style. Classes of the style are shown below it.</li>
+                    <li>
+                        <p>Find and select the p.Index class that you want to customize (e.g., <span class="Emphasis">p.Index1</span>, <span class="Emphasis">p.Index2</span>, <span class="Emphasis">p.Index3</span>). </p>
+                        <p>The class p.Index1 is used for the first-level keyword in the print index, p.Index2 is used for the second-level keyword, and so on. The p.IndexHeading class is used for customizing the letter heading (e.g., A, B, C, D) displayed at the beginning of each section in the index.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.IndexPageNumber style.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Notes/NoteAssortedRelevantProperties.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlareStylesGuide" />
+                    <li>
+                        <p>Expand a property group (e.g., Font, Block, Box, Unclassified) to see the actual properties within it. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Do not use the "PrintSupport" property for the Index1 through Index9 style classes.</p>
+                    </li>
+                    <li>
+                        <p>Locate the specific property that you want to change. <MadCap:snippetText src="../../Styles/PropertyNameLeftValueRight.flsnp" /> Depending on the type of property, you can either type the value, select it from a drop-down list, or complete the values in a popup box.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>If you want to change the font to 10 pt, expand <span class="Emphasis">Font</span>. Click in the right column next to <span class="Emphasis">font-size</span>, set the font size in the small drop-down window, and click <span class="Emphasis">OK</span>.</p>
+                        </div>
+                    </li>
+                    <li>(Optional) If you want to change the actual characters (e.g., A, B, C, D) that are used for the headings, do the following:<ol style="list-style-type: lower-alpha;"><li>Under the <span class="Emphasis">p</span> tag on the left side of the editor, make sure <span class="Emphasis">IndexHeading</span> is selected.</li><li><MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../Styles/ExpandUnclassifiedGroupStep.flsnp" /></li><li><p>Click in the cell to the right of <span class="Emphasis">mc-heading-format</span> and type the new format. Make sure you place the character within { and } brackets.</p><MadCap:dropDown><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="example"><p class="exampleHeadTextEmpty">example</p><p>The default format is {A}. This means the headings will simply look like this: A, B, C, D. If you change it to {a}, the headings will be lowercase: a, b, c, d. If you change it to -{A}-, the headings will look like this: -A-, -B-, -C-, -D-.</p></div></MadCap:dropDownBody></MadCap:dropDown></li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By default, if your index contains entries with multiple pages in a row, this will be displayed as a range with the pages separated by a dash. For example, instead of showing 10, 11, 12, 13, the index entry will display 10-13.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><span class="Emphasis"><MadCap:keyword term="Print-based output:indexes;Indexes:page numbers;Page numbers:indexes" /></span>By default index page numbers are left-aligned next to the index keywords. If instead you want page numbers to be right-aligned on the other side of the column—you can edit the mc-leader-offset value (found in the Unclassified property group)&#160;for the  index entry style (e.g., set it at 25 px).</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareIndexingGuide" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For <MadCap:variable name="Outputs.PDF" />, <MadCap:variable name="Outputs.XPS" />, and <MadCap:variable name="Outputs.XHTML" /> output, you can insert Heading variables into page layouts. These variables let you automatically display index headings or terms at the top of pages. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Heading_Variables_Into_Frames.htm" >Inserting Heading Variables Into Frames</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" /></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to change the look of indexes in online output, you can do so by modifying styles within your skin.<MadCap:conditionalText MadCap:conditions="FlareGuides.FlareStylesGuide,General.OnlineLive"> See <MadCap:xref href="../../../../Skins/Standard_Skin_Styles/Standard_Skin_Styles.htm" >Standard Skin Styles</MadCap:xref>, <MadCap:xref href="../../../../Skins/HTML5_Skin_Styles/HTML5_Skin_Styles.htm" >HTML5 Skin Styles</MadCap:xref>, and <MadCap:xref href="../../../../Skins/WebHelp_Mobile_Skin_Styles/WebHelp_Mobile_Skin_Styles.htm" >WebHelp Mobile Skins</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareIndexingGuide"> For more information, see the online Help or the <span class="EmphasisItalic">Flare Skins Guide</span>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can change the heading text for an auto-generated index in the language skin. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Proxies/Changing_the_Heading_Text_for_Auto_Generated_Proxies.htm" >Changing the Heading Text for Auto-generated Proxies</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>In addition to determining the look of your print index, you can customize the levels and look for your print TOC. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Look_of_a_Print_TOC.htm">Using Styles to Determine the Look of a Print TOC</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.</p>
+                <p>Then you can move on to the remaining tasks for creating printed output. See <MadCap:xref href="../../../../Output/Printed_Output/Creating_Printed_Output.htm" target="" title="" alt="">Creating Print-based Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputIndexes" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

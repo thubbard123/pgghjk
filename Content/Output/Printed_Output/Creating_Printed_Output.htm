@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="dialog...;Help.);target...;Default.&quot;" MadCap:lastBlockDepth="10" MadCap:lastHeight="3248" MadCap:lastWidth="750" MadCap:conditionTagExpression="include[Snippets.Snippet1 or Snippets.Snippet3] exclude[Snippets.Snippet2] " MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Learn all the different things you can do when creating printed output types with MadCap Flare." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterWord" />
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:keyword term="Print-based output:creating" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:concept term="DevelopOutputs;PrintedOutput;PrintedOutputShort" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterPDF" />Creating Print-based Output</h1>
+        <h1 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:keyword term="Print-based output:creating" />Introduction</h1>
+        <p>You can create print-based output in <MadCap:variable name="Other.Product" /> by generating a target based on one of the following formats: <MadCap:snippetText src="../../Resources/Snippets/Output/AllPrintOutputTypes.flsnp" />. PDF and Word are the recommended formats.</p>
+        <p>You can also follow many of the same steps to create EPUB output that you use to create print-based output types. EPUB is sort of a hybrid format. The output is designed to be viewed electronically; in that way, it is like an online format. On the other hand, its structure is like a book or manual; in that way, it is like a print-based format.</p>
+        <p>Following are the general steps (some required, most optional) for producing a printed version of your project. </p>
+        <p MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">The purpose of this guide is not to cover every single aspect of Flare, but rather to focus on the primary features and procedures revolving around the development of print-based output. For information not covered in this guide, please refer to the online Help or one of the other PDF guides (see <MadCap:xref href="../../PDF_Guides/PDF_Guides.htm" target="" title="" alt="">PDFs</MadCap:xref>).</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="General.Print">Step 1: Create and Edit Content</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 1 — create and edit content</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Creating and editing content for print-based output typically consists of the following tasks.</p>
+                <ol>
+                    <li>
+                        <MadCap:keyword term="Topics:creating" /><span class="SetOffFirstLevel">Create Regular Topics</span> Create topics as you normally would. Some of the content in your topics might be used for both print-based and online output, some might be used only for print output, and some might be used only for online output. In a later step in this process, you'll use condition tags to separate which content is used for which type of output. In this step, create your normal topics and enter content in them, regardless of whether they are to be used for print, online, or both. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../Topics/About_Topics.htm">About Topics</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../Topics/Creating_New_Topics.htm" MadCap:conditions="General.OnlineLive">Creating Topics</MadCap:xref>.</MadCap:conditionalText><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot>Special Topics</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><p><snippetText src="../../Resources/Snippets/Topics/SeparateTopicsForPrintElements.flsnp" /></p><ul class="FirstLevel"><li><MadCap:keyword term="Tables of contents:printed output;Print-based output:tables of contents" /><span class="SetOffFirstLevel">(Optional) Topic for a Print TOC </span>If you want your print-based output to include a table of contents (TOC), create a <MadCap:keyword term="Tables of contents:proxies;Proxies:tables of contents;Print-based output:tables of contents;Print-based output:proxies" />topic specifically for this purpose and insert a TOC proxy into it. Please note that you do not create the TOC itself in your project. Instead, the TOC is automatically generated in the output based on the heading styles that you apply to the content in your topics, or it can be based on the structure or your outline. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm">Creating a TOC Manually for Print</MadCap:xref>.</MadCap:conditionalText><![CDATA[  ]]></li><li><MadCap:keyword term="Indexes:printed output;Print-based output:indexes" /><span class="SetOffFirstLevel">(Optional) Topic for a Print Index </span>If you want your print-based output to include the index from your Flare project, create a <MadCap:keyword term="Indexes:proxies;Proxies:indexes;Print-based output:indexes;Print-based output:proxies" />topic specifically for this purpose and insert an Index proxy into it. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating an Index Manually for Print</MadCap:xref>.</MadCap:conditionalText></li><li><MadCap:keyword term="Glossaries:printed output;Print-based output:glossaries" /><span class="SetOffFirstLevel">(Optional) Topic for a Print Glossary </span>f you want your print-based output to include the glossary from your Flare project, create a <MadCap:keyword term="Glossaries:proxies;Proxies:glossaries;Print-based output:glossaries;Print-based output:proxies" />topic specifically for this purpose and insert a Glossary proxy into it.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="More_About_Printed_Output/Creating_a_Glossary_Manually_for_Print.htm">Creating a Glossary Manually for Print</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Endnotes:proxies;Proxies:endnotes;Print-based output:endnotes;Print-based output:proxies;Footnotes:proxies" />(Optional) Topic for Collection of Endnotes </span>If you have inserted footnotes throughout your project and want the print-based output to display all of them in one location (as opposed to, say, the bottom of each page), create a topic specifically for this purpose and insert an Endnotes proxy into it.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../Proxies/Using_the_Endnotes_Proxy.htm">Creating an Endnotes Proxy</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Lists:proxies;Proxies:lists;Print-based output:lists of elements;Print-based output:proxies;Tables:list of;Images:list of" />(Optional) Topic for a List of Elements </span>If you want your print-based output to include a list of certain elements that you have inserted in the project (e.g., images, tables), create a topic specifically for this purpose and insert a List-Of proxy into it.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../Proxies/Creating_a_List_of_Elements.htm">Creating a List of Elements</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Lists:proxies;Proxies:lists;Print-based output:lists of concepts;Print-based output:proxies;Concepts:list of" />(Optional) Topic for a List of Concepts </span>If you want your print-based output to include a list of the concepts that you have inserted in the project, create a topic specifically for this purpose and insert a Concepts proxy into it.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="../../Proxies/Creating_a_List_of_Concepts.htm">Creating a List of Concepts</MadCap:xref>.</MadCap:conditionalText></li></ul><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:snippetText src="../../Resources/Snippets/Proxies/AutoGenerateProxiesSummary.flsnp" /><MadCap:snippetText src="../../Resources/Snippets/Proxies/AutoGenerateVersusManualProxies.flsnp" /><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Proxies/Auto_Generating_Proxies.htm" >Auto-generating Glossaries, Indexes, and TOCs for Print Outputs</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide"> See <MadCap:xref href="More_About_Printed_Output/Auto_Generating_TOCs_for_Print.htm" >Auto-generating TOCs for Print</MadCap:xref>, <MadCap:xref href="More_About_Printed_Output/Auto_Generating_Glossaries_for_Print.htm" >Auto-generating Glossaries for Print</MadCap:xref>, and <MadCap:xref href="More_About_Printed_Output/Auto_Generating_Indexes_for_Print.htm" >Auto-generating Indexes for Print</MadCap:xref>.</MadCap:conditionalText></p></MadCap:dropDownBody></MadCap:dropDown></li>
+                    <li><span class="SetOffFirstLevel">Add Optional Elements</span> In addition to topics (which are required), there are many optional elements that you can add to your project to suit your needs, such as condition tags, images, tables, snippets, variables, index markers, cross-references, text boxes, and footnotes. For a thorough list, see <MadCap:xref href="../../Introduction_Topics/Flare/Steps/Add_Elements.htm">Adding Elements and Objects</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Make It Look Good </span>
+                        <snippetText src="../../Resources/Snippets/StepsGeneral/MakeLookGoodSummary.flsnp" MadCap:conditions="General.OnlineLive" /> Styles are always preferred over local formatting. It is recommended that you use the print medium when setting style properties that are intended specifically for print-based output (see <MadCap:xref href="../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Mediums and Media Queries</MadCap:xref>). For a thorough list of formatting tasks and features, see <MadCap:xref href="../../Introduction_Topics/Flare/Steps/Look_Good.htm">Making It Look Good</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Page layouts" />Create Page Layouts (or <MadCap:keyword term="Master pages" />Master Pages) </span>
+                        <snippetText src="../../Resources/Snippets/PageLayouts/PageLayoutsMasterPagesSummary.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="General.Print"> See <MadCap:xref href="More_About_Printed_Output/Creating_Page_Layouts_or_Master_Pages.htm">Creating Page Layouts or Master Pages?</MadCap:xref>.</MadCap:conditionalText>
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref> and <MadCap:xref href="../../Master_Pages/About_Master_Pages.htm">About Master Pages</MadCap:xref>.</MadCap:conditionalText>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:keyword term="Topics:printed output;Print-based output:tables of contents" /><span class="SetOffFirstLevel">Include Print Topics in "Outline Table of Contents"</span> You need to make sure that all of the topics for your print-based output are added to an "outline table of contents" (TOC). The outline TOC is used to determine which topics from the project are to be included in a particular manual (i.e., target), as well as their sequence in the output. See <MadCap:xref href="../../TOCs/About_Tables_of_Contents.htm">About Tables of Contents</MadCap:xref> and <MadCap:xref href="More_About_Printed_Output/Adding_Print_Topics_to_an_Outline_TOC.htm">Adding Print Topics to an Outline TOC</MadCap:xref>. </p>
+                        <p>In addition, an outline TOC is also used for specifying chapter breaks and autonumbering flow in output. See <MadCap:xref href="More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter and Page Layout Breaks</MadCap:xref> and <MadCap:xref href="../../Autonumbers/Specifying_Auto_Numbering_Flow_for_Output.htm">Specifying Autonumbering Flow for Output</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Step 2: Develop Print-based Targets</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 2 — develop Print-based Targets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before generating your output, you need to develop a target:</p>
+                <ol>
+                    <li>Create a target based on the kind of format you want to generate (e.g., PDF, Word). See <MadCap:conditionalText MadCap:conditions="General.OnlineLive"><MadCap:xref href="../../Targets/About_Targets.htm">About Targets</MadCap:xref> and </MadCap:conditionalText><MadCap:xref href="../../Targets/Adding_Targets.htm">Adding Targets</MadCap:xref>.</li>
+                    <li>
+                        <p>Open the target and edit the settings, including any condition tags you want to include or exclude from the output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Condition_Tags/Associating_Condition_Tags_with_Targets.htm">Associating Conditions with Targets</MadCap:xref>)</MadCap:conditionalText>. The target settings provide Flare with the information it needs to produce the kind of output you want. See  <MadCap:xref href="../../Targets/Editing_Target_Settings.htm">Editing Target Settings</MadCap:xref>.</p>
+                        <p>For PDF targets, there are special options that you can choose in addition to the general settings (see <MadCap:xref href="../../Targets/More_About_Targets/Specifying_PDF_Options.htm">Specifying PDF Options</MadCap:xref>). The same is true of EPUB targets (see <MadCap:xref href="../../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>).</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Step 3: Build and Distribute Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>step 3 — build and Distribute output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Now you need to generate the appropriate print target and distribute it to your end users. See <MadCap:xref href="../About_Building_Output.htm">Building and Distributing Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutput" />
+        </p>
+    </body>
+</html>

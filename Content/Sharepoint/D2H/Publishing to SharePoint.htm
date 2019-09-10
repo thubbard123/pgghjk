@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="2230" MadCap:lastWidth="713" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft SharePoint" />Publishing to SharePoint</h1>
+        <p>After generating Doc-To-Help NetHelp output, you can publish it to SharePoint.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>SharePoint Publish Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Doc-To-Help provides two ways you can publish your Doc-To-Help output to SharePoint. </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Option 1 </span>One option is to publish your NetHelp to SharePoint, where anyone with permissions can access it. There is no need for a special setup to post your output to the web. You can link directly to the target in SharePoint, as well as display the target in a SharePoint web part. All the NetHelp output files are published to SharePoint and accessible from index.html (the default name for the NetHelp home page).</li>
+                    <li><span class="SetOffFirstLevel">Option 2 </span>The other option is to publish your NetHelp output to a SharePoint wiki, where anyone with permissions can access and edit it. Publishing to a SharePoint wiki is another way to collaborate with your team—even your entire user community—if you wish. So this alternative is both a publishing and collaboration option.</li>
+                </ul>
+                <p>Both options are quick and easy using the Publish to SharePoint Wizard.</p>
+                <p>The two options available from the Wizard are:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Upload to a SharePoint Document Library </span>All NetHelp output files will be uploaded to a SharePoint Document Library. The files will not be altered when uploaded, but once on SharePoint, they should not be edited. If changes need to be made to the content, make them in the Doc-To-Help project, build NetHelp, and upload to SharePoint. As with any NetHelp project, the default home page for the project is index.html.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Upload to a SharePoint Wiki Page Library </span>The NetHelp output will be converted to wiki format and uploaded to a SharePoint Wiki Page Library. Some formatting and functions (such as popups) will be lost because wikis do not support them. Once the NetHelp is uploaded to a Wiki Page Library, those with proper permissions may edit the content. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Doc-To-Help also includes the option to share your Doc-To-Help source documents and graphics to a SharePoint Document Library or Translation Management Library. These options are useful for content collaboration, source control, versioning, and more. See <MadCap:xref href="Merging Word Documents.htm" >Merging Word Documents</MadCap:xref>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Publishing to a SharePoint Document Library is compatible with Microsoft® SharePoint® 2007 and above, as well as Office 365 (SharePoint Online); publishing to a SharePoint Wiki Library is compatible with SharePoint 2010 and above, as well as Office 365.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Before You Publish</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before publishing NetHelp to a SharePoint Library, check the following SharePoint Library settings: </p>
+                <ul>
+                    <li>
+                        <p><span class="Emphasis">Web Application General Settings</span> should be set to <span class="Emphasis">Permissive</span> (the default is Strict)</p>
+                    </li>
+                    <li>
+                        <p>In <span class="Emphasis">Versioning Settings</span>, <span class="Emphasis">Require Check Out</span> should be set to <span class="Emphasis">No</span>. </p>
+                    </li>
+                </ul>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you change your SharePoint password after publishing outputs, you may receive an error message the next time you attempt to publish. You can fix this by clearing your Windows credentials.</p>
+                    <ol>
+                        <li>In Windows, open the <span class="Emphasis">Control Panel&gt;User Accounts and Family Safety&gt;Credential Manager</span>. (This is the path for Windows 7.)</li>
+                        <li>Find the SharePoint Server credentials and remove them. </li>
+                        <li>Restart Doc-To-Help.</li>
+                    </ol>
+                    <p>You will be prompted to enter your new password the next time you try to connect to SharePoint</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Publish Documents to a SharePoint Document Library or Wiki Page Library</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>In Doc-To-Help project, choose the <span class="Emphasis">Home</span> ribbon, click the <span class="Emphasis">Select Target</span> button, and choose a target.</li>
+                    <li>Click the <span class="Emphasis">Build</span> button.</li>
+                    <li>Click the <span class="Emphasis">Publish to SharePoint</span> button. The Publish to SharePoint Wizard opens.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>Choose either <span class="Emphasis">Upload to a SharePoint Document Library</span> or <span class="Emphasis">Upload to a SharePoint Wiki Library</span>.</li>
+                    <li>Choose the SharePoint Library to which you want to upload.</li>
+                    <li>In the <span class="Emphasis">Upload Files to</span> field, enter the SharePoint site URL. You can choose a specific folder, or create a new folder for the documents by clicking the ellipsis button and using the Select Server Folder dialog. </li>
+                    <li>If the folder chosen is not empty (uploading to a new Wiki Page Library will always display this message because they contain default wiki intro information), the Wizard will warn you. Click <span class="Emphasis">Yes</span> to continue.</li>
+                    <li>Confirm your choices and click <span class="Emphasis">Next</span>. The documents will be uploaded. </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Finish</span> to close the Wizard. After the Wizard has done its work, it will display a View button. </p>
+                    </li>
+                </ol>
+                <p>If you uploaded to a Document Library, your NetHelp will display in a browser. The NetHelp output files are stored in SharePoint, and can be viewed by opening the Document Library.</p>
+                <p>If you uploaded to a Wiki Page Library, SharePoint will open and the NetHelp table of contents&#160;(TOC) will be displayed. Click on the TOC links to navigate the project.</p>
+                <p>When you click the <span class="Emphasis">View</span> button from the Wizard, the NetHelp output uploaded to a SharePoint Document Library will open in the browser.</p>
+                <p>However, the output files/folders are in SharePoint. The index.html file (the default home page for NetHelp projects) opens the output in the browser. If you want to store your output in SharePoint and provide access to it, point users to this file.</p>
+                <p>For more information on working in a SharePoint Wiki Library, see <MadCap:xref href="Editing a SharePoint Wiki.htm">Editing a SharePoint Wiki</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+    </body>
+</html>

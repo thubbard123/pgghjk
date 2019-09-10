@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1202" MadCap:lastWidth="712" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Configure a MadCap&#160;Flare target to ignore certain glossary terms in a topic, so the program will not automatically convert those entries into term links." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterGlossaries" />
+            <MadCap:keyword term="Glossaries:converting terms;Converting:glossary terms to links;Styles:glossaries" />Ignoring Glossary Terms in Styles</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Glossaries/IgnoringGlossaryTermsInStylesSummary.flsnp" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For information about configuring a target to create glossary term links automatically, see <MadCap:xref href="../Associating_Glossaries_with_Targets.htm">Associating Glossaries with Targets</MadCap:xref>.</MadCap:conditionalText>
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set a style to ignore conversion of glossary terms to links</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Styles</span> section on the left side of the editor, find and select the appropriate style class.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you want terms to be converted to glossary links automatically, unless those terms are found in a paragraph with the p.Tip style. In this case, you would select the p.Tip style class so that you can apply this feature to it.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Styles/ExpandUnclassifiedGroupStep.flsnp" /> <MadCap:snippetText src="../../Resources/Snippets/Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                    <li>Click in the column to the right of <span class="Emphasis">mc-disable-glossary-terms</span>, and select <span class="Emphasis">true</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Glossaries" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+    </body>
+</html>

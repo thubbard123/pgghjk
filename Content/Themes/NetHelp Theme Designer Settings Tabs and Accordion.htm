@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="8334" MadCap:lastWidth="475" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Themes;NetHelp" />NetHelp Theme Designer Settings (Tabs and Accordion)</h1>
+        <p>
+            <img id="_x0000_i1036" src="../Resources/Images/D2H/ThemeDesignerTabs.png" height="404" class="MaxWidth100Percent" />
+        </p>
+        <p>The Theme Designer settings can all be edited in the Settings area on the right side. To find the field you’d like to edit, select it in the area on the left. The Settings area will display the field you need to edit. For global settings (General, Context-sensitive, Toolbar, and Accessibility), use the drop-down to display those fields. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>General</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The General settings are global settings for this theme.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Right-To-Left </span>If selected, the theme text direction will be set for right-to-left languages. If you choose the Hebrew configuration file (settings.he-il.xml) for this theme, this check box will be selected automatically. </li>
+                    <li><span class="SetOffFirstLevel">Update title </span>Switches the header title displayed on the browser tab from the topic title to the title of the project. If you would like the browser tab to remain static, rather than changing as the user navigates the output, select this check box.</li>
+                    <li><span class="SetOffFirstLevel">Fav icon </span>Specifies which icon will appear in the browser when your users mark your NetHelp as a favorite.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Context-sensitive</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The context-sensitive settings are global settings for this theme.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Title </span>The title used in the browser window title when a list of keywords, groups, or search results is shown on the page. This string can contain macros #{key} and #{value} that are replaced with the context-key ("keyword," "group," "id," or "search") and context-value. Default: "Topics for #{key}: #{value}" </li>
+                    <li><span class="SetOffFirstLevel">Not found message </span>This message is shown when the result is empty (when the context-key is "keyword," "group," or "id"). Default: "No topics found"</li>
+                    <li><span class="SetOffFirstLevel">Not supported message </span>This message is shown when the specified context-key is not supported. Default: "The key "#{key}" is not supported"</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Accessibility</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The accessibility settings are global settings for this theme.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Accessibility/D2H/About Accessibility.htm">Creating Section 508 Compliant Help</MadCap:xref>.</MadCap:conditionalText></p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Link menu header </span>This text is read by the accessibility device if a keyword or group link has more than one topic to display. Default: "#{count} topics found"</li>
+                </ul>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Contents</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Closed book </span>This text is read by the accessibility device when you mouse over a closed book that has no associated topic and, therefore, does not display a topic when clicked. Default: "Closed book without topic"</li>
+                            <li><span class="SetOffFirstLevel">Open book </span>This text is read by the accessibility device when you mouse over an open book that has no associated topic and, therefore, does not display a topic when clicked. Default: "Open book without topic"</li>
+                            <li><span class="SetOffFirstLevel">Closed book with topic </span>This text is read by the accessibility device when you mouse over a closed book that has an associated topic, which is displayed when the book is clicked. Default: "Closed book with topic"</li>
+                            <li><span class="SetOffFirstLevel">Open book with topic </span>This text is read by the accessibility device when you mouse over an open book that has an associated topic, which is displayed when the book is clicked. Default: "Open book with topic"</li>
+                            <li><span class="SetOffFirstLevel">Topic </span>This text is read by the accessibility device when you mouse over a topic. Default: "Topic"</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Collapsible sections</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Collapsed section </span>This text is read by the accessibility device for the collapsible section icons. Default: "Click to expand"</li>
+                            <li><span class="SetOffFirstLevel">Expanded section </span>This text is read by the accessibility device for the expanded section icons. Default: "Click to collapse</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The button settings control the label, icon, behavior, and text displayed on the buttons of the NetHelp toolbar. The default buttons included in the NetHelp toolbar are: Previous, Next, Home, Print, Email, and Powered By.</p>
+                <p>If you would like to remove, rearrange, change the alignment, or add a custom button to the NetHelp toolbar, use the Toolbar<c1hjump> (</c1hjump>toolbar.topicTop<c1hjump>)</c1hjump> fields.</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Label </span>The name that will be used for the label and tooltip text of the button.</p>
+                        <ul class="SecondLevel">
+                            <li>
+                                <p><span class="SetOffSecondLevel">prev </span>Default: "Previous"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">next </span>Default: "Next" </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">home </span>Default: "Home" </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">print </span>Default: "Print"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">email </span>Default: "Email"</p>
+                                <p>The email address used for this button is support@mycompany.com by default. This should be changed in the Help Targets dialog.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">twitter </span>Default: "Twitter"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">facebook </span>Default: "Facebook"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">poweredBy </span>Default: "Created with Doc-To-Help"</p>
+                                <p>The button also includes a default click action that opens the a website. This click action can be edited.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Icon </span>The icon displayed on the button. You can choose an alternate icon, upload your own (see <MadCap:xref href="Adding Custom Icons to a NetHelp Theme.htm">Adding Custom Icons to a NetHelp Theme</MadCap:xref>), or have no icon display.</li>
+                    <li><span class="SetOffFirstLevel">Show Label </span>If selected, the label text will be displayed on the button.</li>
+                    <li><span class="SetOffFirstLevel">Click (for poweredBy and Custom buttons only) </span>JavaScript code of the onclick event handler.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Toolbar (toolbar.topicTop)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The toolbar settings control which buttons are included in your NetHelp toolbar and how they are displayed. You can remove and rearrange the buttons, as well as add custom buttons. The alignment of the buttons can also be changed.</p>
+                <p>If you would like to change the NetHelp toolbar button labels, icons, and other options, edit the <span class="Emphasis">Buttons</span> fields.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Align </span>Controls the alignment of the NetHelp toolbar buttons. By default, they are aligned right, but can be changed to left or center.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Content </span>This field is used to add, remove, and rearrange the buttons in the NetHelp toolbar. Click the <span class="Emphasis">Wrench</span> button in this field to open the Edit Toolbar Buttons dialog. </p>
+                        <p>
+                            <img src="../Resources/Images/D2H/edit_toolbar_buttons.png" height="403" class="MaxWidth100Percent" />
+                        </p>
+                        <ul class="SecondLevel">
+                            <li><span class="SetOffSecondLevel">To Edit a Button </span>Select it, then click on the <span class="Emphasis">Wrench</span> button to open that button’s properties for editing. </li>
+                            <li><span class="SetOffSecondLevel">To Delete a Button </span>Select it, then click the <span class="Emphasis">–</span> button. If you remove a default button (Previous, Next, Home, Print, Email, Powered By, etc.), you can easily add it back by clicking the <span class="Emphasis">+</span> button You cannot remove buttons that were defined in other Settings files. See <c1hjump><MadCap:xref href="Using the Settings List Editor for Localization and more.htm">Using the Settings List Editor for Localization and more</MadCap:xref></c1hjump>.</li>
+                            <li><span class="SetOffSecondLevel">To Add a Custom Button </span>Click the <span class="Emphasis">+</span> button.</li>
+                            <li><span class="SetOffSecondLevel">To Rearrange the Buttons </span>Use the up and down arrows.</li>
+                            <li><span class="SetOffSecondLevel">To Start a New Button Group </span>Click the <span class="Emphasis">Start Group of Buttons</span> button.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Page Header</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Visible </span>If selected, the header area will be visible.</li>
+                    <li><span class="SetOffFirstLevel">Height </span>Adjusts the height of the header, in pixels.</li>
+                    <li><span class="SetOffFirstLevel">Logo Image </span>Inserts an image in the upper left of the header. The image will be copied to your Theme folder \\My Doc-To-Help Projects\Doc-To-Help\Themes\NetHelp 2.0\(Name of Theme)\images</li>
+                    <li><span class="SetOffFirstLevel">Show Text </span>If selected, the project title will displayed in the header. </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Topic</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Apply stylesheet </span>If selected, the jQuery or Wijmo stylesheet rules are applied in the Topic area.</li>
+                    <li><span class="SetOffFirstLevel">Text width </span>Used to manually set the width of the text (in pixels) in the topic window. By default, it is set to 0, which means the text will adjust to fill the window.</li>
+                </ul>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Not found text </span>The message displayed when a topic cannot be loaded. Default: "Topic not found"</li>
+                            <li><span class="SetOffFirstLevel">Not found title </span>Window title displayed when topic can't be loaded. Default: "Topic not found"</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Related topics</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Icon </span>Choose the icon that will appear before each subtopic link.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Breadcrumbs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Breadcrumbs are the trail of topics at the top of the Topic area.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Visible </span>If selected, breadcrumbs will be displayed.</li>
+                            <li><span class="SetOffFirstLevel">Include current topic </span>If selected, the current topic will be displayed in the breadcrumbs.</li>
+                            <li><span class="SetOffFirstLevel">Label </span>The text label that will be shown before the breadcrumbs. Default: no label</li>
+                            <li><span class="SetOffFirstLevel">Separator </span>The character or text displayed between breadcrumb items. Default: "/"</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Collapsible section</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The button labels and icons for the Expand All, Collapse All, Expanded Section, and Collapsed Section buttons in the topic.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Nav_Links/D2H/Creating an ExpandingCollapsing Section.htm">Creating an Expanding/Collapsing Section</MadCap:xref>.</MadCap:conditionalText></p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Default Label for the Expand All Button </span>"Expand All"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Default Label for the Collapse All Button </span>"Collapse All"</p>
+                            </li>
+                        </ul>
+                        <p>For all four buttons, you can choose alternate icons, upload your own (see <MadCap:xref href="Adding Custom Icons to a NetHelp Theme.htm">Adding Custom Icons to a NetHelp Theme</MadCap:xref>), or have no icon display. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot> Spinner</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul>
+                            <li> <span class="SetOffFirstLevel">Message text </span>The text that displays in the spinner animation while the topic is loading. Default: "Loading …"</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>TOC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Label </span>The text displayed on the TOC tab or accordion button. Default: "Contents"</li>
+                    <li><span class="SetOffFirstLevel">Icons </span>The icons displayed in the table of contents for a topic, closed book, or open book. You can choose alternate icons, upload your own (see <MadCap:xref href="Adding Custom Icons to a NetHelp Theme.htm">Adding Custom Icons to a NetHelp Theme</MadCap:xref>), or have no icon display.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Index</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Label </span>The text displayed on the Index tab or accordion button. Default: "Index"</li>
+                    <li><span class="SetOffFirstLevel">Visible </span>If selected, the index is displayed.</li>
+                    <li><span class="SetOffFirstLevel">Hide empty </span>If selected, the index will automatically be hidden if there are no index keywords in your project.</li>
+                </ul>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Filter tooltip </span>The tooltip displayed for the Index text box. Default: "Filter keywords" </li>
+                            <li><span class="SetOffFirstLevel">Not found message </span>The message shown when no keywords are found. Default: "No keywords found" </li>
+                            <li><span class="SetOffFirstLevel">Found message </span>The message shown when one or more keywords are found. It can contain a {count} macro that is replaced with the number of keywords found. Default: "#{count} keywords found" </li>
+                            <li><span class="SetOffFirstLevel">More text </span>The text for the link that displays if the keywords don’t fit on the screen and aren’t scrolled. Default: "More…" </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Label </span>The text displayed on the Search tab or accordion button. Default: "Search"</li>
+                    <li><span class="SetOffFirstLevel">Visible </span>If selected, the Search tab or accordion button is displayed.</li>
+                </ul>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Filter tooltip </span>The tooltip for the Search text box. Default: "Search topics" </li>
+                            <li><span class="SetOffFirstLevel">Help message </span>This text will be shown in a popup when the user clicks the Help button on the Search tab. The logical operators will be replaced with the ones defined in the Operators fields of the Search properties. Default: "You can use logical operators #{and}, #{or}, #{not} Example: football #{or} hockey, sports #{and} #{not} baseball" </li>
+                            <li><span class="SetOffFirstLevel">Loading message </span>This message is shown when the data is loading. Default: "Loading Search Engine…" </li>
+                            <li><span class="SetOffFirstLevel">Error message </span>This message is shown if the data fails to load. Default: "Error: Search engine failed to load" </li>
+                            <li><span class="SetOffFirstLevel">Disabled message </span>This message is shown when search is disabled. Default: "Search is disabled" </li>
+                            <li><span class="SetOffFirstLevel">Not found message </span>This message is shown when no keywords are found. Default: "No topics found" </li>
+                            <li><span class="SetOffFirstLevel">Found message </span>This message is shown when one or more topics are found. It can contain a {count} macro that is replaced with the number of topics found. Default: "# {count} topic(s) found." </li>
+                            <li><span class="SetOffFirstLevel">Correcting message </span>This message is shown when the search engine suggests a search string correction to the user. It can contain a #{query} macro that is replaced with a link to the corrected search string. Default: "Did you mean #{query}?" </li>
+                            <li><span class="SetOffFirstLevel">More text </span>The text for the link that displays if the found topics don’t fit on the screen and aren’t scrolled. Default: "More…" </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The tooltip labels and icons for the Search(go), Help, and Highlight buttons in the Search box.</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Default Tooltip for the Go Button </span>"Search"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Default Tooltip for the Help Button </span>"Help"</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Default Tooltip for the Highlight Button </span>"Highlight Search Hits"</p>
+                            </li>
+                        </ul>
+                        <p>You can choose alternate icons, upload your own (see <MadCap:xref href="Adding Custom Icons to a NetHelp Theme.htm">Adding Custom Icons to a NetHelp Theme</MadCap:xref>), or have no icon display. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Operators</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul>
+                            <li> <span class="SetOffFirstLevel">Operators </span>The text name of the search operators AND , NOT, and OR.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Splitter</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li><span class="SetOffFirstLevel">Position </span>The initial position of the splitter, in pixels. Default: 300</li>
+                    <li><span class="SetOffFirstLevel">Collapsed&#160;</span>If selected, the side panel (TOC/Index/Search) is hidden by default. The user can reopen the side panel by clicking the "Show side panel" icon.</li>
+                    <li><span class="SetOffFirstLevel">Disabled </span>If selected, the splitter position cannot be changed by the end user.</li>
+                </ul>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Tooltip: show side panel </span>The tooltip displayed for the show side panel icon. Default: "Show side panel" </li>
+                            <li><span class="SetOffFirstLevel">Tooltip: hide side panel </span>The tooltip displayed for the hide side panel icon. Default: "Hide side panel" </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Icons</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The icons displayed for the splitter, Show side panel, and Hide side panel. You can choose alternate icons, upload your own (see <MadCap:xref href="Adding Custom Icons to a NetHelp Theme.htm">Adding Custom Icons to a NetHelp Theme</MadCap:xref>), or have no icon display.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

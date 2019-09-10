@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="970" MadCap:lastWidth="1099" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <head>
+        <meta name="description" content="Include the hash mark (#)&#160;in a URL to create a hyperlink that includes a search string or to open a topic in a different Skin." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="FilterHyperlinks" />
+            <MadCap:keyword term="Hyperlinks:WebHelp Mobile;Linking:WebHelp Mobile;Linking:WebHelp Mobile;WebHelp Mobile:links;WebHelp Plus:links" />
+            <MadCap:concept term="FilterTextHyperlinks" />
+            <MadCap:concept term="WebHelpLinks" />Creating Links to WebHelp Mobile Topics</h1>
+        <p>You can create links to specific topics in <MadCap:variable name="Outputs.WebHelp Mobile" /> output. You can also create links that incorporate search strings.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create links to webhelp mobile topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Perform the steps for creating one of the following kinds of links:<ul class="FirstLevel"><li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:image maps;Linking:image hyperlinks" />Image Maps </span>See <MadCap:xref href="../Image_Hyperlinks/Creating_Image_Maps.htm" target="" title="" alt="">Creating Image Maps</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:hyperlinks;Linking:image hyperlinks" />Image Hyperlinks </span>See <MadCap:xref href="../Image_Hyperlinks/Inserting_Image_Hyperlinks.htm" target="" title="" alt="">Inserting Image Hyperlinks</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Text hyperlinks:inserting;Hyperlinks:inserting;Linking:inserting;Linking:text hyperlinks;Topics:text hyperlinks" />Text Hyperlinks </span>See <MadCap:xref href="../Text_Hyperlinks/Inserting_Text_Hyperlinks.htm" target="" title="" alt="">Inserting Text Hyperlinks</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Topic popups:inserting;Popups:inserting;Linking:topic popups" />Topic Popups </span>See <MadCap:xref href="../Topic_Popups/Inserting_Topic_Popups.htm" target="" title="" alt="">Inserting Topic Popups</MadCap:xref>.</li></ul></li>
+                    <li>In the dialog that opens for creating the link, click the <span class="Emphasis">Link to</span> field and select <span class="Emphasis">Website</span>.</li>
+                    <li>
+                        <p>Enter the path to the website. You can also include a specific topic and/or a search string. When inserting the link, you can use the following structure. </p>
+                        <div class="example">
+                            <p class="Code">http://[website]/[path/name of topic]&amp;searchQuery=[search string]&amp;firstPick=true</p>
+                        </div>
+                        <p>Parameters can be separated by ampersands (&amp;).</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">searchQuery </span>This is an optional element that automatically performs a search for a specific string.</li>
+                            <li><span class="SetOffFirstLevel">firstPick </span>This element can be used in conjunction with the search string. If you include the first pick option, the first topic found with the specified search string <span class="EmphasisItalic">will</span> be opened automatically. If you do not include this element, the search results will simply be displayed; the first topic <span class="EmphasisItalic">will not</span> be opened automatically.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">examples</p>
+                    <p class="Code">&lt;a href="http://mycompany.com/Sports/Soccer.htm"&gt;Click here to open&lt;/a&gt;</p>
+                    <p class="Code">&lt;a href="http://mycompany.com/searchQuery=World Cup Standings&amp;firstPick=true"&gt;Click here to open&lt;/a&gt;</p>
+                </div>
+                <p>In these examples, the following were used:</p>
+                <ul style="list-style-type: square;">
+                    <li>Soccer.htm = topic in the project, located in subfolder called "Sports"</li>
+                    <li>World Cup Standings = search term</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"> You can complete similar URL link steps with context-sensitive Help (CSH) identifiers. See <MadCap:xref href="../../CSH/WebHelp_Mobile_CSH_Calls/CSH_Calls_WHM_Developers.htm" target="" title="" alt="">CSH Calls for WebHelp Mobile—Developers</MadCap:xref>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="WebHelpLinks" />
+        </p>
+    </body>
+</html>

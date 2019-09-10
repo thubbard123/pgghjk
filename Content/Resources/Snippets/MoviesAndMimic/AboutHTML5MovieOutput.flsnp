@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Mimic" MadCap:lastBlockDepth="7" MadCap:lastHeight="2498" MadCap:lastWidth="867">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../Output/HTML5MovieOutputSummary.flsnp" />
+        <p>Following are some important characteristics of the <MadCap:variable name="Outputs.HTML5" /> format.</p>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Movies:video formats;Movies:browsers;Movies:encoders;Browser:video formats;Encoders" />
+                    <MadCap:keyword term="HTML5:WebM;WebM" />
+                    <MadCap:keyword term="HTML5:MP4/H.264;MP4/H.264;MP4" />video formats—webm and mp4/h.264</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>At this time only a few video formats can be used with the &lt;video&gt; element. Two of the more prominent formats—WebM and MP4/H.264—are supported in Mimic. WebM is supported in Mozilla Firefox, Google Chrome, and Opera browsers. MP4/H.264 is supported in Microsoft Internet Explorer and Apple Safari browsers. What if some of your users have browsers that support WebM, while other users have browsers that support MP4/H.264? You can select both options, generating output in both formats. Depending on the browser being used, the appropriate format is displayed. <MadCap:conditionalText MadCap:conditions="Products.MimicOnlineOnly">See <MadCap:xref href="../../../Output/More_About_Building_Movie_Output/Specifying_HTML5_Options.htm">Specifying HTML5 Options</MadCap:xref>.</MadCap:conditionalText></p>
+                <p MadCap:conditions="MimicGuides.MimicMovieCreationGuide,MimicGuides.MimicMovieGenerationGuide,Products.MimicOnlineOnly">
+                    <img src="../../Images/html5_option2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide">
+        </MadCap:snippetBlock>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Building:output;Movies:building output;Output:building movies" />output—browser files and single files for <MadCap:keyword term="Apple:iPhone" />iphone/<MadCap:keyword term="YouTube" />youtube</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you generate output for <MadCap:variable name="Outputs.HTML5" />, many browser-related output folders and files are produced. The main entry file has an .htm extension. There are also various support folders and files that you will need in order for your movies to play in browsers correctly. <MadCap:conditionalText MadCap:conditions="Products.MimicOnlineOnly">See <MadCap:xref href="../../../Output/Building_Movie_Output.htm">Building Movie Output</MadCap:xref> and <MadCap:xref href="../../../Files/Mimic_Files.htm">MadCap Mimic Files</MadCap:xref>.</MadCap:conditionalText></p>
+                <p MadCap:conditions="MimicGuides.MimicMovieCreationGuide,MimicGuides.MimicMovieGenerationGuide,Products.MimicOnlineOnly">
+                    <img src="../../Images/html5_output.png" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide">
+                </MadCap:snippetBlock>
+                <p>There is an optional check box to generate single video files. If you select this option, Mimic creates single .mp4 and .webm files and stores them in the "videos" subfolder. These files can be distributed by themselves, without any support folders or files. The regular browser-related files are necessary to view your movies in the correct browser. On the other hand, the single video files—.webm or .mp4—can be used to play movies in a standalone player. Single MP4 files can be used to view movies on the iPhone. You can play single MP4 or WebM files on YouTube and Vimeo.</p>
+                <p MadCap:conditions="MimicGuides.MimicMovieCreationGuide,MimicGuides.MimicMovieGenerationGuide,Products.MimicOnlineOnly">
+                    <img src="../../Images/html5_output2.png" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="MimicGuides.MimicMovieCreationGuide,MimicGuides.MimicMovieGenerationGuide,Products.MimicOnlineOnly">
+                    <img src="../../Images/html5_output3.png" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="MimicGuides.MimicMovieCreationGuide,MimicGuides.MimicMovieGenerationGuide,Products.MimicOnlineOnly">
+                    <img src="../../Images/html5_output4.png" class="MaxWidth100Percent" />
+                </p>
+                <p>For non-interactive movies (e.g., movies that do not contain buttons or input typing boxes designed to make users take action), one additional benefit of the single-file option is that future rebuilds are extremely fast because only changed frames are regenerated.</p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you have a non-interactive movie that is 75 frames long and generate output with the single-file option enabled. Sometime after this, you make changes to two of the frames in that movie. When you click the button to build the output again, only those two frames are recompiled, which means the generation is much faster.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Some players do not support interactive movies (e.g., YouTube only supports non-interactive videos).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order to generate single video files for HTML5, you must have Internet Explorer (IE) 9 or higher installed. Therefore, you must be working on an operating system that supports IE 9.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Selecting the option to create single video files will increase the generation time for movies.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide">
+        </MadCap:snippetBlock>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Audio" />audio</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Like the other output formats, you can incorporate audio into your <MadCap:variable name="Outputs.HTML5" /> output in many ways. <MadCap:conditionalText MadCap:conditions="Products.MimicOnlineOnly">See <MadCap:xref href="../../../Multimedia/Audio/About_Audio_Mimic.htm">About Audio</MadCap:xref>.</MadCap:conditionalText></p>
+                <ul>
+                    <li>Audio is "stitched" to different points in time, just as you would find in YouTube videos. In the other output formats, this is not the case. As a result, if you skip forward or backward to begin playing the <MadCap:variable name="Outputs.HTML5" /> video  at a specific point, the audio will be precisely synchronized with that point in the frame or movie.</li>
+                    <li>If you have audio that is longer than the movie itself, the audio stops playing when the last frame is finished. Similarly, if you select the option to pause the timing on a frame, audio applied to the movie or frame stops playing when that frame pauses.</li>
+                    <li>The loop audio option will work only if the audio is shorter than the length of the frame.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>other required actions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to generating the output, what other actions are required?</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">MPEG-4/H.264 Encoder </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> If you select the MP4/H.264 format, you need to download an encoder for it. Some encoders require a small  fee.You can obtain a free encoder at <a href="http://ffmpeg.zeranoe.com/builds/" target="_blank">http://ffmpeg.zeranoe.com/builds/</a>. Select one of the "Static" download links. This provides you with a file that has a .z7 file extension, which is a zip file format. Open and extract the .z7 file using 7-Zip. Then in Mimic's HTML5 Options dialog, you can navigate to the extracted \bin\ffmpeg.exe file.</MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                    <li><span class="SetOffFirstLevel">MIME Type (for FMV Files) </span>
+                        <MadCap:expanding>
+                            <MadCap:expandingHead MadCap:conditions="General.OnlineLive">Read more… </MadCap:expandingHead>
+                            <MadCap:expandingBody> If you have full-motion video (FMV) frames and put your movie on a server, you also need to install MIME types for HTML5 output. <MadCap:conditionalText MadCap:conditions="Products.MimicOnlineOnly">See <MadCap:xref href="../../../Frames/About_Frames.htm">About Frames</MadCap:xref> and <MadCap:xref href="../../../Output/More_About_Publishing_Output/Setting_the_MIME_Type_on_a_Server_for_HTML5.htm">Setting the MIME Type on a Server for HTML5</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Flare">See the Mimic online Help.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.MimicPrintOnly">For more information see the Mimic online Help.</MadCap:conditionalText></MadCap:expandingBody>
+                        </MadCap:expanding>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel" MadCap:conditions="Products.Mimic">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>more information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>For more information about the HTML5 video format, see <a href="http://www.w3schools.com/html/html5_video.asp" target="_blank">http://www.w3schools.com/html/html5_video.asp</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

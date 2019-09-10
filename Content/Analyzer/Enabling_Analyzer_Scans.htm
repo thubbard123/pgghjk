@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="1471" MadCap:lastWidth="1336" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareAnalyzerReports.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Learn how to run scan on a project to collect text seqments and suggest conversion prospects for variables, snippet, stylesheet. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="ContentAnalyzer" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Analyzer" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Scan" />
+            <MadCap:concept term="FilterReports" />Enabling Analyzer Scans</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Enabling Analyzer Scans</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Analyzer/EnableAnalyzerScansSummary.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAnalyzerGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable analyzer scans</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open <MadCap:variable name="Other.Product" />, but do not open a project yet.</li>
+                    <li>Select <span class="Emphasis">File&gt;Options</span>. The Options dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Analyzer</span> tab.</li>
+                    <li>Enable or disable any of the following:<ul class="FirstLevel"><li><span class="SetOffFirstLevel"><MadCap:keyword term="Segments;Frequent segments" />Collect Segments </span>Select this check box if you want Analyzer to collect segments of text while scanning your project. Segment collection allows you to view information about your project such as frequent segments found and index keyword suggestions.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:suggestions;Suggestions:variables" />Collect Variable Prospects </span>Select this check box if you want Analyzer to look for text that you might want to convert to variables.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Snippets:suggestions;Suggestions:snippets" />Collect Snippet Prospects </span>Select this check box if you want Analyzer to look for text that you might want to convert to snippets.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Styles:suggestions;Suggestions:styles" />Collect Local Style Prospects </span>Select this check box if you want Analyzer to look for places where you have applied local formatting and might want to apply styles to those areas instead.</li><li><p><span class="SetOffFirstLevel">Collect Embedded Stylesheet Prospects </span>Select this check box if you want Analyzer to look for style information (embedded styles in &lt;style&gt; elements) in your topic files. Disabling this scan limits the results found in the style reports.</p><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead class="OnlineOnly"><MadCap:dropDownHotspot>note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You should select this option if you have imported topics that have embedded styles. Otherwise, it is not usually necessary to select this option.</p></div></MadCap:dropDownBody></MadCap:dropDown></li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Accessibility:suggestions;Suggestions:accessibility" />Collect Accessibility Prospects </span>Select this check box if you want Analyzer to look for text where you might want to add web accessibility features (e.g., captions, alternate text). <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../Accessibility/Flare/About_Accessibility.htm">About Accessibility</MadCap:xref>.</MadCap:conditionalText></li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Markup:suggestions;Suggestions:markup" />Collect Markup Prospects </span>Select this check box if you want Analyzer to look for a variety of XHTML markup issues in your content (e.g., extra spaces, empty attributes). You can open the affected files and clean up the markup in them. You may be able to fix some issues in the XML Editor, but other issues may require you to open the behind-the-scenes code in the Internal Text Editor. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</MadCap:conditionalText></li></ul><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead class="OnlineOnly"><MadCap:dropDownHotspot>note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order for these options to be effective, you must set the options before opening your project. If you have your project open and a scan is in process, setting these options will not improve your system performance.</p></div></MadCap:dropDownBody></MadCap:dropDown></li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAnalyzerGuide" />
+                    <li>
+                        <p>You can click in the <span class="Emphasis">Search Limits</span> field to limit the number of results returned from some Analyzer reports. You can limit the search results to 100, 500, 1000, or 5000. If All is selected, there are no limitations for the search results. You might want to use this new feature to improve performance.</p>
+                        <p>When a limit is selected, it is applied to the following window panes and reports:</p>
+                        <ul class="FirstLevel">
+                            <li>Index Keyword Suggestions</li>
+                            <li>New Style Suggestions</li>
+                            <li>Replace Local Style Suggestions</li>
+                            <li>Undefined Styles</li>
+                        </ul>
+                        <p>
+                            <img src="../Resources/Images/limit_analyzer_search_results2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="ContentAnalyzer" />
+        </p>
+    </body>
+</html>

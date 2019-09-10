@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1423" MadCap:lastWidth="884" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Use MadCap Flare's Target Editor to specify to use the XPS output format. This task requires the .NET&#160;Framework. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:concept term="FilterXPS" />
+            <MadCap:keyword term="Print-based output:XPS;Microsoft XPS;Output:XPS;Microsoft XPS:Microsoft Word" />
+            <MadCap:concept term="FilterWord" />Specifying XPS Output Via Microsoft Word</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/XPS/XPSSummary.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/XPS/XPSSummary2.flsnp" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/XPS/XPSSummary3.flsnp" />
+        <p>The following describes how to use the second option, sending output to XPS via Microsoft Word. If you want to send output to XPS directly, simply install <MadCap:keyword term="Microsoft .NET" />the latest version of Microsoft .NET Framework and build an XPS target.</p>
+        <h2 MadCap:conditions="General.Print">Requirements</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>requirements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to send output to XPS via Microsoft Word, you need to have the following setup.</p>
+                <ul>
+                    <li>You must have Microsoft Word 2007 installed. Previous versions of Word do not support this functionality.</li>
+                    <li>
+                        <p>You must download and install the following free add-ins from Microsoft.</p>
+                        <ul class="SecondLevel">
+                            <li>
+                                <p><span class="SetOffSecondLevel">To View and Generate XPS</span> Go to the following:</p>
+                                <p><a href="http://www.microsoft.com/whdc/xps/viewxps.mspx" target="_blank">http://www.microsoft.com/whdc/xps/viewxps.mspx</a>
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This first add-in is not necessary for <MadCap:keyword term="Microsoft Windows Vista" />Microsoft Vista users.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">To Save as XPS</span> Go to the following:</p>
+                                <p><a href="http://www.microsoft.com/downloads/details.aspx?familyid=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;amp;displaylang=en" target="_blank">http://www.microsoft.com/downloads/details.aspx?familyid=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;displaylang=en</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify xps output for microsoft word</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a Word target.</li>
+                    <li>In the Target Editor, do one of the following. <p class="Subheading"><span class="Emphasis">use the output file field on the general tab</span></p><ol class="LowerAlpha"><li>Select the <span class="Emphasis">General</span> tab.</li><li>In the <span class="Emphasis">Output File</span> field, enter the name that you want to use for the main output file and add the <MadCap:keyword term="Microsoft XPS" />.xps extension at the end of it. For example, if you want your main output file to be called "MyNewManual," you would enter the following in this field: <span class="TypedEntry">MyNewManual.xps</span></li></ol><p>OR</p><p class="Subheading"><span class="Emphasis">use the check box on the advanced tab</span></p><ol class="LowerAlpha"><li>Select the <span class="Emphasis">Advanced</span> tab.</li><li>Click the check box next to <span class="Emphasis">Generate XPS for MS Word Ouput</span>.</li></ol><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you use this second check box option, it will overrule any file extension specified for the output file name on the General tab.</p></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you perform this task and complete the other tasks in preparation for printed output, you are ready to build the print target. See <MadCap:xref href="../Printed_Output/Creating_Printed_Output.htm" target="" title="" alt="">Creating Print-based Output</MadCap:xref> and <MadCap:xref href="../About_Building_Output.htm" target="" title="" alt="">Building Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

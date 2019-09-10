@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="620" MadCap:lastWidth="823" MadCap:conditions="Products.D2H">
+    <body>
+        <p class="Subheading">Doc-To-Help Ribbon Is In Basic Mode</p>
+        <p>When you open Word, the Doc-To-Help ribbon is using Basic&#160;mode. You do not see full Doc-To-Help functionality in the ribbon. </p>
+        <p class="Subheading">Cause</p>
+        <p>The Doc-To-Help ribbon uses Basic mode when the document you opened is not included in any Doc-To-Help project, the Word add-in is disabled, or the add-in cannot find the Doc-To-Help project associated with the document. This mode is also used for final output.</p>
+        <p class="Subheading">Solution</p>
+        <p>Do one of the following:</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">Find the Doc-To-Help Project </span>If your document should be associated with a Doc-To-Help project, click Find Project (<span class="Emphasis">Doc-To-Help&gt;Find Project</span>)&#160;to browse for and open the .d2h project file associated with the document. Associating the project file with the document will switch the ribbon to Full mode.</p>
+                <p>OR</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Re-enable the Word Add-In </span>If the Word add-in is disabled, you can restart the Word add-in from the Windows Task Manager.</p>
+                <ol>
+                    <li>Open the Task Manager.</li>
+                    <li>Select the <span class="Emphasis">Services</span> tab.</li>
+                    <li>Right-click the <span class="Emphasis">D2HWCFService</span>, then select <span class="Emphasis">Restart</span>.</li>
+                    <li>Restart Doc-To-Help.</li>
+                </ol>
+                <p>For more information about dynamic add-in modes, see <MadCap:xref href="../../../Interface/Ribbons/Ribbons_D2H.htm">Ribbons</MadCap:xref>.</p>
+            </li>
+        </ul>
+    </body>
+</html>

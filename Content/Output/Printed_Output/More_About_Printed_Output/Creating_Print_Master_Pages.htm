@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.);M;Masterpage;MasterPage;output.);NewPage1;output..." MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="3773" MadCap:lastWidth="1092" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="For print-based outputs in Flare, you can use Print Master Pages to define the look and feel of the content in your Word or FrameMaker Output. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Master pages:printed output;Print-based output:master pages" />
+            <MadCap:concept term="PrintedOutputMasterPage" MadCap:conditions="Products.Flare" />Creating Print Master Pages</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/Feature_Supported/FrameMaker_Word.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="General.OnlineLive">
+            <MadCap:snippetText src="../../../Resources/Snippets/MasterPages/PrintMasterPagesIntro.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can use page layouts as an alternative to master pages. <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageLayoutsVsMasterPages.flsnp" /> See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">What is Included in a Print Master Page?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>what is included in a print master page?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>A print master page uses a <MadCap:keyword term="Proxies:body" />Body proxy as a placeholder for content in your project, as well as page header and footer proxies for page numbers. When you generate the output, a Body proxy is replaced with your topic content.Body proxies can also be used to hold information about the size, orientation, and margins for the printed pages.</p>
+                <p>In addition to proxies, you can add a wide range of content to master pages, similar to the way you would add content to a regular topic. For example, you can add text or variables above or below a Body proxy to be used as <MadCap:keyword term="Headers:master pages;Master pages:headers and footers" />header or <MadCap:keyword term="Footers:master pages" />footer content for the printed output.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">How Many Print Master Pages Do I Need?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>how many print master pages do i need?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p> That depends on your situation. You might need only one master page, or you might need multiple master pages. </p>
+                <p>If the page settings and header/footer information on all of the pages of your document are consistent, you may be able to use just one print master page. It is possible to have one print master page with multiple body proxies on it. You might do this if you want different page settings (e.g., margins, page number settings) for first, even, and odd pages of a manual. In other words, each proxy can have a different page configuration. You can also add other content (e.g., text, images, Heading variables, Running Head variables) above or below the Body proxy on a master page, and you can designate each of these sets of content to show up specifically on a first, even, or odd page.</p>
+                <p>However, you might not want to use just one master page for an entire document. Why? Because you might have some sections of your manual where you do not want any headers or footers at all (e.g., title page). Or you might want some sections of the manual to use one set of header or footer content and other sections to use different header or footer content.</p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <p>Let’s say you are creating a manual for <MadCap:variable name="Outputs.Frame" /> output and you want it to consist of the following.</p>
+                <ul>
+                    <li>A title page with no headers or footers and different margins than the rest of the pages in the manual. The rest of the sections in the manual will all share the same margins. </li>
+                    <li>A TOC where you want the following: First page No header; footer with a Roman page number aligned right Odd pages A header with the TOC title aligned right; a footer with a Roman page number aligned right. Even pages A header with the TOC title aligned left; a footer with a Roman page number aligned left. </li>
+                    <li>Ten chapters where you want the following for each: First page No header; footer with a decimal page number aligned right Odd pages A header with the chapter title aligned right; a footer with a decimal page number aligned right. Even pages A header with the name of the manual aligned left; a footer with a decimal page number aligned left. </li>
+                    <li>An index where you want the following: First page No header; footer with a decimal page number aligned right Odd pages A header with the index title aligned right; a footer with a decimal page number aligned right. Even pages A header with the index title aligned left; a footer with a decimal page number aligned left. </li>
+                </ul>
+                <p>In a situation such as this, you could create: </p>
+                <ul>
+                    <li>One master page just for the title page. </li>
+                    <li>
+                        <p>A second master page to be used by the TOC, all of the chapters, and the index.</p>
+                        <p>You can use a Heading variable (recommended) or <MadCap:keyword term="Master pages:running head variables;Running head variables;Headers:Running Head variables;Footers:running head variables;Variables:running head variables" />Running Head variable to display the TOC, chapter, and index titles in one master page; that way, you don't need to type them manually in multiple master pages. To do this, you could use the h1 style in your topics for the first heading in the TOC, each chapter, and the index. Then simply insert the Level 1 Heading variable into the master page where you want the TOC, chapter, or index heading text to be shown (e.g., in a Page Header proxy). As long as you create a master page using that variable, and apply the new style class to the paragraphs containing your chapter titles, the headers in the output will adjust appropriately to display the correct chapter title. For more information see <MadCap:xref href="../../../Variables/More_About_Variables/About_Heading_Variables.htm">About Heading Variables</MadCap:xref> and <MadCap:xref href="../../../Variables/More_About_Variables/About_Running_HF_Variables.htm">About Running Head Variables</MadCap:xref>.</p>
+                        <p>As for the page numbers, you might insert those into the master page by using a Page Footer proxy. Later in the print output development process, you can specify section breaks (i.e., tell Flare when to start a new "chapter" in the output). At that point, you can specify which page number format (e.g., Roman, decimal) to use for a particular section of the output.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="General.Print">Steps for Creating Print Master Pages</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for creating print master pages</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the steps involved with creating a master page for print-based output.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Add a Master Page </span>
+                        <MadCap:keyword term="Master pages:adding;Print-based output:master pages" />
+                        <MadCap:snippetText src="../../../Resources/Snippets/MasterPages/AddMasterPageSummary.flsnp" /> See <MadCap:xref href="../../../Master_Pages/Adding_a_Master_Page_to_a_Project.htm">Adding a Master Page to a Project </MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:opening" />Open a Master Page</span> At any time, you can open a master page and make modifications to it. The master page displays in its own page of the XML Editor and remains accessible as you work. See <MadCap:xref href="../../../Master_Pages/More_About_Master_Pages/Opening_Existing_Master_Pages.htm">Opening Master Pages</MadCap:xref>.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Master pages:proxies;Proxies:master pages" />Add Proxies </span>Depending on the master page template that you select, you might already have one or more types of <MadCap:keyword term="Proxies:breadcrumbs;Proxies:body;Proxies:mini-TOC;Breadcrumbs:proxy;Body:proxy;Mini-TOC:proxies" />proxies in your master page. Some of these proxies are useful used for online output (e.g., breadcrumbs), whereas other proxies are used for printed output (or both online and print), <MadCap:keyword term="Proxies:indexes;Proxies:tables of contents;Proxies:glossaries;Indexes:proxies;Tables of contents:proxies;Glossaries:proxies;Proxies:page headers;Proxies:page footers;Page headers:proxies;Page footers:proxies;Footers:proxies;Headers:proxies" />including the following.</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Proxies:body" />Body Proxy </span>
+                                <MadCap:snippetText src="../../../Resources/Snippets/PrintOutput/AddEditBodyProxyForPrintSummary.flsnp" /> See <MadCap:xref href="Adding_and_Editing_Body_Proxies.htm">Adding and Editing Body Proxies for Print Output</MadCap:xref>.</li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Proxies:glossaries" /><MadCap:keyword term="Proxies:indexes" /><MadCap:keyword term="Proxies:tables of contents" />Glossary, Index, and TOC Proxies </span>These proxies let you automatically create a glossary, index, and TOC in your printed output based on features or content that you've already added to your project. However, rather than inserting these proxies into a master page, it is probably best to insert them into separate topics. For details, see <MadCap:xref href="Creating_a_Glossary_Manually_for_Print.htm">Creating a Topic for a Print Glossary</MadCap:xref>, <MadCap:xref href="Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>, and <MadCap:xref href="Creating_a_TOC_Manually_for_Print.htm">Creating a Topic for a Print TOC</MadCap:xref>.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Proxies:mini-TOC" />Mini-TOC Proxy </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/Proxies/MiniTOCProxySummary.flsnp" />Similar to glossary, index, and TOC proxies, it is usually best to insert mini-TOC proxies into a topic, rather than a master page. See <MadCap:xref href="../../../Proxies/Using_the_Mini_TOC_Proxy.htm">Creating a Mini-TOC for Print Output</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Proxies:page footers" /><MadCap:keyword term="Proxies:page headers" />Page Header and Footer Proxies </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/PrintOutput/AddPageHeaderFooterProxiesSummary.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">more information</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>For information on adding these types of proxies into master pages, as well as adding regular content and page numbers within them, see <MadCap:xref href="Adding_Page_Header_and_Footer_Proxies.htm">Adding Page Header and Footer Proxies</MadCap:xref>.</p>
+                                        <p>
+                                            <MadCap:keyword term="Page numbers:starting page number" />If you want to specify a starting page number or change the format (e.g., alpha, Roman, uppercase, lowercase), you can do so from the TOC Properties dialog when you specify section breaks for the output. See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm">Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">example</p>
+                                            <p>Let's say your printed output begins with a title page, copyright page, TOC and other front matter—followed by your chapters. If you want to make sure that the first page number does not display until the first page of your first chapter (not on any of the front matter pages), and that it shows "page 7," you need to specify a section break and master page at that location in the outline TOC (i.e., at the topic containing the beginning of the first chapter). From the same dialog tab where you specify a section break, you can indicate that the page numbering should start with 7.</p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you need to remove a proxy from a master page, simply right-click on it and select <span class="Emphasis">Delete</span>.</p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:running head variables" />Insert Heading or Running Head Variables</span> In addition to any type of regular content (e.g., text, images) and page numbers, you can insert Heading variables or Running Head variables into master pages. These types of variables are a great way to automatically include text (such as the first paragraph using an h1 style). See <MadCap:xref href="Inserting_Heading_Variables_Into_Master_Pages.htm">Inserting Heading Variables Into Master Pages</MadCap:xref> and <MadCap:xref href="Inserting_Running_Head_Variables_Into_Master_Pages.htm">Inserting Running Head Variables Into Master Pages</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Following is an example of a master page containing proxies for printed output.</p>
+                    <p>
+                        <img src="../../../Resources/Images/print_master_page_example1.png" class="MaxWidth80Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you create master pages for your printed output, you need to specify how the master pages are used in the output (i.e., using one or more master pages for different sections, or using one master page for the entire document). See <MadCap:xref href="Specifying_Section_Breaks_and_Master_Pages_for_Printed_Output.htm">Specifying Section Breaks and Master Pages</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputMasterPage" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

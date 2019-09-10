@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="633" MadCap:lastWidth="1130" MadCap:conditions="Products.Flare">
+    <body>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>Let’s say you have a master project with a target named "Main" and three smaller projects with targets named "First Child," "Second Child," and "Third Child," respectively. If you place the three smaller project outputs in the AutoMerge subfolder where "Main" is published, their TOCs will be appended to the master project's TOC in the following order:</p>
+            <ol>
+                <li>First Child</li>
+                <li>Second Child</li>
+                <li>Third Child</li>
+            </ol>
+            <p>But what if you want "Third Child" to be appended first? You can use the steps in this topic to position it above the other targets. Therefore, the result would be:</p>
+            <ol>
+                <li value="1">Third Child</li>
+                <li>First Child</li>
+                <li>Second Child</li>
+            </ol>
+            <p>Now let's say that you add two more targets (called "Final Child" and "Another Child") to the AutoMerge folder. If you do not adjust your custom order, Flare will automerge these outputs in alphabetical order at the end of your custom order. Therefore, the final result would be:</p>
+            <ol>
+                <li value="1">Third Child</li>
+                <li>First Child</li>
+                <li>Second Child</li>
+                <li>Another Child</li>
+                <li>Final Child</li>
+            </ol>
+        </div>
+    </body>
+</html>

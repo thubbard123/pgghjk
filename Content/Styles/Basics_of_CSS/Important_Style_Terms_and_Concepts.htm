@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="15" MadCap:lastHeight="16157" MadCap:lastWidth="1068" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:keyword term="Styles:classes;Styles:tags;Styles:properties;Styles:values" />
+            <MadCap:concept term="StyleBasics" />Important Style Terms and Concepts</h1>
+        <p>Following are some of the fundamental terms and concepts that you will encounter when working with styles.</p>
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles" />Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles" />Styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">In the Stylesheet Editor, you will notice several elements that already exist for your use. These are called "styles."</p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/styles_example1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/styles_example2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p MadCap:conditions="">A style is an element to which you assign a certain look and/or behavior. You can then apply that style to your content. Different kinds of styles are available in a stylesheet, to be used for various purposes in your content. See <MadCap:xref href="../Using_Styles_and_Stylesheets/Types_of_Styles_in_Flare.htm">Types of Styles in Flare</MadCap:xref>.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                    <p MadCap:conditions="">&lt;p&gt; is a common HTML&#160;tag, which is used for designating a paragraph. In your stylesheet, you can make changes to the p style, which is used to affect the look of those paragraphs. Another style is h2, which can be used to affect the look of second-level headings (&lt;h2&gt; tags) in your content. Yet another style is span, which can be used to affect the look of character-level content (e.g., a portion of a paragraph, but not the entire paragraph).</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:properties;Styles:values" />Properties and Values</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:properties;Styles:values" />properties and values</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">Every style has certain information that controls its look and behavior. The first piece of information is called a "property" (e.g., color, font-size, border-left). In the Advanced view of the Stylesheet Editor, these can be organized into property groups (e.g., font, background, border, positioning).</p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/selector7.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <p MadCap:conditions="">The precise information within a property is known as a "value" (e.g., 12 px, italic, blue).</p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/selector8.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print"><a name="SelectorsPrint"></a>
+            <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Selectors</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="Selectors"></a>
+                    <MadCap:keyword term="Styles:creating;Styles:stylesheets;Cascading stylesheets;Selectors:creating;Styles:selectors" />Selectors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectorSummary.flsnp" /> See <MadCap:xref href="../Creating_Selectors.htm">Creating Selectors</MadCap:xref>.</p>
+                <p MadCap:conditions="">A simple style element type such as h1 can be used as a selector all by itself.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                            <p MadCap:conditions="">Here is how an h1 selector could look in the Advanced view of the Stylesheet Editor after you define it.</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector6.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                            <p MadCap:conditions="">And here is how it would look in the Internal Text Editor.</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector1.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p MadCap:conditions="">However, selectors can also be more advanced. See <MadCap:xref href="#AdvancedSelectors">Advanced Selectors</MadCap:xref>.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p MadCap:conditions="">Here is an example of a selector that is much more complex:</p>
+                            <p>
+                                <img src="../../Resources/Images/advanced_selector19.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Grouping Selectors</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p MadCap:conditions="">If you are comfortable with editing stylesheets in the Internal Text Editor<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>)</MadCap:conditionalText>, you can group selectors together. That way, they can share the same definitions, which makes styling much quicker. To do this, separate each selector with a comma.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                            <p MadCap:conditions="">Let's say you want all of your paragraphs, h3 headings, and numbered lists to have red, bold text. You could enter this information separately for each of these styles in the stylesheet. But a more efficient method is to group them together by using <span class="TypedEntry">h3, ol, p</span> as the following shows:</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector3.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print"><a name="AdvancedSelectors"></a>
+            <MadCap:keyword term="Styles:advanced selectors;Selectors:advanced;Styles:selectors" />Advanced Selectors</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="AdvancedSelectors"></a>
+                    <MadCap:keyword term="Styles:advanced selectors;Selectors:advanced;Styles:selectors" />Advanced Selectors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/AdvancedSelectors1.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/AdvancedSelectors2.flsnp" />
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/AdvancedSelectors3.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/AdvancedSelectors4.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print"><a name="classes"></a>
+            <MadCap:keyword term="Styles:classes;Classes;Selectors:classes;Styles:selectors" />Classes</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="classes"></a>
+                    <MadCap:keyword term="Styles:classes;Classes;Selectors:classes;Styles:selectors" />Classes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/Classes1.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/Classes2.flsnp" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Creating Classes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can create selectors in the Stylesheet Editor by clicking the <span class="Emphasis">Add Selector</span> button in the local toolbar. This opens the Selector dialog. Then you can use the <span class="Emphasis">Class Name</span> field to create a class, but there are several additional advanced fields that you also have the option of using, depending on what you want to accomplish. See <MadCap:xref href="../Creating_Selectors.htm">Creating Selectors</MadCap:xref>.</p>
+                        <p>
+                            <img src="../../Resources/Images/selector11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="">When you create a class, it automatically takes on all of the same qualities from the parent style (e.g., color, alignment, size). However, you can change some of those for the class so that it is different from the parent in some ways. When you are all done, you will have a class selector.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty" MadCap:conditions="">example</p>
+                            <p MadCap:conditions="">Let's say you want to create a special look for paragraph notes in order to provide additional information in a topic. In addition, you might want yet another special kind of paragraph to be used for tips. Perhaps you want a light blue background for your note paragraphs, and you want a light orange background for your tip paragraphs. Meanwhile, for your regular paragraphs, you do not want any colored background.</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector9.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                            <p MadCap:conditions="">Therefore, you could create a class of your parent p style and name it "Note."</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector12.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p MadCap:conditions="">Then you might create another class of your p style and name it "Tip."</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector13.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                            <p MadCap:conditions="">For the Note class, you could change the background property to display in light blue, and you could change the same property for the Tip class to display in light orange. But you would leave the background property for the parent p style as it is, without a color.</p>
+                            <p MadCap:conditions="">
+                                <img src="../../Resources/Images/selector10.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p MadCap:conditions="">In the end, both the Note and Tip classes would take on all of the style settings from its parent p style, with the exception of the background color that you have specified for each.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Identifying Classes in the Stylesheet Editor</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="">How can you distinguish between parent styles and classes? In the Simplified view of the Stylesheet Editor, classes are listed after the parent styles, and a period is added between the name of the parent style and the name of the class (e.g., p.Tip). </p>
+                        <p MadCap:conditions="">
+                            <img src="../../Resources/Images/base_tags_style_classes_example_simplified.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                        <p MadCap:conditions="">In the Advanced view of the Stylesheet editor, parent styles and classes are shown in a tree view. You can expand a parent style to see its classes.</p>
+                        <p MadCap:conditions="">
+                            <img src="../../Resources/Images/base_tags_style_classes_example_advanced.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="GenericClasses"></a>
+                            <MadCap:keyword term="Classes:generic;Generic classes" />Generic Classes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p MadCap:conditions="">In addition to creating classes that are specifically associated with parent styles, you can create generic classes. These are standalone classes that can be used with any parent style.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/CSSGenericClasses.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Identifiers;Styles:identifiers;Selectors:identifiers" /><a name="Identifiers"></a>Identifiers</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Identifiers;Styles:identifiers;Selectors:identifiers" /><a name="Identifiers"></a>Identifiers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/IDSummary.flsnp" />
+                <p>In the New Selector dialog use the <span class="Emphasis">Identifier (ID)</span> field to give the ID&#160;a name. In the <span class="Emphasis">Advanced Selector</span> field, the ID name is added after a hash tag.</p>
+                <p>As with a class, an ID can be added after a specific HTML element, such as an h1 style.</p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector14.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector26.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector27.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <p>Like a class, an ID can also be generic, standing alone.</p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/advanced_selector15.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector28.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector29.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                <p MadCap:conditions="">After creating an ID, you can apply it to content in much the same way you would apply a class. In the interface (e.g., Styles window pane, Styles field in Home ribbon), you can identify IDs by looking for the hash tag before the name. You can right-click a structure bar in the XML Editor, and after selecting <span class="Emphasis">Style ID</span>, you can choose any available ID.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../Resources/Images/advanced_selector23.png" alt="" title="" class="MaxWidth60Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" /><a name="PseudoClasses"></a>Pseudo Classes</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="PseudoClasses"></a>
+                    <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" />Pseudo Classes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoClasses1.flsnp" />
+                <p>
+                    <MadCap:snippetText src="../../Resources/Snippets/Styles/PseudoClasses2.flsnp" /> For details on the many kinds of pseudo classes that CSS allows you to create, see <a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">http://www.w3schools.com/css/css_pseudo_classes.asp</a>.</p>
+                <p MadCap:conditions="">In the New Selector dialog you can use the <span class="Emphasis">Pseudo Class</span> field to enter or select a pseudo class for the HTML element. In the <span class="Emphasis">Advanced Selector</span> field, the main HTML element is followed by a colon and then the pseudo class.</p>
+                <p MadCap:conditions="">
+                    <img src="../../Resources/Images/advanced_selector2.png" alt="" title="" class="MaxWidth60Percent" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/NavLinks/PseudoClassesExample.flsnp" MadCap:conditions="">
+                        </MadCap:snippetBlock>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;" MadCap:conditions="">In order for &lt;a&gt; link pseudo classes to function properly, they must appear in the following order in the stylesheet (you can see this by opening the stylesheet in the Internal Text Editor).</p>
+                            <p>a:link</p>
+                            <p>a:visited</p>
+                            <p>a:hover</p>
+                            <p>a:focus</p>
+                            <p>a:active</p>
+                            <p>In order to avoid issues with this, and to ensure that your pseudo classes are working, you should explicitly set values on those pseudo classes, rather than expecting them to inherit settings from other tags.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" /><a name="PseudoClassExpressions"></a>Pseudo Class Expressions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" /><a name="PseudoClassExpressions"></a>Pseudo Class Expressions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoClassExpressions.flsnp" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoClassExpressions2.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoClassExpressions3.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" /><a name="PseudoElements"></a>Pseudo Elements</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Styles:pseudo classes;Pseudo classes;Classes:pseudo" /><a name="PseudoElements"></a>Pseudo Elements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoElements1.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoElements2.flsnp" />
+                <p>
+                    <img src="../../Resources/Images/advanced_selector9.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoElements3.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Styles/PseudoElements4.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StyleBasics" />
+        </p>
+    </body>
+</html>

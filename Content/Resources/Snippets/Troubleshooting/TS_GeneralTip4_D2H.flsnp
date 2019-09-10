@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1018" MadCap:lastWidth="689" MadCap:conditions="Products.D2H">
+    <body>
+        <p class="Subheading">Doc-To-Help Ribbon Is Missing</p>
+        <p>When I&#160;open a document in Word, I&#160;do not see the Doc-To-Help ribbon.</p>
+        <p class="Subheading">Cause</p>
+        <p>Templates; new, unsaved documents; and documents with an unsupported format open in No Features mode, which does not use the Doc-To-Help ribbon.</p>
+        <p>However, if you have opened a document where you expect to see the Doc-To-Help ribbon, it is possible that the add-in has become disabled.</p>
+        <p class="Subheading">Solution</p>
+        <p>In Word, navigate to <b>File&gt;Options&gt;Add-Ins</b>. In the list of add-ins, locate the Doc-To-Help for Word add-in.</p>
+        <p>Do one of the following:</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the Doc-To-Help for Word Add-In is Listed as Inactive</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Try closing your Word documents and restarting the Doc-To-Help application. The add-in will reload when you relaunch.</p>
+                        <p>OR</p>
+                    </li>
+                    <li>
+                        <p>Manually reactivate the add-in.</p>
+                        <ol>
+                            <li>From the <span class="Emphasis">Manage</span> drop-down, select <span class="Emphasis">COM&#160;Add-ins</span>.</li>
+                            <li>Click <span class="Emphasis">Go</span>.</li>
+                            <li>Select <span class="Emphasis">Doc-To-Help for Word</span>.</li>
+                            <li>Click <span class="Emphasis">OK</span>.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If Doc-To-Help for Word Add-In is Disabled</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the <span class="Emphasis">Manage</span> drop-down, select <span class="Emphasis">Disabled Items</span>.</li>
+                    <li>Click <span class="Emphasis">Go</span>.</li>
+                    <li>Select the <span class="Emphasis">VSTO Add-in</span>.</li>
+                    <li>Click <span class="Emphasis">Enable</span>.</li>
+                    <li>Click <span class="Emphasis">Close</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the Doc-To-Help for Word Add-In Is Not Listed</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Do one of the following:</p>
+                <ul>
+                    <li>Reinstall or repair Doc-To-Help using the setup file.</li>
+                    <li>In Windows Explorer, navigate to <span class="Emphasis">c:\Program Files (x86)\MadCap Software\DocToHelp\D2H.WordAddIn.vsto</span>. Double-click this file to reinstall the add-in.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

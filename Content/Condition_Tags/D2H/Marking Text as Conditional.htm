@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="1404" MadCap:lastWidth="581" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HDocumentsTemplatesContent.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Conditions" />Marking Text as Conditional</h1>
+        <p>Using conditional text, you can mark specific text or graphics to display only in specific instances; by platform, target, attribute, or a combination. This makes logical single-sourcing easy to accomplish.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Mark Text as Conditional</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Word source document, select the text that you want to mark as conditional.</li>
+                    <li>Select the <span class="Emphasis">Doc-To-Help</span> ribbon.</li>
+                    <li>In the <span class="Emphasis">D2HML Styles</span> group, click <span class="Emphasis">Conditional Text</span>. The Conditional Text dialog opens, with the selected text displayed at the top of the dialog.</li>
+                    <li>
+                        <p>In the Conditional properties area select the appropriate options. You may select more than one. After making your selection from the drop-down, click elsewhere in the dialog to close the drop-down.</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Platforms </span>Set a platform-based condition for the selected text. The text will be included in all of the target platform(s) selected. A platform includes all the targets that produce the output specified; Online Help, HTML Help, NetHelp, Printed Manual, etc.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Targets </span>Set a target-based condition for the selected text. The text will be included in all the target(s) selected.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Attributes </span>Set an attribute-based condition for the selected text. The text will be included or excluded when creating conditional builds (e.g., internal or external.) Use the Attributes dialog to create custom attributes. See <MadCap:xref href="Creating and Using Attributes.htm">Creating and Using Attributes</MadCap:xref>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>(Optional) Marking text as <span class="Emphasis">HTML passthrough code</span> is an advanced feature that allows you to include HTML code in your document without Word treating that code as text. It is recommended that the rich content variables feature be used instead of the HTML passthrough code. With this feature, you can define a variable in an HTML document and insert it into a Word document.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Interface/UI_Elements/D2H/Variables window.htm">Variables Window</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>If you insert an HTML Help ActiveX Control into your Word document (also an advanced feature), that HTML code will be marked with the HTML passthrough condition.&#160; See <MadCap:xref href="../../ActiveX_Controls/Inserting an HTML Help ActiveX Control.htm">Inserting an HTML Help ActiveX Control</MadCap:xref>.</p>
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                    <li>
+                        <p>(Optional) In the Options area, you can select the following:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Hide properties in document </span>Puts the conditional text properties in the text. </p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Text in comment </span>Puts the conditional text properties in a Word comment.&#160;  </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to remove conditional text, you can use the Clear Formatting button in the Doc-To-Help ribbon.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Styles/D2H/D2HML/Clearing D2HML Styles.htm">Clearing D2HML Styles</MadCap:xref>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also mark entire documents and topics as conditional, see <MadCap:xref href="../../Source_Documents/Setting Document Properties.htm" >Setting Document Properties</MadCap:xref> and <MadCap:xref href="Setting Topic Conditions.htm" >Setting Topic Conditions</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

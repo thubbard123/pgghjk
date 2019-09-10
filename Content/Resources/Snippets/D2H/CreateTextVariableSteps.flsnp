@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="12" MadCap:lastHeight="4776" MadCap:lastWidth="536">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li>In Doc-To-Help, select the <span class="Emphasis">Project</span> ribbon.</li>
+            <li>Click <span class="Emphasis">Variables</span>. The Variables window opens.</li>
+            <li>In the <span class="Emphasis">Text Variables</span> area, click on the <span class="Emphasis">Add New Variable</span> toolbar  button.</li>
+            <li>Select one of the following:</li>
+            <MadCap:snippetBlock src="TextVersionDateTimeVariablesList.flsnp" />
+            <li>An editable field named "New Variable" displays in the Name cell. In the <span class="Emphasis">Name</span> cell, enter a name for the variable.</li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+            <li>
+                <p>Depending on the variable type you selected, the Definition cell is populated with either simple text, 1.0.0.0, or a date/time format. Double-click in the <span class="Emphasis">Definition</span> cell and provide the value for the variable.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Text </span>If you double-clicked on a cell for a text variable, simply type text.</li>
+                    <li><span class="SetOffFirstLevel">Version </span>If you double-clicked on a cell for a version variable, enter the starting version number.</li>
+                    <li><span class="SetOffFirstLevel">Date/Time </span>If you double-clicked on a cell for a date/time variable, a popup displays. Complete the fields in it:<ul class="SecondLevel"><li><p><span class="SetOffSecondLevel">Format Specifiers </span>This is the date/time format. You can select a format from the drop-down, or you can type a format manually. <MadCap:snippetText src="../Variables/CustomDateVariables2.flsnp" /></p><MadCap:dropDown class="ThirdLevel"><MadCap:dropDownHead><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><MadCap:snippetBlock src="../Notes/NoteDateTimeVariablesIncludeWords.flsnp" /></MadCap:dropDownBody></MadCap:dropDown></li><li><p><span class="SetOffSecondLevel">Update </span>Select how you want the  variable to display the date and time. You can choose any of the following:</p><ul class="ThirdLevel"><li><span class="SetOffThirdLevel">On Document Creation </span>The variable displays the date and time that you created the document.</li><li><span class="SetOffThirdLevel">On Document Save </span>The variable displays the date and time that you last saved the document.</li><li><span class="SetOffThirdLevel">On Build </span>The variable displays the date and time of the most recent project build.</li></ul></li></ul></li>
+                </ul>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+            <li>
+                <p>(Optional) If want to associate a condition with the variable, double-click in the <span class="Emphasis">Condition</span> column and choose a <span class="Emphasis">Platform</span>, <span class="Emphasis">Target</span>, or <span class="Emphasis">Attribute</span> condition for the variable.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Condition_Tags/D2H/About_Conditions_D2H.htm">About Conditions</MadCap:xref>.</MadCap:conditionalText></p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Platforms </span>Set a platform-based condition for the variable. The text will be included in all of the target platform(s) selected. A platform includes all the targets that produce the output specified (Online Help, HTML Help, NetHelp, Printed Manual).</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Targets </span>Set a target-based condition for the variable. The text will be included in all the targets selected.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Attributes </span>Set an attribute-based condition for the variable. The text will be included or excluded when creating conditional builds (e.g., internal or external). Use the Attributes dialog (<span class="Emphasis">Project&gt;Attributes</span>) to create custom attributes.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Condition_Tags/D2H/Creating and Using Attributes.htm">Creating and Using Attributes</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                </ul>
+                <p>If you would like to assign more than one condition to a variable, select the variable's name and click the <span class="Emphasis">Add Definition with Condition</span> toolbar button. An additional definition row will be created. Enter the appropriate definition, then double-click in the <span class="Emphasis">Condition</span> column to set a condition. One text variable can have multiple unique outputs.</p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Tip</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">It is recommended that you make a different version variable for each target  and then assign conditions to those variables. This is quite useful because the version numbers are then incremented separately for each target. On the other hand, if you create only one version variable and use it in several targets, the version number will increment after each rebuild of any of those targets.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>Let's say you have a NetHelp target and a Manual target.</p>
+                            <p>In the Variables window, you create a version variable named "NetHelp" with a starting value of 1.0. Then you create another version variable named "Manual" with a starting value of 1.26. Finally, you create a third version variable named "Shared" with a starting value of 3.9. It would look like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/version_variables1.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p>Next, for the NetHelp variable, you double-click the <span class="Emphasis">Condition</span> cell. In the <span class="Emphasis">Targets</span> field (in the popup), you select <span class="Emphasis">NetHelp</span> (or whatever your target is called).</p>
+                            <p>Then, for the Manual variable, you double-click the <span class="Emphasis">Condition</span> cell. In the <span class="Emphasis">Targets</span> field (in the popup), you select <span class="Emphasis">Manual</span> (or whatever your target is called).</p>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                            <p>But you leave the Condition cell empty for the Shared variable. Now the Variables window looks like this:</p>
+                            <p>
+                                <img src="../../Images/D2H/version_variables2.png" alt="" title="" class="MaxWidth90Percent" />
+                            </p>
+                            <p>Next, you insert all three variables in a source Word document.</p>
+                            <p>You build the NetHelp target for the first time. In the output, the variable numbers are as follows:</p>
+                            <ul>
+                                <li><span class="SetOffFirstLevel">NetHelp </span>1.0</li>
+                                <li><span class="SetOffFirstLevel">Shared </span>3.9</li>
+                                <li><span class="SetOffFirstLevel">Manual </span>Not shown because it was conditioned out</li>
+                            </ul>
+                            <p>Now you build the Manual target for the first time.  In the output, the variable numbers are as follows:</p>
+                            <ul>
+                                <li><span class="SetOffFirstLevel">Manual </span>1.26</li>
+                                <li><span class="SetOffFirstLevel">Shared </span>3.10</li>
+                                <li><span class="SetOffFirstLevel">NetHelp </span>Not shown because it was conditioned out</li>
+                            </ul>
+                            <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                            <p>Next, you <span class="EmphasisItalic">rebuild</span> the NetHelp target. In the output, the variable numbers are as follows:</p>
+                            <ul>
+                                <li><span class="SetOffFirstLevel">NetHelp </span>1.1</li>
+                                <li><span class="SetOffFirstLevel">Shared </span>3.11</li>
+                                <li><span class="SetOffFirstLevel">Manual </span>Not shown because it was conditioned out</li>
+                            </ul>
+                            <p>Finally, you <span class="EmphasisItalic">rebuild</span> the Manual target. In the output, the variable numbers are as follows:</p>
+                            <ul>
+                                <li><span class="SetOffFirstLevel">Manual </span>1.27</li>
+                                <li><span class="SetOffFirstLevel">Shared </span>3.12</li>
+                                <li><span class="SetOffFirstLevel">NetHelp </span>Not shown because it was conditioned out</li>
+                            </ul>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2985" MadCap:lastWidth="835" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul>
+            <li value="2">
+                <p><span class="SetOffFirstLevel">Import Project</span> Opens the Import From Source Control Wizard, which lets you create a new project by importing an existing project that is located in a source control application. </p>
+                <p>You will see this option for all source control providers.</p>
+                <p MadCap:conditions="Products.Analyzer">This option is disabled in Analyzer.</p>
+                <p MadCap:conditions="Products.Flare">See <MadCap:xref href="../../../Source_Control/Linked_Topics/Importing_Projects.htm">Importing a Project from Source Control</MadCap:xref>. </p>
+            </li>
+            <li value="2">
+                <p><span class="SetOffFirstLevel">Add</span> Opens the Check In dialog, which lets you add the selected files to the integrated source control application. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlAddFilesSummary.flsnp" />
+                </p>
+                <p>You will see this option for all source control providers</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Adding_Files.htm">Adding Files to Source Control</MadCap:xref>.</p>
+            </li>
+            <li value="3">
+                <p><span class="SetOffFirstLevel">Check In</span> Opens the Check In dialog, which lets you check files into source control. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlCheckInSummary.flsnp" />
+                </p>
+                <p>You will see this option if your project is bound to Microsoft Team Foundation Server or Microsoft Visual SourceSafe.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Checking_In.htm">Checking In, Committing, and Submitting Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Commit </span>Opens the Commit dialog, which lets you commit files into source control. </p>
+                <p>When you are finished editing files, you can commit them to source control. If you are working with Git, committing a file adds your changes to the local database.  When you are ready to add your local commits to the remote repository, you can push these files to the remote.</p>
+                <p>If you are working with Subversion, committing a file overwrites the old copy of the file in the source control database with the new one from your local machine. </p>
+                <p>You will see this option if your project is bound to Git or Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Checking_In.htm">Checking In, Committing, and Submitting Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Submit </span>Opens the Submit dialog, which lets you submit files into source control. </p>
+                <MadCap:snippetBlock src="SourceControlSubmitSummary.flsnp" />
+                <p> You will see this option if your project is bound to Perforce.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Checking_In.htm">Checking In, Committing, and Submitting Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li value="4">
+                <p><span class="SetOffFirstLevel">Check Out</span> Opens the Check Out dialog, which lets you check out files from source control. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlCheckOutSummary.flsnp" />
+                </p>
+                <p>You will see this option if your project is bound to Microsoft Team Foundation Server, Microsoft Visual SourceSafe, or Perforce.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Checking_Out.htm">Checking Out Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li MadCap:conditions="Products.Flare">
+                <p><span class="SetOffFirstLevel">Lock </span>Opens the Lock dialog, where you can select files you want to lock. If your project is bound to Subversion, you can steal locks from another user's locked files using this dialog.</p>
+                <p>When you are working, you may want to lock the files you have modified. Locking a file does not prevent other users from modifying the file. However, no one else can commit a file that you have locked until you unlock the file.</p>
+                <p>If your project is bound to Subversion, you can steal a lock from another user if you need to commit a locked file while they are working on it. Likewise, another user can steal a lock on a file you have locked.</p>
+                <p>You will see this option if your project is bound to Perforce or Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Locking_Files.htm">Locking Files</MadCap:xref>.</p>
+            </li>
+            <li MadCap:conditions="Products.Flare">
+                <p><span class="SetOffFirstLevel">Unlock </span>Opens the Unlock dialog, where you can select files you want to unlock.</p>
+                <MadCap:snippetBlock src="SourceControlUnlockSummary.flsnp" />
+                <p>You will see this option if your project is bound to Perforce or Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Unlocking_Files.htm">Unlocking Files</MadCap:xref>.</p>
+            </li>
+            <li value="5">
+                <p><span class="SetOffFirstLevel">Get Latest Version</span> Opens the Get Latest Version dialog, which lets you "get" files from source control. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlGetLatestVersionSummary.flsnp" />
+                </p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Getting_the_Latest_Version.htm">Updating or Getting the Latest Version of Source Control Files</MadCap:xref>.</p>
+                <p>You will see this option if your project is bound to Microsoft Team Foundation Server, Microsoft Visual SourceSafe, or Perforce.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Update </span>Opens the Get Latest Version dialog, which lets you update files from source control. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlUpdateSummary.flsnp" />
+                </p>
+                <p>You will see this option if your project is bound to  Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Getting_the_Latest_Version.htm">Updating or Getting the Latest Version of Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li value="6">
+                <p><span class="SetOffFirstLevel">Undo Check Out</span> Opens the Undo Check Out dialog, which lets you reverse the check-out of the files. </p>
+                <p>
+                    <MadCap:snippetText src="SourceControlUndoCheckOutSummary.flsnp" />
+                </p>
+                <p>You will see this option if your project is bound to Microsoft Team Foundation Server or Microsoft Visual SourceSafe.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Undoing_a_Check_Out.htm">Reverting or Undoing  a Checkout of Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Revert </span>Opens the Revert dialog, which lets you return files to their last known state.</p>
+                <MadCap:snippetBlock src="SourceControlRevertingFilesGit.flsnp" />
+                <p>You will see this option if your project is bound to Git, Perforce, or Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Undoing_a_Check_Out.htm">Reverting or Undoing  a Checkout of Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li value="7">
+                <p><span class="SetOffFirstLevel">Show Differences</span> Opens a window pane that lets you view the content and code differences for files. If you select a single file and choose this option, the differences between the local version of the file and the source control version of the file are shown. If you select two files and choose this option, the differences between those two files are shown.</p>
+                <p>You will see this option for all source control providers.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Viewing_Differences.htm">Viewing Differences in Source Control Files</MadCap:xref>.</p>
+            </li>
+            <li value="8">
+                <p><span class="SetOffFirstLevel">View History</span> Opens the History dialog, which lets you view the history of a particular source control file, including all of the occasions when the file has been checked in. You can then use the dialog to view the differences between older versions of the file or roll back to a particular version.</p>
+                <p>You will see this option for all source control providers.</p>
+                <p>See  <MadCap:xref href="../../../Source_Control/Linked_Topics/Viewing_History.htm">Viewing the History of Source Control Files</MadCap:xref> and <MadCap:xref href="../../../Source_Control/Linked_Topics/Rolling_Back.htm">Rolling Back to an Earlier Version of a File</MadCap:xref>.</p>
+            </li>
+            <li value="10">
+                <p><span class="SetOffFirstLevel">Undelete </span>Undeletes a file, allowing you to add it to source control. See&#160;<MadCap:xref href="../../../Source_Control/Linked_Topics/Undeleting_Files.htm">Undeleting Source Control Files</MadCap:xref>. You will see this option if your project is bound to Microsoft Team Foundation Server and Microsoft Visual SourceSafe.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Refresh </span>
+                    <MadCap:snippetText src="../UIElements/RefreshOption.flsnp" /> You will see this option for all source control providers.</p>
+            </li>
+            <li MadCap:conditions="Products.Flare">
+                <p><span class="SetOffFirstLevel">Network Settings </span>Opens the Network Settings dialog, which lets you view and modify source control network settings from Flare.</p>
+                <p>You will see this option if your project is bound to Git or Subversion.</p>
+                <p>See <MadCap:xref href="../../../Source_Control/Linked_Topics/Modifying_Network_Settings.htm">Modifying Network Settings</MadCap:xref>.</p>
+            </li>
+        </ul>
+    </body>
+</html>

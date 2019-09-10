@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords=".bmp;.jpg;.jpeg;jpeg;.gif;.png.;png;.props;(.mimov;(.miprj" MadCap:lastBlockDepth="8" MadCap:lastHeight="1640" MadCap:lastWidth="1133" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieGeneration.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Understanding MadCap Mimic file types." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Files;Output:files;MadCap Mimic:files;Files:MadCap Mimic" />
+            <MadCap:concept term="Collections" />
+            <MadCap:concept term="FilterCollections" />
+            <MadCap:concept term="FilterMovies" />
+            <MadCap:concept term="CreatingMovies" />MadCap Mimic Files</h1>
+        <p>When you use Mimic to create movies, a few types of files are at work.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <h2 MadCap:conditions="MimicGuides.MimicMovieGenerationGuide">Files for Developing Collections and Movies</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">files for developing collections and movies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are files for developing collections and movies:</p>
+                <ul>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/MoviesAndMimic/MIPRJItem.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/MoviesAndMimic/MIMOVItem.flsnp" />
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <h2 class="NoPageBreakBefore" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide">Output Files for the HTML5 Format</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:conditionalText MadCap:conditions="General.OnlineLive">
+                    <MadCap:dropDownHotspot>Output Files for the HTML5 Format</MadCap:dropDownHotspot>
+                </MadCap:conditionalText>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are output files for the HTML5 format:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="HTM" />HTM </span>This is the main entry file for the output in the <MadCap:variable name="Outputs.HTML5" /> format if the movie is to be viewed in a browser. The HTM file is named after each movie (e.g., myfirstmovie.htm, mysecondmovie.htm).</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">MCMV </span>This file is used by Flare when linking to a Mimic movie.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Support Files for Browsers </span> In addition to the main output file, there are also various support folders and files that you will need in order for your movies to play in browsers correctly.</p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../Resources/Images/html5_output.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Single Video Files </span>These are extra standalone MP4 and WEBM files that are created if you select an option to produce them (see <MadCap:xref href="../Output/Selecting_Single_Files_for_the_Output_Mimic.htm">Selecting Single Files for the Output</MadCap:xref>). They are stored in the "videos" output subfolder and can be distributed by themselves, without any support folders or files. The regular browser-related support files are necessary to view your movies in the correct browser. On the other hand, the single video files—WEBM or MP4—can be used to play movies in a standalone player, such as <MadCap:keyword term="Windows Media" />Windows Media Player or <MadCap:keyword term="QuickTime" />QuickTime. Single MP4 files can be used to view movies on the iPhone. You can play single MP4 or WebM files on YouTube.</p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../Resources/Images/html5_output2.png" class="MaxWidth100Percent" />
+                            <MadCap:conditionalText MadCap:conditions="General.Future">xxx replace all three pics</MadCap:conditionalText>
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../Resources/Images/html5_output3.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../Resources/Images/html5_output4.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order to generate single video files for HTML5, you must have Internet Explorer (IE) 9 or higher installed. </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information about the output formats, see <MadCap:xref href="../Output/About_Movie_Output_Formats.htm">About Movie Output Formats</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

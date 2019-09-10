@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="21" MadCap:lastHeight="11978" MadCap:lastWidth="1020" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet10]exclude[Snippets.Snippet11 or Snippets.Snippet9]">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Toolbars:topic;Proxies:topic toolbars" />
+            <MadCap:concept term="TopicToolbars" />Creating a Topic Toolbar</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHMobile_WHPlus_WHAIR.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/Proxies/TopicToolbarProxySummary1.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/Skins/MoreInfoToolbars.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>basics of using topic toolbars</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The generation of topic toolbars is based on the following elements:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Topic Toolbar Proxy </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Proxies/TopicToolbarProxySummary.flsnp" /> </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Skin </span>The way the skin works with topic toolbars is a bit different for HTML5 than it is for outputs that are using Standard and Mobile skins.</p>
+                        <ul class="SecondLevel">
+                            <li><span class="SetOffSecondLevel">HTML5 Skins </span>Although topic toolbars can be inserted into most online outputs, only HTML5 uses a Topic Toolbar skin component as part of the process. With HTML5, the settings in the Topic Toolbar skin component have precedence over any settings in the Topic Toolbar Proxy dialog, including the selection of which buttons to be included in the toolbar. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Skins/HTML5_Skin_Styles/Topic_Toolbars_in_HTML5_Skins.htm">Topic Toolbars in HTML5 Skin Components</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li>
+                                <p><span class="SetOffSecondLevel">Standard and Mobile Skins </span>
+                                    <MadCap:snippetText src="../Resources/Snippets/Skins/SkinSettingsTopicToolbar.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Skins/More_About_Skins/Topic_Toolbars_in_WebHelp_Outputs.htm">Specifying Topic Toolbar Settings in a Skin—WebHelp Outputs</MadCap:xref> and <MadCap:xref href="../Skins/More_About_Skins/Topic_Toolbars_for_WebHelp_Mobile_Output.htm" target="" title="" alt="">Specifying Topic Toolbar Settings in a Skin—WebHelp Mobile</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Proxies/TopicToolbarStyleSettingsSummary.flsnp" />
+                                    <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../Skins/Standard_Skin_Styles/Standard_Skin_Styles.htm">Standard Skin Styles</MadCap:xref> and <MadCap:xref href="../Skins/WebHelp_Mobile_Skin_Styles/WebHelp_Mobile_Skin_Styles.htm">WebHelp Mobile Skins</MadCap:xref>.</MadCap:conditionalText>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Style Class </span>Regardless of the type of output, you also have the option of using the Madcap|topicToolbarProxy style to change the look of the toolbar. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Using_Styles_to_Determine_the_Look_of_Topic_Toolbars.htm">Using Styles to Determine the Look of Topic Toolbars</MadCap:xref>.</MadCap:conditionalText> <![CDATA[ ]]></li>
+                </ul>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSelectButtonsTopicToolbar.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are generating an <MadCap:variable name="Outputs.EclipseHelp" /> target that uses a Topic Toolbar proxy, Flare will automatically remove the proxy when building the output. This is because the Eclipse development platform provides its own toolbar support. See the Platform Plug-in Developer Guide from Eclipse at:&#160;<a href="http://help.eclipse.org/kepler/index.jsp">http://help.eclipse.org/kepler/index.jsp</a></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Proxies/PreviousNextButtonsDiffer.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Proxies/TopicToolbarExample.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Proxies/ExampleHTML5TopNavPrevNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a topic toolbar</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are steps for inserting a Topic Toolbar proxy. Again, for most of the supported outputs, you can select the buttons either in these steps or in the skin.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>Open a topic where you want the toolbar to appear. This is a good method if you only want the toolbar to be shown in one topic, or just a few topics.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Open a master page that you will use when generating the target. This is the best method if you want the toolbar to be shown on all topics in the output.</li>
+                        </ul>
+                    </li>
+                    <li>Place your cursor where you want the toolbar to be shown in the output (e.g., bottom or top of the topic or master page). If you are working in a master page, you may need to press the down arrow on your keyboard and then press <span class="Emphasis">Enter</span> at the correct location.</li>
+                    <li>Select <span class="Emphasis">Insert&gt;Proxy&gt;Insert Topic Toolbar Proxy</span>. The Topic Toolbar Proxy dialog opens.</li>
+                    <li>
+                        <p>(Optional) If you are working with HTML5 output, you can select a skin component in the <span class="Emphasis">Skin File</span> field. From the Skin Editor, you can select the buttons to be included in the toolbar<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Skins/Editing_Skin_Settings.htm">Editing Skin Settings</MadCap:xref> and <MadCap:xref href="../Skins/HTML5_Skin_Styles/HTML5_Skin_Styles.htm">HTML5 Skin Styles</MadCap:xref>)</MadCap:conditionalText>. Alternatively, you can select buttons from the Buttons field below.</p>
+                        <p>If you do not select a skin component in this field, Flare uses the first one it finds in your project (if one exists). Otherwise, Flare provides a default design.</p>
+                    </li>
+                    <li>
+                        <p>(Optional) In the <span class="Emphasis">Stylesheet class for proxy</span> field, you can select a class to affect the look of the entire toolbar.</p>
+                        <p>You might create and use a proxy style class, for example, if you want to add a border around the toolbar. If you do not select a class from this field, the generated toolbar will use the style settings from the parent MadCap|topicToolbarProxy style. You have the option of creating a class for this proxy style in the Stylesheet Editor. To do this, select the <span class="Emphasis">MadCap|topicToolbarProxy</span> style and click <span class="Emphasis">Add Class</span> to create a class. The class will then be available from this field. <MadCap:snippetText src="../Resources/Snippets/ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" /></p>
+                    </li>
+                    <li>
+                        <p>(Optional) You can select buttons for the toolbar here, rather than doing so in the skin.</p>
+                        <ol class="LowerAlpha">
+                            <li>Click <span class="Emphasis">Select buttons</span>.</li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/Skins/SelectButtonsForToolbarSkinStep.flsnp" />
+                                </p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>add topic to favorites</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/AddTopicToFavoritesItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/add_topic_to_favorites_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>back   </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/BackItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/back_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>collapse all </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/CollapseAllItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/collapse_all_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>current topic index</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/CurrentTopicIndexItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/current_topic_index_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>expand all  </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/ExpandAllItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/expand_all_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>forward </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/ForwardItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/forward_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>home </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/HomeItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/home_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>next topic </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/NextTopicItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/next_topic_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>previous topic </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p> <MadCap:snippetText src="../Resources/Snippets/UIElements/PreviousTopicItem.flsnp" /></p>
+                                        <p>
+                                            <img src="../Resources/Images/previous_topic_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>print </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/PrintItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/print_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>quick search </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/QuickSearchItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/quick_search_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>refresh </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/RefreshItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/refresh_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>remove highlight </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/RemoveHighlightItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/remove_highlight_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select browse sequence</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectBrowseSequenceItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_browse_sequence_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select Community </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectCommunityItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_community_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select favorites </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectFavoritesItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_favorites_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select glossary </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectGlossaryItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_glossary_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select index </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectIndexItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_index_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select Language</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectLanguage.flsnp" />
+                                        </p>
+                                        <div class="example">
+                                            <p><span class="exampleHeadTextEmpty">Example</span>
+                                            </p>
+                                            <p>Let’s say you want your users to be able to switch between US&#160;English, Spanish, and Japanese Help in your HTML5 output. </p>
+                                            <p>Before you can build your output, you need to make sure that each of your linked multilingual projects has the SelectLanguage button is available in its HTML5 toolbar. If it the button isn't there, users won't be able to switch from one language to another in your output.</p>
+                                            <p>Open the Project Organizer. In the <span class="Emphasis">Skins</span> folder, open the Topic Toolbar skin component. On the <span class="Emphasis">Setup</span> tab, select the <span class="Emphasis">SelectLanguage</span> button, click <img src="../Resources/Images/move_item_to_right_btn.png" alt="" title="" /> to add it to your skin, and then save your work. </p>
+                                            <p>
+                                                <img src="../Resources/Images/multilingual_example1.png" alt="" title="" class="MaxWidth90Percent" />
+                                            </p>
+                                            <p>Now you can prepare and build your multilingual output. See <MadCap:xref href="../Language_Support/Selecting_a_Language.htm#HowToSelectLanguagesTarget">How to Select Languages for a Specific Target</MadCap:xref>.</p>
+                                            <p>When you open the HTML5 output, it defaults to the US&#160;English Help because that is your browser’s default setting.</p>
+                                            <p>However, because you added the SelectLanguage button  to your Topic Toolbar skin component, you can easily change the language setting using a drop-down menu.</p>
+                                            <p>
+                                                <img src="../Resources/Images/multilingual_example14.png" alt="" title="" class="MaxWidth90Percent" />
+                                            </p>
+                                            <p>
+                                                <img src="../Resources/Images/multilingual_example10.png" alt="" title="" class="MaxWidth90Percent" />
+                                            </p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select search </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectSearchItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_search_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select Skin</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectSkin.flsnp" />
+                                        </p>
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Skins/SkinsRuntime1.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>select toc </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectTOCItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/select_toc_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>separator</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SeparatorItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/separator_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>stop</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/StopItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/stop_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>toggle navigation pane </MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>
+                                            <MadCap:snippetText src="../Resources/Snippets/UIElements/ToggleNavigationPaneItem.flsnp" />
+                                        </p>
+                                        <p>
+                                            <img src="../Resources/Images/toggle_navigation_pane_button_example.png" class="MaxWidth100Percent" />
+                                        </p>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>Click <span class="Emphasis">OK</span> when you are finished.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The proxy is added.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Editing a Topic Toolbar</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After inserting a Topic Toolbar proxy, you can edit it. To do this, open the topic or master page where the proxy is inserted, right-click on it, and select <span class="Emphasis">Edit Topic Toolbar Proxy</span>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>which outputs support which buttons?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Although topic toolbars can be added in most online outputs, only certain buttons are supported in the various outputs. The following table provides an overview.</p>
+                <p>The following table does not list Pulse-related toolbar buttons, such as Edit User Profile and Topic Ratings. These kinds of buttons must be added either via the web toolbar (for HTML5 Tripane, WebHelp, or WebHelp Plus outputs) or the Topic Toolbar skin component (for all HTML5 outputs).</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Proxies/TopicToolbarButtonsSupportedTable.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you inserted the proxy into a master page, make sure the master page is associated with your target. See <MadCap:xref href="../Master_Pages/Associating_Master_Pages_with_Targets.htm">Associating Master Pages with Targets</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TopicToolbars" />
+        </p>
+    </body>
+</html>

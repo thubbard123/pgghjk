@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="2012" MadCap:lastWidth="1074" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareVariables.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword MadCap:conditions="Products.Flare" term="Master pages:running head variables;Running head variables;Headers:Running Head variables;Footers:running head variables;Variables:running head variables;Page layouts:running head variables;Running head variables:Styles;Styles:running head variables" />
+            <MadCap:concept term="FilterVariables" />
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Running Head Variables</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/FrameMaker_Word.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Variables/RunningHFVariableSummary.flsnp" />
+        </p>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Variables/HeadingVsRunningHeadVariables.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareVariablesGuide" />
+        <h2 MadCap:conditions="General.Print">Default Running Head Variables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>default running head variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><MadCap:variable name="Other.Product" /> provides the following default Running Head variables.</p>
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0" class="TableStyle-BasicAlternateRows">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Variable Name</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Variable Definition</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextCenter">Running H/F 1</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextCenter">&lt;$paratext[h1]&gt;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextCenter">Running H/F 2</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextCenter">&lt;$paratext[h2]&gt;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextCenter">Running H/F 3</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextCenter">&lt;$paratext[h3]&gt;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextCenter">Running H/F 4</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableTextCenter">&lt;$paratext[h4]&gt;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextCenter">Running H/F 5</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableTextCenter">&lt;$paratext[h5]&gt;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableTextCenter">Running H/F 6</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p class="TableTextCenter">&lt;$paratext[h6]&gt;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>You can add an additional six variables like this so that there are 12 all together (Adobe FrameMaker supports 12). If you add more variables than the six provided, they should follow the same naming convention (i.e., Running H/F 7, Running H/F 8, Running H/F 9, and so on).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareVariablesGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Using Other Styles in Running Head Variables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>using other styles in running head variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>As you can see by looking at the variable definitions in the list, these variables are based on the h1 through h6 heading styles provided in <MadCap:variable name="Other.Product" />. You should not change the variable name or the first part of the definition. However, you can change the style within the definition if you want to use something other than one of the h1 through h6 heading styles provided (e.g., you can change &lt;$paratext[h1]&gt; to &lt;$paratext[someOtherStyle]&gt;). The style name used in the variable definition must match the style name that results from generating the output. If you create a style class, this means using an underscore in the variable definition. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>If you have an &lt;h1&gt; tag with a class called "title" in <MadCap:variable name="Other.Product" />, the style name generated for the corresponding paragraph in FrameMaker will be "h1_title" (not h1.title, as it is in <MadCap:variable name="Other.Product" />). Therefore, you would change the variable definition to &lt;$paratext[h1_title]&gt;.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareVariablesGuide" />
+        <h2 MadCap:conditions="General.Print">Which Style Text is Displayed?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>which style text is displayed?  </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you insert a Running Head variable into a page layout frame or master page, <MadCap:variable name="Other.Product" /> will insert the text from the first occurrence of the specified style on that page. If it doesn't find any text using that style, it will use the text from the previous occurrence of that style. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>If you want the header in chapters to display content that is using the h1 style (perhaps you are using this style to display the chapter title for your output), select the <span class="Emphasis">Running H/F 1</span> variable. The header will then display the first &lt;h1&gt; content that it finds in the document (e.g., "My First Chapter Title"). When the next occurrence of the h1 style appears on another page, the heading changes to display that text (e.g., "My Second Chapter Title"), and so on. </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareVariablesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Steps for Using Running Head Variables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for using running head variables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you want to incorporate Running Head variables into your output, use the following steps.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Add Variable Set</span> When you do this, make sure to select the Running HF template. See <MadCap:xref href="Adding_Variable_Sets_to_Projects.htm">Adding Variable Sets to Projects</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Insert Running Head Variables</span> You can insert these variables into headers or footers within page layout frames or print master pages. See <MadCap:xref href="../../Page_Layouts/Frames/Inserting_Running_Head_Variables_into_Frames.htm">Inserting Running Head Variables into Frames</MadCap:xref> or <MadCap:xref href="../../Output/Printed_Output/More_About_Printed_Output/Inserting_Running_Head_Variables_Into_Master_Pages.htm">Inserting Running Head Variables Into Master Pages</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">An alternative to Running Head variables, and perhaps an easier one, is to use Heading variables. See <MadCap:xref href="About_Heading_Variables.htm" >About Heading Variables</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Variables" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

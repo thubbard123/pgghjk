@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="n;b;s;reimport;(.css;Reimport;flsfs;SearchFilterSet;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;flglo;VariableName;N;M;m;h;hh;.tif" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="2905" MadCap:lastWidth="722" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareImages.flmsp');">
+    <head><title></title>
+        <meta name="description" content="To create a single-source image in MadCap Flare, apply different property settings to the same image to change its appearance in print/online outputs." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="Pictures" />
+            <MadCap:keyword term="Images:single-sourcing;Single-sourcing:images;MadCap Capture:single-sourcing images" />
+            <MadCap:concept term="FilterPictures" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />Creating Single-Source Images</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/ImagesAndCapture/SingleSourceImagesSummary.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ImagesAndCapture/SingleSourceImageExample.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a single-source image</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This requires a combination of tasks in MadCap Capture, followed by tasks in Flare.</p>
+                <p class="Subheading">madcap capture tasks</p>
+                <ol>
+                    <li>Capture the image. (You also have the option of initiating this step from Flare.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide"> See <MadCap:xref href="Inserting_Screen_Captures.htm">"Inserting Screen Capture Images" on page 1</MadCap:xref>.</MadCap:conditionalText>)</li>
+                    <li>In the Capture Editor, double-click on the image. The Image Properties dialog opens.</li>
+                    <li>
+                        <p>Do one of the following, depending on your version of Capture:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Capture 7 or Newer</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Select the <span class="Emphasis">Format</span> tab.</li>
+                                    <li>From the Medium drop-down, select the appropriate medium found in the Flare project.</li>
+                                    <li>In the other fields on the tab, enter the appropriate settings for the image when it will be viewed in output that is associated with the selected medium. For more details about these settings, see Capture's online Help.</li>
+                                    <li>Repeat the previous two steps for each relevant medium.</li>
+                                </ol>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteFlarePrintFormatTab.flsnp" />
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only browsers that support advanced CSS3 will render the responsive media query properties that are set in Capture within the Format tab.  If your browser does not support advanced CSS3, the image will display without the properties applied.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareImagesGuide,FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Capture 6 or Older</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>Select the <span class="Emphasis">Format</span> tab.</li>
+                                    <li>Enter the appropriate settings for the image when it will be used in online outputs.</li>
+                                    <li>Select the <span class="Emphasis">Flare Print Format</span> tab.</li>
+                                    <li>Enter the appropriate settings for the image when it will be used in print-based outputs.</li>
+                                </ol>
+                                <p>For more details about these settings, see Capture's online Help.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Save the changes to the image.</li>
+                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide" />
+                <p class="Subheading">madcap flare tasks</p>
+                <ol>
+                    <li value="7">After completing the MadCap Capture tasks above, insert the image into the appropriate topic(s).</li>
+                    <li>Make sure you develop targets for your different outputs.</li>
+                    <li>When you are finished with your project, build the targets.</li>
+                    <li>View the output for the targets. Notice that the image uses the appropriate settings. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImagesGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you click on an image file in the user interface (e.g., Content Explorer or File List window pane), its resolution and dimensions are displayed at the bottom. If you have set the online or print DPI for an image using MadCap Capture, these values are also shown.</p>
+                    <p>
+                        <img src="../Resources/Images/image_res_dimensions2.png" alt="" title="" class="MaxWidth100Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Pictures" />
+        </p>
+    </body>
+</html>

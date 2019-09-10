@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="640" MadCap:lastWidth="1169">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Subheading">Internal error: surrogate pair is invalid</p>
+        <p>When attempting to build a web target, Flare displays the following error message:</p>
+        <p class="Bold">Internal error: The surrogate pair (0xDBC0, OxDBC0) is invlaid. A high surrogate character (0xD800 - 0xDBFF) must always be paired with a low surrogate character (0xDC00 - 0xDFFF)</p>
+        <p class="Subheading">Cause</p>
+        <p>Byte Order Mark (BOM) is required for certain characters to be read. The error occurs because the registry has not turned on the BOM for the compiler when the project is being built.</p>
+        <p class="Subheading">Solution</p>
+        <p>Turn on BOM using the Options dialog. This will enable BOM in your registry.</p>
+        <ol>
+            <li>Select <span class="Emphasis">File&gt;Options</span>. The Options dialog opens.</li>
+            <li>Select the <span class="Emphasis">Build</span> tab.</li>
+            <li>
+                <p>Click <span class="Emphasis">Enable byte order mark</span> to add a check mark.</p>
+                <p>
+                    <img src="../../Images/enable_bom.png" alt="" title="" class="MaxWidth100Percent">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

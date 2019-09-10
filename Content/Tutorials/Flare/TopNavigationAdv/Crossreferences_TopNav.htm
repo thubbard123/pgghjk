@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="3085" MadCap:lastWidth="985" class="" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet3] exclude[Snippets.Snippet1 or Snippets.Snippet10 or Snippets.Snippet2 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTopNav.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/TopNav.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Top Navigation" />
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:keyword term="Cross-references;Linking:cross-references" />
+            <MadCap:concept term="FilterCrossReferences" />Cross-References</h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/HDYDT/hdydt_crossref_summary.flsnp" /> You can see a sample cross-reference by opening the Links topic in the template.</p>
+        <p>In the Top Navigation Advanced template, we wanted links from one topic to another in the online output to look like this:</p>
+        <p>
+            <img src="../../../Resources/Images/hdydt_cross_references2.png" alt="" title="" class="MaxWidth100Percent">
+            </img>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/hdydt_cross_references3.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a cross-Reference Format</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open).</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterLinkStylesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">MadCap|xref</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/top_nav_tutorial_crossref1.png" alt="" title="" class="MaxWidth100Percent" /></p><MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/NoteTopNavTwoStylesheetsModifiedMainStyles.flsnp" /></li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, scroll down in the list of properties and set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">2D8DCC</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-weight </span>Select <span class="Emphasis">bold</span>.</li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">mc-format </span>Enter<span class="Emphasis"> {para}</span>.</p>
+                                                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/NoteTopNavXrefFormatsLikedPara.flsnp" />
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">text-decoration </span>Select <span class="Emphasis">underline</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Now you need to tell Flare what to do when someone hovers over the cross-reference. On the left side of the Stylesheet Editor, expand the <span class="Emphasis">MadCap|xref</span> style. Then under that, expand <span class="Emphasis">(Pseudo Classes)</span> and select <span class="Emphasis">hover</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/top_nav_tutorial_crossref2.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the default medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|xref</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#2D8DCC;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">font-weight: </span><span class="StyleValue">bold;</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">mc-format: </span><span class="StyleValue">'{para}';</span>
+                                        </p>
+                                        <p class="TypedEntry"><span class="StyleProperty">text-decoration: </span><span class="StyleValue">underline;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">MadCap|xref:hover</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">color: </span><span class="StyleValue">#BED230;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/NoteTopNavXrefFormatsLikedPara.flsnp" />
+                                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/NoteTopNavTwoStylesheetsModifiedMainStyles.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>Whenever you insert a cross-reference, select the <span class="Emphasis">MadCap:xref</span> style. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Nav_Links/Cross_References/Inserting_Cross_References.htm">Inserting Cross-References</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create classes of the MadCap:xref style. We just happened to use the parent MadCap:xref style in this template.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about cross-references and editing them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Nav_Links/Cross_References/About_Cross_References.htm">About Cross-References</MadCap:xref> and <MadCap:xref href="../../../Nav_Links/Cross_References/Editing_Cross_Reference_Style_Formats.htm">Editing Cross-Reference Style Formats</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/ConversionToTopNavLastWhatsNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

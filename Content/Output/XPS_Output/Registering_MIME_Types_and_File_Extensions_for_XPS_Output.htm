@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1093" MadCap:lastWidth="876" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="On the server running IIS, register the MIME&#160;types and file extensions to give users the ability to download XPS document generated with MadCap Flare. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:concept term="FilterXPS" />
+            <MadCap:keyword term="Print-based output:XPS;Microsoft XPS;Output:XPS;MIME type" />Registering MIME Types and File Extensions for XPS Output</h1>
+        <p>If you want users to download an XPS document from a server (e.g., from a website), you need to enable the server to do this by registering the MIME types and file extensions.</p>
+        <p>The following steps pertain to a server running <MadCap:keyword term="Microsoft Internet Information Services." />Microsoft Internet Information Services (IIS). You should provide this information to the individual(s) responsible for software on your company's server. Exact steps may vary depending on the operating system.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to register a mime type and file extensions for xps output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                    <li>Make sure that Microsoft IIS is installed on the server. If it is not, use the following steps.<ol class="LowerAlpha"><li>Double-click <span class="Emphasis">Add or Remove Programs</span>. The Add or Remove Programs window opens.</li><li>Click <span class="Emphasis">Add/Remove Windows Components</span>. The Windows Components Wizard opens.</li><li>Click the check box next to <span class="Emphasis">Internet Information Services (IIS)</span> to add a check mark.</li><li>Click <span class="Emphasis">Next</span>.</li><li>Click <span class="Emphasis">Finish</span>. </li></ol></li>
+                    <li>In the Control Panel, double-click <span class="Emphasis">Administrative Tools</span>. The Administrative Tools dialog opens.</li>
+                    <li> Double-click <span class="Emphasis">Internet Information Services</span>. The Internet Information Services dialog opens.</li>
+                    <li>Expand the <span class="Emphasis">IIS tree</span> until you find the Default Web Site folder. On some servers, you might define the MIME types at the machine node (local computer) in IIS, not the Default Web Site. </li>
+                    <li>Right-click the <span class="Emphasis">Default Web Site</span> folder. </li>
+                    <li>Select <span class="Emphasis">Properties</span>. The Default Web Site Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">HTTP Headers</span> tab. </li>
+                    <li>In the <span class="Emphasis">MIME Map</span> section, click <span class="Emphasis">File Types</span> or <span class="Emphasis">MIME Types</span>. </li>
+                    <li>Click <span class="Emphasis">New Type</span> or <span class="Emphasis">New</span>.</li>
+                    <li>In the <span class="Emphasis">Associated extension</span> or <span class="Emphasis">Extension</span> field, type <span class="TypedEntry">.xps</span>.</li>
+                    <li>In the <span class="Emphasis">Content Type (MIME)</span> or <span class="Emphasis">MIME Type</span> field, enter <span class="TypedEntry">application/vnd.ms-xpsdocument</span>.</li>
+                    <li>Click <span class="Emphasis">OK</span> until you exit from all open dialogs.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information see this article: </p>
+                    <p><a href="http://msdn.microsoft.com/en-us/library/ms752346.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/ms752346.aspx</a>
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="6" MadCap:lastHeight="3323" MadCap:lastWidth="1179">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>The most important property for this feature is "position" with a value of "absolute." As already mentioned, this property removes the element from the main flow of the document content. If you are using a style to control absolute positioning, you can set this property in your stylesheet.</p>
+        <p>
+            <img src="../../Images/absolute_positioning8.png" alt="" title="" class="MaxWidth100Percent">
+            </img>
+        </p>
+        <p>In conjunction with the absolute position setting, the z-index property is used to control the stacking order of elements. When you use absolute positioning, you will find that there are three primary ways that absolutely positioned elements are displayed with the other content: Square, Behind Text, and In Front of Text.</p>
+        <p>If you are using a stylesheet, you can set the z-index property in the Positioning property group.</p>
+        <p>If you are editing a topic locally, you can right-click on the element (in the case of objects such as images or QR codes) or right-click on the structure bar (in the case of paragraphs, lists, and other content), and from the context menu select <span class="Emphasis">Text Wrap</span>. Then from the submenu, select one of the three options: <span class="Emphasis">Square</span>, <span class="Emphasis">Behind Text</span>, or <span class="Emphasis">In Front of Text</span>. After you select an option, the absolute and z-index settings are automatically placed on the element locally. </p>
+        <p>
+            <img src="../../Images/absolute_positioning25.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">Square </span>Wraps text around the absolutely positioned element on any or all sides.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning9.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <p>By default, this effect uses a z-index of 0.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning10.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can select this option when you are working in either Web Layout mode or Print Layout mode in the XML Editor. However, online output <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Contributor">generated from Flare </MadCap:conditionalText>does not support content wrapping all around the element. Therefore, when you select this option in Web Layout mode, it actually floats the element to the left of content. And that is how it is displayed in the online output <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Contributor">generated from Flare</MadCap:conditionalText>. So if you are generating both print and online output from the same topic where you've used this feature, the PDF or XPS output <MadCap:conditionalText MadCap:conditions="Products.Analyzer,Products.Contributor">generated from Flare </MadCap:conditionalText>will display the element with content wrapping all around it, while the same topic in online output will display the element on the left side of content.</p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Behind Text </span>Places the absolutely positioned element behind text.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning13.png" alt="" title="" class="MaxWidth65Percent" />
+                </p>
+                <p>By default, this effect uses a z-index of -1.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning11.png" alt="" title="" class="MaxWidth65Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareQRCodesGuide,FlareGuides.FlareImagesGuide" />
+                <p>The tricky thing about this setting is that you might need a way to select the object, but it's behind text. You can try hovering the mouse over the object until the cursor changes to an arrow, then click it. But perhaps an easier method is to triple click on the content where the absolutely positioned object exists. This selects that block of content. Then click on the object twice slowly to select it.</p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWhatsNewGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">In Front of Text </span>Places the absolutely positioned element in front of text.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning14.png" alt="" title="" class="MaxWidth65Percent" />
+                </p>
+                <p>By default, this effect uses a z-index of 1.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning12.png" alt="" title="" class="MaxWidth60Percent" />
+                </p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+        <p>In addition, you might have situations where absolutely positioned elements overlap. You can adjust the z-index values to determine which element appears on top, in the middle, and on the bottom. A simple way to think about the z-index is that the higher number a style has on the z-index, the closer to the top it will appear in the order. </p>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>Let's say you have four different images, and you're using the "In Front of Text" text wrap option on each of them. Therefore, each one has a z-index of 1 by default. However, because they are overlapping, the one that appears first in the code (Washington) is in back, and the one that appears last in the code (Roosevelt) appears on top.</p>
+            <p>
+                <img src="../../Images/absolute_positioning15.png" alt="" title="" class="MaxWidth80Percent" />
+            </p>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+            <p>Suppose you want Washington to be on top, then Jefferson, then Lincoln, and finally Roosevelt on the bottom. To do this, you could either change the order that they occur in the code (Roosevelt first, followed in order by Lincoln, Jefferson, and Washington). Alternatively, you can change the z-index value in the HTML code (or in custom style classes) for the images (Washington=4, Jefferson=3, Lincoln=2, Roosevelt=1). This changes the order in which the images are stacked on one another.</p>
+            <p>
+                <img src="../../Images/absolute_positioning16.png" alt="" title="" class="MaxWidth80Percent" />
+            </p>
+        </div>
+        <p>However, there are other facets to the z-index that can make things a bit more complicated than that. For more information about this property, see <a href="http://www.w3.org/TR/CSS2/visuren.html#propdef-z-index" target="_blank">http://www.w3.org/TR/CSS2/visuren.html#propdef-z-index</a>.</p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,FlareGuides.FlareQRCodesGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareImagesGuide" />
+        <p>You might have noticed that there is a fourth option available from the Text Wrap submenu when working locally in a topic.</p>
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel">In Line with Text </span>This integrates the element into the text so that it becomes part of the line where it was inserted. If the element is taller than the line of text, this results in extra space between that line of text and the one above it. This option is actually the default method used when inserting an image. It does not have absolute positioning or a specific z-index setting applied to it. The option is included in the context submenu simply so that you can change from one of the absolute position options back to the default inline setting.</p>
+                <p>
+                    <img src="../../Images/absolute_positioning26.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>

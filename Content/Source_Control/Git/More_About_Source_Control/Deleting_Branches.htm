@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Lingo" MadCap:lastBlockDepth="12" MadCap:lastHeight="2350" MadCap:lastWidth="676" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:branch;Branch:delete" />
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />Deleting Branches<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/DeletingBranchesIntro.flsnp" />
+        </p>
+        <p>You can delete any branch except the current branch. If you need to delete the current branch, you will have to switch to a different branch first. See <MadCap:xref href="Selecting_Branches.htm">Switching Branches</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Delete Branches—<MadCap:keyword term="Branch Management dialog" />Branch Management Dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Branch</span>. </p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Branch</span>.</li>
+                        </ul>
+                        <p>The Branch Management dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">All branches</span> list, select the branch you want to delete. You can delete any branch except the current branch. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Your current branch is shown at the bottom of the dialog.</p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>
+                        <p>Click <span class="Emphasis">Delete</span>. </p>
+                        <p>
+                            <img src="../../../Resources/Images/branch_delete_dialog.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A dialog asks if you want to delete the branch and all of the commits on the branch. Click <span class="Emphasis">Yes</span>. The branch is removed from the list.</p>
+                        <p>
+                            <img src="../../../Resources/Images/branch_delete_dialog2.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Delete Branches—Source Control Explorer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li MadCap:conditions="Products.Flare">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li MadCap:conditions="Products.Lingo">
+                        <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Pane</span> section select <span class="Emphasis">Source Control Explorer</span>. The Source Control Explorer opens.</li>
+                    <li>
+                        <p>From the drop-down or the Home pane, select <span class="Emphasis">Branches</span>.</p>
+                        <p>The <MadCap:keyword term="Source Control Explorer:Branches pane" />Branches pane opens. In the pane, you can see your current branch, as well as lists of your published and unpublished branches.</p>
+                    </li>
+                    <li>
+                        <p>Select the branch you want to delete. You can delete any branch except the current branch.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Delete Branch</span>. </p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_delete_explorer.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_delete_explorer_flare.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                    <li>
+                        <p>A dialog asks if you want to delete the branch and all of the commits on the branch. Click <span class="Emphasis">Yes</span>. The branch is removed from the list.</p>
+                        <p MadCap:conditions="Products.Lingo">
+                            <img src="../../../Resources/Images/branch_delete_explorer2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p MadCap:conditions="Products.Flare">
+                            <img src="../../../Resources/Images/branch_delete_explorer2_flare.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

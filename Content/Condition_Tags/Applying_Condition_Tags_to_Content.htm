@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" p2:check_list="Added To TOC,See Also keywords,Images,Browse Sequences,Ran Smart Index" xmlns:p2="http://www.madcapsoftware.com/schemas/MadCap.xsd" MadCap:ignoredWords="dialog...;Help.);target...;h;hh;.tif;(.css;HF;flvar;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;VariableName;XML" MadCap:lastBlockDepth="15" MadCap:lastHeight="17854" MadCap:lastWidth="798" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Contributor" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareConditionTags.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Learn how to apply condition tags to different content elements. This lets you single-source the content that you create in multiple target outputs. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterConditionTags" />
+            <MadCap:keyword term="Conditions:content" />
+            <MadCap:concept term="FilterSingleSourcePublishing" />
+            <MadCap:concept term="Conditions" />Applying Conditions to Content</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Contributor/SupportedInReviewContributionWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="Products.Flare,Products.Analyzer">After you create condition tags, you can apply them to the appropriate content in your project. </p>
+        <p MadCap:conditions="Products.Contributor">If a Flare author has sent you a topic or contribution template that contains condition tags, you can apply those condition tags to the appropriate content in your document. </p>
+        <p>You can apply condition tags to many different elements<MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer"> in your project</MadCap:conditionalText>, including <MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">files that make up the project (e.g., topic, image, stylesheet, glossary, </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Flare"><MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">skin, </MadCap:conditionalText></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Flare,Products.Analyzer">target files), </MadCap:conditionalText>full paragraphs, text within paragraphs, table rows and columns<MadCap:conditionalText MadCap:conditions="Products.Flare">, table of contents (TOC) entries</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.Flare">, glossary terms</MadCap:conditionalText>, and index keyword markers. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">Click any of the links below to see steps for applying a condition tag to a particular element. </MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:paragraphs" />how to apply condition tags to selected <span class="EmphasisItalicBold">text within a paragraph</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Highlight the text to which you want to apply the condition tag. </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the <span class="Emphasis">Attributes</span> section, select <span class="Emphasis">Conditions</span>. </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut </span>Press <span class="Emphasis">CTRL+SHIFT+C</span>.</li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>Right-click on the text and from the context menu select <span class="Emphasis">Conditions</span>.</li>
+                            <li MadCap:conditions="Products.Flare">
+                                <p><span class="SetOffFirstLevel">Drag-and-Drop </span>In the Project Organizer, open the <span class="Emphasis">Conditional Text</span> folder and expand the appropriate condition tag set. Click on the condition tag and drag it to the selected text in the XML Editor. (You can apply only one condition at a time to text using this method. However, you do not need to continue with any of the other steps below.)</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead class="OnlineOnly">
+                                        <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/DragConditionsExampleSelectedText.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ul>
+                        <p>The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</p>
+                    </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the text, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <p>There are a couple of ways to tell whether a selection of text has one or more condition tags applied to it. In the bottom local toolbar of the XML Editor, click either of the following two toggle buttons to turn the tag indicators on and off.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <table class="TableStyle-BasicAlternateRows" style="margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0">
+                                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">
+                                                    <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Click this button at the bottom of the XML Editor to show or hide shading of the text itself. For example, if your condition tag has blue associated with it and you click this button to show the indicator, the text becomes shaded with a lighter version of blue. If more than one condition tag is applied to the text, the shading appears in a pattern that shows all of the applied condition tag colors.</p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tags_applied_background_shading.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <img src="../Resources/Images/toggle_show_spans_btn.png" />
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p>You can turn off the condition toggle button mentioned above. Then make sure this button (located at the bottom of the XML Editor) is enabled to show or hide the span bar above the topic. When the cursor is in the paragraph containing the applied tag, the span bar is shaded with a lighter version of the tag color. This is a good feature to use if you find the shading of the actual text distracting. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tags_applied_span_bar.png" class="MaxWidth100Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply condition tags to an <span class="EmphasisItalicBold">entire block of content</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Conditions:content;Content:condition tags" />Topics usually contain several blocks of XML content. For example, there are HTML blocks, body blocks, paragraph blocks, table blocks, and heading blocks. You can apply a condition tag to any block of content in your topics. </p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Click on the text to which you want to apply the condition tag. (Do not highlight it.)</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Structure Bars</span>
+                                <ol class="LowerAlpha">
+                                    <li>Make sure the structure bars are visible on the left side of the XML Editor. If they are not, click <img src="../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the local toolbar to show them. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></li>
+                                    <li>
+                                        <p>Right-click on the tag bar for the block of content to which you want to apply the condition tag.</p>
+                                        <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                            <img src="../Resources/Images/condition_tag_apply_select_block_bar.png" class="MaxWidth80Percent" />
+                                        </p>
+                                    </li>
+                                    <li>In the context menu, select <span class="Emphasis">Conditions</span>.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the <span class="Emphasis">Attributes</span> section, select <span class="Emphasis">Conditions</span>. </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+C</span>.</li>
+                            <li><span class="SetOffFirstLevel">Right-Click</span> Right-click on the text and from the context menu select <span class="Emphasis">Conditions</span>.</li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Drag-and-Drop/Structure Bars </span> Click on the condition tag and drag it to the selected text in the XML Editor. <ol class="LowerAlpha"><li>Make sure the structure bars are visible on the left side of the XML Editor. If they are not, click <img src="../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the local toolbar to show them. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></li><li>In the Project Organizer, open the <span class="Emphasis">Conditional Text</span> folder and expand the appropriate condition tag set.</li><li>Click on the condition tag and drag it to the structure bar representing that paragraph in the XML Editor. (You can apply only one condition at a time to text using this method. However, you do not need to continue with any of the other steps below.)</li></ol><MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" /><MadCap:dropDown class="SecondLevel"><MadCap:dropDownHead class="OnlineOnly"><MadCap:dropDownHotspot>example</MadCap:dropDownHotspot></MadCap:dropDownHead><MadCap:dropDownBody class="Final"><MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/DragConditionsExampleStructureBars.flsnp" /></MadCap:dropDownBody></MadCap:dropDown></li>
+                        </ul>
+                        <p>The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</p>
+                    </li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the block of content, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <p>There are two ways to tell whether a block of content has condition tags applied to it. In the bottom local toolbar of the XML Editor, click one of the following toggle buttons to turn the tag indicators on and off:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <table class="TableStyle-BasicAlternateRows" style="mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+                                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">
+                                                    <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Click this button at the bottom of the XML Editor to show or hide shading of the block of content itself. For example, if your condition tag has blue associated with it and you click this button to show the indicator, the block of content becomes shaded with a lighter version of blue. If more than one condition tag is applied to the block of content, the shading appears in a pattern that shows all of the applied condition tag colors.</p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tags_applied_to_block_background_shading.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <img src="../Resources/Images/toggle_show_blocks_btn.png" />
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p class="TableText">You can turn off the condition toggle button mentioned above. Then make sure this button (located at the bottom of the XML Editor) is enabled to show or hide the tag block bar to the left of the topic. The tag bar is shaded with a lighter version of the tag color. This is a good feature to use if you find the shading of the actual content distracting.</p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tags_applied_to_block_bar.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply condition tags to <span class="EmphasisItalicBold">Content or project files</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Conditions:files;Files:condition tags;Conditions:topics;Topics:condition tags;Conditions:image files;Conditions:stylesheets;Styles:stylesheets;Conditions:snippets;Snippets:condition tags;Conditions:page layouts;Page layouts:condition tags" />You can apply conditions to entire files in your project. This includes any file contained in the Project Organizer (such as glossary or target files) or the Content Explorer (such as topic, image, stylesheet, snippet, and page layout files). <MadCap:conditionalText MadCap:conditions="General.Future"><MadCap:annotation MadCap:createDate="2016-07-29T12:00:55.3444053-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Conditions—Add File Dialog" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T12:26:53.7030467-07:00">You </MadCap:annotation>can apply condition tags when you create an element (i.e., in the Add File Dialog), or after the element has been created. </MadCap:conditionalText></p>
+                <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.Future">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:annotation MadCap:createDate="2016-07-29T12:26:41.4915967-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Conditions—Add File Dialog" MadCap:editor="KSchneider" MadCap:editDate="2016-07-29T12:26:50.5620038-07:00">apply </MadCap:annotation>condition tags to Newly Created Files</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Create a new file (e.g., topic, alias file, image). The Add File Dialog opens. (For more information about how to add different types of files, see <MadCap:xref href="../Interface/UI_Elements/Add_File_Dialog.htm">Add File Dialog</MadCap:xref>.)</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/ConditionalText/ExpandAttributesSection.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/ConditionalText/SelectRelevantConditionTags.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetBlock src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>apply condition tags to one file at a time</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open the Project Organizer or Content Explorer.</li>
+                            <li>Locate the file to which you want to apply a condition tag. In the Project Organizer, files are stored in various folders. In the Content Explorer, topic files are located by default at the top level (unless you place them in subfolders that you’ve created); other files are traditionally located in subfolders within the Resources folder, although they can be stored in custom folders as well. For example, snippet files are usually located in a subfolder called "Snippets."</li>
+                            <li>Right-click the file and from the context menu select           <span class="Emphasis">Properties</span>. The Properties dialog for the file opens.</li>
+                            <li>Click the <span class="Emphasis">Conditional Text</span> tab. The first condition tag set is selected and the associated condition tags are shown on the right.</li>
+                            <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                            <li>For each condition tag that you want to apply to the file, click the check box next to the tag. A check mark appears in the box.</li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The square next to the file name in the Project Organizer or Content Explorer now takes on the color of the condition tag. If you applied more than one condition tag to the file, each color is shown. (If you do not see squares, click <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" class="ReduceButtonSize" /> in the local toolbar.)</p>
+                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                    <img src="../Resources/Images/condition_tag_applied_to_file.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Condition tags: File List" />apply condition tags to multiple files at once using the file list window pane (content files only)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Ribbon </span>
+                                        <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" /> In the <span class="Emphasis">Explorer</span> section select <span class="Emphasis">View&gt;File List</span>. </li>
+                                    <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+J</span>.</li>
+                                </ul>
+                                <p>The File List window pane opens.</p>
+                            </li>
+                            <li>(Optional) From the <span class="Emphasis">Filter</span> list in the window pane, select the type of files to view.</li>
+                            <li>Select the files to which you want to apply condition tags. <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li>
+                            <li>In the local toolbar, click <img src="../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog opens.</li>
+                            <li>Click the <span class="Emphasis">Conditional Text</span> tab. The first condition tag set is selected and the associated condition tags are shown on the right.</li>
+                            <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                            <li>For each condition tag that you want to apply to the files, click the check box next to the tag. A check mark appears in the box.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The squares next to the file names in the File List window pane now take on the color of the condition tag. If you applied more than one condition tag to the file, each color is shown.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>apply condition tags to multiple project or content files at once using the split view feature</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol type="1">
+                            <li>Open the Project Organizer or Content Explorer.</li>
+                            <li>Click the <span class="Emphasis">Show Files</span> button <img src="../Resources/Images/show_files_btn.png" class="ReduceButtonSize" />. The Project Organizer or Content Explorer splits into two halves (left and right).</li>
+                            <li>On the left side of the split Project Organizer or Content Explorer, select the folder containing the files to which you want to apply condition tags.</li>
+                            <li>On the right side of the split Project Organizer or Content Explorer, select the files. <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/YouCanHoldShiftCtrlKeys.flsnp" /></li>
+                            <li>In the toolbar click <img src="../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog opens.</li>
+                            <li>Click the <span class="Emphasis">Conditional Text</span> tab. The first condition tag set is selected and the associated condition tags are shown on the right.</li>
+                            <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                            <li>For each condition tag that you want to apply to the files, click the check box next to the tag. A check mark appears in the box.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The square next to the file name in the Project Organizer or Content Explorer now takes on the color of the condition tag. If you applied more than one condition tag to the file, each color is shown in the square. (If you do not see squares, click <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" class="ReduceButtonSize" /> in the local toolbar.)</li>
+                            <li>To hide the split view, click the <span class="Emphasis">Show Files</span> button <img src="../Resources/Images/show_files_btn.png" class="ReduceButtonSize" /> again.</li>
+                            <li>
+                                <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Notice that folders also have blank squares next to them. This means that you can apply condition tags to everything contained in any folder by following the same steps above.</p>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can include and exclude content files (e.g., topics, images) in your output through the use of conditions. </p>
+                            <p>However, you cannot do this for project files (e.g., TOCs, skins). Applying a condition to a project file is used only for Global Project Linking (see <MadCap:xref href="../Global_Project_Linking/About_Global_Project_Linking.htm">About Global Project Linking</MadCap:xref>).</p>
+                            <p>Although applying a condition to a glossary file itself does not affect the output, you can apply conditions to terms within a glossary. Applying conditions to glossary terms will affect the output. See <MadCap:xref href="#How">How to Apply Condition Tags to Glossary Terms</MadCap:xref>.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:bookmarks;Bookmarks:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">bookmark</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p>Right-click on the bookmark.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you cannot see the bookmark, make sure the markers are shown in the topic. <MadCap:snippetText src="../Resources/Snippets/UIElements/ToTurnMarkersOn.flsnp" /></p>
+                    </li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the bookmark, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> A square with the color of the condition tag is displayed next to the bookmark.</p>
+                        <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                            <img src="../Resources/Images/condition_tags_applied_to_bookmark.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:browse sequence entries;Browse sequences:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">browse sequence entry </span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can include or exclude a specific browse sequence entry (book, topic, external link) from a target.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Expand the <span class="Emphasis">Advanced</span> folder. </li>
+                    <li>Double-click the browse sequence that you want to open. The Browse Sequence Editor opens to the right.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>drag and drop</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/DragDropConditionsTOCBrowseSeq.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>properties dialog</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ApplyConditionsTOCBrowseSeq.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+                        <p>The square next to the browse sequence entry in the Browse Sequence Editor now takes on the color of the condition tag. If you applied more than one condition tag to the browse sequence entry, each color is shown in the square.</p>
+                        <p>If you cannot see the squares next to the browse sequence entries, click <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" class="ReduceButtonSize" /> in the local toolbar to show the condition indicators. </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="How"></a>How to Apply Condition Tags to <span class="EmphasisItalicBold">Glossary Terms</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can apply conditions to terms in the Glossary Editor.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Expand the <span class="Emphasis">Glossaries</span> folder.</li>
+                    <li>Double-click the glossary that you want to open. The Glossary Editor opens to the right.</li>
+                    <li>Select the term. If you want to apply the same condition(s) to multiple terms, hold down your <span class="Emphasis">SHIFT</span> or <span class="Emphasis">CTRL</span> key and select the terms.</li>
+                    <li>In the local toolbar click <img src="../Resources/Images/properties_btn1.png" class="ReduceButtonSize" />. The Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Conditional Text</span> tab. The first condition tag set selected and the associated condition tags are shown on the right.</li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the entry, click the blank square next to the tag. A check mark appears in the square.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p> The Condition column indicates whether a term has conditions applied to it.</p>
+                        <p>
+                            <img src="../Resources/Images/glossary_conditions.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.Contributor,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:images;Images:condition tags" />how to apply condition tags to an <span class="EmphasisItalicBold">image</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click the image.</li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the image, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> A square with the color of the condition tag is displayed next to the image.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.Contributor,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:images;Images:condition tags" />
+                    <MadCap:keyword term="Images:image maps;Linking:image hyperlinks" />how to apply condition tags to an <span class="EmphasisItalicBold">image map</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click the image containing the image map.</li>
+                    <li>In the context menu, select <span class="Emphasis">Image Map</span>.</li>
+                    <li>Click on an object on the image (e.g., rectangle) being used as a link. In the local toolbar, click <img src="../Resources/Images/conditions_btn2.png" class="ReduceButtonSize" alt="" />. The Condition Tags dialog opens. (You can also open the Conditions dialog by selecting <span class="Emphasis">Edit&gt;Conditions</span> or using the <span class="Emphasis">CTRL+SHIFT+C</span> shortcut on your keyboard.)</li>
+                    <li>If you want to see condition tags for a particular condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to that section of the image, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> A square with the color of the condition tag is displayed on that section of the image.</li>
+                    <li>Click <span class="Emphasis">OK</span> in the Image Map Editor.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:index entries;Indexes:condition tags" />how to apply condition tags to an <span class="EmphasisItalicBold">index keyword marker</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can include or exclude from a target a specific index keyword marker that you have previously added.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>
+                        <p>In the XML Editor, right-click on the index keyword marker.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not see the marker, click the <span class="Emphasis">Show tags</span> drop-down arrow <img src="../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> and select <span class="Emphasis">Show Markers</span>.</p>
+                    </li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the index keyword marker, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> A square with the color of the condition tag now displays next to the index marker in the topic. </p>
+                        <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                            <img src="../Resources/Images/condition_tags_applied_index_entry.png" class="MaxWidth90Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.Contributor,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:links;Linking:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">link</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Make sure the span bars are visible at the top of the XML Editor. If they are not, click <img src="../Resources/Images/toggle_show_spans_btn.png" class="ReduceButtonSize" /> at the bottom of the local toolbar to show them<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>)</MadCap:conditionalText>. </li>
+                    <li>
+                        <p>Right-click on the span bar above the topic that corresponds with the link. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you first click on the link in the topic, the corresponding span bar is highlighted above. For hypertext links, the span bar is labeled "a." For cross-references, the span bar is labeled "MadCap:xref."</p>
+                    </li>
+                    <li>In the menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the link, click the check box next to the tag. A check mark appears in the box.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+                <ol MadCap:continue="true">
+                    <li>In the <span class="Emphasis">Exclude Action</span> section, select one of the options.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Remove </span>Deletes the link text from the output.</li><li><p><span class="SetOffFirstLevel">Unbind </span>Removes the link from the content in the output, but leaves the text. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../Output/Printed_Output/More_About_Printed_Output/Applying_Condition_Tags_for_Printed_Output.htm#UsingTagsRemoveLink" target="" title="" alt="">Using Condition Tags to Unbind Hyperlinks</MadCap:xref>.</MadCap:conditionalText></p><div class="example"><p class="exampleHeadTextEmpty">example</p><p>Let's say you are creating both online and print-based output from your project. You might have some content where you have inserted hyperlinks, and you might want this content to be included in both the online and printed output. However, let's say that a particular hyperlink connects to another topic that you are not including in the print-based output that you are generating. When you build the online output, everything is fine. But when you generate the print-based output, an error is displayed in the log because it cannot find the topic referenced in the hyperlink. </p><p>The way to avoid seeing the error (and to avoid users experiencing a broken link when viewing the print-based document online) is to apply a condition tag (e.g., ScreenOnly) to the hyperlink and select the Unbind option. If you then exclude that condition tag from your print-based target, you will still see the hyperlink text in the print-based output, but the link will be removed. Therefore, you will no longer receive an error and the link will not be broken.</p></div></li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,FlareGuides.FlareConditionTagsGuide,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply condition tags to a <span class="EmphasisItalicBold">slideshow</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Make sure the structure bars are visible on the left side of the XML Editor. If they are not, click <img src="../Resources/Images/toggle_show_blocks_btn.png" class="ReduceButtonSize" /> at the bottom of the local toolbar to show them. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>Right-click on the tag bar for the slideshow to which you want to apply the condition tag. If you want to apply the tag to the entire slideshow, select the <span class="Emphasis">MadCap:slideshow</span> bar. If you want to apply the tag to a specific slide, select the <span class="Emphasis">Slide</span> bar.</p>
+                        <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                            <img src="../Resources/Images/condition_tag_apply_slideshow.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right.</li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the slideshow, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <p>There are two ways to tell whether a slideshow has condition tags applied to it. In the bottom local toolbar of the XML Editor, click one of the following toggle buttons to turn the tag indicators on and off:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Buttons</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <table class="TableStyle-BasicAlternateRows" style="mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+                                    <col style="width: 35px;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                                    <tbody>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                                <p class="TableText">
+                                                    <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                                <p class="TableText">Click this button at the bottom of the XML Editor to show or hide shading of the slideshow itself. For example, if your condition tag has blue associated with it and you click this button to show the indicator, the slideshow becomes shaded with a lighter version of blue. If more than one condition tag is applied to the slideshow, the shading appears in a pattern that shows all of the applied condition tag colors.</p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tag_apply_slideshow_background.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                                <img src="../Resources/Images/toggle_show_blocks_btn.png" />
+                                            </td>
+                                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                                <p class="TableText">You can turn off the condition toggle button mentioned above. Then make sure this button (located at the bottom of the XML Editor) is enabled to show or hide the tag block bar to the left of the topic. The tag bar is shaded with a lighter version of the tag color. This is a good feature to use if you find the shading of the actual content distracting.</p>
+                                                <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                                                    <img src="../Resources/Images/condition_tag_apply_slideshow_block_bar.png" class="MaxWidth90Percent" />
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.Contributor,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:snippets;Snippets:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">snippet</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click on the snippet.</li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the snippet, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The color of the condition tag is applied to the snippet.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p class="note" MadCap:conditions="Products.Flare" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Not only can you apply a condition tag to a snippet, but you can also create snippet conditions. <MadCap:snippetText src="../Resources/Snippets/Snippets/SnippetsSnipConditionsSummary.flsnp" /> See <MadCap:xref href="../Snippets/More_About_Snippets/Using_Snippet_Conditions.htm">Using Snippet Conditions</MadCap:xref>.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Snippets/SnippetConditionalIndicators.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareConditionTagsGuide,Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:TOC entries;Tables of contents:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">toc entry </span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can include or exclude a specific TOC entry (book, topic, external link) from a target.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Expand the <span class="Emphasis">TOCs</span> folder. </li>
+                    <li>Double-click  a TOC. The TOC Editor opens to the right. </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>drag and drop</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/DragDropConditionsTOCBrowseSeq.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>properties dialog</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ApplyConditionsTOCBrowseSeq.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+                        <p>The square next to the TOC entry in the TOC Editor now takes on the color of the condition tag. If you applied more than one condition tag to the TOC entry, each color is shown in the square.</p>
+                        <p>If you cannot see the squares next to the TOC entries, click <img src="../Resources/Images/hide_show_conditional_indicators_btn.png" class="ReduceButtonSize" /> at the bottom of the local toolbar to show the condition indicators. </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <MadCap:snippetBlock src="../Resources/Snippets/ConditionalText/ConditionOnTOCEntry.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Contributor,Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:variables;Variables:condition tags" />how to apply condition tags to a <span class="EmphasisItalicBold">variable</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Right-click on the variable.</li>
+                    <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                    <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                    <li>For each condition tag that you want to apply to the variable, click the check box next to the tag. A check mark appears in the box.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> A square with the color of the condition tag is displayed next to the variable.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you cannot see the colored box, make sure the markers are shown in the topic. <MadCap:snippetText src="../Resources/Snippets/UIElements/ToTurnMarkersOn.flsnp" /></p>
+                        <p MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareConditionTagsGuide">
+                            <img src="../Resources/Images/condition_tags_applied_to_variable.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareConditionTagsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="note" MadCap:conditions="General.OnlineLive">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <MadCap:snippetText src="../Resources/Snippets/ConditionalText/CanAlsoApplyConditionsToStyles.flsnp" /> See <MadCap:xref href="About_Condition_Tags.htm#Conditio2">Conditions on Styles</MadCap:xref>.</p>
+                    <p>Also see <MadCap:xref href="../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>, <MadCap:xref href="../Styles/Editing_Styles.htm">Editing Styles in a Regular Stylesheet</MadCap:xref>, and <MadCap:xref href="../Styles/Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>.</p>
+                </div>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <MadCap:snippetText src="../Resources/Snippets/Preview/PreviewTopicsSummary.flsnp" />  When you use the preview feature, you can select any target in your project. The topic will be previewed with the condition tag settings from that target. Therefore, you can quickly see what the topic looks like with certain condition tags included and others excluded. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Topics/More_About_Topics/Previewing_Topics.htm">Previewing Topics</MadCap:xref>.</MadCap:conditionalText></p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Although you have applied condition tags to content, any targets that you build will still contain all of your content (whether something has a condition tag applied to it not). To ensure that content with certain condition tags are excluded from your output, you need to associate condition tags with targets. See <MadCap:xref href="Associating_Condition_Tags_with_Targets.htm" target="" title="" alt="">Associating Condition Tags with Targets</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.AnalyzerOnlineNotWebHelp,Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Conditions" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

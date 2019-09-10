@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords=".bmp;.jpg;.jpeg;jpeg;.gif;.png.;png;.props;demos.asp.;contact.asp.;Taskbar;s;W;C;F;F1;F4;P;Y;Z;Tollfree;MadCap1;F11;F3;F7;NewWord;MadCap's;MyProfile;taskbar" MadCap:conditions="Products.Capture" MadCap:lastBlockDepth="10" MadCap:lastHeight="1234" MadCap:lastWidth="1007">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Capturing:time delay;Time delay;MadCap Capture:time delay" />Enabling the Time Delay Feature</h1>
+        <p>You can enable the time delay feature to be used when capturing images. With this feature, images are captured after the number of seconds that you specify. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you need to capture a floating tooltip in a software application. In other words, when you hover over a particular button in the application, a small popup displays the name of that button. The problem is that tooltips typically disappear when you press keys on your keyboard. So after you initiate the capture, the image shows the application window but not the tooltip. The solution to the problem is a time-delayed capture. Therefore, you enable the time delay feature (let's say you set it to 5 seconds) and initiate a screen capture. A countdown begins, counting down from 5 to 1. During that countdown, you can hover your mouse over the appropriate button to display the tooltip. When the countdown finishes, the screen capture is taken. The result is that the new image shows not only the application window, but the floating tooltip as well.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable the time delay feature from the ribbon or menu interface</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                    <ul class="FirstLevel">
+                        <li>
+                            <p><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectEditRibbon.flsnp" /> In the <span class="Emphasis">New Screen Capture Options</span> section, select the <span class="Emphasis">Time Delay</span> check box . When the box is checked, the feature is enabled. Select the box again to uncheck it and disable the feature. </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/UIElements/SwitchBetweenRibbonsMenusToolbars.flsnp" MadCap:conditions="General.OnlineLive" />
+                        </li>
+                        <li><span class="SetOffFirstLevel">Tool Strip </span>Select <span class="Emphasis">Capture&gt;Time Delay</span>. A check mark appears next to the menu option. Select this option again to disable the feature. </li>
+                    </ul>
+                    <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You cannot set the number of seconds that you want to wait for the image capture to take place when enabling the Time Delay feature using this method. You can set the number of seconds that you want to wait for the image capture to take place by using the Options dialog method. See below. </p>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureCreatingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable the time delay feature from the options dialog</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon</span> Select <span class="Emphasis">File&gt;Options</span>.</li>
+                            <li><span class="SetOffFirstLevel">Tool Strip </span>Select <span class="Emphasis">Tools&gt;Options</span>. </li>
+                        </ul>
+                        <p>The Options dialog opens.</p>
+                    </li>
+                    <li>Select the <span class="Emphasis">Capture</span> tab.</li>
+                    <li>Click <span class="Emphasis">Enable Time Delay</span>.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Seconds to Delay</span> field, enter the number of seconds that you want <MadCap:variable name="Other.Product" /> to wait before a capture takes place.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">After you initiate a capture, a countdown displays over the image you are capturing . When the countdown finishes, the capture takes place.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

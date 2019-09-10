@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="821" MadCap:lastWidth="888">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">System out of memory error</p>
+        <p>Flare displays the following error when building a project.</p>
+        <p class="Bold">Internal Error: Exception of type 'System.OutOfMemoryException' was thrown</p>
+        <p class="Subheading">Cause</p>
+        <p>This is caused because Flare has run out of allocated memory.</p>
+        <p class="Subheading">Solution</p>
+        <p>Do one of the following.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Save and close the project.</li>
+                    <li>Reopen the project and build it.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Save and close the project, then restart your computer. </li>
+                    <li>Open the project and build it.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 3</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul style="list-style-type: square;">
+                    <li>Consider dividing up your project into smaller projects.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 4</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Delete the Analyzer folder from the Flare project.This will remove the corrupted Analyzer database. Flare will then generate a new database the next time that you open the project.</p>
+                <p>To accomplish this, perform the following steps. </p>
+                <ol>
+                    <li>Close the project in Flare.</li>
+                    <li>Open the project folder in Windows Explorer.</li>
+                    <li>Navigate to the project's Analyzer folder and delete it.</li>
+                    <li>Open the project in again Flare and build it.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>solution 5</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Use the command line to build the project. For steps on how to build the project in this manner, see <MadCap:xref href="../../../Output/Building_Targets_Using_the_Command_Line.htm">Building Targets Using the Command Line</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

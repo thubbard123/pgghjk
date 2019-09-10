@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="21761" MadCap:lastWidth="863" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorials3Foldout.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/ProductFoldout3Fold.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Product Foldout" />
+            <MadCap:keyword term="Page layouts" />Creating Page Layouts</h1>
+        <p>Page layouts are used to configure the pages for print-based output and are especially important in this particular template because of its unique characteristics (e.g., multiple columns, images in the middle of columns, color and images that bleed off the page). This template comprises only two topics—one for the front of the product foldout and the other for the back of the foldout. Therefore two page layouts are required—one to be associated with each topic.</p>
+        <p>When you go through the following steps, you will see that two page layouts already exist in the project, and they're already completely edited. If you want, you can open these files and take a look around to see what you will be producing in the end. You can also build one of the targets in the project to see how these page layouts are incorporated into the output. </p>
+        <p>In the following sets of steps, we will create two new page layouts, replicating the look and substance of the existing page layouts.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Front Page Layout</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>front page layout</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The existing front page layout in the project is simply named "Front." We'll give our new page layout a slightly different name.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create a Page Layout File</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>In the Content Explorer, expand the <span class="Emphasis">Resources</span> folder, then expand the <span class="Emphasis">PageLayouts</span> folder. Notice the existing two page layouts (Back and Front).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_page_layout1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Right-click the <span class="Emphasis">PageLayouts</span> folder, and from the context menu select <span class="Emphasis">New&gt;Page Layout</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_page_layout2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Add File dialog opens.</p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Under the Factory Templates, select the <span class="Emphasis">Default</span> template, because it is quite simple and requires fewer changes than other templates.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_page_layout3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the <span class="Emphasis">File Name</span> field at the bottom of the dialog, type <span class="TypedEntry">Front2</span> as the name for the new page layout.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Click <span class="Emphasis">Add</span>. The page layout is added to the Content Explorer, and the Page Layout Editor opens to the right, displaying the page layout.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_page_layout4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Before we continue with the rest of the steps for editing the page layout, let's make one quick change in it.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Click the header frame (the rectangle) at the top of the page layout and press <span class="Emphasis">Delete</span> on your keyboard.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_add_page_layout5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about adding page layout files, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about adding page layout files, see <MadCap:xref href="../../../Page_Layouts/Adding_Page_Layouts.htm">Adding Page Layouts</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set page size and margins</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Now that we have created our first page layout, we will start making changes to it. To begin, we will adjust the page size and margins.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <ol>
+                            <li>
+                                <p>In the local toolbar of the Page Layout Editor, click <img src="../../../Resources/Images/page_properties_btn.png" class="ReduceButtonSize" /> (click the face of the button, not the down arrow).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_page_layout_size_margins1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Page Properties dialog opens.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">General</span> tab.</li>
+                            <li>Click the <span class="Emphasis">Page Size</span> drop-down and select <span class="Emphasis">(custom)</span>.</li>
+                            <li>In the <span class="Emphasis">Custom Width</span> field, enter <span class="TypedEntry">15</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <li>In the <span class="Emphasis">Custom Height</span> field, enter <span class="TypedEntry">5</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <li>Keep the <span class="Emphasis">Orientation</span> field set to <span class="Emphasis">Portrait</span>.</li>
+                            <li>
+                                <p>In all of the <span class="Emphasis">Margins</span> fields, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_page_layout_size_margins2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can set some value for the margins on your page if you want. However, in our template we chose to set them all to 0 and specify the margins on our CSS styles instead.</p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Because the view of the page layout is so large, it is difficult to see what's going on so far. Therefore, in the local toolbar, click <span class="Emphasis">View</span> and select <span class="Emphasis">Fit Width</span>. The page layout is zoomed out so you can see all of it.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_page_layout_size_margins3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about specifying the page size and margins, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about specifying the page size and margins, see <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Size_and_Orientation.htm">Specifying Page Size and Orientation</MadCap:xref> and <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Margins.htm">Specifying Page Margins</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create Panels—body frame with columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Now that we've resized the page layout, we're going to divide it into three equal panels, which will serve as the natural locations where the printed output can be folded. We will do this by creating columns in our body frame.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts6.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                        <ol>
+                            <li>
+                                <p>In the Page Layout Editor, double-click the body frame.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_pagelayouts16.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Frame Properties dialog opens.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">An alternative is to simply click and drag the body frame, and its edges, until you have it placed just where you want it on the page. However, in this exercise, we'll use the Frame Properties dialog, because it's easier to get the precise size and position that you see in the template.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                            <li>We want to set the size and position of the body frame so that it fits exactly on top of the page. So in the <span class="Emphasis">Size and Position</span> section, click in the <span class="Emphasis">Width</span> field, enter <span class="TypedEntry">15</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <li>In the <span class="Emphasis">Height</span> field, enter <span class="TypedEntry">5</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Padding</span> section, click in the <span class="Emphasis">Left</span> field, enter <span class="TypedEntry">10</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This is optional; you can set it to 0 if you like.</p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the rest of the fields on the tab, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_body_frame1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Columns</span> tab.</li>
+                            <li>In the <span class="Emphasis">Count</span> field, enter <span class="TypedEntry">3</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">Gap</span> field, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_body_frame2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> The page layout should now look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_body_frame3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about editing the frame size and columns, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about editing the frame size and columns, see <MadCap:xref href="../../../Page_Layouts/Frames/Specifying_Frame_Size.htm">Specifying Frame Size</MadCap:xref> and <MadCap:xref href="../../../Page_Layouts/Frames/Creating_Columns.htm">Creating Columns</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set bleed Size</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Next, we're going to set the bleed size. The bleed is the area beyond the edge of the page where printing occurs. Professional printers use the bleed to prevent a final trimmed document from having unprinted areas along the edge of the document.</p>
+                        <ol>
+                            <li>
+                                <p>In the local toolbar of the Page Layout Editor, select <span class="Emphasis">View&gt;Bleed</span>. Now you can see the bleed area in the editor.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_pagelayouts8.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_pagelayouts13.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_pagelayouts9.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>In the local toolbar of the Page Layout Editor, click <img src="../../../Resources/Images/page_properties_btn.png" class="ReduceButtonSize" /> (select the face of the button, not the down arrow).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_bleed2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Page Properties dialog opens.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Print Marks</span> tab. This lets us set the size of the bleed area.</li>
+                            <li>
+                                <p>In all of the fields, enter <span class="TypedEntry">0.25</span> and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_bleed3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can certainly keep the default setting of 0.50 in. We simply changed it in our template because 0.25 in is the industry standard. The most important thing is to make sure the bleed area is large enough. Ideally, it should be no less than 0.125 in.</p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> The page layout should now look something like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_bleed4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about the bleed, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about the bleed, see <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Bleed_Size.htm">Specifying the Page Bleed Size</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create footer frame</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In addition to the large body frame that is divided into three columns, we want to add a footer frame, which will display page numbers and decoration images.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts11.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                        <ol>
+                            <li>
+                                <p>In the Page Layout Editor, double-click the footer frame. You will need to scroll down in the Page Layout Editor to find it if you started out with the Default page layout and then resized page according to the previous steps. You will see a small rectangle with the word "footer." That's the label at the bottom-right of the footer frame; double-click that.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Frame Properties dialog opens.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">An alternative is to simply click and drag the footer frame, and its edges, until you have it placed just where you want it on the page. However, in this exercise, we'll use the Frame Properties dialog, because it's easier to get the precise size and position that you see in our template.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                            <li>In the <span class="Emphasis">Size and Position</span> section, click in the <span class="Emphasis">Top</span> field, enter <span class="TypedEntry">424</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>Click in the <span class="Emphasis">Width</span> field, enter <span class="TypedEntry">1440</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>Click in the <span class="Emphasis">Height</span> field, enter <span class="TypedEntry">44</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>In the <span class="Emphasis">Anchors</span> section, click in the <span class="Emphasis">Bottom</span> field, enter <span class="TypedEntry">12</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>
+                                <p>In the rest of the fields on the tab, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the lower-right corner of the tab, click the left, right, and bottom arrow so that it looks like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/hdydt_pagelayouts14.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>These anchors are useful in case you decide to resize the entire page at some point. When the page is resized, the footer frame will maintain its same distance from the left, right, and bottom edges of the page because they are anchored.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Alignment</span> tab.</li>
+                            <li>
+                                <p>Set the <span class="Emphasis">Vertical Alignment</span> to <span class="Emphasis">Middle</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer3.png" alt="" title="" class="MaxWidth50Percent" />
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This is purely optional. You do not need to specify how content is aligned in the frame. In our template, we decided to align the content in the middle of the frame vertically.</p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>
+                                <p>The footer frame should now be repositioned and selected on the page.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>But we need to bring it up to the top level so that it's easy to work with and so that no content obscures the decoration images or page numbers that we'll place in the footer. So in the local toolbar, select <span class="Emphasis">Layout&gt;Depth&gt;Float To Top</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Now let's add content to the footer frame. With the frame selected, press <span class="Emphasis">F2</span> on your keyboard.</li>
+                            <li>In the dialog asking if you want to insert a page number, click <span class="Emphasis">No</span>. The Frame Editor opens at the bottom of the workspace.</li>
+                            <li>Select the <span class="Emphasis">Table</span> ribbon.</li>
+                            <li>
+                                <p>On the far left of the ribbon, click the face of the <span class="Emphasis">Insert Table</span> button.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer6.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>The Insert Table dialog opens.</p>
+                            </li>
+                            <li>Select the <span class="Emphasis">General</span> tab.</li>
+                            <li>In the <span class="Emphasis">Number of columns</span> field, enter <span class="TypedEntry">3</span>.</li>
+                            <li>In the <span class="Emphasis">Number of rows</span> field, enter <span class="TypedEntry">1</span>.</li>
+                            <li>In the <span class="Emphasis">Number of header rows</span> and <span class="Emphasis">Number of footer rows</span> field, enter <span class="TypedEntry">0</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">AutoFit Behavior</span> section, select <span class="Emphasis">Fixed column width,</span> and in the field to the right select <span class="Emphasis">33.333%</span> (an equal percentage for each of the three columns in the table).</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer7.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>Add content to the first column of the table:<ol class="LowerAlpha"><li><p>Insert three circle images in a row, each separated by a space (in our template, the image is named "FooterCircleBlack").<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Images/Inserting_Images.htm">Inserting Images</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> For more about inserting images, see the online Help.</MadCap:conditionalText></p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer8.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li><p>Resize the images you inserted. In the existing page layout, we resized ours to a maximum width of 30px. You can do this by applying a style to the images, or you can right-click on each image, choose <span class="Emphasis">Image Properties</span>, select the <span class="Emphasis">Size</span> tab, and edit the <span class="Emphasis">Maximum Size Width</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Images/Editing_Images/Resizing_Images.htm">Resizing Images</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> For more about resizing images, see the online Help.</MadCap:conditionalText></p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer9.png" alt="" title="" class="MaxWidth100Percent" /></p></li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" /><li><p>Apply a style to the paragraph in that cell. To do this, click in that cell, select the <span class="Emphasis">Table</span> ribbon, and in the <span class="Emphasis">Cells</span> section, click <span class="Emphasis">Cell Content Style</span>.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer10.png" alt="" title="" class="MaxWidth100Percent" /></p><p>Then in the Table Cell Content Style dialog, select <span class="Emphasis">p.FrameFooterImagesRight</span>. This is a style class we created in the template to align the decoration images to the right. We will cover styles in more detail in a later lesson (see <MadCap:xref href="Creating_Styles.htm">Creating Styles</MadCap:xref>). Click <span class="Emphasis">OK</span>.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer11.png" alt="" title="" class="MaxWidth100Percent" /></p><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" /><p>It should now look like this:</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer12.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ol></li>
+                            <li>Add content to the second column of the table:<ol class="LowerAlpha"><li>Type the number <span class="TypedEntry">2</span> to represent page 2. In our template, we did not use a page variable—like we would normally do in a page layout—because we're dealing with columns within a single page, rather than one page number per page. Besides, the product foldout only has six panes total, so typing the page numbers is not an issue.</li><li><p>Select the <span class="Emphasis">Table</span> ribbon, click <span class="Emphasis">Cell Content Style</span>, and select <span class="Emphasis">p.FrameFooterTextLeft</span>. Then click <span class="Emphasis">OK</span>.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer13.png" alt="" title="" class="MaxWidth50Percent" /></p><p>The number will be bigger and aligned to the left of the table cell.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer14.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ol></li>
+                            <li>Add content to the third column of the table:<ol class="LowerAlpha"><li>Type the number <span class="TypedEntry">3</span> to represent page 3.</li><li><p>Select the <span class="Emphasis">Table</span> ribbon, click <span class="Emphasis">Cell Content Style</span>, and select <span class="Emphasis">p.FrameFooterTextRight</span>. Then click <span class="Emphasis">OK</span>.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer15.png" alt="" title="" class="MaxWidth100Percent" /></p><p>This formats the number and aligns it to the right in the cell.</p><p><img src="../../../Resources/Images/product_foldout_tutorial_footer16.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ol></li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                                </MadCap:snippetText>
+                            </li>
+                            <li>(Optional) You can close the Frame Contents window pane by clicking the <span class="Emphasis">X</span> in the upper-right corner.</li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about editing footer frames, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about editing footer frames, see <MadCap:xref href="../../../Page_Layouts/Frames/Adding_Text_and_Content_to_Frames.htm">Adding Text and Content to Frames</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set Background Image</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The front page layout is almost finished, but we want to add a background image to it. Flare allows you to add one background image to the entire page layout and one background image in each body frame. We're going to add one image to the background of the page layout in order to use it as a watermark, appearing behind all of the content added in the topic.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>Another thing to keep in mind with page layouts is the dots per inch (DPI) of images. For print-based output, you ideally want images with high DPI settings. A DPI of 300 is recommended if possible, but sometimes you need to use an image with a lower DPI so that you can display it at the right size. The best practice is to start out with a very large image with a high DPI. When it is added to the Page Layout Editor, it appears to shrink because you've told Flare to display it at 300 DPI (or another high DPI setting). The larger the DPI, the smaller it's going to be displayed in the Page Layout Editor and in the output.</p>
+                        <ol>
+                            <li>In the local toolbar of the Page Layout Editor, click <img src="../../../Resources/Images/page_properties_btn.png" class="ReduceButtonSize" /> (click the face of the button, not the down arrow). The Page Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Background</span> tab.</li>
+                            <li>In the <span class="Emphasis">Image</span> section, click <span class="Emphasis">Browse</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Under the <span class="Emphasis">Resources&gt;Images</span> folder, select <span class="Emphasis">Image1.eps</span>. Click <span class="Emphasis">OK</span> when you are done.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer17.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the <span class="Emphasis">Repeat</span> field, select <span class="Emphasis">No repeat</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">Position</span> section, click in the <span class="Emphasis">X</span> field and enter <span class="TypedEntry">-200px</span>. This positions the image 200 pixels left horizontally.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_footer18.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It's not uncommon to play with different values in the Position fields until you get the image placed just where you want it.</p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> Because this image was set in the background of the entire page layout, and the image is larger than the page, it bleeds beyond the edge of the page. If instead we had set the image in the background of a frame, it would stop at the edge of that frame.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> It should now look like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_front_page.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about backgrounds in page layouts, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about backgrounds in page layouts, see <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Background_Settings.htm">Specifying Page Background Settings</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Back Page Layout</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>back page layout</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Content Explorer, make a copy of the Front2 page layout and name it <span class="TypedEntry">Back2</span> .<MadCap:conditionalText MadCap:conditions="General.OnlineLive">  See <MadCap:xref href="../../../Page_Layouts/More_About_Page_Layouts/Copying_and_Renaming_Page_Layouts.htm">Copying and Renaming Page Layouts</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../../Resources/Images/product_foldout_tutorial_back_page_layout_copy.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>After that, complete the following sets of steps for the Back2 page layout.</p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create Panels—body frames</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In the Back2 page layout file, we're going to use two body frames, instead of just one. We're going to split the second body frame into two columns and set a background color on it.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts7.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <ol>
+                            <li>Open the <span class="Emphasis">Back2</span> page layout file.</li>
+                            <li>In the Page Layout Editor, you can select <span class="Emphasis">View&gt;Fit Width</span> to see the entire layout better.</li>
+                            <li>Double-click the body frame. The Frame Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                            <li>In the <span class="Emphasis">Width</span> field, enter <span class="TypedEntry">480</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>In the <span class="Emphasis">Height</span> field, enter <span class="TypedEntry">480</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>In the <span class="Emphasis">Anchors</span> section, click in the <span class="Emphasis">Right</span> field, enter <span class="TypedEntry">960</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>
+                                <p>In the rest of the fields on the tab, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Columns</span> tab.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">Count</span> field, enter <span class="TypedEntry">1</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> </p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames8.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>You'll probably notice that the frame still has a background image from the front page layout. Don't worry about that right now; we'll fix that in another set of steps.</p>
+                            </li>
+                            <li>In the Page Layout Editor, click on the body frame and press <span class="Emphasis">CTRL+C</span>, then <span class="Emphasis">CTRL+V</span> on your keyboard to make a copy of it. </li>
+                            <li>Double-click the new body frame, which should be on top of the first body frame. The Frame Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                            <li>In the <span class="Emphasis">Size and Position</span> section, click in the <span class="Emphasis">Left</span> field, enter <span class="TypedEntry">480</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</li>
+                            <li>In the <span class="Emphasis">Width</span> field, enter <span class="TypedEntry">10</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <li>In the <span class="Emphasis">Height</span> field, enter <span class="TypedEntry">5</span>, and for the unit of measurement select <span class="Emphasis">Inch (in)</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">Padding</span> section, click in the <span class="Emphasis">Left</span> field, enter <span class="TypedEntry">10</span>, and for the unit of measurement select <span class="Emphasis">Pixel (px)</span>.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This is optional; you can set it to 0 if you like.</p>
+                            </li>
+                            <li>
+                                <p>In the rest of the fields on the tab, enter <span class="TypedEntry">0</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Columns</span> tab.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the <span class="Emphasis">Count</span> field, enter <span class="TypedEntry">2</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Background</span> tab.</li>
+                            <li>In the <span class="Emphasis">Color</span> section, select <span class="Emphasis">Solid</span>.</li>
+                            <li>In the <span class="Emphasis">Fill Start</span> field, click the down arrow and select <span class="Emphasis">More Colors</span></li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the Color Picker dialog, highlight the number the <span class="Emphasis">#</span> field and replace it with <span class="TypedEntry">4E4D4E</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames6.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the Color Picker dialog, click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames7.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the Frame Properties dialog, click <span class="Emphasis">OK</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> The back page layout should now look like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_body_frames9.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about editing the frame size, columns, and backgrounds, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about editing the frame size, columns, and backgrounds, see <MadCap:xref href="../../../Page_Layouts/Frames/Specifying_Frame_Size.htm">Specifying Frame Size</MadCap:xref>, <MadCap:xref href="../../../Page_Layouts/Frames/Creating_Columns.htm">Creating Columns</MadCap:xref>, and <MadCap:xref href="../../../Page_Layouts/Frames/Specifying_Frame_Background.htm">Specifying a Frame Background</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create decoration frame</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>For the second body frame in the back page layout, we have a background color. Because we anticipate this being printed on white paper, we need to make sure the color extends into the bleed area.</p>
+                        <p>One solution is to click and drag the body frame so that it extends into the bleed area. But that means adjusting our styles to prevent topic text from moving into the bleed area.</p>
+                        <p>Instead, we are going to create a decoration frame with the same background color. We will position this decoration frame around (and behind) the second body frame.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts10.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                        <ol>
+                            <li>
+                                <p> In the local toolbar of the Page Layout Editor, click the down arrow next to the <span class="Emphasis">New Frame</span> button <img src="../../../Resources/Images/new_frame_mode_btn.png" class="ReduceButtonSize" /> and select <span class="Emphasis">New Decoration Frame Mode</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_decoration_frame1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>Click on the page and draw a rectangle. It doesn't matter how big it is or where you draw it.</li>
+                            <li>Double-click that frame. The Frame Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Frame</span> tab.</li>
+                            <li>
+                                <p>Set the fields as follows:</p>
+                                <p class="Subheading">size and position</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Left </span>480 px</li>
+                                    <li><span class="SetOffFirstLevel">Top </span>-0.25 in</li>
+                                    <li><span class="SetOffFirstLevel">Width </span>10.25 in</li>
+                                    <li><span class="SetOffFirstLevel">Height </span>5.50 in</li>
+                                </ul>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                                <p class="Subheading">anchors</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Right </span>-0.25 in</li>
+                                    <li><span class="SetOffFirstLevel">Bottom </span>-0.25 in</li>
+                                </ul>
+                                <p class="Subheading">padding</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Left </span>0</li>
+                                    <li><span class="SetOffFirstLevel">Right </span>0</li>
+                                    <li><span class="SetOffFirstLevel">Top </span>0</li>
+                                    <li><span class="SetOffFirstLevel">Bottom </span>0</li>
+                                </ul>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_decoration_frame2.png" alt="" title="" class="MaxWidth90Percent" />
+                                </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Background</span> tab.</li>
+                            <li>In the <span class="Emphasis">Color</span> section, select <span class="Emphasis">Solid</span>.</li>
+                            <li>In the <span class="Emphasis">Fill Start</span> field, click the down arrow and select <span class="Emphasis">More Colors</span></li>
+                            <li>In the Color Picker dialog, highlight the number the <span class="Emphasis">#</span> field and replace it with <span class="TypedEntry">4E4D4E</span> (this matches the background of the second body frame).</li>
+                            <li>In the Color Picker dialog, click <span class="Emphasis">OK</span>.</li>
+                            <li>In the Frame Properties dialog, click <span class="Emphasis">OK</span>.</li>
+                            <li>Now we just need to make sure that the decoration frame is behind the body frame. So click on the decoration frame in the Page Layout Editor.</li>
+                            <li>
+                                <p>In the local toolbar, select <span class="Emphasis">Layout&gt;Depth&gt;Sink To Bottom</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_decoration_frame3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> The layout should now look like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_decoration_frame4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about frames, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about frames, see <MadCap:xref href="../../../Page_Layouts/Adding_Page_Layout_Frames.htm">Adding Page Layout Frames</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create footer frame</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Next, we need to make some changes to the footer frame so that it looks good with the dark background.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts15.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <ol>
+                            <li>In the Page Layout Editor, select the footer frame and press <span class="Emphasis">F2</span> on your keyboard. The Frame Editor opens so that we can change the content in the three-column table.</li>
+                            <li>In the first column of the table, right-click the circle image on the far right, and in the context menu select <span class="Emphasis">Image Properties</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the Image Properties dialog, find and select the <span class="Emphasis">FooterLogoBlack.eps</span> file.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>Place your cursor in the first cell (not selecting an image). </li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Select the <span class="Emphasis">Table</span> ribbon, click <span class="Emphasis">Cell Content Style</span>, and select <span class="Emphasis">p.FrameFooterImagesLeft</span>. Then click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This aligns the images to the left in the cell.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the second column of the table, replace the number 2 with <span class="TypedEntry">4</span> to represent page 4.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Select the <span class="Emphasis">Table</span> ribbon, click <span class="Emphasis">Cell Content Style</span>, and select <span class="Emphasis">p.FrameFooterTextDarkBackgroundLeft</span>. Then click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer4.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This formats the number and aligns it to the left in the cell.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer5.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the third column of the table, replace the number 3 with <span class="TypedEntry">5</span> to represent page 5.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>Select the <span class="Emphasis">Table</span> ribbon, click <span class="Emphasis">Cell Content Style</span>, and select <span class="Emphasis">p.FrameFooterTextDarkBackgroundRight</span>. Then click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer6.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>This formats the number and aligns it to the right in the cell.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer7.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                                </MadCap:snippetText>
+                            </li>
+                            <li>(Optional) You can close the Frame Contents window pane by clicking the <span class="Emphasis">X</span> in the upper-right corner.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>We need to make sure the footer frame is on the top level so that it's easy to work with and so that no content obscures the decoration images or page numbers. So in the Page Layout Editor, click on the footer frame (you will need to do this on the left side of the layout, where the decoration images are shown). Then in the local toolbar, select <span class="Emphasis">Layout&gt;Depth&gt;Float To Top</span>.</li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> It should now look like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_footer8.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about editing footer frames, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about editing footer frames, see <MadCap:xref href="../../../Page_Layouts/Frames/Adding_Text_and_Content_to_Frames.htm">Adding Text and Content to Frames</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set Background image</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If you've been following the steps up until now—copying the Front page layout and making changes to it—you should see a background logo image in the back page layout, which we will replace with a different image of a Flare box.</p>
+                        <p>
+                            <img src="../../../Resources/Images/hdydt_pagelayouts5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <ol>
+                            <li>In the local toolbar of the Page Layout Editor, click <img src="../../../Resources/Images/page_properties_btn.png" class="ReduceButtonSize" /> (the face of the button, not the down arrow). The Page Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Background</span> tab.</li>
+                            <li>In the <span class="Emphasis">Image</span> section, click <span class="Emphasis">Browse</span>.</li>
+                            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuide3Foldout" />
+                            <li>
+                                <p>In the Insert Image dialog, choose <span class="Emphasis">Image3.png</span>, and click <span class="Emphasis">OK</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_background_image1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the <span class="Emphasis">Repeat</span> field, select <span class="Emphasis">No repeat</span>.</li>
+                            <li>In the <span class="Emphasis">Position</span> section, click in the <span class="Emphasis">X</span> field and enter <span class="TypedEntry">-30px</span>.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Y</span> field, enter <span class="TypedEntry">-44px</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_background_image2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> </li>
+                            <li>
+                                <p>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" /> The back page layout should now be complete, and it should look like this:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/product_foldout_tutorial_back_background_image3.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ol>
+                        <p MadCap:conditions="General.Print">For more information about backgrounds in page layouts, see the online Help.</p>
+                        <p MadCap:conditions="General.OnlineLive">For more information about backgrounds in page layouts, see <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Background_Settings.htm">Specifying Page Background Settings</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Creating_Topics.htm">Creating Topics</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

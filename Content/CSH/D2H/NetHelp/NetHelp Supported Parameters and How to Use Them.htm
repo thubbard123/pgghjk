@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="5" MadCap:lastHeight="1636" MadCap:lastWidth="1206" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HCSH.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Context-sensitive Help;NetHelp" />NetHelp-supported Parameters</h1>
+        <p>Here is an example of a URL for NetHelp context-sensitive Help:</p>
+        <p class="Code">http://mysite.com/target/index.html?tab=1&amp;topiconly=true#!documents/topic.html</p>
+        <p>Here, the section after ? is called "query" and the part after # is called "hash," according to the common URL terminology (see <a href="http://en.wikipedia.org/wiki/Url#Syntax" target="_blank">http://en.wikipedia.org/wiki/Url#Syntax</a>). Any URL has the following structure: </p>
+        <p class="Code">scheme://domain:port/path?query_string#hash_fragment).</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>QUERY Parameters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="SetOffFirstLevel">topiconly=true</p>
+                <p>All NetHelp elements will be hidden. Only the topic text will be shown and a css-class "topic-only" will be applied to the &lt;body&gt; element.</p>
+                <p class="SetOffFirstLevel">tab=0|toc|1|index|2|search</p>
+                <p>This parameter specifies the tab (by index or name) that will be shown when NetHelp is loaded. If any other value is specified, the parameter will be ignored.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>HASH parameters</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="SetOffFirstLevel">#!url</p>
+                <p>"url" is a path to a topic, either relative to the root NetHelp folder or absolute.</p>
+                <p class="SetOffFirstLevel">#?query</p>
+                <p>"query" is a key-value pair that defines a context sensitive query in the following format: "key=value." Key can be one of the following values: "keyword," "group," "id" and "search."</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HCSHGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Examples</p>
+                    <p>Open NetHelp with Search tab active:</p>
+                    <p class="Code">http://mysite.com/target/index.html?tab=2 </p>
+                    <p>or</p>
+                    <p class="Code">http://mysite.com/target/index.html?tab=search</p>
+                    <p>Open NetHelp and specified topic:</p>
+                    <p class="Code">http://mysite.com/target/index.html#!documents/topic.html</p>
+                    <p>Open NetHelp and specified topic and scroll topic to the "bookmark":</p>
+                    <p class="Code">http://mysite.com/target/index.html#!documents/topic.html#bookmark</p>
+                    <p>If the keyword "sports" is assigned only to one topic, this topic will be displayed. If the keyword is assigned to several topics, the list of topics will be displayed. Otherwise, if no topics are associated with the keyword, "No topics found" will be displayed. </p>
+                    <p class="Code">http://mysite.com/target/index.html#?keyword=sports</p>
+                    <p>If the group "sports" is assigned only to one topic, this topic will be displayed. If the group is assigned to several topics, the list of topics will be displayed. Otherwise, if no topics are associated with the group, "No topics found" will be displayed.</p>
+                    <p class="Code">http://mysite.com/target/index.html#?group=sports</p>
+                    <p>Displays topic for search query "sports":</p>
+                    <p class="Code">http://mysite.com/target/index.html#?search=sports</p>
+                    <p>Open topic with context ID "10." If there are no topics for the specified context ID, "No topics found" will be displayed.</p>
+                    <p class="Code">http://mysite.com/target/index.html#?id=10</p>
+                </div>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Examples—Query/Hash Parameters at Same Time</p>
+                    <p>The following show how can use the Query and Hash parameters at the same time.</p>
+                    <p>Open topic with hidden NetHelp elements (no tabs, header, toolbars):</p>
+                    <p class="Code">http://mysite.com/target/index.html?topiconly=true#!documents/topic.html</p>
+                    <p>Open specified topic and tab Index:</p>
+                    <p class="Code">http://mysite.com/target/index.html?tab=index#!documents/topic.html</p>
+                    <p>Search for "sports" and open search tab:</p>
+                    <p class="Code">http://mysite.com/target/index.html?tab=search#?search=sports</p>
+                    <p>Search for "sports" and display results in topic only mode:</p>
+                    <p class="Code">http://mysite.com/target/index.html?topiconly=true#?search=sports</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

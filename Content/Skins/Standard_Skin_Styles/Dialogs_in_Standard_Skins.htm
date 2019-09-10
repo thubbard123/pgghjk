@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="7846" MadCap:lastWidth="1038" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSkins.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterWebHelpPlus" />
+            <MadCap:concept term="FilterWebHelp" />
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:concept term="FilterSkins" />
+            <MadCap:concept term="FilterHTMLHelp" />
+            <MadCap:concept term="FilterFeedback" />
+            <MadCap:keyword term="MadCap Feedback:MadCap Feedback;MadCap Feedback;Server:MadCap Feedback" />
+            <MadCap:keyword term="Styles:WebHelp;Output:WebHelp;Skins:styles;Skins:WebHelp;WebHelp:styles;Styles:WebHelp Plus;Output:WebHelp Plus;Skins:WebHelp Plus;WebHelp Plus:styles;Styles:HTML Help;Output:HTML Help;Skins:HTML Help;HTML Help:styles;Styles:dialogs" />Dialogs in Standard Skins</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/HTMLHelp_WebHelp_WHPlus.flsnp" />
+        <p>If you have enabled MadCap Feedback for your output, there are some dialogs that people will use for actions such as registering, adding comments, and replying to comments. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../About_Skins.htm">About Skins</MadCap:xref> and <MadCap:xref href="../../Feedback/About_MadCap_Feedback.htm">About MadCap Feedback</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify style settings for dialogs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a Standard skin.</li>
+                    <li>Select the <span class="Emphasis">Styles</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Styles</span> section, expand the <span class="Emphasis">Dialog</span> node.</p>
+                        <p>
+                            <img src="../../Resources/Images/skin_styles_dialogs2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareStylesGuide" />
+                    <li>
+                        <p>Select the item that you want to edit. If you want the setting(s) to be applied to all of the items, select the <span class="Emphasis">Dialog</span> node itself.</p>
+                        <p>The items under this node represent the different kinds of Feedback dialogs that may be found in your output. </p>
+                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" style="font-weight: bold;">
+                                        <p class="TableTextEmphasisPreWhiteSpace" xml:space="preserve">Add Comment </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">This is the dialog used when people add feedback comments to a topic.</p>
+                                        <p MadCap:conditions="General.OnlineLive">
+                                            <img src="../../Resources/Images/skin_styles_dialogs3.png" class="MaxWidth90Percent" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows" style="font-weight: bold;">
+                                        <p class="TableTextEmphasisPreWhiteSpace">Register User </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">This is the dialog used when new end users register in order to submit feedback in your output. </p>
+                                        <p MadCap:conditions="General.OnlineLive">
+                                            <img src="../../Resources/Images/skin_styles_dialogs.png" class="MaxWidth90Percent" />
+                                        </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead class="OnlineOnly">
+                                                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The "Register User" item lets you modify label text for fields in the Create Feedback Service Profile dialog. However, the "Feedback User Profile Item" node (see <MadCap:xref href="Feedback_User_Profile_Items_in_Standard_Skins.htm" >Specifying Style Settings for Feedback User Profile Items</MadCap:xref>) does the same thing. So what's the difference? The "Register User" property in this node is the old way to accomplish this; the "Feedback User Profile Item" node is the new way. In order to be backwards compatible with earlier versions, the duplicate properties remain available in the Dialog/Register User node. The software will first look to any settings that you have provided in the Feedback User Profile Item node. Then it will look to settings entered in the Dialog/Register User node.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows" style="font-weight: bold;">
+                                        <p class="TableTextEmphasisPreWhiteSpace">Reply Comment </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">This is the dialog used when people reply to feedback comments for a topic.</p>
+                                        <p MadCap:conditions="General.OnlineLive">
+                                            <img src="../../Resources/Images/skin_styles_dialogs5.png" class="MaxWidth90Percent" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>Select the <span class="Emphasis">Property Groups</span> or <span class="Emphasis">Alphabetical List</span> option to display the properties for the style item.</li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Properties</span> section, set the values for the properties that you want modify.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Background:color" />background color</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the background color of the item:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right and change the value in the <span class="Emphasis">Background Color</span> field. <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectColor.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Borders" />borders </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To add or change borders for the item:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Borders</span> property group on the right and change the value in any of the fields. <MadCap:snippetText src="../../Resources/Snippets/Borders/SetBorder.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>cancel button label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears on the "Cancel" button:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Cancel Button Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Comments:labels" />comment label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears next to the "comment" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Comment Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>comment reply notification label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> Next to the first email notification check box in the Create Feedback Service Profile dialog, users see the following text:</p>
+                                <p><i>a reply is left to one of my comments</i>
+                                </p>
+                                <p>To change the text: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Options</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Comment Reply Notification Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>comment same topic notification label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Next to the second email notification check box in the Create Feedback Service Profile dialog, users see the following text: </p>
+                                <p><i>a comment is left on a topic that I commented on</i>
+                                </p>
+                                <p>To change the text: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Options</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Comment Same Topic Notification Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>comment same help system notification label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> Next to the third email notification check box in the Create Feedback Service Profile dialog, users see the following text:</p>
+                                <p><i>a comment is left on any topic in the Help system</i>
+                                </p>
+                                <p>To change the text: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Options</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Comment Same Help System Notification Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>country label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "country" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Country Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSkinsGuide,FlareGuides.FlareStylesGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>email address label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "email address" field: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Email Address Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>email notifications group label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> At the beginning of the email notification check boxes in the Create Feedback Service Profile dialog, users see the following text:</p>
+                                <p><i>E-mail Notifications</i>
+                                </p>
+                                <p>To change the text: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Options</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Email Notifications Group Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>email notifications heading label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>After the group label, just above the email notification check boxes in the Create Feedback Service Profile dialog, users see the following text:</p>
+                                <p><i>I want to receive an email when…</i>
+                                </p>
+                                <p>To change the text: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Options</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Email Notifications Heading Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>first name label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears next to the "first name" field: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">First Name Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Fonts:color" />font color</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the color of the font:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Font</span> property group on the right and change the value in the <span class="Emphasis">Color</span> field. <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectColor.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Fonts:font family" />font family </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To select a specific font family (e.g., Arial, Tahoma, Verdana):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Font</span> property group on the right and change the value in the <span class="Emphasis">Font Family</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontFamily.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Fonts:size" />font size </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the size of the font:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Font</span> property group on the right and change the value in the <span class="Emphasis">Font Size</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontSize.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Fonts:styles" />font style</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the style of the font (e.g., make it italic):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Font</span> property group on the right and change the value in the <span class="Emphasis">Font Style</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontStyle.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Fonts:weight" />font weight </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the weight of the font (e.g., make it bold):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Font</span> property group on the right and change the value in the <span class="Emphasis">Font Weight</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontWeight.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Labels:gender" />gender label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "gender" field: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Gender Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>gender label—female </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that represents the "female" option in the "gender" drop-down field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Gender Female Name</span> field.</li>
+                                </ul>
+                                <p>If you include the Gender option in your registration dialog, you might use this field to localize the text in other languages.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>gender label—male </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that represents the "male" option in the "gender" drop-down field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Gender Male Name</span> field. </li>
+                                </ul>
+                                <p>If you include the Gender option in your registration dialog, you might use this field to localize the text in other languages.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>last name label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "last name" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Last Name Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—comment length exceeded</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears in the message that users see when their comments are too long: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Comment Length Exceeded</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—edit profile registration</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> If you configure MadCap Feedback so that users must register before submitting comments, people will see the following message in the dialog when updating their profiles:</p>
+                                <p class="TableText"><i>You must create a user profile to post comments to this help system. Please fill in the information below. An email will be sent to the address you provide. Please follow the instructions in the email to complete activation</i>.</p>
+                                <p>To change the text for this message: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Edit Profile Registration</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—missing required field</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> When users fail to complete a required field in the Create Feedback Service Profile dialog, they see a message. If you do not enter text, the default for the message is used. This default text is as follows: </p>
+                                <p><i>Please enter a value for: [name of field].</i>: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Missing Required Field</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—registration </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>If you configure MadCap Feedback so that users must register before submitting comments, certain information is provided to those users, both in the registration dialog and in a popup message that follows. You can modify the text as needed. In the registration dialog, users see the following default text:</p>
+                                <p><i>You must create a user profile to post comments to this help system. Please fill in the information below. An email will be sent to the address you provide. Please follow the instructions in the email to complete activation.</i>
+                                </p>
+                                <p>To change the text for this message: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Registration</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—registration submit</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> In the popup message that follows the initial registration message, users see the following default text:</p>
+                                <p><i>Your information has been sent to <MadCap:variable name="Other.CompanyName" />. When the information has been processed, you will receive an email with a link to a verification page. Click this link, or copy and paste the link into your web browser to complete the registration.</i>
+                                </p>
+                                <p>To change the text for this message: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Registration Submit</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—registration submit note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> In the popup message that follows the initial registration message, users see the following note:</p>
+                                <p><i>NOTE: Some service providers have email filtering software that may cause the notification email to be sent to your junk email folder. If you do not receive a notification email, please check this folder to see if it has been sent there.</i>
+                                </p>
+                                <p>To change the text for this message: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Registration Submit Note</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>message—update success</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> When users successfully update their Feedback comment profiles, they see a message. If you do not enter text, the default is used. This default text is as follows: </p>
+                                <p><i>Your profile was updated successfully!</i>
+                                </p>
+                                <p>To change the text for this message: </p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Messages</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Update Success</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>original comment label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "original comment" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Original Comment Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>postal code label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears next to the "postal code" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Postal Code Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>shadow color </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the color of the shadow for the item:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right and change the value in the <span class="Emphasis">Shadow Color</span> field. <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectColor.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>shadow distance </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the distance that the shadow extends from the edge of the item (in pixels):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right and enter a value with the measurement in the <span class="Emphasis">Shadow Distance</span> field (e.g., 10 px). </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>shadow opacity </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the opacity (transparency) of the shadow for the item, ranging between 0 and 100 (the lower the number, the more transparent):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right and enter a value in the <span class="Emphasis">Shadow Opacity</span> field (e.g., 65). </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>subject label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears next to the "subject" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Subject Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>submit button label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears on the "Submit" button:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Submit Button Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font color </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the color of the font used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Color</span> field. <MadCap:snippetText src="../../Resources/Snippets/Styles/SelectColor.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font family</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To select a specific font family (e.g., Arial, Tahoma, Verdana) used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Font Family</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontFamily.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font size </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the size of the font used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Font Size</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontSize.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font style </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the style of the font (e.g., make it italic) used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Font Style</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontStyle.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font variant</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the variant of the font (e.g., small caps) used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Font Variant</span> field. Click the down arrow and select either <span class="Emphasis">normal</span> or <span class="Emphasis">small-caps</span>.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title font weight</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the weight of the font (e.g., make it bold) used for the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right and change the value in the <span class="Emphasis">Title Font Weight</span> field. <MadCap:snippetText src="../../Resources/Snippets/Fonts/SelectFontWeight.flsnp" /></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>title label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that appears in the title:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Title</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Title Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>user name label</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p> To change the text that appears next to the "user name" field:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">Labels</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Username Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Skins" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+    </body>
+</html>

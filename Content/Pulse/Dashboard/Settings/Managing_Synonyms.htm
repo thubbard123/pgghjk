@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="4230" MadCap:lastWidth="1328" MadCap:conditions="Products.Pulse,Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <meta name="description" content="How to manage synonyms in MadCap Pulse. You can create directional synonyms and synonym groups." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="AdminMenu" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Managing Synonyms</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Managing Synonyms</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>In the Pulse dashboard, the Administration&gt;Settings menu command is available to members of the Administrators group. This gives administrators the ability to create synonyms to enhance the search capabilities of the Flare search engine. </p>
+        <h2 MadCap:conditions="General.Print">Working with Synonyms</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>working with synonyms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can enhance the Flare search engine by creating a synonym file for interchangeable words. This gives the Flare search engine to ability to return results that include a similar word, when a user enters a particular word. For example, when a user searches for "hound,"&#160;the synonym file tells the Flare search engine to also return results that include the synonym "dog." </p>
+                <p>When integrated with Pulse, the Flare search engine will search both the Flare topic files and the embedded Pulse discussion forms. </p>
+                <p>
+                    <img src="../../../Resources/Images/flare_pulse_search_synonym.png" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <p>There are two ways to create a synonym file to enhance the search capabilities for your Flare output:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Using the&#160;Flare Synonym Editor </span>You can create synonyms directly in the Flare user interface.<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../../Search/Synonyms/About_Synonyms.htm">Synonyms</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Products.FlarePrintOnly,Products.Pulse"> See the Flare online Help.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Use the Synonyms Feature in Pulse </span>Members of the Administrators group can add synonyms to Pulse. If desired, you can also export the synonym file from Pulse and import it into the desired Flare project as described below.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Adding Synonyms in Pulse</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>adding synonyms in pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can add two types of synonyms in Pulse:&#160;A directional synonym or a synonym group.  </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to add a directional synonym</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A directional synonym is a word that can only be queried in a single direction. For example, a query for the word "dog"&#160;would find results that include the synonym "poodle." However, because the synonym only works in one direction, a query for "poodle"&#160;would not find results for "dog."</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>
+                                <p>In the Settings page, click <span class="Emphasis">Synonyms</span>. The Synonyms page opens. </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Directional</span> tab. </li>
+                            <li>From the <span class="Emphasis">Community</span> drop-down list, select the desired Flare community.</li>
+                            <li>In the <span class="Emphasis">Directional</span> tab, click <span class="Emphasis">New</span>.<p>A new, blank row for data entry is shown.</p></li>
+                            <li>
+                                <p>In the entry fields, do the following:</p>
+                                <ol class="LowerAlpha">
+                                    <li>In  the <span class="Emphasis">Word </span>field, type the desired word. For example, type <span class="TypedEntry">dog</span>.</li>
+                                    <li>
+                                        <p>In  the <span class="Emphasis">Synonym </span>field, type the synonym to include in search results when end users search for the corresponding word. For example, type <span class="TypedEntry">pup</span>. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/pulse_admin_synonym_new_directional.png" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">When adding synonyms, the word and synonym must be a single word. The synonym feature does not support phrases, punctuation, or languages. </p>
+                                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Synonyms are case-sensitive. </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>(Optional) You can place a checkmark in the <span class="Emphasis">Stem</span> box. This gives the search engine the ability to include all forms of the word in the search. For example, a search for "dog" will include "dogs."</li>
+                            <li>Click <span class="Emphasis">Save Changes</span>. A&#160;confirmation message appears when the save is successful.<p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">In order for your changes to take effect, you must republish your Flare output.</p></li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to add a synonym group</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Add a synonym group to perform queries for identical synonyms. An identical synonym is a word that can be queried in two directions. For example, a query for the "dog" would find results that include identical synonyms such as "hound" and "canine." A search for "canine"&#160;or "hound"&#160;would include the identical synonym "dog." </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>In the Settings page, click <span class="Emphasis">Synonyms</span>. The Synonyms page opens. By default, the Directional tab is active in this page. </li>
+                            <li>In the <span class="Emphasis">Community</span> drop-down list, select the desired Flare community. </li>
+                            <li>Select the <span class="Emphasis">Groups </span> tab, then click <span class="Emphasis">New</span>.<p>A new, blank row for data entry is shown.</p></li>
+                            <li>
+                                <p>In the <span class="Emphasis">Group</span> field, type the word followed by the equal (=) symbol, and then type a list of synonyms. You must separate each synonym with a comma. </p>
+                                <p>For example, type: <span class="TypedEntry">dog=canine,doggy,doggie,hound,pooch,pup,puppy</span>.</p>
+                            </li>
+                            <li>(Optional) You can place a checkmark in the <span class="Emphasis">Stem</span> box. This gives the search engine the ability to include all forms of the word in the search. For example, a search for "dog" will include "dogs."</li>
+                            <li>Click <span class="Emphasis">Save Changes</span>. A&#160;confirmation message appears when the save is successful.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Managing Synonyms</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>managing synonyms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can delete, export, copy, and overwrite synonyms.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to delete a directional synonym</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>In the Settings page, click <span class="Emphasis">Synonyms</span>. The Synonyms page opens. </li>
+                            <li>Select the <span class="Emphasis">Directional</span> tab. </li>
+                            <li>Next to the synonym that you want to remove, click <span class="Emphasis">Delete</span>. This immediately removes the synonym from the list.</li>
+                            <li>Click <span class="Emphasis">Save Changes</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to delete a synonym group</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>In the Settings page, click <span class="Emphasis">Synonyms</span>. The Synonyms page opens. </li>
+                            <li>Select the <span class="Emphasis">Groups</span> tab. </li>
+                            <li>Next to the synonym group that you want to remove, click <span class="Emphasis">Delete</span>. This immediately removes the synonym group from the list.</li>
+                            <li>Click <span class="Emphasis">Save Changes</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>exporting a synonym file from pulse</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you want to use the same synonyms that you created for Pulse in a search of the Flare output, you can export the synonym file from Pulse. Then copy it into your Flare project.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>
+                                <p>In the Settings page, click <span class="Emphasis">Synonyms</span>. The Synonyms page opens. By default, the <span class="Emphasis">Directional</span> tab is active in this page. </p>
+                            </li>
+                            <li>
+                                <p>Click the&#160;<span class="Emphasis">Export (.mcsyns)</span> link at the bottom of the page. </p>
+                                <p>This downloads a copy of the synonyms file to your computer. The next step is to copy the synonym file to the Flare project.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The downloaded file is saved in the MCSYNS file format, so you can import it into your Flare project. If you are not able to download the file, check your browser's download settings.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>copying a synonym file to a flare project</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Add or make changes to the synonyms in Pulse.</li>
+                            <li>Export the synonym file from Pulse.</li>
+                            <li>Ensure that the Flare project where you plan to copy the file is closed. </li>
+                            <li>
+                                <p>Double-click the synonym file to open it. This starts the Flare program.</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If the Flare project where you are planning to copy the file is open, an error message appears to inform you the desired Flare project is already open in another instance. Close the open Flare project and then open the synonym file again.</p>
+                            </li>
+                            <li>
+                                <p>In the&#160;Copy to Project dialog, select the project where you want to copy the synonym file. Then click <span class="Emphasis">Copy</span>.</p>
+                                <p>The program copies the file to the selected project and places it in the \Project\Advanced folder in the Flare project. It also opens the file in the Synonyms Editor.</p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                        <ol MadCap:continue="true">
+                            <li>
+                                <p>In the Synonyms Editor, ensure that your synonyms appear. In this example, we added a synonym group. </p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_admin_synonyms_group_flare.png" class="MaxWidth75Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>overwriting a synonym file in flare</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Make changes to the synonyms in Pulse.</li>
+                            <li>Export the updated synonym file from Pulse.</li>
+                            <li>
+                                <p>Ensure the file that you exported has the exact same file name as the synonym file in the Flare project. You may need to rename this file to match. </p>
+                            </li>
+                            <li>Ensure that the Flare project where you plan to copy the file is closed. </li>
+                            <li>
+                                <p>Double-click the synonym file to open it. This starts the Flare program.</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If the Flare project where you are planning to copy the file is open, an error message appears to inform you the desired Flare project is already open in another instance. Close the open Flare project and then open the synonym file again.</p>
+                            </li>
+                            <li>
+                                <p>In the&#160;Copy to Project dialog, select the project where you want to copy the synonym file. Then click <span class="Emphasis">Copy</span>.</p>
+                                <p>The program copies the file to the selected project and places it in the \Project\Advanced folder in the Flare project. The program also opens the file in the Synonyms Editor.</p>
+                                <p>When Flare recognizes that a target file with the same file name exists, the Copy File dialog appears. </p>
+                            </li>
+                            <li>In the Copy File dialog, make sure that the appropriate source file and target file names appear. Then click <span class="Emphasis">Overwrite</span>.</li>
+                            <li>In the Synonyms Editor, ensure that your updated synonyms appear.</li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AdminMenu" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+    </body>
+</html>

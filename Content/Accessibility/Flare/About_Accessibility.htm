@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:ignoredWords="assistive" MadCap:lastBlockDepth="12" MadCap:lastHeight="10495" MadCap:lastWidth="688" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareAccessibility.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Guidelines (e.g., Section 508, WCAG) to ensure your Help systems are accessible to people with visual, hearing, and mobility impairments&#xD;&#xA;&#xD;&#xA;" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterAccessibility" />
+            <MadCap:concept term="Accessibility" />
+            <MadCap:keyword term="Accessibility" />About Accessibility</h1>
+        <p>dsfsdf</p>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Accessibility" />About Accessibility</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline_PDF_EPUB.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Accessibility/AccessibilitySummary.flsnp" />
+        </p>
+        <p>Different output formats in <MadCap:variable name="Other.Product" /> support different accessibility features.</p>
+        <p MadCap:conditions="FlareGuides.FlareAccessibilityGuide">For more information not covered in this guide, see the online Help.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAccessibilityGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareAccessibilityGuide">Accessibility Standards and Guidelines</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>accessibility standards and guidelines</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityStandardsGuidelines.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:conditionalText MadCap:conditions="General.OnlineLive">
+                    <MadCap:dropDownHotspot>
+                        <MadCap:keyword term="Alternate text" />alt and <MadCap:keyword term="Title:attribute;Screen tip;Tool tip" />title attributes (alternative text and screen tips)</MadCap:dropDownHotspot>
+                </MadCap:conditionalText>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AltTitleAttributes.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">
+                    <MadCap:keyword term="Images:accessibility;Accessibility:images" />
+                    <MadCap:keyword term="Alternate text;Images:alternate text" />images—apply alternate text and screen tip to all references</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you insert or edit an image, you will see a check box that allows you to apply the same alternate text and screen tip for all instances of the image throughout your project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Images/Inserting_Images.htm">Inserting Images</MadCap:xref> and <MadCap:xref href="../../Images/Editing_Images/Editing_Images.htm">Editing Images</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../Resources/Images/apply_alt_text_screen_tip_to_all_example.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">
+                    <MadCap:keyword term="Images:accessibility;Accessibility:images" />
+                    <MadCap:keyword term="Alternate text;Images:alternate text" />images—using empty alt text</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/EmptyAltTextSummary.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/EmptyAltTextSummary2.flsnp" />
+                <p>See <MadCap:xref href="Applying_Empty_Alt_Text.htm">Applying Empty Alt Text</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> and <MadCap:xref href="../../Images/Inserting_Images.htm">Inserting Images</MadCap:xref></MadCap:conditionalText>.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/EmptyAltTextSummary3.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">different outputs for different users</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>One way to make content accessible is to provide one output for most users and an entirely separate output for individuals with disabilities. In the locations where you have elements that can present accessibility issues (e.g., images, multimedia), you can provide descriptions of those elements. Then by using condition tags and different targets, you can easily have customized outputs for each set of users. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Output/Determining_the_Output_Type.htm">Determining the Output Type</MadCap:xref>, <MadCap:xref href="../../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>, <MadCap:xref href="../../Targets/Adding_Targets.htm">Adding Targets</MadCap:xref>, and <MadCap:xref href="../../Targets/Editing_Target_Settings.htm">Editing Target Settings</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">semantic style elements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can use character-level styles when formatting text. For example, the &lt;strong&gt; tag conveys the idea that you want to emphasize the importance of some words in a paragraph. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can add captions, summaries, and header rows on tables. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Tables/Inserting_Tables.htm">Inserting Tables</MadCap:xref> and <MadCap:xref href="../../Tables/More_About_Tables/Editing_Table_Properties.htm">Editing Table Properties</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">analyzer scans</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can use MadCap Analyzer to scan your <MadCap:variable name="Other.Product" /> project for areas where you can improve accessibility. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Analyzer/About_Analyzer_and_Reports.htm">About Analyzer</MadCap:xref> and <MadCap:xref href="../../Analyzer/Enabling_Analyzer_Scans.htm">Enabling Analyzer Scans</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="WebHelp:accessibility;Accessibility:WebHelp" />html5 and webhelp outputs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityHTML5WebHelp.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityScrollingOption.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">
+                    <MadCap:keyword term="Adobe PDF:accessibility;Accessibility:PDF" />pdf output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityPDFOutput.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">
+                    <MadCap:keyword term="Eclipse Help:accessibility;Accessibility:Eclipse Help" />eclipse help output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityEclipse.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">accessibility warnings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Accessibility/AccessibilityWarnings.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you also have the latest version of MadCap Analyzer installed, you can see accessibility warnings before you generate output.</p>
+                </div>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In addition to the tasks described, which can be performed in the <MadCap:variable name="Other.Product" /> user interface, you can accomplish a multitude of other tasks by working directly in the XHTML markup (via the Internal Text Editor or another editor such as Windows Notepad). For example, you can add labels on forms or titles on frame elements that you create. The w3.org website in particular provides a great deal of additional information and techniques for making documentation accessible by editing the markup. See <a href="http://www.w3.org/TR/WCAG20-TECHS/" target="_blank">http://www.w3.org/TR/WCAG20-TECHS/</a>.</p>
+                </div>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If an individual is using JAWS to access your Help system, that person needs to be in Forms mode in JAWS in order to navigate successfully in the output.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Accessibility" />
+        </p>
+    </body>
+</html>

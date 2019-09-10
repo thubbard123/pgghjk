@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Mimic" MadCap:lastBlockDepth="8" MadCap:lastHeight="1680" MadCap:lastWidth="854">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>You can link your Mimic collection or movie to a MadCap Flare project. This allows you to automatically have access to any variables or condition tags found in that Flare project. See <MadCap:xref href="../../../Variables/About_Variables_Mimic.htm">About Variables</MadCap:xref> and <MadCap:xref href="../../../Condition_Tags/About_Conditions_Mimic.htm">About Conditions</MadCap:xref>.</p>
+        <p>This link occurs automatically if you insert the Mimic collection or movie into the Flare project. However, if you have not done that, you can use the following steps to manually link a MadCap <MadCap:variable name="Other.Product"></MadCap:variable> collection or single movie to a Flare project.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example—links to flare variables</p>
+                    <p>Let's say that you have created a MadCap collection containing five movies, and you have incorporated this Mimic collection into a Flare Help project. You want to use the variables from that Flare project. Therefore, you open the Collection Editor in Mimic and create a variable link to the Flare project (using the Project Link tab). All of the variables from that Flare project automatically become available for you to use in your MadCap Mimic collection (i.e., they are project link variables). Suppose that you want to use a variable called "ProductName" in your MadCap Mimic movies. The definition that you have provided for that variable name in Flare is "OurSoftware Version 1." So in various movie frames in your MadCap Mimic collection, you might create bubble callouts and select the ProductName variable to insert within them. The callouts now display any text you may have typed, plus the definition of the variable (e.g., "Welcome to OurSoftware Version 1").</p>
+                    <p>Now let's say that it is a year later and your company has created another version of the software, called "OurSoftware Version 2." You need to change this name everywhere in your Flare project, as well as everywhere it has been used in your MadCap Mimic movies. If you had not used a variable, you would need to manually find and replace the old name with the new name. Fortunately, you used a variable, so all you need to do is change the definition in one place. If you had created the variable within MadCap Mimic, you would edit the definition in Mimic's Collection Editor (or in the Movie Properties dialog). However, in this example, you used a variable from your Flare project. Therefore, you would modify the variable definition from within the Flare project. After you do so, the definition is changed everywhere that the variable was inserted (including within the callouts in your movies). </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToLinkProject"></a>how to link a mimic collection to a flare project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>Open the collection. The Collection Editor opens.</li>
+                    <li>Select the <span class="Emphasis">Project Link</span> tab.</li>
+                    <li>Click the <span class="Emphasis">Browse</span> button <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. </li>
+                    <li>In the dialog that opens, double-click the Flare project you want to link to the collection.</li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToLinkMovie"></a>how to link a mimic movie to a flare project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>Open the movie. </li>
+                    <li>
+                        <MadCap:snippetBlock src="../MoviesAndMimic/OpenMoviePropertiesDirections.flsnp" />
+                    </li>
+                    <li>Select the <span class="Emphasis">Project</span> tab.</li>
+                    <li>Click the <span class="Emphasis">Browse</span> button <img src="../../Images/browse_ellipses.png" class="ReduceButtonSize" />. </li>
+                    <li>In the dialog that opens, double-click the Flare project you want to link to the movie.</li>
+                    <li>In the Movie Properties dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you link from a MadCap Mimic collection, all of the variables and conditions in the Flare project will be available to all movies in that Mimic collection. If you link from a single movie, all of the variables and conditions in the Flare project will be available for only that movie.</p>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">After you link a Flare project to your movie or collection, you can select the newly linked condition tags or variable sets (for example, the "Default" condition tag set or the "System" variable set) in the Properties pane or when using the Variables dialog. By default, Mimic uses the "Movie" condition and variable sets.</p>
+                    <p>If you link a movie or collection to a Flare project and you don't see your linked condition and variable sets, you may need to close the movie or collection and reopen it to refresh the available sets.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you link to a Flare project, you can insert variables or apply condition tags from that project. See <MadCap:xref href="../../../Variables/Inserting_Variables_into_Objects_Mimic.htm">Inserting Variables into Objects</MadCap:xref> and <MadCap:xref href="../../../Condition_Tags/Applying_Conditions_Mimic.htm">Applying Condition Tags</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Variables;ConditionTags" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

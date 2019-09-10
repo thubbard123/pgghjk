@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1196" MadCap:lastWidth="1046" MadCap:conditions="Products.D2H">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Predefined templates are used to determine how content will look in both the source documents and the final output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>Doc-To-Help automatically assigns the default source template (D2H_NOMARGIN.DOTX) and its complementary target template (D2H_PRNOMARGIN.DOTX) after you create a new project. However, you can select different templates if you want.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Select a Default Source Template for New Documents</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The source template chosen in the Doc-To-Help interface is associated with new source documents that you create.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HDocumentsTemplatesContent"> See <MadCap:xref href="../../../Source_Documents/Adding a Document to a Project.htm">Adding a Document to a Project</MadCap:xref>.</MadCap:conditionalText></p>
+                <ol>
+                    <li>In Doc-To-Help, select the <span class="Emphasis">Home</span> ribbon.</li>
+                    <li>
+                        <p>From the <span class="Emphasis">Source Template</span> drop-down, select the template to be used for new documents so that a check mark is added next to it.</p>
+                        <p>If you want to select a template not shown in the list, click <span class="Emphasis">Add Template</span> and use the dialog to choose a template file.</p>
+                    </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option may also be set in the  Project Settings dialog (Default Template field).<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Project_Settings/Setting Project Properties.htm">Setting Project Properties</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide"> See the online Help or the <span class="EmphasisItalic">Managing Your Project Guide</span>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../D2H/SpecialFormattingRibbon.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToSelectSourceTemplateExistingDoc"></a>How to Select a Source Template for an Existing Document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have an existing document and want to associate it with a different template, you can do so in that Word document.</p>
+                <ol>
+                    <li>Open the Word source document.</li>
+                    <li>Select <span class="Emphasis">File&gt;Options</span>. The Word Options dialog opens.</li>
+                    <li>In the left pane, click <span class="Emphasis">Add-Ins</span>.</li>
+                    <li>From the <span class="Emphasis">Manage</span> drop-down, choose <span class="Emphasis">Templates</span>, then click <span class="Emphasis">Go</span>. The Templates and Add-ins dialog opens.</li>
+                    <li>In the <span class="Emphasis">Document template</span> area, click <span class="Emphasis">Attach</span>. The Attach Template dialog opens.</li>
+                    <li>Select a template file, then click <span class="Emphasis">Open</span>.</li>
+                    <li>In the Templates and Add-ins dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>Save the document.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Select a Target Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The target template affects the look of the target you build.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/D2H/Building a Target.htm">Building Targets</MadCap:xref>.</MadCap:conditionalText></p>
+                <ol>
+                    <li>In Doc-To-Help, select the <span class="Emphasis">Home</span> ribbon.</li>
+                    <li>
+                        <p>From the <span class="Emphasis">Target Template</span> drop-down, select a template. A check mark appears next to the template you select.</p>
+                        <p>If you want to select a template not shown in the list, click <span class="Emphasis">Add Template</span>. In the dialog, select a template file, then click <span class="Emphasis">Open</span>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have a legacy Doc-To-Help project in which you were using HTML5 files and CSS, you can select the CSS in the Help Targets dialog<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/D2H/Editing_Target_Settings.htm">Editing Target Settings</MadCap:xref>)</MadCap:conditionalText> or Project Settings dialog<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Project_Settings/Setting Project Properties.htm">Setting Project Properties</MadCap:xref>)</MadCap:conditionalText>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create custom templates. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Templates/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

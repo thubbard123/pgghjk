@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="744" MadCap:lastWidth="910">
+    <head />
+    <body>
+        <p class="Subheading">Tables have an extra blank paragraph beneath them in <MadCap:variable name="Outputs.Word" /> output</p>
+        <p>In generated <MadCap:variable name="Outputs.Word" /> output, tables have an extra blank paragraph beneath them even if there is no paragraph inserted in the code.</p>
+        <p class="Subheading">Cause</p>
+        <p>This is a bug in Flare that  converts non-zero settings on the "margin-bottom" style property value to a paragraph when the content is generated in <MadCap:variable name="Outputs.Word" />.</p>
+        <p class="Subheading">Solution</p>
+        <p>Perform the following steps.</p>
+        <ol>
+            <MadCap:snippetBlock src="../Styles/EditStyleStep1.flsnp" />
+            <li>
+                <MadCap:snippetBlock src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+            </li>
+            <li>In the upper-left corner of the editor, click in the <span class="Emphasis">Show Styles</span>  field and select from the drop-down menu, select <span class="Emphasis">Show Table Styles</span>.</li>
+            <li>On the left side of the editor, expand the <span class="Emphasis">table</span> group.</li>
+            <li>Select the table style you are using for the tables in <MadCap:variable name="Outputs.Word" /> output. </li>
+            <li>
+                <MadCap:snippetBlock src="../Styles/SelectShowAllPropertiesStep.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetBlock src="../Styles/ExpandBoxGroupStep.flsnp" />
+            </li>
+            <li>Change the <span class="Emphasis">margin-bottom</span> property to <span class="Emphasis">0</span>.</li>
+            <li>
+                <MadCap:snippetBlock src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+            <li>Regenerate the <MadCap:variable name="Outputs.Word" /> output. The extra paragraphs below tables will not appear.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="2185" MadCap:lastWidth="865" MadCap:conditions="Products.Lingo" description="How to apply translation memory to segments and entire projects in MadCap Lingo." class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="MadCap Lingo suggestion translations, translation memory suggestions, translation suggestions, apply translation memory to segments" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Translation memory:suggestions;Suggestions" />
+            <MadCap:concept term="FilterTM" />
+            <MadCap:concept term="TranslationMemory" />Applying TM Suggestions to Segments</h1>
+        <p>You can automatically apply matching translations from a TM database  to segments in a project.  In other words, the target cell in the Translation Editor will be populated with the translation. This does not mean the translation is completed. You still need to confirm each one. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="About_Translation_Memory.htm" MadCap:conditions="General.OnlineLive">About Translation Memory</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>You can apply TM suggestions at the project, file, or segment level.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply tm suggestions to an entire project—during process of creating project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Begin the process of creating a project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Projects_Starting/Creating_New_Lingo_Projects.htm">Creating New Projects</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>On the third page of the wizard, select the TM. </p>
+                    </li>
+                    <li>
+                        <p>From the <span class="Emphasis">Pre-translate options</span> drop-down, select <span class="Emphasis">Pre-translate with TM</span>. This automatically applies TM&#160;suggestions to the segments in the project.</p>
+                        <p>
+                            <img src="../Resources/Images/apply_suggestions1.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Translating/PretranslateExample.flsnp" />
+                    </li>
+                    <li>Finish the steps for creating the project.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply tm suggestions to an entire project—after the project is created</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the project.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the <span class="Emphasis">Utilize TM</span> section select <span class="Emphasis">Translate project with TM</span>. </p>
+                        <p>A message lets you know if segments were applied, and how many.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply tm suggestions to a file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the file in the Translation Editor.</li>
+                    <li>In the local toolbar click <img src="../Resources/Images/translate_with_tm_small_btn.png" class="ReduceButtonSize" />. A message lets you know if segments were applied, and how many.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to apply tm suggestions to a segment</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul style="list-style-type: circle;">
+                    <li>In the Translation Editor, click in the empty target cell. The matching suggestion is applied immediately to that cell.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Translating/TMandMTLanguages.flsnp" MadCap:conditionTagExpression="include[Snippets.Snippet14] exclude[Snippets.Snippet15 or Snippets.Snippet16] " />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To confirm a segment, click in that Target cell and press <span class="Emphasis">Enter</span>.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteReduceFuzzyPercentage.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Be aware that TM&#160;rankings take priority over fuzzy match percentages. If you set a minimum match percentage  and you ranked your TMs, a segment in the highest-ranked TM&#160;will take priority over a segment in the lower-ranked TM, even if the higher-ranked segment has a lower fuzzy match percentage. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Ranking_Translation_Memory.htm" >Ranking Translation Memories</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="LingoGuides.LingoTranslationGuide">See <MadCap:xref href="Ranking_Translation_Memory.htm#Ranking" >Ranking Translation Memories</MadCap:xref>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteAcceptExactMatches.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NotePretranslate.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteApplyFirstTMMatchFound.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/XliffAlternateTMSource.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:conditionTagExpression="include[Snippets.Snippet2]exclude[Snippets.Snippet1]" MadCap:lastBlockDepth="13" MadCap:lastHeight="1651" MadCap:lastWidth="817" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Shared\GettingStarted.flmsp');">
+    <head><title></title>
+        <meta name="description" content="How to update a MadCap Lingo project. Using the Update Project command in the File menu to translate source file changes to a target language." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects:updating" />
+            <MadCap:concept term="FilterProjects" />Updating Projects</h1>
+        <p>Let's say you have already created a Lingo project for an earlier version of a particular project or document. You have already translated it, exported it to a new project or file, and given it to the author. Sometime after this, the author makes many changes to the project or file (in the source language). Now the author needs you to translate those changes into the target language. To do this, you can update your Lingo project.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to update a project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <li>Open the Lingo project.</li>
+                    <li>Select <span class="Emphasis">File&gt;Update Project</span>.</li>
+                    <li>In the dialog that opens, navigate to the updated project or file that you want to translate, and double-click the appropriate file. A processing dialog temporarily displays as the changed files are integrated into the <MadCap:variable name="Other.Product" /> project. This dialog closes automatically when it is finished.</li>
+                    <li>
+                        <p>(Optional) If you want to update the localized images in your Lingo project with the images from the source project, select <span class="Emphasis">Replace localized images for this project</span>. <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may want to replace the localized images if the images in the source project have changed considerably. Localized images will only be replaced if the source image is newer (i.e., more recently updated) than the localized image; localized images that have not changed in the source project will not be replaced.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You will only be prompted to replace images if there are images in your Lingo project.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If the changed source file has segments that exactly match those in <MadCap:keyword term="Translation memory"></MadCap:keyword>TM, the segments automatically receive those translations. If there are changes where matches do not occur in TM, those changes are reflected in the Lingo project in a couple of ways. First, the Difference column in the File List window pane indicates whether a file has changed. Also, if you switch to Preview mode in the <MadCap:keyword term="Translation Editor" />Translation Editor (for files such as Word documents, PowerPoint files, and Flare topics, which can be displayed in that mode), icons are displayed next to segments that have been changed.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you use this feature, <MadCap:variable name="Other.Product" /> only scans files that have been changed, instead of all files in the project. This results in quicker updates.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Projects/UpdateProjectDisabled.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #f6861f;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you make changes to a project's filtering or flattening settings in the Project Properties dialog, you do not need to update the project to apply these settings. Instead, the changes are applied dynamically.</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/TranslationMemory/XliffAlternateTMSource.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After updating a project, you can open a list of files that require translation (see <MadCap:xref href="../../Translating_Files/Viewing_a_List_of_Files_Requiring_Translation.htm">Viewing a List of Files Requiring Translation</MadCap:xref>). If the Difference column indicates a change was made to a particular file, you can open that file to translate the new text (you may need to drag the divider in the File List window pane to see the Difference column).</p>
+                <p>
+                    <img src="../../Resources/Images/update_project_example2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StartProject" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="7" MadCap:lastHeight="657" MadCap:lastWidth="1146" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output" />
+            <MadCap:keyword term="Targets" />Building Targets Using Windows Services</h1>
+        <p>You can build Doc-To-Help targets using Windows Services such as the Task Scheduler or TFS Build. This is done using C1D2HBatch.exe and C1D2HAgent.exe, which can be found at <span class="Emphasis">C:\Program Files (x86)\MadCap Software\DocToHelp</span>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Build Targets Using Windows Services</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>An interactive user should log on and launch <span class="Emphasis">C1D2HAgent.exe</span>. </p>
+                        <p>C1D2HAgent.exe must be run on the same machine as the Windows Service. An interactive user has the rights to interact with the machine using the keyboard, mouse, etc. (Services are generally not interactive.)</p>
+                    </li>
+                    <li>
+                        <p>Start&#160;<span class="Emphasis">C1D2HBatch.exe</span> with the argument -buildagent.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>"C:\Program Files (x86)\MadCap Software\DocToHelp\C1D2HBatch.exe" -build "C:\Users\InteractiveUser\Documents\My Doc-To-Help Projects\Samples\EmployeeHandbook\EmployeeHandbook.d2h" "Employee Handbook Manual" -buildagent</p>
+                        </div>
+                        <p>This can be started by any Windows Service.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p>The interactive user who started C1D2HAgent.exe:</p>
+                    <ul>
+                        <li>Must be logged in when C1D2HBatch.exe is running.</li>
+                        <li>Must have read and write permissions for the project folder and its subfolders.</li>
+                    </ul>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

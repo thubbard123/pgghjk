@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:ignoredWords="CompanyName.&quot;;Incorporated.&quot;;s;MyVariables;time.);markers.);h;hh;.tif;(.css;HF;flvar;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;VariableName;MyVariables.PhoneNumber;F11;F3;F7;NewWord;MadCap's;MyProfile;taskbar;filename1;filename2;filename3;1filename;2filename;3filename;Highcolor;Truecolor;truecolor;ProductName;OurSoftware;PhoneNumber" MadCap:conditions="Products.Capture" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2019" MadCap:lastWidth="547">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Variables" />
+            <MadCap:keyword term="Variables:inserting;Objects:Variables;Variables:objects" />Inserting Variables into Objects</h1>
+        <p>After you create variables or link to existing variables in a MadCap Flare project, you can insert them into most objects that can be added to an image (e.g., callouts, rectangles). </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a variable into an object</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the image.</li>
+                    <li>Select an object.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        </p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectObjectorHomeRibbon.flsnp" /> In the <span class="Emphasis">Advanced</span> section click the <span class="Emphasis">Object Properties</span>. In the dialog that opens select the <span class="Emphasis">Rich Text</span> tab.</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/UIElements/SwitchBetweenRibbonsMenusToolbars.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Tool Strip </span>Select <span class="Emphasis">Object&gt;Properties</span>. </li>
+                            <li><span class="SetOffFirstLevel">Local Toolbar</span> Click <img src="../Resources/Images/shape_properties_btn.png" alt="" title="" class="ReduceButtonSize" /> and in the dialog that opens, select the <span class="Emphasis">Rich Text</span> tab. </li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">F2</span>. A pop-up window opens. </li>
+                            <li><span class="SetOffFirstLevel">Double-Click</span> Double-click the object. In the properties dialog for the object, select the <span class="Emphasis">Rich Text</span> tab. </li>
+                        </ul>
+                    </li>
+                    <li>Place your cursor at the location in the pop-up window or tab where you want to add a variable (e.g., before, between, or after any text you have typed).</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        </p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Tool Strip </span> If you opened the pop-up window, you can select <span class="Emphasis">Insert&gt;Variable</span>. </li>
+                            <li><span class="SetOffFirstLevel">Local Toolbar</span> In the Rich Text tab or pop-up window, click the <span class="Emphasis">Insert a Variable</span> button <img src="../Resources/Images/insert_variable_btn.png" class="ReduceButtonSize" />. </li>
+                        </ul>
+                        <p>The Variables dialog opens, with the variable sets (e.g., File, System, or name of variable set from Flare project) on the left and the variables associated with the selected set on the right. </p>
+                    </li>
+                    <li>
+                        <p>Select the appropriate variable set. </p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:file" />File Variables</span> These are variables that you create in Capture. A file variable is available only for the image for which it was created. See <MadCap:xref href="Creating_Variables.htm">Creating Variables</MadCap:xref>.</li>
+                            <li>
+                                <MadCap:keyword term="Variables:system" /><span class="SetOffFirstLevel">System Variables</span> These are variables provided by Capture, such as variables for your system date and time. </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:project link" />Project Link Variables</span> These are variables that were created in a MadCap Flare project, which has been linked to the Capture image. Therefore, any variables in that project can also be used in your image. You can link to a Flare project from an image manually. However, if the image is already contained within the folder structure of a Flare project, those variables are automatically available to the image (i.e., you do not need to link to the project manually). See <MadCap:xref href="../Project_Links/Linking_to_Flare_ProjectsCapture1.htm">Linking to Project Variables</MadCap:xref>.</li>
+                        </ul>
+                    </li>
+                    <li>Select the variable you want to add.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">OK</span>.</p>
+                        <p>The variable syntax is added to the object. For example, if you insert a variable called "PhoneNumber" from a variable set named "MyVariables," you will see something like this: </p>
+                        <p>
+                            <img src="../Resources/Images/variable_syntax.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>If you used the pop-up window, click outside of that window to close it.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>If you used the Rich Text tab in the properties dialog for the object, click <span class="Emphasis">OK</span> in the dialog. </li>
+                        </ul>
+                        <p>The variable definition is displayed in the object. </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/WhatsNext/WhatsNextAfterEdit.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Variables" />
+        </p>
+    </body>
+</html>

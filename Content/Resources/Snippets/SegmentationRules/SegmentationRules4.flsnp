@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo,Products.Align" MadCap:lastBlockDepth="5" MadCap:lastHeight="1406" MadCap:lastWidth="681">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Following are some additional points to keep in mind when working with segmentation rules:</p>
+        <ul>
+            <li>
+                <MadCap:snippetText src="SegmentationRulesSpaces.flsnp" />
+            </li>
+            <li>There may be times when you create a rule on the left side of the editor (<span class="EmphasisItalic">do not break</span>) that conflicts with another rule on the right side (<span class="EmphasisItalic">break</span>). In that case, the <span class="EmphasisItalic">do not break</span> rule overrides the <span class="EmphasisItalic">break</span> rule.</li>
+            <li>
+                <p>You can restore <MadCap:variable name="Other.Product" />'s segmentation rules to their default settings (i.e., clear all custom rules). To do this, click <span class="Emphasis">Restore Default</span>.</p>
+                <p>
+                    <img src="../../Images/segmentation_rules13.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+            </li>
+            <li>Segmentation rules are not tied to the project. They are external and are stored in Documents\LingoSRX. Therefore, all <MadCap:variable name="Other.Product" /> projects that you create can use the same rules.</li>
+            <li>There are certain default segmentation rules in place (e.g., when <MadCap:variable name="Other.Product" /> comes across Dr., it <span class="EmphasisItalic">does not</span> break the segment). However, you can create custom rules, which will overwrite the default rules when conflicts exist.</li>
+            <li>User-defined rules are applied to all languages.</li>
+            <li>When working in the advanced editor, if you add a rule to a language that has multiple language dialects (e.g., English has dialects for countries such as the United States and the United Kingdom), the rule will be applied to each dialect in that language. However, if you add a rule to a language's dialect, the rule is not applied to any other dialect in that language or to the top-level language (e.g., if you add a rule to English (Ireland), it is not applied to English (Jamaica) or English).</li>
+            <li>
+                <p>You can sort the rules by clicking the column headings.</p>
+                <p>
+                    <img src="../../Images/segmentation_rules14.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+            </li>
+            <li>
+                <p>You can resize the columns by clicking the divider between the column headings and dragging to the left or right.</p>
+                <p>
+                    <img src="../../Images/segmentation_rules15.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+            </li>
+            <li>Custom segmentation rules do not work on SDLXLIFF, TTX, and TXML files, because these files should be segmented already by other tools before they are imported.</li>
+        </ul>
+    </body>
+</html>

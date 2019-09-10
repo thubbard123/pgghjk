@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="16" MadCap:lastHeight="4200" MadCap:lastWidth="778" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlPerforce.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:roll back;Roll back:source control" />
+            <MadCap:keyword term="Source control:differences;Differences:source control" />
+            <MadCap:keyword term="Source control:history;History:source control" />
+            <MadCap:concept term="FilterSourceControlPerforce" />Rolling Back to an Earlier Version of a File<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Perforce</MadCap:conditionalText></h1>
+        <p>One of the benefits of <MadCap:variable name="Other.Product" />'s integrated source control is that you can view the history and differences for a particular file. <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlRollbackSummary.flsnp" /></p>
+        <p MadCap:conditions="Products.Flare">See <MadCap:xref href="Viewing_the_History_of_Source_Control_Files_per.htm">Viewing the History of Source Control Files</MadCap:xref> and <MadCap:xref href="Viewing_Differences_in_Source_Control_Files_per.htm">Viewing Differences in Source Control Files</MadCap:xref>.</p>
+        <p MadCap:conditions="Products.Lingo">See <MadCap:xref href="Viewing_the_History_of_Source_Control_Files_per.htm">Viewing the History of Source Control Files</MadCap:xref> and <MadCap:xref href="Viewing_Differences_in_Source_Control_Files_per.htm">Viewing Differences in Source Control Files</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/SourceControlRollBackExamplePerforce.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to roll back to an earlier version of a file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/SourceControlWindowPaneSelectFile.flsnp" />
+                        </p>
+                        <p>OR</p>
+                        <p>Open a file.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">View History</span>. </p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer,  Pending Changes window pane, or File List open, right-click the file you want to roll back and select <span class="Emphasis">Source Control&gt;View History</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>If you have the File List open, right-click the file you want to roll back and select <span class="Emphasis">Source Control&gt;View History</span>.</li>
+                            <li><span class="SetOffFirstLevel">Source Control Explorer </span>With the Pending Changes pane open,  right-click the file you want to roll back and select <span class="Emphasis">View History</span>.</li>
+                        </ul>
+                        <p>The History dialog opens.</p>
+                    </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuidePerforce" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/DifferencesEditorLocalToolbar.flsnp" />
+                    </li>
+                    <li>In the History dialog, select the version of the file to which you want to roll back.</li>
+                    <li>Click <span class="Emphasis">Get Selected Version</span>. That file is downloaded from source control and replaces the local copy of the file in your project.</li>
+                    <li>In the History dialog, click <span class="Emphasis">Close</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp,Products.LingoOnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Perforce" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Lingo" MadCap:lastBlockDepth="11" MadCap:lastHeight="1233" MadCap:lastWidth="1110" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[Snippets.Snippet1] " class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlTFS.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterSourceControlTFS" />
+            <MadCap:keyword term="Source control:disconnect" />Disconnecting from Source Control<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Team Foundation Server</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/DisconnectingIntro.flsnp" />
+        </p>
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/SourceControl/DisconnectingBenefits.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Disconnect from TFS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you want to work offline, you can disconnect from source control.</p>
+                <ol>
+                    <li>
+                        <p>Check out the files you will need to work on while disconnected. See <MadCap:xref href="../Checking_Out_Source_Control_Files_tfs.htm">Checking Out Source Control Files</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Disconnect</span>.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the <MadCap:conditionalText MadCap:conditions="Products.Flare">Content Explorer, Project Organizer, Pending Changes window pane, or </MadCap:conditionalText>File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Disconnect</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Disconnect</span>.</li>
+                        </ul>
+                    </li>
+                    <li>A confirmation dialog appears. Click <span class="Emphasis">Yes</span>. You will be disconnected from source control.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/DisconnectingDisablingNetwork.flsnp" />
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/DisconnectSaveError.flsnp" />
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideTFS" />
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/DisconnectingChangingFiles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuideTFS" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Reconnect to TFS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you are finished working offline, you can reconnect to source control.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Reconnect</span>.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the <MadCap:conditionalText MadCap:conditions="Products.Flare">Content Explorer, Project Organizer, Pending Changes window pane, or </MadCap:conditionalText>File List open, right-click on any file and select <span class="Emphasis">Source Control&gt;Project&gt;Reconnect</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Reconnect</span>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Check in the files you previously checked out. See <MadCap:xref href="../Checking_In_Source_Control_Files_tfs.htm">Checking In Source Control Files</MadCap:xref>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/SourceControl/NetworkConnectionStatusIcon.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

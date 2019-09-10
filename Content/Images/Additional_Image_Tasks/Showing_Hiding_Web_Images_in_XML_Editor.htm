@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="643" MadCap:lastWidth="871" MadCap:conditions="Products.Flare,Products.Contributor,Products.Analyzer" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareImages.flmsp');">
+    <head>
+        <meta name="description" content="When images in your project are hyperlinked to web pages, it can slow your work. Select the Show Web Images check box to show hyperlinked images in the XML&#160;Editor. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Web:images;Images:web" />
+            <MadCap:concept term="FilterPictures" />Showing and Hiding Web Images in the XML Editor</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInAllWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>You might have many image tags that link to websites, rather than linking to images in the project.</p>
+        <p>For example: &lt;img src="http://www.madcapsoftware.com/images/home/company.png" /&gt;</p>
+        <p>Keep in mind that slow website response times may slow down your work. Therefore, you might want to disable the rendering of such images in the XML Editor.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to show and hide web images in the xml editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select <span class="Emphasis">File&gt;Options</span>.<p>The Options dialog opens.</p></li>
+                    <li>Select the <span class="Emphasis">XML Editor</span> tab.</li>
+                    <li>Click <span class="Emphasis">Show web images</span>. A check mark in the box indicates that the feature is enabled.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="Products.Flare" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are using the "generate web-safe images" option in <MadCap:variable name="Outputs.WebHelp" /> targets, images that link to external locations, such as websites, are not affected by that option. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareImagesGuide">See <MadCap:xref href="../../Targets/More_About_Targets/Generating_Web_Safe_Images.htm" >Generating Web-Safe Images</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Pictures" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

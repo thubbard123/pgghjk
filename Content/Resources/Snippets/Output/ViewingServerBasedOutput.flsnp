@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2993" MadCap:lastWidth="1121" MadCap:conditions="Products.Flare">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>You can view <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> server-based</MadCap:conditionalText> output on your local machine for testing purposes, and you can view the output on the server where the files are published (where users access them). Before viewing the output, however, you must first follow all of the steps for enabling <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> server-based output</MadCap:conditionalText>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet9">See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareWebHelpGuide,Snippets.Snippet9">See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm#EnablingWHP" target="" title="" alt="">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet10">See <MadCap:xref href="../../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm" target="" title="" alt="">Enabling HTML5 Server-based Output</MadCap:xref>.</MadCap:conditionalText></p>
+        <h2 class="NoPageBreakBefore" MadCap:conditions="FlareGuides.FlareWebHelpGuide">Basics of Viewing <MadCap:variable name="Outputs.WebHelp Plus" /> Output</h2>
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareWebHelpGuide,General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>basics of viewing webhelp plus output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../WHP/MCPreviewFolder.flsnp" />
+                <MadCap:snippetBlock src="../WHP/ViewWHP1.flsnp" />
+                <MadCap:snippetBlock src="../WHP/ScenarioLink.flsnp" />
+                <MadCap:snippetBlock src="../WHP/WHPNotVista.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 class="NoPageBreakBefore" MadCap:conditions="FlareGuides.FlareHTML5Guide">Basics of Viewing <MadCap:variable name="Outputs.HTML5" /> Server-Based Output</h2>
+        <MadCap:dropDown MadCap:conditions="Snippets.Snippet10,FlareGuides.FlareHTML5Guide,General.OnlineLive">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>basics of viewing html5 server-based output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../HTML5/MCPreviewFolderHTML5.flsnp" />
+                <MadCap:snippetBlock src="../WHP/ViewWHP1.flsnp" />
+                <MadCap:snippetBlock src="../WHP/ScenarioLink.flsnp" />
+                <MadCap:snippetBlock src="../WHP/WHPNotVista.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+        <h2 MadCap:conditions="General.Print">Testing Output Locally—<MadCap:keyword term="Microsoft Windows Vista" />Windows Vista and Windows 7</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>testing output locally—<MadCap:keyword term="Microsoft Windows Vista" />windows vista and windows 7</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Windows Vista and Windows 7 include a feature called User Access Control (UAC). By default, this feature is enabled in Windows Vista and Windows 7, which means that all users, including administrators, run programs in an under-privileged state. It is not possible to view for testing on your local computer if Windows Vista or Windows 7 is running in this under-privileged state. If this occurs, you have two options: (1) disable UAC on the local machine, or (2) run Flare with elevated permission without globally disabling UAC.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>option 1—disable uac on the local machine</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li>Select <span class="Emphasis">User Accounts</span> (select it twice if you are in Category View).</li>
+                            <li>
+                                <p>(Windows Vista) Click <span class="Emphasis">Turn User Account Control on or off</span>. Click the check box to remove the check mark. <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /></p>
+                                <p>(Windows 7) Click <span class="Emphasis">Change User Account Control Settings</span> and then move the slider to <span class="Emphasis">Never notify</span> and click <span class="Emphasis">OK</span>.</p>
+                            </li>
+                            <li>
+                                <p>Restart the computer.</p>
+                                <p>UAC is now disabled. However, in order to preview <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> server-based</MadCap:conditionalText> output, you must be part of the Administrator's group, because Standard users cannot preview the output. Check with your system administrator to determine if you are in this group.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareHTML5Guide,FlareGuides.FlareWebHelpGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>option 2—run flare with elevated permission without globally disabling uac</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Make sure you are part of the Administrator's group. Check with your system administrator to determine if you are in this group.</li>
+                            <li>In Windows, navigate to the Flare executable file (C:\Program Files\<MadCap:variable name="Other.CompanyName" />\MadCap Flare V<MadCap:variable name="Other.VersionNumber" />\Flare.app\Flare.exe).</li>
+                            <li>Set yourself as an administrator for Flare (either temporarily or permanently).<p class="Subheading">to run only a single instance of flare as an administrator</p><ol class="LowerAlpha"><li>Right-click on the executable file.</li><li>Select <span class="Emphasis">Run as administrator</span>.</li></ol><p class="Subheading">to always run flare as an administrator</p><ol class="LowerAlpha"><li>Right-click on the executable file.</li><li>Select <span class="Emphasis">Properties</span>.</li><li>Select the <span class="Emphasis">Compatibility</span> tab.</li><li>In the <span class="Emphasis">Privilege Level</span> area, click in the check box labeled <span class="Emphasis">Run this program as an administrator</span>.</li></ol></li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+        <h2 MadCap:conditions="General.Print">Procedures for Viewing Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>procedures for viewing output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use the following procedures to view <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> server-based</MadCap:conditionalText> output on the production server (where you publish your final output files) and on your local computer (for testing purposes).</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to view output on the production server</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open a browser window on any computer.</li>
+                            <li>
+                                <p>In the address field, type the URL to the main entry file of your output files (where you published them). </p>
+                                <p>Unless you change the name of the output file (on the General tab of the Target Editor), the name of the main output file is Default.htm.</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p MadCap:conditions="Snippets.Snippet9">http://www.mycompanysite/help/myWHPtarget/Default.htm</p>
+                                    <p MadCap:conditions="Snippets.Snippet10">http://www.mycompanysite/help/myHTML5target/Default.htm</p>
+                                </div>
+                            </li>
+                            <li>Press <span class="Emphasis">Enter</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to view output on the local machine for testing (initial viewing)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>After generating the output, do one of the following using the Flare interface.</p>
+                        <ul>
+                            <li>
+                                <p>In the message that displays immediately at the end of the compilation process, click <span class="Emphasis">Yes</span>.</p>
+                                <p>OR</p>
+                            </li>
+                            <li>Open the Target Editor and in the local toolbar click <span class="Emphasis">View</span>.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to view output on the local computer (subsequent viewings)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>You can follow the same steps above for the initial viewing (using the Flare interface), or you can do the following to quickly access the files from the MCPreview folder.</p>
+                        <ol>
+                            <li>Open a browser window.</li>
+                            <li>
+                                <p>In the address field, type the following:</p>
+                                <p><span class="TypedEntry">http://localhost/MCPreview/[Name of Main Entry File].htm</span>
+                                </p>
+                                <p>For example: http://localhost/MCPreview/Default.htm</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The above address pertains to <MadCap:keyword term="Microsoft Windows XP" />Windows XP and <MadCap:keyword term="Microsoft Windows Server 2003" />Windows Server 2003 only. If you are testing on a computer running Windows Vista, use the following instead: http://localhost:70/[Name of Project]/[Name of Main Entry File].htm. The portion ":70" refers to the port number. For example, if testing on Vista, you might enter http://localhost:70/MyProject/Default.htm.</p>
+                            </li>
+                            <li>Press <span class="Emphasis">Enter</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Notes/NoteWaitWHPIndexing.flsnp" />
+                <MadCap:snippetBlock src="../Search/TopNavSkinNoMergingNote.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

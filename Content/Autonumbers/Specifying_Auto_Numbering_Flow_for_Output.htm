@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3034" MadCap:lastWidth="1061" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareAutonumbers.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Setting up the automatic numbering flow for volumes, chapters, and sections in a document. Generating numbers for volumes, chapters and sections. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Autonumbers" />
+            <MadCap:keyword term="Autonumbers:flow;Output:autonumbering;Chapters:auto-numbers;Sections:auto-numbers;Volumes:auto-numbers;Autonumbers:output" />
+            <MadCap:concept term="FilterAutoNumbers" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">Specifying </MadCap:conditionalText>Autonumbering Flow for Output</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/AutoNumbering/AutonumberFlow1.flsnp" />
+        </p>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/AutoNumbering/AutonumberFlow2.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say that the outline TOC that you have created to dictate the contents of your print-based output looks like this:</p>
+                    <p>
+                        <img src="../Resources/Images/online_toc_outline_example.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>In order to specify different page layouts for different parts of the output, you might create a chapter break on "Title Page," another on "Table of Contents," another on "Chapter 1," another on "Chapter 2," another on "Chapter 3," and another on "Index." </p>
+                    <p>What does this have to do with autonumbers? Well, let's say that you have created an autonumber format with the {chapnum} command (which is used for incrementing chapters), and you have applied this autonumber format on the first heading for the topics that start Chapters 1, 2, and 3. The problem is that you have already created chapter breaks on "Title Page" and "Table of Contents," which come before your "real" chapters. Therefore, unless you specify otherwise, <MadCap:variable name="Other.Product" /> will consider "Chapter 1" to actually be the third chapter, and the autonumbers will reflect this. </p>
+                    <p>So in order to ensure that the autonumber in "Chapter 1" actually starts with the number 1, you need to tell <MadCap:variable name="Other.Product" /> to reset the autonumber to 1.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlareAutoNumbersGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify autonumbering flow for output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/MakeSureProjectOrganizerOpen.flsnp" />
+                    </li>
+                    <li>Double-click the <span class="Emphasis">TOCs</span> folder. </li>
+                    <li>Double-click the TOC that you are using for the print-based output. The TOC Editor opens to the right.</li>
+                    <li>Select the entry in the TOC for which you want to specify autonumber settings. <p>For example, if a particular entry in the TOC is linked to a topic that contains an autonumber format with a {chapnum} or {volnum} command, you may want to specify the settings for that entry.</p></li>
+                    <li>In the local toolbar, click <img src="../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog for the TOC entry opens.</li>
+                    <li>
+                        <p>(Optional) Click the <span class="Emphasis">Printed Output</span> tab. </p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">If You are Creating Chapters </span>In the <span class="Emphasis">Break Type</span> field, select <span class="Emphasis">Chapter Break</span> to specify that a chapter break should be created at this location. Next, use the <span class="Emphasis">Page Layout</span> field to assign a page layout for the content starting at that point. Wherever a chapter break occurs in the output, chapter and volume autonumbers will be incremented. (For FrameMaker, this option will create a new document in the output. For the other outputs—PDF, XPS, XHTML, Word—this merely creates chapter breaks. If you want this to produce multiple PDF, XPS, or Word documents in the output, you also need to select the <span class="Emphasis">Generate Multiple Documents for native XPS/PDF&#160;output</span> check box in the Advanced tab of the Target Editor.)</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">If You are Creating Sections in Word or FrameMaker Output </span>Place a check mark in the <span class="Emphasis">Start a new section</span> box if you want this location to start a new section break in the content. Wherever a section break occurs in the output, section autonumbers will be incremented. Another reason to select this option is to include a master page for that section of the document for either Microsoft Word or FrameMaker output. Master pages are not used for PDF, XPS, or XHTML output.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click the <span class="Emphasis">Auto-numbers</span> tab.</li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlareAutoNumbersGuide" />
+                    <li>
+                        <p>Complete the fields on the tab. Make sure you select the option in the appropriate area (<span class="Emphasis">Chapter Number</span>, <span class="Emphasis">Volume Number</span>, or <span class="Emphasis">Section Number</span>).</p>
+                        <ul type="1" class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Reset to </span>Select this option if you want the section, chapter, or volume numbers in topics starting at this point in the TOC to begin at a specific number. Enter the number in the blank field. If you select the "text" option from the Format field, you can type any kind of text into this field. That text will be used instead of numbering.</li>
+                            <li><span class="SetOffFirstLevel">Format </span>Select the type of numbering to be used for the section, chapter, or volume autonumbers (e.g., decimal, Roman, uppercase, lowercase, text). If you select the "text" option, you can type any kind of text into the "Reset to" field. That text will be used instead of numbering.</li>
+                            <li><span class="SetOffFirstLevel">Same as previous </span>Select this option if you want the section, chapter, or volume numbers in topics starting at this point in the TOC to begin at the same number as the previous section, chapter, or volume.</li>
+                            <li><span class="SetOffFirstLevel">Increment number </span>Select this option if you want the section, chapter, or volume numbers in topics starting at this point in the TOC to begin at the next number after the previous section, chapter, or volume.</li>
+                        </ul>
+                        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlarePrintedOutputGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When setting the autonumber flow a TOC entry that you intend to be the start of a new volume, you should pay attention to the setting in the Chapter Number section, as well as the Volume Number section. For example, let's say you want the numbers in the output to go like this: </p>
+                                    <p><span class="SetOffFirstLevel">Vol 1</span>
+                                    </p>
+                                    <p>Ch 1</p>
+                                    <p>Ch 2</p>
+                                    <p>Ch 3</p>
+                                    <p><span class="SetOffFirstLevel">Vol 2</span>
+                                    </p>
+                                    <p>Ch 4</p>
+                                    <p>Ch 5</p>
+                                    <p>Suppose you select the TOC entry that you intend to be the start of Vol 2. You set the Volume Number to "Increment number" because you want it to follow Vol 1 in the numbering sequence. If the Chapter Number section above it is set to "Same as previous," you'll get the end result that you want. But if the Chapter Number section above is set to "Increment number," you may end up with something like this:</p>
+                                    <p><span class="SetOffFirstLevel">Vol 1</span>
+                                    </p>
+                                    <p>Ch 1</p>
+                                    <p>Ch 2</p>
+                                    <p>Ch 3</p>
+                                    <p><span class="SetOffFirstLevel">Vol 2</span>
+                                    </p>
+                                    <p>Ch 5</p>
+                                    <p>Ch 6 </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note" MadCap:conditions="Products.FlareOnlineOnly">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You perform these tasks from the table of contents (TOC) that you are using for the output. Please note that, if you are producing print-based output, the TOC in <MadCap:variable name="Other.Product" /> is simply used to determine what content to include in the output, as well as the structure of that content. It is <span class="EmphasisItalic">not</span> used to produce the actual TOC in the print-based output. For more information see <MadCap:xref href="../Output/Printed_Output/Creating_Printed_Output.htm" class="seepara" MadCap:conditions="Products.FlareOnlineOnly">Creating Print-based Output</MadCap:xref> and <MadCap:xref href="../Output/Printed_Output/More_About_Printed_Output/Creating_a_TOC_Manually_for_Print.htm">Creating a Topic for a Print TOC</MadCap:xref>.</p>
+                </div>
+                <div class="note" MadCap:conditions="General.OnlineLive">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order to create chapter autonumbers in FrameMaker output, you must split the output into multiple FrameMaker documents. If you are creating one of the other outputs—PDF, XPS, XHTML, Word—you do not necessarily need to create multiple documents, but you do need to create chapter breaks for the output. For more information see <MadCap:xref href="../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm" class="seepara">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</p>
+                </div>
+                <div class="note" MadCap:conditions="General.OnlineLive">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <MadCap:snippetText src="../Resources/Snippets/AutoNumbering/AutonumbersForOnlineLimited.flsnp" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Autonumbers" />
+        </p>
+    </body>
+</html>

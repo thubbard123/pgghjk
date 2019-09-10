@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="15" MadCap:lastHeight="17465" MadCap:lastWidth="798" MadCap:conditions="Products.Analyzer,Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareAnalyzerReports.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Reports" />
+            <MadCap:keyword term="Reports" MadCap:conditions="Products.Analyzer" />
+            <MadCap:keyword term="Reports:Analyzer;MadCap Analyzer:reports" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterReports" />Generating Reports</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Reports/GenerateReportsSummary.flsnp" />
+        </p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to generate a report</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add or open a report file. The Report Editor opens.</li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>In the <span class="Emphasis">Title</span> field, enter a title for the report you want to generate.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Tables</span> section, click in the check boxes next to any information that you want to include in the report. Some items appear in multiple categories. Click the appropriate <span class="Emphasis">Select All</span> check box to choose all items in a category.</p>
+                        <p>
+                            <img src="../../Resources/Images/report_tables.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareAnalyzerGuide" />
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Reports/ReportOptions.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareAnalyzerGuide" />
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="AnalyzerGuides.AnalyzerGettingStartedGuide,FlareGuides.FlareAnalyzerGuide" />
+                    <li>
+                        <p>(Optional) Select <span class="Emphasis">Skip empty reports</span> if you want to see only reports that contain information. </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you are generating a report and have selected ten different types of information to include. Perhaps one of those types of information—"Unused Condition Tags"—will not return any results because all of your condition tags have been used somewhere. However, the other nine types of information do have data to report. </p>
+                                    <p>If you select the "skip" option, the generated report will include nine sections, one for each type of information containing data. You will not see a section in the generated report for "unused condition tags." </p>
+                                    <p>If you do not select the "skip" option, you will see ten sections in the generated result. Nine of those sections will show data, and the tenth (for "unused condition tags") will simply mention that no data exists.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>(Optional) Select <span class="Emphasis">Print report after generation</span> if you want to print a report immediately after you generate it. If this option is selected, the Print dialog opens as soon as a report is finished generating. </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../../Resources/Images/print_report_after_generation.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>(Optional) If you want to modify the look of the report, use the following steps.</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>Select the <span class="Emphasis">Styles</span> tab. </li>
+                            <li>Select the style item that you want to modify (e.g., ReportEntry, ReportHeading, ReportText). You can select a basic style node, or you can expand the node and select an option under it.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">ReportEntry </span>This affects the individual lines of data in a report, displaying the information you selected when generating the report. You can add borders, padding, and margins to those entries. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li><li><span class="SetOffFirstLevel">ReportGroup </span>This affects the chunks or groups of data in a report, displaying the information you selected when generating the report. You can add borders, padding, and margins to those entries.</li><li><span class="SetOffFirstLevel">ReportHeading </span>This affects the individual headings that display in the report, based on the types of information that you selected when generating the report. For example, if you select four different types of data for the report (e.g., Absolute Links, Broken Links, External Links, Snippet Suggestions), you will see a different heading for each of those. You can change the heading label, as well as font, border, padding, and margin settings.</li><li><span class="SetOffFirstLevel">ReportPrefix </span>This affects the prefix text that is displayed before the individual lines of data in a report so that you know what you are looking at in an entry (e.g., File, Condition Tag, Link, Bookmark). You can change the font settings for those prefixes. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li><li><span class="SetOffFirstLevel">ReportSection </span>This affects the entire section where a type of information is displayed in a report. For example, if you selected to view absolute links and external links in a report, you can modify the section for each, to change the look of the area where the heading and individual entries are shown. You can add borders, padding, and margins to those sections. You can also specify that a page break should be inserted before or after the heading in a report.</li><li><span class="SetOffFirstLevel">ReportText </span>This affects the text of the individual lines of data in a report. You can change the font settings for the text. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li></ul></li>
+                            <li>Select the <span class="Emphasis">Property Groups</span> or <span class="Emphasis">Alphabetical List</span> option to display the properties for the style item.</li>
+                            <li>In the <span class="Emphasis">Properties</span> section, set the values for the properties that you want modify.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>In the <span class="Emphasis">Report</span> section, click the <span class="Emphasis">Generate</span> button. The report is generated and displays below. If you change the options and click Generate again, the report will be replaced with a new one.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="AnalyzerGuides.AnalyzerReportsGuide" />
+        <MadCap:dropDown MadCap:conditions="Products.Analyzer">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to generate a report</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a project. </li>
+                    <li>Select <span class="Emphasis">View&gt;Reports</span>. The Reports window pane opens.</li>
+                    <li>In the local toolbar, click <img src="../../Resources/Images/new_item3_btn.png" class="ReduceButtonSize" />. The Add Report dialog opens.</li>
+                    <li>In the <span class="Emphasis">File Name</span> field, type a new name for the report file.</li>
+                    <li>Click <span class="Emphasis">Add</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The report file is added to the Project\Reports folder where the project is located. The Report Editor opens.</li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>In the <span class="Emphasis">Title</span> field, enter a title for the report you want to generate.</li>
+                    <MadCap:pageBreak MadCap:conditions="AnalyzerGuides.AnalyzerGettingStartedGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Tables</span> section, click in the check boxes next to any information that you want to include in the report. Some items appear in multiple categories. Click the appropriate <span class="Emphasis">Select All</span> check box to choose all items in a category.</p>
+                        <p>
+                            <img src="../../Resources/Images/report_tables.png" class="MaxWidth90Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Reports/ReportOptions.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareAnalyzerGuide" />
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="AnalyzerGuides.AnalyzerGettingStartedGuide,FlareGuides.FlareAnalyzerGuide,AnalyzerGuides.AnalyzerReportsGuide" />
+                    <li>
+                        <p>(Optional) Select <span class="Emphasis">Skip empty reports</span> if you want to see only reports that contain information. </p>
+                        <MadCap:dropDown>
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you are generating a report and have selected ten different types of information to include. Perhaps one of those types of information—"Unused Condition Tags"—will not return any results because all of your condition tags have been used somewhere. However, the other nine types of information do have data to report. </p>
+                                    <p>If you select the "skip" option, the generated report will include nine sections, one for each type of information containing data. You will not see a section in the generated report for "unused condition tags." </p>
+                                    <p>If you do not select the "skip" option, you will see ten sections in the generated result. Nine of those sections will show data, and the tenth (for "unused condition tags") will simply mention that no data exists.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>(Optional) Select <span class="Emphasis">Print report after generation</span> if you want to print a report immediately after you generate it. If this option is selected, the Print dialog opens as soon as a report is finished generating. </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../../Resources/Images/print_report_after_generation.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>(Optional) If you want to modify the look of the report, use the following steps.<ol style="list-style-type: lower-alpha;"><li>Select the <span class="Emphasis">Styles</span> tab. </li><li>Select the style item that you want to modify (e.g., ReportEntry, ReportHeading, ReportText). You can select a basic style node, or you can expand the node and select an option under it.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">ReportEntry </span>This affects the individual lines of data in a report, displaying the information you selected when generating the report. You can add borders, padding, and margins to those entries. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li><li><span class="SetOffFirstLevel">ReportGroup </span>This affects the chunks or groups of data in a report, displaying the information you selected when generating the report. You can add borders, padding, and margins to those entries.</li><li><span class="SetOffFirstLevel">ReportHeading </span>This affects the individual headings that display in the report, based on the types of information that you selected when generating the report. For example, if you select four different types of data for the report (e.g., Absolute Links, Broken Links, External Links, Snippet Suggestions), you will see a different heading for each of those. You can change the heading label, as well as font, border, padding, and margin settings.</li><li><span class="SetOffFirstLevel">ReportPrefix </span>This affects the prefix text that is displayed before the individual lines of data in a report so that you know what you are looking at in an entry (e.g., File, Condition Tag, Link, Bookmark). You can change the font settings for those prefixes. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li><li><span class="SetOffFirstLevel">ReportSection </span>This affects the entire section where a type of information is displayed in a report. For example, if you selected to view absolute links and external links in a report, you can modify the section for each, to change the look of the area where the heading and individual entries are shown. You can add borders, padding, and margins to those sections. You can also specify that a page break should be inserted before or after the heading in a report.</li><li><span class="SetOffFirstLevel">ReportText </span>This affects the text of the individual lines of data in a report. You can change the font settings for the text. <MadCap:snippetText src="../../Resources/Snippets/Reports/ReportStyleLevels.flsnp" /></li></ul></li><li>Select the <span class="Emphasis">Property Groups</span> or <span class="Emphasis">Alphabetical List</span> option to display the properties for the style item.</li><li>In the <span class="Emphasis">Properties</span> section, set the values for the properties that you want modify.</li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>In the <span class="Emphasis">Report</span> section, click the <span class="Emphasis">Generate</span> button. The report is generated and displays below. If you change the options and click Generate again, the report will be replaced with a new one.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After generating a report, you may want to do either of the following.</p>
+                <ul class="Square">
+                    <li>
+                        <MadCap:xref href="Opening_Reports.htm" target="" title="" alt="">Opening Reports</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="Saving_Reports.htm" target="" title="" alt="">Saving Reports</MadCap:xref>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Reports" />
+        </p>
+    </body>
+</html>

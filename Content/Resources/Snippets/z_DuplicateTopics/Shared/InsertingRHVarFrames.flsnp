@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="8" MadCap:lastHeight="1440" MadCap:lastWidth="1315">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/FrameMaker_Word.flsnp" MadCap:conditions="Products.FlareOnlineOnly" />
+        <p>
+            <MadCap:snippetText src="../../Variables/RHVarInFrames.flsnp" />
+            <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../../Variables/More_About_Variables/About_Running_HF_Variables.htm">About Running Head Variables</MadCap:xref>, <MadCap:xref href="../../../../Variables/More_About_Variables/About_Heading_Variables.htm">About Heading Variables</MadCap:xref>, and <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Heading_Variables_Into_Frames.htm">Inserting Heading Variables Into Frames</MadCap:xref>.</MadCap:conditionalText>
+            <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../../Variables/More_About_Variables/About_Running_HF_Variables.htm">About Running Head Variables</MadCap:xref>.</MadCap:conditionalText>
+        </p>
+        <MadCap:snippetBlock src="../../Variables/HeadingVsRunningHeadVariables.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:snippetBlock src="../../ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to insert a running head variable into a page layout frame</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Add a variable set to the project, selecting the Running HF template. See <MadCap:xref href="../../../../Variables/More_About_Variables/Adding_Variable_Sets_to_Projects.htm">Adding Variable Sets to Projects</MadCap:xref>.</li>
+                    <li>Open a page in a page layout.</li>
+                    <li>
+                        <p>Click on the frame to which you want to add text or other content.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can add text and content only to header, footer, and decoration frames. You cannot add text and content to a body frame (which automatically displays content from your topics).</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Local Toolbar</span> Click <img src="../../../Images/edit_text_btn.png" class="ReduceButtonSize" />.</li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">F2</span> on your keyboard.</li>
+                            <li><span class="SetOffFirstLevel">Right-Click</span> Right-click the frame and select <span class="Emphasis">Edit Text</span>.</li>
+                        </ul>
+                        <p>A message opens, asking if you want to pick content from a template (e.g., a page number).</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">No</span>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have already prepared content in the form of a snippet and added it to your template folder, you can click "Yes" instead in order to select the snippet. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <xref href="../../../../Templates/About_Templates.htm">About Templates</xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print">For more information about templates, see the online Help.</MadCap:conditionalText></p>
+                    </li>
+                    <li>Click in the Frame Contents window pane.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span>
+                                    <MadCap:snippetText src="../../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Single Source</span> section select <span class="Emphasis">Variable</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Local Toolbar</span> Click <img src="../../../Images/insert_variable_btn.png" class="ReduceButtonSize" />.</li>
+                            <li><span class="SetOffFirstLevel">Keyboard Shortcut</span> Press <span class="Emphasis">CTRL+SHIFT+V</span>.</li>
+                        </ul>
+                        <p>The Variables dialog opens, with the variable set(s) on the left and the variables associated with the selected set on the right.</p>
+                    </li>
+                    <li>On the left side of the dialog, select the Running Head variable set that you created.</li>
+                    <li>On the right side of the dialog, select the variable that you want to insert. Unless you edit the variable definitions to change the style classes within them, each variable is associated with one of the six heading styles (h1 through h6). <p>When you insert a Running Head variable into a page layout frame, <MadCap:variable name="Other.Product" /> will insert the text from the first occurrence of the specified style on that page. If it doesn't find any text using that style, it will use the text from the previous occurrence of that style.</p><div class="example"><p class="exampleHeadTextEmpty">example</p><p>If you want the header in chapters to display content that is using the h1 style (perhaps you are using this style to display the chapter title for your output), select the <span class="Emphasis">Running H/F 1</span> variable. The header will then display the first h1 content that it finds in the document (e.g., "My First Chapter Title"). When the next occurrence of the h1 style appears on another page, the heading changes to display that text (e.g., "My Second Chapter Title"), and so on.</p></div></li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" /> The variable is added to the Frame Contents window pane.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" /> The variable can now be seen in the frame.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <conceptLink term="PageLayoutFramesSnap" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

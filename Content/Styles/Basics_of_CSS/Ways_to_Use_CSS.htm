@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1669" MadCap:lastWidth="910" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareStyles.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:keyword term="Styles;Styles:stylesheets" />
+            <MadCap:concept term="StyleBasics" />
+            <MadCap:keyword term="Cascading stylesheets" />Ways to Use CSS</h1>
+        <p MadCap:conditions="">Following are the three main ways to use CSS rules—inline, embedded, external.</p>
+        <h2 MadCap:conditions="General.Print">Inline CSS</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Cascading stylesheets:inline" />inline css</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="">With this method, you specify the formatting rule for the content at the spot where it exists in the document. Although this type of implementation is allowed, it is not recommended because changing the look of the text in the future might mean making changes in many files and many places instead of just one. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Local_Formatting/Local_Formatting.htm">Local Formatting</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Embedded CSS</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Cascading stylesheets:embedded" />embedded css</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>With this method, you specify formatting rules for elements within a file and they affect only that document. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>You might decide to specify that every paragraph in the document should be 11 points. Therefore, in the XHTML document code, you specify between the &lt;head&gt; tags that all paragraphs (&lt;p&gt; tags) should be that size. As a result, every time a &lt;p&gt; tag is found in that document, the text will be 11 points. In the behind-the-scenes XHTML code, it might look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/embedded_method_example.png" class="MaxWidth75Percent" />
+                    </p>
+                </div>
+                <p>This method is a bit more powerful than the inline method, but it still does not allow you to control the look and feel of more than one document at a time, therefore it also is not recommended.</p>
+                <p>If you want to use embedded CSS in <MadCap:variable name="Other.Product" />, you would need to open the XHTML code (in the Internal Text Editor or in a third-party editor) and enter the embedded CSS rules manually. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">External CSS</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Cascading stylesheets:external" />external css</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>With this method, you <span class="EmphasisItalic">do not</span> specify formatting rules anywhere within the XHTML or HTML document. Instead, you specify the rules in a separate, external file that has a <MadCap:keyword term="CSS file" />.css extension (see <MadCap:xref href="../Creating_New_Style_Sheets.htm">Creating New Stylesheets</MadCap:xref> and <MadCap:xref href="../Editing_Styles.htm">Editing Styles</MadCap:xref>). Then, in the XHTML document you provide a link to that external stylesheet (see <MadCap:xref href="../Associating_Master_Stylesheets_with_All_Files.htm">Applying Master Stylesheets</MadCap:xref> and <MadCap:xref href="../Associating_Stylesheets_with_Specific_Files.htm">Applying Stylesheets to Topics</MadCap:xref>).</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>You might decide to specify that every paragraph in all of your documents should be 11 points. Therefore, you create an external stylesheet, name it something like styles.css, and specify within it that all paragraphs (&lt;p&gt; tags) should be that size. This work can be done in the <MadCap:variable name="Other.Product" /> interface. If you look at the behind-the-scenes code in the CSS file, it might look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/external_method_example1.png" class="MaxWidth80Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <p>Then you associate the external stylesheet with all of the XHTML files that you want to use that look and feel. Again, this can be done in the <MadCap:variable name="Other.Product" /> project at multiple levels (topic, target, and project). If you look in the behind-the-scenes XHTML code of one of the document files, it might look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/external_method_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <p>External stylesheets are recommended over the other methods. They make it possible to truly separate the content from the presentation and allow you to apply formatting to multiple places at once.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="StyleBasics" />
+        </p>
+    </body>
+</html>

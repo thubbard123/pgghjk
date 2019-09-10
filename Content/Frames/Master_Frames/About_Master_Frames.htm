@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Mimic" class="" MadCap:lastBlockDepth="7" MadCap:lastHeight="1829" MadCap:lastWidth="1046" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieEditing.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterFrames" />
+            <MadCap:keyword term="Frames:master;Master frames" />
+            <MadCap:concept term="MasterFrames" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Master Frames</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Frames/MasterFramesSummary.flsnp" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say that you want to add Back and Next buttons at the bottom of almost all of the frames in your movie. The hard way to accomplish this is to create each button on each frame, or copy and paste them. The easy way is to create one master frame, add the two buttons on it (editing the appearance, button actions, etc.), and then apply that master frame to the relevant frames in the movie.</p>
+                    <p>
+                        <img src="../../Resources/Images/master_frames_example_mimic.png" class="MaxWidth80Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>The easiest way to apply a master frame to all (or most) of the frames in a movie is to do so in the Movie Properties dialog. When you create master frame, you give it a name (or you can use the auto-generated number provided by Mimic). Then, in the Movie Properties dialog, you simply select that master frame. </p>
+                    <p>You can apply the master frame so that it displays on the bottom or top layer of each frame. If it displays on the bottom layer, all other objects on each frame (e.g., buttons, cursors, shapes) will appear <span class="EmphasisItalic">in front</span> of the Back and Next buttons from the master frame. If it displays on the top layer, all other objects will appear <span class="EmphasisItalic">behind</span> the Back and Next buttons.</p>
+                    <p>
+                        <img src="../../Resources/Images/master_frames_example2_mimic.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>
+                        <img src="../../Resources/Images/master_frames_example3_mimic.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+                    <p>Now that the master frame is applied to all frames in the movie, you need to remove it from the first and last frames. To do this, you right-click on each of those frames and select <span class="Emphasis">Remove Master Frames</span>.</p>
+                    <p>
+                        <img src="../../Resources/Images/master_frames_example4_mimic.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieEnhancementGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">steps for using master frames</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h2 MadCap:conditions="General.Print">Steps for Using Master Frames</h2>
+                <p>Following are the basic steps for using master frames.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Create </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Frames/CreateMasterFramesSummary.flsnp" /> See <MadCap:xref href="Creating_Master_Frames.htm">Creating Master Frames</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Apply </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Frames/ApplyMasterFramesSummary.flsnp" /> See <MadCap:xref href="Applying_Master_Frames.htm">Applying Master Frames</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Edit </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/Frames/EditMasterFramesSummary.flsnp" /> See <MadCap:xref href="Editing_Master_Frames.htm">Editing Master Frames</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.Future" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Master frames do not support image effects.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can show or hide different master frame objects in the active frame. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Showing_and_Hiding_Master_Frames.htm" target="" title="" alt="" >Showing and Hiding Master Frames</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="MasterFrames" />
+        </p>
+    </body>
+</html>

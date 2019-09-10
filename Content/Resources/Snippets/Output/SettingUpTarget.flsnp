@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="8" MadCap:lastHeight="800" MadCap:lastWidth="1190">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">setting up <MadCap:conditionalText MadCap:conditions="Snippets.Snippet9"><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">a webhelp plus</MadCap:dropDownHotspot></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">an html5</MadCap:dropDownHotspot></MadCap:conditionalText><MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive"> target</MadCap:dropDownHotspot></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps show you how to set up your <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /> target for server-based output.</p>
+                <p class="Subheading" MadCap:conditions="FlareGuides.FlareTargetsGuide,FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide,FlareGuides.FlareSearchGuide">how to set up the <MadCap:conditionalText MadCap:conditions="Snippets.Snippet9">webhelp plus</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10">html5</MadCap:conditionalText> target</p>
+                <ol>
+                    <li> In Flare, open the <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /> target.The Target Editor opens.</li>
+                    <li>Select the <span class="Emphasis">Publishing</span> tab. </li>
+                    <li MadCap:conditions="Snippets.Snippet10">In the <span class="Emphasis">Server-based Output</span> section, click the check box.</li>
+                    <li>
+                        <p>
+                            <MadCap:keyword term="WebHelp Plus:catalog;Catalog" MadCap:conditions="Snippets.Snippet9" />
+                            <MadCap:keyword term="HTML5:catalog;Catalog" MadCap:conditions="Snippets.Snippet10" />In the <span class="Emphasis">Indexing Service Catalog Name</span> field, type the catalog that you are using for the output. In most cases, this will be <span class="TypedEntry">Web</span>, which is the default value. However, if you or someone in your company (e.g., network administrator) creates a custom catalog, you need to enter that name in the field.</p>
+                        <p MadCap:conditions="Snippets.Snippet9">
+                            <img src="../../Images/enablingWHP10.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p>What is a catalog? Microsoft Indexing<MadCap:keyword term="Microsoft Indexing" /> Service stores all of its index information in catalogs. A catalog comprises index information and stored properties for a particular group of file system directories. When Indexing Service is installed with <MadCap:keyword term="Microsoft Windows XP" />Windows XP, it automatically builds a catalog, called the System catalog, listing contents of all permanently attached disk drives. The System catalog contains an index for all documents except certain system and temporary files. If Internet Information Services (IIS) is installed, the Indexing Service also creates a web catalog, which contains an index of IIS, the default virtual server of the World Wide Web.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This step is necessary only for Windows XP and Windows Server 2003.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Generate the target.</li>
+                    <li>
+                        <p>Publish the output to any location on the web server. If you want to use the default location that was created after you installed IIS, you can publish the output to C:\Inetpub\wwwroot. If you do this, you can use the "Default Web Site" folder that you will encounter when performing the next set of steps (i.e., configuring IIS on the production server).</p>
+                        <p>If you are working on your local machine for testing purposes, you do not need to publish the output. You can  simply view your <MadCap:variable name="Outputs.WebHelp Plus" /> output. <MadCap:snippetText src="../WHP/MCPreviewFolder.flsnp" MadCap:conditions="Snippets.Snippet9" /><MadCap:snippetText src="../HTML5/MCPreviewFolderHTML5.flsnp" MadCap:conditions="Snippets.Snippet10" /></p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

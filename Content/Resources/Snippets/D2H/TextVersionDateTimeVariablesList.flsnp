@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="9" MadCap:lastHeight="900" MadCap:lastWidth="908">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul>
+            <li><span class="SetOffFirstLevel">Text </span>A text variable is the type that has been used in previous versions of Doc-To-Help. This lets you enter simple text.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Version </span>This lets you enter a version in one of four available formats: </p>
+                <ul class="SecondLevel">
+                    <li>1</li>
+                    <li>1.0</li>
+                    <li>1.0.0</li>
+                    <li>1.0.0.0</li>
+                </ul>
+                <p>If you click the <span class="Emphasis">Build</span> button, unchanged documents won't be processed, so variables <span class="EmphasisItalic">won't</span> be updated in those unchanged documents when you view the output, although they <span class="EmphasisItalic">will</span> be incremented in the Variables window where you created them.</p>
+                <p>If you want to force variables to update in all documents, you need to click <span class="Emphasis">Rebuild</span> instead. Each time you click the Rebuild button for a target that has the variable, the version values are incremented automatically—whether the documents have changed or not—in both the output and the Variables window.</p>
+                <p>When version variables are updated, only the last part of the number is incremented automatically.</p>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>Let's say you create a version variable with the 1.0.0 format, insert it into a document, and build a target.</p>
+                            <p>If you rebuild the target, the variable changes in the output to 1.0.1.</p>
+                            <p>If you rebuild again, it changes to 1.0.2.</p>
+                            <p>If the variable value reaches 1.0.9 and you rebuild, it changes to 1.0.10, then 1.0.11, then 1.0.12, and so on.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can open the Variables window in Doc-To-Help and change the variable value manually at any time.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The variable value is incremented only if this variable was used in building the current target, so all variables that were excluded from the build process due to their condition won't be changed.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Date/Time </span>These variables get their values either from current system date/time, or from file date/time attributes. This means that you cannot set its value manually (for this purpose, you can use simple "text" type variables).</p>
+            </li>
+        </ul>
+    </body>
+</html>

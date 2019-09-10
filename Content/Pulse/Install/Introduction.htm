@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="2112" MadCap:lastWidth="936" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <meta name="description" content="For Pulse, choose between a single-server deployment and a two-server deployment. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="Installation" />
+            <MadCap:keyword term="MadCap Pulse:deployment types" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Deployment types" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Deployment Types</h1>
+        <h1 MadCap:conditions="PulseGuides.2008R2InstallationGuide,PulseGuides.2008InstallationGuide,PulseGuides.2012InstallationGuide,PulseGuides.PulseInstallationGuide">
+            <MadCap:concept term="Installation" />
+            <MadCap:keyword term="MadCap Pulse:deployment types" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Deployment types" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Introduction</h1>
+        <h1 MadCap:conditions="FlareGuides.FlarePulseGuide">Installation</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:deployment types" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Deployment types" MadCap:conditions="Products.Pulse" />Introduction</h1>
+        <p MadCap:conditions="General.OnlineLive,FlareGuides.FlarePulseGuide">The installation of Pulse depends on multiple applications and utilities working together. There are a couple of types of deployment you can use, and you can install Pulse on one of three different operating systems. The installation type that you choose will depend on factors that are specific to your environment, such as the number of users you plan to host, your web usage, and other factors related to deploying an SQL database and IIS server. </p>
+        <p MadCap:conditions="PulseGuides.PulseInstallationGuide">The installation of Pulse depends on multiple applications and utilities working together. There are a couple of types of deployment you can use, and you can install Pulse on one of three different operating systems. The installation type that you choose will largely depend on factors that are specific to your environment, such as the number of users you plan to host, your web usage, and other factors related to deploying an SQL database and IIS server.</p>
+        <p MadCap:conditions="PulseGuides.2012InstallationGuide">This guide discusses how to install Pulse on Windows Server 2012.</p>
+        <p MadCap:conditions="PulseGuides.2008R2InstallationGuide">This guide discusses how to install Pulse on Windows Server 2008R2.</p>
+        <p MadCap:conditions="PulseGuides.2008InstallationGuide">This guide discusses how to install Pulse on Windows Server 2008.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide,FlareGuides.FlarePulseGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.2008InstallationGuide,PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Two-Server Deployment</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>two-server deployment</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The most common deployment type for Pulse is to install the components in a distributed environment on two servers:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Pulse Web Server </span>The web server is a Windows Server system running Microsoft Internet Information Services (IIS). You install the Pulse server application on this system.</li>
+                    <li><span class="SetOffFirstLevel">Pulse Database Server </span>The database server is a Windows Server system running Microsoft SQL&#160;Server. You install an instance of Microsoft SQL and create the Pulse database on this system.</li>
+                </ul>
+                <p>
+                    <img src="../../Resources/Images/pulse_info_graphic_2_machines.png" class="MaxWidth75Percent" />
+                </p>
+                <p>After deploying Pulse, the integrated Flare output can be published either to the Pulse web server or to a different system with access to the Pulse web server. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.2008InstallationGuide,PulseGuides.2008R2InstallationGuide,PulseGuides.2012InstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Single-Server Deployment</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>single-server deployment</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>It is also possible to install all of the Pulse components on a single server. This means the Pulse web server and database server are running on a single system. Although this is a simple way to deploy Pulse, most organizations choose to install Pulse in a distributed environment because it offers greater scalability and performance.</p>
+                <p>
+                    <img src="../../Resources/Images/pulse_info_graphic_1_machine.png" class="MaxWidth75Percent" />
+                </p>
+                <p>After deploying Pulse, the integrated Flare output can be published either to the Pulse server or to a different system with access to the Pulse server. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">When deciding which installation type is best for your environment, it is recommended that you discuss your options, deployment strategy, and system requirements with your  IT department. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">operating Systems</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can install Pulse on the following operating systems. Some of the prerequisites and steps are the same for these operating systems, while others are different.</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Windows Server 2012 </span>To get started, see <MadCap:xref href="2012/Pulse_System_Requirements_2012.htm">Pulse System Requirements for Windows Server 2012</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Windows 2008 R2 </span>To get started, see <MadCap:xref href="2008R2/Pulse_System_Requirements_2008R2.htm">Pulse System Requirements for Windows Server 2008R2</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Windows 2008 </span>To get started, see <MadCap:xref href="2008/Pulse_System_Requirements_2008.htm">Pulse System Requirements for Windows Server 2008</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Upgrading</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you are using the previous version of Pulse and want to upgrade to the newest version, see <MadCap:xref href="../Upgrading/Upgrading_to_New_Version_of_Pulse.htm">Upgrading to a New Version of Pulse</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

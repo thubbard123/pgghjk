@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);file.&quot;;IdentifierName.&quot;;allowed.);n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs;flali;h;hh" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="923" MadCap:lastWidth="956" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareCSH.flmsp');">
+    <head><title></title>
+        <meta name="description" content="How to export a Header file from MadCap Flare to provide your developers with mapping information for a context-sensitive Help project." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterCSH" />
+            <MadCap:concept term="csh" />
+            <MadCap:keyword term="Context-sensitive Help:header files;Header files:exporting" />
+            <MadCap:concept term="FilterExporting" />Providing a Developer with a Header File</h1>
+        <p>If it is decided that you are responsible for creating the header file (i.e., the file containing an .h extension in your project), you must provide a copy of it to the software developer. The developer will then use the header file to "hook" the numerical values in the header file to the appropriate dialogs or windows in the software. </p>
+        <p>When you are finished creating the header file, you can export it using the steps below so that the developer has access to it. If you make further changes to the header file, you need to ensure that the developer receives a new copy of it.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to export header files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectToolsRibbon.flsnp" /> In the <span class="Emphasis">Context Sensitive Help</span> section select <span class="Emphasis">Export Header File(s)</span>.   </li>
+                            <li><span class="SetOffFirstLevel">Right-Click</span> In the Project Organizer, right-click the <span class="Emphasis">Advanced</span> folder and select <span class="Emphasis">Export Header File(s)</span>.</li>
+                        </ul>
+                        <p>The Export Header Files dialog opens.</p>
+                    </li>
+                    <li>On the left side of the dialog, select the format(s) that you want to use for exporting the header file(s). Work with your developer to determine the appropriate type of format:<ul class="FirstLevel"><li><span class="SetOffFirstLevel"><MadCap:keyword term="C;C++;H file" />C/C++ (.h) </span>If this option is selected, a copy of the header file will be created with an .h file extension.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Visual Basic;BAS file" />Visual Basic (.bas) </span>If this option is selected, a copy of the header file will be created with a .bas file extension.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="JavaScript" />Java (.properties) </span>If this option is selected, a copy of the header file will be created with a .properties file extension.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Delphi Pascal;INC file" />Delphi Pascal (.inc) </span>If this option is selected, a copy of the header file will be created with an .inc file extension.</li></ul></li>
+                    <li>On the right side of the dialog, select the header file(s) to be exported.</li>
+                    <li>Click the <span class="Emphasis">Browse</span> button and select the location where the exported file(s) will be sent.</li>
+                    <li>Click <span class="Emphasis">Export</span>.</li>
+                    <li>(Optional) If the file(s) are not in a shared location where the developer can retrieve them, you need to copy the exported files(s) from that location and send them to the developer.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>In addition to providing the developer with a copy of the header file, you need to build the output for the target and provide the developer with a copy of the output files. See <MadCap:xref href="../Output/About_Building_Output.htm">Building and Distributing Output</MadCap:xref>.</p>
+                <p>Then, after the developer "hooks" the CSH on the software end and creates a new build of the software application, you need to install that build so that you can test the CSH. See <MadCap:xref href="Testing_Context_Sensitive_Help.htm" target="" title="" alt="">Testing Context-sensitive Help</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="csh" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1320" MadCap:lastWidth="1133" MadCap:conditions="Products.Pulse,Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Dashboard" />
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Pulse Dashboard Frequently Asked Questions</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Administrators:Pulse;MadCap Pulse:dashboard" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Administrators;Dashboard" MadCap:conditions="Products.Pulse" />Pulse Dashboard FAQs</h1>
+        <p>Following are some frequent questions about administration tasks for the Pulse dashboard.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseUserGuide,PulseGuides.PulseServerAdminGuide" />
+        <h2 MadCap:conditions="General.Print">General Settings</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>general settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are general frequently asked questions about the dashboard. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>what version number do i have?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Log in to the Pulse dashboard as an administrator. </li>
+                            <li>Select <span class="Emphasis">Administration&gt;Settings</span>.The Pulse version number appears in the top right-corner of the page. <p><img src="../../Resources/Images/pulse_admin_settings_version.png" class="MaxWidth100Percent" /></p></li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Managing Accounts</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>managing accounts</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you are a member of the Administrators group and responsible for Pulse user administration, here are some answers to frequently asked questions. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>who can disable or delete user accounts?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Pulse user accounts can be disabled or deleted by these individuals:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Pulse Administrators </span>Members of the Administrators group can disable to delete user accounts from the Administration&gt;Settings menu. Members of the Employees and Customers groups cannot delete user accounts, including their own account.</li>
+                            <li><span class="SetOffFirstLevel">SQL&#160;Server Administrator </span>If you have administrative permissions to SQL&#160;Server, you can remove user information directly from the SQL&#160;database.&#160;This will immediately remove a user from Pulse. </li>
+                        </ul>
+                        <p>For more information about users, see <MadCap:xref href="Settings/Managing_Users.htm">Users</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>can users create two accounts with the same email address?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Pulse does not allow users to create two accounts with the same email address. If a user attempts to register for a second account using the same email address, they will see the "Unable to register"&#160;error shown below:</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_unable_to_register.png" class="MaxWidth70Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how can i reuse an email address?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If you delete a user account in the Pulse dashboard, access to Pulse features is immediately revoked. However, to give a user the ability to reuse an email address in Pulse, you must also delete the user from the dbo.Users and dbo.Login tables in SQL&#160;Server. If you are using SQL Server Management Studio you can right-click the user and select <span class="Emphasis">Delete</span> from the context menu. Once the entries are deleted, the email can be used to create a new Pulse account.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="Dashboard" />
+        </p>
+    </body>
+</html>

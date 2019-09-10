@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="2628" MadCap:lastWidth="1133" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Team authoring" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Team Authoring</h1>
+        <p>Team authoring is a source control feature that makes it possible for multiple authors to work together on a single project. Authors work on their own local copy of a project on their machine (called the working copy), while the master project (or the team project) is located on the organization's network or on a web server. Although the same project is made available to the entire team, one author's changes will not be overwritten by another author's changes.</p>
+        <p> With team authoring, your projects can be stored in the following kinds of repositories:</p>
+        <ul>
+            <li>Microsoft® Team Foundation Server</li>
+            <li>Web Repository</li>
+            <li>File System Repository</li>
+        </ul>
+        <p>If you would prefer to store your documents in Microsoft® SharePoint®, see <MadCap:xref href="../../Sharepoint/D2H/Merging Word Documents.htm" >Merging Word Documents</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide">How It Works</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>How It Works</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Team members work on their own local copy of the Doc-To-Help project. When a document is checked out and is being edited by one team member, it is locked so that others can’t edit it at the same time. Until changes are checked in, they remain local to the author's machine, appearing only in the team member's working copy of the project. Likewise, changes made by other authors cannot be viewed until they are retrieved from the repository. Doc-To-Help makes it easy to check files in and out of the repository.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"><a name="TeamAuthoringRequirements"></a>Team Authoring Requirements</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="TeamAuthoringRequirements"></a>Team Authoring Requirements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>A Doc-To-Help project must meet the following team authoring requirements:</p>
+                <ul>
+                    <li>All of the project's documents and auxiliary files must be located within subfolders of the project folder (Media, CSS files, Documents, etc.). Doc-To-Help automatically sets your project up this way by default.</li>
+                    <li>If your project uses customized templates or themes, all team members must have the same versions of those files in the same locations on each of their machines.</li>
+                    <li>All team members must have the same version (including build number) of Doc-To-Help installed on their machine. This information is available from the <span class="Emphasis">File&gt;Help&gt;About MadCap Doc-To-Help</span>.</li>
+                    <li>If using a Team Foundation Server repository, all team members must install Microsoft Visual Studio Team Explorer 2008 or later.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide">Steps Associated With Team Authoring</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Steps Associated with Team Authoring</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary steps associated with team authoring:</p>
+                <ol>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Set Up Project </span>Each team authoring project must have an administrator (usually the documentation manager or lead writer). The administrator makes the project available to other team members by uploading it to the central repository and configuring the settings. See <MadCap:xref href="Setting Up a Team Project.htm">Setting Up a Team Project</MadCap:xref>.</p>
+                        <p>In addition, the administrator handles other functions, such as: removing backup files, unlocking files from the repository, upgrading the team project, and disconnecting team authoring support from working copies of projects. See <MadCap:xref href="Team Authoring Administrative Functions.htm">Team Authoring Administrative Functions</MadCap:xref>.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Connect to Project </span>After a team authoring project is set up, team members must connect to and download the team project in order to create their own working copies of the project. Once a team member has a working copy, he or she can check files out, edit them, and check them back in. See <MadCap:xref href="Connecting to a Team Project.htm">Connecting to a Team Project</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Work in Team Project </span>After connecting to a team project, each team member can work in his or her own working copy of the project. See <MadCap:xref href="Working in a Team Project.htm">Working in a Team Project</MadCap:xref>.</li>
+                </ol>
+                <p>Additional team authoring options can be set in the Options dialog (<span class="Emphasis">File&gt;Tools&gt;Options&gt;Team</span>).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"><a name="TeamAuthoringEnvironment"></a>Team Authoring Environment</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="TeamAuthoringEnvironment"></a>Team Authoring Environment</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you open the working copy of a team project, Doc-To-Help will include an additional ribbon and window, both named "Team Authoring."</p>
+                <p>Three different file types make up a team authoring project:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Documents </span>These are the source documents included in your Doc-To-Help project. By default, they will be located in the Documents folder. Any rich content variable documents will be included in these folders also.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Auxiliary Files </span>These are any files that are not documents. Examples include image and CSS files. By default, these will be located in the Media and CSSFiles folders.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Project File (.d2h Extension) </span>This is the project itself, which contains all project information such as keywords, attributes, windows, and project properties.</p>
+                    </li>
+                </ul>
+                <p>You can check out and work with all three file types. In projects stored in a File or Web Repository, when a document or auxiliary file is checked out by an author, no one else can edit that file until those files are checked back in. When an entire project is checked out, no one else can edit the project or the files within it until the project is checked back in. Projects stored in Team Foundation Server (TFS) repositories have additional check out options. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Team Authoring ribbon</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>After you have opened your project, you can do the following with the Team Authoring ribbon:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Filter View </span>Choose the file types that will be displayed in the Team Authoring window: Documents, Auxiliary Files, Only Pending Changes.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Refresh View </span>Refresh the entire display to update the file status.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Get Latest Version </span>Get the latest version of the selected document from the repository. (TFS projects include a drop-down that allow you to choose a specific version of a document.)</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Check Out </span>Check the selected document out of the repository.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Undo Pending Changes </span>Undo all changes made to a document that has been checked out.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Check In </span>Check the selected document into the repository.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Go Offline </span>Break the connection with the server. You will be prompted to choose the project editing mode: Restricted or Unrestricted. If you choose Restricted, an Unrestricted Project Editing button will appear in the ribbon, allowing you to switch modes if you wish.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Compare (TFS projects only) </span>Compare the selected document with the version on the server.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">History (TFS projects only) </span>View a history of the selected document's changes.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Open </span>Open the file selected in the Team Authoring window for editing.</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Team Authoring window</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The Team Authoring window opens when you click the Team Authoring tab. It displays the file details. Many options can be performed via the right-click menu.</p>
+                        <p>A check mark next to file name indicates that it has been checked out. A lock icon indicates that the file is part of the team project.</p>
+                        <p>To change the column display, right-click in the window and from the menu choose <span class="Emphasis">Columns</span>. The options are:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Pending Change </span>Displays file status. TFS projects have different status displays than File or Web Repository projects. File or Web Repositories will note the check out status and the user name, if a document has been modified and who modified it, if it is a new document, and if it is unmodified by anyone. TFS projects will display the lock and edit status. The user name will display in the User column.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">User </span>Shows the name of the user working with the file.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Latest </span>Indicates whether the file displayed is the latest version.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Last Check-in </span>Displays the date/time the file was last checked in.</p>
+                            </li>
+                        </ul>
+                        <p>The Team Log information displays for TFS projects only.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Doc-To-Help integrates directly with Team Foundation Server and Microsoft SharePoint. It does not directly integrate with third-party tools such as SourceSafe and ClearCase. However, Doc-To-Help will not interfere with those tools, so you can use them with Doc-To-Help.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

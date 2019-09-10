@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="dialog...;Help.);target...;Default.&quot;;DoohickeyPro.&quot;;NA" MadCap:lastBlockDepth="16" MadCap:lastHeight="23531" MadCap:lastWidth="1029" MadCap:conditions="Products.D2H" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head><title></title>
+        <meta name="template" content="Flare.htt" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="DevelopOutputs" />
+            <MadCap:concept term="FilterTargets" />
+            <MadCap:keyword term="Output" />
+            <MadCap:keyword term="Targets" />Editing Target Settings</h1>
+        <p>Using the Help Targets dialog, you can apply all kinds of settings to a target that you have created<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="About_Targets.htm">About Targets</MadCap:xref> and <MadCap:xref href="Creating Targets.htm">Creating and Deleting Targets</MadCap:xref>)</MadCap:conditionalText>. This includes renaming the target to reflect the nature of your project, setting attributes (choosing the conditions to include or exclude from the output), and much more. The settings that are available are different for each output type.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How To Edit Target Settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In Doc-To-Help, open the <span class="Emphasis">Home</span> ribbon, and at the bottom of the <span class="Emphasis">Target</span> group click <img src="../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>On the left side of the dialog, select the target whose settings you want to edit.</li>
+                    <li>
+                        <p>On the right side of the dialog, edit any of the fields, depending on the output type.<MadCap:conditionalText MadCap:conditions="D2HGuides.D2HTargetsGuide"> For details on each field, see the online Help.</MadCap:conditionalText></p>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Eclipse Help</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected <span class="Emphasis">Eclipse Help</span>.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Eclipse Plugin</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>When you click the View button, all Eclipse target files will be copied to the "Eclipse directory\plugins\plugin name" folder, where "Eclipse directory" is the eclipse.exe installation directory specified in the Doc-To-Help Options dialog, and "plugin name" is a name constructed from the ID and Version properties.</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">ID </span>The plugin ID (e.g., com.mycompany.projectname). The ID property is the first part of the plugin directory name where the Eclipse Help target files will be stored. By default, the first part is "com," the second part is the provider property, and the third part is the name property. If you change the name and/or provider properties, the default ID value will also change.</li>
+                                            <li><span class="SetOffFirstLevel">Version </span>The plugin version (e.g., 1.0.1). This property is the second part of the plugin directory name where the Eclipse Help target files will be stored. The default is "1.0.0."</li>
+                                            <li><span class="SetOffFirstLevel">Name </span>The plugin name, by default the caption property value.</li>
+                                            <li><span class="SetOffFirstLevel">Provider </span>The plugin provider name, "MyCompany" by default.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCaption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsScale Font Sizes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>EPUB</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">EPUB</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>EPUB</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Title </span>The title specified will display on the cover page of the EPUB and in the EPUB reader.</li>
+                                            <li><span class="SetOffFirstLevel">Author </span>The author name specified will display in the EPUB reader. If none is specified, "Unknown" will be used.</li>
+                                            <li><span class="SetOffFirstLevel">Identifier </span>The unique identifying number for this EPUB, required by the EPUB standard. Doc-To-Help generates this number automatically; click the <span class="Emphasis">Refresh</span> button to the right of this field to regenerate the identifier.</li>
+                                            <li><span class="SetOffFirstLevel">Publisher </span>The publisher name specified will display in the EPUB reader.</li>
+                                            <li><span class="SetOffFirstLevel">Publication Date </span>The publication date will display in the EPUB reader and is the current date by default.</li>
+                                            <li><span class="SetOffFirstLevel">Cover image </span>The image added with this field will be used for the EPUB’s cover page and also on the title page. </li>
+                                            <li><span class="SetOffFirstLevel">Language </span>The language of the book, required by the EPUB standard.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/Targets Graphics Scale with Fonts.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">Show expanding text </span>If selected, all expanding text (created with the Inline Text button) in the project will be displayed in the EPUB.</li>
+                                            <li><span class="SetOffFirstLevel">Show dropdown text </span>If selected, all dropdown text (created with the Inline Text button) will be displayed in the EPUB.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="Help20"></a>Help 2.0</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">Help 2.0</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCodePage.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCharset.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Background</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage File.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsRepeat Image.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCaption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/Targets Graphics Scale with Fonts.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGenerateXHTML.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsNamespace.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsParent Namespace.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBreadcrumbsLabel.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="HTMLHelp"></a>HTML Help</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">HTML Help</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCodePage.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCharset.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Background</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage File.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsRepeat Image.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/Targets Graphics Scale with Fonts.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBinary TOC.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSkip Glossary.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBinary Index.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGenerateXHTML.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsDefault Window.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTopicListType.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBreadcrumbsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsPrevious.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsNext.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="JavaHelp"></a>JavaHelp</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">JavaHelp</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCodePage.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCharset.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Background</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage File.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsRepeat Image.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCaption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsScale Font Sizes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIgnore Font Sizes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIgnore Font Names.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsShow Expanding Text.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsShow Dropdown Text.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGenerateXHTML.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBreadcrumbsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsPrevious.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsNext.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsContents.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIndex.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFavorites.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFound Many.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFound One.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFound Zero.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsReturn to Index.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="Manual"></a>Manual</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">Manual</span> output type.</p>
+                                <p>If you would like to set the section break type (odd, even, none) that begins each book chapter, you can do so in the Project Styles dialog using the <span class="Emphasis">Section break</span> property.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <c1hjump><MadCap:xref href="../../Styles/D2H/Paragraph Styles.htm">Paragraph Styles</MadCap:xref></c1hjump>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help or the <span class="EmphasisItalic">Making It Look Good Guide</span>.</MadCap:conditionalText></p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCodePage.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Build</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOutputFormat.flsnp" />
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">Cover image </span>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ManualCoverImage1.flsnp" /> See <MadCap:xref href="Manual/Setting_a_Cover_Image.htm">Setting a Cover Image</MadCap:xref>.</li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGenerate PDF Target.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCreate Outline in PDF Target.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLive Links.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsLive Links2.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFix Lists.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsFix Lists2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSectionBreak.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsShow Expanding Text.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsShow Dropdown Text.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCreate Master Document.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsUse Template Text.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTitle.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSupertitle.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsByline.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsContents Heading.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIndex Heading.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="MSHelpViewer"></a>MS Help Viewer</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">MS Help Viewer</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Name </span>The name of the target, which will also appear in the list on the left of the dialog. This name is also used when you select a target using the Select Target button in the Target ribbon group.</li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">Self-branded </span>If selected, allows you to use your own CSS and scripts for the Microsoft Help Viewer 1.x target. Otherwise the target would use the default Microsoft Help Viewer 1.x CSS and scripts. Doc-To-Help supports only self-branded targets.</li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Deployment</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Product vendor </span>The vendor name, used for installing and uninstalling the target in the Microsoft Help Viewer 1.x. The target's base name will be used if this field is left empty.</li>
+                                            <li><span class="SetOffFirstLevel">Product name </span>The target name, used for installing, uninstalling, and identifying the target in the Microsoft Help Viewer 1.x. The target's base name will be used if this field is left empty.</li>
+                                            <li><span class="SetOffFirstLevel">Product book </span>The target book, used for installing, uninstalling, and organizing the target in the Microsoft Help Viewer 1.x. The target's base name will be used if this field is left empty.</li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">Topic version </span>The target topic's version. It is used to determine differences between version one and subsequent versions of the installed topic. It is 100 by default.</p>
+                                                <p>Doc-To-Help allows you to install a target and later reinstall newer versions into the local Microsoft Help Viewer 1.x. However, if the "Product vendor," "Product name," or "Product book" fields are changed between builds, the old target version won't be uninstalled from the Microsoft Help Viewer 1.x.</p>
+                                                <p>Users will be able to uninstall or install targets manually using the Microsoft Help Library Manager. Doc-To-Help produces two install files: HelpContentSetup.msha and &lt;target base name&gt;.mshc.</p>
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Parent in Contents</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Topic ID </span>The ID of the parent topic in Microsoft Help Viewer 1.x, which will be the parent for all root entries in the target table of contents.</li>
+                                            <li><span class="SetOffFirstLevel">Topic version </span>The version of the parent topic in Microsoft Help Viewer 1.x, which will be the parent for all root entries in the target table of contents. It is 100 by default.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Background</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Color </span>Displays the current color setting for the output window. To change the color, click the adjacent button to select or define a color.</li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage File.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsRepeat Image.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/Targets Graphics Scale with Fonts.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBreadcrumbsLabel.flsnp" /> The breadcrumbs label is set with this field; to make additional changes or disable breadcrumbs, you can do so in the theme.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Themes/About_Themes.htm">Customizing Themes with the Theme Designer</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help or the <span class="EmphasisItalic">Making It Look Good Guide</span>.</MadCap:conditionalText></li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsPrevious.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsNext.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Warnings and Limitations</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Warn about Popup link </span>If selected, will write a warning to the build log about popup links usage in topics. Only self-branded targets support popup links, so warnings will be ignored for those.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Group link </span>If selected, will write a warning to the build log about group links usage in topics. Only self-branded targets support group links, so warnings will be ignored for those.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Keyword link </span>If selected, will write a warning to the build log about keyword links usage in topics. Only self-branded targets support keyword links, so warnings will be ignored for those.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Bookmark link </span>If selected, will write a warning to the build log about links to bookmarks in topics. This target type doesn't support links to bookmarks that are located in another topic, so those links will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Mid Topic link </span>If selected, will write a warning to the build log about links to mid topics in topics. This target type doesn't support links to mid topics that are located in another topic, so those links will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Contents title </span>If selected, will write a warning to the build log about the use of a custom contents title for a topic. This target type doesn't support topic contents title customization. Values of this property will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Display title </span>If selected, will write a warning to the build log about the use of a custom display title for a topic. This target type doesn't support topic display title customization. Values of this property will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about Keyword level depth </span>If selected, will write a warning to the build log about the use of keywords higher than the second level. This target type supports only first and second level keywords. Keywords higher than the second level will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about 'Contents only' styles </span>If selected, will write a warning to the build log about the use of topics whose styles have been set to the "Contents only" property. This target type doesn't support topics with this style; all table of contents entries must be a topic, not just an empty book. The style "Contents only" property will be ignored.</li>
+                                            <li><span class="SetOffFirstLevel">Warn about 'Suppress empty topic' property </span>If selected, will write a warning to the build log about the use of topics whose styles have been set to the "Suppress empty topic" property. This target type doesn't support with this style; all table of contents entries must be topic, not just an empty book. The style "'Suppress empty topic" property&#160; will be ignored.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel" MadCap:conditions="General.OnlineLive">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="NetHelp"></a>NetHelp</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>You can change any of the following if you have selected a target using the <span class="Emphasis">NetHelp</span> output type.</p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Basic</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsName.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBase Name.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsStyle Sheet.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTemplate.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsTheme.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAttributes.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFolder.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Localization</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>This section is not used in NetHelp targets.</p>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectLocale.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/ProjectLocale2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCodePage.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/ProjectCharset.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Background</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>This section is not used in NetHelp targets.</p>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage File.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsRepeat Image.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Comments</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">Use comments </span>Choose&#160; <span class="Emphasis">DISQUS</span> (and specify your DISQUS shortname) to enable DISQUS commenting and feedback to your NetHelp targets. &#160;See <MadCap:xref href="NetHelp/Adding DISQUS Commenting to NetHelp Targets.htm">Adding DISQUS Commenting to NetHelp Targets</MadCap:xref>. </li>
+                                            <li><span class="SetOffFirstLevel">DISQUS shortname </span>Unique identifier that references your DISQUS forum.</li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsCaption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsColor Reduction.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsColor Reduction2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsImage Format.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsImage Format2.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGraphics Scaling.flsnp" />
+                                                </p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling2.flsnp" />
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/D2H/TargetsGraphics Scaling3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/Targets Graphics Scale with Fonts.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsDefault File.flsnp" />
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">Default extension </span>The default extension for NetHelp target files is .htm. If desired, you can use this field to change the file extension to .html.</li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch Stop List.flsnp" />
+                                                </p>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch Stop List2.flsnp" />
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSynonym.flsnp" />
+                                                </p>
+                                                <p>car auto automobile</p>
+                                                <p>phone telephone cell mobile</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearchType.flsnp" />
+                                                </p>
+                                                <p>If NetHelp will be installed locally, JavaScript search is recommended to avoid dependence on Java being installed on end-user machines. JavaScript search supports exact phrase, Boolean, and fuzzy searches.</p>
+                                                <p>"Exact phrase" search means that if you enclose a phrase in double quotes, NetHelp will search for that exact phrase in the output. </p>
+                                                <p>"Boolean" search means that you can use "AND" or "OR" (no quotes) between words or exact phrases when searching. You can also use "NOT" before a word or exact phrase to exclude topics containing that phrase from the results. By default, if there is no "AND" or "OR" between words, "AND" is assumed. </p>
+                                                <p>"Fuzzy" search will display alternative search options (and results) if the user enters a search term that is close to the term entered. The introductory text displayed for alternative terms &#160;is "Did you mean" and can be modified in the "Change suggestion" field. The terms used for AND, OR, or NOT can be changed in the appropriate Search keyword AND, OR, and NOT fields if localizing. A text file with search synonyms can be added using the "Search synonym list" field.</p>
+                                                <p>If NetHelp will be installed on a server, Java search is recommended for larger projects. NetHelp deployed on a server does not require that Java be installed on end-user machines.</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAccessibility Mode.flsnp" />
+                                                </p>
+                                                <ul class="SecondLevel">
+                                                    <li>
+                                                        <p><span class="SetOffSecondLevel">Normal </span>No special features for Section 508 compliance are enabled.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><span class="SetOffSecondLevel">Section 508 Compliance </span>Special features for 508 compliance are enabled.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsEmail.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsXMLTransform.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsMOTW.flsnp" />
+                                                </p>
+                                                <ul class="SecondLevel">
+                                                    <li>
+                                                        <p><a href="http://jtfassociates.com/using-the-mark-of-the-web-motw/" target="_blank">http://jtfassociates.com/using-the-mark-of-the-web-motw/</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="http://msdn.microsoft.com/en-us/library/ms537628(VS.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/ms537628(VS.85).aspx</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFrameset.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsOverwrite CSS.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsDynamic TOC.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsGenerateXHTML.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Related Links</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLabel Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLinks Style.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsAdd Separator.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Strings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>This section is not applicable for NetHelp targets. In NetHelp, strings are edited using the Theme Designer.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Themes/Customizing NetHelp Themes.htm">Customizing NetHelp Themes</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help or the <span class="EmphasisItalic">Making It Look Good Guide</span>.</MadCap:conditionalText></p>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsBreadcrumbsLabel.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsPrevious.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsNext.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsContents.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIndex.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsIndex Caption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch Caption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch Go.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSearch Highlight.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFavorites.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFavorites Caption.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFavorites Add.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFavorites Delete.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsSynchronize TOC.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsPrint.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsEmail.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsHide Navigation Pane.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsFound Zero.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsChangeSuggestion.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsLoadSearchEngine.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsKeywordAND.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsKeywordOR.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/D2H/TargetsKeywordNOT.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippettext src="../../Resources/Snippets/D2H/RemovingTargets.flsnp" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

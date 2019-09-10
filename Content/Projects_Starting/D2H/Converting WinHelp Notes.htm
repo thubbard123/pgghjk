@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="4382" MadCap:lastWidth="581">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="WinHelp" />Converting WinHelp Notes</h1>
+        <p>You can convert a WinHelp project produced with an authoring tool other than RoboHelp to a Doc-To-Help project. You need the WinHelp project (files .hpj, .cnt, etc.) to do that. If you only have an .hlp file, you can still do it, but first you need to decompile it to a WinHelp project using, for example, the freeware HelpDeco utility <a href="http://sourceforge.net/projects/helpdeco/" target="_blank">http://sourceforge.net/projects/helpdeco/</a>.</p>
+        <p>If your WinHelp is produced by RoboHelp and you have the source RoboHelp project, do not use the generic converter, use the RoboHelp Word – Doc-To-Help converter instead. The generic WinHelp converter does not convert RoboHelp-specific features.</p>
+        <p>See <MadCap:xref href="../../Introduction_Topics/D2H/Steps/Creating and Converting Projects_DNH.htm">Creating and Converting Projects</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How WinHelp Elements are Converted</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Files </span>All files in the original project folder and its subfolders are copied to the Doc-To-Help project folder. This is done to ensure that external files that may be referenced in the project source files are present in the converted folder and don’t cause broken links. If you see files that you know are not needed, you can delete them manually.</p>
+                        <p>Source documents (Word .rtf files included in the project) are converted to Doc-To-Help format. For example, WinHelp hotspots are converted to D2HML hotspots, and so on; please see the following conversion information. Other files are copied to the destination directory unchanged.</p>
+                        <p>Source documents located outside the original project directory are not copied and not converted, with a warning issued in the conversion log.</p>
+                        <p>Graphic files (images, included in statements such as {bmc}) located outside the project directory remain in their places and their paths in the documents are changed to an absolute path with a warning in the conversion log. </p>
+                        <p>Files included in the <span class="Emphasis">BAGGAGE</span> section of the project are not copied to the destination directory unless they are located inside the source project directory. If you need those files, copy them manually to an appropriate location in the project directory.</p>
+                        <p>A special directory _defbmp is created in the converted project directory containing standard WinHelp bitmaps (bitmaps supplied by Help Workshop) such as bullet.bmp, shortcut.bmp, etc.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Styles and Templates </span>Styles and style appearance in the source documents are preserved in conversion. Converted documents have a Doc-To-Help template, D2H_NOMARGIN.dotx, attached to them, so the author can use Doc-To-Help styles. However, the template does not change the appearance of the styles already used in the source document, because the check box <span class="Emphasis">Automatically update document styles</span> in the converted Word document’s <span class="Emphasis">Tools&gt;Options</span> menu is not selected. If you select that check box, the styles appearance can change, because it will be defined by the D2H_NOMARGIN.dotx template.</p>
+                        <p>The target template, which is set using the Help Targets dialog (<span class="Emphasis">Template</span> field) in the converted Doc-To-Help project, is set to <span class="Emphasis">(None)</span> to preserve the appearance of the source documents in the target. You can change it to one of the standard Doc-To-Help templates or to your own customized template if you want to control target appearance by a template.</p>
+                        <p>The style of the heading of each topic in Doc-To-Help must be one of the active paragraph styles (those styles that define a topic when Doc-To-Help compiles the document). For a topic with the first paragraph formatted with a style without an outline level (non-active style), its first paragraph is reformatted with a new style with the postfix (Topic) added in the end of the style name; the new style is inherited from the original style. For styles with outline levels (active styles) that are used in the original documents in a mixed way, both for formatting topic headings and for formatting paragraphs that are not topic headings, the paragraphs that are not topic headings are reformatted with a new style with (Nontopic) added in the end of the style name; the new style is inherited from the original style.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Topics </span>A Doc-To-Help topic is created in the converted project for each WinHelp topic. A WinHelp topic ID becomes a topic link tag and the value of the topic’s <span class="Emphasis">Ascii name</span> field in the Topic Properties dialog. If a topic has an alias in the project file, that alias is also added to the collection of the topic’s link tags.</li>
+                    <li><span class="SetOffFirstLevel">Topic Properties and TopicType </span>Some topic properties are implemented in Doc-To-Help via topic types. For example, you can’t assign windows to individual topics directly, but you can set <span class="Emphasis">Topic.TopicType</span> to a topic type that has a specific window in the <span class="Emphasis">TopicType.Window</span> property. To enable this mechanism, topic types are created in the converted project as necessary, having the necessary property values, and these topic types are assigned to the Topic Properties dialog (<span class="Emphasis">Topic type</span> field), as needed, to specify various topic properties.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Topic Properties </span>Topic title ($ footnote) is converted to the Topic Properties dialog (<span class="Emphasis">Display Title</span> field) specified by a D2HML hot spot (style C1HTopicProperties) in topic text.</p>
+                        <p>Topic title specified in table of contents (TOC) is converted to the Topic Properties dialog (<span class="Emphasis">Contents</span> field) specified by a D2HML hot spot (style C1HContentsTitle) in topic text.</p>
+                        <p>Topic window (&gt; footnote) is converted to the Project Styles dialog (<span class="Emphasis">Windows</span> field). </p>
+                        <p>Topic macro (! footnote) is converted to the Topic properties dialog (<span class="Emphasis">Macro</span> field).</p>
+                        <p>The Project Styles dialog <span class="Emphasis">Nonscrolling</span> check box is selected when a topic heading paragraph in the source document has its Word paragraph format setting <span class="Emphasis">Keep with next = True</span>.</p>
+                        <p>The Project Styles dialog <span class="Emphasis">Midtopic</span> check box is selected for topics that are mid-topics (i.e., bookmarks in their parent topic rather than separate topics). According to WinHelp rules, such topics are characterized by the absence of a page break before their first paragraph.</p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">TOC </span>Table of contents is converted to Doc-To-Help TOC. </li>
+                    <li><span class="SetOffFirstLevel">Index Keywords </span>Index keywords are converted to Doc-To-Help index keywords. They appear in the Index and Groups window pane (both in the Doc-To-Help Project panel in Word and in Doc-To-Help). Keywords are defined by D2HML hot spots in topic text (style C1HIndexInvisible), so they can be modified in Doc-To-Help either in the Index and Groups window pane or in the topic text using D2HML.</li>
+                    <li><span class="SetOffFirstLevel">See Also (A-keywords) </span>A-keywords are converted to Doc-To-Help groups. They appear in the Index and Groups window pane  (both in the Doc-To-Help Project panel in Word and in Doc-To-Help). Groups are defined by D2HML hot spots in topic text (style C1HGroupInvisible), so they can be modified in Doc-To-Help either in the Index and Groups window pane or in the topic text using D2HML.</li>
+                    <li><span class="SetOffFirstLevel">Links </span>Jump and pop-up links (including those defined by macros JI, PI) are converted to D2HML hot spots (styles C1HJump, C1HPopup) in topic text. </li>
+                    <li><span class="SetOffFirstLevel">Keyword Links </span>Keyword links (macros KL, JK) are converted to D2HML hot spots (style C1HKeywordLink) in topic text. </li>
+                    <li><span class="SetOffFirstLevel">A-links (See Also Links) </span>A-links (macro AL) are converted to D2HML hot spots (style C1HGroupLink) in topic text. </li>
+                    <li><span class="SetOffFirstLevel">Windows </span>Windows specified in the project are converted to Doc-To-Help windows with the same names. Doc-To-Help window properties are set for a WinHelp target based on the values of corresponding properties in the source project.</li>
+                    <li><span class="SetOffFirstLevel">Map IDs </span>Map IDs are converted to topic context IDs in the Doc-To-Help project. Context IDs are defined by D2HML hot spots in topic text (style C1HContextID), so they can be modified in Doc-To-Help either in the Topics window or in the topic text using D2HML.</li>
+                    <li><span class="SetOffFirstLevel">Browse Sequence </span>Topics included in a browse sequence (having + footnotes) are included in the Doc-To-Help navigation sequence by selecting the Project Styles dialog <span class="Emphasis">Auto navigate</span> check box. However, custom browse sequence (+ footnotes with browse code) is not converted, because Doc-To-Help browse sequence is always determined by the topic hierarchy (i.e., by positioning of topics inside documents).</li>
+                    <li><span class="SetOffFirstLevel">Conditional Build Tags </span>Conditional build tags (* footnotes) are converted to Doc-To-Help attributes. You can see the attributes in the Attributes dialog. </li>
+                    <li><span class="SetOffFirstLevel">Conditional Build Tags in Project Sections INCLUDE, EXCLUDE </span>In the generic WinHelp converter, attributes created from conditional build tags are checked or unchecked in the targets in the Doc-To-Help project depending on whether they are appear in <span class="Emphasis">[INCLUDE]</span> or in the <span class="Emphasis">[EXCLUDE]</span> section of the project file. </li>
+                    <li><span class="SetOffFirstLevel">Topic-level Conditional Build Tags </span>Conditional build tags specified in the properties of a WinHelp topic (* footnotes) are converted to a D2HML topic properties hot spot (style C1HTopicProperties) in the Doc-To-Help topic text.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Macros </span>Macros defined in the project file for the entire output (<span class="Emphasis">CONFIG</span> section) are converted to the Help Targets dialog (<span class="Emphasis">Macro</span> field).</p>
+                        <p>Macros defined in the project file for a window (<span class="Emphasis">CONFIG:window</span> section) are converted to the Windows dialog (<span class="Emphasis">Macro</span> field).</p>
+                        <p>Macros defined for a topic (! Footnote) are converted to the Topic Properties dialog (<span class="Emphasis">Macro</span> field).</p>
+                        <p>Macros defined in macro hotspots in topic text are converted to Doc-To-Help WinHelp macro comments in topic text unless they are jump, pop-up or K-/A-links. In the latter case they are converted to D2HML hotspots.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"> WinHelp macros have effect only in the WinHelp target; they are ignored in all other targets.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #70c0a9;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Doc-To-Help has a limitation of 255 characters for macro string length. Macro strings that exceed that limit are truncated, with a warning in the conversion log.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Help Images </span>Help images (bitmap statements {bmc}, {bml}, {bmr}) are converted to linked pictures (<span class="Emphasis">Word {INCLUDEPICTURE}</span> field).</li>
+                    <li><span class="SetOffFirstLevel">Hotspot Images </span>Hotspot images (SHED images, segmented hypergraphics) are converted to Doc-To-Help image maps, images with hot spots. Image maps can then be explored and edited using the Doc-To-Help Image Map Editor.</li>
+                    <li><span class="SetOffFirstLevel">Buttons </span>Help buttons ({button} statements) are converted to D2HML hot spots (styles C1HJump, C1HPopup, C1HkeywordLink, C1HGroupLink) with the <span class="Emphasis">Display As Button</span> check box selected.</li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Help Multimedia and Embedded Windows </span>Help multimedia ({mci} statement) is not converted because it is not supported in Doc-To-Help.</p>
+                        <p>Embedded windows ({ew*} statements) are not supported, with the exception of those generated by RoboHelp graphical buttons, which are converted to images formatted as Doc-To-Help hotspots (RoboHelp Word converter only).</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

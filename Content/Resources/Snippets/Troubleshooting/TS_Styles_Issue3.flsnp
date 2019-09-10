@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="538" MadCap:lastWidth="695" MadCap:conditions="Products.Flare">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Imported styles do not appear in Stylesheet Editor</p>
+        <p class="Subheading">Cause</p>
+        <p> If you select a medium in the Import Styles dialog, the preview window displays all the styles in the stylesheet you have selected <span class="EmphasisItalic">even if </span> the style does not exist in the <span class="EmphasisItalic">medium</span> you have selected. If you select a style in this case, the style will not be imported because it does not exist for that medium. This is an issue in Flare that will be addressed in a future version. </p>
+        <p class="Subheading">Solution</p>
+        <p>Do one of the following.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>change the medium</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Import Styles dialog's <span class="Emphasis">Medium</span> field, select the <span class="Emphasis">default</span> medium.</li>
+                    <li>Select the styles you want to import.</li>
+                    <li>Click <span class="Emphasis">OK</span>. Selecting this medium  imports the medium associated with the style you have selected and prevent you from selecting a medium for which the style is not written.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>import all styles in a class</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Select the style you want to import (e.g., the p class for all paragraph styles) and import all styles in that class. </li>
+                    <li>Click <span class="Emphasis">OK</span>. This will import all the styles and all the mediums in that class, so there will be no conflict over styles that do not exist in a specific medium.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>For more information, see <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref> and <MadCap:xref href="../../../Styles/More_About_Styles_and_Style_Sheets/Importing_Styles.htm">Importing Styles</MadCap:xref>.</p>
+    </body>
+</html>

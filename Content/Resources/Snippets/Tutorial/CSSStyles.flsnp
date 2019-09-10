@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="3539" MadCap:lastWidth="1107">
+    <body>
+        <h2 MadCap:conditions="General.Print">CSS Styles</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>css styles</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In our template, we modified some styles to give each list a particular look. For bulleted lists, this included associating the style with a custom bullet image.</p>
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span> (if it is not already open).</li><li><MadCap:snippetText src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../Styles/FilterAllStylesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">ol</span> style.</li><li><MadCap:snippetText src="../Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../Images/top_nav_tutorial_lists2.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <MadCap:snippetBlock src="NoteTopNavTwoStylesheetsModifiedMainStyles3.flsnp" />
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">list-style-image </span>Select <span class="Emphasis">none</span>. This prevents an numbered item from showing as a bullet in a mixed list (i.e., one with both numbers and bullets).</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Scroll down on the left side of the editor and select the <span class="Emphasis">ul</span> style. Then on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">list-style-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used for first-level bulleted list items. In our template, we selected an image called "Bullet1.png" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv,FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>That takes care of our basic ordered (ol) and unordered (ul) lists. But we also want to tell Flare what to do if there is a numbered or bulleted list at the second or even third level in a multi-level list. On the left side of the editor, scroll all the way to the top and expand <span class="Emphasis">(Complex Selectors)</span>. Then choose the <span class="Emphasis">ol ol</span> selector.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_lists5.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>This particular selector has to do with numbered lists at the second level. As soon as you create a numbered list at the second level, the properties for this selector will automatically be applied to it. The same is true with ul ul, which has to do with bulleted lists at the second level.</p>
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">list-style-type </span>Select <span class="Emphasis">lower-alpha</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>With the <span class="Emphasis">ol ol</span> selector still highlighted on the left side of the editor, go to the local toolbar and click <span class="Emphasis">Add Selector</span>. The New Selector dialog opens.</li>
+                                    <li>Click <span class="Emphasis">Advanced Options</span> to expand it.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Advanced Selector</span> field, place your cursor after the second ol, type a space, then type a third <span class="TypedEntry">ol</span>.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_lists3.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv,FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /> That new selector is added in the stylesheet under ol ol.</p>
+                                        <p>
+                                            <img src="../../Images/top_nav_tutorial_lists4.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>With the <span class="Emphasis">ol ol ol</span> selector highlighted, go to the right side of the Stylesheet Editor and set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">list-style-type </span>Select <span class="Emphasis">lower-roman</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv,FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>Select the <span class="Emphasis">ul ul</span> selector, and on the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">list-style-image </span>Click <img src="../../Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that is used for second-level bulleted list items. In our template, we selected an image called "Bullet2.png" that we stored in the Resources/Images subfolder of the Content Explorer.</p>
+                                                <p>We could also create a complex selector called "ul ul ul" for third-level items in a bulleted list, but we won't do that in this tutorial.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTutorialsGuideTopNavAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter the following in the default medium in the stylesheet. (The referenced images are ones we have already added to the Resources folder in the Content Explorer. You can replace these with your own images.)</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">ol</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">list-style-image: </span><span class="StyleValue">none;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">ol ol</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">list-style-type: </span><span class="StyleValue">lower-alpha;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">ol ol ol</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">list-style-type: </span><span class="StyleValue">lower-roman;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <p class="Style">ul</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">list-style-image: </span><span class="StyleValue">url('../Images/Bullet1.png');</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                    <p class="Style">ul ul</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="TypedEntry"><span class="StyleProperty">list-style-image: </span><span class="StyleValue">url('../Images/Bullet2.png');</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <MadCap:snippetBlock src="NoteTopNavTwoStylesheetsModifiedMainStyles3.flsnp" />
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For the ol style, we set the list-style-image to "none" because it helps to prevent numbers from being shown mistakenly as bullets in mixed lists.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="465" MadCap:lastWidth="925">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Project Analysis feature in Flare does not work</p>
+        <p>When using the Project Analysis feature in Flare, the following error message occurs:</p>
+        <p class="Bold">Problem(s) in FileList background thread: Index was out of range. Must be non-negative and less than the size of the collection.</p>
+        <p class="Subheading">Cause</p>
+        <p>The Analyzer database may be corrupted. This can be the result of a Microsoft SQL writing problem. </p>
+        <p class="Subheading">Solution</p>
+        <p>Delete the Analyzer folder from the Flare project.This will remove the corrupted Analyzer database. Flare will then generate a new database the next time that you open the project.</p>
+        <p>To accomplish this, perform the following steps. </p>
+        <ol>
+            <li>Close the project in Flare.</li>
+            <li>Open the project folder in Windows Explorer.</li>
+            <li>Navigate to the project's Analyzer folder and delete it.</li>
+            <li>Reopen the project in Flare and select <span class="Emphasis">View&gt;Project Analysis</span> to use an Analyzer tool. The feature should now function. </li>
+        </ol>
+        <p>For more information about project analysis, see <MadCap:xref href="../../../Analyzer/About_Analyzer_and_Reports.htm">About Analyzer</MadCap:xref>.</p>
+    </body>
+</html>

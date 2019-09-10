@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet3]exclude[Snippets.Snippet1 or Snippets.Snippet2 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Flare,Products.Analyzer" MadCap:lastBlockDepth="11" MadCap:lastHeight="1798" MadCap:lastWidth="1114" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlTFS.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Source control:undeleting files" />
+            <MadCap:concept term="FilterSourceControlTFS" />Undeleting Source Control Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Team Foundation Server</MadCap:conditionalText></h1>
+        <p>If you have a file marked as "Deleted" but then want to add it to source control, you can undelete the file, which then allows you to do this. You might encounter this situation if you rename a file and then create a new file with that name, or if you rename a file to the name of a previously deleted file.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can only undelete files from <MadCap:keyword term="Microsoft Team Foundation Server" />Microsoft Team Foundation Server, <MadCap:keyword term="Microsoft Visual SourceSafe" />Microsoft Visual SourceSafe, and <MadCap:keyword term="Perforce" />Perforce. When you delete files from other source control providers, they are removed from the source control repository.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to undelete a source control file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In one of the window panes (e.g., Content Explorer, Project Organizer, Pending Changes window pane), select the relevant file(s).</li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Undelete</span>. </p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, or Pending Changes window pane open, right-click the file you want to undelete and select <span class="Emphasis">Source Control&gt;Undelete</span>.</li>
+                        </ul>
+                    </li>
+                    <li>The Undelete dialog opens. Select the files you want to undelete.</li>
+                    <li>Click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideTFS" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you open the Content Explorer and delete one of the topics. Then you create a topic with the same name in the same folder. That new topic has a "Deleted" status and must be undeleted before it is added to source control.</p>
+                    <p>
+                        <img src="../../../Resources/Images/undelete_example1_tfs.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Resources/Images/undelete_example2_tfs.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Resources/Images/undelete_example3_tfs.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Resources/Images/undelete_example4_tfs.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>In order to add the new file to source control, you need to remove the "Deleted" status. Therefore, you right-click on the file, select <span class="Emphasis">Source Control</span>, and choose <span class="Emphasis">Undelete</span>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control TFS" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="2265" MadCap:lastWidth="871" MadCap:conditions="Products.Flare,Products.Contributor">
+    <head><title></title>
+        <meta name="description" content="Create a multilevel list or a list within a list. Multilevel lists can use different numering, bullets, symbols to list subsets of information in a list." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Lists" />
+            <MadCap:keyword term="Lists:multi-level" />
+            <MadCap:concept term="FilterLists" />Creating Multi-level Lists</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Contributor/z_DarkPrintBackground_SupportedInReviewContributionNewDocWorkflows.flsnp" MadCap:conditions="Products.Contributor" />
+        <p>You can create numbered and bulleted lists with multiple levels (such as an outline) by using a combination of indentation and list styles.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create multi-level lists that are numbered, bulleted, or both.</p>
+                <p class="Subheading">numbered</p>
+                <ol>
+                    <li>Step one.</li>
+                    <ol class="LowerAlpha">
+                        <li>Substep one.</li>
+                        <li>Substep two.</li>
+                    </ol>
+                    <li>Step two.</li>
+                    <li>Step three.</li>
+                </ol>
+                <p class="Subheading">bulleted</p>
+                <ul>
+                    <li>Item one.<ul class="SecondLevel"><li>Subitem one.</li><li>Subitem two. </li></ul></li>
+                    <li>Item two.</li>
+                    <li>
+                        <p>Item three.</p>
+                    </li>
+                </ul>
+                <p class="Subheading">numbered and bulleted</p>
+                <ol>
+                    <li>Item one.</li>
+                    <ul class="FirstLevel">
+                        <li>Subitem one.</li>
+                        <li>Subitem two. </li>
+                    </ul>
+                    <li>Item two.</li>
+                    <li>
+                        <p>Item three.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a multi-level list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>(Optional) If you want to format styles to control the look of your lists, do either or both of the following:<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Custom List Formats </span><MadCap:snippetText src="../Resources/Snippets/Lists/CustomListFormatsSummary.flsnp" /> See <MadCap:xref href="Creating_Custom_List_Formats.htm">Creating Custom List Formats</MadCap:xref>.</li><li><span class="SetOffFirstLevel">Regular List Styles </span>You can modify the look of lists by making adjustments to the standard CSS list styles and/or creating style classes. By using these list styles, you can affect things such as the alignment, background, bullet images, and indentation of lists. There are a handful of list styles, but the ones you are most likely to use to control lists are the ol and ul styles (for ordered and unordered lists, respectively). See <MadCap:xref href="Editng_List_Styles/Editing_List_Styles.htm">Editing List Styles</MadCap:xref> and <MadCap:xref href="../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                    </li>
+                    <li>Place your cursor in the document where you want to insert a list.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the <span class="Emphasis">Paragraph</span> section click the list button <img src="../Resources/Images/lists_btn_lower_alpha_numbered_list.png" class="ReduceButtonSize" />. If you want to quickly apply the most recent list format, click the face of the button. If you want to apply a different list item type, click the down arrow and select it from the menu. <MadCap:snippetText src="../Resources/Snippets/Lists/ApplyCustomListFormat.flsnp" /></li>
+                    <li>Enter text for the first list item. If you selected a custom list format or style, the look associated with that format or style is already applied.</li>
+                    <li>Press <span class="Emphasis">Enter</span> to move to the next list item and type content for that item.</li>
+                    <li>
+                        <p>If you want to move to a second level of the list, press <span class="Emphasis">Tab</span> or click the indent button <img src="../Resources/Images/indent_items_btn.png" class="ReduceButtonSize" alt="" /> in the Home ribbon.</p>
+                        <p>If you are using a custom list format, the style for that level is automatically applied.</p>
+                        <p>If you are using basic CSS list styles, you can right-click on the <span class="Emphasis">ol</span> or <span class="Emphasis">ul</span> structure bar to the left, and from the context menu select <span class="Emphasis">Style&gt;[Name of Style Class]</span>. See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</p>
+                        <p>If you are on one type of list and want to switch to the other kind of list (e.g., you are on a numbered list and want to change to bullets), right-click on the <span class="Emphasis">ol</span> or <span class="Emphasis">ul</span> structure bar to the left, and from the context menu select <span class="Emphasis">Type</span>. Then either click one of the list types or select <span class="Emphasis">Custom List Format</span> and choose a style from the submenu.</p>
+                        <p>If you want to move back to a higher level list (e.g., you are on the third level and want to move back to the second level). click the outdent button <img src="../Resources/Images/outdent_items_btn.png" class="ReduceButtonSize" alt="" /> twice in the Home ribbon (or you can click it once and then click the yellow arrow icon that is displayed temporarily in the list).</p>
+                    </li>
+                    <li>If you are at the end of the entire list and want to exit the list altogether, press <span class="Emphasis">Enter</span> again on a blank list item. You should now be outside of the list and on a regular paragraph.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create multi-level lists by using autonumbering. This is a more complex method, but it also has certain advantages. For example, the need to restart numbering manually is not an issue with autonumbering, as it can be with other methods. See <MadCap:xref href="../Autonumbers/About_Autonumbers.htm">About Autonumbers</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Contributor">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteContributorReviewWorkflowLocalChangeOnly.flsnp" MadCap:conditions="Products.Contributor" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteNotSupportedLingoReviewFiles.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Lists">
+            </MadCap:conceptLink>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="17" MadCap:lastHeight="5368" MadCap:lastWidth="619">
+    <head>
+        <link href="../../TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <ol>
+            <li>
+                <MadCap:snippetText src="../Topics/OpenContentFileDocument.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../UIElements/SelectHomeRibbon.flsnp" /> In the <span class="Emphasis">Styles</span> section, select <span class="Emphasis">Responsive Layout</span>. The Responsive Layout window pane opens.</li>
+            <li>
+                <p>At the top of the Responsive Layout window pane, select the appropriate medium/media query: <span class="Emphasis">Web</span>, <span class="Emphasis">Tablet</span>, or <span class="Emphasis">Mobile</span>.</p>
+                <p>Alternatively, you can select the appropriate layout view in the top local toolbar of the XML Editor.</p>
+                <p>It is recommended that you start with Web to create a layout for large screens. After you finish those settings, you can move on to the Tablet and then finally Mobile.</p>
+            </li>
+            <li>In the content file, place your cursor where you want to create the layout. (The row will be added below the location of your cursor.)</li>
+            <li>
+                <p>In the Responsive Layout window pane, do one of the following.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an Existing Style</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you want to use the same row style for a responsive layout that you've created previously, click in the <span class="Emphasis">Styles</span> drop-down and select it.</p>
+                        <p>
+                            <img src="../../Images/responsive_layout28.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create a New Style</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>Click <span class="Emphasis">New Style</span>. The New Row Style dialog opens.</li>
+                            <li>In the <span class="Emphasis">Class name</span> field, enter a name for the new row style (or you can keep the default name).</li>
+                            <li>(Optional) In the <span class="Emphasis">Stylesheet</span> drop-down, you can select a stylesheet where the new style will be added.</li>
+                            <li>
+                                <p>On the left side of the dialog, select a template. This will list three factory templates provided by Flare.  Also, any of your previously created row styles will also be listed in this dialog as available templates.</p>
+                                <p>
+                                    <img src="../../Images/responsive_layout29.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide" />
+                                <MadCap:snippetBlock src="TemplatePreview.flsnp" />
+                                <MadCap:snippetBlock src="SelectTemplate1.flsnp" />
+                                <MadCap:snippetBlock src="SelectTemplate2.flsnp" />
+                                <MadCap:snippetBlock src="SelectTemplate3.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /> The Row Styles field in the Responsive Layout window pane is now populated with the new style. Also, your stylesheet will open behind the topic (if it isn't already open).</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you no longer want to use an existing row style anywhere in your project, you can select it from the <span class="Emphasis">Styles</span> drop-down and click <span class="Emphasis">Delete Style</span>. This removes the appropriate styles from your stylesheet.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide,FlareGuides.FlareWhatsNewGuide" />
+            <li>
+                <p>Click <span class="Emphasis">Insert Row</span>. In the XML Editor, the row is inserted below your cursor location. A &lt;div&gt; tag—using the style name that you created or selected in the previous step—acts as the container for the row. Within that &lt;div&gt; tag there will be additional plain &lt;div&gt; tags, one for each cell.</p>
+                <p>
+                    <img src="../../Images/responsive_layout25.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Images/responsive_layout7.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>In the XML Editor, click in the cells, remove the default text, and add your own content. If you want, you can save this task until after you configure your row using the options in the next step.</li>
+            <li>
+                <p>Click in a cell in the XML Editor. The row style for that layout is indicated at the top of the Manage section in the Responsive Layout window pane. So any changes you make will be applied to that style in your stylesheet.</p>
+                <p>
+                    <img src="../../Images/responsive_layout30.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>Use any of the following options in the Responsive Layout window pane to enhance the cell and your layout.</p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Warning</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="ResponsiveLayoutWindowAutoSaveWarning.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Options</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="ResponsiveLayoutWindowButtonsTable.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>When you are finished configuring the row for your current layout, select a different media query (e.g., Tablet, Mobile) at the top of the Responsive Layout window pane. (Alternatively, you can change the layout in the local toolbar of the XML Editor.)</li>
+            <li>Repeat steps 8 and 9 until you are finished designing the row for all of your mediums/media queries.</li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

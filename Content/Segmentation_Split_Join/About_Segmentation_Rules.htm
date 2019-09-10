@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo,Products.Align" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[Snippets.Snippet1] " MadCap:lastBlockDepth="12" MadCap:lastHeight="9757" MadCap:lastWidth="1097" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head>
+        <link rel="stylesheet" MadCap:stylesheetType="table" href="../Resources/TableStyles/BasicAlternateRows.css" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Segmentation rules;SRX file" />
+            <MadCap:concept term="SegmentationSplitJoin" />About Segmentation Rules</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRulesSummary.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules1.flsnp" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Regular expressions;Segmentation rules:regular expressions" />Regular Expressions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:keyword term="Regular expressions;Segmentation rules:regular expressions" />
+                <MadCap:dropDownHotspot>regular expressions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules2.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/RegularExpressions/RegularExpressionsExample.flsnp" MadCap:conditions="Snippets.Snippet2" />
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When using regular expressions in segmentation rules, keep in mind that a period in a rule (e.g., "break after St."; "do not break after St. and before Augustine") may cause unexpected results. This might occur because in regular expressions a period is used to match any character. You can avoid this by always placing a period within square brackets (e.g., "break after St[.]"; "do not break after St[.] and before Augustine") to ensure only the specific character for the period is used.</p>
+                    <p>
+                        <img src="../Resources/Images/segmentation_rules20.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The following MadCap Flare project files are only segmented based on their units from Flare and not based on regular segmentation rules (periods and other punctuation rules): .liindexmap, .liconceptmap, .flaix, and .flixl files.    Therefore, rules from the Segmentation Editor are not applied to these files.</p>
+                </div>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><MadCap:variable name="Other.Product" /> only supports .NET&#160;regular expressions.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Creating Basic Segmentation Rules</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>creating Basic segmentation rules</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules3.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Creating Advanced Segmentation Rules</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Creating Advanced Segmentation Rules</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can also create advanced segmentation rules. Advanced segmentation rules allow you to override or edit <MadCap:variable name="Other.Product" />'s default segmentation rules and to set segmentation rules for specific languages.</p>
+                <p>
+                    <img alt="" class="MaxWidth100Percent" src="../Resources/Images/segmentation_rules_adv1.png" title="" />
+                </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRulesAdv.flsnp" />
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Rules Tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/RulesTab.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Languages Tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/LanguagesTab.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p>If you want to return to the basic editor, click<span class="Emphasis"> Basic</span>.</p>
+                <p>
+                    <img alt="" class="MaxWidth100Percent" src="../Resources/Images/segmentation_rules_adv5.png" title="" />
+                </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/BacktoBasicNote.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">More About Segmentation Rules</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>more about segmentation rules</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules4.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Examples</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules5.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Importing and Exporting Segmentation Rules</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>importing and exporting segmentation rules</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/SegmentationRules/SegmentationRules6.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoAlignmentGuide,LingoGuides.LingoTranslationGuide" />
+        <h2 MadCap:conditions="General.Print">Applying Segmentation Rules</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Applying segmentation rules</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p MadCap:conditions="Products.LingoOnlineOnly,LingoGuides.LingoTranslationGuide">After you create segmentation rules, update the project to apply them to the segments. <MadCap:conditionalText MadCap:conditions="Products.LingoOnlineOnly">See <MadCap:xref href="../Projects_Starting/More_About_Projects/Updating_Projects.htm">Updating Projects</MadCap:xref>.</MadCap:conditionalText></p>
+                <p MadCap:conditions="Products.Align,LingoGuides.LingoAlignmentGuide">After you create segmentation rules, you will need to create a new Align project to apply the segmentation rules to the segments. For this reason, it is recommended that you create segmentation rules in Lingo prior to creating an Align project, and only create new segmentation rules in Align when necessary.</p>
+                <p MadCap:conditions="Products.Align,LingoGuides.LingoAlignmentGuide">When you create segmentation rules in Align, they are applied to both the source and target segments, if applicable.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="SegmentationSplitJoin" />
+        </p>
+    </body>
+</html>

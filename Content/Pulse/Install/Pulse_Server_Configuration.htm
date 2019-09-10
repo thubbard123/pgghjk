@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:ignoredWords="Username" MadCap:lastBlockDepth="18" MadCap:lastHeight="11981" MadCap:lastWidth="1003" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="Learn how to configure the MadCap Pulse server for the first time. You can perform a variety of Pulse server configuration tasks. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Installation" />
+            <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="MadCap Pulse:server configuration;MadCap Pulse:server application" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Server configuration;Server application" MadCap:conditions="Products.Pulse" />Pulse Server Configuration</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="MadCap Pulse:server configuration;MadCap Pulse:server application" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Server configuration;Server application" MadCap:conditions="Products.Pulse" />Pulse Server Configuration</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" />
+        <p>After the Pulse server application is installed on the Pulse web server, use the desktop shortcut or the Programs menu in Windows to start the Pulse application.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Configuring Pulse for the First Time</h2>
+        <p MadCap:conditions="General.Print">After you install and activate the Pulse server application, the Welcome page of the MadCap Pulse Configuration Wizard appears so you can perform an initial configuration.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to configure pulse for first time use</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">After you install and activate the Pulse server application, the Welcome page of the MadCap Pulse Configuration Wizard appears so you can perform an initial configuration. You can also open the wizard by double-clicking the MadCap Pulse desktop shortcut.</p>
+                <ol>
+                    <li>Install and activate Pulse as described in <MadCap:xref href="Installing_Pulse.htm">Install Pulse</MadCap:xref>.</li>
+                    <li>If the MadCap Pulse Configuration Wizard is not already open, double-click the MadCap Pulse desktop shortcut.</li>
+                    <li>In the Welcome page of the MadCap Pulse Configuration Wizard, click <span class="Emphasis">Next</span>. 
+</li>
+                    <li>
+                        <p>In the Select Web Site page, do the following:</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SelectWebSiteConfiguration.flsnp" />
+                    </li>
+                    <li>
+                        <p>In the Select SQL&#160;Server page, do the following:</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SelectSQLServerSteps.flsnp" />
+                    </li>
+                    <li>
+                        <p>In the Database Options page, select one of the following options:</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Create new </span>This creates a new database instance with Pulse. </p>
+                                <p>OR</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Use existing </span>Select this option only if you have previously installed Pulse. You may click the Browse (…) button to open the Select Database dialog. Select the desired Pulse Database ID&#160;from the list. Then click <span class="Emphasis">Connect</span>. Then click <span class="Emphasis">OK</span>. </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Pulse/BackupPathStep.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">PulseAdmin Password</span> box, specify the password for the default Pulse Administrator account.  Then click <span class="Emphasis">Next</span>.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_install_database_options_admin_password.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Important</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/RecordPasswordSafePlace.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/NotePasswordStrength.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>In the Configure&#160;SMTP&#160;page, enter your SMTP&#160;server settings:</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ConfigureSMTPSteps.flsnp" />
+                    </li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                    <li>
+                        <p>(Optional)&#160;Test your SMTP&#160;settings.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how to test the smtp settings</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/TestSMTPSettingsSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>. The Verify Configuration page appears.</li>
+                    <li>In the Verify Configuration page, review the components list. When you are ready to proceed, click <span class="Emphasis">Next</span>. A progress indicator shows you the status of the installation.</li>
+                    <li>When the Configuration Complete page appears, you can click <span class="Emphasis">View Log</span> or <span class="Emphasis">Save Log</span> if you want to see or save the results.</li>
+                    <li>Click <span class="Emphasis">Finish</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Starting the Pulse Server Application</h2>
+        <p MadCap:conditions="General.Print">When you start the Pulse server application, the system opens the Pulse Server Configuration window. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to start the pulse server application</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">When you start the Pulse server application, the system opens the Pulse Server Configuration window. </p>
+                <ol>
+                    <li>Log in to the Pulse web server as an administrator. </li>
+                    <li>
+                        <p>Start the Pulse application by selecting one of these options:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Desktop Shortcut </span>On the Windows desktop, click the MadCap Pulse shortcut. This is automatically added to the desktop at the end of the installation process.</li>
+                            <li><span class="SetOffFirstLevel">Start Menu </span>In Windows, click <span class="Emphasis">Start&gt;All&#160;Programs&gt;MadCap&#160;Software&gt;MadCap Pulse</span>.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Program Files </span>Double-click the program icon in the Program Files directory. If you installed the program using the default installation folder, it is located at one of these paths:</p>
+                                <ul class="SecondLevel">
+                                    <li><span class="SetOffSecondLevel">On 64-bit Platforms </span>C:\Program Files\MadCap Software\MadCap Pulse\Pulse.app\Pulse.app</li>
+                                    <li><span class="SetOffSecondLevel">On 32-bit Platforms </span>C:\Program Files (x86)\MadCap Software\MadCap Pulse\Pulse.app\Pulse.app</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Here is the Pulse Server Configuration window:</p>
+                <p>
+                    <img src="../../Resources/Images/pulse_server_configuration_window_general.png" class="MaxWidth90Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Setting the PulseAdmin Password</h2>
+        <p MadCap:conditions="General.Print">During the Pulse installation, you created a password for the default PulseAdmin account. You can reset that password at any time. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set the pulseadmin password</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">During the Pulse installation, you created a password for the default PulseAdmin account. You can reset that password at any time. </p>
+                <ol>
+                    <li>
+                        <p>Log in to the Pulse web server as an administrator:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Username </span>The username is always "PulseAdmin" by default.</li>
+                            <li><span class="SetOffFirstLevel">Password </span>This is the password that you defined during when you installed the Pulse server application.</li>
+                        </ul>
+                    </li>
+                    <li>Start the Pulse server application.</li>
+                    <li>Select <span class="Emphasis">File&gt;Set Admin Password</span>.</li>
+                    <li>In the <span class="Emphasis">Set PulseAdmin Password</span> box, type a new password. Then click <span class="Emphasis">OK</span>. </li>
+                    <li>In the configuration dialog, click <span class="Emphasis">OK</span> to acknowledge that your password was updated. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Pulse Server Configuration Window</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>pulse server configuration window</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Pulse Server Configuration window contains options that let you perform a variety of maintenance and management tasks.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>general tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The controls in the <span class="Emphasis">General</span> tab give you the ability to view and test the general connection settings for the Pulse server application.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_general_tab.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                        <table class="TableStyle-BasicAlternateRows" cellspacing="0" style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">User Interface</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">SQL&#160;Server</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">Contains information about your Pulse database.</td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmall">Server Name </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">A read-only field that shows the computer name of the SQL&#160;Server and the instance for the Pulse database.</td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmall">Databases </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">A read-only field that shows the Database IDs for the Pulse databases. </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmall">Test </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p>Click this button to test the database connection settings. </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>how to test the sql server settings</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <ol>
+                                                    <li>Launch the Pulse server application. </li>
+                                                    <li>In the Pulse Server Configuration window, select the <span class="Emphasis">General</span> tab.</li>
+                                                    <li>In the SQL&#160;Server area, review the Server Name and Databases that were configured during installation.</li>
+                                                    <li>Click <span class="Emphasis">Test</span>.</li>
+                                                    <li>If the test is successful, the system shows a message indicating this.</li>
+                                                    <li>Click <span class="Emphasis">OK</span> to close the message. </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Web Site</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">Contains information about the site running on your Pulse web server.</td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmall">Location </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">Typically this reads Default Web Site. </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmall">URL </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">The URL for the Pulse dashboard.</td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasisSmall">View </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p>Click this button to open the Pulse dashboard in a web browser. </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>how to view the web site settings</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <ol>
+                                                    <li>Start the Pulse server application. </li>
+                                                    <li>In the Pulse Server Configuration window, select the <span class="Emphasis">General</span> tab.</li>
+                                                    <li>Click <span class="Emphasis">View</span>.</li>
+                                                    <li>
+                                                        <p>Depending on your configuration, one of the following occurs:</p>
+                                                        <ul class="FirstLevel">
+                                                            <li>
+                                                                <p><span class="SetOffFirstLevel">If You are Able to View the Web Site </span> If your web site settings is properly configured, the&#160;Pulse dashboard appears in a separate browser window.</p>
+                                                                <p>OR</p>
+                                                            </li>
+                                                            <li><span class="SetOffFirstLevel">If You are Not Able to View the Web Site </span> If your web site settings are not properly configured, a "Pulse was not able to process your request message"&#160;may appear. See <MadCap:xref href="Installation_FAQ.htm">Frequently Asked Questions</MadCap:xref>. </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasisSmall">Test </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p>Click this button to test the web site settings. </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>how to test the web site settings</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <ol>
+                                                    <li>Start the Pulse server application. </li>
+                                                    <li>In the Pulse Server Configuration window, select the <span class="Emphasis">General</span> tab.</li>
+                                                    <li>Click <span class="Emphasis">Test</span>.</li>
+                                                    <li>
+                                                        <p>Depending on your configuration, one of the following occurs:</p>
+                                                        <ul class="FirstLevel">
+                                                            <li>
+                                                                <p><span class="SetOffFirstLevel">Web site test succeeded</span> If your web site settings is properly configured, the Web site test succeeded dialog appears. </p>
+                                                                <p>OR</p>
+                                                            </li>
+                                                            <li><span class="SetOffFirstLevel">Web site test failed </span>If your test is not successful, an error message is shown. See  <MadCap:xref href="Installation_FAQ.htm">Frequently Asked Questions</MadCap:xref>. </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>users tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The controls in the <span class="Emphasis">Users</span> tab provides you with user counts and name information.</p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_users_tab.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                        <table class="TableStyle-BasicAlternateRows" cellspacing="0" style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">User Interface</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Groups</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">Select one of the listed groups from the drop-down list. </p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>how to view user counts and information</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <ol>
+                                                    <li>Start the Pulse server application. </li>
+                                                    <li>In the Pulse Server Configuration window, select the <span class="Emphasis">Users</span> tab.</li>
+                                                    <li>
+                                                        <p>From the <span class="Emphasis">Groups</span> list, select one of these options:</p>
+                                                        <ul class="FirstLevel">
+                                                            <li><span class="SetOffFirstLevel">All </span>View counts and users for all administrative and registered users. </li>
+                                                            <li><span class="SetOffFirstLevel">Administrators </span>View user counts and member information for the Administrators group.</li>
+                                                            <li><span class="SetOffFirstLevel">Customers </span>View user counts and member information for members of the Customers group</li>
+                                                            <li><span class="SetOffFirstLevel">Employees </span>View user counts and member information for members of the Employees group</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Count</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">A read-only field. Shows the total number of users for the selected group.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">First Name</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableText">A read-only field. <MadCap:snippetText src="../../Resources/Snippets/Pulse/PulseUserAcctLastName.flsnp" /></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Last Name</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableText">A read-only field. <MadCap:snippetText src="../../Resources/Snippets/Pulse/PulseUserAcctFirstName.flsnp" /></p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Email Address</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                        <p class="TableText">A read-only field. <MadCap:snippetText src="../../Resources/Snippets/Pulse/PulseUserAcctEmail.flsnp" /></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>maintenance tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The controls in the <span class="Emphasis">Maintenance</span> tab lets you manage the Pulseserver application's services. The options that are available in this dialog depend on the version of Microsoft SQL&#160;Server being used:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">If You are Using Microsoft SQL&#160;Server Express Edition with Advanced Services </span> You have the ability to view and start the Pulse&#160;Server and RabbitMQ service (these are both services that run in Windows). You also have the ability to schedule database backups. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_maintenance_tab.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to schedule a backup</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <p>This feature is available only when the Pulse database is using Microsoft SQL&#160;Server Express Edition with Advanced Services. </p>
+                                        <p>Use the Maintenance tab to schedule backups of your Pulse database, whether it resides on the local server or a different server on the network. </p>
+                                        <p>You can schedule a backup of your Pulse database on the SQL&#160;server on a daily or weekly schedule. This saves your database information in a backup file (e.g., a file with the BAK file name extension). </p>
+                                        <p>In the event that a database recovery is needed, your SQL&#160;Administrator can use SQL&#160;Server Management Studio to restore your Pulse database using the latest backup file. </p>
+                                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">For a backup to take place at the scheduled time, the Pulse web server must be powered on and the MadCap Pulse Management Service and RabbitMQ service and must be running. </p>
+                                        <ol>
+                                            <li>Start the Pulse server application. </li>
+                                            <li>In the Pulse Server Configuration window, select the <span class="Emphasis">Maintenance</span> tab.</li>
+                                            <li>
+                                                <p>In the <span class="Emphasis">Location</span> field, click <span class="Emphasis">Browse</span>.&#160;Then, navigate to the directory where you want to save the backup files. Important things to keep in mind:</p>
+                                                <ul class="FirstLevel">
+                                                    <li><span class="SetOffFirstLevel">Local Backup </span>If you want to store the backup file (BAK) on the local system, the default backup folder is : C:\Databases. <span class="EmphasisItalic">This is the recommended method</span>.</li>
+                                                    <li>
+                                                        <p><span class="SetOffFirstLevel">Network Drive </span>If you want to store the backup file (BAK) on a network drive, select the desired location. </p>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you choose this method, the Pulse web server must have permission to write to the drive. In addition, the system drive must be powered on and connected to the network at the scheduled backup time.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>In the <span class="Emphasis">Day &amp;&#160;Time</span> fields, specify the desired backup schedule:</p>
+                                                <ul class="FirstLevel">
+                                                    <li><span class="SetOffFirstLevel">Daily or Weekly </span>Select either <span class="Emphasis">Daily</span> or <span class="Emphasis">Weekly</span>.</li>
+                                                    <li><span class="SetOffFirstLevel">Day of Week </span>If you select a Weekly backup schedule, you can also select the desired day to perform the backup. </li>
+                                                    <li><span class="SetOffFirstLevel">Time </span>Select the time of day to perform the backup.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>As long as the listed Services are running, you will not need to click <span class="Emphasis">Start</span>. In the event that services stop running,simply click <span class="Emphasis">Start</span> to restart the services and backup schedule.</p>
+                                                <p class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning: &lt;/span&gt;&lt;/b&gt;">You do not have the ability to disable the MadCap Pulse Management Service or Rabbit MQ service. To function properly, the Pulse server application requires these Services to run in the background. </p>
+                                            </li>
+                                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="PulseGuides.PulseInstallationGuide" />
+                                            <li>
+                                                <p>Save your changes by selecting <span class="Emphasis">File&gt;Save</span>. </p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you do not save your changes, you will be prompted to save them when you exit the application.</p>
+                                            </li>
+                                        </ol>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">If You are Using a Different Edition of Microsoft SQL&#160;Server </span>You have the ability to view the status of and start the Pulse Service and RabbitMQ&#160;service. However, backups are not supported by Pulse. This is because the full versions of SQL provide administrators with several options for creating full database backups. </p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_maintenance_tab_services_sql.png" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                                <MadCap:dropDown class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>how to backup and restore databases in sql server</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <p>To learn how to backup and restore a database in&#160;SQL&#160;server, see the Microsoft SQL&#160;Server web site at:</p>
+                                        <ul class="FirstLevel">
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">For SQL&#160;Server 2012 </span><a href="http://technet.microsoft.com/en-us/library/ms187048(v=sql.110).aspx" target="_blank">http://technet.microsoft.com/en-us/library/ms187048(v=sql.110).aspx</a>
+                                                </p>
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">For SQL&#160;Server 2008 R2 </span><a href="http://technet.microsoft.com/en-us/library/ms187048(v=sql.105).aspx" target="_blank">http://technet.microsoft.com/en-us/library/ms187048(v=sql.105).aspx</a>
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">For SQL&#160;Server 2008 </span><a href="http://technet.microsoft.com/en-us/library/ms187048(v=sql.100).aspx" target="_blank">http://technet.microsoft.com/en-us/library/ms187048(v=sql.100).aspx</a>
+                                            </li>
+                                        </ul>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Importing Feedback Data</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>importing feedback data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your company previously used the MadCap&#160;Feedback product, you can import information from your existing Feedback database into the Pulse database. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>what gets imported</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following describes what Feedback data is imported to the Pulse database:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Report Data </span>All of the report data. </li>
+                            <li><span class="SetOffFirstLevel">Comments </span>All of the comments.</li>
+                            <li><span class="SetOffFirstLevel">User Information </span>All of the user account information, except passwords.</li>
+                        </ul>
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">Feedback users do not have passwords. Their email address will serve as both their user name and password (e.g., if you have a user with bob@example.com, his password will now be bob@example.com). Users can change this password by clicking the <span class="Emphasis">Forgot your password?</span>&#160;link in any Pulse Account Login page.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to import feedback data</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Launch the Pulse server application.</li>
+                            <li>Click <span class="Emphasis">Import Feedback Data</span>.</li>
+                            <li>
+                                <p>In the Select SQL&#160;Server and Database dialog, complete the following:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">SQL&#160;Server </span>The computer name of the SQL&#160;server.</li>
+                                    <li><span class="SetOffFirstLevel">Authentication </span>The authentication method.</li>
+                                    <li><span class="SetOffFirstLevel">User name </span>The account username.</li>
+                                    <li><span class="SetOffFirstLevel">Password </span>The account password.</li>
+                                    <li><span class="SetOffFirstLevel">Database </span>The SQL&#160;Server instance.</li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">OK</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Updating Pulse</h2>
+        <p MadCap:conditions="General.Print">You may periodically wish to check to see if there are updates for the Pulse server application to download. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to update pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">You may periodically wish to check to see if there are updates for the Pulse server application to download. </p>
+                <ol>
+                    <li>Launch the Pulse server application.</li>
+                    <li>In the toolbar, select <span class="Emphasis">Help&gt;Check for Updates</span>.</li>
+                    <li>
+                        <p>In the dialog that opens:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">No Updates Available </span>If not updates are available, simply click <span class="Emphasis">Close</span>.</li>
+                            <li><span class="SetOffFirstLevel">Updates Available </span>If updates are available, highlight the update in the Download list. Then click <span class="Emphasis">Download Updates</span>.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+        <h2 MadCap:conditions="General.Print">Uninstalling Pulse</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>uninstalling pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can uninstall the Pulse server and the application.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to uninstall the pulse server </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When you use this method to remove Pulse, only the configuration information for the Pulse server is removed. The existing Pulse database remains untouched by this process. It also leaves the Pulse server application on the system, so you can reconfigure it at a later time. </p>
+                        <ol>
+                            <li>Log in to the Pulse web server as an administrator.</li>
+                            <li>Launch the Pulse server application.</li>
+                            <li>
+                                <p>In the toolbar, click the <span class="Emphasis">Uninstall Pulse Server</span> button.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_server_toolbar.png" class="MaxWidth70Percent" />
+                                </p>
+                            </li>
+                            <li>When&#160;prompted to decide if you want to proceed, click <span class="Emphasis">Yes</span>. The system removes all of the Pulse server's configuration information.</li>
+                        </ol>
+                        <p>The next time you launch Pulse, you will need to activate and configure the server for first-time use.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to uninstall the pulse server application </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If you want to completely remove the Pulse application from the server, use the Windows Control panel. </p>
+                        <ol>
+                            <li>Log in to the Pulse web server as an administrator.</li>
+                            <li>Open the Windows Control Panel.</li>
+                            <li>Under <span class="Emphasis">Programs</span>, click <span class="Emphasis">Uninstall a Program</span>.</li>
+                            <li>
+                                <p>In the Uninstall or Change a Program page, right-click <span class="Emphasis">MadCap Pulse</span> and select <span class="Emphasis">Uninstall </span>from the context menu.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_uninstall_menu.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>In the Programs and Features dialog, click <span class="Emphasis">Yes</span>.</li>
+                            <li>In the MadCap Pulse dialog, a list of applications related to Pulse appears. Review the list and select <span class="Emphasis">Automatically close applications and attempt to restart them after setup is complete</span>. Then click <span class="Emphasis">OK</span>. Windows begins removing the Pulse server application.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Installation" />
+        </p>
+    </body>
+</html>

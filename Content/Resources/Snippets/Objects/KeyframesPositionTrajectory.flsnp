@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Mimic" MadCap:lastBlockDepth="11" MadCap:lastHeight="1111" MadCap:lastWidth="994">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol style="list-style-type: lower-alpha;">
+            <li>In the Keyframe Properties window pane, expand the <span class="Emphasis">Position Keyframe</span> section.</li>
+            <li>
+                <p>In the <span class="Emphasis">Properties</span> section, do one of the following:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Time</span> Select a different time for the keyframe to begin.</li>
+                    <li><span class="SetOffFirstLevel">Position</span> Select a different position on the frame for the object  for this keyframe. The first field sets the horizontal position, and the second sets the vertical position. You can also drag a position keyframe's corresponding trajectory point in the Frame Editor to move it the object to a new position. This changes the position numbers automatically.</li>
+                    <li><span class="SetOffFirstLevel">Interpolation</span> Select one of the following:<ul class="SecondLevel"><li><span class="SetOffSecondLevel">Linear </span>Set a straight path from this keyframe to the next. </li><li><span class="SetOffSecondLevel">Discrete </span>Set an instant jump from this keyframe to the next. In other words, the object will not move along a path; it will appear in one position, and then the next.</li><li><span class="SetOffSecondLevel">Bezier  </span>Set a curved path from this keyframe to the next. This opens two sets of Control Point fields. The first control point set is for the length of the control; the second field is for the position. This allows you to customize the depth of the trajectory's arc (first field) and the position of the trajectory's wave (second field). As an alternative to using the Control Point fields, you can manually click and drag the white control point handles in the Frame Editor to change the path's arc and wave.<ul class="ThirdLevel"><li><span class="SetOffThirdLevel">Control Point 1 </span> Controls the trajectory from this keyframe to the previous keyframe. This control will not work on the first position keyframe as this keyframe is the starting point. </li><li><span class="SetOffThirdLevel">Control Point 2 </span> Controls the trajectory between each keyframe. </li></ul><div class="example"><p MadCap:conditions="" class="exampleHeadTextEmpty">Example</p><p MadCap:conditions="">This rectangle has a linear <MadCap:keyword term="trajectories" />trajectory. It will move smoothly along the straight trajectory line.</p><p MadCap:conditions=""><img src="../../Images/trajectory_linear.png" alt="" title="" class="MaxWidth90Percent" /></p><p MadCap:conditions="">This rectangle has a discrete trajectory. It will jump from one trajectory point to the next.</p><p MadCap:conditions=""><img src="../../Images/trajectory_discrete.png" alt="" title="" class="MaxWidth90Percent" /></p><MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicWhatsNewGuide" /><p MadCap:conditions="">This rectangle has a bezier trajectory. It will move smoothly along a curved line. You can adjust the control points (the white dots) to change the shape of the curve between each keyframe.</p><p MadCap:conditions=""><img src="../../Images/trajectory_bezier.png" alt="" title="" class="MaxWidth90Percent" /></p></div></li></ul></li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

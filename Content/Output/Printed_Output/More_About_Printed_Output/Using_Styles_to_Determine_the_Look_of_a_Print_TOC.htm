@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="23" MadCap:lastHeight="11113" MadCap:lastWidth="964" MadCap:conditions="Products.Flare" MadCap:conditionTagExpression="include[Snippets.Snippet1 or Snippets.Snippet4 or Snippets.Snippet6] exclude[Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet5] " class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Understanding the MadcCap|tocProxy style in CSS and how to control the look and feel of TOC entries in a print-based table of contents." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:keyword term="Print-based output:tables of contents;Tables of contents:printed output;Styles:tables of contents;Tables of contents:styles" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="PrintedOutputStyles" MadCap:conditions="Products.Flare" />Using Styles to Determine the Look of a Print TOC</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../../Resources/Snippets/PrintOutput/UseStylesLookPrintTOCSummary.flsnp" />
+        </p>
+        <p>A style called "MadCap|tocProxy" is used to control the look of the entire container. Other styles—such as p.TOC1, p.TOC2, and p.TOC3—are used to control the look of individual entries in the TOC. Style properties—such as margin-left, font-size, and mc-leader-indent, mc-leader-format—are used to affect the look in different ways.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>
+                        <img src="../../../Resources/Images/toc_print_determine_look.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a print toc (entire container)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                            </MadCap:snippetText>
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Some of the necessary style properties can also be changed in the Simplified view in the Stylesheet Editor.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterAllStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, scroll down and select the <span class="Emphasis">MadCap|tocProxy</span> style or a class that you have created under it (e.g., MadCap|tocProxy.myclass). </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand a property group (e.g., Font, Block, Box) to see the actual properties within it. </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" />
+                        <p>For example, if you want to change the width of the entire TOC, you would first expand the <span class="Emphasis">Box</span> property group. Then you would click <img src="../../../Resources/Images/browse_ellipses.png" /> to the right of the <span class="Emphasis">width</span> property and set the value in the popup.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteForMoreInfoComponentsPropsStylesheetEditor.flsnp" MadCap:conditions="General.OnlineLive" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a print toc&#160;(individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep2.flsnp" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using simplified view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureAdvancedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterGeneratedContentStylesStep.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>In the<span class="Emphasis"> Styles</span> section of the editor, scroll down until you find the p style, followed by a period and the TOC class that you want to customize (e.g., <span class="Emphasis">p.TOC1</span>, <span class="Emphasis">p.TOC2</span>, <span class="Emphasis">p.TOC3</span>). TOC1 is used for the first-level heading in the print TOC, TOC2 is used for the second-level heading, and so on.</p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.TOCPageNumber style.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/InLocalToolbarClickPropertiesForStyle.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>Select a tab to make changes to the heading level. You can make several adjustments on the various tabs. Following are two of the most common tabs to edit: Paragraph and Leader.</p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>Paragraph Tab</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <p>Use this tab to make paragraph changes (e.g., alignment, indentation, spacing) to the header level.</p>
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">Example</p>
+                                                    <p>Let's say you have a generated TOC for a PDF document, and it includes three different levels in it. The look of the first level is controlled by the p.TOC1 style, the second level by the p.TOC2 style, and the third level by the p.TOC3 style.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/toc_alignment1.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                    <p>Suppose you want the first level only to be aligned right. To accomplish this, you double-click the <span class="Emphasis">p.TOC1</span> style in your stylesheet. Then in the Properties dialog, you select the <span class="Emphasis">Paragraph</span> tab and set the <span class="Emphasis">Alignment</span> to <span class="Emphasis">Right</span>.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/toc_alignment4.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                    <p>After you generate the PDF again, it would look like this:</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/toc_alignment3.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>Leader Tab</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p>Use this tab to make changes to page numbers and the area between them and the header text.</p>
+                                                <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/LeaderSettingsListSimplifiedView.flsnp" />
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <p>Additional changes can be made in the Advanced view.</p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>if using advanced view</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol class="LowerAlpha">
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterGeneratedContentStylesStep.flsnp" />
+                                    </li>
+                                    <li>On the left side of the editor, expand the <span class="Emphasis">p</span> style. Classes of the style are shown below it.</li>
+                                    <li>
+                                        <p>Find and select the TOC class that you want to customize (e.g., <span class="Emphasis">TOC1</span>, <span class="Emphasis">TOC2</span>, <span class="Emphasis">TOC3</span>). TOC1 is used for the first-level heading in the print TOC, TOC2 is used for the second-level heading, and so on.</p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.TOCPageNumber style.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                                        </p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteAssortedRelevantProperties.flsnp" />
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                                    </li>
+                                    <li>
+                                        <p>If you are using the group view, expand a property group (e.g., Font, Block, Box, Unclassified) to see the actual properties within it. </p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Do not use the "PrintSupport" property for the TOC1 through TOC9 style classes.</p>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" /> Following are some of the more common properties that you might change.</p>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>Common Properties</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntriesList.flsnp" />
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown class="ThirdLevel">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteForMoreInfoComponentsPropsStylesheetEditor.flsnp" MadCap:conditions="General.OnlineLive" />
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li value="3">
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Print">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use styles to determine the look of a print toc&#160;(individual entries)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol type="1" class="Decimal">
+                    <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/EditStyleStep1.flsnp" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteStepsUsingSimplified.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterGeneratedContentStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, expand the <span class="Emphasis">p</span> style. Classes of the style are shown below it.</li>
+                    <li>
+                        <p>Find and select the TOC class that you want to customize (e.g., <span class="Emphasis">TOC1</span>, <span class="Emphasis">TOC2</span>, <span class="Emphasis">TOC3</span>). TOC1 is used for the first-level heading in the print TOC, TOC2 is used for the second-level heading, and so on.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The page numbers in the generated list inherit their style settings from the list items before them. However, if you want the page numbers to look differently, you can modify the MadCap|xref.TOCPageNumber style.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Notes/NoteAssortedRelevantProperties.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>
+                        <p>If you are using the group view, expand a property group (e.g., Font, Block, Box, Unclassified) to see the actual properties within it. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Do not use the "PrintSupport" property for the TOC1 through TOC9 style classes.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntries.flsnp" /> Here are some of the more common properties that you might change.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Styles/ChangePropertiesForGenTOCListOfElementsEntriesList.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also use styles to suppress page numbers in a print TOC. See <MadCap:xref href="Suppressing_Page_Numbers_in_a_Print_TOC.htm" >Suppressing Page Numbers in a Print TOC</MadCap:xref>.</p>
+                <p class="note" MadCap:conditions="General.OnlineLive,FlareGuides.FlareTablesOfContentsGuide" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have inserted images into the headings in your topics, you can make sure those images do not appear in the generated TOC. See <MadCap:xref href="Removing_Images_from_Headings_in_a_Generated_TOC.htm" >Removing Images from Headings in a Generated TOC</MadCap:xref>.</p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to change the look of your TOC in online output, you can do so by modifying styles within your skin. See <MadCap:xref href="../../../Skins/Editing_Skin_Settings.htm" >Editing Skin Settings</MadCap:xref>, <MadCap:xref href="../../../Skins/Standard_Skin_Styles/Standard_Skin_Styles.htm" >Standard Skin Styles</MadCap:xref>, <MadCap:xref href="../../../Skins/HTML5_Skin_Styles/HTML5_Skin_Styles.htm" >HTML5 Skin Styles</MadCap:xref>, and <MadCap:xref href="../../../Skins/WebHelp_Mobile_Skin_Styles/WebHelp_Mobile_Skin_Styles.htm" >WebHelp Mobile Skins</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can change the heading text for an auto-generated TOC in the language skin. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Proxies/Changing_the_Heading_Text_for_Auto_Generated_Proxies.htm">Changing the Heading Text for Auto-generated Proxies</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputTOCs;PrintedOutputStyles" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+    </body>
+</html>

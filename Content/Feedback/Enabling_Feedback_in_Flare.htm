@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet5]exclude[Snippets.Snippet1 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="1326" MadCap:lastWidth="1392">
+    <head><title></title>
+        <meta name="description" content="How to enable the MadCap Feedback Server for use with a MadCap Flare target. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Feedback" />
+            <MadCap:keyword term="MadCap Feedback:enabling" />
+            <MadCap:concept term="FilterFeedback" />Enabling Feedback in Flare</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHPlus.flsnp" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Feedback/FeedbackEnableSummary.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="About_MadCap_Feedback.htm">About MadCap Feedback</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to enable feedback in flare</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Project Organizer, open the target.     </li>
+                    <li>Select the <span class="Emphasis">Community</span> tab.</li>
+                    <li>Click the <span class="Emphasis">Enable Pulse/Feedback Server</span> check box.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Feedback Server URL</span> field, enter the path to the server hosting the data. <MadCap:snippetText src="../Resources/Snippets/Feedback/FeedbackEnterServerOption.flsnp" /></p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It is highly recommended that you purchase an SSL certificate and install it on your web server. SSL uses encryption for certain processes, which helps to ensure that the data transfer is secure. If you have an SSL certificate installed on your web server, make sure you begin the path to the server with https://.</p>
+                    </li>
+                    <li>Enter your license key using one of the following methods:<ul class="FirstLevel"><li><span class="SetOffFirstLevel">If Using MadCap Feedback Service (i.e., MadCap does the hosting) </span><MadCap:snippetText src="../Resources/Snippets/Feedback/FeedbackServiceLicenseKeyOption.flsnp" /></li><li><span class="SetOffFirstLevel">If Using MadCap Feedback Server (i.e., you do the hosting)</span> Copy the Feedback license that you have been issued and paste it into the Feedback Service License Key field.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set the Community Options (Display Feedback Comments) Using a Stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the stylesheet.</li>
+                    <li>Find and select the <span class="Emphasis">html</span> style or the appropriate class.</li>
+                    <li>In the <span class="Emphasis">Show</span> filter field, select <span class="Emphasis">Alphabetical List</span>.</li>
+                    <li>Find the <span class="Emphasis">mc-community-features</span> property and set it to <span class="Emphasis">enabled</span> or <span class="Emphasis">disabled</span>. The default setting is "enabled."</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p>This stylesheet method can be especially useful if you only want some topics to display the comment area.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If there is a discrepancy between the skin and the stylesheet setting (e.g., the skin is set to disabled and the CSS is set to enabled), the stylesheet setting has precedence.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Comments at the bottom of topics are not shown in tablet or mobile view. This is the same case for HTML5 Tripane output.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The comments area at the bottom of topics is wrapped in an iframe. Therefore, the output is technically not entirely frameless. However, because it is only the comments that are contained in the iframe, the main topic content still retains the benefits (e.g., better search results) of frameless output.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you enable Feedback in a Flare target, you can do the following.</p>
+                <ul>
+                    <li MadCap:conditions="">Configure the target with Feedback Explorer so that you can view and work with user activity for that published target. See <MadCap:xref href="Configuring_a_Target_with_the_Feedback_Explorer.htm">Configuring a Target with Feedback Explorer</MadCap:xref>.</li>
+                    <li MadCap:conditions="">Disable comments in the target skin (if you do not want users to be able to submit and view comments). See <MadCap:xref href="Comments/Displaying_Comments_Feedback.htm">Disabling Feedback User Comments in Skins</MadCap:xref>.</li>
+                </ul>
+                <p>After you generate and publish the output, you can open Feedback Explorer to see how readers are using the output. See <MadCap:xref href="Opening_the_Feedback_Explorer.htm">Opening Feedback Explorer</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Feedback" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="15" MadCap:lastHeight="14135" MadCap:lastWidth="583" MadCap:conditions="General.Future">
+    <head><title></title>
+        <meta name="description" content="Answers to frequently asked questions about the MadCap Flare application." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="FAQs" />FAQs</h1>
+        <p>Following are some frequent questions about using <MadCap:variable name="Other.Product" />.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>general</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how are topic titles, headings, and file names different and when are they used?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">A title is the text that is found in the &lt;title&gt; tag of a topic's XHTML code, which you can see by opening a topic in the Internal Text Editor. You can set the title  in the Properties dialog for a topic. See <MadCap:xref href="../Topics/More_About_Topics/Changing_Topic_Titles.htm">Changing Topic Titles</MadCap:xref>.</p>
+                        <p class="Answer">By contrast, a heading is the text found in a topic's content, with one of the CSS heading styles applied to it (h1 through h6).</p>
+                        <p class="Answer">A file name is the name you gave the topic in the Content Explorer.</p>
+                        <p class="Answer">There are various features in <MadCap:variable name="Other.Product" /> that rely on your topic titles, headings, or file names. These include the following:</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Topics/TopicTitleUseList.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>why does flare attempt to connect to the internet when i am offline?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer"><MadCap:variable name="Other.Product" /> does that because it is trying to update the News and Updates section of the Start Page. It's also trying to validate the user's license key with MadCap's license server.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how can i prevent flare from trying to connect to the internet?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">You can perform the following steps. Keep in mind that these steps may vary slightly for different operating systems. Also, keep in mind that if you disable this activity, certain features in Flare may be affected (e.g., using a destination file to publish output to a server).</p>
+                        <ol>
+                            <li>Click the <span class="Emphasis">Start</span> menu, type <span class="TypedEntry">windows firewall</span>, and press <span class="Emphasis">Enter</span>. The Windows Firewall with Advanced Security window opens.</li>
+                            <li>On the left, click <span class="Emphasis">Inbound Rules</span>.</li>
+                            <li>On the right, click <span class="Emphasis">New Rule</span>. The New Inbound Rule Wizard opens.</li>
+                            <li>Select <span class="Emphasis">Program</span>.</li>
+                            <li>Click <span class="Emphasis">Browse </span>and navigate to the location where Flare is installed. For example, it might be C:\Program Files\MadCap Software\MadCap Flare V<MadCap:variable name="Other.VersionNumber" />\Flare.app. <span class="BoldWarning">Please note that this is just an example. Your files might be installed in a different folder than C:\Program Files.</span></li>
+                            <li>Select <span class="Emphasis">Flare.exe</span> and click <span class="Emphasis">Open</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Click <span class="Emphasis">Block the connection</span>.</li>
+                            <li>Click <span class="Emphasis">Next</span>.</li>
+                            <li>Select which domains you wish to block, or just leave all selected and click <span class="Emphasis">Next</span>.</li>
+                            <li>In the <span class="Emphasis">Name</span> field type <span class="TypedEntry">MadCap Flare V<MadCap:variable name="Other.VersionNumber" /></span>.</li>
+                            <li>Click <span class="Emphasis">Finish</span>.</li>
+                            <li>On the left, click <span class="Emphasis">Outbound Rules</span>.</li>
+                            <li>Repeat steps 3-12.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>what are these blank check boxes that i see next to files and folders in the content explorer and other places?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">
+                            <MadCap:keyword term="Conditions" />They are not check boxes. They are actually boxes used to show whether something has a condition tag applied to it. Condition tags are used if you want to produce different outputs.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>You might have one output where you want to include all content and files, but you might have another output where you want to exclude some content and files from the output. Condition tags are associated with colors when you create them, so when you apply a condition tag to a file or folder in the Content Explorer, the box next to that item will contain the color of the condition tag. If you apply more than one condition tag to an item, the box will show all of the colors.</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p class="Answer">For more information see <MadCap:xref href="../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>, <MadCap:xref href="../Condition_Tags/Creating_Condition_Tags.htm">Creating Condition Tags</MadCap:xref>, and <MadCap:xref href="../Condition_Tags/Applying_Condition_Tags_to_Content.htm">Applying Condition Tags to Content</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>framemaker</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>where is the book file from the adobe framemaker documents?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/WhereIsBookFile.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Importing:styles;Styles:importing" />are styles different in flare than they are in framemaker?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/StylesFlareVsFrame.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Styles:paragraph;Styles:character;Paragraphs:styles;Characters:styles" />what happened to my paragraph and character styles when i imported from framemaker?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/WhatHappenedParaCharStyles.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Images:importing;Importing:images" />where are the images i imported with the framemaker files?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/WhereAreImages.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>importing</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Importing:topics;Topics:importing" />i want to import a single topic file. how do i do that?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">Follow essentially the same steps for creating a new topic. Start by clicking <img src="../Resources/Images/create_new_topic_file_btn.png" class="ReduceButtonSize" /> in the local toolbar of the Content Explorer. In the Add File dialog, next to the <span class="Emphasis">New from existing</span> field, click <img src="../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. Then find and select the file you want to import. If you are importing a non-XML file, <MadCap:variable name="Other.Product" /> guides you through the process of converting the file. For more information see <MadCap:xref href="../Topics/Importing_Topics.htm" target="" title="" alt="">Importing Topics</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>i imported a robohelp project into flare. in my robohelp project, i had <MadCap:keyword term="Headers:importing;Importing:headers and footers;Footers:importing" />headers and footers in a topic template. does flare use templates like i'm used to using them in robohelp? where are my imported headers and footers in flare? are they in a template?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">In <MadCap:variable name="Other.Product" />, templates<MadCap:keyword term="Templates" /> are used when you create a new project, as well as when you add new content (e.g., topics, snippets, stylesheets) or new project-related elements (e.g., tables of contents, targets, skins) to it. A template is simply an existing file or element of the same type that you are creating. By basing your addition on a template, you are giving yourself a head start because the template already contains some content, settings, or formatting for you.</p>
+                        <p class="Answer">If you want to use something like topic templates in Flare, you can create a master page and associate it with a target. Like a topic template in RoboHelp, a master page in Flare lets you create a header and footer for multiple topics. It also lets you automatically include breadcrumbs and a mini-TOC at the top and bottom of topics (which help users know where the topic is placed in relation to other topics in the table of contents).</p>
+                        <p class="Answer">If you import a RoboHelp project that has topic templates containing headers and footers, your headers and footers are saved as snippets in Flare (stored in the Resources\Snippets subfolder in Content Explorer).</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>indexing</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how do i create secondary index keywords?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">
+                            <MadCap:keyword term="Indexes:subkeywords" />In the Index window pane, type a colon after the first term, and then type the second term.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you type <span class="TypedEntry">Software:MadCap <MadCap:variable name="Other.Product" /></span>, the term "Software" appears at the first level of the index, and the term "MadCap <MadCap:variable name="Other.Product" />" appears as a subentry under "Software."</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p class="Answer">For more information see <MadCap:xref href="../Indexes/Inserting_Index_Keywords.htm">Inserting Index Keywords</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>i can't find my new topic in the output that i built. where is it?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">Make sure you have added the topic to the table of contents (TOC). To do this quickly, open the TOC, then from the Content Explorer, drag the topic to the TOC Editor.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>which outputs use <MadCap:keyword term="jQuery;HTML5:jQuery" />jquery?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">The only output format that uses jQuery in <MadCap:variable name="Other.Product" /> is <MadCap:variable name="Outputs.HTML5" />. For more information about jQuery, see <a href="http://docs.jquery.com/" target="_blank">http://docs.jquery.com/</a>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>styles and stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>i can't find my <MadCap:keyword term="Importing:style sheets;Styles:stylesheets;Cascading stylesheets" />stylesheet after i imported my project to flare. where is it?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">Normally, a stylesheet is located in the Resources\Stylesheets folder in the Content Explorer. However, <MadCap:variable name="Other.Product" /> retains your file structure when you import a project. So if your stylesheet was at the root level of your project files in RoboHelp, that stylesheet will be copied to the root level of the Content Explorer in <MadCap:variable name="Other.Product" />. For more information see <MadCap:xref href="../Styles/About_Styles_and_Style_Sheets.htm" target="" title="" alt="">About Styles and Stylesheets</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>after i&#160;imported my project, i&#160;noticed that several styles were created that were not in my original stylesheet. why did that happen, and what is the purpose of these styles?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">If you used any local formatting in the project you imported (i.e., changed the formatting for something without changing it in a stylesheet), <MadCap:variable name="Other.Product" /> creates new style classes based on those local style settings and gives the new classes a name.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you have portions of content where you have highlighted words and manually applied bold formatting to that text, you might find that <MadCap:variable name="Other.Product" /> has converted those areas of formatting to a style called "span_1."</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="FAQs:WebHelp Plus;WebHelp Plus:FAQs" />webhelp plus</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Internet Information Services" />does webhelp plus support 32- and 64-bit iis?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">Yes.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>what does configuresearch.exe do? what server security is required to allow this program to perform correctly?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/WHP/ConfigureSearch.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how can you tell if the indexing service is configured correctly to support webhelp plus?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/WHP/IndexingServiceConfiguredProperlyVerifySteps.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how can you tell if the windows search is configured correctly to support webhelp plus?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/WHP/WindowsSearchConfiguredCorrectly.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>can multiple instances of webhelp plus be present (i.e., different flare projects) on the same iis website?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/WHP/MultipleInstancesWHP.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>the table of contents and search functions seem to require special support or particular configuration on the web server in order to function. does any other portion of webhelp plus require special support?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../Resources/Snippets/WHP/SpecialSupport.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:keyword term="Tables of contents:WebHelp Plus;WebHelp Plus:tables of contents" />if the table of contents does not work in webhelp plus output, what do you check in order to troubleshoot the problem?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Verify the following:</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="ASP.NET" />verify that asp.net has been registered with your web server</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/ASPNetRegistered.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>verify that the webhelp plus web service is properly configured</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/WHPConfigured.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>if the search function does not work in webhelp plus output, what do you check in order to troubleshoot the problem? (windows xp and windows server 2003)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Verify the following:</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>verify that the indexing service is properly configured</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/IndexingServiceConfiguredProperlyVerifySteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>verify that the indexing service has indexed the content from your output</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/IndexingServiceIndexed.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>verify that you can perform a search using the indexing service "query the catalog" utility</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/QueryCatalog.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>verify that you can perform a search using the webhelp plus web service</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../Resources/Snippets/WHP/PerformSearchWHPService.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>is there some sort of diagnostic or sample flare output to determine if webhelp plus will work or is configured correctly?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">Currently, there is not.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="XML Editor" />
+                    <MadCap:annotation MadCap:createDate="2016-02-10T11:11:15.7221385-08:00" MadCap:creator="pstoecklein" MadCap:initials="PS">xml</MadCap:annotation> (content) editor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>when working in the xml editor, the look of my topic completely changed (e.g., different fonts). what happened and how do i fix it?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">Most likely, this occurred because the XML Editor switched from using one style medium (e.g., default) to another (e.g., print).</p>
+                        <p class="Answer">When you switch from Web Layout mode to Print Layout mode, the <MadCap:keyword term="Mediums" />medium automatically changes with it ("default" medium for Web Layout mode and "print" medium for Print Layout mode). This means that the editor will show the content in the style associated with that medium. Therefore, if you want to see a different medium for that topic, you must select it from the Medium drop-down in the XML Editor toolbar. If you are unable to see the Medium drop-down field in the XML Editor toolbar, you may need to maximize the program window or click the drop-down arrow at the end of the toolbar.</p>
+                        <p class="Answer">
+                            <img src="../Resources/Images/medium_example_in_xml_editor.png" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="Answer">For more information see <MadCap:xref href="../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref> and <MadCap:xref href="../Topics/About_Layout_Modes.htm">About Layout Modes</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <MadCap:annotation MadCap:createDate="2016-02-10T11:11:22.4002292-08:00" MadCap:creator="pstoecklein" MadCap:initials="PS" MadCap:comment="We can add this to a troubleshooting topic if it's not already there." MadCap:editor="pstoecklein" MadCap:editDate="2016-02-10T11:11:33.9756426-08:00">how</MadCap:annotation> do i view the tags and markup in the xml editor?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Answer">In the local toolbar of the XML Editor, click the face of the <span class="Emphasis">Show tags</span> button <img src="../Resources/Images/show_tags_btn.png" class="ReduceButtonSize" /> (not the down arrow). Please note, however, that this button only shows the tags in the topic. It is not the true markup code that you can edit.</p>
+                        <p class="Answer">If you want to view and modify the <MadCap:keyword term="True code" />true code, including text, tags, and <MadCap:keyword term="Metadata" />metadata, you can open the topic in the Internal Text Editor or another application such as Notepad. To do this, click the <span class="Emphasis">Text Editor</span> tab at the bottom of the XML Editor, or click and drag the bottom bar up to work in split view (seeing both the XML Editor and the Internal Text Editor). You can also right-click on the file in the Content Explorer and select <span class="Emphasis">Open with&gt;Internal Text Editor</span> (or another editor). See <MadCap:xref href="../Interface/UI_Elements/Internal_Text_Editor.htm">Internal Text Editor</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>what are all these vertical and horizontal bars that i see around my topic in the xml editor?</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="Answer">The XML Editor provides <MadCap:keyword term="Movies:structure bars;Structure bars;Bars:structure" />bars above and to the left of the content area. These bars provide you with information about your content without having to view all of the tags mixed within the text. They also let you perform certain tasks for sections of content by right-clicking the block bar and selecting an action. See <MadCap:xref href="../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

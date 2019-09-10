@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2482" MadCap:lastWidth="1134" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareProjectCreation.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="ExportProjects" />
+            <MadCap:keyword term="Exporting:projects;Projects:exporting" />
+            <MadCap:concept term="FilterExporting" />Exporting Projects Using the Command Line</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/Exports/ExportProjectsCommandLine.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use the command line to export a project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add an export project file in the Project Organizer. It will be placed in an Exports folder. See <MadCap:xref href="Adding_an_Export_Project_File.htm">Adding an Export Project File</MadCap:xref>.</li>
+                    <li>Complete the fields in the Export Project File Editor. You need to do this so that <MadCap:variable name="Other.Product" /> knows where to export the project, which parts of it to export, and so on. These fields need to be completed only once. After that, you can export the project anytime you want and these same rules will be used. For more information on each field and option in the Export Project File Editor, see <MadCap:xref href="Exporting_Projects.htm">Exporting Projects</MadCap:xref>.</li>
+                    <li>Do one of the following, depending on whether you want to create a batch file for later use or to export immediately using the command line.<ul type="1" class="FirstLevel"><li><p><span class="SetOffFirstLevel">To Create a Batch File (Recommended)</span> Open Notepad. For example, in Windows 7, you can open it by clicking the <span class="Emphasis">Start</span> button and selecting <span class="Emphasis">All Programs&gt;Accessories&gt;Notepad</span>.</p><p>OR</p></li><li><span class="SetOffFirstLevel">To Generate Immediately From the Command Line</span> Open your command prompt. For example, in Windows 7, you can open it by clicking the <span class="Emphasis">Start</span> button and then selecting <span class="Emphasis">All Programs&gt;Accessories&gt;Command Prompt</span>.</li></ul></li>
+                    <li>
+                        <p>Type the path to the Flare.app folder where you installed <MadCap:variable name="Other.Product" />, and press <span class="Emphasis">Enter</span>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>If you installed <MadCap:variable name="Other.Product" /> at C:\Program Files <span class="BoldWarning">(this is just an example; your files might be installed in a different folder, such as Program Files x86)</span>, you might type the following and press <span class="Emphasis">Enter</span> on your keyboard:</p>
+                                    <p class="Code">cd\Program Files\<MadCap:variable name="Other.CompanyName" />\MadCap Flare V<MadCap:variable name="Other.VersionNumber" />\Flare.app</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide" />
+                    <li>
+                        <p>Type the following and press <span class="Emphasis">Enter</span> on your keyboard (entering the path to your project, and the export file within it, in place of the section in angle brackets):</p>
+                        <p><span class="TypedEntry">madbuild -export [project path] -settings [export project file name]</span>
+                        </p>
+                        <p>Make sure you add the .flexp file extension at the end of the export project file name.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteSpacesQuotationMarksCommandLine.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineQuotationMarksTip.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example—no spaces</p>
+                                    <p>Let's say you have a <MadCap:variable name="Other.Product" /> project called "FictionSoftPro" that you have stored in a folder of the same name at the root level of the C: drive. And within that project you've created an export file named "MyExportFile." In that case, you can type this:</p>
+                                    <p class="Code">madbuild -export c:\FictionSoftPro\FictionSoftPro.flprj -settings MyExportFile.flexp</p>
+                                </div>
+                                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareProjectCreationGuide" />
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example—spaces</p>
+                                    <p>Let's say you have a project called "FictionSoftPro" that you have stored in a folder named "My Projects" (with a space) at the root level of the C: drive. And within that project you've created an export file named "My Export File" (with spaces). In that case, you can type this:</p>
+                                    <p class="Code">madbuild -export "c:\My Projects\FictionSoftPro\FictionSoftPro.flprj" -settings "My Export File.flexp"</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p>If you are using the command prompt window, the project is exported immediately. </p>
+                        <p>If you are creating a batch file in Notepad, it might look something like this:</p>
+                        <p>
+                            <img src="../Resources/Images/batch_file_example_export_project.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If you are creating a batch file, save the Notepad file to any location you like on your computer. When you do this, type <span class="TypedEntry">.bat</span> as the extension at the end of the file name (e.g., MyBatchFile.bat). At any time you like, you can export the project simply by double-clicking the batch file. You can also use a tool to schedule the batch file to run.</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Output/CommandLineScheduledTaskSteps.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>error codes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you export a project using the command line, the following error codes may be seen if problems occur during an export process:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">3001 </span>The entered export project file does not exist.</li>
+                    <li><span class="SetOffFirstLevel">3002 </span>There was an error parsing the entered export project file.</li>
+                    <li><span class="SetOffFirstLevel">3003 </span>Export failed.</li>
+                    <li><span class="SetOffFirstLevel">3004 </span>Export destination name not set in the export file</li>
+                    <li><span class="SetOffFirstLevel">3005 </span>Export destination path not set in the export file</li>
+                    <li><span class="SetOffFirstLevel">3006 </span>Template name not set in the export file</li>
+                    <li><span class="SetOffFirstLevel">3007 </span>Template path not set in the export file</li>
+                    <li><span class="SetOffFirstLevel">3008 </span>Target path not set in export file (when exporting using target)</li>
+                    <li><span class="SetOffFirstLevel">3009 </span>Target path not found (when exporting using target)</li>
+                    <li><span class="SetOffFirstLevel">3010 </span>Conditional expression not set (when exporting using conditional expression)</li>
+                    <li><span class="SetOffFirstLevel">3011 </span>File Tag expression not set (when exporting using file tag expression)</li>
+                    <li><span class="SetOffFirstLevel">3012 </span>No files selected (when exporting using manual selection)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="ExportProjects" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="894" MadCap:lastWidth="1164">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">configuring iis on production server</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps show you how to configure IIS, depending on the operating system. These steps are necessary only for the server where you will be publishing the final output. It is not necessary to perform these steps on your local computer for testing <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:variable name="Outputs.HTML5" MadCap:conditions="Snippets.Snippet10" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"> server-based</MadCap:conditionalText> output.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2003 and windows xp</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li>
+                            <li> Double-click <span class="Emphasis">Administrative Tools</span>.The Administrative Tools dialog opens.</li>
+                            <li>Double-click <span class="Emphasis">Internet Information Services</span>.The Internet Information Services dialog opens.</li>
+                            <li>Find your output folder and right-click the <span class="Emphasis">Service</span> subfolder. Then select <span class="Emphasis">Properties</span>.The Service Properties dialog opens.</li>
+                            <li>Select the <span class="Emphasis">Virtual Directory</span> tab. </li>
+                            <li>
+                                <p>Next to the <span class="Emphasis">Application name</span> field, click the <span class="Emphasis">Create</span> button. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If this button has already been selected, it will display as "Remove" instead. In this case, you do not need to click the button.</p>
+                            </li>
+                            <li>In the <span class="Emphasis">Execute Permissions</span> drop-down, make sure <span class="Emphasis">Scripts only</span> is selected. It should already be selected by default.</li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>windows server 2008 and 2008 r2, windows 2012, windows 7, windows 8, and windows vista</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Open the Control Panel.</li>
+                            <li>Select <span class="Emphasis">System and Security</span>.</li>
+                            <li>Select <span class="Emphasis">Administrative Tools</span>. The various operating systems have different ways to find this option.</li>
+                            <li>Open the Internet Information Services (IIS) Manager.</li>
+                            <li>Expand the node with the computer name.</li>
+                            <li>Expand the <span class="Emphasis">Sites</span> folder.</li>
+                            <li>Expand the website folder corresponding to the one that you published.</li>
+                            <li>Find your output folder and right-click the <span class="Emphasis">Service</span> subfolder. Then select <span class="Emphasis">Convert to Application</span>.</li>
+                            <li>Make sure the the application pool is using the .NET 4 framework.<ol class="LowerAlpha"><li>In the dialog click <span class="Emphasis">Select</span>.</li><li>From the drop-down select an application pool that is using the .NET 4 framework.</li><li><MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" /></li></ol></li>
+                            <li>
+                                <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="4" MadCap:lastHeight="892" MadCap:lastWidth="699" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Themes;HTML Help;Microsoft Help Viewer;Microsoft Help 2.0;JavaHelp" />Including Custom HTML Content in Themes</h1>
+        <p>In Doc-To-Help you can include additional arbitrary HTML content in your themes. For example, to include a company logo or a link in a theme, prepare an HTML file (only the body, without &lt;BODY&gt; tags and anything outside them) and include it in the theme by selecting an appropriate Customize fields and Position in the Theme Designer. Specify the include file there by clicking the <span class="Emphasis">Modify</span> button. See <MadCap:xref href="Customizing HTML Help Help Viewer Help 20 and JavaHelp Themes.htm">Customizing HTML Help, Help Viewer, Help 2.0, and JavaHelp Themes</MadCap:xref>.</p>
+        <p>This applies to HTML Help, Microsoft Help Viewer, Microsoft Help 2.0, and JavaHelp targets.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What is an Include File?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>An include file is either an image file or an HTML file. You can have multiple include files in a single theme. The result of the inclusion is the *.theme files that are used to build the target. For an HTML include file, only its body—the content that is normally placed inside the &lt;BODY&gt; tags—should be present in the file. The &lt;BODY&gt; tags themselves and everything outside (&lt;HTML&gt; tags, &lt;HEAD&gt; tags, etc.) should be removed from the include file. Doc-To-Help does not verify this or change the included content. The entire contents of the file are included.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Restrictions and Guidelines</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Include HTML files and ancillary files (images, links) that are referenced in the include files must reside in the Customize sub-directory of the theme. When you include a file, it will be automatically copied to that directory. If you have ancillary files referenced in that file, you must put them in the same directory as the include file. All paths to such ancillary files in HTML must be relative paths to the Customize directory, as in the following example of an HTML include file showing a logo image:</p>
+                <p class="Code">&lt;img src="Customize/mylogo.gif"/&gt;</p>
+                <p>This and other restrictions on the content of an HTML include file are the author’s responsibility. Doc-To-Help does not change or verify the include files. Since everything outside &lt;BODY&gt; tags (and the &lt;BODY&gt; tags themselves) must be removed, the author of an include file should put everything that is needed inside the body, including styles and scripts. </p>
+                <p>Only use unique names of styles, scripts, etc. These names must not conflict with the names used by Doc-To-Help for other purposes. As a recommendation, it is better to avoid using names in include files altogether. Use only inline unnamed constructs.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

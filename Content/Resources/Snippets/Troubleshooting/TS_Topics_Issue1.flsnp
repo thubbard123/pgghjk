@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="701" MadCap:lastWidth="671">
+    <head />
+    <body>
+        <p class="Subheading">"Object reference not set to an instance of object" error occurs when renaming a topic</p>
+        <p>When renaming a topic Flare displays the following error message:</p>
+        <p class="Bold">Operation rename failed: "Object reference not set to an instance of an object" when renaming a topic.</p>
+        <p>If the topic is renamed, all links to that topic are lost.</p>
+        <p class="Subheading">Cause and Solution</p>
+        <p>This problem can have one of the following causes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Flare application data has become corrupted.</p>
+                <p>Delete the contents of the Flare application data folder. Perform the following steps.</p>
+                <ol>
+                    <li>Close the Flare project.</li>
+                    <li>Navigate to <span class="Emphasis">C:\Users\&lt;username&gt;\AppData\Roaming\MadCap Software\Flare</span> in the Windows Explorer.</li>
+                    <li>Delete the contents of the <span class="Emphasis">Flare</span> folder.</li>
+                    <li>Reopen the Flare project and rename the topic.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The window layout needs to be reset.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../UIElements/SelectWindowRibbon.flsnp" /> In the <span class="Emphasis">Window Layout</span> section select  <span class="Emphasis">Reset Layout</span>. The window pane layout will reset to default. </li>
+                    <li>Rename the topic.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

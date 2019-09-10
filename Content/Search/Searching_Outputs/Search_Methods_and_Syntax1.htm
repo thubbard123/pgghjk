@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="12041" MadCap:lastWidth="951" MadCap:ignoredWords="HTML5" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSearch.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="You can use different search methods and search syntax in MadCap Flare. The methods and syntax for search depends on the Flare output type. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Search:methods;Search:syntax" />
+            <MadCap:concept term="FilterSearch" />
+            <MadCap:concept term="SearchingOutputs" />Search Methods and Syntax</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Search:methods;Search:syntax" />Search Methods and Syntax</h1>
+        <p>When entering a search query, each output type supports different search methods and syntax.</p>
+        <h2 MadCap:conditions="General.Print">Full-Text Search</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>full-text search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Search:full-text" />All online output types support full-text search.</p>
+                <p>For <MadCap:variable name="Outputs.EclipseHelp" /> targets,&#160;search is provided by the Eclipse platform. For server-based output, search is provided by the either the Microsoft Indexing Service or Windows Search.</p>
+                <p>For all other output types, Flare scans all of the target content and creates a database index for search. When a user enters a search query, the search engine in the index to retrieve a list of topics with matches. In Flare, search results include these matches:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Case-insensitive&#160;Matches </span>Search is not case-sensitive. For example, a search for the word "run" will find matches for "Run" and "run."</li>
+                    <li><span class="SetOffFirstLevel">Matches with Variant Endings </span>For example, a search for the word "run" will also find matches for words such as, "runner," "running," and "runs." Since matches are not case-sensitive, the results will include topics containing matches such as, "Runner,"&#160;"Running," and "Runs."</li>
+                </ul>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <p class="Subheading">how to perform a full text search</p>
+                <ol>
+                    <li>Open the online output.</li>
+                    <li>In the search field, type a partial word or number string. <p>For example, type <span class="TypedEntry">ham</span>.</p></li>
+                    <li>
+                        <p>Press <span class="Emphasis">Enter</span> or click <span class="Emphasis">Search</span>.</p>
+                        <p>
+                            <img src="../../Resources/Images/full_word_search1.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                </ol>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSearchHighlighting.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="General.Print">Phrase Search</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>phrase search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Search:phrases" />All online output types support phrase search.</p>
+                <p>For <MadCap:variable name="Outputs.EclipseHelp" /> targets,&#160;search is provided by the Eclipse platform. For server-based outputs, search is provided by the either the Microsoft Indexing Service or Windows Search.</p>
+                <p>End users can search for phrases by enclosing their search terms in quotation marks. This is useful when end users want to restrict a search to locate terms that appear in an exact order. For example, you might want to search for a phrase such as "Dog Friendly."</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you search for the phrase <span class="TypedEntry">"Dog Friendly"</span>. When you open the highest ranking topic, search highlighting reveals both "Dog Friendly" and "dog friendly" as a match. </p>
+                            <p>
+                                <img src="../../Resources/Images/search_phrases_syntax_inquotes.png" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                            <p>In a lower ranking topic, notice the topic contains two similar matches (i.e., a hyphenated form of "dog-friendly"&#160;is found in the topic). Also observe that when matches are not exact, there is no search highlighting. </p>
+                            <p>
+                                <img src="../../Resources/Images/search_phrases_syntax_inquotes2.png" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to perform a phrase search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Open the online output.</li>
+                            <li>In the search field, type a word, number, or character string. </li>
+                            <li>Press <span class="Emphasis">Enter</span> or click the <span class="Emphasis">Search</span> button.</li>
+                            <li>
+                                <p>Double-click a match in the list to open the corresponding topic.</p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you have enabled the stop words feature, search will not find matches for queries containing stop words in quotes. For example, if you search for the phrase "Pets are fun," search will only include topics with the words "pets"&#160;and "fun."&#160;This is because the word "are"&#160;is part of the stop word list. See <MadCap:xref href="../Configuring_the_Search_Database/Including_Stop_Words_in_Search.htm">Including Stop Words in Search</MadCap:xref>.</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSearchHighlighting.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="General.Print">Boolean Operators</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>boolean operators</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <MadCap:keyword term="Search:boolean" />The <MadCap:variable name="Outputs.DotNetHelp" />, <MadCap:variable name="Outputs.HTMLHelp" />, <MadCap:variable name="Outputs.WebHelp" />, and <MadCap:variable name="Outputs.HTML5" /> output types support boolean operators —e.g., AND, OR, NEAR, NOT, and (&#160;). Note that when providing users with server-based <MadCap:variable name="Outputs.WebHelp" /> or <MadCap:variable name="Outputs.HTML5" /> output, boolean operators are not supported. Operators can be used in combination with search terms to increase or decrease the number of search results.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>requirements and dependencies</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">DotNet Help </span>Boolean search is supported on <MadCap:keyword term="Microsoft Windows XP" />Microsoft Windows XP (and newer operating systems) when <MadCap:keyword term="SQL:Compact" />SQL Server Compact is installed on the computer building the Flare output <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../SQL/Installing_SQL_Server.htm">Installing SQL Server</MadCap:xref>)</MadCap:conditionalText>. </li>
+                            <li><span class="SetOffFirstLevel">Eclipse Help </span>Boolean search is supported by the search engine that you configure in the Eclipse platform.&#160;See the&#160;Eclipse documentation at <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_help_ui_searchEngine.html" target="_blank">org.eclipse.help.ui.searchEngine</a>.</li>
+                            <li><span class="SetOffFirstLevel">HTML&#160;Help </span>Boolean search is provided by the viewer in accordance with the Microsoft Compiled HTML&#160;(CHM) specification. You must select the supported boolean operator from a predefined drop-down list. See <MadCap:xref href="Searching_HTML_Help.htm">Searching a Microsoft HTML&#160;Help System</MadCap:xref>.</li>
+                            <li><span class="SetOffFirstLevel">HTML5 </span>Boolean search is provided by Flare in client-based output only. When delivering server-based output, the Microsoft Indexing Service or Windows&#160;Search handles search. See the Microsoft documentation for information about the Indexing Service (<a href="http://msdn.microsoft.com/en-us/library/ee805985(v=vs.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/ee805985(v=vs.85).aspx</a>) or Windows&#160;Search (<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790(v=vs.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790(v=vs.85).aspx</a>). See also <MadCap:xref href="../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm">Enabling HTML5 Server-based Output</MadCap:xref>.</li>
+                            <li><span class="SetOffFirstLevel">WebHelp and WebHelp Plus </span>Boolean search is provided by Flare in client-based output only. When delivering server-based output (WebHelp Plus), the Microsoft Indexing Service or Windows&#160;Search service handles search. See the Microsoft documentation for information about the Indexing Service (<a href="http://msdn.microsoft.com/en-us/library/ee805985(v=vs.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/ee805985(v=vs.85).aspx</a>) or Windows&#160;Search (<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790(v=vs.85).aspx" target="_blank">http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790(v=vs.85).aspx</a>). See also <MadCap:xref href="../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm">Enabling WebHelp Plus Output</MadCap:xref>. </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to search with boolean operators</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>In the table below, a check mark shows the operators supported by each client-based output type. It also details any supported variables and provides usage examples:</p>
+                        <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;width: 100%;margin-left: auto;margin-right: auto;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" style="width: 74px;" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" style="width: 265px;" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Operators</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Usage</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/DotNetHelp.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/Microsoft HTML Help.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/html5Light.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/WebHelp.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/air.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/WebHelp Mobile.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="4">
+                                        <p class="TableTextEmphasis">AND</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Use to narrow the search and retrieve only the topics that contain all of the words it separates.</p>
+                                        <p class="TableText">Type <span class="TypedEntry">AND</span> between two or more terms. This is not case sensitive. </p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Because the operator is not case sensitive, you can type <span class="TypedEntry">cat AND&#160;dog AND&#160;parrot</span>, <span class="TypedEntry">cat And dog And parrot</span>, or <span class="TypedEntry">cat and dog and parrot</span>.</p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">cat and dog and parrot</span>.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_andsearch.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">When separating terms with a blank space, the AND&#160;is always inferred. This is only available in <MadCap:variable name="Outputs.HTML5" /> help.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Because AND&#160;is inferred in HTML5 search, here are the results of a search for <span class="TypedEntry">cats dogs</span>.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_result_inferred_and.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Instead of the word <span class="TypedEntry">AND</span>, type the plus symbol (<span class="TypedEntry">+</span>).</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">cat +&#160;dog +&#160;parrot</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_plus.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">Instead of the word <span class="TypedEntry">AND</span>, type the ampersand symbol (<span class="TypedEntry">&amp;</span>).</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">cat &amp;&#160;dog &amp;&#160;parrot</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_ampersand.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="3">
+                                        <p class="TableTextEmphasis">OR</p>
+                                        <p class="TableTextEmphasis">&#160;</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Use to search for two or more words. This broadens the search results by retrieving topics that contain any of the words it separates.</p>
+                                        <p class="TableText">Type <span class="TypedEntry">or</span> between two or more terms. This operator is not case sensitive.&#160;</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Because the operator is not case sensitive, you can search for&#160;<span class="TypedEntry">cat OR&#160;dog OR&#160;parrot</span>, <span class="TypedEntry">cat Or dog Or parrot</span>, <span class="TypedEntry">cat or dog or parrot</span>, or <span class="TypedEntry">cat dog parrot</span>. </p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">cat or dog or parrot</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_or.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">When separating terms with a blank space, the OR is always inferred. This is not available in <MadCap:variable name="Outputs.HTML5" /> help.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Because OR is inferred, here are the results of a search for <span class="TypedEntry">cats dogs</span> in a WebHelp target.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_result_inferred_or.png" alt="" title="" class="MaxWidth90Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" style="width: 14px;height: 14px;" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Type the pipe symbol (|) instead of typing OR.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>You can search for <span class="TypedEntry">dog | cat | parrot</span>.</p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">NEAR</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">Select from the operator list to find topics that contain matches that are in close proximity to each other.</p>
+                                        <p class="TableText">This is only available in <MadCap:variable name="Outputs.HTMLHelp" />. The operator must be selected from a list. </p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">examples</p>
+                                                    <p>In the&#160;<MadCap:variable name="Outputs.HTMLHelp" /> output type, you can type a search term, and then select <span class="Emphasis">NEAR</span> from the list:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_html_nearselect.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                    <p>The illustration below shows you the results of a search for <span class="TypedEntry">dogs NEAR cats</span>: </p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_html_dogsnearcats.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows" rowspan="3">
+                                        <p class="TableTextEmphasis">NOT</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p rowspan="2" class="TableText">Use to search only for matching topics that do not contain the term following the operator.</p>
+                                        <p class="TableText">Type <span class="TypedEntry">NOT</span> before a term. This operator is not case-sensitive.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Because the operator is not case-sensitive, you can search for&#160;<span class="TypedEntry">NOT&#160;parrot</span>, <span class="TypedEntry">Not parrot</span>, or <span class="TypedEntry">not parrot</span>. </p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">not parrot</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_booelan_example_not.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck1.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">Type the exclamation mark (<span class="TypedEntry">!</span>) instead of the word NOT.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>Below are the results of a search for <span class="TypedEntry">! parrot</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_exclamation.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Use to find topics that contain one term but not the other.</p>
+                                        <p class="TableText">Type a term, followed by the carat symbol (<span class="TypedEntry">^</span>), and then type another term.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>To search for topics containing the word dog and not cat, search for <span class="TypedEntry">dog ^&#160;cat</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_carat.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck2.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis"><span class="Emphasis">( )</span>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableText">Use parentheses&#160;to combine boolean phrases and search terms. </p>
+                                        <p class="TableText">Type parentheses <span class="TypedEntry">( )</span>&#160;around the combined terms.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>To search for topics containing cat and either the term dog or puppy, search for <span class="TypedEntry">cat and (dog or puppy)</span>:</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_boolean_example_grouped.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="TableStyle-BasicAlternateRows-Foot-Footer1">
+                                    <td class="TableStyle-BasicAlternateRows-FootD-Regular-Footer1" colspan="8">
+                                        <p colspan="15" class="TableTextFootnote"><sup style="font-weight: bold;">1</sup>Only works if you search for one term but not another (e.g., MadCap NOT&#160;Flare).</p>
+                                        <p colspan="15" class="TableTextFootnote"><sup style="font-weight: bold;">2</sup>The carat symbol (^) can be used interchangeably with an exclamation point (!) and NOT.</p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Search:asterisk;Search:wildcard" />Asterisk (*)&#160;Wildcard Search</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Search:asterisk;Search:wildcard" />asterisk (*) wildcard search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the  <MadCap:variable name="Outputs.DotNetHelp" />, <MadCap:variable name="Outputs.HTMLHelp" />,<MadCap:conditionalText MadCap:conditions="General.Future"> HTML5,</MadCap:conditionalText> and <MadCap:variable name="Outputs.WebHelp" /> output types, end users can use the asterisk (*) wildcard character with the search feature as detailed below:</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>requirements and dependencies</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">DotNet Help </span>Asterisk (*) wildcard search is supported on <MadCap:keyword term="Microsoft Windows XP" />Microsoft Windows XP (and newer operating systems) when <MadCap:keyword term="SQL:Compact" />SQL Server Compact is installed on the local computer building the Help <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../SQL/Installing_SQL_Server.htm">Installing SQL Server</MadCap:xref>)</MadCap:conditionalText>. </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Eclipse Help </span>Asterisk (*) wildcard search is supported by the search engine that you configure in the Eclipse platform.&#160;For details, see the&#160;Eclipse documentation at:</p>
+                                <p><a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_help_ui_searchEngine.html" target="_blank">org.eclipse.help.ui.searchEngine</a>
+                                </p>
+                            </li>
+                            <li>
+                                <MadCap:conditionalText MadCap:conditions="General.Future"><span class="SetOffFirstLevel">HTML5 and </span>
+                                </MadCap:conditionalText><span class="SetOffFirstLevel">WebHelp </span>For asterisk (*) wildcard search capabilities to be supported, you must enable the partial-word search feature. See <MadCap:xref href="../Configuring_the_Search_Database/Enabling_Partial_Word_Search.htm">Enabling Partial-Word Search</MadCap:xref>.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to search with the asterisk (*) wildcard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>In the table below, a check mark shows the different ways you can use the asterisk (*) wildcard in search. It also provides usage guidelines and examples. (DotNet Help requires SQL&#160;Compact).</p>
+                        <table style="mc-table-style-original: url('../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;margin-left: auto;margin-right: auto;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" MadCap:conditions="General.Future" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Placement</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Usage</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/DotNetHelp.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/Microsoft HTML Help.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/WebHelp.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1" MadCap:conditions="">
+                                        <p class="TableTextHead">
+                                            <img src="../../Resources/Images/html5Light.svg" class="TableIcons" />
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">Before a Term</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableText">Place the asterisk (*) in front of a term to represent unknown characters.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">examples</p>
+                                                    <p>In the supported output types, a search for <span class="TypedEntry">*.doc</span> would find any matches that end in .doc. </p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_asterisk_before2.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                    <p>As shown below, a search for <span class="TypedEntry">*ppy </span>would find matches such as happy, puppy, and scrapp.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_asterisk_before.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck1.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows" MadCap:conditions="">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">Inside a Term</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableText">Place the asterisk (*) inside a term to represent unknown characters.</p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>In the example below, a search for <span class="TypedEntry">pup*y</span> would find occurrences of the word "puppy."</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_asterisk_inside.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows" MadCap:conditions="">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/x.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextEmphasis">After a Term</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableText">Place the asterisk (*) after a term to represent unknown characters. </p>
+                                        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <div class="example">
+                                                    <p class="exampleHeadTextEmpty">example</p>
+                                                    <p>As an example, a search for <span class="TypedEntry">pup*</span> would find matches such as pupil, pupils, puppy, puppies, and puppyhood.</p>
+                                                    <p>
+                                                        <img src="../../Resources/Images/search_asterisk_after.png" class="MaxWidth100Percent" />
+                                                    </p>
+                                                </div>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows" MadCap:conditions="">
+                                        <p class="TableTextCenter">
+                                            <img src="../../Resources/Images/greencheck.png" class="ReduceButtonSize" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="TableStyle-BasicAlternateRows-Foot-Footer1">
+                                    <td class="TableStyle-BasicAlternateRows-FootD-Regular-Footer1" colspan="6">
+                                        <p class="TableTextFootnote"><sup style="font-weight: bold;">1</sup>In <MadCap:variable name="Outputs.HTMLHelp" />, the asterisk (*)&#160;wildcard cannot be used in combination with other characters and symbols. For example, instead of searching for <span class="TypedEntry">*.doc</span>, end users must search for <span class="TypedEntry">*doc</span>.</p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <h2 MadCap:conditions="General.Print">Partial-Word Search</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Search:partial-word" />partial-word search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The <MadCap:variable name="Outputs.DotNetHelp" />, <MadCap:variable name="Outputs.HTML5" />, <MadCap:variable name="Outputs.WebHelp" />, <MadCap:variable name="Outputs.WebHelpAIR" />, <MadCap:variable name="Outputs.WebHelp Mobile" />, and <MadCap:variable name="Outputs.WebHelp Plus" /> output types support partial-word searches in their target outputs. This search method is similar to simple text search, only it allows users to search for partial-word and number strings. This feature can be enabled in the Performance tab of the Target&#160;Editor. See <MadCap:xref href="../Configuring_the_Search_Database/Enabling_Partial_Word_Search.htm">Enabling Partial-Word Search</MadCap:xref>.</p>
+                <p>For <MadCap:variable name="Outputs.EclipseHelp" />, partial-search is provided by the Eclipse platform.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">examples</p>
+                            <p>Search for <span class="TypedEntry">cond</span>.</p>
+                            <p>As shown below, search retrieves topics containing the string "cond," such as "condition" and "second."</p>
+                            <p>
+                                <img src="../../Resources/Images/partial_word_search2.png" class="MaxWidth90Percent" />
+                            </p>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                            <p>Search for <span class="TypedEntry">201</span>.</p>
+                            <p>As shown below, the search retrieves topics containing the number string&#160;"201,"&#160;such as 2010, 2011, 2012, 2013, 2014, 2015, 0.201, and 0.0201.</p>
+                            <p>
+                                <img src="../../Resources/Images/partial_string_search1.png" class="MaxWidth90Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to perform a partial-word search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <p>In the search field, type part of a word or number string. </p>
+                                <p>For example, type <span class="TypedEntry">cond</span>. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The minimum number of characters that you can set for partial searches is 3. See <MadCap:xref href="../Configuring_the_Search_Database/Enabling_Partial_Word_Search.htm">Enabling Partial-Word Search</MadCap:xref>. </p>
+                            </li>
+                            <li>
+                                <p>Press <span class="Emphasis">Enter</span> or click <span class="Emphasis">Search</span>. </p>
+                                <p>The system reveals a list of ranked topics that include matches for the entered search string. </p>
+                            </li>
+                            <li>
+                                <p>Double-click a topic in the list to open it. </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSearchHighlighting.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="SearchingOutputs" />
+        </p>
+    </body>
+</html>

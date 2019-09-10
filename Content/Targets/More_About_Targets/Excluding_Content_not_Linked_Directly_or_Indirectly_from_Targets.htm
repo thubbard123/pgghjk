@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1914" MadCap:lastWidth="1180" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputTypes" />
+            <MadCap:concept term="FilterTargets" />
+            <MadCap:keyword term="Output:exclude content;Targets:exclude content not linked" />Excluding Content not Linked Directly or Indirectly from Targets</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/AllOnline.flsnp" />
+        <p>One way to completely exclude content from online output is to place condition tags on the topic files and include or exclude them from the targets<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Condition_Tags/About_Condition_Tags.htm">About Condition Tags</MadCap:xref>)</MadCap:conditionalText>. Another method—discussed here—is to use an option in the Target Editor to include only content files that are directly or indirectly referenced from the target. This means that if the target is using particular files such as a table of contents (TOCs), master page, and so on, other files linked directly or indirectly from them will be part of the output.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say your target points to a TOC that includes Topic A, Topic B, and Topic C. If you generate an online output and use this option in the Target Editor, all three of those topics will be included in the output. In addition, Topic D will be included in the output. Although Topic D is not found in the TOC, a cross-reference to it is found in Topic B; therefore, it is linked to the TOC (and the target) indirectly. However, Topic E is not included in the output, because it is not found in the TOC and none of the topics to be included in the output contain a link to it.</p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you have four topics in your project: Topic A, Topic B, Topic C, and Topic D.</p>
+                    <p>Topic A, Topic B, and Topic C have been included in your TOC. Topic D has not been included, and it does not contain any links to or from any other topics.</p>
+                    <p>Furthermore, let's say you want to use the "list-of" proxy feature to automatically generate a list of all H2 headings in the project<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../Proxies/Creating_a_List_of_Elements.htm">Creating a List of Elements</MadCap:xref>)</MadCap:conditionalText>. All four of the topics have H2 headings in them, and you've inserted the List-Of proxy somewhere in Topic A.</p>
+                    <p>So what happens when you generate the output?</p>
+                    <p>If the "Exclude<span style="font-family: 'Calibri'">…</span>" target option is not enabled in the target, all four topics will be included in the output. In addition, the generated list of H2 headings will show heading text from all four of those topics.</p>
+                    <p>However, if the "Exclude<span style="font-family: 'Calibri'">…</span>" target option is enabled, only Topic A, Topic B, and Topic C will be included in the output. This also means that the generated list of H2 headings will show heading text only from those three topics. The H2 heading text from Topic D will not be included.</p>
+                </div>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say your primary target explicitly links to the following.</p>
+                    <ul>
+                        <li>A TOC</li>
+                        <li>A browse sequence</li>
+                        <li>A stylesheet</li>
+                        <li>One or more glossary files</li>
+                        <li>A master page</li>
+                        <li>A startup topic </li>
+                    </ul>
+                    <p>A target can also link explicitly to one or more relationship tables and one alias file. However, these files are not used to determine whether files should be included when this "Exclude…" target option is enabled.</p>
+                    <ul>
+                        <li>The TOC and the browse sequence can link to topics, other TOCs, or other browse sequences. These files would then be included. You could even place a link to multimedia from a TOC or browse sequence if you wanted (although this cannot be done in the Flare user interface).  It will work and those explicitly linked resources would also be included.</li>
+                        <li>A stylesheet may link to image resources.  These resources are included.</li>
+                        <li>A glossary file may link explicitly to a topic if a term uses a topic as its definition. These topics are included.</li>
+                        <li>A master page may link to a topic or resource (image/multimedia).  These linked items would be included.</li>
+                        <li>The startup topic is, of course, included.</li>
+                        <li>Any included topic can explicitly link to additional topics via hyperlinks, cross-references, image maps, or related topics controls (<span class="EmphasisItalic">not</span> concept links or keyword links).</li>
+                    </ul>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <p>Using this option can help prevent bloated output by excluding unused files.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you have 1000 images in your project, but only 500 of them are used in the <MadCap:variable name="Outputs.HTMLHelp" /> output you want to generate. By using this feature, only those 500 images are included in the output, thus keeping the output file size down to a minimum.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to exclude content not linked directly or indirectly from a target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a target used for online output.</li>
+                    <li>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Exclude content not linked directly or indirectly from the target</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" />
+        </p>
+    </body>
+</html>

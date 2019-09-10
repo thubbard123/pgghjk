@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="2616" MadCap:lastWidth="588" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Output;Targets;Transformations" />Advanced XML Transformations</h1>
+        <p>Programmatic and XSLT transformations can be added to outputs to manipulate content. Programmatic transformations can be written in any .NET language, such as C# or VB.NET. This advanced feature gives you great flexibility, because it allows for post-build modification in virtually any imaginable custom way.</p>
+        <p>You can use the Transformation Wizard to insert boilerplate content or code into every topic in your targets.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="About Transormations.htm">About Transformations</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Examples</p>
+                    <p>Examples of advanced transformations include:</p>
+                    <ul>
+                        <li>
+                            <p>&#160;Replacing some text (tag) with variable text depending on a parameter specified in that tag.</p>
+                        </li>
+                        <li>
+                            <p>The <c1hjump>Expanding/Collapsing Sections</c1hjump> feature in <MadCap:variable name="Other.Product" />.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Nav_Links/D2H/Creating an ExpandingCollapsing Section.htm">Creating an Expanding/Collapsing Section</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> See the online Help or the <span class="EmphasisItalic">Documents, Templates, and Content Guide</span>.</MadCap:conditionalText></p>
+                        </li>
+                    </ul>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Use a Custom Transformation</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <span class="Emphasis">Home</span> tab.</li>
+                    <li>At the bottom of the <span class="Emphasis">Target</span> group, click <img src="../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>In the <span class="Emphasis">Advanced</span> section, next to the <span class="Emphasis">XML transformation</span> field, click <img src="../../Resources/Images/browse_ellipses.png" alt="" title="" class="ReduceButtonSize" />. </li>
+                    <li> Navigate to the file, select it, and click <span class="Emphasis">Open</span>.</li>
+                    <li>In the Help Targets dialog, click <span class="Emphasis">OK</span> and build your target.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create a Custom Transformation</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Refer to the notes below, and the two examples provided with <MadCap:variable name="Other.Product" />:</p>
+                <ul>
+                    <li>
+                        <p>The expanding sections functionality<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <c1hjump><MadCap:xref href="../../Nav_Links/D2H/Creating an ExpandingCollapsing Section.htm">Creating an Expanding/Collapsing Section</MadCap:xref></c1hjump>)</MadCap:conditionalText> is implemented as an XML transformation (a programmatic one). Its full source code can be found in \\Program Files [or Program Files (x86)]\MadCap Software\DocToHelp\Transforms\BuiltIn\Source\XMLInternal. (Don’t modify these files; they are used in target compilation.)</p>
+                    </li>
+                    <li>
+                        <p>There is an example transformation named timestamp.config that will add timestamp text to each topic of a target. It is located at <MadCap:snippetText src="../../Resources/Snippets/D2H/D2HPath.flsnp" />Tranforms\Examples\Timestamp.<br /></p>
+                    </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Notes on creating XML transformations</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Transformations registered in the configuration file are applied to every topic in the order of their appearance in the configuration file.</p>
+                        <p>A configuration file is XML where every transformation is registered with a &lt;transform&gt; element with the following elements inside:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">&lt;description&gt; </span>Arbitrary string describing the transformation, for explanatory purpose only.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">&lt;assembly&gt; </span>File name of the transformation assembly (including the .dll extension). For an XSLT transformation that assembly should always be C1D2HXMLInternal.dll. For programmatic transformations, it is a path to the file, not the file name. The path is relative to the configuration file (where transform assembly is specified).</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">&lt;type&gt; </span>Full class name in the assembly that implements the IXMLTransform interface. That is the class whose methods are called to perform the transformation. For an XSLT transformation that element should always be as follows: &lt;type&gt;C1.D2H.XMLTransform.XSLTTransform&lt;/type&gt;</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">&lt;params&gt; </span>This element contains whatever elements the transformation may need as its parameters. All specific parameters will be passed to the transformation assembly when it is executed. For programmatic transformations, their interpretation is entirely dependent on the code implementing the transformation methods. XSLT transformations should be contained in one XSLT file that receives parameter values. The path to an XSL file is relative to the configuration file, so only the file name needs to be specified, for example: &lt;xsl-file&gt;C1D2HXMLInternal.xsl&lt;/xsl-file&gt;.</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Notes on creating programmatic transformations</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>A programmatic transformation assembly contains a class implementing the interface C1.D2H.XMLTransform.IXMLTransform. That interface is defined in the C1XHTML.dll assembly residing in the DocToHelp directory. It contains three methods (note that you do not need to implement this interface if you are creating an XSLT transformation; creating XSLT transformations requires programming only in XSLT; no .NET programming is required):</p>
+                        <ul>
+                            <li>
+                                <p class="SetOffFirstLevel">void IXMLTransform.ReadParams(XmlNode node)</p>
+                                <p>This method is called before executing the transformation, to initialize the transformation class with parameter values specified in the &lt;params&gt; tag in the configuration file. This method is called once in Doc-To-Help build, before this transformation is applied to any topics. The 'node' parameter passed to this method contains the XmlDocument whose root element is the &lt;params&gt; element of the configuration file.</p>
+                            </li>
+                            <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                            <li>
+                                <p class="SetOffFirstLevel">void IXMLTransform.Execute(XmlDocument doc)</p>
+                                <p>This method executes the transformation, applies it to a topic. The 'doc' parameter is the topic XML before applying the transformation (all transformations preceding this transformation in the configuration file have already been applied to it. This method implementation modifies the XmlDocument passed to it.</p>
+                            </li>
+                            <li>
+                                <p class="SetOffFirstLevel">void IXMLTransform.CopyRequiredFiles(string targetPath)</p>
+                                <p>This method is used to copy any files that may be needed in the help target to support this transformation's functionality (these are usually resource files, such as graphics, scripts, style sheets, etc). If you don't need any files, leave this method empty. The 'targetPath' parameter contains the path to the TransformFiles subdirectory of the Help target directory (for example, \MyProject\MyHTMLHelpTarget\TransformFiles). This method implementation copies required files (if any) to that subdirectory (possibly creating subdirectories inside it, if needed).</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

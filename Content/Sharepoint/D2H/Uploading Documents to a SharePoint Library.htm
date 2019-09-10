@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="7" MadCap:lastHeight="1244" MadCap:lastWidth="772" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft SharePoint" />Uploading Documents to a SharePoint Library</h1>
+        <p>You can upload Doc-To-Help documents to a SharePoint Library.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="About the SharePoint Library.htm">About the SharePoint Library</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Upload Documents to a SharePoint Library</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Doc-To-Help project that contains the documents you want to share.</li>
+                    <li>Select the <span class="Emphasis">Home</span> ribbon, and in the <span class="Emphasis">SharePoint Documents</span> group click the <span class="Emphasis">Share</span> button. The Document Share Wizard opens.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>Choose the SharePoint Library.</li>
+                    <li>In the <span class="Emphasis">Share Documents</span> to field, enter the SharePoint site URL. You can choose a specific folder, or create a new folder for the documents by clicking the ellipsis button and using the Select Server Folder dialog. </li>
+                    <li>(Optional) Your graphics and other auxiliary files (if any) will be stored to the same folder, unless you specify another location using the <span class="Emphasis">Specify a Custom Location for Auxiliary file Storage</span> check box.</li>
+                    <li>(Optional) If you wish to upload the documents, but not have them retain any connection to SharePoint, clear the <span class="Emphasis">Keep documents connected to SharePoint</span> check box.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>Choose the documents you would like to share. If you select the <span class="Emphasis">Documents</span> folder check box, a subfolder named "Documents" will be created.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>Confirm your choices and click <span class="Emphasis">Next</span>. The documents are uploaded. </p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Finish</span>.</p>
+                        <p>If there were graphics or other auxiliary files in the project, the Synchronize Documents dialog will display. Click <span class="Emphasis">OK</span> to upload these files to the SharePoint site. (By default, they will be stored in the Media subfolder.) Once uploaded, you can close the dialog.</p>
+                        <p>In the Documents pane, the shared documents display a special document icon&#160;<img src="../../Resources/Images/D2H/upload_documents_icon.png" height="17" />.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Upload an Individual Document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>In the Documents window pane in Doc-To-Help, right-click on the document and choose <span class="Emphasis">Share Document to SharePoint Library</span>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you change your SharePoint password after uploading documents, you will no longer be able to synchronize your documents. You can fix this by clearing your Windows credentials.</p>
+                    <ol>
+                        <li>In Windows, open the <span class="Emphasis">Control Panel&gt;User Accounts and Family Safety&gt;Credential Manager</span>. (This is the path for Windows 7.)</li>
+                        <li>Find the SharePoint Server credentials and remove them.</li>
+                        <li>Restart Doc-To-Help. <br /></li>
+                    </ol>
+                    <p>You will be prompted to enter your new password the next time you try to connect to SharePoint.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+    </body>
+</html>

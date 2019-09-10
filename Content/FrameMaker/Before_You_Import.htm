@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="11" MadCap:lastHeight="6289" MadCap:lastWidth="656" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <meta name="description" content="Learn how to prepare FrameMaker files for import into MadCap Flare. Be sure to review this topic closely to ensure a smooth import process." />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FMQuickStart" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing" MadCap:conditions="General.OnlineLive" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="FilterProjects" />Before You Import</h1>
+        <p>The import process will require less work overall if you prepare your files before you start. Just to be safe, make a backup of all FrameMaker files first.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="Markers:special;Special markers" />Special Markers</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Markers:special;Special markers" />special markers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are used to importing your FrameMaker documents into Quadralay WebWorks, you may have used special markers in FrameMaker when doing so. You can continue doing the same for importing into <MadCap:variable name="Other.Product" />. All special markers supported by WebWorks are also supported by <MadCap:variable name="Other.Product" />. The following are some of the more common types of markers.</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel"><MadCap:keyword term="Filename marker;Markers:filename" />Filename</span> This marker lets you control the file names given to the new topics that are created from the imported documents. It is highly recommended that you use this marker. See <MadCap:xref href="../Importing/More_About_FrameMaker/Specifying_Custom_File_Names_for_FrameMaker_Imports.htm">Specifying Custom File Names for FrameMaker Imports</MadCap:xref>.</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/FilenameMarkerExample.flsnp" />
+                    </li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Linking:FrameMaker;Linking:FrameMaker;Jump to Named Destination;Markers:jump to named destination;Markers:specify named destination;Specify Named Destination marker" />Hyperlink</span> If you are importing <MadCap:variable name="Outputs.Frame" /> documents and you have created hyperlinks by using "Specify Named Destination" and "Jump to Named Destination" markers, <MadCap:variable name="Other.Product" /> will automatically convert them to links in your project. See <MadCap:xref href="../Importing/More_About_FrameMaker/Creating_Hyperlinks_in_FrameMaker_Source_Documents.htm">Creating Hyperlinks in FrameMaker Source Documents</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="TopicAlias marker;Markers:topic alias" /><MadCap:keyword term="Topic IDs;Context-sensitive Help:topic IDs;Identifiers;Context-sensitive Help:identifiers" />Topic Alias </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Importing/FrameMakerTopicAliasMarkersSummary.flsnp" />&#160;See <MadCap:xref href="../Importing/More_About_FrameMaker/Creating_Topic_Alias_Markers_for_CSH.htm">Creating Topic Alias Markers in FrameMaker for CSH</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">Cleanly Formatted FrameMaker Files with No Style Overrides</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>cleanly formatted framemaker files with no style overrides</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The more your FrameMaker files consistently use defined styles, the more smoothly the import process will be. Use character, paragraph, and table formats consistently and with no manual overrides. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>character tags</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>If you hand-bolded text throughout your book, but the bold isn't a character style, it may be worth your while to create a Bold character style and apply it to all instances of hand-bolded text.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>paragraph tags—numbered lists</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/FrameMaker/FrameMakerNumberedLists.flsnp" />
+                        </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/FrameMaker/FrameMakerNumberedListsExample.flsnp" />
+                        <p>If you want to map numbered lists from FrameMaker to a paragraph style in <MadCap:variable name="Other.Product" />, the option is available. Before importing your FrameMaker document into <MadCap:variable name="Other.Product" />, create comparable p styles in the <MadCap:variable name="Other.Product" /> stylesheet and ensure that those styles are set to use the appropriate mc-auto-number-format command<MadCap:conditionalText MadCap:conditions="General.OnlineLive">  (see <MadCap:xref href="../Autonumbers/Creating_Auto_Number_Formats_for_Paragraphs.htm">Creating Autonumber Formats for Paragraphs</MadCap:xref>)</MadCap:conditionalText>. </p>
+                        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">Create This Style in Flare</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                        <p class="TableTextHead">mc-auto-number-format</p>
+                                    </th>
+                                    <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                        <p class="TableTextHead">To Map It to This FrameMaker Paragraph Tag</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                        <p class="TableTextEmphasis">p.Step1</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">{n=1}</td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">Step1 (or your equivalent)</td>
+                                </tr>
+                                <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                        <p class="TableTextEmphasis">p.StepNext</p>
+                                    </td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">{n+}</td>
+                                    <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">StepNext (or your equivalent)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>The next step is to import your FrameMaker document into <MadCap:variable name="Other.Product" />. During the import process, you can map your FrameMaker paragraph tags to the corresponding tags in <MadCap:variable name="Other.Product" /><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Importing/Importing_FrameMaker_Files.htm" target="" title="" alt="">Importing FrameMaker Files</MadCap:xref>)</MadCap:conditionalText>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The import process does not support mapping numbered lists from FrameMaker to CSS list item li styles. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Logically Structured FrameMaker Files</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>logically structured framemaker files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The more logically you structure the information in your FrameMaker files, the easier the information will be to work with in <MadCap:variable name="Other.Product" />. </p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>The information tagged Heading 1 should all share the same kind of information. </p>
+                    <p>Let's say you have the following:</p>
+                    <p>H1: Opening Files</p>
+                    <p>H3: Editing Files</p>
+                    <p>H2: Saving Files</p>
+                    <p>H4: Printing Files</p>
+                    <p>H3: Archiving Files</p>
+                    <p>These are probably all first-level headings and should be moved to be at the same level. You can do this in FrameMaker or you can use an outlining FrameMaker utility called Enhance, available at <a href="http://www.sandybrook.com/" target="_blank">http://www.sandybrook.com</a>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print">Consistently Use and Apply Paragraph, Character, and Table Formats</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">consistently use and apply paragraph, character, and table formats</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Over time, it's easy for FrameMaker files to include many formats, some used and some not. It's also easy to have several formats that look identical and serve the same purpose. This can cause confusion after importing into <MadCap:variable name="Other.Product" />. </p>
+                <p>You should delete the unused formats in your FrameMaker files. You can do this manually, or use tools like the following to help.</p>
+                <table class="TableStyle-BasicAlternateRows" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../Resources/TableStyles/BasicAlternateRows.css');" cellspacing="0">
+                    <col style="width: 25%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col style="width: 25%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col style="width: 50%;" class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">To Delete</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Use This Tool</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Available From</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Unused Character Formats</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Character Tools</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><a href="http://www.siliconprairiesoftware.com/" target="_blank">http://www.siliconprairiesoftware.com/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Unused Paragraph Formats</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">Paragraph Tools</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><a href="http://www.siliconprairiesoftware.com/" target="_blank">http://www.siliconprairiesoftware.com/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableTextEmphasis">Unused Table Formats</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableText">Table Tools</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableText"><a href="http://www.siliconprairiesoftware.com/" target="_blank">http://www.siliconprairiesoftware.com/</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Make sure you understand how your files were designed. It's possible that you or someone else tagged different kinds of information with tags that look identical. You may not want to undo this.</p>
+                <p>If you have a lot of identical formats in your FrameMaker files and they serve no purpose, you should consolidate these. </p>
+                <p>To help you identify identical tags, it might be useful to list all tag settings. Table tools, Character Tools, and Paragraph Tools, listed above, will create these lists. </p>
+                <p>After you identify the formats you want to change, you can go to the following website and get FindChangeSpecial:</p>
+                <p><a href="http://www.frameexpert.com/plugins/findchangespecial/index.htm" target="_blank">http://www.frameexpert.com/plugins/findchangespecial/index.htm</a>
+                </p>
+                <p>You can find and change format names in FrameMaker, so this tool is not essential, but it makes the process faster.</p>
+                <p>After the import process, you may still need to clean up the formats in <MadCap:variable name="Other.Product" />. If so, it's probably worth purchasing the external MadCap Analyzer. It can show you unused styles, identical styles, and other issues in your stylesheets. You can delete, rename, and so on directly in MadCap Analyzer. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Analyzer/About_Analyzer_and_Reports.htm">About Analyzer</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">All Cross-References and Referenced Files Need Targets</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>all cross-references and referenced files need targets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To import your files, <MadCap:variable name="Other.Product" /> (and FrameMaker) should be able to find all the files used. In FrameMaker, this is pretty easy—generate/update your book so it finds all the files the book. Even if you're only going to import one file from a book, this lets FrameMaker know where everything is and how to find it. </p>
+                <p>If FrameMaker reports it cannot find files or cross-references, sort this out before you start your import in <MadCap:variable name="Other.Product" />.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">
+            <MadCap:keyword term="Tables of contents:update for import" />Update TOCs</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Tables of contents:update for import" />update the standard and referenced tocs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are importing a book file that has a book-level table of contents (TOC), the TOC is used to create a <MadCap:variable name="Other.Product" /> TOC<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../TOCs/About_Tables_of_Contents.htm" MadCap:conditions="Products.Flare">About Tables of Contents</MadCap:xref>)</MadCap:conditionalText>. This saves you a lot of time and effort in re-creating your FrameMaker TOC. </p>
+                <p>Before you start the import in <MadCap:variable name="Other.Product" />, make sure the FrameMaker book-level TOC includes the headings you want in the eventual <MadCap:variable name="Other.Product" /> TOC. After you import into <MadCap:variable name="Other.Product" />, you can add topics to the <MadCap:variable name="Other.Product" /> TOC, but making sure the FrameMaker TOC is correct saves you work after the import. </p>
+                <p MadCap:conditions="General.Future">In your FrameMaker chapters, you may have referenced chapter-level TOCs. These will come through the conversion process smoothly as topic-level mini-TOC proxies. All you have to do before you import is make sure the chapter-level TOC is updated with the headings you want.</p>
+                <p MadCap:conditions="General.Future">If you used cross-references in FrameMaker to imitate a chapter-level TOC, these come through as standard cross-references. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore"><a name="Distiller"></a>
+            <MadCap:keyword term="Distiller:images;Images:Distiller" />Distiller Settings for Importing Graphics</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Distiller:images;Images:Distiller" />distiller settings for importing graphics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Selecting the right import options in <MadCap:variable name="Other.Product" /> is half the process in getting graphics that look good. The other half is selecting the correct Adobe Distiller options.</p>
+                <p>Why the correct Distiller options? Because <MadCap:variable name="Other.Product" /> uses Distiller to convert graphics from FrameMaker. This ensures the best quality graphics when you import into <MadCap:variable name="Other.Product" />. Therefore, it’s important to get the settings right in Distiller before you start the import process.</p>
+                <p>Open Distiller on your computer, find the Images settings, and set all Downsampling to <span class="Emphasis">Off</span> or <span class="Emphasis">None</span>. This prevents the Distiller from reducing the number of pixels in your graphics, making the resulting graphic look much cleaner. The following example shows Distiller 8 but the same settings can be found in other versions of Distiller. For more information about Distiller, please refer to its documentation.</p>
+                <p>
+                    <img src="../Resources/Images/distiller_example.png" class="MaxWidth90Percent" />
+                </p>
+                <p>When you’re done, save the Distiller settings as a .joboptions file. When you return to the Distiller interface, make sure you select the .joboption file that you just created.</p>
+                <p>
+                    <img src="../Resources/Images/distiller_example2.png" class="MaxWidth80Percent" />
+                </p>
+                <p>When you close Distiller, it automatically uses the settings last selected when it was closed. So make sure you select the .joboption file that you created before you close it.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="FMQuickStart" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="768" MadCap:lastWidth="925">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Windows 7 causes <MadCap:variable name="Outputs.Frame" /> import to fail</p>
+        <p>The following error appears when trying to import <MadCap:variable name="Outputs.Frame" />files into Flare:</p>
+        <p class="TypedEntry">"Failed to run command 'Add FrameMaker Import File …'"</p>
+        <p class="TypedEntry">Exception: Failed to update FrameMaker init file (C:\Program Files(x86)\Adobe FrameMaker 7.2\maker.ini)</p>
+        <p class="Subheading">Cause&#160;</p>
+        <p>Failure to import <MadCap:variable name="Outputs.Frame" /> files into Flare might be a result of Windows 7 and its use of User Account Control (UAC). If this is the case, performing the following steps allows Flare to write to the file.</p>
+        <p class="Subheading">Solution</p>
+        <ol>
+            <li>Locate the maker.ini file (its location is listed on the message). For example, from the error shown above, you would use the Windows Explorer to navigate to <span class="Emphasis">C:\Program Files(x86)\<MadCap:variable name="Outputs.Frame" /> 7.2\</span>.</li>
+            <li>
+                <p>Right-click on the file called "maker.ini" and from the context menu, select <span class="Emphasis">Properties</span>.</p>
+                <p>
+                    <img src="../../Images/TS_framemaker_ex2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>Select the <span class="Emphasis">Security</span> tab.</li>
+            <li>
+                <p>Select            <span class="Emphasis">Edit</span>.</p>
+                <p>
+                    <img src="../../Images/TS_framemaker_ex3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>The Permissions for maker.ini dialog opens.</p>
+            </li>
+            <li>Select your Windows log-in username.</li>
+            <li>
+                <p>Make sure that the <span class="Emphasis">Full Control</span> box is checked.</p>
+                <p>
+                    <img src="../../Images/TS_importing_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>Click <span class="Emphasis">Apply</span>.</li>
+            <li>Click <span class="Emphasis">OK</span>&#160;to exit the Properties dialog. You should now be able to import successfully.</li>
+        </ol>
+    </body>
+</html>

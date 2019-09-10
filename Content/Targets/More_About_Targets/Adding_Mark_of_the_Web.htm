@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1580" MadCap:lastWidth="1166" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive,FlareGuides.FlareTargetsGuide">
+            <MadCap:concept term="FilterWebHelpPlus" />
+            <MadCap:concept term="FilterTargets" />
+            <MadCap:concept term="FilterWebHelp" />
+            <MadCap:keyword term="Mark of the Web" />Adding Mark of the Web</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareWebHelpGuide">Target Tasks for WebHelp Outputs</h1>
+        <p MadCap:conditions="FlareGuides.FlareWebHelpGuide">There are various target-related tasks unique to <MadCap:variable name="Outputs.WebHelp" /> outputs that you can perform.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareWebHelpGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareWebHelpGuide">
+            <MadCap:keyword term="Mark of the Web" /><a name="AddingMOTW"></a>Adding Mark of the Web</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/Eclipse_HTML5_WebHelp_WHPlus.flsnp" />
+        <p>According to Microsoft:</p>
+        <blockquote class="Ital">
+            <p>"The Mark of the Web (MOTW) is a feature of Windows Internet Explorer that enhances security. MOTW enables Internet Explorer to force webpages to run in the security zone of the location the page was saved from—as long as that security zone is more restrictive than the Local Machine zone—instead of the Local Machine zone. When you are developing webpages, the MOTW enables you to test your HTML documents in the security zone where you intend the pages to run. Adding the MOTW to your webpages also enables you to fully test their compatibility with users' security settings."</p>
+        </blockquote>
+        <p>So MOTW is a comment added to the HTML markup for a web page. When users open a web page from their local machine, Internet Explorer references this comment to determine the security zone in which it should run the page.</p>
+        <p>Therefore, if you <span class="EmphasisItalic">do not</span> have MOTW enabled in Flare, the following message displays when HTML5, <MadCap:variable name="Outputs.WebHelp" />, or <MadCap:variable name="Outputs.WebHelp Plus" /> output is opened locally on Internet Explorer.</p>
+        <p>
+            <img src="../../Resources/Images/web_security_message.png" />
+        </p>
+        <p>If you <span class="EmphasisItalic">do</span> have MOTW enabled in Flare, this security message is not displayed.</p>
+        <p>Without MOTW, you would have to click on this message and select <span class="Emphasis">Allow Blocked Content</span> to view the output locally on Internet Explorer. By adding MOTW, you can avoid this situation.</p>
+        <p>However, please note that if you have external links in your project to non-HTML files (e.g., DOC, PDF, JPG, GIF), those links will not work with MOTW enabled. Therefore, MOTW should not be used unless the links in your project are limited to HTML documents only.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add mark of the web</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a target.</li>
+                    <li>
+                        <p>On the <span class="Emphasis">Advanced</span> tab of the Target Editor, select <span class="Emphasis">Insert Mark of the Web</span>.</p>
+                        <p> The default comment in this field is a generic one that specifies the Local Intranet zone and is used in situations where the domain is not yet known. You can replace it with another comment if necessary.</p>
+                        <p>
+                            <img src="../../Resources/Images/motw_comments.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p>If you plan to use MOTW, the text field should contain some content. You should either keep the default content or replace it with your own. If you remove any content from the field, MOTW cannot be used.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteMOTWExternalLinks.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">3D models will not display if Mark of the Web is enabled. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Multimedia/3D_Models/Inserting_3D_Models.htm">Inserting 3D Models</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" />
+        </p>
+    </body>
+</html>

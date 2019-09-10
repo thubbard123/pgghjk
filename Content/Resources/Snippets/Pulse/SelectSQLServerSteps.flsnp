@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Pulse" MadCap:lastBlockDepth="11" MadCap:lastHeight="1448" MadCap:lastWidth="1367">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol class="LowerAlpha">
+            <li>
+                <p>In the <span class="Emphasis">SQL&#160;Server</span> drop-down list, select <span class="Emphasis">Get list of SQL&#160;Servers</span>.</p>
+                <p>If the SQL&#160;Server Browser service is turned on, the program looks for all available SQL&#160;Servers in the Windows domain.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to turn on the sql server browser</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If SQL&#160;Server Browser service is turned off, use these steps to turn it on:</p>
+                        <ol class="LowerRoman">
+                            <li>Start the SQL&#160;Server Configuration Manager.</li>
+                            <li>Select <span class="Emphasis">Start&gt;Programs</span>. Then point to your version of SQL&#160;in the menu and select <span class="Emphasis">Configuration Tools&gt;SQL&#160;Server Configuration Manager</span>. </li>
+                            <li>In the left pane, highlight <span class="Emphasis">SQL&#160;Server Services</span>.</li>
+                            <li>Right-click <span class="Emphasis">SQL Server Browser</span> and select <span class="Emphasis">Properties</span> from the context menu.</li>
+                            <li> On the <span class="Emphasis">Service</span> tab, set the start mode to <span class="Emphasis">Automatic</span> and click <span class="Emphasis">OK</span>.</li>
+                            <li>Right-click the <span class="Emphasis">SQL Server Browser</span> again, and select <span class="Emphasis">Start</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p>In the SQL&#160;Server drop-down list, select the desired server. If instead you enter a server manually, click <span class="Emphasis">Connect</span>.</p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="note">
+                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can alternatively enter the IP&#160;Address or Computer Name of the server in the <span class="Emphasis">SQL&#160;Server</span> field. Use this format: <span class="TypedEntry">&lt;Server Name&gt;\&lt;SQL&#160;Instance&gt;</span> or <span class="TypedEntry">&lt;IP&#160;Address&gt;\&lt;SQL&#160;Instance&gt;</span></p>
+                            <p>
+                                <img src="../../Images/pulse_server_setup_dialog.png" class="MaxWidth80Percent" />
+                            </p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>if you encounter a connection failure</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If the SQL&#160;Server is not local (i.e., it resides of a different server than the Pulse web server), it is common for users who might be less familiar with networking to experience failures when the following is true:</p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p>The SQL&#160;Server name and/or instance was entered incorrectly. You must enter the correct server name and instance.</p>
+                                <p>
+                                    <img src="../../Images/pulse_sql_unable_to_connect.png" class="MaxWidth70Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>The account that you are using to perform the installation  does not have sysadmin permission on the SQL&#160;Server. See your &#160;SQL&#160;Server Administrator or Network Administrator for the appropriate account to use.</p>
+                                <p>
+                                    <img src="../../Images/pulse_sql_account_permissions.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide,PulseGuides.UpgradingPulseGuide" />
+                            <li>
+                                <p>The SQL&#160;Server resides in an untrusted Windows domain. There must be a domain trust relationship between the Pulse  web server and SQL&#160;server hosting the Pulse database.  Make sure you selected the correct server.</p>
+                                <p>
+                                    <img src="../../Images/pulse_config_wizard_untrusted_domain.png" class="MaxWidth80Percent" />
+                                </p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>If necessary, complete the authentication fields at the bottom of the page.</li>
+            <li>Click <span class="Emphasis">Next</span>.</li>
+        </ol>
+    </body>
+</html>

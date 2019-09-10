@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="3018" MadCap:lastWidth="588" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Styles;Topic types" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Project Styles and Topic Types</h1>
+        <p MadCap:conditions="General.OnlineLive">In Doc-To-Help, styles can control the look of your output, as well as the behavior. See <MadCap:xref href="About_Styles_D2H.htm">About Styles</MadCap:xref>.</p>
+        <p>Doc-To-Help includes many predefined styles. The Project Styles dialog is used to modify these character styles, paragraph styles, and topic types, or to add new styles to the project. If you create a new style and want it to employ a special authoring behavior, you must define those behaviors in this dialog. Styles that are created strictly for formatting do not need to be added here.</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Character styles</span> are used to apply formatting to specific text within a paragraph. For example, you may want to add topic links, conditional text, glossary terms, or keywords to enhance your project. Character styles allow you to create these types of hot spots and more using Doc-To-Help Markup Language (D2HML). See <MadCap:xref href="Character Styles.htm">Character Styles</MadCap:xref> and <MadCap:xref href="D2HML/About D2HML DocToHelp Markup Language.htm">About Doc-To-Help Markup Language</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel">Paragraph styles</span> are used to assign specific behaviors to entire paragraphs. For example, Doc-To-Help built-in heading styles specify the structure and hierarchy of your topics in targets and the generation of automatic subtopic links for them. They also control the structure of the automatically created table of contents for both online and manual targets. See <MadCap:xref href="Paragraph Styles.htm">Paragraph Styles</MadCap:xref>.</li>
+            <li>
+                <p>A <span class="SetOffFirstLevel">topic type</span> is a named collection of topic attributes: what window the Help topic appears in, the navigation for the topic, whether it is automatically added to the index, etc. Paragraph styles can have topic types assigned to them. If they do, the topic type properties override any duplicate paragraph style properties. If a paragraph style property is overridden in this way, it will be grayed out in the Project Styles dialog. See <MadCap:xref href="Topic Types.htm">Topic Types</MadCap:xref>.</p>
+                <p>A topic type can also be used to customize an individual topic, overriding the style properties.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <c1hjump><MadCap:xref href="../../Topics/D2H/ViewingChanging Topic Properties.htm">Viewing/Changing Topic Properties</MadCap:xref></c1hjump>.</MadCap:conditionalText></p>
+            </li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Add a New Style or Topic Type</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <span class="Emphasis">Project</span> tab.</li>
+                    <li>From the <span class="Emphasis">Project</span> ribbon group, click the <span class="Emphasis">Project Styles</span> or <span class="Emphasis">Topic Types</span> button. The Project Styles dialog opens.</li>
+                    <li>In the left panel, click the <span class="Emphasis">Add New Style</span> drop-down.</li>
+                    <li>From the list, choose <span class="Emphasis">Paragraph Style</span>, <span class="Emphasis">Character Style</span>, or <span class="Emphasis">Topic Type</span>. The Add New Style dialog opens.</li>
+                    <li>Enter the new name and choose to either use the default style properties, or copy the properties from an existing style.</li>
+                    <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />&#160; The new style is added to the list.</p>
+                        <p>The style can be further customized by editing the fields. If you added a new paragraph style and chose "Use default properties," by default its type is Body Text. This should be changed to the appropriate type to activate it. For more information on each type, see <MadCap:xref href="Paragraph Styles.htm">Paragraph Styles</MadCap:xref>.<br /></p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Edit an Existing Style or Topic Type</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <span class="Emphasis">Project</span> tab.</li>
+                    <li>From the <span class="Emphasis">Project</span> ribbon group, click the <span class="Emphasis">Project Styles</span> or <span class="Emphasis">Topic Types</span> button. The Project Styles dialog opens.</li>
+                    <li>In the left panel, choose the style or topic type you’d like to edit.</li>
+                    <li>Make the desired changes to the style or topic type.</li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p>If you would like to edit the name of the window, edit the <span class="Emphasis">Name</span> field in the <span class="Emphasis">Basic</span> section.<br /></p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Remove a Style or Topic Type</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <span class="Emphasis">Project</span> tab.</li>
+                    <li>From the <span class="Emphasis">Project</span> ribbon group, click the <span class="Emphasis">Project Styles</span> or <span class="Emphasis">Topic Types</span> button. The Project Styles dialog opens.</li>
+                    <li>In the left panel, choose the style or topic type you’d like to remove.</li>
+                    <li>
+                        <p>Select <span class="Emphasis">Remove Style</span>.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If a style or topic type has a padlock icon next to it in the Project Styles dialog, that style or topic type is built-in and cannot be deleted.</p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Built-in Styles and Topic Types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="mc-table-style: url('../../Resources/TableStyles/BasicAlternateRows.css');width: 100%;" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Character Styles</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Paragraph Styles</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Topic Types</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Conditional</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Heading 1</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Conceptual</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Contents Title </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">Heading 2</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Contents</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Context ID</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Heading 3</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Glossary of Terms</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Dropdown Text</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">Heading 4</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Glossary Term Definition</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Expand Text</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Heading 5</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Margin Note</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Group</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">MidTopic</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Procedural</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Group Invisible</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">RelatedHead</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Sub-Contents</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Group Link</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">WhatsThis</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">What’s This</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Index</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">Glossary Heading </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Index Invisible</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">Glossary Heading (no auto links)</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Inline Dropdown</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Inline Expand</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Inline Popup</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Jump</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Keyword Link</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Link Tag</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Link Tag Invisible</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Manual</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Online</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Popup</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText">C1H Popup Text</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText">C1H Topic Properties</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableText">C1H Variable</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">&#160;</td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">&#160;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">It is important that you use the Project Styles dialog to define authoring behaviors for any styles you add when creating a custom template. If you do not do this, the styles will not function correctly when building output. See <MadCap:xref href="../../Templates/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

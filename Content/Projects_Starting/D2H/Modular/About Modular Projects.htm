@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="2763" MadCap:lastWidth="1107" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects;Modular projects" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Modular Projects</h1>
+        <p>A modular project is necessary when you have a collection of several different output files (and would like to keep them that way) but would like them to appear to the end user as a single output system.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide">Common Scenarios</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Common Scenarios</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are four common scenarios necessitating a modular project:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Modular Software </span>Your software application is sold as separate modules with the user purchasing one or more modules at a time. Modular output will contain all the output files, but only the appropriate output files will accompany the purchased modules. </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Large Documentation Sets </span>If you wish, you can chunk information into several small online outputs and create a modular project rather than deploy one large online output system. Smaller projects enable streamlined updating and easier distribution.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Online Outputs with Future Projects Planned </span>If you plan to release your online output in stages, you can pre-position placeholders for future online projects before they are released. Instead of distributing the entire online output collection each time you add to the system, you only need to distribute additional online output files. If you didn’t plan for an addition, you can distribute a new hub output file along with the new output files.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Documentation Teams Sharing Responsibilities Across One Large Project </span>Modular output can be a solution for a large project with many authors. Each author is assigned one or more projects. The team leader is usually charged with the responsibility of maintaining the hub project and assembling the entire project.</p>
+                        <p>You may want to check out Doc-To-Help’s Team Authoring capabilities and use those instead. See <MadCap:xref href="../../../Team_Authoring/D2H/About Team Authoring.htm">About Team Authoring</MadCap:xref>.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"><a name="ModularOutputDeliverables"></a>Modular Output Deliverables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="ModularOutputDeliverables"></a>Modular Output Deliverables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Modular outputs are composed of one hub (or master) project and any number of child projects. The modular system appears to the user as one integrated collection of online output. The contents and index are merged at run time, when the output is opened. Dynamic links are also created at run time.  </p>
+                <p>The following files are distributed to end users. When you are ready for release, these files should be stored in the Redistributables folder of your modular project. See <MadCap:xref href="#FileOrganization">File Organization</MadCap:xref>.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>HTML Help</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>
+                                <p>Hub project .chm file</p>
+                            </li>
+                            <li>
+                                <p>All child .chm files</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>NetHelp</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>
+                                <p>The entire contents of the hub project NetHelp folder. Since NetHelp is uncompiled HTML Help, the number of files will vary. By default, click on the index.html file to open the output. (This file name can be renamed in the "Default name" field of the Help Targets dialog.)</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Eclipse Help</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>
+                                <p>The entire contents of the hub project EclipseHelp folder. </p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Microsoft Help Viewer </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>
+                                <p>See <MadCap:xref href="Creating Modular Output for Help Viewer Targets.htm">Creating Modular Output for Microsoft Help Viewer Targets</MadCap:xref>.</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When creating a hub project, avoid including spaces in any of the file names. Using spaces in file names will disable the next/previous functionality of the modular output. If your .d2h project file contains spaces, you can fix this without renaming the project by specifying a name with no spaces in the "Base name" field in the Help Targets dialog.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/D2H/Creating Targets.htm">Creating and Deleting Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"> See the online Help or the <span class="EmphasisItalic">Targets Guide</span>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"><a name="Standardizing"></a>Standardizing Modular Output</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="Standardizing"></a>Standardizing Modular Output</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order for your modular project to mesh logically, it's important that all the pieces adhere to a set of standards. You may want to create standards for the following:</p>
+                <ul>
+                    <li>Source and target templates&#160; </li>
+                    <li>Styles, and how they are used</li>
+                    <li>Help window definitions (each project should use the same Windows)</li>
+                    <li>Indexing conventions (keywords and groups)</li>
+                    <li>Use of graphics and graphics format</li>
+                    <li>Tone and style of writing</li>
+                    <li>Map numbering for context-sensitive Help </li>
+                </ul>
+                <p>If you are using a centralized glossary, each project should not have terms in its local glossary; all items should be stored in a central glossary (in the hub project).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide"><a name="FileOrganization"></a>File Organization</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="FileOrganization"></a>File Organization</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Good file organization makes it easier to manage your modular hub project and avoid errors. </p>
+                <p>Your file system should include:</p>
+                <table border="0" style="mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <colgroup>
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                    </colgroup>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <ul>
+                                    <li>
+                                        <p>A folder for the entire system</p>
+                                    </li>
+                                    <li>
+                                        <p>A subfolder for the hub project</p>
+                                    </li>
+                                    <li>
+                                        <p>A subfolder for each child help project</p>
+                                    </li>
+                                    <li>
+                                        <p>A subfolder to store the end-user project redistributables</p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p>For example:</p>
+                                <p>
+                                    <img src="../../../Resources/Images/D2H/modular_project_structure.png" height="112">
+                                    </img>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>If your project has multiple authors, it is best to store the project on a network drive. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Tasks Associated with Modular Projects</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary tasks for working with modular projects:</p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Create Hub Project </span>In modular output, the hub (or master) project ties all of the child projects together. It should be a small project, but can contain information that does not change often (e.g., welcome message, company contact information) if you wish. See <MadCap:xref href="Creating a Hub Project.htm">Creating a Hub Project</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Create Child Project </span>Child projects are tied together with the hub project. There are no special mappings in child projects, just a few settings and other options that need to be handled. You can create as many child projects as needed. See <MadCap:xref href="Creating a Child Project.htm">Creating a Child Project </MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Create Modular Ouptut for Help Viewer Targets </span>The Microsoft Help Viewer (MHV) target is exclusively for integration with the Microsoft Visual Studio 2010 (and above) output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/D2H/Output_Types_D2H.htm">Output Types</MadCap:xref>)</MadCap:conditionalText>. MHV targets usually include API reference documentation generated using the Doc-To-Help Sandcastle plug-in. The purpose of a MHV modular project is to combine the tables of contents of multiple projects so that they appear as a single TOC when integrated with Visual Studio 2010 (and above) output.  See <MadCap:xref href="Creating Modular Output for Help Viewer Targets.htm">Creating Modular Output for Microsoft Help Viewer Targets</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Modular projects can reference  files that are not installed (e.g., Help for a software module the end user has not purchased) and still look seamless. The table of contents and index will simply omit the missing information without displaying error messages. If the user installs the module in the future, the output will be added to the modular system in the proper position.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Verify that your software can accommodate context-sensitive calls from multiple HLP or CHM files before creating a modular project. If your software can only accommodate context-sensitive calls from one Help file, you can still create a modular system, but in that case you must place all context-sensitive topics into one Help file.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

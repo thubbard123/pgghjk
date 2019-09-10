@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="2964" MadCap:lastWidth="1397" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSkins.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterWebHelpPlus" />
+            <MadCap:concept term="FilterWebHelp" />
+            <MadCap:concept term="FilterStyles" />
+            <MadCap:concept term="FilterSkins" />
+            <MadCap:concept term="FilterHTMLHelp" />
+            <MadCap:concept term="FilterFeedback" />
+            <MadCap:keyword term="MadCap Feedback:MadCap Feedback;MadCap Feedback;Server:MadCap Feedback" />
+            <MadCap:keyword term="Styles:WebHelp;Output:WebHelp;Skins:styles;Skins:WebHelp;WebHelp:styles;Styles:WebHelp Plus;Output:WebHelp Plus;Skins:WebHelp Plus;WebHelp Plus:styles;Styles:HTML Help;Output:HTML Help;Skins:HTML Help;HTML Help:styles" />
+            <MadCap:keyword term="MadCap Feedback:user profile items" />Feedback User Profile Items in Standard Skins</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/HTMLHelp_WebHelp_WHPlus.flsnp" />
+        <p>When users submit MadCap Feedback comments, they must complete the Create Feedback Service Profile dialog (unless you have enabled anonymous comments). You can specify which fields are included in this dialog<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareSkinsGuide"> (see <MadCap:xref href="../More_About_Skins/Specifying_Fields_for_Feedback_Profile_Dialog.htm">Specifying Fields for the Create Feedback Service Profile dialog</MadCap:xref>)</MadCap:conditionalText>. In addition, you can use the Styles tab in the skin to change the text for each of those fields, as well as to specify which fields are required and whether a field should have a default value. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../About_Skins.htm">About Skins</MadCap:xref> and <MadCap:xref href="../../Feedback/About_MadCap_Feedback.htm">About MadCap Feedback</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>
+            <img src="../../Resources/Images/skin_styles_feedback_user_profile_items.png" class="MaxWidth50Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to specify style settings for feedback user profile items</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a Standard skin.</li>
+                    <li>Select the <span class="Emphasis">Styles</span> tab.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Styles</span> section, expand the <span class="Emphasis">Feedback User Profile Item</span> node.</p>
+                        <p>
+                            <img src="../../Resources/Images/skin_styles_feedback_user_profile_items2.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Select the item that you want to edit. If you want the setting(s) to be applied to all of the items, select the <span class="Emphasis">Feedback User Profile Item</span> node itself.</p>
+                        <p>The items under this node represent the different fields that can be included in the Create Service Profile dialog. In addition to the many standard fields that can be included (e.g., Address1, City, Department, Occupation), you can add up to 10 custom fields (e.g., Custom1, Custom2, Custom3), which can be used for any kind of field not already available.</p>
+                    </li>
+                    <li>Select the <span class="Emphasis">Property Groups</span> or <span class="Emphasis">Alphabetical List</span> option to display the properties for the style item.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Properties</span> section, set the values for the properties that you want modify.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>default value </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To enter a default value for the item—the user will see this text in the field initially (e.g., perhaps you would enter "United States" as the default value for the Country field):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">DefaultValue</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>
+                                    <MadCap:keyword term="Labels" />gender label—female</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p> To change the text that represents the "female" option in the "gender" drop-down field (this property displays only if you have selected the "Gender" style first):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Gender Female Name</span> field.</li>
+                                </ul>
+                                <p>If you include the gender option in your registration dialog, you might use this field to localize the text in other languages.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>gender label—male </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that represents the "male" option in the "gender" drop-down field (this property displays only if you have selected the "Gender" style first):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Gender Male Name</span> field. </li>
+                                </ul>
+                                <p>If you include the gender option in your registration dialog, you might use this field to localize the text in other languages.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>label </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>To change the text that appears on the item:</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right side of the editor and enter new text in the <span class="Emphasis">Label</span> field.</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>required </MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>To specify whether the field should be required (i.e., end users must complete the field to move on):</p>
+                                <ul class="FirstLevel">
+                                    <li>Expand the <span class="Emphasis">General</span> property group on the right and change the value in the <span class="Emphasis">Required</span> field. Click the down arrow and select either <span class="Emphasis">false</span> (not required) or <span class="Emphasis">true</span> (required).</li>
+                                </ul>
+                                <p>
+                                    <img src="../../Resources/Images/feedback_user_profile_example3.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say that you have already used the Feedback User Profile tab in the Skin Editor to add several fields to your Feedback registration dialog, including the Address1 field. Maybe you want to change the label text that is displayed next to that field in the dialog. In that case, you can click to the right of the <span class="Emphasis">Label</span> field and type something else (e.g., <span class="Emphasis">Street</span>). </p>
+                    <p>In addition, let's say that you want the Address1 field to be required; end users must complete it in order to move on. In that case, you can click to the right of the <span class="Emphasis">Required</span> field and select <span class="Emphasis">true</span>.</p>
+                    <p>When you are finished, it would look like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/feedback_user_profile_example4.png" class="MaxWidth100Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order to be backwards compatible with earlier versions, some properties are also still available in the Dialog/Register User node (see <MadCap:xref href="Dialogs_in_Standard_Skins.htm" >Specifying Style Settings for Dialogs</MadCap:xref>). The software will first look to any settings that you have provided in the Feedback User Profile Item node. Then it will look to settings entered in the Dialog/Register User node.</p>
+                    <p>
+                        <img src="../../Resources/Images/feedback_user_profile_example5.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+                    <p>If you want to modify the labels next to the email notification fields in the Create Feedback Service Profile dialog, you need to expand the <span class="Emphasis">Dialog</span> node and then select <span class="Emphasis">Register User</span>. In the <span class="Emphasis">Properties</span> section on the right, expand the <span class="Emphasis">Options</span> group and change any of the values for the email notification fields.</p>
+                    <p>
+                        <img src="../../Resources/Images/feedback_user_profile_example6.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Skins" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareSkinsGuide" />
+    </body>
+</html>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="3" MadCap:lastHeight="1120" MadCap:lastWidth="1218">
+    <body>
+        <p>Just as you can specify skin settings for web, tablet, and mobile mediums, you can do the same with responsive layouts. You will see buttons for each medium at the top of the Responsive Layout window pane. Actually, these are more accurately referred to as "media queries," but they are sometimes called by both names.</p>
+        <p>
+            <img src="../../Images/responsive_layout23.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>These are synchronized with the layout and medium settings in the XML Editor. So when you select a particular layout in the XML Editor, the appropriate medium is also selected in both the XML Editor and the Responsive Layout window pane. And if you choose a medium in the Responsive Layout window pane, the corresponding layout and medium are selected in the XML Editor.</p>
+        <p>
+            <img src="../../Images/responsive_layout24.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>So when a particular layout/medium is selected, the settings you apply will be used for that size of screen in the output. </p>
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>For a large screen, you might have a row consisting of three cells, with each cell set to use four columns (33.333% each).</p>
+            <p>
+                <img src="../../Images/4-4-4WebTablet.png" class="MaxWidth90Percent" />
+            </p>
+            <p>The three cells each use an equal portion of the possible space when shown on a large screen that can handle that much content.</p>
+            <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareHTML5Guide" />
+            <p>But this is too much for an iPhone. So for your Mobile layout, you tell Flare to use 12 columns in each of those three cells.</p>
+            <p>
+                <img src="../../Images/4-4-4Mobile.png" />
+            </p>
+            <p>As the image above shows, the first cell took up the largest amount of space (12 columns, or 100%), so Flare had to shift the next cell downward. The second cell also used 100% of the space, so Flare had to move the third cell down even farther.</p>
+        </div>
+    </body>
+</html>

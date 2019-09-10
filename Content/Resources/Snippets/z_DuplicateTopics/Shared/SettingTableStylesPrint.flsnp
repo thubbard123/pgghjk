@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Contributor" MadCap:lastBlockDepth="8" MadCap:lastHeight="2219" MadCap:lastWidth="1282">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Contributor/z_DarkPrintBackground_SupportedInContributionWorkflow.flsnp" MadCap:conditions="Products.Contributor" />
+        <MadCap:snippetBlock src="../../Styles/StylesCreateTableStylesPrintSummary.flsnp" />
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <p MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">examples</p>
+                    <p>Let's say you create a table stylesheet with a pattern design that displays the table with alternating green rows. The problem is that for printed output, you need the rows to display in light gray.</p>
+                    <p>Suppose you decide to use the recommended solution (mediums). Let's say the target for online output is called Target A, and the one for print output is called Target B. the first step is to make sure you have two mediums. Suppose Target A is using the "default" medium, where the rows are set to use a green background. With the properties for Target A already set, you now need to specify style properties for Target B. Therefore, in the Table Style Editor, instead of selecting the "default" medium, you can select another medium (e.g., the "print" medium) and change the properties for the rows to light gray. It's the same table stylesheet and the same pattern that you are working with. The only difference is that one medium is telling <MadCap:variable name="Other.Product" /> to display that table rows with a green background, and the other medium is telling it to use light gray. With Target A using the default medium and Target B using the other medium, the tables will display appropriately in each output.</p>
+                    <p>If you decide instead to use the other solution (two table stylesheets), you first create a table stylesheet and specify settings in it appropriate for online output (e.g., green background for table rows). Then you create a secondary stylesheet. This extra table stylesheet will have design settings that are appropriate for printed output (e.g., light gray table rows). When you insert the table into your content (or edit an existing table), you select the original online table style and also select the special print version of the table style. If you generate any targets based on an online format (<MadCap:snippetText src="../../Output/OnlineOutputTypes.flsnp" />), the end user will see green rows in the table. However, if you generate any targets based on a print format (<MadCap:snippetText src="../../Output/AllPrintOutputTypes.flsnp" />), the end user will see light gray rows in the table.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a table style for printed output—two mediums</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li MadCap:conditions="Products.Contributor">The author should have already sent you a contribution template file that includes the table stylesheet.</li>
+                    <li MadCap:conditions="Products.Flare">From the Resources\TableStyles subfolder in the Content Explorer, open the table stylesheet.</li>
+                    <li>Set the properties to be used for the online output.<ol class="LowerAlpha"><li>In the local toolbar of the Table Style Editor, click in the <span class="Emphasis">Medium</span> field and make sure the medium for the your online output is selected.</li><li>Use the various tabs in the editor to set properties for that medium. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../../Styles/Editing_Table_Stylesheets.htm">Editing Table Stylesheets</MadCap:xref>.</MadCap:conditionalText></li></ol></li>
+                    <li>Set the properties to be used for the printed output as follows:<ol class="LowerAlpha"><li><p>In the local toolbar of the Table Style Editor, click the down arrow in the <span class="Emphasis">Medium</span> field and select <span class="Emphasis">Medium: print</span> or <span class="Emphasis">Medium: [name of print medium]</span>.</p></li><li>Use the various tabs in the editor to set properties for that medium.</li><li MadCap:conditions="Products.Flare"><MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" /></li></ol></li>
+                    <li MadCap:conditions="Products.Flare">
+                        <p>Apply that table style to the appropriate tables throughout your project as follows: </p>
+                        <p>
+                            <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly,FlareGuides.FlareStylesGuide">See <MadCap:xref href="../../../../Styles/Applying_Table_Stylesheets_to_Tables.htm">Applying Table Stylesheets to Tables</MadCap:xref>.</MadCap:conditionalText>
+                            <MadCap:snippetText src="../../ForMoreInfo/ForMoreInfoSeeOnlineHelpOrStylesGuide.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                        </p>
+                    </li>
+                    <li MadCap:conditions="Products.Flare">Associate the online medium with your online target as follows:<ol class="LowerAlpha"><li>Open the target to be used for online output (based on either the <MadCap:snippetText src="../../Output/AllOnlineOutputTypesOR.flsnp" MadCap:conditions="Products.Flare" /> format). </li><li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li><li>In the <span class="Emphasis">Stylesheet Medium</span> section, select the medium that you used for online output.</li></ol></li>
+                    <li MadCap:conditions="Products.Flare">Associate the print medium with your print target as follows:<ol class="LowerAlpha"><li>Open the target to be used for print output (based on either the <MadCap:snippetText src="../../Output/AllPrintOutputTypesOR.flsnp" MadCap:conditions="Products.Flare" /> format). </li><li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li><li>In the <span class="Emphasis">Stylesheet Medium</span> section, select the medium that you used for printed output (e.g., print).</li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork2.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a table style for printed output—two table stylesheets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li MadCap:conditions="Products.Flare">
+                        <p>Create one table stylesheet to be used for online output and another to be used for printed output. <MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly">See <MadCap:xref href="../../../../Styles/Creating_New_Table_Style_Sheets.htm" target="" title="" alt="">Creating New Table Stylesheets</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">If you want both tables to share most of the same settings, you can create the online table stylesheet first, make a copy of it for the print version, and then edit the settings in the copy as necessary. You can easily do this by selecting the original table stylesheet in the Content Explorer (Resources\TableStyles subfolder), pressing <span class="Emphasis">CTRL+C</span>, pressing <span class="Emphasis">CTRL+V</span>, and renaming the copy to reflect your needs.</p>
+                    </li>
+                    <li MadCap:conditions="Products.Contributor">The author should have already sent you a contribution template file that includes the table stylesheets.</li>
+                    <li>
+                        <p>Insert a table into a topic or edit an existing table.</p>
+                        <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Tables/Inserting_Tables.htm">Inserting Tables into Topics</MadCap:xref> and <MadCap:xref href="../../../../Tables/More_About_Tables/Editing_Table_Properties.htm">Editing Table Properties</MadCap:xref>.</p>
+                    </li>
+                    <li>In the Insert Table dialog (if inserting a new table) or the Table Properties dialog (if editing an existing table), click <span class="Emphasis">Table Style</span> and from the drop-down select the table style to be used for the online output.</li>
+                    <li>Click the down arrow next to the <span class="Emphasis">Create Table Style</span> button  <img src="../../../Images/table_style_select_btn2.png" class="ReduceButtonSize" /> and select <span class="Emphasis">Print Style</span>. Click <span class="Emphasis">OK</span> in the small dialog that opens. The Select Table Style dialog opens.</li>
+                    <li>From the list, select the table style to be used for the printed output.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>In the Insert Table or Table Properties dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork2.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you used print table styles in the past and want to remove them now in favor of the medium method, you can use an option in the Apply Table Style dialog in the Table Style Editor. When this option is enabled, print table styles will be removed from any tables updated by this dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Styles/Applying_Table_Stylesheets_to_Tables.htm">Applying Table Stylesheets to Tables</MadCap:xref>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly,Products.AnalyzerOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also create special print versions of styles for other topic content. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Setting_Styles_for_Print_Output_in_Regular_Stylesheet.htm">Creating Topic Styles for Print Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputStyles" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

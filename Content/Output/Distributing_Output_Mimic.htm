@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="].mcmoviesys;MyBigProject;MyBigProject.mcmoviesysf;MyBigProject.mcmoviesys;].htm;MyBigProject.mcmvf;MyBigProject.htm;].mcmovie;MyLittleMovie;MyLittleMovie.mcmoviesysf;MyLittleMovie.mcmovie;Section.htm;MyLittleMovie.mcmvf" MadCap:lastBlockDepth="12" MadCap:lastHeight="1037" MadCap:lastWidth="1081" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieGeneration.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutput" />
+            <MadCap:concept term="BasicSteps;Publishing" />
+            <MadCap:concept term="DistributeOutput;Destinations" />
+            <MadCap:keyword term="Distributing output;Output:distributing;Collections:distributing;Movies:distributing" />Distributing Output</h1>
+        <p>After you have finished building movie output, you are ready to distribute the output to your end users. How you distribute the output to your users depends on what you are trying to accomplish. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="MimicGuides.MimicGettingStartedGuide,MimicGuides.MimicMovieGenerationGuide" />
+        <h2 MadCap:conditions="MimicGuides.MimicGettingStartedGuide,MimicGuides.MimicMovieGenerationGuide">Steps for Distributing Output</h2>
+        <p>Following are steps for placing the output in a specific location (e.g., website, folder), as well as for incorporating your collection or movies into a MadCap Flare Help system. As an alternative to these steps, you can upload non-interactive output to YouTube or Vimeo<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../Video_Services/Uploading_Movies_to_YouTube_or_Vimeo.htm">Uploading Movies to YouTube or Vimeo</MadCap:xref>)</MadCap:conditionalText>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to place mimic output in a folder or on a website</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you plan to upload your output files to a location such as a website, you should generate <MadCap:variable name="Outputs.HTML5" />.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" /> <ul type="1" class="FirstLevel"><li><span class="SetOffFirstLevel">Publish the Output Files Automatically</span> For steps, see <MadCap:xref href="Publishing_Output_Mimic.htm">Publishing Output</MadCap:xref>.</li><li><p><span class="SetOffFirstLevel">Copy and Paste the Output Files to the Destination Manually</span> To access your output files from Mimic, do one of the following:</p><ul class="SecondLevel"><li><MadCap:snippetText src="../Resources/Snippets/UIElements/SelectCollectionRibbon.flsnp" /> In the <span class="Emphasis">Collection Output</span> section, select <span class="Emphasis">Open Output Folder</span>.</li><li><MadCap:snippetText src="../Resources/Snippets/UIElements/SelectMovieRibbon.flsnp" /> In the <span class="Emphasis">Movie Output</span> section, select <span class="Emphasis">Open Output Folder</span>.</li></ul><p>Copy and paste the "html5" folder to the required destination. If you generated single video files (MP4 and/or WebM) and want to distribute them alone, you can open the "videos" subfolder to copy them.</p></li></ul></li>
+                    <li>Inform your users about the location of the movie entry file, or provide a link to the appropriate entry file for the collection or standalone movie. When end users double-click the entry file or click a link to it, the movie or collection output opens. <MadCap:conditionalText MadCap:conditions="MimicGuides.MimicMovieGenerationGuide,General.OnlineLive">For information about all of the output files generated, including entry files, see <MadCap:xref href="../Files/Mimic_Files.htm">MadCap Mimic Files</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="MimicGuides.MimicGettingStartedGuide">For information about all of the output files generated, including entry files, see the online Help.</MadCap:conditionalText></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to incorporate mimic output into a madcap flare help system</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol type="1" class="Decimal">
+                    <li>
+                        <p>In your MadCap Flare Help project, use the Mimic movie link option to create a link from a topic, table of contents, or browse sequence. Simply point the link to the appropriate movie file (e.g., MIPRJ, MIMOV). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">See the online Help provided with MadCap Flare for more specific steps about inserting Mimic movie links.</p>
+                    </li>
+                    <li>
+                        <p>Generate and distribute your Flare output.</p>
+                        <p MadCap:conditions="General.OnlineLive">When end users click a link in your online Help system, the movie or collection output opens.</p>
+                        <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to copy any movie files to Flare when you do this. Even though your movie files are stored in a location that is different from your Flare project, they will automatically be incorporated into your online Help output.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DistributeOutput;BasicSteps" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

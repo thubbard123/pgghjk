@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="15" MadCap:lastHeight="20684" MadCap:lastWidth="604" class="" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[Snippets.Snippet10 or Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsTripane.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Flare/HDYDT/TripanePDF.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Tripane and PDF" />
+            <MadCap:concept term="FilterAutoNumbers" />
+            <MadCap:keyword term="Autonumbers" />
+            <MadCap:keyword term="Autonumbers:formats;Styles:auto-numbers;Formatting:autonumbers" />Autonumbers</h1>
+        <p>In this template, we used autonumbers for chapter titles, figures captions, and table captions.</p>
+        <p>Although autonumbers are used mostly for print-based output, we also used an autonumber format (without a number) for note elements in both online and print output.</p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="General.Print" />
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Chapter Numbers</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>chapter numbers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This section describes how chapter numbers were created in the template for PDF output.</p>
+                <p>
+                    <img src="../../../Resources/Images/chapter_number.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">We specified these settings in the print medium of our stylesheet, because the autonumber on the h1 style is intended only for our PDF&#160;output, not for our online output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>)</MadCap:conditionalText>. Other settings are specified for this style in the default medium, and they are therefore applied to online output.</p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterHeadingStylesStep.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">h1</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers1.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-family </span>Set it to <span class="Emphasis">Century Gothic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">22pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">line-height </span>Set it to <span class="Emphasis">24pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-bottom </span>Set it to <span class="Emphasis">20px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-left </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-auto-number-class </span>Enter <span class="Emphasis">ChapAutoNum</span>.</li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">mc-auto-number-format </span>Enter <span class="Emphasis">CH:CHAPTER {chapnum}</span>. (You can also click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select the commands to build the format.)</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the proper chapter number, rather than forcing us to type it manually. The ChapAutoNum class is the style that makes the autonumber large with a different color than the actual h1 text.</p>
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">padding-left </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">0</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterCharacterStylesStep.flsnp" />
+                                    </li>
+                                    <li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">span</span> style.</li>
+                                    <li>
+                                        <p>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers2.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">ChapAutoNum</span> and click <span class="Emphasis">OK</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</MadCap:conditionalText></p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers3.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The new class is added under the parent span style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers4.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. The important thing is that it matches whatever you entered in the mc-auto-number-class field for the h1 style. In our case, this was ChapAutoNum.</p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>With the <span class="Emphasis">ChapAutoNum</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">3E3E3E</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-family </span>Set it to <span class="Emphasis">Century Gothic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-size </span>Set it to <span class="Emphasis">90pt</span>.</li>
+                                            <li><span class="SetOffFirstLevel">letter-spacing </span>Set it to <span class="Emphasis">-1px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">h1</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#bed230;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-family: </span><span class="StyleValue">'Century Gothic';</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-size: </span><span class="StyleValue">22pt;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">line-height: </span><span class="StyleValue">24pt;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">margin-bottom: </span><span class="StyleValue">20px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">margin-left: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-class: </span><span class="StyleValue">ChapAutoNum;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-format: </span><span class="StyleValue">'CH:CHAPTER {chapnum} ';</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-left: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-top: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">span.ChapAutoNum</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#3E3E3E;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-family: </span><span class="StyleValue">'Century Gothic';</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-size: </span><span class="StyleValue">90pt;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">letter-spacing: </span><span class="StyleValue">-1px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the proper chapter number, rather than forcing us to type it manually. The ChapAutoNum class is the style that makes the autonumber large with a different color than the actual h1 text. You do not need to give the class this exact name. The important thing is that it matches whatever you entered in the mc-auto-number-class field for the h1 style. In our case, this was ChapAutoNum.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                    <li>
+                        <p>Whenever you create print-based output, you need an "outline TOC," which is basically a Flare TOC file (.fltoc) with links to all of the topics you want to include in the output. In the Project Organizer, create the outline TOCs that you want to use for print-based output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../TOCs/Creating_a_TOC_Manually.htm">Creating a TOC Manually</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Print"> For steps on creating a TOC (i.e., outline TOC) manually, see the online Help.</MadCap:conditionalText></p>
+                        <p>In the Tripane and PDF Advanced template, we created the following four outline TOCs:</p>
+                        <p>
+                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers5.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                    <li>
+                        <p>In each of your outline TOCs, add links to topics wherever you want a new chapter to begin. Each of these topics starts with content that has an h1 style applied to it. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Adding_Print_Topics_to_an_Outline_TOC.htm">Including Print Topics in an Outline TOC</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>
+                            <img src="../../../Resources/Images/chapter_number2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You don't need to worry about all of the other topics in the outline TOC that also start with an h1 style. That's because we've configured our PDF targets to generate the TOC depth, automatically adjusting these headings in the output to use the h2 style. To do this, open the PDF target, select the <span class="Emphasis">Advanced</span> tab, and choose <span class="Emphasis">Use TOC depth for heading levels</span>.</p>
+                    </li>
+                    <li>
+                        <p>On each TOC entry that you want to be the start of a new chapter, apply a chapter break and associate it with a page layout. To do this, click on an entry in the TOC, press <span class="Emphasis">F4</span>, select the <span class="Emphasis">Printed Output</span> tab, and complete the <span class="Emphasis">Break Type</span> and <span class="Emphasis">Page Layout</span> fields.</p>
+                        <p>We did this to the four TOC entries mentioned in the previous step. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter and Page Layout Breaks</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="General.Print" /></p>
+                    </li>
+                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                    <li>
+                        <p>And finally, because your TOC entries are linked to a topic that is using a chapter autonumber, you need to give Flare a little more information so that the correct numbers are shown. This is done on the <span class="Emphasis">Auto-numbers</span> tab of the TOC Properties dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Autonumbers/Specifying_Auto_Numbering_Flow_for_Output.htm">Specifying Autonumbering Flow for Output</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="General.Print" /></p>
+                        <p>For the first chapter number TOC entry (the one we labeled "CH&#160;1"), we did this:</p>
+                        <p>
+                            <img src="../../../Resources/Images/chapter_number3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <p>For the other three entries (CH 2, CH 3, CH 4), we did this:</p>
+                        <p>
+                            <img src="../../../Resources/Images/chapter_number4.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Figure Numbers</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>figure numbers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This section describes how figure numbers were created in the template.</p>
+                <p>
+                    <img src="../../../Resources/Images/figure_number.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">We specified these settings in the print medium of our stylesheet, because these autonumbers are used only in our PDF&#160;output, not in our online output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>)</MadCap:conditionalText>.</p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">p</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers6.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">Figure</span> and click <span class="Emphasis">OK</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers7.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The new class is added under the parent p style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers8.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. You can choose any name you want.</p>
+                                    </li>
+                                    <li>
+                                        <p>With the <span class="Emphasis">Figure</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">404040</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-style </span>Set it to <span class="Emphasis">italic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-left </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-auto-number-class </span>Enter <span class="Emphasis">FigureNum</span>.</li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">mc-auto-number-format </span>Enter <span class="Emphasis">CF:Figure {chapnum}-{n+}</span>. (You can also click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select the commands to build the format.)</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the proper figure number, rather than forcing us to type it manually. The FigureNum class is the style that gives the autonumber a different font color and style than the actual figure caption text.</p>
+                                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Notice the CF prefix in the autonumber format. As you will see, the table autonumber style also has a prefix labeled CT. This is necessary to keep the numbering sequences separate. Otherwise, you might end up with a chapter that has three images and three tables where the numbering goes like this: Figure 1-1, Figure 1-2, Table 1-3, Figure 1-4, Table 1-5, Table 1-6. That's not what you want. What you want is this: Figure 1-1, Figure 1-2, Table 1-1, Figure 1-3, Table 1-2, Table 1-3.</p>
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterCharacterStylesStep.flsnp" />
+                                    </li>
+                                    <li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">span</span> style.</li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers11.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">FigureNum</span> and click <span class="Emphasis">OK</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</MadCap:conditionalText></p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers9.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                        <p>The new class is added under the parent span style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers10.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. The important thing is that it matches whatever you entered in the mc-auto-number-class field for the p.Figure style. In our case, this was FigureNum.</p>
+                                    </li>
+                                    <li>
+                                        <p>With the <span class="Emphasis">FigureNum</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-style </span>Set it to <span class="Emphasis">normal</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">p.Figure</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#404040;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-style: </span><span class="StyleValue">italic;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-class: </span><span class="StyleValue">FigureNum;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-format: </span><span class="StyleValue">'CF:Figure {chapnum}-{n+} ';</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">margin-left: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">span.FigureNum</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#BED230;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-style: </span><span class="StyleValue">normal;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the proper figure number, rather than forcing us to type it manually. The FigureNum class is the style that gives the autonumber a different font color and style than the actual figure caption text. You do not need to give the class this exact name. The important thing is that it matches whatever you entered in the mc-auto-number-class field for the p.Figure style. In our case, this was FigureNum.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Notice the CF prefix in the autonumber format. As you will see, the table autonumber style also has a prefix labeled CT. This is necessary to keep the numbering sequences separate. Otherwise, you might end up with a chapter that has three images and three tables where the numbering goes like this: Figure 1-1, Figure 1-2, Table 1-3, Figure 1-4, Table 1-5, Table 1-6. That's not what you want. What you want is this: Figure 1-1, Figure 1-2, Table 1-1, Figure 1-3, Table 1-2, Table 1-3.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Whenever you insert an image, type whatever figure caption text you want on a paragraph after the image. Then apply your style (e.g., p.Figure) to that paragraph. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Table Numbers</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>table numbers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This section describes how table numbers were created in the template.</p>
+                <p>
+                    <img src="../../../Resources/Images/table_number.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">We specified these settings in the print medium of our stylesheet, because these autonumbers are used only in our PDF&#160;output, not in our online output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>)</MadCap:conditionalText>.</p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">p</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers6.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">TableCaption</span> and click <span class="Emphasis">OK</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers12.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The new class is added under the parent p style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers13.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. You can choose any name you want.</p>
+                                    </li>
+                                    <li>
+                                        <p>With the <span class="Emphasis">TableCaption</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">404040</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-style </span>Set it to <span class="Emphasis">italic</span>.</li>
+                                            <li><span class="SetOffFirstLevel">mc-auto-number-class </span>Enter <span class="Emphasis">TableNum</span>.</li>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">mc-auto-number-format </span>Enter <span class="Emphasis">CT:Table {chapnum}-{n+}</span>. (You can also click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select the commands to build the format.)</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the proper table number, rather than forcing us to type it manually. The TableNum class is the style that gives the autonumber a different font color and style than the actual table caption text.</p>
+                                            </li>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">0</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">12px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterCharacterStylesStep.flsnp" />
+                                    </li>
+                                    <li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">span</span> style.</li>
+                                    <li>
+                                        <p>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers11.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">TableNum</span> and click <span class="Emphasis">OK</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</MadCap:conditionalText></p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers14.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The new class is added under the parent span style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers15.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. The important thing is that it matches whatever you entered in the mc-auto-number-class field for the p.TableCaption style. In our case, this was TableNum.</p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>With the <span class="Emphasis">TableNum</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">BED230</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">font-style </span>Set it to <span class="Emphasis">normal</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">p.TableCaption</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#404040;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-style: </span><span class="StyleValue">italic;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-class: </span><span class="StyleValue">TableNum;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-format: </span><span class="StyleValue">'CT:Table {chapnum}-{n+} ';</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">0;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-top: </span><span class="StyleValue">12px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">span.TableNum</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentSmall">
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#bed230;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">font-style: </span><span class="StyleValue">normal;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>Whenever you insert a table, type whatever table caption text you want in a paragraph before the table. Then apply your style (e.g., p.TableCaption) to that paragraph. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Applying_Styles_to_Content.htm">Applying Styles to Content</MadCap:xref>.</MadCap:conditionalText></p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>why not use the table caption feature in the table properties?</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>There is an option in the Table Properties dialog that lets you specify a caption for a table. And you can use the caption style to apply an autonumber to it. We could have done that instead of adding a special paragraph above the table. The main reason we chose to use the paragraph instead of the caption style has to do with rounded corners on the table. Different browsers treat captions differently on tables. Some browsers consider the caption part of the table, and others don't. So if you apply rounded borders to a table like we did, some browsers may put the caption within those rounded borders, and we didn't want that.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="General.Print" />
+        <h2 MadCap:conditions="General.Print">Note Elements</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note Elements</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This section describes the autonumbering for note elements in the template. We created a class of the div style to hold our note content. That way it is easier to have notes that contain a single paragraph or many. In addition to that, we created a generic class that we apply to the first paragraph in a note. This is where the autonumber is applied.</p>
+                <p>
+                    <img src="../../../Resources/Images/note_element.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                <ol>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                        </p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>use the stylesheet editor (beginners)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Open a stylesheet and select the following:<ul><li><p>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">default</span>.</p><div class="note"><p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">We specified most these settings in the default medium of our stylesheet, because this is a case where we want to use autonumbering to automatically apply one word ("Note:") at the beginning of note elements so that we don't have to type it each time<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Styles/Mediums/About_Mediums_and_Media_Queries.htm">About Stylesheet Mediums</MadCap:xref>)</MadCap:conditionalText>. These note elements are used in both online and PDF output, so we needed to set the style on the default medium, ensuring it would be used for both kinds of output. However, there is one setting that we want to be used only for print-based output, so later in these steps we will switch to the print medium and choose that setting.</p></div></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/FilterParagraphStylesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/HideInheritedNotSelected.flsnp" /></li><li>On the left side of the Stylesheet Editor, select the <span class="Emphasis">div</span> style.</li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectShowAllPropertiesStep.flsnp" /></li><li><MadCap:snippetText src="../../../Resources/Snippets/Styles/SelectAlphaView.flsnp" /></li></ul><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers16.png" alt="" title="" class="MaxWidth100Percent" /></p></li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">note</span> and click <span class="Emphasis">OK</span>.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers17.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p>The new class is added under the parent div style.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers18.png" alt="" title="" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. You can choose any name you want.</p>
+                                    </li>
+                                    <li>
+                                        <p>With the <span class="Emphasis">note</span> class selected on the left side of the editor, go to the right side and set the following properties:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">background-color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">47484A</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">background-image </span>Click <img src="../../../Resources/Images/insert_image_btn2.png" />. The Insert Image dialog opens. Find and select an image you want to use. This is the image that displays in the upper-left corner of the note. In our template, we selected an image called "NoteIcon.png" that we stored in the Resources/Images subfolder of the Content Explorer.</li>
+                                            <li><span class="SetOffFirstLevel">background-repeat </span>Set it to <span class="Emphasis">no-repeat</span>.</li>
+                                            <li><span class="SetOffFirstLevel">border </span>Set it to <span class="Emphasis">solid 1px #404040</span>.</li>
+                                            <li><span class="SetOffFirstLevel">border-radius </span>Set it to <span class="Emphasis">6px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">color </span>Click <img src="../../../Resources/Images/more_colors_btn.png" class="ReduceButtonSize" />, and in the dialog click in the <span class="Emphasis">#</span> field and type <span class="TypedEntry">B3B3B3</span> (or choose another color if you want). Then click <span class="Emphasis">OK</span>.</li>
+                                            <li><span class="SetOffFirstLevel">margin-top </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-left </span>Set it to <span class="Emphasis">40px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-right </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                            <li><span class="SetOffFirstLevel">padding-top </span>Set it to <span class="Emphasis">10px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>In the local toolbar, click <span class="Emphasis">Add Selector</span>.</li>
+                                    <li>Remove the text from the <span class="Emphasis">HTML Element</span> field.</li>
+                                    <li>
+                                        <p>In the <span class="Emphasis">Class Name</span> field, type <span class="TypedEntry">noteInDiv</span> and click <span class="Emphasis">OK</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/Creating_Selectors.htm">Creating New Style Classes</MadCap:xref>.</MadCap:conditionalText></p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers19.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By clearing the HTML Element field, you care creating a generic style class. This means it can be applied to any parent style. In our notes, this is usually a paragraph, but it could be something else.</p>
+                                        </div>
+                                        <p>The new class is added under the (Generic Classes) section. You need to change the filter to <span class="Emphasis">All Styles</span> to see it.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers20.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the class this exact name. You can choose any name you want.</p>
+                                    </li>
+                                    <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                                    <li>
+                                        <p>With the <span class="Emphasis">noteInDiv</span> class selected on the left side of the editor, go to the right side and set the following:</p>
+                                        <ul>
+                                            <li>
+                                                <p><span class="SetOffFirstLevel">mc-auto-number-format </span>Enter <span class="Emphasis">{b}{color #BED230}Note: {/color}{/b}</span>. (You can also click <img src="../../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and select the commands to build the format.)</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the word "Note" in color before the first paragraph in a note element, rather than forcing us to type it manually.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>At the top of the Stylesheet Editor, click in the <span class="Emphasis">Medium</span> drop-down and select <span class="Emphasis">print</span>.</li>
+                                    <li>
+                                        <p>On the left side of the editor, select the <span class="Emphasis">div.note</span> style class.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers21.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>On the right side of the Stylesheet Editor, set the following:</p>
+                                        <ul>
+                                            <li><span class="SetOffFirstLevel">padding-bottom </span>Set it to <span class="Emphasis">20px</span>.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>get the css (advanced users)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Enter this in the default medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">div.note</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">background-color: </span><span class="StyleValue">#47484A;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">background-image: </span><span class="StyleValue">url('../Images/NoteIcon.png');</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">background-repeat: </span><span class="StyleValue">no-repeat;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">border: </span><span class="StyleValue">solid 1px #404040;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">border-radius: </span><span class="StyleValue">6px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">color: </span><span class="StyleValue">#B3B3B3;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">margin-top: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-left: </span><span class="StyleValue">40px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-right: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">padding-top: </span><span class="StyleValue">10px;</span>
+                                        </p>
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-format: </span><span class="StyleValue">'{b}{color #bed230}Note: {/color}{/b}';</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <div class="IndentSmall">
+                                    <p class="Style">.noteInDiv</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">mc-auto-number-format: </span><span class="StyleValue">'{b}{color #BED230}Note: {/color}{/b}';</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You do not need to give the classes these names. You can choose any names you want.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The mc-auto-number-format property is the one that allows the style to automatically display the word "Note" in color before the first paragraph in a note element, rather than forcing us to type it manually.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The image file shown for the p.note style (NoteIcon.png) is one that we placed in the Resources/Images folder in our template. You can add an image with a different name and point to it instead.</p>
+                                <p>Enter this in the print medium in the stylesheet:</p>
+                                <div class="IndentSmall">
+                                    <p class="Style">div.note</p>
+                                    <p class="Style">{</p>
+                                    <div class="IndentMedium">
+                                        <p class="Code"><span class="StyleProperty">padding-bottom: </span><span class="StyleValue">20px;</span>
+                                        </p>
+                                    </div>
+                                    <p class="Style">}</p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>Apply the styles to the relevant content:<ol class="LowerAlpha"><li>In your topic or snippet file, select the content to be included in the note (e.g., paragraphs, images, lists).</li><li>Press the <span class="Emphasis">Tab</span> key. The Create Group dialog opens.</li><li><p>Select <span class="Emphasis">div.note</span> and click <span class="Emphasis">OK</span>.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers22.png" alt="" title="" class="MaxWidth100Percent" /></p></li><li>Click in the first paragraph or piece of content in the note.</li><MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTutorialsGuideTripanePDFAdv" /><li><p>Select the <span class="Emphasis">Home</span> ribbon. Then in the <span class="Emphasis">Styles</span> section, click the <span class="Emphasis">Style</span> drop-down and choose <span class="Emphasis">.noteInDiv</span>. Generic classes display before other styles, so this should be near the top of the drop-down.</p><p><img src="../../../Resources/Images/tripane_pdf_tutorial_autonumbers23.png" alt="" title="" class="MaxWidth100Percent" /></p></li></ol></li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about autonumbers and editing them, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../Autonumbers/About_Autonumbers.htm">About Autonumbers</MadCap:xref> and <MadCap:xref href="../../../Autonumbers/Creating_Auto_Number_Formats_for_Styles.htm">Creating Autonumber Formats for Styles</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Tutorial/TripanePDFTutorialWhatsNext.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

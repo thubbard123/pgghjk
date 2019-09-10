@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="12" MadCap:lastHeight="5709" MadCap:lastWidth="1047" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <head><title></title>
+        <meta name="description" content="About Relationship Tables in MadCap&#160;Flare. Use a relationship table to link Flare topics. Then, insert a relationships proxy to display those links for users. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterRelationshipTables" />
+            <MadCap:concept term="RelationshipTables" />
+            <MadCap:concept term="FilterDITA" />
+            <MadCap:keyword term="DITA:relationship tables;Relationship tables;Tables:relationship" />About Relationship Tables</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="General.OnlineLive">
+            <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipTableSummary1.flsnp" />
+        </p>
+        <p MadCap:conditions="General.OnlineLive">
+            <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipTableSummary2.flsnp" />
+        </p>
+        <h2 MadCap:conditions="General.Print">Relationship Table Components</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>relationship table components</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the basic components of a relationship table.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>By default, a relationship table has three columns, each named after three basic topic types—Concept, Task, and Reference.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Concept </span>Topics that contain basic information and descriptions about a subject.</li>
+                            <li><span class="SetOffFirstLevel">Task </span>Topics that provide step-by-step procedures for accomplishing something.</li>
+                            <li><span class="SetOffFirstLevel">Reference </span>Topics that provide detailed reference material.</li>
+                        </ul>
+                        <p>If necessary, you can add more columns to a relationship table, naming the other columns anything you want.</p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example1.png" class="MaxWidth90Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>rows</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can have many rows in a relationship table, with each cell containing one or more topic names, placed in the appropriate column. The relationships between the different topics are defined across each row.</p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example2.png" class="MaxWidth90Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>relationship links</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When you insert topic references into a row in a relationship table, those topics will link to the other topics in the row in some way.</p>
+                        <p>Following are the types of links that you can create.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Normal (default) </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipLinkNormal.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Source Only </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipLinkSourceOnly.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Target Only </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipLinkTargetOnly.flsnp" />
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="CONREF:Relationship tables" />Use CONREF Target </span>This uses the conref attribute to pull content. The conref attribute references an ID on content that can be reused. For <MadCap:variable name="Other.Product" /> outputs other than DITA, this option is not supported. For more detailed information about DITA and the conref attribute, please refer to:</p>
+                                <p><a href="http://www.oasis-open.org/committees/dita/" target="_blank">www.oasis-open.org/committees/dita/</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <p>Unless you leave the default link setting, relationship links are identified by a blue background when you set them. To identify the exact kind of relationship link applied to an item, you can select the item and then click the appropriate Properties button in the local toolbar.</p>
+                        <p>You can specify links on individual topic items, on cells (which can contain multiple items), or on entire columns.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Links on Items </span>Each topic item in a relationship table can use a different kind of link.</li>
+                            <li><span class="SetOffFirstLevel">Links on Cells </span>If you apply a link type to a cell, all of the topic items in that cell will use that same setting (unless you later override the setting on individual items).</li>
+                            <li><span class="SetOffFirstLevel">Links on Columns </span>If you apply a link type to a column, all of the topic items in all cells will use that same setting (unless you later override the setting on individual items or cells).</li>
+                        </ul>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example3.png" class="MaxWidth90Percent" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example_graph1.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>groups</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/RelationshipTablesGroupSummary.flsnp" />
+                        </p>
+                        <p>Following are the collection types that you can use:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Unordered (default) </span>This displays the grouped links in the output, but the order in which they are displayed is not important.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Family </span>This lets you display links not only to adjacent topics in the row, but to other topics grouped within the same cell as well.</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>Let's say you have a row that is populated like this:</p>
+                                    <p>Topic A is in the "concept" cell.</p>
+                                    <p>Topics B, C, and D are contained in a group in the "task" cell.</p>
+                                    <p>Topic E is in the "reference" cell.</p>
+                                    <p>Suppose you <span class="EmphasisItalic">do not</span> use the Family collection type. In that case, when a user opens Topic A, he will see links to Topics B, C, D, and E. However, when the user opens Topic C, he will see links to Topic A and Topic E, but not to Topics B and D.</p>
+                                    <p>Now suppose you <span class="EmphasisItalic">do</span> use the Family collection type. In that case, when a user opens Topic C, he will see links not only to Topics A and E, but to Topics B and D as well.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Sequence </span>This displays links with significance given to how the links are ordered in the output. For <MadCap:variable name="Other.Product" /> outputs other than DITA, this option is not supported. For more detailed information about DITA and the sequence option, please refer to:</p>
+                                <p><a href="http://www.oasis-open.org/committees/dita/" target="_blank">www.oasis-open.org/committees/dita/</a>
+                                </p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                            <li>
+                                <p><span class="SetOffFirstLevel">Choice </span>This lets you specify which link should be "selected" or "highlighted" from the group of links. For <MadCap:variable name="Other.Product" /> outputs other than DITA, this option is not supported. For more detailed information about DITA and the choice option, please refer to:</p>
+                                <p><a href="http://www.oasis-open.org/committees/dita/" target="_blank">www.oasis-open.org/committees/dita/</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="CONREF:Relationship tables" />Use CONREF Target </span>This uses the conref attribute to pull content. The conref attribute references an ID on content that can be reused. For <MadCap:variable name="Other.Product" /> outputs other than DITA, this option is not supported. For more detailed information about DITA and the conref attribute, please refer to:</p>
+                                <p><a href="http://www.oasis-open.org/committees/dita/" target="_blank">www.oasis-open.org/committees/dita/</a> <![CDATA[ ]]></p>
+                            </li>
+                        </ul>
+                        <p>Unless you leave the default link setting, collection types are identified by a green background when you set them. To identify the exact kind of group applied, you can select the item and then click the appropriate Properties button in the local toolbar.</p>
+                        <p>You can specify collection types on individual items in a group or on entire columns:</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Collection Types on Items in Groups </span> Each group item in a relationship table can use a different kind of collection type.</li>
+                            <li><span class="SetOffFirstLevel">Collection Types on Columns </span>If you apply a collection type to a column, all of the groups in that column will use that same setting (unless you later override the setting on individual groups).</li>
+                        </ul>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example4.png" class="MaxWidth90Percent" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example_graph2.png" class="MaxWidth90Percent" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example5.png" class="MaxWidth90Percent" />
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example_graph3.png" class="MaxWidth90Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>condition tags</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>Like most everything else in <MadCap:variable name="Other.Product" />, you can apply condition tags to the elements within a relationship table. That is why you see squares next to the elements. If you apply a condition tag to something (e.g., topic reference, group), the square will display the color associated with that condition tag. You can show or hide the condition tags if you want.</p>
+                        <p>
+                            <img src="../../Resources/Images/relationship_table_example6.png" class="MaxWidth90Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <h2 MadCap:conditions="General.Print">Rules for&#160;Relationship Tables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>rules for relationship tables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are some basic rules when it comes to creating relationship tables:</p>
+                <MadCap:snippetBlock src="../../Resources/Snippets/RelationshipTables/RelationshipTableRulesList.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <h2 MadCap:conditions="General.Print">
+            <MadCap:keyword term="DITA:relationship tables;Relationship tables;Tables:relationship;Proxies:relationship" />Relationships Proxy</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="DITA:relationship tables;Relationship tables;Tables:relationship;Proxies:relationship" />Relationships proxy</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you create at least one relationship table, you can insert a Relationships proxy into the topics where you want the links to appear in the output. When you build the output, the proxy is replaced by the generated links.</p>
+                <p>
+                    <img src="../../Resources/Images/relationships_proxy_example1.png" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/relationship_links_output_example1.png" class="MaxWidth90Percent" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/relationship_links_output_example2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="Products.FlarePrintOnly">Benefits</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>benefits</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Follow are some of the primary benefits of using relationship links, as opposed to related topic links or concept links:</p>
+                <ul>
+                    <li>You can create all of your link information in one place, in a single relationship table.</li>
+                    <li>You can have multiple types of links at the bottom of topics (e.g., one for "Related Information," one for "Related Tasks," and one for "Reference Materials").</li>
+                    <li>In online output, the links are automatically represented as hyperlinks. In print-based output, the links are automatically represented as a list of related topics with page number references.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">Steps for Using Relationship Tables</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>steps for using relationship tables</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are the basic steps for using relationship tables.</p>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Add </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/AddRelationshipTableSummary.flsnp" /> See <MadCap:xref href="Adding_Relationship_Tables.htm">Adding Relationship Tables</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Create </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/CreatingRelationshipTablesSummary.flsnp" /> See <MadCap:xref href="Creating_Relationship_Tables.htm">Creating Relationship Tables</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Insert Links </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/InsertRelationshipLinksSummary.flsnp" /> See <MadCap:xref href="Inserting_Relationship_Links.htm">Inserting Relationship Links Into Topics</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="Relationship tables:styles;Tables:relationship;Styles:relationship links" />Edit Link Styles </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/EditRelationshipLinkStylesSummary.flsnp" />&#160;See <MadCap:xref href="Editing_Relationship_Link_Styles.htm">Editing Relationship Link Styles</MadCap:xref>.</li>
+                    <li><span class="SetOffFirstLevel">Associate With Target </span>
+                        <MadCap:snippetText src="../../Resources/Snippets/RelationshipTables/AssociateRelationshipTables.flsnp" /> See <MadCap:xref href="Associating_Relationship_Tables_with_Targets.htm">Associating Relationship Tables with Targets</MadCap:xref>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="RelationshipTables" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="s;W;C;n;es;Y;.tiff.;F;F1;F4;P;Z;Tollfree;MadCap1;F11;F3;F7;NewWord;MadCap's;MyProfile;taskbar;filename1;filename2;filename3;1filename;2filename;3filename;Highcolor;Truecolor;truecolor" MadCap:conditions="Products.Capture" MadCap:lastBlockDepth="12" MadCap:lastHeight="2112" MadCap:lastWidth="981">
+    <head><title></title>
+        <meta name="description" content="How to adjust the pointer shape on bubble objects in MadCap Capture. Changing the pointer for bubble objects. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterShapes" />
+            <MadCap:keyword term="Pointer:bubbles;Bubbles:pointer" />
+            <MadCap:concept term="Callouts" />
+            <MadCap:concept term="FilterAppearance" />Adjusting the Pointer on a Bubble Shape</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Appearance_Images_Objects_Frames/AdjustPointerSummary.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>When you first draw a bubble shape, it might look something like this:</p>
+                    <p>
+                        <img src="../../Resources/Images/bubble_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+                    <p>After double-clicking on the shape, the Bubble Properties dialog opens. You can select the <span class="Emphasis">Pointer</span> tab and make the necessary changes in the <span class="Emphasis">Pointer</span> section.</p>
+                    <p>
+                        <img src="../../Resources/Images/bubble_pointer_example1.png" class="MaxWidth90Percent">
+                        </img>
+                    </p>
+                    <p>Now let's say you want to change the width of the pointer base. In that case, simply adjust the <span class="Emphasis">Base Width</span> and/or <span class="Emphasis">Base Minimum Width</span> fields.</p>
+                    <p>
+                        <img src="../../Resources/Images/bubble_pointer_example2.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Pointer:adjust" />how to adjust the pointer on a bubble shape</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open an image that has a bubble shape added to it.</li>
+                    <li>Double-click the bubble shape. The Bubble Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Pointer</span> tab.</li>
+                    <li>
+                        <p>Make the changes on this tab as necessary.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>add curve to the arrow</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol class="LowerAlpha">
+                                    <li>Click <span class="Emphasis">Curved Sides</span>.</li>
+                                    <li>To adjust the amount of curve, change the number in the <span class="Emphasis">Curve Factor</span> field. The higher the number, the greater the curve. You can enter negative numbers too.</li>
+                                    <li>You can change the numbers in the <span class="Emphasis">X Position</span> and <span class="Emphasis">Y Position</span> fields to alter the distance of the pointer horizontally and vertically. You can enter negative numbers too.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>modify the edge position of the pointer</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul class="FirstLevel">
+                                    <li>Click in the <span class="Emphasis">Edge</span> field and select the side of the bubble where you want the pointer to be shown (Left, Right, Top, Bottom).</li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>modify the pointer base</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ul class="FirstLevel">
+                                    <li>To change the base width, in the <span class="Emphasis">Base Width</span> field enter a number and select a unit of measurement.</li>
+                                    <li>
+                                        <p>To set the minimum width for the base, in the <span class="Emphasis">Base Minimum Width</span> field enter a number of pixels. This lets you specify the smallest width of the base allowed, in case the bubble is resized.</p>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">Example</p>
+                                            <p>Let's say you set the "Base Minimum Width" to 10 pixels and you set the "Base Width" to 30%. In this case, the base will be 30% of the bubble width at all times, unless the bubble is resized so much that the base would fall below 10 pixels. If that were to happen, the 10-pixel threshold would kick in and the 30% specification would be ignored.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <p>As you make changes, watch the Preview area at the bottom of the tab to see the results.</p>
+                    </li>
+                    <li value="4">
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NotePalette.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNext/WhatsNextAfterEditCapture.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Callouts" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="CaptureGuides.CaptureEditingImagesGuide" />
+    </body>
+</html>

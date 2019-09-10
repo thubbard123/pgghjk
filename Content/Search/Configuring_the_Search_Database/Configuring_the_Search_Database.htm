@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="757" MadCap:lastWidth="1250" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSearch.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Search" />
+            <MadCap:keyword term="Search:configuring database" />
+            <MadCap:concept term="FilterSearch" />
+            <MadCap:concept term="ConfiguringSearchDatabase" />Configuring the Search Database</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">
+            <MadCap:keyword term="Search:configuring database" />Configuring the Search Database</h1>
+        <p>In a Flare target, you have a variety of options that you can enable or disable to define how the search database performs. </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <ul MadCap:conditions="General.OnlineLive">
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:chunk files" />Chunk Large Search Database Files </span>You can select this option to define the maximum size for database chunk files. See <MadCap:xref href="Chunking_Large_Database_Files.htm">Chunking Large Search Database Files</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Indexes:search;Search:indexes;Indexes:excluding entries" />Index Entries—Excluding From Search </span>If you insert index keyword markers in your topics, Flare  automatically takes those keywords into account when retrieving and ranking search results. You can exclude index markers from search. See <MadCap:xref href="Excluding_Index_Entries_from_Search.htm">Excluding Index Entries from Search</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:n-gram;N-gram;Language support:search" />N-Gram Size </span>N-grams can be applied to the search database to improve its ability to retrieve more accurate matches for Chinese, Japanese, and Korean languages. See <MadCap:xref href="Setting_the_N-Gram_Size.htm">Setting the N-Gram Size for Search</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:non-words" />Non-Words—Excluding From Search </span>Flare includes a hard-coded list of non-words that can be omitted from search (e.g., angle brackets [ ] ). See <MadCap:xref href="Excluding_Non-Words_from_Search.htm">Excluding Non-words from Search</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:partial-word;Partial-word search" />Partial-word Searching </span>You can enable a partial-word search capabilities. It is important to note that enabling this option can greatly increase the size of the output. See <MadCap:xref href="Enabling_Partial_Word_Search.htm">Enabling Partial-word Search</MadCap:xref>. </li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Projects:merging;Merging:projects;Pre-merging;Search:pre-merging" />Pre-merge Search Database&#160;File </span>If you have multiple projects and plan to merge their outputs when building the "master" project, you can pre-merge the search database files. See <MadCap:xref href="Pre_merging_Search_Database_Files.htm">Pre-merging Search Database Files</MadCap:xref><MadCap:conditionalText MadCap:conditions="General.OnlineLive"> and <MadCap:xref href="../../TOCs/Merging_Projects.htm">Merging Projects</MadCap:xref></MadCap:conditionalText>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:wildcard;Wildcards;DotNet Help:search;Search" />SQL&#160;Search Database—<MadCap:variable name="Outputs.DotNetHelp" /></span> If you have installed Microsoft SQL&#160;Server Compact on the system building the target output, you have the option to include an SQL database to support search with the published output. This can improve search performance and permit users to use the asterisk (*) wildcard with search. See <MadCap:xref href="Including_an_SQL_Search_Database.htm">Including an SQL Search Database</MadCap:xref>.</li>
+            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:stop words;Language support:stop words in search" />Stop Words—Excluding in Search </span>Flare includes a hard-coded list of English stop words that can be used to omit certain words (e.g., "an," "and," "or," and "the") from the search database. See <MadCap:xref href="Including_Stop_Words_in_Search.htm">Including Stop Words in Search</MadCap:xref>. </li>
+        </ul>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Search;ConfiguringSearchDatabase" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="20" MadCap:lastHeight="6013" MadCap:lastWidth="558" class="" MadCap:conditionTagExpression="include[Snippets.Snippet1] exclude[Snippets.Snippet10 or Snippets.Snippet11 or Snippets.Snippet12 or Snippets.Snippet13 or Snippets.Snippet14 or Snippets.Snippet15 or Snippets.Snippet16 or Snippets.Snippet17 or Snippets.Snippet18 or Snippets.Snippet19 or Snippets.Snippet2 or Snippets.Snippet20 or Snippets.Snippet21 or Snippets.Snippet22 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8 or Snippets.Snippet9] " style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTOCs.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterTOCs" />
+            <MadCap:keyword term="Tables of contents:entries;Tables of contents:linking entries" />Linking TOC Entries</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/BrowseSeq/LinkingEntries.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Link a TOC&#160;Entry</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the table of contents.</li>
+                    <li>Select a TOC entry.</li>
+                    <li>In the local toolbar, click <img src="../../Resources/Images/run_properties2_btn.png" class="ReduceButtonSize" />. The Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">General</span> tab.</li>
+                    <li>
+                        <p>Create one of the following link types:</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry to a Bookmark</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>Click <span class="Emphasis">Select Topic</span>. The Link to Topic dialog opens, displaying all the topics in your project.</li>
+                                    <li>Select the topic that contains the bookmark to which you want to link the entry and click <span class="Emphasis">Open</span>.</li>
+                                    <li>
+                                        <MadCap:snippetText src="../../Resources/Snippets/NavLinks/SelectBookmarkOrStyles2.flsnp" />
+                                    </li>
+                                    <li>Select the bookmark to which you want to link the entry and click <span class="Emphasis">OK</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to an Existing Topic</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>Click <span class="Emphasis">Select Topic</span>. The Link to Topic dialog opens, displaying all the topics in your project.</li>
+                                    <li>Select the topic to which you want to link the entry and click <span class="Emphasis">Open</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to an External File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ul>
+                                    <li>
+                                        <MadCap:keyword term="Tables of contents:linking;Tables of contents:external files;External files:tables of contents" />In the <span class="Emphasis">Link</span> field, type the path to the external file (e.g., http://www.acme.com).
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The Eclipse Viewer cannot display PDFs opened from TOC links.</p></li>
+                                </ul>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to Another TOC</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:tables of contents;Tables of contents:linking;Projects:linking;Projects:tables of contents" />Click <span class="Emphasis">Select TOC</span>. The Link to TOC dialog opens, displaying all the TOCs in your project.</li>
+                                    <li>
+                                        <p>Select the TOC to which you want to link the entry and click <span class="Emphasis">Open</span>.</p>
+                                        <div class="example">
+                                            <p class="exampleHeadTextEmpty">Example</p>
+                                            <p>Let's say the documentation team where you work is creating many Help systems for different products in the company. The documentation manager has decided that each TOC in each Help system must contain the same book and topics for contacting the company. For example, it might look something like this:</p>
+                                            <p>
+                                                <img src="../../Resources/Images/toc_example2.png" class="MaxWidth90Percent" />
+                                            </p>
+                                            <p>Your team could create a TOC with this structure and name the TOC "Contact." Flare would create a TOC file called <MadCap:keyword term="FLTOC file" />"Contact.fltoc" behind the scenes. Authors on the team could then share copies of that TOC file and the associated HTML Help topics. Each author adds the TOC and topic files to his or her Help system, linking that TOC to the master TOC for that particular project. </p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>link an entry or book to a browse sequence</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:browse sequences;Browse sequences:linking;Tables of contents:linking;Projects:linking;Projects:browse sequences" />Click <span class="Emphasis">Select Browse Sequence</span>. The Link to Browse Sequence dialog opens, displaying all the browse sequences in your project.</li>
+                                    <li>Select the browse sequence to which you want to link the entry and click <span class="Emphasis">Open</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to Another Flare Project and Target</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:tables of contents;Tables of contents:linking;Projects:merging;Merging:projects" />Click <span class="Emphasis">Select Flare Project and Target</span>. The Link to Flare Project and Target dialog opens.</li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p>Click <span class="Emphasis">Browse for Project</span>. Then click <span class="Emphasis">Project File</span> and find/select a Flare project to which you want to link.</p>
+                                                <p>OR</p>
+                                            </li>
+                                            <li>Click <span class="Emphasis">Select Recent Project</span>. Then select a recently opened Flare project from the list on the right.</li>
+                                        </ul>
+                                    </li>
+                                    <li>From the <span class="Emphasis">Select Target</span> field, choose a specific target in the Flare project. </li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also merge Flare projects through the TOC&#160;Editor. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Merging_Flare_projects_using_targets.htm">Merging Flare Projects Using Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" /></p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to an HTML Help System (CHM File)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:tables of contents;Tables of contents:linking;Tables of contents:external Help systems;Projects:merging;Merging:projects;HTML Help" />Click <span class="Emphasis">Select HTML Help</span>. The Link to HTML Help dialog opens.</li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                                        </p>
+                                        <ul class="FirstLevel">
+                                            <li>
+                                                <p>Select <span class="Emphasis">Project Files</span> and then use the area below to navigate to the file that you want to link to and select it. By using the buttons in the local toolbar, you can view all files in a list, view files in their folder structure, and use other options.</p>
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/UIElements/MultiViewTable3.flsnp" />
+                                            </li>
+                                            <li>
+                                                <p>Select <span class="Emphasis">Import Existing</span>. In the dialog that opens, find and double-click the CHM file. Then from the drop-down—which displays "(root folder)" by default, you can select a specific content folder in your project to place the CHM file.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>After the CHM file is selected, in the Topic field click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. In the dialog that opens, find and double-click the topic that you want to link to.</li>
+                                    <li>
+                                        <p>When you are finished, click <span class="Emphasis">OK</span> in the Link to HTML Help dialog.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also merge HTML help projects through the TOC&#160;Editor.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="Merging_output_from_HTML_Help_projects.htm" >Merging Output from HTML Help Projects (CHM Files)</MadCap:xref>.</MadCap:conditionalText> <MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" /></p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to an External Help System (Flare DotNet Help Output File, Flare Webhelp Output File)</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:tables of contents;Tables of contents:linking;Tables of contents:external Help systems;Projects:merging;Merging:projects;HTML Help" />Click <span class="Emphasis">Enter External Help System</span>. The Link to Help System dialog opens.</li>
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowing.flsnp" />
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p>Enter the name of the Help system output file to which you want to link.</p>
+                                                <p>OR</p>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <p>Click <span class="Emphasis">Browse</span>. Then find and select the Help system output file to which you want to link.</p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you enter a full, valid path to a Help system output file, that file is copied to your Flare project output folder when this project is compiled. If you just enter a name of the Help system output file, you will need to publish that output to the same folder as the output for the current project. </p>
+                                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For merging Flare DotNet Help and WebHelp output files—You should publish the subsystems into the "Subsystems" folder in the output folder for the master project. For example, if the master project is published to C:\TestFolder\Master\Master.mchelp, subsystems should be published into the folder C:\TestFolder\Master\Subsystems (e.g., C:\TestFolder\Master\Subsystems\AnotherHelpSystem<br />\AnotherHelpSystem.mchelp).</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <ol style="list-style-type: lower-alpha;" MadCap:continue="true">
+                                    <li>
+                                        <p>
+                                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                                        </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also merge output through the TOC&#160;Editor. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Merging_output_from_DotNet_Help_projects.htm">Merging Output from DotNet Help DNH Projects</MadCap:xref> and <MadCap:xref href="Merging_output_from_Flare_WebHelp_projects.htm">Merging Output from Flare WebHelp Projects</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../Resources/Snippets/ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" /></p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Link an Entry or Book to a Mimic Movie</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <MadCap:keyword term="Linking:tables of contents;Tables of contents:linking;Tables of contents:movie links;Movies:tables of contents" />Click <span class="Emphasis">Mimic Movie or Movie Collection</span>. The Open dialog opens.</li>
+                                    <li>
+                                        <p>Find and select an individual Mimic movie or a movie collection to which you want to link the entry. You can select any of the following types of files:</p>
+                                        <ul>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MIMOVItem.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MIPRJItem.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMOVIEItem.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMVItem.flsnp" />
+                                            </li>
+                                            <li>
+                                                <MadCap:snippetText src="../../Resources/Snippets/MoviesAndMimic/MCMOVIESYSItem.flsnp" />
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li> Click <span class="Emphasis">Open</span>.</li>
+                                </ol>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                                <ol style="list-style-type: lower-alpha;" MadCap:continue="true">
+                                    <li>
+                                        <p>(Optional) You can click in the drop-down field to the right and specify an output format.</p>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>If you have Mimic 8 or Newer</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody>
+                                                <ul class="FirstLevel">
+                                                    <li>
+                                                        <p><span class="SetOffFirstLevel">(default) </span>If you build a <MadCap:variable name="Outputs.HTMLHelp" />, <MadCap:variable name="Outputs.WebHelp" />, <MadCap:variable name="Outputs.HTML5" />, or <MadCap:variable name="Outputs.WebHelp Plus" /> target, the movie uses the <MadCap:variable name="Outputs.HTML5" /> movie format. </p>
+                                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you generate a DotNet or WebHelp AIR target when using a Mimic 8 movie, the target will not generate. This is because the associated movie formats are not supported by Mimic 8.</p>
+                                                    </li>
+                                                    <li><span class="SetOffFirstLevel"><MadCap:keyword term="HTML5:movie format;Movies:HTML5" />HTML5 </span>The movie is generated in the HTML5 movie format.</li>
+                                                </ul>
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                        <MadCap:dropDown>
+                                            <MadCap:dropDownHead>
+                                                <MadCap:dropDownHotspot>If you have Mimic 7 or older</MadCap:dropDownHotspot>
+                                            </MadCap:dropDownHead>
+                                            <MadCap:dropDownBody class="Final">
+                                                <MadCap:snippetBlock src="../../Resources/Snippets/MoviesAndMimic/MovieOutputFormatOptions.flsnp" />
+                                            </MadCap:dropDownBody>
+                                        </MadCap:dropDown>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/InPropertiesDialogClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

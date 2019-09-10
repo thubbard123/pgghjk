@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="2141" MadCap:lastWidth="1340">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/AllPrint_EPUB.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1 MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide">Printed Output TOC Tasks</h1>
+        <p MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide">There are special tasks that you may need to perform if you are creating print-based output.</p>
+        <MadCap:snippetBlock src="../../ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide">
+            <MadCap:keyword term="Tables of contents:printed output;Print-based output:tables of contents" MadCap:conditions="Products.Flare" /><a name="CreateTopicTOC"></a>Creating a TOC Manually for Print</h2>
+        <p MadCap:conditions="">
+            <MadCap:snippetText src="../../TOCs/CreateTOCProxy.flsnp" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTablesOfContentsGuide">Alternatively, you can let Flare auto-generate one for you (see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Auto_Generating_TOCs_for_Print.htm">Auto-generating TOCs for Print</MadCap:xref>).</MadCap:conditionalText>
+        </p>
+        <p MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,General.OnlineLive">The following explains how to use the manual method.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>
+                        <img src="../../../Images/toc_proxy_example.png" class="MaxWidth55Percent" />
+                    </p>
+                    <p>
+                        <img src="../../../Images/toc_proxy_example2.png" class="MaxWidth55Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a toc manually for print</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Add a new topic as you normally would.</li>
+                    <li>
+                        <p>At the top of the topic, enter a title for your TOC (e.g., "Contents"). </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You should be careful about using any of <MadCap:variable name="Other.Product" />'s h1 through h6 styles for your TOC title, unless you want it to also show up in the generated TOC. However, it is possible to configure your stylesheet so that certain h1 through h6 styles <i>do not</i> show up in the generated TOC. In the same way, it is possible to create other styles besides h1 through h6 and configure them so that they <i>do</i> show up in the generated TOC. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareStylesGuide,General.OnlineLive">For more information see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm" MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide" >Determining Heading Levels for a Print TOC</MadCap:xref><MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm#UsingStylesHeadingLevels" MadCap:conditions="FlareGuides.FlareStylesGuide" >Using Styles for Print TOC Heading Levels</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>Remove any unnecessary text after the topic title.</li>
+                    <li>
+                        <MadCap:snippetText src="../../UIElements/SelectInsertRibbon.flsnp" /> In the <span class="Emphasis">Proxy</span> section select <span class="Emphasis">Proxy&gt;Insert TOC Proxy</span>. <p>The TOC Proxy dialog opens.</p></li>
+                    <li>
+                        <p>(Optional) From the <span class="Emphasis">Stylesheet class</span> field, you can select a style for the TOC. </p>
+                        <p>For example, you might create and use style classes if you want to generate multiple TOCs with different looks for each output. Otherwise, the generated TOC in the output will use the style settings from the parent MadCap|tocProxy style. You can create a style class for this purpose in the Stylesheet Editor. To do this, select the <span class="Emphasis">MadCap|tocProxy</span> style and click <span class="Emphasis">Add Class</span> to create a class. The class will then be available from this field.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you want to affect the look of the individual entries in the generated TOC, you can use the TOC1 through TOC9 styles (classes of the p style) in the Stylesheet Editor. For example, if you want to use blue font for the first-level headings in the generated TOC, you can change the font color setting on the p.TOC1 style. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareTablesOfContentsGuide">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Look_of_a_Print_TOC.htm" >Using Styles to Determine the Look of a Print TOC</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" /> The proxy is added to the topic.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>auto-generate versus manual proxies</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Proxies/AutoGenerateVersusManualProxies.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how did you do that?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../HDYDT/HDYDT_note.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+        <MadCap:dropDown MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide,General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:conditions="General.OnlineLive,FlareGuides.FlareTablesOfContentsGuide" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In order to include a generated TOC in<MadCap:keyword term="Adobe FrameMaker" /><MadCap:variable name="Outputs.Frame" /> output, you must split the output into multiple <MadCap:variable name="Outputs.Frame" /> documents. However, if you are creating<MadCap:keyword term="Microsoft Word" /><MadCap:variable name="Outputs.Word" /> output, you must keep the output in a single <MadCap:variable name="Outputs.Word" /> document. For more information about splitting content into multiple <MadCap:variable name="Outputs.Frame" /> or <MadCap:variable name="Outputs.Word" /> documents, see <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm" >Specifying Chapter and Page Layout Breaks</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Make sure you include this topic in the "outline TOC" that is used for the target you are generating. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Adding_Print_Topics_to_an_Outline_TOC.htm">Including Print Topics in an Outline TOC</MadCap:xref>.</p>
+                <p MadCap:conditions="General.OnlineLive">After creating a topic for a printed TOC, you can perform tasks to affect the look of the generated TOC, as well as the headings that are displayed in it. See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Using_Styles_to_Determine_the_Look_of_a_Print_TOC.htm">Using Styles to Determine the Look of a Print TOC</MadCap:xref> and <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputTOCs" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

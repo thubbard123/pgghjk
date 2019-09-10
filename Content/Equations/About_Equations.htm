@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2448" MadCap:lastWidth="1133" MadCap:conditions="Products.Flare,Products.Contributor">
+    <head>
+        <meta name="description" content="Learn how to perform different tasks when working with and embedding equations." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Equations;MathML" />
+            <MadCap:concept term="Equations" />About Equations</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/All.flsnp" MadCap:conditions="Products.Flare" />
+        <p><MadCap:variable name="Other.Product" /> supports equations written in Mathematical Markup Language (MathML) and LaTeX.</p>
+        <p>You need to use a third-party editor outside of <MadCap:variable name="Other.Product" />  to create the actual equation. To find an editor, you can perform a Google search for free online resources.</p>
+        <p>After you've created an equation, you can then copy and paste it into <MadCap:variable name="Other.Product" />'s editor. This gives you more flexibility to use the editor and format you want.</p>
+        <p>Once you add an equation into your project, <MadCap:variable name="Other.Product" /> uses MathJax to render it. For more about MathJax, see <a href="https://www.mathjax.org/" target="_blank">https://www.mathjax.org/</a> and <a href="https://docs.mathjax.org/" target="_blank">https://docs.mathjax.org</a>.</p>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Equations/EquationExamples.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Converted"></a>Converted Output Formats for Equations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you build a target <MadCap:conditionalText MadCap:conditions="General.OnlineLive">(see <MadCap:xref href="../Output/About_Building_Output.htm" MadCap:conditions="General.OnlineLive">About Building and Publishing Output</MadCap:xref>)</MadCap:conditionalText>, equations may be converted to another format. This, however, depends on the output type of the target you are building.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>HTML5 and WebHelp</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you are generating HTML5 or one of the WebHelp formats—WebHelp, WebHelp Plus, WebHelp Mobile, or WebHelp AIR—you can choose between SVG or PNG as the converted format.</p>
+                        <p>To do this, open the Target Editor, select the <span class="Emphasis">Advanced</span> tab, and choose the format from the <span class="Emphasis">Equation Format</span> field. SVG provides a crisper image and is selected by default.</p>
+                        <p>
+                            <img src="../Resources/Images/equations_target_options.png" alt="" title="" class="MaxWidth100Percent">
+                            </img>
+                        </p>
+                        <div class="note">
+                            <p>The "Generate 'web-safe' images" option in the Target Editor does not apply to equations. If you want web-safe equations, you should choose PNG from the Equation Format field.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>EPUB</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>By default, EPUB targets produce equations in MathML format, whether you've inserted a MathML equation or a LaTeX equation.</p>
+                        <p>However, you also have the option of converting equations in EPUB to PNG format. To do this, open the EPUB target and select the <span class="Emphasis">EPUB Options</span> tab. In the <span class="Emphasis">Optimization Settings</span> area, you can use the check box labeled <span class="Emphasis">Enable MathML to PNG conversion</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Targets/More_About_Targets/Specifying_EPUB_Options.htm">Specifying EPUB Options</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>
+                            <img src="../Resources/Images/epub_equation_enable_MathML_PNG.png" alt="" title="">
+                            </img>
+                        </p>
+                        <ul>
+                            <li>If the option <span class="EmphasisItalic">is selected</span> both MathML and LaTeX equations are converted to PNG.</li>
+                            <li>If the option <span class="EmphasisItalic">is not selected</span> LaTeX equations are converted to MathML. And of course MathML equations remain as they are.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>PDF</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p> If you build PDF output, equations are converted to vector images.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>All Other Output Types</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>For the rest of the output types in Flare, equations are converted to PNG in the output.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>tasks for using equations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.OnlineLive">Following are the primary tasks when working with equations in <MadCap:variable name="Other.Product" />:</p>
+                <ul MadCap:conditions="General.OnlineLive" class="Square">
+                    <li>
+                        <MadCap:keyword term="Equations:creating;Equations:inserting" /><span class="SetOffFirstLevel">Insert </span>
+                        <MadCap:snippetText src="../Resources/Snippets/Equations/InsertingEquations1.flsnp" /> See <MadCap:xref href="Inserting_Equations.htm">Inserting Equations</MadCap:xref>.</li>
+                    <li>
+                        <MadCap:keyword term="Equations:editing" /><span class="SetOffFirstLevel">Edit </span>You can edit an existing equation. This includes the ability to change the equation itself, as well as modify its appearance through the use of the MadCap|equation style. See <MadCap:xref href="Editing_Equations.htm">Editing Equations</MadCap:xref>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="Products.FlareOnlineOnly" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can add alternate text and screen tips for an equation so that it becomes accessible for disabled individuals in the output. You can also create a report that shows accessibility suggestions, which includes equations in your project that are missing alternate text. See <MadCap:xref href="../Accessibility/Flare/About_Accessibility.htm">About Accessibility</MadCap:xref> and <MadCap:xref href="../Analyzer/Reports/Reports.htm">Reports</MadCap:xref>.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When an equation is used in a heading and that heading is referenced in any way (e.g., cross-reference<MadCap:conditionalText MadCap:conditions="Products.Flare">, table of contents entry</MadCap:conditionalText>), the equation is stripped from the reference.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteEquationsJRE.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Equations" />
+        </p>
+    </body>
+</html>

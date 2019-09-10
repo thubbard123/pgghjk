@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1392" MadCap:lastWidth="1033" MadCap:conditionTagExpression="include[Snippets.Snippet1] " MadCap:conditions="Products.Flare" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTutorialsGettingStarted.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/Banners/Flare/HDYDT/GettingStarted.flsnp" MadCap:conditions="General.OnlineLive" />
+        <h1>
+            <MadCap:keyword term="Tutorials:Getting Started" />
+            <MadCap:keyword term="Targets:adding;Targets:copying" />Creating a New Target</h1>
+        <p>When you want to produce a new kind of output, you need to add a target to your project. A target is a single instance of an output type, such as a PDF, an online Help system, an eBook, or a Word document. You can create as many targets as you need to.</p>
+        <p>Right now, the San Diego project is set up so you can build a single PDF&#160;target. However, we also want to create an online target. The type of online output we recommend most is HTML5.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a New HTML5 Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Project Organizer, right-click the <span class="Emphasis">Targets</span> folder. From the context menu select <span class="Emphasis">Add Target</span>. The Add File dialog opens.</li>
+                    <li>
+                        <p>In the Add File dialog, you can select the kind of target you want to create. In the <span class="Emphasis">Source</span> area, make sure that <span class="Emphasis">New from template</span> is selected, then select <span class="Emphasis">MyTarget</span> from the list of factory templates (this should be selected by default). This will create a new target with default settings selected. </p>
+                    </li>
+                    <li>From the <span class="Emphasis">Output Type</span> drop-down, select <span class="Emphasis">HTML5</span>.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">File Name</span> field, enter <span class="TypedEntry">All About San Diego HTML5</span>.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/targets1.png" alt="" title="" class="MaxWidth75Percent" />
+                        </p>
+                    </li>
+                    <li>Click <span class="Emphasis">Add</span>. The new target is added to the Targets folder in the Project Organizer.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set the Startup topic for a Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>We will use a special topic for the landing page (Home.htm) in our online target. </p>
+                <ol>
+                    <li>The editor for your new target should already be open. But in case it isn't, double-click the <span class="Emphasis">All About San Diego HTML5</span> target in the Project Organizer.</li>
+                    <li>In the Target Editor, select the <span class="Emphasis">General</span> tab.</li>
+                    <li>
+                        <p>Next to the <span class="Emphasis">Startup Topic</span>&#160;field, click <img src="../../../../Resources/Images/browse_ellipses.png" alt="" title="" class="ReduceButtonSize" />. The Link to Topic dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>In the list of topics, select <span class="Emphasis">Home.htm</span>.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Open</span>. Home.htm is now associated as your target's startup topic.</p>
+                        <p>
+                            <img src="../../../../Resources/Images/tutorial/targets2.png" alt="" title="" class="MaxWidth80Percent" />
+                        </p>
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The home page we are using for our HTML5 startup topic uses its own stylesheet and master page (these things are already set up for you). This is why it has a different look and feel than the other pages. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareNewUserTutorial">If you want to learn more about how to configure the settings for HTML5 output, refer to the Top Navigation Tutorial in the online Help. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive">If you want to learn more about how to configure the settings for HTML5 output, refer to the <MadCap:xref href="../../TopNavigationAdv/TopNavigationAdv.htm">Top Navigation Tutorial</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>More Information</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="General.Print">For more information about targets, see the online Help.</p>
+                <p MadCap:conditions="General.OnlineLive">For more information, see <MadCap:xref href="../../../../Targets/About_Targets.htm">About Targets</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>See <MadCap:xref href="Conditional_Tags.htm">Using Condition Tags</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

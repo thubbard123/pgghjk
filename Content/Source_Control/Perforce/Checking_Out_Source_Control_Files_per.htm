@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet2 or Snippets.Snippet5]exclude[Snippets.Snippet1 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet6 or Snippets.Snippet7 or Snippets.Snippet8]" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="16" MadCap:lastHeight="1672" MadCap:lastWidth="1049" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlPerforce.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Perforce" />
+            <MadCap:keyword term="Source control:check out;Multi-authoring;Check out" />
+            <MadCap:concept term="FilterSourceControlPerforce" />Checking Out Source Control Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Perforce</MadCap:conditionalText></h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlCheckOutSummary.flsnp" /> </p>
+        <p>You can check files out automatically or manually.</p>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuidePerforce" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to check out files from source control automatically</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select <span class="Emphasis">File&gt;Options</span>. The Options dialog opens.</li>
+                    <li>
+                        <p>Select the <span class="Emphasis">Source Control</span> tab.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This tab will not be visible if your project is not yet bound to source control. See <MadCap:xref href="../Perforce/Binding_an_Existing_Project_to_Source_Control_per.htm" >Binding an Existing Project to Source Control</MadCap:xref>.</p>
+                    </li>
+                    <li>Click the check box <span class="Emphasis">Automatically check file out from source control when saving file changes</span>. A check mark in the box indicates that the feature is enabled.</li>
+                    <li>
+                        <p>(Optional) If you want files that are automatically checked out to be locked as well, select <span class="Emphasis">Lock files when automatically checking out</span>.</p>
+                        <p>Locking files means that other users cannot submit those same files when you have them checked out. You might use this feature to prevent conflicting changes from occurring and having to merge files as a result.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </p>
+                        <p>Whenever you open a file that is not checked out, make changes, and save, not only will your changes be saved but the file will automatically be checked out to you.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoSourceControlGuidePerforce,FlareGuides.FlareSourceControlGuidePerforce" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to check out files from source control manually</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Check Out</span> (for selected files). Alternatively, in the <span class="Emphasis">Project</span> section you can click <span class="Emphasis">Check Out All</span> (for all files in the project). </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click the file you want to check out and select <span class="Emphasis">Source Control&gt;Check Out</span>   (for selected files) or <span class="Emphasis">Source Control&gt;Project&gt;Check Out All</span>  (for all files in the project).</li>
+                        </ul>
+                        <p>The Check Out dialog opens. The selected files are listed with check boxes next to them.</p>
+                    </li>
+                    <li>Make sure to click the check box next to each file you want to check out so that it contains a check mark.</li>
+                    <li>
+                        <p>(Optional) If you want the files to be locked as well, select <span class="Emphasis">Lock files</span>.</p>
+                        <p>Locking files means that other users cannot submit those same files when you have them checked out. You might use this feature to prevent conflicting changes from occurring and having to merge files as a result.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Check Out</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to check out files from source control manually</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Ribbon</span> <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">File</span> section select <span class="Emphasis">Check Out</span> (for selected files). Alternatively, in the <span class="Emphasis">Project</span> section you can click <span class="Emphasis">Check Out All</span> (for all files in the project). </li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>In the File List, right-click the file you want to check out and select <span class="Emphasis">Source Control&gt;Check Out</span>   (for selected files) or <span class="Emphasis">Source Control&gt;Project&gt;Check Out All</span>  (for all files in the project).</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the File List, select the file(s) you want to check out. In the local toolbar of the File List, click <img src="../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Check Out</span>   (for selected files) or <span class="Emphasis">Project&gt;Check Out All</span>  (for all files in the project).</li>
+                        </ul>
+                        <p>The Check Out dialog opens. The selected files are listed with check boxes next to them.</p>
+                    </li>
+                    <li>Make sure to click the check box next to each file you want to check out so that it contains a check mark.</li>
+                    <li>
+                        <p>(Optional) If you want the files to be locked as well, select <span class="Emphasis">Lock files</span>.</p>
+                        <p>Locking files means that other users cannot submit those same files when you have them checked out. You might use this feature to prevent conflicting changes from occurring and having to merge files as a result.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Check Out</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/CheckingOutXLFs.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Perforce" />
+        </p>
+    </body>
+</html>

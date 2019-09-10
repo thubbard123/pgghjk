@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1458" MadCap:lastWidth="1146" MadCap:conditions="Products.Mimic" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Mimic\MimicMovieGeneration.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutput;FilterTargets" />
+            <MadCap:keyword term="Targets;Output:targets" />
+            <MadCap:concept term="Targets" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">About </MadCap:conditionalText>Targets</h1>
+        <p>You can generate multiple movie outputs at the same time through the use of targets. For example, you can produce one copy of your movie in the <MadCap:variable name="Outputs.PDF" /> format and another copy in the <MadCap:variable name="Outputs.HTML5" /> format. A target is simply one instance of a movie output type. You can create as many targets as you need, and you can use different settings for each target, so that each output is unique. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Creating_Targets_Mimic.htm">Creating Targets</MadCap:xref> and <MadCap:xref href="Editing_Targets_Mimic.htm">Editing Targets</MadCap:xref>.</MadCap:conditionalText></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <p>Targets are especially beneficial when used in conjunction with condition tags, which let you specify certain elements to be included in some outputs but excluded from other outputs.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say that you are creating a movie that will be shown to two different audiences. Perhaps all of the frames in the movie are appropriate for each audience, except for the final five frames, which should be shown only to Audience A. In that case, you might create two condition tags—one called "AudienceA" and the other "AudienceB." </p>
+                    <p>
+                        <img src="../Resources/Images/create_condition_tags_example_mimic.png" class="MaxWidth80Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+                    <p>Then you can mark each of the final five frames so that they are associated with the AudienceA marker.</p>
+                    <p>
+                        <img src="../Resources/Images/apply_condition_tags_example3_mimic.png" class="MaxWidth90Percent" />
+                    </p>
+                    <p>In addition, you can create two targets—perhaps one is called "OutputA" and the other "OutputB." </p>
+                    <p>
+                        <img src="../Resources/Images/create_targets_example_mimic.png" class="MaxWidth90Percent">
+                        </img>
+                    </p>
+                    <p>In the OutputA target, you tell Mimic to include the AudienceA condition tag and exclude the AudienceB condition tag. In the OutputB target, you do the opposite.</p>
+                    <p>
+                        <img src="../Resources/Images/associate_condition_tags_example_mimic.png" class="MaxWidth90Percent">
+                        </img>
+                    </p>
+                    <p>
+                        <img src="../Resources/Images/associate_condition_tags_example2_mimic.png" class="MaxWidth90Percent">
+                        </img>
+                    </p>
+                    <p>When you generate the movie outputs, the movie using OutputA will show the final five frames. The movie using OutputB will not show the final five frames.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Targets" />
+        </p>
+    </body>
+</html>

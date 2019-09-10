@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1840" MadCap:lastWidth="736" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareNavLinks.flmsp');">
+    <head>
+        <meta name="description" content="You can create hyperlinks that include search strings or to open a topic in a different Skin. Simply include the hash mark (#) in your URL. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="FilterHyperlinks" />
+            <MadCap:keyword term="Hyperlinks:HTML5;Linking:HTML5;Linking:HTML5;HTML5:links" />
+            <MadCap:concept term="FilterTextHyperlinks" />
+            <MadCap:concept term="WebHelpLinks" />Creating Links to HTML5 Topics</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">Links to HTML5 and WebHelp Topics</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/HTML5_WebHelp_WHMobile_WHPlus.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide" />
+        <p MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">If you generate <MadCap:variable name="Outputs.WebHelp" />, <MadCap:variable name="Outputs.HTML5" />, <MadCap:variable name="Outputs.WebHelp Plus" />, or <MadCap:variable name="Outputs.WebHelp Mobile" /> targets, you can create links to specific topics in the output.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">
+        </MadCap:snippetBlock>
+        <h2 MadCap:conditions="FlareGuides.FlareNavigationLinksGuide">
+            <MadCap:keyword term="Hyperlinks:HTML5;Linking:HTML5;Linking:HTML5;HTML5:links" />Creating Links to HTML5 Topics</h2>
+        <p>You can create links to specific topics in <MadCap:variable name="Outputs.HTML5" /> output. You can also create links that incorporate search strings and skin references.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create links to html5 topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Perform the steps for creating one of the following kinds of links:<ul class="FirstLevel"><li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:image maps;Linking:image hyperlinks" />Image Maps </span>See <MadCap:xref href="../Image_Hyperlinks/Creating_Image_Maps.htm" target="" title="" alt="">Creating Image Maps</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:hyperlinks;Linking:image hyperlinks" />Image Hyperlinks </span>See <MadCap:xref href="../Image_Hyperlinks/Inserting_Image_Hyperlinks.htm" target="" title="" alt="">Inserting Image Hyperlinks</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Text hyperlinks:inserting;Hyperlinks:inserting;Linking:inserting;Linking:text hyperlinks;Topics:text hyperlinks" />Text Hyperlinks </span>See <MadCap:xref href="../Text_Hyperlinks/Inserting_Text_Hyperlinks.htm" target="" title="" alt="">Inserting Text Hyperlinks</MadCap:xref>.</li><li><span class="SetOffFirstLevel"><MadCap:keyword term="Topic popups:inserting;Popups:inserting;Linking:topic popups" />Topic Popups </span>See <MadCap:xref href="../Topic_Popups/Inserting_Topic_Popups.htm" target="" title="" alt="">Inserting Topic Popups</MadCap:xref>.</li></ul></li>
+                    <li>In the dialog that opens for creating the link, click the <span class="Emphasis">Link to</span> field and select <span class="Emphasis">Website</span>.</li>
+                    <li>
+                        <p>Enter the path to the website. You can also include a specific topic, a search string, and/or skin. When inserting the link, you can use the following structure. </p>
+                        <div class="example">
+                            <p class="Code">http://[website]/[main entry file].htm#[path/name of topic]&amp;searchQuery=[search string]&amp;firstPick=true&amp;skinName=[skin name]</p>
+                        </div>
+                        <p>After the hash mark (#), you can specify any combination of the parameters (cshid, searchQuery, firstPick, skinName), separated by ampersands (&amp;). The order of the parameters does not matter:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Main entry file</span>  Provide the path to the main entry file for your output. The file name is determined by whatever you enter into the <span class="Emphasis">Output File</span> field in the <span class="Emphasis">General</span> tab of the Target Editor. If you do not provide a name in this field, the name "Default" will be used.</li>
+                            <li><span class="SetOffFirstLevel">searchQuery </span>This is an optional element that automatically performs a search for a specific string.</li>
+                            <li><span class="SetOffFirstLevel">firstPick</span> This element can be used in conjunction with the search string. If you include the first pick option, the first topic found with the specified search string <span class="EmphasisItalic">will</span> be opened automatically. If you do not include this element, the search results will simply be displayed; the first topic <span class="EmphasisItalic">will not</span> be opened automatically.</li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Skins:context-sensitive Help" />skinName</span> You can specify a skin directly in the link, which will override the skin associated with that topic in the CSH alias file.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">examples</p>
+                    <p class="Code">&lt;a href="http://my.mycompany.com/Default.htm#Sports/Soccer.htm"&gt;Click here to open&lt;/a&gt;</p>
+                    <p class="Code">&lt;a href="http://my.mycompany.com/Default.htm#searchQuery=World Cup Standings&amp;firstPick=true"&gt;Click here to open&lt;/a&gt;</p>
+                    <p class="Code">&lt;a href="http://my.mycompany.com/Default.htm#Sports/Soccer.htm&amp;skinName=Green"&gt;Click here to open&lt;/a&gt;</p>
+                </div>
+                <p>In these examples, the following were used:</p>
+                <ul style="list-style-type: square;">
+                    <li>Default.htm = main entry file name</li>
+                    <li>Soccer.htm = topic in the project, located in subfolder called "Sports"</li>
+                    <li>World Cup Standings = search term</li>
+                    <li>Green = skin name</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:conditions="General.OnlineLive" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can complete similar URL link steps with context-sensitive Help (CSH) identifiers. See <MadCap:xref href="../../CSH/HTML5_CSH_Calls/CSH_Calls_HTML5_Developers.htm" target="" title="" alt="">CSH Calls for HTML5 Output—Developers</MadCap:xref>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="WebHelpLinks" />
+        </p>
+    </body>
+</html>

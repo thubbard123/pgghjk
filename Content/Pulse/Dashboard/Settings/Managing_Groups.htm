@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Pulse,Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="6974" MadCap:lastWidth="550" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePulse.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="description" content="How to manage groups in MadCap Pulse.&#160;By default, Pulse has three groups for Administrators, Employees and Customers. " />
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2013-12-09T13:28:22.8682288-08:00" MadCap:creator="snelson" MadCap:initials="SN" MadCap:comment="Bug 81413 - Clarify Use of Term Group in Pulse UI. If fixed, we may change the term used to refer to groups." MadCap:editor="snelson" MadCap:editDate="2013-12-09T13:30:07.0752746-08:00">
+                <MadCap:concept term="AdminMenu" />
+                <MadCap:concept term="FilterPulse" MadCap:conditions="Products.Flare" />Managing Groups</MadCap:annotation>
+        </h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Managing Groups</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/Banners/Pulse/PulseAdminsOnly.flsnp" MadCap:conditions="General.OnlineLive" />
+        <p>As an Administrator, you can manage groups in several ways.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">important</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">The Groups menu in the dashboard deals with groups that are different from those accessed from the Administration menu.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print">Group Types</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>group types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you install Pulse, the system automatically creates these predefined permission groups:&#160;Administrators, Employees, and Customers. </p>
+                <table style="mc-table-style-original: url('../../../Resources/TableStyles/BasicAlternateRows.css');mc-table-style: url('../../../Resources/TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Default Group Name</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableTextEmphasis">Administrators </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText">Members of this group have the highest level of permissions. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableTextEmphasis">Employees</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText">Members of this group have fewer permissions than Administrators, but more permissions than Customers.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-LightRows">
+                                <p class="TableTextEmphasis">Customers</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-LightRows">
+                                <p class="TableText">Members of this group have fewer permissions than Administrators and Employees</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>You may want to add new groups to manage membership permissions on your server.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say your company develops a software product. As part of your company's sales efforts, there are individuals outside your organization who sell your products either as part of a solution or as part of a referral program. In this scenario, you may want to create separate groups named "Solution Providers" and "Referral Partners" and give each group Employee permissions. </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Group Access Permissions</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>group access permissions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This table details the access permissions for the default Pulse groups: </p>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseGroupPermissionsTable.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+        <h2 MadCap:conditions="General.Print">Adding and Managing Groups</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>adding and managing groups</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After adding a group, you can update a variety of settings to control access to Pulse. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to add a group</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>
+                                <p>In the Settings page, click <span class="Emphasis">Groups</span>.</p>
+                                <p>The Groups page opens. By default, the Manage Groups tab is active in this page. </p>
+                            </li>
+                            <li>
+                                <p>Below the Manage&#160;Users tab, click <span class="Emphasis">Add a Group</span>. The Create a Group dialog opens.</p>
+                            </li>
+                            <li>
+                                <p>In the Create a Group dialog, type the following information:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Name </span>Type a name for the group. For example, type <span class="TypedEntry">Partners</span>.</li>
+                                    <li><span class="SetOffFirstLevel">Description </span>Type a short description for the group.&#160;For example, type <span class="TypedEntry">This is a group for partners</span>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Click <span class="Emphasis">Create Group</span>.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to select a group to manage</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/Pulse/PulseAdminSettings.flsnp" />
+                        <ol start="3">
+                            <li>
+                                <p>In the Settings page, click <span class="Emphasis">Groups</span>.</p>
+                                <p>The Groups page opens. By default, the Manage Groups tab is active in this page. </p>
+                            </li>
+                            <li>
+                                <p>Below the Manage&#160;Users tab, click <span class="Emphasis">Manage Groups</span>.</p>
+                            </li>
+                            <li>In the <span class="Emphasis">Select a group to manage</span> box, type part or all of a group name. Then press <span class="Emphasis">Enter</span>. For example, type <span class="TypedEntry">part</span>.</li>
+                            <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                            <li>
+                                <p>Place a checkmark next to the group that you want to manage. For example, select <span class="Emphasis">Partners</span>.</p>
+                                <p>
+                                    <img src="../../../Resources/Images/pulse_admin_select_group_to_manage.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click <span class="Emphasis">Manage Group</span>.</p>
+                                <p>Information about the group appears in the Manage Groups page. There are three tabs: Basic, Membership, and Advanced. </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to update basic group settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>Select the group to manage (see above). In this example, we will select the Partners group that we added.</p>
+                            </li>
+                            <li>
+                                <p>In the <span class="Emphasis">Basic</span> tab, change the following information as desired:</p>
+                                <ul class="FirstLevel">
+                                    <li><span class="SetOffFirstLevel">Name </span>The name of the group. For example, <span class="TypedEntry">Partners</span>.</li>
+                                    <li><span class="SetOffFirstLevel">Description </span>A description to help identify the group. For example, <span class="TypedEntry">This is a group for partners</span>.</li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Group Type </span>Sets access permission for group member. You can select either <span class="Emphasis">Employee</span> or <span class="Emphasis">Customer</span>. </p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Pulse only permits one Administrators group, which is created by default.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">Save</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to update group membership</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>Select the group to manage (see above).</p>
+                                <p>Information for the selected group should now appear in the Manage Groups page. You will see three tabs:&#160;Basic, Membership, and Advanced. </p>
+                            </li>
+                            <li>
+                                <p>In the <span class="Emphasis">Membership</span> tab, you have these options:</p>
+                                <ul class="FirstLevel">
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Add a Member </span>In the <span class="Emphasis">What users are members of this group?</span> box, type a full or partial name. Then place a checkmark next to the user name(s) that you want to add to the group.</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When a user is added to multiple groups, their level of system access corresponds to group with the highest permissions. For example, if a user belongs to both the Employees and Customers group, the user will be granted all of the permissions for the Employees group.</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffFirstLevel">Remove a Member </span>Clear the checkmark next to the appropriate user name to remove the select user(s).</p>
+                                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If a registered user is not a member of any group, the system provides that user with the same permissions as members of the Customers group.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Click <span class="Emphasis">Save</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to update the advanced group settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>Select the group to manage (see above).</p>
+                                <p>Information for the selected group should now appear in the Manage Groups page. You will see three tabs:&#160;Basic, Membership, and Advanced. </p>
+                            </li>
+                            <li>Select the <span class="Emphasis">Advanced</span> tab.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Host Site URL</span> box, type the URL of the site that hosts Pulse. </p>
+                                <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">It is strongly recommended that you do not change the default settings.</p>
+                            </li>
+                            <li>Click <span class="Emphasis">Save</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to delete a group</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Select the group to manage (see above). </li>
+                            <li>Place a check mark next to the group to delete. </li>
+                            <li>
+                                <p>Click the <img src="../../../Resources/Images/pulse_delete_btn2.png" class="ReduceButtonSize" /> button.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The default Administrators, Employees, or Customers groups cannot be deleted. Members of the Administrators group have permissions to delete both the groups they create, as well as groups created by other Administrators. </p>
+                            </li>
+                            <p>The Confirm Delete Group dialog opens.</p>
+                            <li>In the Confirm Delete Group dialog, click <span class="Emphasis">Delete Group</span> to remove it.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="AdminMenu" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseServerAdminGuide,PulseGuides.PulseUserGuide" />
+    </body>
+</html>

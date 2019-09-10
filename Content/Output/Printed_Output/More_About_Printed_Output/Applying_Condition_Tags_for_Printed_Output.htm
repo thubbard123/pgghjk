@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="1880" MadCap:lastWidth="884" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Apply condition tags to mark what shows up in print-based manuals and what doesn't. Learn about other ways to use condition tags in MadCap Flare." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,Products.FlareOnlineOnly">
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterConditionTags" />
+            <MadCap:keyword term="Conditions:printed output;Print-based output:condition tags" />
+            <MadCap:concept term="PrintedOutputConditionTags" MadCap:conditions="Products.Flare" />Applying Conditions for Print-based Output</h1>
+        <p>By applying condition tags to content, you can separate what is intended for printed output and what is not. That way, content intended for online output does not show up in your printed manuals, and content intended for print is left out of the online documentation.</p>
+        <p>Keep in mind that condition tags are not used only to separate online from print-based output. That's simply a very common use for condition tags. You could have 12 print-based targets and you might use condition tags in all of them so that they each have some unique content.</p>
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">Applying Condition Tags</h2>
+        <h3 MadCap:conditions="FlareGuides.FlareConditionTagsGuide">Applying Condition Tags</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="FlareOnlineOnly">
+                <MadCap:dropDownHotspot>applying condition tags</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you create your condition tags (or determine that you will use the tags provided by <MadCap:variable name="Other.Product" />, you need to apply them to the appropriate portions of content in your topics (e.g., text, blocks of content, tables). For example, the content to be included only in the printed output could be assigned a "PrintOnly" condition tag, the content to be included only in the online output could be assigned a "ScreenOnly" condition tag, and the content to be included in both outputs would be left alone. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareConditionTagsGuide">See <MadCap:xref href="../../../Condition_Tags/Applying_Condition_Tags_to_Content.htm">Applying Condition Tags to Content</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">For more information see the online Help or the <i>Condition Tags Guide</i>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <h2 MadCap:conditions="FlareGuides.FlarePrintedOutputGuide">
+            <MadCap:keyword term="Conditions:links" /><a name="UsingTagsRemoveLink"></a>Using Condition Tags to Unbind Hyperlinks</h2>
+        <h3 MadCap:conditions="FlareGuides.FlareConditionTagsGuide">
+            <MadCap:keyword term="Conditions:links" />Using Condition Tags to Unbind Hyperlinks</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="FlareOnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Conditions:links" /><a name="UsingTagsRemoveLink"></a>Using Condition Tags to Unbind Hyperlinks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to applying condition tags to various content in your project, you may want to use them to unbind hyperlinks from the printed output, displaying the text only.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you are creating both online and printed output from your project. You might have some content where you have inserted hyperlinks, and you might want this content to be included in both the online and printed output. However, let's say that a particular hyperlink connects to another topic that you are not including in the printed output. When you generate the online output, everything is fine. But when you generate the printed output, an error is displayed in the log because <MadCap:variable name="Other.Product" /> cannot find the topic referenced in the hyperlink. The way to avoid seeing the error (and to avoid users experiencing a broken link in the output) is to apply a condition tag (e.g., "OnlineOnly") to the hyperlink and select the option in the Condition Tags dialog to unbind the link. If you then exclude that condition tag from your print target, you will still see the hyperlink text in the printed output, but the link will be removed. Therefore, you will no longer receive an error and the link will not be broken.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareConditionTagsGuide,FlareGuides.FlarePrintedOutputGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>how to use a condition tag to unbind a hyperlink</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/Topics/OpenContentFileDocument.flsnp" />
+                            </li>
+                            <li>Make sure the span bars are visible at the top of the XML Editor. If they are not, click <img src="../../../Resources/Images/toggle_show_spans_btn.png" class="ReduceButtonSize" /> in the local toolbar at the bottom of the editor to show them<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Structure_Bars/About_Structure_Bars.htm">About Structure Bars</MadCap:xref>)</MadCap:conditionalText>.</li>
+                            <li>
+                                <p>Right-click on the span bar above the topic that corresponds with the link. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you first click on the link in the topic, the corresponding span bar is highlighted above. For hypertext links, the span bar is labeled "a." For cross-references, the span bar is labeled "MadCap:xref."</p>
+                            </li>
+                            <li>In the context menu, select <span class="Emphasis">Conditions</span>. The Condition Tags dialog opens, with the first condition tag set selected and the associated condition tags shown on the right. </li>
+                            <li>If you want to see condition tags for a different condition tag set, select it.</li>
+                            <li>Click the check box next to the tags where you want the hyperlink to remain. A check mark appears in the box.</li>
+                            <li>
+                                <p>In the <span class="Emphasis">Exclude Action</span> section, select <span class="Emphasis">Unbind</span>.</p>
+                                <p>In other words, you are telling <MadCap:variable name="Other.Product" /> this: Keep the hyperlink in the targets that are associated with the tags that I selected. For the targets not associated with those tags, get rid of the hyperlink, but do not remove the text. </p>
+                                <p>On the other hand, if you had selected the "Remove" option, you would have been telling <MadCap:variable name="Other.Product" /> this: Keep the hyperlink in the targets that are associated with the tags that I selected. For the targets not associated with those tags, remove both the hyperlink <span class="EmphasisItalic">and</span> the text.</p>
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you create and apply condition tags for printed output, you need to associate the condition tags with the print target that you plan to build. See <MadCap:xref href="Associating_Condition_Tags_with_Your_Print_Target.htm" target="" title="" alt="">Associating Condition Tags with Your Print Target</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputConditionTags" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

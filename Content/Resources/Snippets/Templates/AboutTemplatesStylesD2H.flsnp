@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="6209" MadCap:lastWidth="1318">
+    <head>
+        <link href="../../TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="Templates1.flsnp" />
+        <MadCap:snippetBlock src="Templates2.flsnp" />
+        <MadCap:snippetBlock src="../ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:dropDown MadCap:conditions="General.WebHelpOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>See the Movie</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>
+                    <object src="https://youtu.be/FlGSUe0PAes" style="width: 560px;height: 315px;">
+                    </object>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">Location of Template Files</h2>
+        <h3 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide">Location of Template Files</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Location of Template Files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Doc-To-Help's custom templates are stored in the same location as your regular Microsoft templates:</p>
+                <div class="IndentSmall">
+                    <p>C:\Users\&lt;user name&gt;\AppData\Roaming\Microsoft\Templates</p>
+                </div>
+                <p>The path may be slightly different depending on your operating system.</p>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you uninstall Doc-To-Help and reinstall a newer version, the templates will remain in that folder. However, if one of your customized templates uses the same name as one of Doc-To-Help’s default templates, and there is a newer version of that template in the installation, Doc-To-Help will save your version of the template to the following folder:</p>
+                    <div class="IndentSmall">
+                        <p>\\Users\&lt;user name&gt;\AppData\Roaming\Microsoft\Templates\Backup</p>
+                    </div>
+                    <p>The Application Data or App Data folder is a hidden folder. To show hidden folders, open the Folder Options dialog in your operating system (<span class="Emphasis">Control Panel&gt;Folder Options</span>). Click the <span class="Emphasis">View</span> tab, under <span class="Emphasis">Advanced Settings&gt;Files and folders&gt;Hidden files and folders</span>, select the <span class="Emphasis">Show hidden files and folders</span> radio button. Click <span class="Emphasis">OK</span>.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">Source and Target Templates</h2>
+        <h3 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide">Source and Target Templates</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Source and Target Templates</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In Doc-To-Help projects, there are two kinds of Word templates that you will use: source and target. </p>
+                <p>Why two kinds of templates? It has to do with function; each has a unique purpose and is associated with different parts of the user interface.</p>
+                <p>
+                    <img src="../../Images/D2H/source_target_templates.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Source Templates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A source template is used when you create a new Word source document<MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HDocumentsTemplatesContent"> (see <MadCap:xref href="../../../Source_Documents/Adding a Document to a Project.htm">Adding, Renaming, and Removing Documents</MadCap:xref>)</MadCap:conditionalText> and author in it<MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,General.OnlineLive"> (see <MadCap:xref href="../../../Source_Documents/About_Source_Documents.htm">About Source Documents</MadCap:xref>)</MadCap:conditionalText>. You should always create your documents with the source templates provided by Doc-To-Help and edit the source document as desired; this will guarantee full Doc-To-Help functionality.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>If you select <span class="Emphasis">D2H_NOMARGIN.dotx</span> as your source template, that is the template that will be used when you create a new source document in the project.</p>
+                        </div>
+                        <p>When you open a source document that is part of a Doc-To-Help project, you will notice that there are more options available in Word's Doc-To-Help ribbon. Many of these options are only available in source documents; you will not see them in final output or templates. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Interface/Ribbons/Ribbons_D2H.htm">Ribbons</MadCap:xref> and <MadCap:xref href="../../../Source_Documents/About_Source_Documents.htm">About Source Documents</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>
+                            <img src="../../Images/D2H/source_target_templates2.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                        <div class="warning">
+                            <p class="importantInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">If you want to create new styles, you can do so in both your source and target template. (By creating a new style in the source template, it becomes available in your source document so that you can apply it to content.) However, it is not necessary to edit the formatting in a source template;<span class="EmphasisItalic"> it is best to leave the formatting in a source template as it is</span>. The source template is for your eyes only, and it would be a wasted effort to make a lot of formatting changes in it since your end users will not see it. You should make formatting changes on styles in your target template. </p>
+                            <p>The exception to this rule is if you are creating a custom template, because any text you add in the source template is used to create new projects. You may want to add some formatting in the template to provide structure in new projects (e.g., adding headings). However, you should not extensively format the template, because formatting is added when you build your output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HMakingItLookGoodGuide"> See <MadCap:xref href="../../../Templates/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</MadCap:conditionalText></p>
+                        </div>
+                        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent" />
+                        <p class="Important" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Important: &lt;/span&gt;&lt;/b&gt;">You can create your own custom source templates. If you do this, it is recommended that you make copies of an existing Doc-To-Help template to edit rather than creating a template from scratch. This is because Doc-To-Help templates use several proprietary styles and bookmarks to ensure that your output builds correctly. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HMakingItLookGoodGuide">See <MadCap:xref href="../../../Templates/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Target Templates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A target template is used when you build the selected target.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/D2H/Building a Target.htm">Building Targets</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Targets Guide</span>.</MadCap:conditionalText></p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example</p>
+                            <p>If you select <span class="Emphasis">D2H_PRNOMARGIN.dotx</span> as your target template, that is the template that will be used when you generate output for the selected target.</p>
+                        </div>
+                        <p>Also, when you select a particular target in the Home ribbon (from the Select Target field), Doc-To-Help automatically changes the Target Template drop-down to select the default template associated with that target.</p>
+                        <p>When you open Word output generated from a target template, you will notice that there are fewer options available in Word's Doc-To-Help ribbon than if you had opened a source document. A couple of options (i.e., Generate PDF and Master Print) are only available in the ribbon when you view output because they are necessary for output but not for the source document. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Interface/Ribbons/Ribbons_D2H.htm">Ribbons</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>
+                            <img src="../../Images/D2H/source_target_templates3.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you open a source or target template in Word, you will not see the Doc-To-Help ribbon. This is because you do not need Doc-To-Help functionality to edit a template, so the Doc-To-Help Word add-in opens in No Features mode. However, you can still use Doc-To-Help's styles and variables to edit the template. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Interface/Ribbons/Ribbons_D2H.htm">Ribbons</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"><a name="PrintBasedTemplates"></a>Print-based Templates</h2>
+        <h3 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide"><a name="PrintBasedTemplates"></a>Print-based Templates</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="PrintBasedTemplates"></a>Print-based Templates</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following table lists the various Word template files that can be used in Doc-To-Help projects when creating print-based output.</p>
+                <p>Notice that each source template has a complementary target template that has a similar page layout. Therefore, if you select a particular source template, it is a best practice to also select its complementary target template.</p>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you add and select <span class="Emphasis">D2H_SIDE.dotx</span> as your source template.</p>
+                    <p>
+                        <img src="../../Images/D2H/source_target_templates4.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                    <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide" />
+                    <p>Therefore, according to the following table, it's best to add and select <span class="Emphasis">D2H_PRSIDE.dotx</span> as the target template.</p>
+                    <p>
+                        <img src="../../Images/D2H/source_target_templates5.png" alt="" title="" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+                <p>Print-based templates often contain front matter and back matter content (e.g., title page, table of contents, index). You can make changes to this content (e.g., title, cover image, byline, contents heading) in the Help Targets dialog.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Output/D2H/Editing_Target_Settings.htm">Editing Target Settings</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Targets Guide</span>.</MadCap:conditionalText></p>
+                <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <table style="mc-table-style: url('../../TableStyles/BasicAlternateRows.css');" class="TableStyle-BasicAlternateRows" cellspacing="0">
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <col class="TableStyle-BasicAlternateRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-BasicAlternateRows-Head-Header1">
+                            <th class="TableStyle-BasicAlternateRows-HeadE-Regular-Header1">
+                                <p class="TableTextHead">Source Templates</p>
+                            </th>
+                            <th class="TableStyle-BasicAlternateRows-HeadD-Regular-Header1">
+                                <p class="TableTextHead">Complementary Target Templates</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p><span class="SetOffFirstLevel">D2H_FANCY.DOTX </span>This source template has a page layout similar to D2H_NOMARGIN.DOTX, but it has a fancier styles that use color and a different font. When used with the complimentary target template, it will have a fancy design.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Fancy 8.5"&#160;x 11"&#160;Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRFANCY.DOTX </span>This is the target template that is intended to accompany the D2H_FANCY.DOTX source template. It includes a page layout similar to D2H_PRNOMARGIN.DOTX, but it has a fancier design. This includes color, an image placed behind the text on the title page, an image placed behind the text in the headers, and a decorative image in the footers.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p><span class="SetOffFirstLevel">D2H_FANCY_A4.DOTX </span>This is the source template for A4-sized paper.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Fancy A4 Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRFANCY_A4.DOTX </span>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p><span class="SetOffFirstLevel">D2H_NOMARGIN.DOTX </span>This is the Doc-To-Help default source template. It will be used unless you use your own or choose an alternate from this list.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Normal 8.5" x 11" Template (no left indent)</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNOMARGIN.DOTX </span>This is the target template used to format the printed manual target. It differs from D2H_PRNORM.DOTX in that it does not have the wide 2-inch left margin.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_NOMARGIN_A4.DOTX </span>This is the source template for A4-sized paper.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Normal A4 Template (no left indent)</span></p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNOMARGIN_A4.DOTX </span>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_NORM.DOTX </span>This is Doc-To-Help’s default source template for versions prior to Doc-To-Help 2007. This matches D2H_NOMARGIN.DOTX, but it has a 2-inch left margin.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Normal 8.5" x 11" Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNORM.DOTX </span>This is the target template used to format the printed manual target. It differs from D2H_PRNOMARGIN.DOTX in that it has a 2-inch left margin.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_NORM_A4.DOTX </span>This is the source template for A4-sized paper with a 2-inch left margin.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Normal A4 Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNORM_A4.DOTX </span>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_FANCY_POLICIES.DOTX </span>This source template is used to create policies &amp;&#160;procedures documents. It has sample text and headings that you can use as a starting point for these manuals. It is based on D2H_FANCY.DOTX and uses the same styles and page layout as in that template.</p>
+                                <p class="TableText">By default, the headers in this template are numbered.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Policies &amp; Procedures 8.5" x 11"&#160;Fancy Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRFANCY_POLICIES.DOTX </span>This is the target template that is intended to accompany the D2H_FANCY_POLICIES.DOTX source template. Like the PR_FANCY.DOTX&#160;target template, this template includes color, an image placed behind the text on the title page, an image placed behind the text in the headers, and a decorative image in the footers.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p><span class="SetOffFirstLevel">D2H_FANCY_POLICIES_A4.DOTX </span>This is the source template for A4-sized paper.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Policies &amp; Procedures A4&#160;Fancy Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRFANCY_POLICIES_A4.DOTX </span>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_NOMARGIN_POLICIES.DOTX </span>This source template is used to create policies &amp;&#160;procedures documents. It has sample text and headings that you can use as a starting point for these manuals. It is based on D2H_NOMARGIN.DOTX and uses the same styles and page layout as in that template.</p>
+                                <p class="TableText">By default, the headers in this template are numbered.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Policies &amp; Procedures 8.5" x 11"&#160;Plain Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNOMARGIN_POLICIES.DOTX </span>This is the target template used to format the printed manual target for a policies &amp;&#160;procedures manual.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p><span class="SetOffFirstLevel">D2H_NOMARGIN_POLICIES_A4.DOTX </span>This is the source template for A4-sized paper.</p>
+                                <p>In the New Project Wizard, this template is called <span class="Emphasis">Policies &amp; Procedures A4&#160;Plain Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRNOMARGIN_POLICIES_A4.DOTX </span>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_SIDE.DOTX </span>This is the source template for sidehead source documents.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Sidehead 8.5" x 11" Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRSIDE.DOTX </span>This is the target template used to format the standard sidehead printed manual.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_SIDE_A4.DOTX </span>This is the source template for sidehead source documents on A4-sized paper.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Sidehead A4 Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRSIDE_A4.DOTX </span>This is the target template used to format the standard sidehead printed manual (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-LightRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyE-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_SMAL.DOTX </span>This is the source template used to format small-sized manuals on 8.5" x 11" paper.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Small 8.5" x 11" Crop-Marked Template</span>.</p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyD-Regular-LightRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_PRSMAL.DOTX </span>This is the target template used to format the standard small printed manual.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-BasicAlternateRows-Body-DarkerRows">
+                            <td class="TableStyle-BasicAlternateRows-BodyB-Regular-DarkerRows">
+                                <p class="TableText"><span class="SetOffFirstLevel">D2H_SMAL_A4.DOTX </span>This is the source template used to format small-sized manuals on A4-sized paper.</p>
+                                <p class="TableText">In the New Project Wizard, this template is called <span class="Emphasis">Small A4 Crop-Marked Template</span>. </p>
+                            </td>
+                            <td class="TableStyle-BasicAlternateRows-BodyA-Regular-DarkerRows">
+                                <p><span class="SetOffFirstLevel">D2H_PRSMAL_A4.DOTX </span>This is the target template used to format the standard small printed manual (A4-sized paper).</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent,D2HGuides.D2HMakingItLookGoodGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"><a name="OnlineTemplate"></a>Online Templates</h2>
+        <h3 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide"><a name="OnlineTemplate"></a>Online Templates</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot><a name="OnlineTemplate"></a>Online Templates</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are generating online output from Doc-To-Help, you will normally use the primary online template: <span class="Emphasis">D2H_HTML.dotx</span>.</p>
+                <p>If you are using Microsoft Sandcastle, you should use the following template: <span class="Emphasis">D2H_sandcastle_src.dotx</span>.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Sandcastle/D2H/About D2H and Microsoft Sandcastle.htm">About Microsoft Sandcastle Integration with Doc-To-Help</MadCap:xref> and <MadCap:xref href="../../../Sandcastle/D2H/Creating a Project with Sandcastle.htm">Creating a Project with Sandcastle</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Sandcastle Guide</span>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">Selecting None as a Template</h2>
+        <h3 MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide">Selecting None as a Template</h3>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Selecting None as a Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When selecting source and target templates, you also have the option of selecting <span class="Emphasis">(none)</span>. If you do this, Doc-To-Help will use the same template that is used if you were to create a new blank document in Word.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Tasks Associated with Templates</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are the primary tasks you will perform with templates and styles in them:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Edit Templates </span>If necessary, you can edit templates to meet your needs. You can do this by creating new styles in both your source and target templates or by creating custom templates. Any text in the source template is used when you create new documents from the template, so creating custom templates is a good way to provide structure to new projects.</p>
+                        <p> However, if you need to make modifications to the formatting of <span class="EmphasisItalic">styles</span> (e.g., change the font color for a style from black to red), you should do so in your target template instead of the source template or document. Keep in mind that style changes in the source template affect only the look of the source documents, which are for your eyes only. Editing the target template changes the look of your final output.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HMakingItLookGoodGuide"> See <MadCap:xref href="../../../Templates/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"> See <MadCap:xref href="../../../z_DuplicateTopics/D2H/Editing a Template.htm">Editing a Template</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                    <li><span class="SetOffFirstLevel">Select Templates </span>Doc-To-Help automatically assigns the default source template (D2H_NOMARGIN.DOTX) and its complementary target template (D2H_PRNOMARGIN.DOTX) after you create a new project. However, you can select different templates if you want.<MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HMakingItLookGoodGuide"> See <MadCap:xref href="../../../Templates/D2H/Selecting_Templates_D2H.htm">Selecting Templates</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent"> See <MadCap:xref href="../../../z_DuplicateTopics/D2H/Selecting_Templates_D2H.htm">Selecting Templates</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Copying Custom Styles to a New Template </span>
+                        <MadCap:snippetText src="../D2H/CopyingCustomStyles.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive,D2HGuides.D2HMakingItLookGoodGuide">See <MadCap:xref href="../../../Templates/D2H/Copying_Styles_to_a_New_Template.htm">Copying Custom Styles to a New Template</MadCap:xref>. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent">See <MadCap:xref href="../../../Templates/D2H/Copying_Styles_to_a_New_Template.htm">Copying Custom Styles to a New Template</MadCap:xref>.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have existing Word documents that use custom styles, you can copy all of those styles from your templates over to Doc-To-Help’s custom templates using Word’s Organizer.&#160;And you can use the Project Styles dialog in Doc-To-Help to map your existing styles to Doc-To-Help styles. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Templates/D2H/Copying_Styles_to_a_New_Template.htm">Copying Custom Styles to a New Template</MadCap:xref> and <MadCap:xref href="../../../Styles/D2H/About Project_Styles_and_Topic_Types.htm">About Project Styles and Topic Types</MadCap:xref>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you have old projects from previous versions of <MadCap:variable name="Other.Product" />, you should upgrade those projects to the new version. Upgrading your old project is necessary if you want to use the new version of <MadCap:variable name="Other.Product" /> because doing so makes changes to removed target settings. Keep in mind that there is also a change in templates from previous versions, which used the C1H prefix instead of the current D2H prefix, and the DOT&#160;or DOTM&#160;extension instead of the DOTX&#160;extension.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Introduction_Topics/D2H/Steps/Upgrading_Old_Projects.htm">Upgrading Old [%=Other.Product%] Projects</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide,D2HGuides.D2HDocumentsTemplatesContent"> See the online Help or the <span class="EmphasisItalic">Upgrading Old Projects Guide</span>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

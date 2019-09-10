@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="1174" MadCap:lastWidth="1085">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol>
+            <li>
+                <p>If you are creating Top Navigation output, you should have a Topic Toolbar skin component in your project <MadCap:conditionalText MadCap:conditions="General.OnlineLive">(see <MadCap:xref href="../../../Skins/Adding_Skins_to_a_Project.htm">Adding Skins</MadCap:xref> and <MadCap:xref href="../../../Skins/HTML5_Skin_Styles/Topic_Toolbars_in_HTML5_Skins.htm">Topic Toolbars in HTML5 Skin Components</MadCap:xref>)</MadCap:conditionalText>. Open the skin component, and select the <span class="Emphasis">Setup</span> tab.</p>
+                <p>If instead you are creating responsive Tripane output, open the regular skin and select the <span class="Emphasis">Toolbar</span> tab. This lets you place the skin button in a web toolbar.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Skins/More_About_Skins/Specifying_Web_Toolbar_Settings_for_HTML5_Output.htm">Specifying Web Toolbar Settings—HTML5 Output</MadCap:xref>.</MadCap:conditionalText></p>
+            </li>
+            <li>
+                <p>If necessary, move the <span class="Emphasis">SelectSkin</span> button from the <span class="Emphasis">Available</span> section to the <span class="Emphasis">Selected</span> section.</p>
+                <p>
+                    <img src="../../Images/runtime_skins4.png" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Images/runtime_skins11.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+            </li>
+            <li>Open the HTML5 target.</li>
+            <li>In the Target Editor, select the <span class="Emphasis">Advanced</span> tab.</li>
+        </ol>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide" />
+        <ol MadCap:continue="true">
+            <li>
+                <p>Select <span class="Emphasis">Generate all skins</span>.</p>
+                <p>
+                    <img src="../../Images/runtime_skins12.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <li>
+                <MadCap:snippetText src="../StepsGeneral/SaveYourWork2.flsnp" />
+            </li>
+        </ol>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide" />
+        <ol MadCap:continue="true">
+            <li>
+                <p>Build the HTML5 target.</p>
+                <p><MadCap:variable name="Other.Product" /> copies all of the project skins of the same type as the selected target (i.e.,  Tripane output will copy all project Tripane skins, Top Navigation output will copy all Top Navigation skins) and places them in the output folder.</p>
+                <p>
+                    <img src="../../Images/runtime_skins6.png" class="MaxWidth100Percent" />
+                </p>
+                <p>In addition, the CSS styles of those skins will be copied and merged into  the stylesheet as its own CSS class.</p>
+            </li>
+        </ol>
+    </body>
+</html>

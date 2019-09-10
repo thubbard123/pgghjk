@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="9" MadCap:lastHeight="9403" MadCap:lastWidth="575" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.D2H" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HMakingItLookGood.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Themes;NetHelp" />Additional Theme Customizations</h1>
+        <p>NetHelp themes are designed to be fully customized. You can change virtually any aspect of a theme and add whatever effects and widgets you can think of. Many customizations can be done with the Theme Designer (see <c1hjump><MadCap:xref href="Using the NetHelp Theme Designer.htm">Using the NetHelp Theme Designer</MadCap:xref></c1hjump>), but others can be done by manually editing files within the theme.</p>
+        <p>Before starting a customization, create a new theme. See <c1hjump><MadCap:xref href="Customizing NetHelp Themes.htm">Customizing NetHelp Themes</MadCap:xref></c1hjump>.</p>
+        <p>Manual customization is restricted to the following files (Tabs and Accordion themes only):</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">layout.html </span>to change the theme layout.</li>
+            <li><span class="SetOffFirstLevel">user.css </span>to change styles in the theme.</li>
+            <li><span class="SetOffFirstLevel">user.js </span>to add new scripts to the theme.</li>
+            <li><span class="SetOffFirstLevel">settings*.xml </span>This file should only be modified in an advanced scenario where you add new aspects to the theme and you want those aspects to be customizable by other users in the Theme Designer.</li>
+        </ul>
+        <p>Other files in the theme should not be edited because Doc-To-Help will overwrite them during an upgrade. All changes should be restricted to the four files above.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Customized themes (which include the files above) are stored by default in the \\My Doc-To-Help Projects\Doc-To-Help\Themes\NetHelp 2.0\Themes\&lt;name of theme&gt; folder. Make sure to edit the files stored in the folder for your custom theme and not one of the default themes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Example</p>
+                    <p>Let's say you create a custom NetHelp theme named "Test." This is where it will be located. Manually edit the files in this folder.</p>
+                    <p>
+                        <img src="../Resources/Images/D2H/custom_theme.png" height="354" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples—Changing the Stylesheet</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are examples for changing the theme stylesheet.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Header Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Header Font</p>
+                            <p class="Bold">Change in user.css:</p>
+                            <p class="Code">#c1headerText {</p>
+                            <p class="CodeIndented">margin: 0;</p>
+                            <p class="CodeIndented"><s class="YellowBackground"><span class="YellowBackground">font-family: Georgia, Times, "Times New Roman";</span></s>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">font-family: Tahoma, Arial, sans-serif;</span>
+                            </p>
+                            <p class="CodeIndented">font-style: italic;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Header Alignment</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Header Alignment</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1headerPanel {</p>
+                            <p class="CodeIndented">width: 100%;</p>
+                            <p class="Code">}</p>
+                            <p class="Bold">Change in user.css:</p>
+                            <p class="Code">#c1headerText {</p>
+                            <p class="CodeIndented">margin: 0;</p>
+                            <p class="CodeIndented">font-family: Georgia, Times, "Times New Roman";</p>
+                            <p class="CodeIndented">font-style: italic;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">text-align: right;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">margin-right: 10px;</span>
+                            </p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Font of the Left Panel Tabs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Font of the Left Panel Tabs</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1sideTabsHeader li {</p>
+                            <p class="CodeIndented">font-weight: bold;</p>
+                            <p class="CodeIndented">font-style: italic;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Contents Panel Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Contents Panel Font</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1toc li {</p>
+                            <p class="CodeIndented">font-family: Monotype Corsiva;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Index Panel Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Index Panel Font</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1index li {</p>
+                            <p class="CodeIndented">font-family: Monotype Corsiva;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Search Panel Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Search Panel Font</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1search li {</p>
+                            <p class="CodeIndented">font-family: Monotype Corsiva;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Highlighting Color of Search Hits</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Highlighting Color of Search Hits</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">.search-highlight {</p>
+                            <p class="CodeIndented">background-color: Lime;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Breadcrumbs Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Breadcrumbs Font</p>
+                            <p class="Bold">Change in user.css:</p>
+                            <p class="Code">#c1breadcrumbs {</p>
+                            <p class="CodeIndented"><span class="YellowBackground">font-size: .9em;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">font-family: Courier New;</span>
+                            </p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Removing the Line Under the Breadcrumbs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Removing the Line Under the Breadcrumbs</p>
+                            <p class="Bold">Change in user.css:</p>
+                            <p class="Code">#c1breadcrumbs {</p>
+                            <p class="CodeIndented"><span class="YellowBackground">border: none;</span>
+                            </p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Changing the Link Font</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Changing the Link Font</p>
+                            <p class="Bold">Change in user.css:</p>
+                            <p class="Code">#c1topicPanel a[href],</p>
+                            <p class="Code">#c1topicPanel a[data-ref],</p>
+                            <p class="Code">.topic-popup a[href],</p>
+                            <p class="Code">.topic-popup a[data-ref],</p>
+                            <p class="Code">.aklinks-menu a {</p>
+                            <p class="CodeIndented">color: #1B75BB;</p>
+                            <p class="CodeIndented">text-decoration: none;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">font-style: italic;</span>
+                            </p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Examples—Manual Customization</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Following are examples of manual customization (Tabs and Accordion themes only)</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Showing Some Text to the Right of the Header</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Showing Some Text to the Right of the Header</p>
+                            <p class="Bold">Change in layout.html:</p>
+                            <p class="Code">&lt;table id="c1headerPanel" border="0" cellpadding="0" cellspacing="0"&gt;&lt;tr id="c1headerPanelRow0"&gt;</p>
+                            <p class="CodeIndented">&lt;td id="c1headerLogoCell"&gt;</p>
+                            <p class="CodeIndented2">&lt;img id="c1headerLogo" src="images/d2h_logo_placeholder.png" alt="Logo" class="logo" /&gt;</p>
+                            <p class="CodeIndented2">&lt;/td&gt;&lt;td id="c1headerTextCell"&gt;</p>
+                            <p class="CodeIndented3">&lt;h1 id="c1headerText"&gt;&lt;/h1&gt;</p>
+                            <p class="CodeIndented2"><span class="YellowBackground">&lt;/td&gt;&lt;td id="headerRightCell"&gt;</span>
+                            </p>
+                            <p class="CodeIndented3"><span class="YellowBackground">&lt;em&gt;Powered by Doc-To-Help&lt;/em&gt;</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">&lt;/td&gt;</span>
+                            </p>
+                            <p class="CodeIndented">&lt;/tr&gt;&lt;/table&gt;</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1headerPanel {</p>
+                            <p class="CodeIndented">width: 100%;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#headerRightCell {</p>
+                            <p class="CodeIndented">text-align: right;</p>
+                            <p class="CodeIndented">padding-right: 10px;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Adding a Footer</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Adding a Footer</p>
+                            <p class="Bold">Add a &lt;div&gt; element to layout.html:</p>
+                            <p class="Code">&lt;div id="c1page" class="abs fill-h fill-v crop"&gt;</p>
+                            <p class="CodeIndented">&lt;div id="c1header" class="abs fill-h crop ui-widget ui-state-hover"&gt;</p>
+                            <p class="CodeIndented">....</p>
+                            <p class="CodeIndented">&lt;/div&gt;</p>
+                            <p class="CodeIndented">&lt;div id="c1main" class="abs fill-h"&gt;</p>
+                            <p class="CodeIndented">....</p>
+                            <p class="CodeIndented">&lt;/div&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="mainFooter" class="crop ui-widget ui-state-hover"&gt;</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">Footer text</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;/div&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/div&gt;</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#mainFooter {</p>
+                            <p class="CodeIndented">position: absolute;</p>
+                            <p class="CodeIndented">bottom: 0;</p>
+                            <p class="CodeIndented">left: 0;</p>
+                            <p class="CodeIndented">right: 0;</p>
+                            <p class="CodeIndented">height: 30px;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#c1main {</p>
+                            <p class="CodeIndented">bottom: 32px;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Adding a Header and Footer to the Topic Panel</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Adding a Header and Footer to the Topic Panel</p>
+                            <p class="Bold">Add two &lt;div&gt; elements to HTML in layout.html:</p>
+                            <p class="Code">&lt;div id="c1topicPanelInner" class="abs fill-h fill-v scroll"&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="topicHeader" class="ui-widget-content"&gt;</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">Topic header text</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;/div&gt;</span>
+                            </p>
+                            <p class="CodeIndented">&lt;div id="c1topicBar"&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1breadcrumbs" style="display:none;"&gt;&lt;/div&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1collapsiblePanel" style="display:none;"&gt;</p>
+                            <p class="CodeIndented3">&lt;span id="c1expandAll"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;a class="label"&gt;Expand All&lt;/a&gt;&lt;/span&gt;</p>
+                            <p class="CodeIndented3">&lt;span id="c1collapseAll"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;a class="label"&gt;Collapse All&lt;/a&gt;&lt;/span&gt;</p>
+                            <p class="CodeIndented2">&lt;/div&gt;</p>
+                            <p class="CodeIndented">&lt;/div&gt;</p>
+                            <p class="CodeIndented">&lt;div id="c1topic"&gt;&lt;/div&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="topicFooter" class="ui-widget-content"&gt;</span>
+                            </p>
+                            <p class="CodeIndented2"><span class="YellowBackground">Topic footer text</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;/div&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/div&gt;</p>
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#topicHeader {</p>
+                            <p class="CodeIndented">margin: 5px 20px;</p>
+                            <p class="CodeIndented">border-width: 0 0 1px 0;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#topicFooter {</p>
+                            <p class="CodeIndented">margin: 25px 20px 5px 20px;</p>
+                            <p class="CodeIndented">border-width: 1px 0 0 0;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Adding Nonscrolling Header and Footer into the Topic Panel</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Adding Nonscrolling Header and Footer into the Topic Panel</p>
+                            <p class="Bold">Add two &lt;div&gt; elements to HTML in layout.html:</p>
+                            <p class="Code">&lt;div id="c1topicPanel" class="content-topic abs fill-h ui-corner-all topiconly-container" style="display:none;" data-c1-role="topic"&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="topicHeader" class="ui-widget-content"&gt;Header text&lt;/div&gt;</span>
+                            </p>
+                            <p class="CodeIndented">&lt;div id="c1topicPanelInner" class="abs fill-h fill-v scroll"&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1topicBar"&gt;</p>
+                            <p class="CodeIndented3">&lt;div id="c1breadcrumbs" style="display:none;"&gt;&lt;/div&gt;</p>
+                            <p class="CodeIndented3">&lt;div id="c1collapsiblePanel" style="display:none;"&gt;</p>
+                            <p class="CodeIndented4">&lt;button id="c1expandAll" class="flat ui-widget-content"&gt;</p>
+                            <p class="CodeIndented5">&lt;span id="c1expandAllIcon" class="icon"&gt;&lt;/span&gt;</p>
+                            <p class="CodeIndented5">&lt;span id="c1expandAllLabel" class="label"&gt;Expand All&lt;/span&gt;</p>
+                            <p class="CodeIndented4">&lt;/button&gt;</p>
+                            <p class="CodeIndented4">&lt;button id="c1collapseAll" class="flat ui-widget-content"&gt;</p>
+                            <p class="CodeIndented5">&lt;span id="c1collapseAllIcon" class="icon"&gt;&lt;/span&gt;</p>
+                            <p class="CodeIndented5">&lt;span id="c1collapseAllLabel" class="label"&gt;Collapse All&lt;/span&gt;</p>
+                            <p class="CodeIndented4">&lt;/button&gt;</p>
+                            <p class="CodeIndented3">&lt;/div&gt;</p>
+                            <p class="CodeIndented2">&lt;/div&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1topic"&gt;&lt;/div&gt;</p>
+                            <p class="CodeIndented">&lt;/div&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="topicFooter" class="ui-widget-content"&gt;Footer text&lt;/div&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/div&gt;</p>
+                            <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#topicHeader {</p>
+                            <p class="CodeIndented">position: absolute;</p>
+                            <p class="CodeIndented">top: 0;</p>
+                            <p class="CodeIndented">left: 0;</p>
+                            <p class="CodeIndented">right: 0;</p>
+                            <p class="CodeIndented">height: 2em;</p>
+                            <p class="CodeIndented">border-width: 0 0 1px 0;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#topicFooter {</p>
+                            <p class="CodeIndented">position: absolute;</p>
+                            <p class="CodeIndented">bottom: 0;</p>
+                            <p class="CodeIndented">left: 0;</p>
+                            <p class="CodeIndented">right: 0;</p>
+                            <p class="CodeIndented">height: 2em;</p>
+                            <p class="CodeIndented">border-width: 1px 0 0 0;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#c1topicPanelInner {</p>
+                            <p class="CodeIndented">top: 2.2em;</p>
+                            <p class="CodeIndented">bottom: 2.2em;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example—Extending the Toolbar to the Left to the Entire Page Width</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example—Extending the Toolbar to the Left to the Entire Page Width</p>
+                            <p class="Bold">Change in layout.html:</p>
+                            <ul>
+                                <li>
+                                    <p>Move the element <samp>&lt;div id="c1topBar"&gt;</samp> from inside the element <samp>&lt;div id="c1content"&gt;</samp> into the element <samp>&lt;div id="c1main"&gt;</samp>.</p>
+                                </li>
+                                <li>
+                                    <p>Create a new element <samp>&lt;div id="mainContent"&gt;</samp> inside the element <samp>&lt;div id="c1main"&gt;</samp>.</p>
+                                </li>
+                            </ul>
+                            <p class="Code">&lt;div id="c1main" class="abs fill-h"&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="c1topBar" class="ui-widget ui-widget-header ui-corner-all" style="text-align: right;"&gt;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">....</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;/div&gt;</span>
+                            </p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;div id="mainContent"&gt;</span>
+                            </p>
+                            <p class="CodeIndented2">&lt;div id="c1side" class="abs fill-v"&gt;&lt;div id="c1sideInner"&gt;</p>
+                            <p class="CodeIndented2">....</p>
+                            <p class="CodeIndented2">&lt;/div&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1splitter" class="c1-splitter abs fill-v"&gt;</p>
+                            <p class="CodeIndented2">....</p>
+                            <p class="CodeIndented2">&lt;/div&gt;</p>
+                            <p class="CodeIndented2">&lt;div id="c1content" class="content abs fill-v"&gt;&lt;div id="c1contentInner"&gt;</p>
+                            <p class="CodeIndented3"><s class="YellowBackground"><span class="YellowBackground">&lt;div id="c1topBar" class="ui-widget ui-widget-header ui-corner-all" style="text-align: right;"&gt;</span></s>
+                            </p>
+                            <p class="CodeIndented3"><s class="YellowBackground"><span class="YellowBackground">....</span></s>
+                            </p>
+                            <p class="CodeIndented3"><s class="YellowBackground"><span class="YellowBackground">&lt;/div&gt;</span></s>
+                            </p>
+                            <p class="CodeIndented2">....</p>
+                            <p class="CodeIndented2">&lt;/div&gt;</p>
+                            <p class="CodeIndented"><span class="YellowBackground">&lt;/div&gt;</span>
+                            </p>
+                            <p class="Code">&lt;/div&gt;</p>
+                            <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+                            <p class="Bold">Add to user.css:</p>
+                            <p class="Code">#c1topBar {</p>
+                            <p class="CodeIndented">margin: 0.2em;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#mainContent {</p>
+                            <p class="CodeIndented">position: absolute;</p>
+                            <p class="CodeIndented">top: 2.7em;</p>
+                            <p class="CodeIndented">bottom: 0;</p>
+                            <p class="CodeIndented">left: 0;</p>
+                            <p class="CodeIndented">right: 0;</p>
+                            <p class="Code">}</p>
+                            <p class="Code">#c1topicPanel {</p>
+                            <p class="CodeIndented">top: 0;</p>
+                            <p class="Code">}</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HMakingItLookGoodGuide" />
+    </body>
+</html>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1894" MadCap:lastWidth="1015" MadCap:conditions="Products.Analyzer">
+    <head><title></title>
+        <meta name="description" content="Viewing similar content segments to improve the way you single-source your project content." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="PhrasesSegments" />
+            <MadCap:concept term="FilterPhrasesSegments" />
+            <MadCap:keyword term="Segments;Similar segments" />Viewing Similar Segments</h1>
+        <p>You can <MadCap:snippetText src="../Resources/Snippets/FrequentSegments/SimilarSegmentsSummary.flsnp" /></p>
+        <p>The Similar Segments window pane displays similar segments in pairs. In other words, one row displays a segment of text in one column, with a similar segment in the next column. If you double-click the row, the file containing the first segment opens. In the row directly beneath the first, the same segments are shown, only in reverse order. If you double-click that row, the file containing the other segment opens.</p>
+        <p>
+            <img src="../Resources/Images/similar_segments_example.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:pageBreak MadCap:conditions="AnalyzerGuides.AnalyzerFrequentSegmentsGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to view similar segments</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a project. </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        </p>
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectViewRibbon.flsnp" />&#160;In the <span class="Emphasis">Dynamic Reports</span> section, select <span class="Emphasis">Suggestions&gt;Similar Segments</span>.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Analyzer Summary Window Pane </span>Double-click the row that mentions similar segments.</li>
+                        </ul>
+                        <p>The Similar Segments window pane opens.</p>
+                    </li>
+                    <li>In the local toolbar, click the <span class="Emphasis">Start Search</span> button. (Even if you do not want to change the search properties, you need to click this button to initiate a new search for similar segments.) The Similar Segments Search Properties dialog opens.</li>
+                    <li>You can modify any of the search property settings to limit or expand the list of similar segments shown in the list.<ul class="FirstLevel"><li><span class="SetOffFirstLevel">Min Word Count </span>Use this field to set the minimum number of words that must be contained in a segment in order for it to be displayed in the Similar Segments window pane. The highest number you can enter is 1000.</li><li><span class="SetOffFirstLevel">Max Word Count </span>Use this field to set the maximum number of words that can be contained in a segment in order for it to be displayed in the Similar Segments window pane. The highest number you can enter is 1000.</li><li><span class="SetOffFirstLevel">Max "Edit Distance" </span>Use this field to set the maximum amount of difference that can exist between segments in order for them to be displayed in the Similar Segments window. The value has to do with the number of characters that are different between the two segments. The smaller the number, the more alike the segments are. The larger the number, the greater the difference that exists between the segments. You can modify this value to limit or increase the number of segments displayed in the window. The highest number you can enter is 10000.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The window pane populates with similar segments found in the project. </li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="AnalyzerGuides.AnalyzerFrequentSegmentsGuide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DragDividerToSeeMore.flsnp" />
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel">Pair Index </span>Displays the number that identifies a pair of segments. Segments are always compared in pairs. The first row displays the "primary" segment (in the "Segment 1" column), and it displays a segment that is similar to it in the "Segment2" column. In the other row, the segments are reversed, with the second segment displayed in the "Segment1" column. </li>
+                            <li><span class="SetOffFirstLevel">Segment1 </span>Displays the "primary" segment in the row. If you double-click the row, the topic containing the segment in the "Segment1" column opens.</li>
+                            <li><span class="SetOffFirstLevel">Segment2 </span>Displays the secondary segment (i.e., the segment that is similar to the one displayed in the "Segment1" column).</li>
+                            <li><span class="SetOffFirstLevel">Edit Distance </span>Displays the numerical value that indicates how much difference exists between the segments (see the "Max Edit Distance" option mentioned above).</li>
+                            <li><span class="SetOffFirstLevel">File </span>Displays the file where the segment of text is found.</li>
+                            <li><span class="SetOffFirstLevel">Title </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/TitleOption.flsnp" />
+                            </li>
+                            <li><span class="SetOffFirstLevel">Folder </span>
+                                <MadCap:snippetText src="../Resources/Snippets/UIElements/FolderOption.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/PageNavButtons.flsnp" />
+                        </p>
+                        <p MadCap:conditions="General.OnlineLive">
+                            <img src="../Resources/Images/page_nav_buttons_example2.png" class="MaxWidth50Percent" />
+                        </p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteUseTopicsForSelectedWindow.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>You can also double-click a row to modify the text of any segment. If you select a row and select <span class="Emphasis">File&gt;Send to Flare</span>, the file opens in the application. You can then modify the text and/or create a snippet based on the segment.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PhrasesSegments" />
+        </p>
+    </body>
+</html>

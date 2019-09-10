@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo,Products.Align" MadCap:lastBlockDepth="12" MadCap:lastHeight="1107" MadCap:lastWidth="1097" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[Snippets.Snippet1] " class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Add a TM in MadCap Lingo. Learn the steps for creating a project TM and how to manage the TM." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Translation memory:adding;Databases:translation memory" />
+            <MadCap:concept term="TranslationMemory" />
+            <MadCap:concept term="FilterTM" />Adding a Translation Memory Database</h1>
+        <p>You can add as many translation memories (TMs) as you need. For example, you might use one TM for Client A, a different TM for Client B, and yet another for Client C. When you add a TM, it can be used in any of your <MadCap:variable name="Other.Product" /> projects. </p>
+        <p>Adding a TM is different from creating one. While creating a TM generates a new, empty database, adding a TM takes one that already exists on your computer, network, or server and adds it to the list of available TMs in Lingo. This is useful if you had removed a TM from the list of available databases, but you need to use it again.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to add a TM</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li MadCap:conditions="Products.Lingo">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the Translation Memory section, select <span class="Emphasis">Choose TM</span>.</p>
+                        <p>The Manage Translation Memory dialog opens.</p>
+                    </li>
+                    <li MadCap:conditions="Products.Align">
+                        <p>
+                            <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the Translation Memory section, select <span class="Emphasis">Choose TM</span>.</p>
+                        <p>The Manage Translation Memory dialog opens.</p>
+                    </li>
+                    <li>Click <img src="../Resources/Images/add_tm_small_btn.png" alt="" title="" class="ReduceButtonSize" />.</li>
+                    <li>
+                        <p>From the submenu, select one of the following:</p>
+                        <ul class="FirstLevel">
+                            <li MadCap:conditions=""><span class="SetOffFirstLevel">Local </span> Select this option if you want to select a TM that resides on your computer or network. Next to the Select existing Translation Memory field, click <b>Browse</b>. A dialog opens where you can locate the TM. Click <b>Open</b>.</li>
+                            <li MadCap:conditions="">
+                                <p><span class="SetOffFirstLevel">Server </span> Select this option if you want to use a TM that resides on your SQL Server. This opens a dialog with fields for the name, server, and security information related to the database.</p>
+                                <MadCap:snippetBlock src="../Resources/Snippets/Termbase/SQLCompatability.flsnp" MadCap:conditions="General.OnlineLive" />
+                            </li>
+                        </ul>
+                        <p>For a server TM, locate the TM you want to use on the server. Next to the <span class="Emphasis">Translation memory server</span> field, click <span class="Emphasis">Browse</span>. The Select Database dialog opens, displaying a list of usable servers after Lingo scans your network. On the right side of the dialog, available databases display. Select the database you want to use, then click <span class="Emphasis">OK</span>. The name of the database appears in the <span class="Emphasis">Translation memory name</span> field.  In the <span class="Emphasis">Authentication</span> section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary). If you elect to use <MadCap:keyword term="Windows Integrated Security" />Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided. If you want to create a new server TM instead of using an existing TM, click <span class="Emphasis">Create New Server TM</span>. See <MadCap:xref href="Creating_a_Translation_Memory_Database.htm">Creating a Translation Memory Database</MadCap:xref>.</p>
+                    </li>
+                    <li>After completing the fields in the appropriate dialog, click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.LingoOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After adding a TM, you can use it to translate your project. See <MadCap:xref href="Applying_TM_Suggestions_to_Segments.htm">Applying TM Suggestions to Segments</MadCap:xref></p>
+                <p>You can also import a Translation Memory eXchange file (TMX) into your TM. See <MadCap:xref href="Importing_TMX_Files.htm">Importing TMX Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+    </body>
+</html>

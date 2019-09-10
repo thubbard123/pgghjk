@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="994" MadCap:lastWidth="1198" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:concept term="DropDownText" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing;Drop-down text:inserting;Drop-down text:FrameMaker" />
+            <MadCap:concept term="FrameMaker" />
+            <MadCap:concept term="FilterDropDownText" />Creating Drop-Down Effects in FrameMaker Source Documents</h1>
+        <p>The following steps <MadCap:snippetText src="../../Resources/Snippets/NavLinks/DropDownTextFMSummary.flsnp" /></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a drop-down effect in a framemaker source document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps may vary in different versions of FrameMaker.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the FrameMaker document.</li>
+                    <li>In FrameMaker, create the two drop-down paragraph styles that are required for producing this effect. This is a one-time step in the document. Afterwards, you can simply select the newly created styles when specifying drop-down text. To create the two styles, do the following.<ol type="1" class="LowerAlpha"><li>In FrameMaker, select <span class="Emphasis">Format&gt;Paragraphs&gt;Designer</span>. The Paragraph Designer opens.</li><li>From the <span class="Emphasis">Commands</span> field, click the down arrow and select <span class="Emphasis">New Format</span>. The New Format dialog opens.</li><li>In the <span class="Emphasis">Tag</span> field, type <span class="TypedEntry">PullDownButton</span>.</li><li>Make sure that the <span class="Emphasis">Store in Catalog</span> check box has a check mark. </li><li>Make sure that the <span class="Emphasis">Apply to Selection</span> check box does NOT have a check mark in it (unless you want the style to immediately be applied to the paragraph where your cursor is placed).</li><li>Click <span class="Emphasis">Create</span>.</li><li>Follow these same steps to create a paragraph style called <span class="TypedEntry">PullDownBody</span>.</li><li>Close the Paragraph Designer.</li></ol></li>
+                    <li>In the FrameMaker document, place your cursor in the paragraph that you want to serve as the drop-down hotspot in the online output (i.e., when the user clicks that hotspot, the text below that is identified as the drop-down body will be shown or hidden).</li>
+                    <li>From the styles drop-down menu or from the paragraph catalog, select <span class="Emphasis">PullDownButton</span>.</li>
+                    <li>Highlight the paragraph(s) that you want to serve as the drop-down body in the online output.</li>
+                    <li>From the styles drop-down menu or from the paragraph catalog, select <span class="Emphasis">PullDownBody</span>.</li>
+                    <li>Save the FrameMaker document.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteFmSupports7AndNewer.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive,FlareGuides.FlareTransitionFromFMGuide">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you apply the drop-down styles to the FrameMaker document(s), you can import those documents into a Flare project. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareImportGuide">See <MadCap:xref href="../Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DropDownText;FrameMaker" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

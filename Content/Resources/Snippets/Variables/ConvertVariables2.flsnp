@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:lastBlockDepth="5" MadCap:lastHeight="1252" MadCap:lastWidth="1188">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>You might use this feature if a variable definition has different meanings in the translation language, depending on the context (e.g., "cash" versus "currency" in German). If you do not flatten variables, you can only translate the variable with a single term, and it will be used everywhere in the project that the variable is inserted. On the other hand, if you do flatten variables, you will then be able to translate each term separately when it appears in the Translation Editor.</p>
+        <MadCap:snippetBlock MadCap:conditions="LingoGuides.LingoWhatsNewGuide" src="../EmptyPageBreakAfter.flsnp" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">example</p>
+            <p>If you do not flatten variables, you will see something like this.</p>
+            <p>
+                <img src="../../Images/convert_variables1.png" class="MaxWidth90Percent" /> </p>
+            <MadCap:snippetBlock MadCap:conditions="LingoGuides.LingoWhatsNewGuide" src="../EmptyPageBreakAfter.flsnp" />
+            <p>If you do flatten variables, you will see something like this.</p>
+            <p>
+                <img src="../../Images/convert_variables2.png" class="MaxWidth75Percent" />
+            </p>
+        </div>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide,LingoGuides.LingoWhatsNewGuide" />
+        <p>If the Flare author created a target override for a variable (i.e., one Flare target will use a particular variable definition while another target will use a different one), you can create a target filter in addition to flattening variables. This allows you to filter the entire Lingo project to the target whose variable definition you want to use when flattening the variables. You can then translate the target-specific definition in the target file in Lingo.</p>
+        <p>You can flatten variables and apply target overrides to both new and existing projects.</p>
+        <p>To add them to a new project, apply the settings in the Start New Project Wizard.</p>
+        <p>
+            <img src="../../Images/convert_variables_new_project.png" class="MaxWidth100Percent" /> </p>
+        <MadCap:pageBreak MadCap:conditions="LingoGuides.LingoTranslationGuide" />
+        <p>To add them to an existing project, select <span class="Emphasis">File&gt;Project Properties</span>, then apply the new settings from the <span class="Emphasis">Flare Settings</span> tab.</p>
+        <p>
+            <img src="../../Images/convert_variables_update_project.png" class="MaxWidth100Percent" /> </p>
+    </body>
+</html>

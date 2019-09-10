@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="785" MadCap:lastWidth="1193" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Team authoring" />Deleting a File from the Team Project</h1>
+        <p>To delete an existing file from the team project, you must first check out the project. Once you have deleted the file from the team project, it will not be available for editing by any member of the team.</p>
+        <p>If the file you are planning to delete was never checked in to the repository, it was never part of the team project and can be deleted from your working copy without checking out the project file.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Delete a File from the Team Project </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Team Authoring window, select the project (D2H) file.</li>
+                    <li>
+                        <p>Click the <span class="Emphasis">Check Out</span> button. The Check Out dialog opens.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">For File and Web Repositories </span>After the file is checked out, click the <span class="Emphasis">Close</span> button.</li>
+                            <li><span class="SetOffFirstLevel">For TFS Repositories </span>You need to confirm the lock type before you check out the file. Choose from the following:<ul class="SecondLevel"><li><span class="SetOffFirstLevel"><span class="SetOffSecondLevel">Unchanged</span> <![CDATA[ ]]></span>Will keep the existing lock.</li><li><span class="SetOffFirstLevel"><span class="SetOffSecondLevel">Check Out</span> <![CDATA[ ]]></span>Will prevent other users from checking the file in or out.</li><li><span class="SetOffFirstLevel"><span class="SetOffSecondLevel">Check in</span> <![CDATA[ ]]></span>Will allow other users to check out the file but they will not be permitted to check it back in.</li></ul><p>To set the default lock type, use the Doc-To-Help Options dialog (<span class="Emphasis">File&gt;Tools&gt;Options&gt;Team</span>).</p></li>
+                        </ul>
+                    </li>
+                    <li>In the Documents window pane, select the file you would like to delete.</li>
+                    <li>Click the <span class="Emphasis">Remove Document</span> button.</li>
+                    <li>In the Team Authoring window, select the project (D2H) file.</li>
+                    <li>Click the <span class="Emphasis">Check In</span> button. The Check In dialog opens.</li>
+                    <li>Confirm the check in and click the <span class="Emphasis">Check In</span> or <span class="Emphasis">OK</span> button.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For other tasks, see <MadCap:xref href="Working in a Team Project.htm" >Working in a Team Project</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+    </body>
+</html>

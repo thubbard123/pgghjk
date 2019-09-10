@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="8" MadCap:lastHeight="1651" MadCap:lastWidth="1020" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects;Modular projects;Hub projects" />Creating a Hub Project</h1>
+        <p>In modular output, the hub (or master) project ties all of the child projects together. It should be a small project, but can contain information that does not change often (e.g., welcome message, company contact information) if you wish.</p>
+        <p>If you create a new child project in the future that is not part of your original hub project, simply add it to the hub project, and distribute both the new hub output and child output to the end user.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Before you create a hub project, be sure you have created and built the output for your child projects. You should also set up your file system for the entire modular system. See <MadCap:conditionalText MadCap:conditions="General.OnlineLive"><MadCap:xref href="../../../Output/D2H/Building a Target.htm">Building Targets</MadCap:xref> and </MadCap:conditionalText><MadCap:xref href="About Modular Projects.htm#FileOrganization">File Organization</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set Up a Hub Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Create your hub project. The project name should contain no spaces. </li>
+                    <li>Select the <span class="Emphasis">Project</span> ribbon.</li>
+                    <li>At the bottom of the <span class="Emphasis">Project</span> group, click <img src="../../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Project Settings dialog opens.</li>
+                    <li>In the <span class="Emphasis">Output options</span> section, select <span class="Emphasis">Is modular hub project</span>.</li>
+                    <li>Click <span class="Emphasis">OK</span> to close the Project Settings dialog.</li>
+                    <li>
+                        <p>Open the hub project document and create placeholder topics for each of the child files you wish to associate with the hub. There are several ways to structure this file, but you should choose only one. (The placeholder topics will later be mapped to the child topics. This is done by editing the topic properties.)</p>
+                        <p>Here are the document structure options:</p>
+                        <ul>
+                            <li>Heading 1 placeholder topics only</li>
+                            <li>One Heading 1, followed by placeholder topics (Heading 2 paragraphs)</li>
+                            <li>One Heading 1, followed by content in Body Text, then the placeholder topics (Heading 2 paragraphs)</li>
+                            <li>One Heading 1, followed by one Heading 2 and Body Text content, then the placeholder topics (Heading 2 paragraphs)</li>
+                        </ul>
+                    </li>
+                    <li>Select the <span class="Emphasis">Topics</span> ribbon. In the <span class="Emphasis">Related Topics</span> group, select <span class="Emphasis">Hide subtopic links</span> for each topic. This disables any automatic related links that may be displayed in the hub project.</li>
+                    <li>Build the output for the hub project.</li>
+                    <li>Add at least two index entries (one must be a keyword) to the project.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../../Indexes/D2H/Creating_Index_Keywords_in_a_Source_Document.htm">Inserting an Index Entry</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>In Doc-To-Help, select the <span class="Emphasis">Home</span> ribbon. At the bottom of the <span class="Emphasis">Target</span> group, click <img src="../../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                    <li>On the left, choose the target (can be HTML Help, NetHelp, or Eclipse Help). The hub project, and all of the child projects, must use the same target. </li>
+                    <li>If you are using HTML Help, in the <span class="Emphasis">Advanced</span> section, clear the <span class="Emphasis">Binary index</span> and <span class="Emphasis">Binary table of contents</span> check boxes.</li>
+                    <li>Build the output.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Map Placeholder Topics to Child Topics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open your hub project.</li>
+                    <li>In the Topics window, right-click a placeholder topic and choose <span class="Emphasis">Properties</span>. The Topic Properties dialog opens.</li>
+                    <li>
+                        <p>Edit the topic properties, depending on the target of the entire modular project.</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">For HTML Help targets,</span> you need to specify the <span class="Emphasis">Module file</span> (.chm) and <span class="Emphasis">Contents file</span> (.hhc) fields of the child project for the placeholder topic. (The .chm and .hhc files can be found in the child project’s HTMLHelp folder.) </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">For NetHelp and Eclipse Help targets,</span> you need to specify the <span class="Emphasis">Module file</span> field of the child project for the placeholder topic. The Settings.xml file is used and can be found in the child project’s&#160; NetHelp or EclipseHelp folder. </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Repeat these steps to map all additional placeholder topics.</li>
+                    <li>
+                        <p>Open the <span class="Emphasis">Home</span> ribbon and click the <span class="Emphasis">Rebuild</span> button. When it is finished, click <span class="Emphasis">View Target</span> to see the output.</p>
+                        <p>Doc-To-Help automatically creates the TOC structure based on the order of the placeholders in the hub source document. Each placeholder topic will be a book in the hub project TOC.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For HTML Help projects, you will need to place copies of the child project files (CHM for HTML Help) in the same folder as the hub project files to view the complete modular project. Whenever you do a full rebuild of the target (as opposed to simply building the target), those child files will be overwritten in the hub project folder and must be replaced.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For NetHelp projects, all projects in the modular output must be created with the same version of Doc-To-Help.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

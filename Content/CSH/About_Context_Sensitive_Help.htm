@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="etc.)?;Examples...;FAQs;this.&quot;;CSS;Stylesheets;F;alternative...;F3;F1;F2;C;F4;F6;F7;F8;F9;F10;F12;J;K;P;W;Y;Z;(.flmsp;Indexing.&quot;;editors...;ConditionTagSet;SearchFilterSet;Stylesheet;TableStyle;VariableSet;tools...;Unformat;etc.);p;topic.);.pdf,;.doc,;.txt),;TocEntry;ToolbarItem;Practice.&quot;;b;Page...;Editor...;panes...;Organizer...;Explorer...;tags.&quot;;hidden.&quot;;none.&quot;;effect.);a.,;b.,;c.,;d.,;A.,;B.,;C.,;D.,;i.,;ii.,;iii.,;iv.,;I.,;II.,;III.,;IV.,;information.);keyword.&quot;;table...;(.flprj);file.);xls;right.);this...;Editor.);s;style.);Software.&quot;;.htm,;.html,;.xhtm,;xhtm;.xml,;.xhtml,;skins.&quot;;movie...;dialog.&quot;;Dialog.&quot;;Main.&quot;;Dialogs.&quot;;MyWebProject.mcwebhelp,&quot;;MyHtmlHelp.chm&quot;).;Close.&quot;;markers.);example...;Tollfree;MadCap1;Wizard...;program.);target.&quot;;'Empty';(.css;MySubhead;MySubhead.Subheading&quot;;EmphasisBlue;EmphasisGreen;EmphasisGreen.EmphasisBlue&quot;;(.mpj,;.xpj,;.hhp;Reimport;project...;MyProject.flprj).;Report.&quot;;Reports.htm;Report.htm).;.jpg,;.gif,;.bmp).;(.flsnp;TimeSheets.&quot;;TimeSheets;dialog...;Pets.&quot;;dogs.&quot;;Dog.&quot;;etc.).;NewTopic;www.acme.com).;(.chm;temp.hhc,&quot;;MyHelp.chm#MyToc.hhc).;TestFolder;MyHelp.chm,;AnotherHelpSystem.chm).;Master.mchelp,;AnotherHelpSystem;AnotherHelpSystem.mchelp).;Help.);n;reimport;flsfs;mcvariable;VariableSet.VariableName;MyVariables.CompanyName;flbrs" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="3959" MadCap:lastWidth="1009" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Flare\FlareCSH.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Planning for Context Sensitive Help in MadCap&#160;Flare. Learn who is involved, how to plan the CSH, and what tasks need to be done." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="General.OnlineLive">
+            <MadCap:concept term="csh" />
+            <MadCap:keyword term="Context-sensitive Help" />
+            <MadCap:concept term="FilterCSH" />About Context-sensitive Help</h1>
+        <h1 MadCap:conditions="FlareGuides.FlareCSHGuide">
+            <MadCap:keyword term="Context-sensitive Help" />Introduction</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTMLHelp_HTML5_WebHelp_WHMobile_WHPlus.flsnp" />
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/CSH/CSHSummary.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">example</p>
+                    <p>Let's say you are creating an online Help system for your company's software application. This application contains a dialog called "Properties" that users open to specify settings for a particular element. In your Help project, you have written a topic to explain this Properties dialog. By creating CSH, users will be able to open that specific topic by clicking a Help button on the Properties dialog (or by pressing F1 when it is open).</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <h2 MadCap:conditions="General.Print">Who is Involved?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>who is involved?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Creating CSH is mostly a joint effort between <span class="EmphasisItalic">you</span> and the <span class="EmphasisItalic">software developer</span>. There are tasks that you must perform and tasks that the developer must perform in order for CSH to be implemented successfully. For this reason, it is essential that you communicate clearly with the developer when planning, creating, and implementing CSH. Other individuals (managers, other Help authors, etc.) may also be involved as well, particularly in the early planning stages.</p>
+                <p>However, there might be times when you function as both the author and the developer. For example, this might be the case if you are generating WebHelp output and simply want to create links on a website that open specific parts of your output. In that situation, you might first generate the online output with the CSH information. Then you might serve as the developer, modifying pages on a website to include CSH links pointing to your documentation.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 class="NoPageBreakBefore" MadCap:conditions="General.Print">
+            <MadCap:keyword term="Context-sensitive Help:planning" />Planning the CSH</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>
+                    <MadCap:keyword term="Context-sensitive Help:planning" />planning the csh</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For CSH to be successful, some initial planning is necessary. This includes making decisions such as:</p>
+                <ul>
+                    <li>Which type of output is being created?</li>
+                    <li>Which dialogs and windows will be included in the CSH (if connecting to an application)? </li>
+                    <li>Where will the links be located (if connecting to simple web links)?</li>
+                    <li>What will the Help buttons look like on the dialogs or windows? </li>
+                    <li>Will the CSH topics open in a different window than the other topics in the Help system (different size, position, and appearance)? </li>
+                    <li>Will the CSH&#160;topics use a different skin depending on the situation?</li>
+                </ul>
+                <p>Depending on how your company operates, questions such as these may be decided independently by you or the developer. Or they may be decided jointly by you, the software developer, and others (managers, other authors). </p>
+                <p>Another major decision that needs to be made at the beginning of the process is whether you or the developer will be responsible for providing the header file that is necessary for CSH. This decision is typically made jointly by you and the software developer. See <MadCap:xref href="About_Header_Files.htm">About Header Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareCSHGuide" />
+        <h2 MadCap:conditions="General.Print">What Needs to be Done and Who Does What?</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>what needs to be done and who does what?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Following are two sets of general guidelines containing the necessary steps for creating CSH. Each set of guidelines is slightly different, based on whether you or the software developer provides the header file.</p>
+                <h3 MadCap:conditions="General.Print">
+                    <MadCap:keyword term="Header files;Context-sensitive Help: Header files" />CSH Steps—If You Provide the Header File</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>csh steps—if you provide the header file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Add a header file to the project.</p>
+                                <p>See <MadCap:xref href="About_Header_Files.htm">About Header Files</MadCap:xref> and <MadCap:xref href="Adding_Header_Files.htm">Adding Header Files</MadCap:xref>.</p>
+                                <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteTopicAliasMarkersCreateCSHFiles.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Add an alias file to the project. The header file is the vital piece in this process. The alias file simply lets you edit the header file in a user-friendly interface.</p>
+                                <p>See <MadCap:xref href="About_Alias_Files.htm">About Alias Files</MadCap:xref> and <MadCap:xref href="Adding_Alias_Files.htm">Adding Alias Files</MadCap:xref>.</p>
+                                <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteTopicAliasMarkersCreateCSHFiles.flsnp" MadCap:conditions="General.OnlineLive" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Create and assign identifiers.</p>
+                                <p>See <MadCap:xref href="Creating_and_Assigning_Identifiers.htm">Creating and Assigning Identifiers</MadCap:xref>.</p>
+                                <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="ThirdLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <div class="note">
+                                            <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are importing FrameMaker documents, you can create topic alias markers in the source files as an alternative to creating identifiers in Flare. When you import the FrameMaker files, the identifiers will be created for you in Flare. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareCSHGuide"><MadCap:xref href="../Importing/More_About_FrameMaker/Creating_Topic_Alias_Markers_for_CSH.htm" MadCap:conditions="General.OnlineLive">Creating Topic Alias Markers in FrameMaker for CSH</MadCap:xref></MadCap:conditionalText></p>
+                                        </div>
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Associate the alias file with the target. </p>
+                                <p>This is necessary only if you have created more than one alias file. See <MadCap:xref href="Associating_an_Alias_File_with_a_Target.htm">Associating an Alias File with a Target</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Provide the developer with a copy of the header file.</p>
+                                <p>For example, you can do this by exporting the file to a shared drive. See <MadCap:xref href="Providing_a_Developer_with_a_Header_File.htm">Providing a Developer with a Header File</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>(Optional)&#160;Create a CSH-specific skin and assign it a skin ID, then provide the developer with the skin ID.</p>
+                                <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Skins/More_About_Skins/Enabling_Runtime_Skins.htm">Enabling Runtime Skins</MadCap:xref>. </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Generate output and provide the developer with a copy of the Help output files.</p>
+                                <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Output/About_Building_Output.htm">Building and Distributing Output</MadCap:xref>.</p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                        <ol MadCap:continue="true">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Software Developer </span>"Hooks" application interface or web links to online topics.</p>
+                                <p>The developer connects the dialogs, windows, or web links to the appropriate online topics using the information in the header file. The developer also connects the help to the CSH-specific skin, if applicable. See the following for more details about the information that you might need to provide for the developer (depending on the output type you generated).</p>
+                                <ul MadCap:conditions="General.OnlineLive,FlareGuides.FlareCSHGuide" class="FirstLevel">
+                                    <li>
+                                        <MadCap:xref href="DotNet_Help_CSH_Calls/CSH_Calls_DNH.htm">CSH Calls for DotNet Help</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="HTML_Help_CSH_Calls/CSH_Calls_HTML_Help.htm">CSH Calls for HTML Help</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="HTML5_CSH_Calls/CSH_Calls_HTML5.htm" target="" title="" alt="">CSH Calls for HTML5 Output</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="WebHelp_CSH_Calls/CSH_Calls_WH_WHP.htm">CSH Calls for WebHelp and WebHelp Plus</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="WebHelp_Mobile_CSH_Calls/CSH_Calls_WHM.htm">CSH Calls for WebHelp Mobile</MadCap:xref>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Software Developer </span>Creates a new build of the software application or publishes updated web links.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Install the new software build or view updated website. Test the CSH.</p>
+                                <p>
+                                    <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Testing_Context_Sensitive_Help.htm">Testing Context-sensitive Help</MadCap:xref>.</MadCap:conditionalText>
+                                    <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareCSHGuide"> See <MadCap:xref href="Testing_Context_Sensitive_Help.htm#TestingCSH" target="" title="" alt="">Testing Context-sensitive Help</MadCap:xref>.</MadCap:conditionalText>
+                                </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <h3 MadCap:conditions="General.Print">
+                    <MadCap:keyword term="Header files;Context-sensitive Help: Header files" />CSH Steps—If Developer Provides the Header File</h3>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>csh steps—if developer provides the header file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li><span class="SetOffFirstLevel">Software Developer </span>Creates the header file.</li>
+                            <li><span class="SetOffFirstLevel">Software Developer </span>Provides you with a copy of the header file.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Add the developer's header file to the project.</p>
+                                <p>See <MadCap:xref href="About_Header_Files.htm">About Header Files</MadCap:xref> and <MadCap:xref href="More_About_Header_Files/Importing_Header_Files.htm">Importing Header Files</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Add an alias file to the project. The header file is the vital piece in this process. The alias file simply lets you edit the header file in a user-friendly interface.</p>
+                                <p>See <MadCap:xref href="About_Alias_Files.htm">About Alias Files</MadCap:xref> and <MadCap:xref href="Adding_Alias_Files.htm">Adding Alias Files</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Assign identifiers for the header file.</p>
+                                <p>See <MadCap:xref href="Creating_and_Assigning_Identifiers.htm">Creating and Assigning Identifiers</MadCap:xref>.</p>
+                            </li>
+                        </ol>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareCSHGuide" />
+                        <ol MadCap:continue="true">
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Associate the alias file with the target. </p>
+                                <p>This is necessary only if you have created more than one alias file. See <MadCap:xref href="Associating_an_Alias_File_with_a_Target.htm">Associating an Alias File with a Target</MadCap:xref>.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>(Optional)&#160;Create a CSH-specific skin and assign it a skin ID, then provide the developer with the skin ID.</p>
+                                <p MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Skins/More_About_Skins/Enabling_Runtime_Skins.htm">Enabling Runtime Skins</MadCap:xref> <![CDATA[ ]]></p>
+                            </li>
+                            <li><span class="SetOffFirstLevel">You </span>Generate output and provide the developer with a copy of the Help output files. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../Output/About_Building_Output.htm">Building and Distributing Output</MadCap:xref>.</MadCap:conditionalText></li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Software Developer </span>"Hooks" application interface or web links to online topics.</p>
+                                <p>The developer connects the dialogs, windows, or web links to the appropriate online topics using the information in the header file. The developer connects the help to the CSH-specific skin, if applicable. See the following for more details about the information that you might need to provide for the developer (depending on the output type you generated).</p>
+                                <ul MadCap:conditions="General.OnlineLive,FlareGuides.FlareCSHGuide" class="FirstLevel">
+                                    <li>
+                                        <MadCap:xref href="DotNet_Help_CSH_Calls/CSH_Calls_DNH.htm">CSH Calls for DotNet Help</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="HTML_Help_CSH_Calls/CSH_Calls_HTML_Help.htm">CSH Calls for HTML Help</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="HTML5_CSH_Calls/CSH_Calls_HTML5.htm" target="" title="" alt="">CSH Calls for HTML5 Output</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="WebHelp_CSH_Calls/CSH_Calls_WH_WHP.htm">CSH Calls for WebHelp and WebHelp Plus</MadCap:xref>
+                                    </li>
+                                    <li>
+                                        <MadCap:xref href="WebHelp_Mobile_CSH_Calls/CSH_Calls_WHM.htm">CSH Calls for WebHelp Mobile</MadCap:xref>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Software Developer </span>Creates a new build of the software application or publishes updated web links.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">You </span>Install the new software build or view updated web links. Test the CSH.</p>
+                                <p>
+                                    <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Testing_Context_Sensitive_Help.htm">Testing Context-sensitive Help</MadCap:xref>.</MadCap:conditionalText>
+                                    <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareCSHGuide"> See <MadCap:xref href="Testing_Context_Sensitive_Help.htm#TestingCSH" target="" title="" alt="">Testing Context-sensitive Help</MadCap:xref>.</MadCap:conditionalText>
+                                </p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <MadCap:snippetBlock src="../Resources/Snippets/Notes/NoteCSHAliasHeaderIDOptional.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="csh" />
+        </p>
+    </body>
+</html>

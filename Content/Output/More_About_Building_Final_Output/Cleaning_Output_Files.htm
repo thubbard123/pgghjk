@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="10" MadCap:lastHeight="653" MadCap:lastWidth="686">
+    <head><title></title>
+        <meta name="description" content="You can remove all of the output files generated during the build process. Simply choose Build&gt;Clean Project in the MadCap Flare project." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:keyword term="Cleaning output files;Output:cleaning or deleting;Projects:cleaning output" />Cleaning (Deleting) Output Files</h1>
+        <p>
+            <MadCap:snippetText src="../../Resources/Snippets/Output/CleaningOutputFiles.flsnp" />You can do this in a couple of ways. </p>
+        <p>First, you can clean your entire project. This means that the Output subfolder (and all output files contained within it) are deleted. The next time you build a target, the Output subfolder will be re-created for you automatically.</p>
+        <p>Second, you can clean the output for just a single target. This means that the output files and subfolders for just that target are deleted. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to clean output files for a Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectProjectRibbon.flsnp" /> In the <span class="Emphasis">Build</span> section select <span class="Emphasis">Clean Project</span>. A message displays, asking you to confirm the deletion of the Output folder and its files.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to clean output files for a Single Target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open the Builds window pane (<span class="Emphasis">View&gt;Builds</span>). See <MadCap:xref href="../../Interface/UI_Elements/Builds_Window_Pane.htm">Builds Window Pane</MadCap:xref>.</li>
+                    <li>In the grid select the target you want to clean.</li>
+                    <li>In the local toolbar click <span class="Emphasis">Clean Target</span>. A message displays, asking you to confirm the deletion of the output files for the target.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="BuildOutput" />
+        </p>
+    </body>
+</html>

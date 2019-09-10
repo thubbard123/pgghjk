@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6761" MadCap:lastWidth="708" MadCap:conditions="Products.Analyzer,Products.Flare">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ul type="1" class="FirstLevel">
+            <li MadCap:conditions="Snippets.Snippet11"><span class="SetOffFirstLevel">Import linked HTML files </span>Select this option if you want to automatically bring in other files that are linked to those you selected on the previous page. For example, if you import Doc1.htm, which contains a hyperlink to Doc2.htm, this option imports Doc2.htm as well.</li>
+            <li MadCap:conditions="Snippets.Snippet11">
+                <p><span class="SetOffFirstLevel">Import resources </span>Select this option if you want to include any supporting resource files (e.g., stylesheets, images, multimedia files) in the import. Then select one of the following:</p>
+                <ul class="SecondLevel">
+                    <li><span class="SetOffSecondLevel">Keep existing structure</span> The supporting resources files will be copied into folders with the same names and hierarchy as those used in the source.</li>
+                    <li><span class="SetOffSecondLevel">To project resources folder</span> The supporting files will be placed in the Resources folder in your <MadCap:variable name="Other.Product" /> project.</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel">Add "Topic Continued" links when appropriate </span>Select this option to place a "Topic Continued" link at the bottom of pages when a long topic has been split into multiple ones.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel">Add "Topic Continued From" links when appropriate </span>Select this option to place a "Topic Continued From" link at the top of continued pages when a long topic has been split into multiple ones.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel"><MadCap:keyword term="Cross-references:formats" />Cross-Reference Format </span>Use this field to specify the format for the "Topic Continued" and "Topic Continued From" links. <MadCap:variable name="Other.Product" /> provides a cross-reference format for you—(continued in {title}) or (continued from {title}). With this cross-reference format, the link contains the words "continued in" or "continued from" within parentheses, followed by the text of the first paragraph in the connected topic. If you do not want the link to use that particular text, you have a couple of options. First, in <MadCap:variable name="Other.Product" />, you could manually enter a heading in each topic that is connected to another topic included in the split. That text will be used in the link instead (after you update the cross-references in <MadCap:variable name="Other.Product" />). Another option is to modify the format by clicking the <span class="Emphasis">Edit</span> button. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information see <MadCap:xref href="../../../Nav_Links/Cross_References/About_Cross_References.htm">About Cross-References</MadCap:xref>.</MadCap:conditionalText><ul type="1" class="SecondLevel"><li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffSecondLevel">Edit </span>If you want to modify the cross-reference format provided, click this button, which opens the Cross-Reference Format dialog. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Nav_Links/Cross_References/Editing_Cross_Reference_Style_Formats.htm" MadCap:conditions="General.OnlineLive">Editing Cross-Reference Style Formats</MadCap:xref>.</MadCap:conditionalText></li></ul></li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel">Split Long Topics </span>  Select this option if you have long sections in your source documents and want to make sure that they are converted to multiple topics (rather than one very long topic).<ul type="1" class="SecondLevel"><li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffSecondLevel">Threshold </span>Enter the maximum number of characters to be converted to a topic before a new topic is created. <MadCap:variable name="Other.Product" /> will break the topic at the nearest paragraph to the threshold value. That way, a new topic will not start in the middle of a sentence or word, but at the beginning of a paragraph.</li></ul></li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel">Avoid Creating 'Empty' Topics </span>Select this option if you want to ensure that new topics are not created when large sections are found in the <MadCap:conditionalText MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet3,Snippets.Snippet4">Word</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">FrameMaker</MadCap:conditionalText> documents without any content.<ul type="1" class="SecondLevel"><li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffSecondLevel">Threshold </span>Enter the maximum number of empty character spaces allowed in a topic. If this number is exceeded, <MadCap:variable name="Other.Product" /> will not create a new topic from that empty space.</li></ul></li>
+            <li MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Adobe FrameMaker:anchored frames;Adobe FrameMaker:images;Images:FrameMaker" />Anchored Frames With Images </span>You can use this area to specify how Flare should handle anchored frames that contain images as well as other content (e.g., text callouts).</p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">more information</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../FrameMaker/AnchoredFrameImagesList.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ul>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide,FlareGuides.FlareImportGuide,Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8,FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareTopicsGuide" />
+        <ul type="1" class="FirstLevel">
+            <li MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <p><span class="SetOffFirstLevel">Preserve Image Size </span>This option affects how the size of imported images are handled.</p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>more information</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ul type="1" class="SecondLevel">
+                            <li><span class="SetOffSecondLevel">Option Selected</span> The original image is imported. However, the &lt;img&gt; tag is modified in the imported file to closely reflect the height and width of the image in the FrameMaker document. This is done regardless of whether you are importing linked or embedded images from FrameMaker documents.</li>
+                            <li><span class="SetOffSecondLevel">Option NOT Selected</span> The &lt;img&gt; tag is not modified in the imported file. Instead, the image is referenced at 100% of its original value.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet9,Snippets.Snippet10"><span class="SetOffFirstLevel"><MadCap:keyword term="Importing:all content" />Import all Content files to one folder </span>Select this option if you want all of the imported DITA file content to be placed in just one folder in the Content Explorer.</li>
+        </ul>
+        <ul type="1" class="FirstLevel">
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Easy Sync;Auto-reimport;Importing:auto-reimporting" />Auto-reimport before 'Generate Output' </span>
+                    <MadCap:snippetText src="AutoReimportOption.flsnp" />
+                </p>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet9,Snippets.Snippet10"><span class="SetOffFirstLevel">Preserve ID attributes for elements </span>Every element inside a DITA file has an ID. This ID is not needed in <MadCap:variable name="Other.Product" />. However, if you intend to send your output back out to DITA at any point, you can select this option to make sure the ID is preserved.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel">Approximate Filename Length </span>Enter the maximum number of characters to use for naming new topic files that are automatically created after splitting a long topic. The default is 24.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2"><span class="SetOffFirstLevel">Convert all tables to "Auto-Fit to Contents" </span>Select this option if you want to automatically set tables to "Auto-Fit to Contents" when they are imported into <MadCap:variable name="Other.Product" />. This simply ensures that column widths are not specified on the imported tables.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2">
+                <p><span class="SetOffFirstLevel">Set first row of each table as a header row </span>Select this option if you want Flare to convert the first row of every table into a header row. This makes styling tables more efficient. If you do not select this option, only tables that already have header rows in the Word document will become header rows in Flare. Tables without header rows will be imported just as they are.</p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareProjectCreationGuide,FlareGuides.FlareImportGuide,FlareGuides.FlareTopicsGuide" />
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../Word/SetFirstTableRowHeaderExample.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2"><span class="SetOffFirstLevel"><MadCap:keyword term="Microsoft Word:page layouts;Microsoft Word:section breaks;Microsoft Word:importing;Importing:Word documents;Importing:page layouts;Page layouts:Word;Page layouts:importing" />Create a Page Layout for each section header/footer </span>Select this option if you want Flare to create new page layouts when you import Word documents that have section breaks, along with headers or footers. For each new section in the Word document that has a different header or footer than the previous section, Flare creates a unique page layout. After the import is finished, you can open and edit the page layouts if necessary<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref> and <MadCap:xref href="../../../Page_Layouts/Editing_Pages_and_Frames.htm">Editing Pages and Frames</MadCap:xref>)</MadCap:conditionalText>. You can then create chapter breaks for your print-based output and assign these page layouts to the different topics in the output<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter and Page Layout Breaks</MadCap:xref>)</MadCap:conditionalText>.</li>
+            <li MadCap:conditions="Snippets.Snippet1,Snippets.Snippet2"><span class="SetOffFirstLevel"><MadCap:keyword term="Topics:title;Title:topic" />Automatically set topic title </span> If this option is enabled, the properties setting for the topic title automatically uses the first heading in the topic. Therefore, if you change the heading text in the future, the topic title changes automatically as well. If this option is disabled, the properties setting for the topic title explicitly uses the first topic heading text found during the import, and it remains so unless you manually change it later. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Topics/More_About_Topics/Changing_Topic_Titles.htm">Changing Topic Titles</MadCap:xref>.</MadCap:conditionalText></li>
+            <li MadCap:conditions="General.Future"><span class="SetOffFirstLevel"><MadCap:annotation MadCap:createDate="2016-08-02T15:54:15.1414324-07:00" MadCap:creator="KSchneider" MadCap:initials="KS" MadCap:comment="Equations—Convert MathML from Word\r\n\r\nWhen this is added, add snippet 1 (others?) to this bullet---verify in topic" MadCap:editor="KSchneider" MadCap:editDate="2016-08-02T15:55:25.4483598-07:00">Convert </MadCap:annotation>equations to MathML </span>
+                <MadCap:snippetText src="ConvertMathMLToWord.flsnp" />
+            </li>
+            <li MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <p>
+                    <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing;Adobe FrameMaker:passthrough markers;Passthrough markers" /><span class="SetOffFirstLevel">Enable 'Passthrough' Markers </span>Select this check box to include a check mark if you have created passthrough markers in your FrameMaker source documents.<MadCap:snippetText src="FrameMakerPassthroughMarkerSummary.flsnp" /> <MadCap:snippetText src="FrameMakerPassthroughMarkerSummary2.flsnp" /> <MadCap:snippetText src="FrameMakerPassthroughMarkerSummary3.flsnp" /></p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTransitionFromFMGuide,FlareGuides.FlareTopicsGuide,FlareGuides.FlareImportGuide,FlareGuides.FlareProjectCreationGuide" />
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="Products.FlareOnlineOnly">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="FrameMakerPassthroughMarkerExample.flsnp" MadCap:conditions="Products.Flare" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ul>
+        <ul type="1" class="FirstLevel">
+            <li MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8">
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Passthrough markers" />Passthrough Marker Format </span>After you enable passthrough markers, click the down arrow in this field and select the type of format that you want to use for the import. </p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead class="OnlineOnly">
+                        <MadCap:dropDownHotspot>more information</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="FrameMakerPassthroughMarkerFormatOptions.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li MadCap:conditions="Snippets.Snippet5,Snippets.Snippet6,Snippets.Snippet7,Snippets.Snippet8"><span class="SetOffFirstLevel">Convert equations to MathML </span>Select this option to convert MathFullForm equations (the FrameMaker-specific format) to MathML (the web standard and Flare format). If you disable this option, equations from FrameMaker are converted to images.</li>
+            <li MadCap:conditions="General.OnlineLive,FlareGuides.FlareGettingStartedGuide,Snippets.Snippet5,Snippets.Snippet6"><span class="SetOffFirstLevel"><MadCap:keyword term="Table styles" />Convert Table Styles </span> If you have tables in your FrameMaker documents that you have formatted in a certain way, select this check box if you want to create matching table styles as a result of the import. In the <MadCap:variable name="Other.Product" /> project, the new table styles will be named after the format named applied to the table in FrameMaker (e.g., "Format_A.css," "Format_B.css," and so on). You can rename these table stylesheets in <MadCap:variable name="Other.Product" /> after the import finishes. Even if you do not use this mapping feature, the table formatting still comes across when you import the documents. The only difference is that table stylesheets make it easier to maintain the formatting of your tables within <MadCap:variable name="Other.Product" />. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Styles/About_Styles_and_Style_Sheets.htm">About Styles and Stylesheets</MadCap:xref>.</MadCap:conditionalText></li>
+            <li MadCap:conditions="Snippets.Snippet5">
+                <p><span class="SetOffFirstLevel">Reimport Table Styles </span>This option displays only if you are working in the Import Editor, rather than the wizard. This option is useful after you have already imported FrameMaker documents and converted the formatting in your tables into at least one table stylesheet in <MadCap:variable name="Other.Product" />. You can use this option to determine whether tables should be imported again as table styles when you re-import. You might want to keep this check box selected for some re-imports, but other times you might want to deselect it when re-importing.</p>
+                <MadCap:dropDown class="ThirdLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let’s say you want the formatted tables in your FrameMaker documents to be converted to table styles when you perform the initial import into a <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> project. Therefore, in the import wizard, you turn on the "Convert Table Styles" option. As a result, let's say that <MadCap:variable name="Other.Product">[%=Other.Product%]</MadCap:variable> creates a new table style and calls it "FormatA.css."</p>
+                            <p>After the initial import, you realize you want the tables to look a little different. Therefore, in the <MadCap:variable name="Other.Product" /> project, you modify the properties of the FormatA.css table stylesheet.</p>
+                            <p> Awhile later, let's say you want to re-import the FrameMaker documents. The problem is that you've already changed the table stylesheet in <MadCap:variable name="Other.Product" />. You probably want to keep the tweaked table style so that you don’t have to modify it again after the import. </p>
+                            <p>This is where the new "re-import" option comes into play. It determines whether or not a second new table stylesheet will be created, based on the old look from the tables in the FrameMaker documents.</p>
+                            <p>Here's one scenario. Let's say that before you re-imported the FrameMaker documents, you selected the "Reimport Table Styles" option in the Frame Import Editor. And during the import when you were prompted, you selected not to overwrite the existing FormatA.css table stylesheet. In that case, <MadCap:variable name="Other.Product" /> keeps your tweaked stylesheet in the project, but it also creates another table stylesheet called "FormatA1.css" that has the old look and feel. All of the re-imported content now links to the FormatA1.css stylesheet instead of FormatA.css.</p>
+                            <p> Here's a different scenario. Let's say that you perform the same steps described above, except this time you deselected the "Reimport Table Styles" option in the Frame Import Editor. In that case, the second FormatA1.css file is not created. The imported content is linked to the FormatA.css table stylesheet that you previously modified, since it already exists in the project.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="2340" MadCap:lastWidth="1121">
+    <body>
+        <p>
+            <MadCap:snippetText src="../../AutoNumbering/AutonumbersPrintIndexes1.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAutoNumbersGuide" />
+        <ul>
+            <li>
+                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Variables:system variables" /><span class="Emphasis"><MadCap:keyword term="Volumes:auto-numbers;Autonumbers:volumes;Chapters:auto-numbers;Autonumbers:chapters" /></span><MadCap:keyword term="Page layouts:Chapter Number variables;Page layouts:Volume Number variables;Variables:chapter number variables;Variables:volume number variables" /><MadCap:keyword term="Headers:Chapter Number variables;Footers:chapter number variables;Variables:heading variables;Page layouts:Chapter Number variables;Headers:Volume Number variables;Footers:Volume Number variables;Page layouts:Volume Number variables;Chapters:variables;Volumes:variables" /><MadCap:keyword term="Frames:page layouts;Page layouts:frames;Page numbers" />Insert Variables into Page Layout Frames (Not Supported in Print Index)</span> With this method, you can insert the appropriate autonumber variables in your page layouts. This is the fastest and easiest solution if you are not also creating a print index. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Chapter_Section_and_Volume_Number_Variables_into_Frames.htm">Inserting Chapter, Section, and Volume Number Variables into Frames</MadCap:xref> and <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Page_Numbers_into_Frames.htm">Inserting Page Numbers into Frames</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" /></p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">example</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you have a project with chapter autonumbers in topics that you have designed to be the start of new chapters in your output. In order to include those same chapter numbers in the page numbering, you opened your page layout, selected the footer frame, and pressed F2 to edit it. Inside that footer frame, you inserted a chapter number variable, typed a period, and then inserted a page number placeholder. Like this:</p>
+                            <p>
+                                <img src="../../../Images/chapter_page_auto_number_example.png" class="ReduceButtonSize" />
+                            </p>
+                            <p>When you view the generated output, you see the page numbers displayed correctly as 1.1, 1.2, 1.3, 2.1, 2.2, and so on. Unfortunately, if you also include a print index in the output, the page numbers are displayed as 1, 2, 3, 4, etc. In other words, the page numbers are shown in the index, but the chapter autonumbers are not.</p>
+                        </div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li><span class="SetOffFirstLevel">Set Autonumbers on Outline TOC Entries (Supported in Print Index)</span> If you intend to include a print index in the output, you should not insert the autonumber variable in the page layout. Instead, you should set the chapter or volume autonumbers in the TOC Editor, at the same locations where you create chapter breaks for the output. The following steps show you how to do this.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareAutoNumbersGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to set autonumbers on outline toc entries and include them in a print index</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Set up your topics to use chapter or volume autonumbers where appropriate (e.g., on the heading for a topic that will come first in a new chapter). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../../Autonumbers/About_Autonumbers.htm">About Autonumbers</MadCap:xref>, <MadCap:xref href="../../../../Autonumbers/Creating_Auto_Number_Formats_for_Styles.htm">Creating Autonumber Formats for Styles</MadCap:xref>, and <MadCap:xref href="../../../../Autonumbers/Creating_Auto_Number_Formats_for_Paragraphs.htm">Creating Autonumber Formats for Paragraphs</MadCap:xref>.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../../Autonumbers/About_Autonumbers.htm">About Autonumbers</MadCap:xref> and <MadCap:xref href="../../../../Autonumbers/Creating_Auto_Number_Formats_for_Styles.htm">Creating Autonumber Formats for Styles</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" /></li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAnalyzerGuide" />
+                    <li>
+                        <p>Create your page layout(s). In the appropriate header or footer frames, insert a page number placeholder. <span class="EmphasisItalic">Do not</span> insert a chapter or volume number variable. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref> and <MadCap:xref href="../../../../Page_Layouts/Frames/Inserting_Page_Numbers_into_Frames.htm">Inserting Page Numbers into Frames</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" /></p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say you have a project with chapter autonumbers in topics that you have designed to be the start of new chapters in your output. You want to include those same chapter numbers in the page numbering at the bottom of pages, and you also want them to display in a print index that you are creating. </p>
+                            <p>First, open your page layout, select the footer frame, and press F2 to edit it. Inside that footer frame, you insert a page number placeholder. When finished, it should look something like this:</p>
+                            <p>
+                                <img src="../../../Images/page_number_example.png" class="ReduceButtonSize" />
+                            </p>
+                        </div>
+                    </li>
+                    <li>Open your outline TOC and double-click an entry where you want to start a new chapter or volume.  The Properties dialog opens.</li>
+                    <li>Select the <span class="Emphasis">Printed Output</span> tab.</li>
+                    <li>In the Break Type field select <span class="Emphasis">Chapter Break</span> and complete the other fields in that area as necessary. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</MadCap:conditionalText><MadCap:snippetText src="../../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareIndexingGuide" /></li>
+                    <li>In the <span class="Emphasis">Page Number</span> area, click in the <span class="Emphasis">Format</span> field and select <span class="Emphasis">text</span>.</li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAnalyzerGuide,FlareGuides.FlarePrintedOutputGuide" />
+                    <li>
+                        <p>In the <span class="Emphasis">Reset to</span> field, enter the appropriate commands. For a chapter autonumber, you can use {chapnum}. For a volume autonumber, you can use {volnum}. You can also insert any text, such as a period or dash, as well as a counter command, such as {n}.</p>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlareIndexingGuide" />
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>Let's say that you want to display the chapter autonumber, followed by a period and then the page number. In that case, you would type the following:</p>
+                            <p><span class="TypedEntry">{chapnum}.{n}</span>
+                            </p>
+                            <p>
+                                <img src="../../../Images/chapter_page_auto_number_example2.png" class="MaxWidth90Percent" />
+                            </p>
+                            <p>The {chapnum} command indicates a chapter autonumber. If you had wanted to show the volume autonumber instead, you would have used the {volnum} command.</p>
+                            <p>Because you want a period to separate the chapter autonumber and the incremented page number, you simply type it. Then you add the page number command, which is {n}.</p>
+                        </div>
+                    </li>
+                    <li>Select the <span class="Emphasis">Autonumbers</span> tab.</li>
+                    <li>For the first chapter or volume in your output, you will most likely want to select the appropriate <span class="Emphasis">Reset to</span> option and enter <span class="Emphasis">1</span>. For subsequent chapters or volumes, you will probably want to select <span class="Emphasis">Increment number</span>. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../../Autonumbers/Specifying_Auto_Numbering_Flow_for_Output.htm">Specifying Autonumbering Flow for Output</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>Repeat steps 3-10 for each TOC entry that is designed to start a new chapter or volume. By holding down the CTRL or SHIFT&#160;key, you can select multiple entries in the outline TOC and provide the settings for all of them at one time.</li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Create a topic to hold your print index and add it to your outline TOC . <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareIndexingGuide">See <MadCap:xref href="../../../../Output/Printed_Output/More_About_Printed_Output/Creating_an_Index_Manually_for_Print.htm">Creating a Topic for a Print Index</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li>
+                        <p>Build and view the output. <MadCap:conditionalText MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,General.OnlineLive">See <MadCap:xref href="../../../../Output/About_Building_Output.htm">Building Output</MadCap:xref> and <MadCap:xref href="../../../../Output/More_About_Building_Final_Output/Viewing_Output.htm">Viewing Output</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>When you view the generated output, you will see the page numbers displayed correctly (e.g., 1.1, 1.2, 1.3, 2.1, 2.2, and so on). In the generated print index, you will see the same autonumber/page number combination—as long as your topics include index keywords<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareIndexingGuide"> (see <MadCap:xref href="../../../../Indexes/Inserting_Index_Keywords.htm">Inserting Index Keywords</MadCap:xref>)</MadCap:conditionalText>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Only chapter and volume autonumbers are supported. Section autonumbers are not supported in this feature.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputIndexes;Autonumbers" />
+        </p>
+    </body>
+</html>

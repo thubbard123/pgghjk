@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="4" MadCap:lastHeight="495" MadCap:lastWidth="1295">
+    <head>
+    </head>
+    <body>
+        <p class="Subheading">Index entries are not appearing in generated HTML Help output</p>
+        <p class="Subheading">Cause</p>
+        <p>This issue can occur when  the binary index option  in the skin settings  is not selected. Microsoft HTML Help requires that all indexes in merged help systems have a binary index so that they can be properly merged.</p>
+        <p class="Subheading">Solution</p>
+        <p>Perform the following steps for each project to ensure that the index is binary.</p>
+        <ol>
+            <li>In Project Organizer, navigate to the <span class="Emphasis">Skins</span> folder.</li>
+            <li>Open your skin and select the <span class="Emphasis">HTML Help Setup</span> tab.</li>
+            <li>Select <span class="Emphasis">Index Options</span>.</li>
+            <li>Check the <span class="Emphasis">Binary</span> check box.</li>
+            <li>
+                <p>Generate your merged HTML Help. </p>
+                <p>
+                    <img src="../../Images/TS_html_help_ex1.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Images/TS_html_help_ex2.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+        </ol>
+        <p>For more information on this process, see <MadCap:xref href="../../../Skins/More_About_Skins/Creating_a_Binary_Index.htm">Creating a Binary Index</MadCap:xref>.</p>
+    </body>
+</html>

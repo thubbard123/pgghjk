@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="3497" MadCap:lastWidth="630">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>
+            <MadCap:snippetText src="../WHP/SearchNonXHTMLFiles.flsnp" /> The files do not even need to be linked to any of the content in your Flare project. This feature is available if you publish <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> output to a web server running <MadCap:keyword term="Microsoft Internet Information Services." />Microsoft Internet Information Services (IIS).</p>
+        <MadCap:snippetBlock src="../WHP/ScenarioLink.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to include non-xhtml files in search</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li><span class="SetOffFirstLevel">Enable <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> Server-based</MadCap:conditionalText> Output </span>
+                        <MadCap:snippetText src="../WHP/EnablingWHPOutput.flsnp" />
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet9"> See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText>
+                        <MadCap:conditionalText MadCap:conditions="FlareGuides.FlareWebHelpGuide,Snippets.Snippet9"> See <MadCap:xref href="../../../Output/WebHelp_Plus_Output/Enabling_WebHelp_Plus_Output.htm#EnablingWHP" target="" title="" alt="">Enabling WebHelp Plus Output</MadCap:xref>.</MadCap:conditionalText>
+                        <MadCap:conditionalText MadCap:conditions="General.OnlineLive,Snippets.Snippet10"> See <MadCap:xref href="../../../Output/HTML5_Output/Enabling_HTML5_Server_Output.htm" target="" title="" alt="">Enabling HTML5 Server-based Output</MadCap:xref>.</MadCap:conditionalText>&#160;<MadCap:snippetText src="../ForMoreInfo/SeeOnlineHelp.flsnp" MadCap:conditions="FlareGuides.FlareSearchGuide" /></li>
+                    <li><span class="SetOffFirstLevel">Generate <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> Server-based</MadCap:conditionalText> Output </span>In Flare, generate a target using the <MadCap:variable name="Outputs.WebHelp Plus" /> output format. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/About_Building_Output.htm">About Building and Publishing Output</MadCap:xref>.</MadCap:conditionalText></li>
+                    <li><span class="SetOffFirstLevel">Publish <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /></MadCap:conditionalText> Output to Server </span> Publish the <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> output to your Microsoft IIS Web server. </li>
+                    <li><span class="SetOffFirstLevel">(Optional) Add <MadCap:keyword term="IFilter;WebHelp Plus:IFilter;Search:IFilter" />IFilter </span>File types that are automatically supported for <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> search include: Microsoft Office files, HTML files, and TXT files. For other non-supported file types, such as PDF documents, you can download and install a simple IFilter in order to include that file type in the search. To find and download the IFilter for the file type that you want to include, go to a website that provides these (such as <a href="http://www.ifilter.org/" target="_blank">http://www.ifilter.org</a>) and follow the instructions for downloading IFilters. You must install the appropriate IFilters on the server where the output files will be published, and if you are testing <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> output on your computer, you need to install the IFilter(s) locally as well.</li>
+                </ol>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWebHelpGuide,FlareGuides.FlareHTML5Guide" />
+                <ol MadCap:continue="true">
+                    <li>
+                        <p><span class="SetOffFirstLevel">Copy and Paste Non-XHTML Files to Appropriate Folder </span>Copy all of the non-XHTML files that you want to be included in the search. Then paste them in the appropriate subfolder of the <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> output that you published. By default, <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> will find any files located in the project output folder, as well as the "AutoSearch" subfolder. Therefore, you can paste your extra non-XHTML files in the AutoSearch subfolder.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>http://www.xyzincorporated.com/help systems/MyTargetName/AutoSearch. </p>
+                            <p>However, if there are any other folders where you want either XHTML or non-XHTML files to be stored (instead of, or in addition to, AutoSearch), you can perform some extra steps to allow this.</p>
+                            <p>Let's say you also want searches in the Help system to provide results from files in the folder C:\ExternalSearchFolder. Here are the steps to allow this:</p>
+                            <ol>
+                                <li>This folder must be accessible by IIS. Therefore, create a virtual directory in IIS for it. Following are steps for doing this.<ol class="LowerAlpha"><li>Open the Control Panel. On many computers, you can do this by clicking <span class="Emphasis">Start&gt;Control Panel</span>.</li><li> Double-click <span class="Emphasis">Administrative Tools</span>. The Administrative Tools dialog opens.</li><li>Double-click <span class="Emphasis">Internet Information Services</span>. The Internet Information Services (IIS) Manager dialog opens.</li><li>Expand the <span class="Emphasis">Web Sites</span> folder.</li><li>Right-click on the <span class="Emphasis">Default Web Site</span> folder and select <span class="Emphasis">New&gt;Virtual Directory</span>.</li><li>Click <span class="Emphasis">Next</span>.</li><li>In the <span class="Emphasis">Alias</span> field, enter a name for the subfolder (e.g., SearchFolder).</li><li>Click <span class="Emphasis">Next</span>.</li><li>Click the <span class="Emphasis">Browse</span> button, then find and select the folder holding the content that you want to publish (e.g., C:\ExternalSearchFolder).</li><li>Click <span class="Emphasis">Next</span>.</li><li>Make sure a check mark is next to <span class="Emphasis">Read</span>.</li><li>Click <span class="Emphasis">Next</span>.</li><li>Click <span class="Emphasis">Finish</span>.</li></ol><p><img src="../../Images/WH_plus_nonxhtml_example.png" class="MaxWidth90Percent" /></p></li>
+                                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareHTML5Guide" />
+                                <li>Create an XML file called "SearchFolders.xml" and place it in the "AutoSearch" folder in the <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /> server-based</MadCap:conditionalText> output directory. The contents of this file will specify any virtual directories that <MadCap:variable name="Outputs.WebHelp Plus" MadCap:conditions="Snippets.Snippet9" /><MadCap:conditionalText MadCap:conditions="Snippets.Snippet10"><MadCap:variable name="Outputs.HTML5" /></MadCap:conditionalText> should search. Following is what you would type in the SearchFolders.xml file. This example specifies just one folder, but you can add references to as many virtual directories as you need.</li>
+                            </ol>
+                            <p class="CodeIndented2">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+                            <p class="CodeIndented3">&lt;SearchFolders&gt;</p>
+                            <p class="CodeIndented4">&lt;Url&gt;/SearchFolder&lt;/Url&gt;</p>
+                            <p class="CodeIndented3">&lt;/SearchFolders&gt;</p>
+                            <p>When users perform a search in your output, those non-XHTML files will also be scanned and become accessible to the users.</p>
+                        </div>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareSearchGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are testing <MadCap:variable name="Outputs.WebHelp Plus" /> output on your local machine, you need to view the output at least one time. <MadCap:snippetText src="../WHP/MCPreviewFolder.flsnp" MadCap:conditions="Snippets.Snippet9" /><MadCap:snippetText src="../HTML5/MCPreviewFolderHTML5.flsnp" MadCap:conditions="Snippets.Snippet10" /> When testing this search feature on your computer, you need to place the non-XHTML files in the AutoSearch subfolder at this location (as opposed to the output folder that was generated where your Flare project is located). </p>
+                <MadCap:snippetBlock src="../Notes/NoteWaitWHPIndexing.flsnp" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:snippetText src="../WHP/WHPNotVista.flsnp" />
+                </p>
+                <MadCap:snippetBlock src="../Search/TopNavSkinNoMergingNote.flsnp" MadCap:conditions="General.OnlineLive" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

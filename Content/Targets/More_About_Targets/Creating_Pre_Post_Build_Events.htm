@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2687" MadCap:lastWidth="1189" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTargets.flmsp');" MadCap:conditions="Products.Flare">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Targets:build events" />
+            <MadCap:concept term="FilterTargets" />Creating Pre- and Post-Build Events</h1>
+        <p>In the Target Editor, you can add pre- or post-build events to your target. This lets you run command line events before or after the target is generated.</p>
+        <p>
+            <img src="../../Resources/Images/pre_post_build_processes1.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Targets/PrePostBuildEvents1.flsnp" />
+        <p>
+            <img src="../../Resources/Images/pre_post_build_processes2.png" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Create Pre-Build Events</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a target.</li>
+                    <li>On the <span class="Emphasis">Build Events</span> tab of the Target Editor, enter a command in the <span class="Emphasis">Pre-Build Event Command</span> text box. Be sure to use a separate line for each command.</li>
+                    <li>
+                        <p>(Optional) If you need to insert a build variable into your command, click <span class="Emphasis">Insert Build Variable</span>. The Pre-Build Event Command dialog opens. Do the following:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>In the text box, place your cursor where you want to insert a variable.</li>
+                            <li>From the <span class="Emphasis">Variable</span> column, select the variable you want to add to the command. The variable's value is shown in the <span class="Emphasis">Value</span> column.</li>
+                            <li>Click <span class="Emphasis">Insert</span> to add the variable to the command.</li>
+                            <li>When you are finished adding variables to the command, click <span class="Emphasis">OK</span>.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Create Post-Build Events</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open a target.</li>
+                    <li>On the <span class="Emphasis">Build Events</span> tab of the Target Editor, enter a command in the <span class="Emphasis">Post-Build Event Command</span> text box. Be sure to use a separate line for each command.</li>
+                    <li>
+                        <p>(Optional) If you need to insert a build variable into your command, click <span class="Emphasis">Insert Build Variable</span>. The Post-Build Event Command dialog opens. Do the following:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>In the text box, place your cursor where you want to insert a variable.</li>
+                            <li>From the <span class="Emphasis">Variable</span> column, select the variable you want to add to the command. The variable's value is shown in the <span class="Emphasis">Value</span> column.</li>
+                            <li>Click <span class="Emphasis">Insert</span> to add the variable to the command.</li>
+                            <li>When you are finished adding variables to the command, click <span class="Emphasis">OK</span>.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Examples</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Targets/PrePostBuildEventsExample1.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/Targets/PrePostBuildEventsExample2.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If command line errors occur, they will be included in the build log. However, they will not prevent the project from compiling.</p>
+                    <p>
+                        <img src="../../Resources/Images/pre_post_build_processes3.png" class="MaxWidth100Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="DevelopOutputs" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+    </body>
+</html>

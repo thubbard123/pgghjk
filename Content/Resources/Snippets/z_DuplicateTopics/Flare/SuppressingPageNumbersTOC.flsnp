@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1832" MadCap:lastWidth="1282">
+    <body>
+        <MadCap:snippetBlock src="../../Banners/Flare/Feature_Supported/PDF_XHTML_XPS.flsnp" />
+        <p>
+            <MadCap:snippetText src="../../PrintOutput/SuppressPageNumbers.flsnp" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to suppress page numbers in a print toc</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/FilterGeneratedContentStylesStep.flsnp" />
+                    </li>
+                    <li>On the left side of the editor, expand the <span class="Emphasis">p</span> style. Classes of the style are shown below it.</li>
+                    <li>
+                        <p>Find and select the TOC class that you want to customize (e.g., <span class="Emphasis">TOC1</span>, <span class="Emphasis">TOC2</span>, <span class="Emphasis">TOC3</span>). TOC1 is used for the first-level heading in the print TOC, TOC2 is used for the second-level heading, and so on.</p>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <p>
+                            <img src="../../../Images/suppress_page_numbers_toc1.png" class="MaxWidth100Percent" />
+                        </p>
+                    </li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                    <li>
+                        <MadCap:snippetText src="../../Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand <span class="Emphasis">PrinterPageNumbers</span> to see the properties within it. <MadCap:snippetText src="../../Styles/PropertyNameLeftValueRight.flsnp" /></li>
+                    <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide" />
+                    <li>
+                        <p>Click in the column to the right of the <span class="Emphasis">mc-pagenum-display</span> property and select one of the following from the drop-down.</p>
+                        <p>
+                            <img src="../../../Images/suppress_page_numbers_toc2.png" class="MaxWidth100Percent" />
+                        </p>
+                        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">(default)/all </span>This displays the page number, just as it has for previous versions of Flare.</p>
+                                <p>
+                                    <img src="../../../Images/suppress_page_numbers_toc3.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">leaf </span>This does not display the page number if lower-level entries exist. However, it does display the page number if no lower-level entries exist.</p>
+                                <p>
+                                    <img src="../../../Images/suppress_page_numbers_toc4.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ul>
+                        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTablesOfContentsGuide" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">none </span>This does not display the page number for that heading level.</p>
+                                <p>
+                                    <img src="../../../Images/suppress_page_numbers_toc5.png" class="MaxWidth100Percent" />
+                                </p>
+                                <p>
+                                    <img src="../../../Images/suppress_page_numbers_toc6.png" class="MaxWidth100Percent" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../StepsGeneral/SaveYourWork.flsnp">
+                        </MadCap:snippetText>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Products.FlareOnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputTOCs;PrintedOutputStyles" />
+        </p>
+        <MadCap:snippetBlock src="../../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide">
+        </MadCap:snippetBlock>
+    </body>
+</html>

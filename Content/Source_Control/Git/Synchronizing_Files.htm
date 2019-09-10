@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare,Products.Analyzer,Products.Lingo" MadCap:lastBlockDepth="14" MadCap:lastHeight="1489" MadCap:lastWidth="1371" class="" MadCap:conditionTagExpression="include[Snippets.Snippet2] exclude[Snippets.Snippet1] " style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareSourceControlGit.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Source Control Git" />
+            <MadCap:concept term="FilterSourceControlGit" />
+            <MadCap:keyword term="Source control:remote repository;Source control:synchronize;Synchronize" />Synchronizing Source Control Files<MadCap:conditionalText MadCap:conditions="General.OnlineLive">—Git</MadCap:conditionalText></h1>
+        <p>Synchronizing files performs a <MadCap:keyword term="Source control:pull;Pull" />pull to update the local database with files from the remote repository, and then <MadCap:keyword term="Source control:push;Push" />pushes any local commits to the remote repository. Changes made during a synchronize affect your current branch. You will see the Resolve Version Conflict dialog if conflicts exist when you synchronize your files.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ForMoreInfo/SeeFlareOnlineHelp.flsnp" MadCap:conditions="Products.Analyzer" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+        <MadCap:dropDown MadCap:conditions="Products.Flare,Products.Lingo">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to Synchronize Files</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul class="FirstLevel">
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../../Resources/Snippets/UIElements/SelectSourceControlRibbon.flsnp" /> In the <span class="Emphasis">Project</span> section select <span class="Emphasis">Synchronize</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Flare"><span class="SetOffFirstLevel">Right-Click </span>If you have the Content Explorer, Project Organizer, Pending Changes window pane, or File List open, right-click any file and select <span class="Emphasis">Source Control&gt;Project&gt;Synchronize</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Right-Click </span>In the File List, right-click any file and select <span class="Emphasis">Source Control&gt;Project&gt;Synchronize</span>.</li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Local Toolbar </span>In the local toolbar of the File List, click <img src="../../Resources/Images/source_control_btn.png" />, then select <span class="Emphasis">Project&gt;Synchronize</span>. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>(Optional) If you did not commit your files before starting the synchronize, a dialog asks if you want to commit your files. Click <span class="Emphasis">Yes</span> to continue. See <MadCap:xref href="Committing_Source_Control_Files_git.htm">Committing Source Control Files</MadCap:xref>.</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Note</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You must commit <span class="EmphasisItalic">all</span> modified files to proceed with the synchronize.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p>The Select Remote for Synchronize dialog opens. From the <span class="Emphasis">Remote</span> drop-down, select the repository you want to synchronize with.</p>
+                    </li>
+                    <li>
+                        <p>(Optional) To add or remove a remote repository, click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. The Remote Repositories dialog opens.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareSourceControlGuideGit,LingoGuides.LingoSourceControlGuideGit" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Add a Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/AddRemoteRepository.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Remove a Remote Repository</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <MadCap:snippetBlock src="../../Resources/Snippets/SourceControl/RemoveRemoteRespository.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>In the Select Remote for Synchronize dialog, click <span class="Emphasis">OK</span>. <MadCap:snippetText src="../../Resources/Snippets/SourceControl/SourceControlLoginDialogSimple.flsnp" /></li>
+                    <li>
+                        <p>If a remote file is different from the version in your local database, the Resolve Conflicts dialog opens. If you want to accept all of the differences between the remote and local files, thus merging them, click <span class="Emphasis">Auto Merge All</span>. If you want to review the differences in the files side by side and resolve each conflict, click <span class="Emphasis">Resolve</span>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlareSourceControlGuideGit">For more information about merging files and resolving conflicts, see <MadCap:xref href="More_About_Source_Control/Merging_Source_Control_Files_git.htm">Merging Source Control Files</MadCap:xref>.</MadCap:conditionalText></p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Source Control Git" />
+        </p>
+    </body>
+</html>

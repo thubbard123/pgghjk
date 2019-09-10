@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="9" MadCap:lastHeight="2981" MadCap:lastWidth="1120" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HManagingYourProject.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Team authoring" />Setting Up a Team Project</h1>
+        <p>Each team authoring project must have an administrator (usually the documentation manager or lead writer). The administrator makes the project available to other team members by uploading it to the central repository and configuring the settings. For more information on team authoring, including requirements, see <MadCap:xref href="About Team Authoring.htm">About Team Authoring</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Repository Types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Doc-To-Help supports three repository types:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Microsoft® Team Foundation Server </span>Files are stored in your company's Team Foundation Server repository. </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">File System Repository </span>Files are stored at a location accessible via your company's file system, usually on a computer belonging to your organization's network. The only prerequisite for sharing a project in a file system repository is that all team members must have access to the shared folder on the network.</p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Web Repository </span>Files are stored at a location on the Internet, on a web server. They can be accessed from anywhere on the Internet, including from behind a firewall. Sharing a project with a web repository allows you to share your team project with anyone connected to the web. Doc-To-Help uses Web-based Distributed Authoring and Versioning (WebDAV) technology. WebDAV is a protocol that allows connectivity between a remote server and a local machine for easy file sharing among multiple users. WebDAV is supported by all major web servers, but it is not necessarily enabled for any server location. It requires certain privileges, so you may need to consult your system administrator to determine the locations you can use for a web repository.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Set Up IIS for WebDAV Using IIS&#160;Manager 6.5 or HIgher</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open IIS Manager and in the pane on the left, select <span class="Emphasis">Default Web Site</span> (or the website you want to set up).</li>
+                    <li>
+                        <p>In the center pane double-click on <span class="Emphasis">WebDAV Authoring Rules</span>.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Actions</span> pane (on the right) click on <span class="Emphasis">WebDAV Settings</span>.</p>
+                    </li>
+                    <li>
+                        <p>In the <span class="Emphasis">Property</span> grid find the <span class="Emphasis">Property Store</span> and click the <span class="Emphasis">Browse</span> button to change this setting.</p>
+                    </li>
+                    <li>
+                        <p>If there are no items in the Namespace Collection Editor (in the <span class="Emphasis">Members</span> pane), click the <span class="Emphasis">Add</span> button, which will add a default namespace for storing WebDAV properties.</p>
+                    </li>
+                    <li>
+                        <p>Return to the WebDAV Settings.  In the <span class="Emphasis">Property Behavior</span> section, set <span class="Emphasis">Allow Property Queries with Infinite Depth</span> to <span class="Emphasis">True</span>.</p>
+                    </li>
+                </ol>
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If WebDAV&#160;is not already enabled on your computer, you will need to enable it before you can set up IIS. To do this, do the following:</p>
+                    <ol>
+                        <li>Open the Windows Control Panel.</li>
+                        <li>Click <span class="Emphasis">Programs and Features&gt;Turn Windows features on or off</span>. The Windows Features dialog opens.</li>
+                        <li>Expand <span class="Emphasis">Internet Information Services&gt;World Wide Web Services&gt;Common HTTP Features</span>.</li>
+                        <li>Select <span class="Emphasis">WebDAV&#160;Publishing</span>.</li>
+                        <li>
+                            <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                        </li>
+                    </ol>
+                </div>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are using an older version of IIS, check with your network administrator to verify the settings needed to use WebDAV.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Share a Project for Team Authoring</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The project administrator must share the project to the repository. This copy will become the master project (or the team project). After the team project is created, team members can connect to and download the team project to create their own working copies.</p>
+                <ol>
+                    <li>Create a new Doc-To-Help project or open an existing one.</li>
+                    <li>Select the <span class="Emphasis">File&gt;Team Authoring&gt;Share Project for Team Authoring</span>. The Share Project Wizard opens.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>Under <span class="Emphasis">Select Repository Type</span>, choose one of the following:</p>
+                        <ul>
+                            <li>
+                                <p class="SetOffFirstLevel">Team Foundation Server</p>
+                            </li>
+                            <li>
+                                <p class="SetOffFirstLevel">File System Repository </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Web Repository </span>If you are need to set up an IIS virtual directory, see <MadCap:xref href="#HowToSetUpVirtualDirectory">How to Set Up a Virtual Directory on Your Windows Machine</MadCap:xref>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Click <span class="Emphasis">Next</span>.</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">For Team Foundation Server </span>Enter the Team Project Location URL. You can click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> to browse to a different server.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">For File System Repository </span>Enter a network location or click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> to browse to a folder on the network. </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">For Web Repository </span>Enter the URL of the virtual directory you created. Once you enter the URL, you can click <img src="../../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" /> and browse the directory, as well as create a new folder. If you are using Windows Authentication, leave <span class="Emphasis">Use Windows Authentication</span> selected. If you are using another form of authentication, clear the check box and enter your login credentials.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>If you selected File System or Web Repository, click the <span class="Emphasis">Repository Test</span> button to test the connection to the repository and the files and subfolders. Click <span class="Emphasis">Close</span>.</li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+                    <li>
+                        <p>In the Repository Options window, set the backup options:</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Limit the number of backups for each file </span>This is used to set the limit on the number of backups kept for each file in the repository. The default is 5, but you can change it in the <span class="Emphasis">Number of backups kept</span> box. If you do not set a limit, every time a file is checked in, a new backup file will be created in the repository, and there is no automatic cleanup of old backup files.</p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Allow users to delete old backups in check-in </span>Select this check box to permit other team members to delete old backup files when they attempt to check in a newer version of a file and the backup limit for that file has been exceeded. </p>
+                            </li>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Ask user confirmation to delete backups </span>Select this check box if you want a confirmation dialog to appear when a team member deletes old backup files. This option is only available when the <span class="Emphasis">Allow users to delete old backups in check-in</span> check box has been selected. &#160;</p>
+                            </li>
+                        </ul>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">These options can be changed using the team administration utility at any time after the team project is created. See <MadCap:xref href="Changing Repository Settings.htm" >Changing Repository Settings</MadCap:xref>.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Next</span>.</li>
+                    <li>
+                        <p>Click <span class="Emphasis">Yes</span> to confirm your repository information and click <span class="Emphasis">Next</span> to create the team project. The Upload Project dialog opens.</p>
+                    </li>
+                    <li>
+                        <p>Once the upload process is complete, click <span class="Emphasis">Close</span>. At this point, your project has been uploaded to a shared directory and the copy in which you were working is the working copy. This is the version you will use to perform all authoring tasks. The team project in the repository is the master copy. </p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The team project should never be manually opened or altered. If you wish to make changes in the team project, make the changes locally in your working project, and then check in the changes to the central repository.</p>
+                    </li>
+                    <li>Click <span class="Emphasis">Finish</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HManagingYourProjectGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="HowToSetUpVirtualDirectory"></a>How to Set Up a Virtual Directory on Your Windows Machine</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>If you are using Internet Information Services (IIS), first you must set up a virtual directory on the web server in order to share a project using a web repository. This virtual directory will be the location of the team project.</p>
+                <p>The following steps may be slightly different depending on your operating system.</p>
+                <ol>
+                    <li>Click the <span class="Emphasis">Start</span> menu and select <span class="Emphasis">Control Panel</span>. </li>
+                    <li>Click <span class="Emphasis">Performance and Maintenance</span> and then click <span class="Emphasis">Administrative Tools</span>.</li>
+                    <li>Double-click <span class="Emphasis">Computer Management</span>.</li>
+                    <li>Expand the <span class="Emphasis">Services and Applications</span> node.</li>
+                    <li>Expand the <span class="Emphasis">Internet Information Services and Web Sites</span> nodes.</li>
+                    <li>Right-click <span class="Emphasis">Default Web Site</span> and select <span class="Emphasis">Add Virtual Directory</span>. The Add Virtual Directory dialog opens. </li>
+                    <li>In the <span class="Emphasis">Alias</span> text box, enter a name for your virtual directory. This name will be part of the URL for your web repository. </li>
+                    <li>Next to the <span class="Emphasis">Physical path</span> field, click <img src="../../Resources/Images/browse_ellipses.png" />. In the dialog that opens, browse to the physical directory on your machine that contains the content you want to share and click <span class="Emphasis">OK</span>. </li>
+                    <li>In the Add Virtual Directory dialog, click <span class="Emphasis">OK</span>.</li>
+                    <li>In the <span class="Emphasis">Connections</span> pane, select your new directory.</li>
+                    <li>In the <span class="Emphasis">Features View</span> pane, double-click <span class="Emphasis">WebDAV Authoring Rules</span>. The WebDAV Authoring Rules </li>
+                    <li>In the <span class="Emphasis">Actions</span> pane, click <span class="Emphasis">Add Authoring Rule</span>. The Add Authoring Rule dialog opens.</li>
+                    <li>In the <span class="Emphasis">Allow access to this content to</span> section, select <span class="Emphasis">All users</span>.</li>
+                    <li>In the <span class="Emphasis">Permissions</span> section, select <span class="Emphasis">Read</span>, <span class="Emphasis">Source</span>, and <span class="Emphasis">Write</span>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" /> The virtual directory is now set up. You can view the rules and permissions for the directory in the Features View pane. Make sure the directory has Read, Source, and Write privileges.</li>
+                </ol>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You may need to consult your network administrator to set up the virtual directory. Setting up a virtual directory will vary by operating system. Once you have a virtual directory created, you can then share the project.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3839" MadCap:lastWidth="1033" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head>
+        <meta name="description" content="You can start a chapter on the first left or right page in MadCap Flare. Also learn how to make the first page of a chapter unique. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:concept term="FilterPrintedOutput" />
+            <MadCap:keyword term="Print-based output:creating" />
+            <MadCap:keyword term="Chapters:breaks;Print-based output:chapter breaks;Print-based output:page layouts" />
+            <MadCap:keyword term="Page layouts:chapter breaks;Tables of contents:page layouts;Chapters:page layouts;Tables of contents:chapter breaks;Chapter breaks:page layouts;Page layouts:tables of contents;Chapter breaks:tables of contents;Chapters:chapter breaks" />
+            <MadCap:keyword term="Page layouts:empty;Empty pages" />
+            <MadCap:concept term="PageFlow" />Page Type Flow Scenarios</h1>
+        <p>Following are some of the most common scenarios for configuring print-based output, including the settings necessary to make each work:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">First Right Page </span>You want new chapters to always start on a right page.</li>
+            <li><span class="SetOffFirstLevel">First Left Page </span>You want new chapters to always start on a left page.</li>
+            <li><span class="SetOffFirstLevel">First Left or Right Page </span>You want new chapters to start on either a left or right page.</li>
+            <li><span class="SetOffFirstLevel">First and Normal </span>You are not concerned with left or right pages, only that new chapter pages look different than the rest of the pages in the manual.</li>
+            <li><span class="SetOffFirstLevel">Page Orientation Change Mid-Chapter</span>You need to change the way pages look in the middle of a chapter (e.g., switching from a portrait orientation to landscape orientation).</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>relevant settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The relevant settings in most of these scenarios include the following:</p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Page Types</span> <MadCap:snippetText src="../../../Resources/Snippets/PageLayouts/PageTypeDescription.flsnp" /> <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Page_Layouts/About_Page_Layouts.htm">About Page Layouts</MadCap:xref>, <MadCap:xref href="../../../Page_Layouts/Adding_Pages.htm">Adding Pages</MadCap:xref>, and <MadCap:xref href="../../../Page_Layouts/Pages/Specifying_Page_Types.htm">Specifying Page Types</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>The question in the following scenarios is, which page types should you include in the page layout? </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Inject Empty Pages</span> On the Advanced tab of the Target Editor for PDF&#160;and XPS outputs, there is a check box that is used in conjunction with empty page types to automatically include empty pages in the output when necessary. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Page_Layouts/Pages/Using_Empty_Pages.htm">Using Empty Pages</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>The question in the following scenarios is, should this option be enabled or disabled? </p>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">TOC Entries </span>After you create a page layout and configure its frames and settings as necessary, you need to associate the page layout with the appropriate content. In most cases, you will probably want to associate different page layouts with various entries in your outline TOC (so that different page layouts can be used for different parts or chapters in a manual). You can do this with or without creating a chapter break at the same time. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter and Page Layout Breaks</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>The question in the following scenarios is, where should chapter or page layout breaks be set, and which page type should be selected? </p>
+                    </li>
+                </ul>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">Because you will likely be setting the same chapter break/page type for many TOC entries, you can hold down your CTRL key and select the entries. Then open the Properties dialog and select the options at the same time for all of those entries.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">In the following scenarios, we also used the "Use TOC depth for heading levels" option in the Target Editor. This option is not necessarily important to make the pages flow as described below. Rather, it is simply needed because of the way we have created the online TOC in these examples and because all topics start with an H1 heading. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="Determining_Heading_Levels_for_a_Print_TOC.htm">Determining Heading Levels for a Print TOC</MadCap:xref>.</MadCap:conditionalText></p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To make sure you can see the actual flow of left-right pages in the output, you can set the page layout view in the PDF Options tab of the Target Editor. This lets you control how the pages display initially in the output (e.g., Two-Up Continuous (Cover Page), Two-Up Continuous (Facing), Single Page Continuous). <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Targets/More_About_Targets/Specifying_PDF_Options.htm">Specifying PDF Options</MadCap:xref>.</MadCap:conditionalText></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>initials representing page types</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In these scenarios the letters in the page images represent the page types.</p>
+                <ul>
+                    <li>F=First</li>
+                    <li>FL=First Left</li>
+                    <li>FR=First Right</li>
+                    <li>L=Left</li>
+                    <li>R=Right</li>
+                    <li>E=Empty</li>
+                    <li>EL=Empty Left</li>
+                    <li>ER=Empty Right</li>
+                    <li>N=Normal</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Although it is certainly acceptable to have a Title (T) page type included with other page types in many of the following layout scenarios, we are not using one in these scenarios for the sake of simplicity. In some cases it is better to have your Title page type, if you use one, in a page layout separate from your chapter page layout.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">first right scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">First Right Scenario</p>
+                    <p>With this scenario, topics set with new chapter breaks will always start on the <span class="EmphasisItalic">right </span>side in the output.</p>
+                    <p>
+                        <img src="../../../Resources/Images/first_right_scenario.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">first left scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">First Left Scenario</p>
+                    <p>With this scenario, topics set with new chapter breaks will always start on the <span class="EmphasisItalic">left </span>side in the output.</p>
+                    <p>
+                        <img src="../../../Resources/Images/first_left_scenario.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">first left or first right scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">First Left or First Right Scenario</p>
+                    <p>With this scenario, topics set with new chapter breaks will start on <span class="EmphasisItalic">either the right or left </span>side in the output, depending on where the previous page ends.</p>
+                    <p>
+                        <img src="../../../Resources/Images/first_left_or_first_right_scenario.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">first and normal scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">First and Normal Scenario</p>
+                    <p>With this scenario, there is no concern over right or left pages. Instead, the idea is to have one look for the <span class="EmphasisItalic">first </span>page of a new chapter, and the rest of the pages in the chapter will all share a different look (<span class="EmphasisItalic">normal</span>).</p>
+                    <p>
+                        <img src="../../../Resources/Images/first_and_normal_scenario.png" class="MaxWidth80Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">page orientation change mid-chapter scenario</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="example">
+                    <p class="exampleHeadTextEmpty">Page Orientation Change Mid-Chapter Scenario</p>
+                    <p>With this scenario, you have a left-right page flow, but in the middle of the chapter you want to switch to a landscape orientation for one or more pages before return to the portrait orientation. However, you want to make sure that the proper left and right pages continue to show throughout this. The way to do this is with page layout breaks on the TOC entries, using the <span class="EmphasisItalic">(continue L/R)</span> option.</p>
+                    <p>One important aspect to this scenario is that it requires two different page layouts—one for the pages using the portrait orientation, and another for pages using the landscape orientation.</p>
+                    <p>Also, in the following image the First Right and Empty Left page types are optional. We are including them in the portrait page layout only to show context for the left-right pages and the change of page orientation in the middle of a chapter. The page types that are most important  for this flow are <span class="EmphasisItalic">Left</span> and <span class="EmphasisItalic">Right</span>.</p>
+                    <p>
+                        <img src="../../../Resources/Images/page_orientation_scenario.png" class="MaxWidth90Percent" />
+                    </p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PageFlow" />
+        </p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide" />
+    </body>
+</html>

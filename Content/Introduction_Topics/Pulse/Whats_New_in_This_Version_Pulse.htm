@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Snippets.Snippet1]exclude[Snippets.Snippet2 or Snippets.Snippet3 or Snippets.Snippet4 or Snippets.Snippet5 or Snippets.Snippet6]" MadCap:lastBlockDepth="18" MadCap:lastHeight="17058" MadCap:lastWidth="822" MadCap:conditions="Products.Pulse" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Shared\WhatsNew.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/BasicAlternateRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Introduction" />What's New?</h1>
+        <h1 class="Invisible" MadCap:conditions="General.OnlineLive">Pulse What's New</h1>
+        <p>Following are new features included in this version of Pulse.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Upgrading From the Previous Version of MadCap Pulse</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you currently use the previous version of Pulse, you can upgrade to the new version by opening the Pulse Server application and completing the Configuration Wizard. The primary difference between upgrading and configuring Pulse for the first time is that you will be selecting an existing database, as opposed to creating a new one.</p>
+                <p>When you are upgrading, you can install the new version of Pulse without first uninstalling the previous version. </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>How to Upgrade From the Previous Version of Pulse</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <ol>
+                            <li>Install the new version of Pulse that you have received.</li>
+                            <li>Double-click the new MadCap Pulse desktop shortcut to open the Pulse Server application. The MadCap Pulse Configuration Wizard should automatically open.</li>
+                            <li>If the MadCap Pulse Configuration Wizard does not automatically open, click <span class="Emphasis">Configure Pulse</span> in the toolbar.</li>
+                            <li>In the Welcome page of the MadCap Pulse Configuration Wizard, click <span class="Emphasis">Next</span>. 
+</li>
+                            <li>
+                                <p>In the Select Web Site page, do the following:</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SelectWebSiteConfiguration.flsnp" />
+                            </li>
+                            <li>
+                                <p>In the Select SQL&#160;Server page, do the following:</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SelectSQLServerSteps.flsnp" />
+                            </li>
+                            <li>In the Database Options page, select <span class="Emphasis">Use Existing</span>. The Select Database dialog opens.</li>
+                            <li>Click the <span class="Emphasis">Select Pulse Database ID</span> drop-down and select the appropriate Pulse key. The communities and users associated with that key are shown in the tabs below so that you can review them to make sure you've chosen the correct key. If the connection takes too long, you can click <span class="Emphasis">Cancel</span> and then click <span class="Emphasis">Connect</span> to try again.</li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/Pulse/BackupPathStep.flsnp" />
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the <span class="Emphasis">PulseAdmin Password</span> box, specify the password for the default Pulse Administrator account.  Then click <span class="Emphasis">Next</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/pulse_install_database_options_admin_password.png" class="MaxWidth100Percent" />
+                                </p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/RecordPasswordSafePlace.flsnp" />
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/NotePasswordStrength.flsnp" />
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>In the Configure&#160;SMTP&#160;page, enter your SMTP&#160;server settings:</p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ConfigureSMTPSteps.flsnp" />
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePulseGuide,PulseGuides.PulseInstallationGuide" />
+                            <li>
+                                <p>(Optional)&#160;Test your SMTP&#160;settings.</p>
+                                <MadCap:dropDown class="SecondLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">how to test the smtp settings</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/TestSMTPSettingsSteps.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </li>
+                            <li>Click <span class="Emphasis">Next</span>. The Verify Configuration page appears.</li>
+                            <li>In the Verify Configuration page, review the components list. When you are ready to proceed, click <span class="Emphasis">Next</span>. A progress indicator shows you the status of the installation.</li>
+                            <li>When the Configuration Complete page appears, you can click <span class="Emphasis">View Log</span> or <span class="Emphasis">Save Log</span> if you want to see or save the results.</li>
+                            <li>Click <span class="Emphasis">Finish</span>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Table Summary of New Features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNew/PulseV4/PulseWhatsNewTable.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Descriptions of New Features</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>
+                    <MadCap:snippetText src="../../Resources/Snippets/WhatsNew/WhatsNewMajorFeaturesSummary.flsnp" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="ModeratingPosts"></a>Moderating Posts</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ModeratePostsSummary.flsnp" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Moderation Actions by User Group</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ModerationTable.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>how to moderate posts</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ModeratePostsSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">By default, this feature is initially available only to <span class="Emphasis">Administrators</span> and <span class="Emphasis">Employees</span>, because they have status as moderators. However, when configuring the privacy settings for the community (i.e., system), you can assign moderation rights to other groups as well. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Pulse/Dashboard/Systems/Using_the_Systems_Menu.htm#HowToConfigurePermissions">How to Configure the Privacy Settings for a System</MadCap:xref>. </MadCap:conditionalText></p>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteModeratorsEmail.flsnp" />
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteModerationSubscription.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="SubscribingToCommunity"></a>Subscribing to a Community</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Pulse/Subscribing1.flsnp" />
+                            <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Moderation/Subscribing_to_Topics.htm">Subscribing to Communities and Topics</MadCap:xref>.</MadCap:conditionalText>
+                        </p>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Pulse/Subscribing2.flsnp" />
+                            <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Moderation/Moderating_Posts.htm">Moderating (Approving/Rejecting) Posts</MadCap:xref>.</MadCap:conditionalText>
+                        </p>
+                        <p class="Subheading">how to subscribe to a community</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SubscribingSteps.flsnp" />
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteSubscribeCommunity.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="PublishedURL"></a>Published URL</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNew/PulseV4/PublishedURL.flsnp" />
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="FilesApp"></a>Files App Allows File Sharing</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/WhatsNew/PulseV4/FilesApp1.flsnp" />
+                        <p>The following activities are supported.</p>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot><a name="HowToAccessFilesApp"></a>How to Access the Files App</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppAccessSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Create Folders</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppCreateFolderSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Upload Files</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppUploadFilesSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Download a Folder and all of Its Files</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppDownloadFolderSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Download an Individual File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppDownloadFileSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Rename a Folder or File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppRenameFolderFileSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to delete a folder or File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppDeleteFolderFileSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to move a folder and file</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppMoveFolderFileSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Set Security Access for a Folder</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppSetSecuritySteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Share a Link to a File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/FilesAppShareLinkSteps.flsnp" />
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to Upload a New Version of a File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can use the following steps if you've already uploaded a file but want to replace it with a newer version.</p>
+                                <ol>
+                                    <li>Access the Files app where you want to upload a newer version of a file. See <MadCap:xref href="#HowToAccessFilesApp">How to Access the Files App</MadCap:xref>.</li>
+                                    <li>If necessary, open a subfolder to see the files within it.</li>
+                                    <li>Click the name of the file. A new page opens, just for that file.</li>
+                                    <li>
+                                        <p>At the top of the page, click <span class="Emphasis">Upload New Version</span>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/file_sharing18.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                    <li>In the dialog that opens, select the new version of the file and click <span class="Emphasis">Open</span>.</li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>How to View the Activity Log for a File</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>You can use the following steps to see the activity for a file that has been uploaded.</p>
+                                <ol>
+                                    <li>Access the Files app where you want to upload a newer version of a file. See <MadCap:xref href="#HowToAccessFilesApp">How to Access the Files App</MadCap:xref>.</li>
+                                    <li>If necessary, open a subfolder to see the files within it.</li>
+                                    <li>Click the name of the file. A new page opens, just for that file.</li>
+                                    <li>
+                                        <p>At the top-left of the page, click the drop-down and select <span class="Emphasis">Activity Log</span>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/file_sharing19.png" alt="" title="" class="MaxWidth100Percent" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">On the General Settings page of the Pulse dashboard, Administrators can control whether file sharing is available for users only or for groups as well. At the bottom of this page is a Files drop-down that lets you make a selection. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Pulse/Dashboard/Settings/Configuring_the_General_Settings.htm">General Settings</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can still upload files when you post a status update. This is the same as it was previously. Anyone viewing the status can click on the file to download it. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Pulse/Posting_Content/Posting_Status_Updates.htm">Posting Status Updates</MadCap:xref>.</MadCap:conditionalText></p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="ProfileEnhancements"></a>Profile Enhancements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ProfileEnhancements.flsnp" />
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Skills and Expertise</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Registered users can now select skills and specify their expertise in different areas. Administrators set up the skills and categories. Users can send requests for skills that are not yet available in the interface.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Getting_Started/Creating_and_Editing_Profiles.htm">Editing Your&#160;Profile</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <img src="../../Resources/Images/skills_expertise1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Experience, Education, and Certification</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Registered users can enter information about their experience, education, and certification.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Getting_Started/Creating_and_Editing_Profiles.htm">Editing Your&#160;Profile</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <img src="../../Resources/Images/experience_education_certification1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>New Notification Options</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>With the introduction of some new features (skills, moderation), a few new email notification options are available on the Notifications tab of the Profile page.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Getting_Started/Creating_and_Editing_Profiles.htm">Editing Your&#160;Profile</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>
+                                    <img src="../../Resources/Images/email_notifications1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="ThirdLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Administrators Can Adjust Profile Settings</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>Administrators can adjust profile settings, including which fields and elements are available and editable.<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Dashboard/Settings/Configuring_Profile_Settings.htm">Configuring Profile Settings</MadCap:xref>.</MadCap:conditionalText></p>
+                                <p>Pulse users can self-declare any of the skills you input. A great place to start your skills list is LinkedIn and other industry-specific websites. Each skill can be assigned to a skill category. Therefore, you may want to create a skill category first. Skill categories are used in Pulse to make locating and grouping skills easy. Some good skill categories are things like Human Resources, Legal, or Information Technology. Think about people’s job roles and departments for ideas on skill categories.</p>
+                                <p>To edit profile settings, log into the dashboard and select <span class="Emphasis">Administration&gt;Settings&gt;Profiles</span>.</p>
+                                <p>
+                                    <img src="../../Resources/Images/profile_settings1.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>
+                                    <img src="../../Resources/Images/profile_settings2.png" alt="" title="" class="MaxWidth100Percent" />
+                                </p>
+                                <p>From the Profile Settings page, you can do any of the following:</p>
+                                <MadCap:dropDown class="FourthLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Skill Categories—Add, Edit, Remove</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SkillCategoriesAddEditRemove.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="FourthLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Skills—Add, Edit, Remove</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SkillsAddEditRemove.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="FourthLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Skill Requests—Approve or Reject</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/SkillRequestsApproveReject.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="FourthLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Profile Properties (Fields)—Add, Edit, Remove</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody>
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ProfilePropertiesAddEditRemove.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                                <MadCap:dropDown class="FourthLevel">
+                                    <MadCap:dropDownHead>
+                                        <MadCap:dropDownHotspot>Profile Features (Experience, Education, Certifications)—Enable or Disable</MadCap:dropDownHotspot>
+                                    </MadCap:dropDownHead>
+                                    <MadCap:dropDownBody class="Final">
+                                        <MadCap:snippetBlock src="../../Resources/Snippets/Pulse/ProfileFeaturesEnableDisable.flsnp" />
+                                    </MadCap:dropDownBody>
+                                </MadCap:dropDown>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="NetWindows2012"></a>Support for .NET 4.5, Windows Server 2012, and SQL Server 2012</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Pulse now supports .NET 4.5. As a result, you can install Pulse on computers running Windows Server 2012. In addition, you can now use SQL Server 2012 when installing Pulse. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Pulse/Install/2012/Pulse_System_Requirements_2012.htm">Pulse System Requirements for Windows Server 2012</MadCap:xref>, <MadCap:xref href="../../Pulse/Install/2012/Installing_the_Prerequisites_2012.htm">Installing the&#160;Prerequisites for Windows Server 2012</MadCap:xref>, <MadCap:xref href="../../Pulse/Install/Installing_SQL Server.htm">Installing&#160;Microsoft SQL&#160;Server</MadCap:xref>, and <MadCap:xref href="../../Pulse/Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</MadCap:conditionalText></p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="RefreshReports"></a>Refresh Reports</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/Pulse/RefreshReports.flsnp" />
+                            <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Pulse/Dashboard/Reports/About_Reports.htm">Reports</MadCap:xref>.</MadCap:conditionalText>
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/reports1.png" alt="" title="" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="SaveViewLog"></a>Save/View Log in Configuration Wizard</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>In the Pulse Configuration Wizard, options have been added to view and save the log file. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../Pulse/Install/Pulse_Server_Configuration.htm">Pulse Server Configuration</MadCap:xref>.</MadCap:conditionalText></p>
+                        <p>
+                            <img src="../../Resources/Images/pulse_config_wizard_view_save_log.png" class="MaxWidth100Percent" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Introduction" />
+        </p>
+    </body>
+</html>

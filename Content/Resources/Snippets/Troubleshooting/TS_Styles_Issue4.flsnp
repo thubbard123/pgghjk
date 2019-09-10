@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="8" MadCap:lastHeight="1083" MadCap:lastWidth="910">
+    <head />
+    <body>
+        <p class="Subheading">"a" link pseudo classes do not function properly when output is generated</p>
+        <p>Link styles (e.g., those based on &lt;a&gt; tags) do not appear correctly or function properly.</p>
+        <p class="Subheading">Cause and Solultion</p>
+        <p>These problems can be related to the use and function of  link style pseudo classes (a special group of style classes that pertain to elements when they're in a certain state) and may have one of the following causes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 1</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p> In order for pseudo classes to function properly, they must appear in the following order in the stylesheet (you can see this by opening the stylesheet in Notepad).</p>
+                <ul>
+                    <li>a:link</li>
+                    <li>a:visited</li>
+                    <li>a:hover</li>
+                    <li>a:focus</li>
+                    <li>a:active</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>cause/solution 2</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>Link style pseudo classes do not inherit properties from their parent classes. Therefore, if you have style properties set on an link style, those style properties will not appear on the pseudo class associated with the link style.</p>
+                <p>Explicitly set the property values on those pseudo classes, rather than expecting them to inherit settings from other tags.</p>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Styles/EditStyleStep1.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetBlock src="../Styles/StylesMakeSureSimplifiedViewButtonShown.flsnp" />
+                    </li>
+                    <li>In the upper-left corner of the editor, click in the <span class="Emphasis">Show Styles</span> field <img src="../../Images/show_styles_field.png" class="ReduceButtonSize" /> and select <span class="Emphasis">Show Link Styles</span>.</li>
+                    <li>On the left side of the editor, expand the <span class="Emphasis">a</span> group.</li>
+                    <li>Select the style class you wish to modify and click expand the group.</li>
+                    <li>Expand the <span class="Emphasis">(Pseudo Classes)</span> group.</li>
+                    <li>Select the necessary pseudo class. See <MadCap:xref href="../../../Styles/Basics_of_CSS/Important_Style_Terms_and_Concepts.htm#PseudoClasses">Pseudo Classes</MadCap:xref>.</li>
+                    <li>
+                        <MadCap:snippetText src="../Styles/SelectShowAllPropertiesStep.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../Styles/StylesToggleGroupOrAlphabetical.flsnp" />
+                    </li>
+                    <li>If you are using the group view, expand the necessary property group(s) and set the necessary property value(s).</li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Regenerate the output. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

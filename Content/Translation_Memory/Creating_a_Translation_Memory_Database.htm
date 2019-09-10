@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="1182" MadCap:lastWidth="1097" MadCap:conditions="Products.Lingo,Products.Align" class="" MadCap:conditionTagExpression="include[Snippets.Snippet3] exclude[Snippets.Snippet1 or Snippets.Snippet2] " style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\Lingo\LingoTranslation.flmsp');">
+    <head><title></title>
+        <meta name="description" content="How to install and create a TM&#160;(Translation Memory)&#160;database in MadCap&#160;Lingo. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="TranslationMemory" />
+            <MadCap:keyword term="Translation memory:creating" />
+            <MadCap:concept term="FilterTM" />
+            <MadCap:keyword term="Translation memory:databases;Databases:translation memory" />Creating a Translation Memory Database</h1>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/TranslationMemory/InstallTMSummary.flsnp" /> You can create a local TM database (using SQLite), which is stored locally on your computer. Alternatively, you can create a server TM database (using SQL Express), which can be stored on an external server.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a tm database</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/DoOneOfTheFollowingDependingOnUI.flsnp" />
+                        <ul style="list-style-type: square;">
+                            <li>
+                                <p MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the Translation Memory section, select <span class="Emphasis">Create TM</span>. </p>
+                                <p MadCap:conditions="Products.Lingo">OR</p>
+                                <p MadCap:conditions="Products.Lingo">
+                                    <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectResourcesRibbon.flsnp" /> In the Translation Memory section, select <span class="Emphasis">Choose TM</span>. In the Manage Translation Memory dialog, click <span class="Emphasis">Create</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Align">
+                                <p><span class="SetOffFirstLevel">Ribbon </span>
+                                    <MadCap:snippetText src="../Resources/Snippets/UIElements/SelectHomeRibbon.flsnp" /> In the Translation Memory section, select <span class="Emphasis">Choose TM</span>. In the Manage Translation Memory dialog, click <span class="Emphasis">Create</span>.</p>
+                            </li>
+                            <li MadCap:conditions="Products.Lingo"><span class="SetOffFirstLevel">Start New Project Wizard</span> On the second page of the wizard, select <span class="Emphasis">Create TM</span>.</li>
+                            <li MadCap:conditions="Products.Align">
+                                <p><span class="SetOffFirstLevel">Start Alignment Wizard</span>On the first page of the wizard, click the button for the type of TM&#160;you want to create:&#160;<span class="Emphasis">New Local</span> or <span class="Emphasis">New Server</span>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>From the submenu, select one of the following:</p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/LocalServerTMOptionsList.flsnp" />
+                        <p>For a server TM, in the <span class="Emphasis">Name of new database</span> field, type a name for the TM database. Next to the <span class="Emphasis">Database server</span> field, click <img src="../Resources/Images/browse_ellipses.png" class="ReduceButtonSize" />. The Connect to SQL Server dialog opens, displaying a list of usable servers after Lingo scans your network. In the <span class="Emphasis">Connection timeout</span> field, you can adjust the number of seconds to allow a connection to the server to be successful. In the <span class="Emphasis">Authentication</span> section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary). If you elect to use <MadCap:keyword term="Windows Integrated Security" />Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided. </p>
+                        <p class="note" MadCap:conditions="Products.Align" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are creating a TM&#160;from the Start Alignment Wizard, you will not see a submenu. The dialog opens when you click the button in the wizard.</p>
+                    </li>
+                    <li>After completing the fields in the appropriate dialog, click <span class="Emphasis">OK</span>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.LingoOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After creating a TM, make sure to choose it in whatever project you have open (see <MadCap:xref href="Choosing_a_TM_Database.htm">Choosing a Translation Memory Database</MadCap:xref>). You can then use that TM to translate your project (see <MadCap:xref href="Applying_TM_Suggestions_to_Segments.htm">Applying TM Suggestions to Segments</MadCap:xref>).</p>
+                <p>You can also import a Translation Memory eXchange file (TMX) into your TM. See <MadCap:xref href="Importing_TMX_Files.htm">Importing TMX Files</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="13" MadCap:lastHeight="1696" MadCap:lastWidth="1034">
+    <head><title></title>
+        <meta name="description" content="Steps for using the Flare Target Editor to change the performance settings for your Help target." />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterOutputBuilding" />
+            <MadCap:concept term="BuildOutput" />
+            <MadCap:concept term="FilterTargets" />
+            <MadCap:keyword term="Building:improving performance;Targets:performance;Output:performance;Performance:targets;WebHelp:performance;DotNet Help:performance;WebHelp Plus:performance" />Improving the Processing Performance of the Target</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/Banners/Flare/Feature_Supported/DotNet_HTML5_WebHelp_WHMobile_WHPlus_WHAIR.flsnp" />
+        <p>You can improve the speed that your output loads for end users in several ways.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to improve the processing performance of a target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ol>
+                    <li>Open a target.</li>
+                    <li>In the Target Editor select the <span class="Emphasis">Performance</span> tab </li>
+                    <li>
+                        <p> Select the option(s) that you want to use:</p>
+                        <ul class="FirstLevel">
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="JavaScript:condensing" />Condense JavaScript Files </span>You can condense any JavaScript files in your output. This causes all of the output's runtime scripts to be merged into one file and improves web server performance by causing there to be fewer requests when loading the output.</li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Images:pre-loading" />Pre-load Images </span>You can pre-load your images that are not initially visible when output is opened. When those images are triggered to be displayed, they will appear faster since they were pre-loaded. This happens at the cost of the output taking slightly longer to initially open since it must download more content. On the other hand, disabling pre-loading images will cause the output to open faster. Instead they will have to be downloaded when they are triggered to be displayed.</li>
+                            <li>
+                                <p><span class="SetOffFirstLevel"><MadCap:keyword term="Projects:merging;Merging:projects;Pre-merging;Search:pre-merging" />Pre-merge Index File/Pre-merge Search Database File </span>If you have multiple projects whose outputs are set to be merged when you build the "master" project, you can pre-merge index files and search database files. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">For more information see <a href="../../TOCs/Merging_Projects.htm">Merging Projects</a>.</MadCap:conditionalText> If you select to pre-merge the index or search database file, you disable runtime merging, which means that you cannot compile and publish a "sub-project" later. You must generate and publish all linked Help systems at the same time. Selecting this option may slow down the generation of the output, but it will significantly increase the speed with which the output loads for the end user.</p>
+                            </li>
+                            <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareTargetsGuide" />
+                            <li>
+                                <p>
+                                    <MadCap:keyword term="Chunking;Tables of contents:chunking;Search:chunk files;Indexes:chunking" /><span class="SetOffFirstLevel">Chunk Large Index/TOC/Glossary/Search Database Files </span>You can control the size of "chunks" used when generating the index, TOC, glossary, and search database files for a target. After you choose this option, select the number of bytes for each chunk. The chunk size affects the speed that a Help system loads for a user. Depending on the Internet connection, different results will be seen. The smaller the chunk size, the greater the number of chunks that will be sent. A large number of chunks may result in a slower speed, especially if you have many merged "sub-projects" and the index is being merged. Chunking may slow down the generation of your output somewhat, but it increases the speed that the output loads for end users. For best results, you should test the different chunk sizes.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The option for chunking large glossary files is only available in HTML 5 targets.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Search:stop words" />Include "Stop-Words" in Search </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/Search/IncludeStopWordsSummary.flsnp" />
+                                <MadCap:conditionalText MadCap:conditions="General.OnlineLive"> See <MadCap:xref href="../../Search/Configuring_the_Search_Database/Including_Stop_Words_in_Search.htm">Including Stop Words in Search</MadCap:xref>.</MadCap:conditionalText>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Non-words;Search:non-words" />Exclude "Non-Words" from Search </span>If you have a project that contains a lot of content that is not composed of regular letters and numbers (e.g., angled brackets), you can set your target to avoid these "non-words" when users perform a search in your Help system. This will improve the search performance that your users experience.</li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="Indexes:search;Search:indexes" />Exclude Index Entries from Search </span>
+                                <MadCap:snippetText src="../../Resources/Snippets/Indexes/ExcludeIndexEntriesFromSearchSummary.flsnp" /> See <MadCap:xref href="../../Search/Configuring_the_Search_Database/Excluding_Index_Entries_from_Search.htm">Excluding Index Entries From Search</MadCap:xref>.</li>
+                            <li>
+                                <p>
+                                    <MadCap:keyword term="Search:wildcard;Wildcards;DotNet Help:search;Search" /><span class="SetOffFirstLevel">Include SQL Search Database </span>For <MadCap:variable name="Outputs.DotNetHelp" /> you can create an SQL database when generating the output. This results in faster searches. It also allows people to use asterisk wildcards when performing searches. For example, if you type <span class="TypedEntry">Mad*</span> in the Search field, <MadCap:variable name="Other.Product" /> will list all topics with words that have "Mad" followed by any other letters (e.g., MadCap, Madagascar, madness, Madrid).</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">For more information about wildcards, see  <a href="http://tinyurl.com/279p2nf" target="_blank">http://tinyurl.com/279p2nf</a>.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">This option and wildcard searches are supported in <MadCap:variable name="Outputs.DotNetHelp" /> output only.</p>
+                            </li>
+                            <li><span class="SetOffFirstLevel"><MadCap:keyword term="N-gram;Search:n-gram" />N-Gram Size </span>You can adjust the n-grams, which are character chunks used to separate words in Chinese, Japanese, and Korean projects. Chinese, Japanese, and Korean languages do not have spaces as word boundaries, so n-grams are used to separate the words. Smaller n-gram values produce smaller search database file sizes. They also lead to more search results, which may be less accurate. On the other hand, larger n-gram values produce larger search database file sizes. They also lead to fewer search results, which may be more accurate. The default size in this field is optimal for most situations.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                    <li>Build and publish the output.</li>
+                    <li>Open the output from the published destination to test the loading performance of the output.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="BuildOutput" />
+        </p>
+    </body>
+</html>

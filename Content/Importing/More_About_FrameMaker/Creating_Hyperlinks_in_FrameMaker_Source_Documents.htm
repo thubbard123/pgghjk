@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="6" MadCap:lastHeight="927" MadCap:lastWidth="1159" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\Flare\FlareTransitionFM.flmsp');">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterNavigationLinks" />
+            <MadCap:concept term="FilterImporting" />
+            <MadCap:keyword term="Importing:FrameMaker documents;Adobe FrameMaker:importing;Adobe FrameMaker:hyperlinks;Linking:FrameMaker;Linking:FrameMaker;Jump to Named Destination:FrameMaker;Adobe FrameMaker:Jump to Named Destination" />
+            <MadCap:concept term="FrameMaker" />
+            <MadCap:concept term="FilterFrameMaker" />
+            <MadCap:concept term="FilterHyperlinks" />Creating Hyperlinks in FrameMaker Source Documents</h1>
+        <p>If you are importing <MadCap:variable name="Outputs.Frame" /> documents and you have created hyperlinks by using "Specify Named Destination" and "Jump to Named Destination" markers, <MadCap:variable name="Other.Product" /> will automatically convert them to links in your project. Following are steps for creating these hyperlinks in <MadCap:variable name="Outputs.Frame" />. For more information, please refer to the documentation provided with <MadCap:variable name="Outputs.Frame" />.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to create a hyperlink in a framemaker source document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following steps may vary in different versions of FrameMaker.</p>
+                <ol type="1" class="Decimal">
+                    <li>Open the <MadCap:variable name="Outputs.Frame" /> document.</li>
+                    <li>In <MadCap:variable name="Outputs.Frame" />, place your cursor at the spot to be used as the destination for a link. This might be a heading that will become a new topic when you import the document. When a user clicks on the hyperlink (created below), this is the content that will be displayed to end users.</li>
+                    <li>Select <span class="Emphasis">Special&gt;Hypertext</span>. The Hypertext dialog opens.</li>
+                    <li>From the <span class="Emphasis">Command</span> field, select <span class="Emphasis">Specify Named Destination</span>.The text "newlink" is added to the area below.</li>
+                    <li>After the text "newlink," type a name to identify the destination (perhaps the name of the heading).</li>
+                    <li>Click <span class="Emphasis">New Hypertext Marker</span>. </li>
+                    <li>Locate the area that you want to serve as the hyperlink. Prepare the area to become a hyperlink, according to the documentation provided with <MadCap:variable name="Outputs.Frame" />.</li>
+                    <li>Place your cursor in the prepared hypertext area.</li>
+                    <li>From the <span class="Emphasis">Command</span> field of the Hypertext dialog, select <span class="Emphasis">Jump to Named Destination</span>. The text "gotolink" is added to the text area below.</li>
+                    <li>After the text "gotolink," type the name that you gave to the destination marker.</li>
+                    <li>Click <span class="Emphasis">New Hypertext Marker</span>.</li>
+                    <li>Close the Hypertext dialog.</li>
+                    <li>Save the <MadCap:variable name="Outputs.Frame" /> document.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Notes/NoteFmSupports7AndNewer.flsnp" MadCap:conditions="General.OnlineLive,FlareGuides.FlareNavigationLinksGuide" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you import the <MadCap:variable name="Outputs.Frame" /> document(s), you can generate the output in <MadCap:variable name="Other.Product" /> and test the hyperlink. See <MadCap:xref href="../Importing_FrameMaker_Files.htm">Importing FrameMaker Files</MadCap:xref> and <MadCap:xref href="../../Output/About_Building_Output.htm">Building Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="FrameMaker" xmlns:MadCap="http://www.madcapsoftware.com/schemas/MadCap.xsd" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareImportGuide,FlareGuides.FlareTransitionFromFMGuide" />
+    </body>
+</html>

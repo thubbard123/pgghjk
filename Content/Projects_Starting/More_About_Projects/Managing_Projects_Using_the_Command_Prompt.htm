@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3324" MadCap:lastWidth="1094" class="" MadCap:conditions="Products.Lingo">
+    <head><title></title>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Projects:updating" />
+            <MadCap:keyword term="Projects:exporting;Exporting:projects" />
+            <MadCap:concept term="FilterProjects" />Managing Projects Using the Command Line</h1>
+        <p>Use the following steps if you want to manage a Lingo project using the command line. Using this method, you do not have to open Lingo at all. </p>
+        <p>Depending on the command(s) used, you can accomplish any of the following.</p>
+        <ul>
+            <li>Export a Lingo project</li>
+            <li>Export a Lingo project in a specific language</li>
+            <li>Update/sync a Lingo project with the source file</li>
+        </ul>
+        <p>
+            <MadCap:snippettext src="../../Resources/Snippets/Output/BestWayCommandLineBatch.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to use the command line to Manage a Lingo Project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/Output/CommandLineCompileFirstSteps.flsnp" />
+                <ol type="1" class="Decimal">
+                    <li value="3" class="PageBreakBefore">
+                        <p>Type one of the following commands and press <span class="Emphasis">Enter</span> on your keyboard (entering the name of your project file, source file, export path, target language, or if you want to sync the project (true/false) in place of the section in angle brackets).</p>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If there are spaces anywhere in the path/name of your project file, source file, export path, or target language, you need to use quotation marks around it. </p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The commands used by the compiler are case-sensitive.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown MadCap:conditions="General.OnlineLive" class="SecondLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>tip</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p class="tip" MadCap:autonum="&lt;b&gt;Tip: &lt;/b&gt;">Some operating systems allow you to drag a folder or file from the Windows location to the Command Prompt window. This will add the path of the folder or file within quotation marks for you.</p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to Export a Lingo Project</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Here is the command:</p>
+                                <p><span class="TypedEntry">lingoproject.exe -project [project file] -sourceFile [source file] -exportTo [export path] -syncProject [true/false]</span>
+                                </p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>You have a Lingo project called "Nursery Rhymes." It is stored in your Documents\My Translated Projects folder, and you want to export it to a folder on your Desktop. The source is a Flare project located in a folder called "SourceFiles" on your U: drive. You would type this:</p>
+                                    <p><span class="TypedEntry">lingoproject.exe -project "C:\Users\[username]\Documents\My Translated Projects\Nursery Rhymes.liprjf\Nursery Rhymes.liprj" -sourceFile "U:\SourceFiles\Nursery Rhymes.flprj" -exportTo "C:\Users\[username]\Desktop\Exports" -syncProject true</span>
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to Export a Lingo Project In a Specific Language</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Here is the command:</p>
+                                <p><span class="TypedEntry">lingoproject.exe -project [project file] -sourceFile [source file] -exportTo [export path] -language [target language] -syncProject [true/false]</span>
+                                </p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>You have a Lingo project called "Nursery Rhymes" that has been translated into Spanish and French. It is stored in your Documents\My Translated Projects folder, and you want to export the Spanish version to a folder on your Desktop. The source is a Word document located in a folder called "SourceFiles" on your U: drive. You would type this:</p>
+                                    <p><span class="TypedEntry">lingoproject.exe -project "C:\Users\[username]\Documents\My Translated Projects\Nursery Rhymes.liprjf\Nursery Rhymes.liprj" -sourceFile "U:\SourceFiles\Nursery Rhymes.docx" -exportTo "C:\Users\[username]\Desktop\Exports" -language Spanish -syncProject true</span>
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="MimicGuides.MimicMovieGenerationGuide" />
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>to Update a Lingo Project</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <p>Here is the command:</p>
+                                <p><span class="TypedEntry">lingoproject.exe -project [project file] -sourceFile [source file]</span>
+                                </p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">example</p>
+                                    <p>You have a Lingo project called "Nursery Rhymes." It is stored in your Documents\My Translated Projects folder. Your source file has changed, so you want to update the Lingo project. The source is a Flare project located in a folder called "SourceFiles" on your U: drive. You would type this:</p>
+                                    <p><span class="TypedEntry">lingoproject.exe -project "C:\Users\[username]\Documents\My Translated Projects\Nursery Rhymes.liprjf\Nursery Rhymes.liprj" -sourceFile "U:\SourceFiles\Nursery Rhymes.flprj"</span>
+                                    </p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                        <MadCap:dropDown class="SecondLevel">
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>now what?</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <p>If you are using the command prompt window for any of the commands just described, the project is exported or updated immediately.</p>
+                                <p>If you are creating a batch file in Notepad, it might look something like this:</p>
+                                <p>
+                                    <img src="../../Resources/Images/batch_file_example_lingo.png" class="MaxWidth100Percent" />
+                                </p>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/Output/CommandLineScheduledTask.flsnp" />
+                        <MadCap:snippetBlock src="../../Resources/Snippets/Output/CommandLineScheduledTaskSteps.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="General.OnlineLive">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After exporting a project, you can inform the author, who can then open the translated project or file and create output for it.</p>
+                <p>After updating a project, you can open a list of files that require translation (see <MadCap:xref href="../../Translating_Files/Viewing_a_List_of_Files_Requiring_Translation.htm">Viewing a List of Files Requiring Translation</MadCap:xref>). If the Difference column indicates a change was made to a particular file, you can open that file to translate the new text (you may need to drag the divider in the File List window pane to see the Difference column).</p>
+                <p>
+                    <img src="../../Resources/Images/update_project_example2.png" class="MaxWidth100Percent" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="Output" />
+        </p>
+    </body>
+</html>

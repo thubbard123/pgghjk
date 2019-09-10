@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="731" MadCap:lastWidth="910" MadCap:conditions="Products.Flare" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\Flare\FlarePrintedOutput.flmsp');">
+    <head><title></title>
+        <meta name="description" content="Use the Target Editor in MadCap Flare to define which condition tag set to use during the build process for a print-based Flare target. " />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="FilterPrintedOutput" MadCap:conditions="Products.Flare" />
+            <MadCap:concept term="FilterConditionTags" />
+            <MadCap:keyword term="Conditions:targets;Print-based output:condition tags;Conditions:printed output" />
+            <MadCap:concept term="PrintedOutputConditionTags" MadCap:conditions="Products.Flare" />Associating Conditions with Your Print Target</h1>
+        <p>After you apply the condition tags to the appropriate content for print-based output, you'll need to specify in a target (based on one of the print-based output types) which condition tags to include in the output and which to exclude.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>how to associate condition tags with your print target</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the target that you plan to build for your printed output. The Target Editor opens.</li>
+                    <li>Click the <span class="Emphasis">Conditional Text</span> tab. </li>
+                    <li>In the <span class="Emphasis">Condition Tag Sets</span> area, you can choose to view tags for all condition tag sets or you can select a specific set. The tags associated with the selected set are shown to the right, with their associated colors. An Include and Exclude check box appears next to each condition tag.</li>
+                    <li>
+                        <p>By default, all tags will be included in the target unless you specify otherwise. If you want to exclude a condition tag from the output for this target, click the <span class="Emphasis">Exclude</span> check box next to it. If you want to make sure a condition tag is included in the output for this target, click the <span class="Emphasis">Include</span> check box next to it. </p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">example</p>
+                            <p>If you use the default condition tags provided by <MadCap:variable name="Other.Product" />, you would click the Include check box next to the Default.PrintOnly tag, and you would click the Exclude check box next to the Default.ScreenOnly tag.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../../Resources/Snippets/StepsGeneral/SaveYourWork.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Products.FlareOnlineOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What's Next?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>After you associate condition tags with your print target, you can move on to any of the other tasks for creating printed output. See <MadCap:xref href="../Creating_Printed_Output.htm" target="" title="" alt="">Creating Print-based Output</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="PrintedOutputConditionTags" />
+        </p>
+    </body>
+</html>

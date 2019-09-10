@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="11" MadCap:lastHeight="5756" MadCap:lastWidth="881" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\Resources\MasterPages\PDF_Topics\D2H\D2HSandcastle.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Microsoft Sandcastle" />Configuring the Sandcastle Reference Section</h1>
+        <p>In the Properties for Generating Reference dialog, you can import a Documenter for .NET project file and/or configure your Sandcastle reference section. </p>
+        <p>To access the Properties for Generating Reference dialog, navigate to the Documents pane and double-click the reference document. The dialog contains multiple nodes.</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ThisChapterDiscussesFollowing.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Assemblies Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Assemblies Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use the Assemblies node to add assembly files and source code comment files to your project.&#160; </p>
+                <p>
+                    <img id="_x0000_i1027" src="../../Resources/Images/D2H/ContentAPIGenDBAssemb.png" height="291" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Add from file </span>Click this button to add an assembly from a .dll on your machine.</li>
+                    <li><span class="SetOffFirstLevel">Add from GAC </span>Click this button to add an assembly from the Global Assemblies Cache (GAC). Strong-named assemblies must reside in the GAC in order to be documented.</li>
+                    <li><span class="SetOffFirstLevel">Remove </span>Click <span class="Emphasis">Remove</span> to remove an assembly and its corresponding .xml file from the project.</li>
+                    <li><span class="SetOffFirstLevel">Source Code Comments XML File </span>Click <span class="Emphasis">Browse</span> to locate the .xml file containing source code comments, or the actual content, for the reference section of your documentation.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Dependencies Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Dependencies Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The dependency assemblies are required by the assemblies specified in the Assemblies node.</p>
+                <p>
+                    <img id="_x0000_i1028" src="../../Resources/Images/D2H/ContentAPIGenDBDepend.png" height="291" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Add from file </span>Click this button to add an assembly from a .dll on your machine.</li>
+                    <li><span class="SetOffFirstLevel">Add from GAC </span>Click this button to add an assembly from the Global Assemblies Cache (GAC). Strong-named assemblies must reside in the GAC in order to be documented.</li>
+                    <li><span class="SetOffFirstLevel">Remove </span>Click <span class="Emphasis">Remove</span> to remove an assembly and its corresponding .xml file from the project.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Element Filter Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Element Filter Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Element filter allows you to select which elements you want to appear in the documentation. To include an element in your reference section, simply select the check box next to it.&#160; </p>
+                <p>
+                    <img id="_x0000_i1029" src="../../Resources/Images/D2H/ContentAPIGenDBElement.png" height="291" class="MaxWidth100Percent" />
+                </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Modify </span>Click this button to access the All Elements dialog. From the All Elements dialog, you can easily add elements to the Element filter by clearing their check boxes. You can also click the <span class="Emphasis">Exclude Elements Without Description</span> button to remove any elements that don't have descriptions from your project.&#160; </li>
+                    <li><span class="SetOffFirstLevel">Verify </span>Click this button to initialize a verification test, which will check whether or not all of the filter elements specified exist in the assemblies.&#160; </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Generation Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Generation Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Generation node, you can choose the framework version for your system type documentation links and add an .xslt stylesheet to your project.&#160;</p>
+                <p>
+                    <img id="_x0000_i1026" src="../../Resources/Images/D2H/ContentAPIGenDB.png" height="294" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <ul>
+                    <li><span class="SetOffFirstLevel">Framework version </span>Select the .NET Framework version you want to link to when a system type appears in your documentation. Select version 2.0, 3.0, 3.5, 1.0, 1.1, 4.0, Silverlight 3 or Silverlight 4.</li>
+                    <li><span class="SetOffFirstLevel">XSLT file to transform source code comments XML </span>Click <span class="Emphasis">Browse</span> to select the .xslt file containing the transforms that are used to manipulate your XML source code comments after a build has already been performed and topics have been created.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Import Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Import Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Import node allows you to import a Documenter for .NET project—including all of its properties—which will overwrite the default properties for the Sandcastle plug-in document. </p>
+                <p>
+                    <img id="_x0000_i1025" src="../../Resources/Images/D2H/ContentAPIGenDBImport.png" height="291" class="MaxWidth100Percent">
+                    </img>
+                </p>
+                <p>To import a Documenter for .NET project, click <span class="Emphasis">Browse</span>. In the Open dialog, navigate to your project folder and select the .d2hdotnet file you wish to convert to Sandcastle.&#160; </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Output Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Output Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Output node of the Properties for Generating Reference dialog has three tabs: Common, Topics, and Components. </p>
+                <p>
+                    <img id="_x0000_i1031" src="../../Resources/Images/D2H/ContentAPIGenDBOutput.png" height="291" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Common tab </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Under the Common tab, you can choose syntax for languages, specify documentation links, and select a presentation style.&#160; </p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Include syntax for languages </span>To add syntax for a programming language to your reference section, simply check the box next to that reference section. You can include syntax for C#, Visual Basic, C++, J#, JavaScript, XAML, and ASP.NET.</li>
+                            <li><span class="SetOffFirstLevel">Links to .NET Framework documentation </span>Select the check box for the type of links Sandcastle should create when linking to the .NET Framework documentation.<ul class="SecondLevel"><li>None</li><li>Links to local Visual Studio help</li><li>Links to online help on the Microsoft site</li></ul></li>
+                            <li><span class="SetOffFirstLevel">Presentation style for topics </span>Choose one of the built-in themes provided by Sandcastle.</li>
+                            <li><span class="SetOffFirstLevel">Topic file names </span>Choose Friendly or GUID.<ul class="SecondLevel"><li class="SetOffSecondLevel"><p>Prototype</p><p><img id="_x0000_i1033" src="../../Resources/Images/D2H/Prototype.png" height="316" class="MaxWidth100Percent" /></p></li><MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" /><li class="SetOffSecondLevel"><p>VS2005</p><p><img id="_x0000_i1034" src="../../Resources/Images/D2H/VS2005.png" height="593" class="MaxWidth100Percent" /></p></li><MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" /><li class="SetOffSecondLevel"><p>Hana</p><p><img id="_x0000_i1035" src="../../Resources/Images/D2H/Hana.png" height="481" class="MaxWidth100Percent" /></p></li></ul></li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Topics tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Under the Topics tab, you can enter feedback text, introductory sentences, and copyright information. Any text entered in this section will appear on every page of the reference section.</p>
+                        <ul>
+                            <li>
+                                <p><span class="SetOffFirstLevel">Enable sending feedback </span>This allows you to add a footer with a feedback link to each page of the Sandcastle reference section. Selecting this check box inserts the generic statement "Send feedback on this topic to" into the footer of each page and enables the "Use Sandcastle defaults" check box and the "Company name" and "Company email" text boxes.</p>
+                                <p>The following elements will affect the content of the feedback footer:</p>
+                                <ul class="SecondLevel">
+                                    <li>
+                                        <p><span class="SetOffSecondLevel">Use Sandcastle defaults </span>Select this check box to insert the default Sandcastle contact information into the footer of the reference section. If you choose this option, the "Company name" and "Company e-mail" boxes will be disabled.</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffSecondLevel">Company name </span>Enter your company's name into this text box to add it to the feedback footer statement. If you typed "Doc-To-Help" into this field, the feedback footer statement would read "Send feedback on this topic to Doc-To-Help."</p>
+                                    </li>
+                                    <li>
+                                        <p><span class="SetOffSecondLevel">Company email </span>Enter your company's contact e-mail address into this text box to add it, as a mailto link, to the feedback footer statement.&#160; </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span class="SetOffFirstLevel">Start every topic with text </span>Text entered into this box will appear as the first sentence or paragraph of all reference topics. </li>
+                            <li><span class="SetOffFirstLevel">Copyright text </span>Enter copyright information into this box to have it appear in the footer of your reference pages.&#160; </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Components tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>The Components tab allows you to enable and configure the CodeBlock and PostTranform components.</p>
+                        <ul>
+                            <li><span class="SetOffFirstLevel">Enable CodeBlock and corresponding PostTransform component </span>Select this check box to enable the CodeBlock and PostTransform components. These components, which were developed by Eric Woodruff, complement Sandcastle's functionality for better display of code blocks in various languages. For more information on the background and functionality of these components, see <MadCap:xref href="CodeBlock and PostTransform components.htm">CodeBlock and PostTransform Components</MadCap:xref>.</li>
+                        </ul>
+                        <p>Click the <span class="Emphasis">Configure</span> button next to its corresponding component to configure that component's settings. The CodeBlock component's Configure button opens the <c1hjump>Configure CodeBlock Component</c1hjump> dialog, while the PostTransform component's Configure button opens the <c1hjump>Configure PostTransform Component</c1hjump> dialog.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+        <h2 MadCap:conditions="D2HGuides.D2HSandcastleGuide">Visibility Filter Node</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>Visibility Filter Node</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Visibility filter determines which types of classes and members will appear in the Sandcastle reference section. The Visibility filter is separated into two sections: Include types and Include members.</p>
+                <p>
+                    <img id="_x0000_i1030" src="../../Resources/Images/D2H/ContentAPIGenDBVisibility.png" height="291" class="MaxWidth100Percent" />
+                </p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Include Types Section</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In the Include types section, select the check boxes for the types of classes you would like to appear in your reference section. You can include the following class types in your reference section:</p>
+                        <ul>
+                            <li>Public</li>
+                            <li> Internal</li>
+                            <li>Protected</li>
+                            <li>Protected Internal</li>
+                            <li>Private</li>
+                            <li>Attributes</li>
+                        </ul>
+                        <p>To revert to the default selection, which only includes Public and Protected classes, click the <span class="Emphasis">Default</span> button</p>
+                        <p>To include all types in the reference, click the <span class="Emphasis">Include All</span> button.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:pageBreak MadCap:conditions="D2HGuides.D2HSandcastleGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Include Members Section</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>In the Include members section, select the check boxes for the members that you would like to appear in your reference section. You can include the following types of members in your reference section:</p>
+                        <ul>
+                            <li>Public</li>
+                            <li>Internal</li>
+                            <li>Protected</li>
+                            <li>Protected Internal</li>
+                            <li>Private</li>
+                            <li>Explicit Interface Implementations</li>
+                        </ul>
+                        <p>To revert to the default selection, which only includes Public and Protected members, click the <span class="Emphasis">Default</span> button</p>
+                        <p>To include all members in the reference, click the <span class="Emphasis">Include All</span> button.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <div class="note">
+                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Keep the following in mind when creating Microsoft Help Viewer Targets with the Doc-To-Help Plugin for Sandcastle:</p>
+                    <ul>
+                        <li>Doc-To-Help supports only self-branded targets. This option is set using the <span class="Emphasis">Self-branded</span> check box in the Help Targets dialog.</li>
+                        <li>In the Output node, Doc-To-Help supports only the VS2005 presentation style.</li>
+                        <li>In the Output node, set the Links to .NET Framework documentation to <span class="Emphasis">None</span>.</li>
+                    </ul>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2262" MadCap:lastWidth="1185" MadCap:conditions="Products.Flare">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Following are some important characteristics of the Builds window pane:</p>
+        <ul>
+            <li><span class="SetOffFirstLevel">Rows in the Grid </span>Each row in the grid represents a target for which you have initiated a build. By default the top row is the most recent build.</li>
+            <li>
+                <p><span class="SetOffFirstLevel">Status/State </span>The Status and State columns in the grid may display any of the following, depending on the progress of the target build: Running (Building), Finished (Build Complete/Build Failed), Queued, or Terminated (Cancelled).</p>
+                <p>
+                    <img src="../../Images/build_targets_background3.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlareTouringTheWorkspaceGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Warnings and Errors </span>The last three columns display the number of warnings and errors for the target. You can open the build log to see details for the warnings or errors. In addition, if you have set Flare to ignore certain warnings (in the Options dialog or Target Editor), that number is also given.</p>
+                <p>
+                    <img src="../../Images/build_targets_background18.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlareTouringTheWorkspaceGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Background Colors </span>The Progress cells display colored backgrounds, depending on what happens with the build. When a build is in progress, the background is light green. If the build finishes with no errors (although there may be warnings), the background turns dark green. If an error prevents the build from finishing, the background is red. If you manually stop the build, the background is yellow.</p>
+                <p>
+                    <img src="../../Images/build_targets_background5.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>Following are descriptions of the three progress columns:</p>
+                <ul class="SecondLevel">
+                    <li><span class="SetOffSecondLevel">Build Progress </span>This column indicates the progress of the entire build for a target.</li>
+                    <li><span class="SetOffSecondLevel">Compile Progress </span>This column indicates the progress of individual parts of a target's build.</li>
+                    <li><span class="SetOffSecondLevel">Publish Progress </span>This column indicates the progress of a target that is being published to a destination you have set up.</li>
+                </ul>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlareTouringTheWorkspaceGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Compile Status </span>As a target is generated, the contents of the Compile Status column change rapidly (e.g., showing the files being processed).</p>
+                <p>
+                    <img src="../../Images/compile_status.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+            </li>
+            <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlarePrintedOutputGuide,FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareTargetsGuide,FlareGuides.FlareTouringTheWorkspaceGuide" />
+            <li>
+                <p><span class="SetOffFirstLevel">Warning for Changed Files </span>Because this feature allows you to continue working while targets are generated, it's possible that you might change a file that is included in a target while it is still compiling. If that happens, the target continues to build without those changes, but you will see a warning in the build log to let you know.</p>
+                <p>
+                    <img src="../../Images/build_targets_background16.png" alt="" title="" class="MaxWidth100Percent" />
+                </p>
+                <p>
+                    <img src="../../Images/build_targets_background17.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+                <p>If this happens, will your changes make it into the output? That depends on the file(s) that you changed. Flare processes your source files in the order that it finds them. So if the generation process already passed the point where it would have grabbed a particular source file, your changes from that file will not make it into the output. However, if Flare's build process has not yet reach the file in question, then the changes might make it into the output. You can refer to the warnings you receive in the build log and then look at the files in the output to see if your changes made it.</p>
+            </li>
+            <li>
+                <p><span class="SetOffFirstLevel">Build Logs </span>
+                    <MadCap:snippetText src="OpenBuildLogs1.flsnp" />
+                </p>
+                <p>
+                    <img src="../../Images/build_log_save.png" alt="" title="" class="MaxWidth90Percent" />
+                </p>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareTouringTheWorkspaceGuide" />
+                <p>A build log file has an .mclog file extension. The next time you generate the target, the old log file is replaced with a new one.</p>
+                <p>
+                    <img src="../../Images/build_targets_background20.png" alt="" title="" class="MaxWidth80Percent" />
+                </p>
+                <p>In the local toolbar of the Builds window pane, you can click <span class="Emphasis">Open Build Log</span> to see it in Flare. You can then see more details of any warnings or errors you may have gotten when building the target. <MadCap:conditionalText MadCap:conditions="General.OnlineLive">See <MadCap:xref href="../../../Output/More_About_Building_Final_Output/Opening_Build_Logs.htm" >Opening Build Logs</MadCap:xref>.</MadCap:conditionalText></p>
+                <p>
+                    <img src="../../Images/build_targets_background19.png" alt="" title="" class="MaxWidth80Percent" />
+                </p>
+            </li>
+            <li><span class="SetOffFirstLevel">Batch Targets </span>In addition to single targets, if you build a batch target<MadCap:conditionalText MadCap:conditions="General.OnlineLive"> (see <MadCap:xref href="../../../Output/Building_Output_Using_a_Batch_Target.htm">Building Output Using a Batch Target</MadCap:xref>)</MadCap:conditionalText>, the process for each one is shown in the Builds window pane.</li>
+        </ul>
+    </body>
+</html>

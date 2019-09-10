@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Analyzer,Products.Flare,Products.Contributor" MadCap:lastBlockDepth="9" MadCap:lastHeight="3948" MadCap:lastWidth="735">
+    <head>
+        <link href="../../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>
+            <MadCap:keyword term="Autonumbers" />Following are descriptions of the commands that are available.</p>
+        <MadCap:snippetBlock src="../EmptyPageBreakAfter.flsnp" MadCap:conditions="FlareGuides.FlareStylesGuide,FlareGuides.FlareAutoNumbersGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>autonumber commands</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">{n} </span>Retains the current counter value and displays it. You might use this command, for example, if you are applying autonumber formats to multi-level paragraphs, where one paragraph acts as the "parent" to another. Let's say the first-level paragraphs are numbered like this: 1.0, 2.0, 3.0. If you want the second level paragraphs to keep the first number of its parent paragraph and increment the second number (e.g., 1.1, 1.2, 1.3), you would enter the {n} command to continue displaying that first number, which represents the parent paragraph (in this case, 1). </li>
+                    <li><span class="SetOffFirstLevel">{n=1} </span>Resets the counter value to 1 and displays it. You can replace the number 1 with any other number that you want to use.</li>
+                    <li><span class="SetOffFirstLevel">{ =0} </span>Resets the counter value to 0 but does not display it. You can replace the number 0 with any other number that you want to use.</li>
+                    <li><span class="SetOffFirstLevel">{n+} </span>Increments the counter value and displays it. You might use this command, for example, to increment a list of step-by-step procedures (e.g., 1., 2., 3.). </li>
+                    <li><span class="SetOffFirstLevel">{} </span>Retains the current value and does not display it. You might use this command, for example, if you are creating an outline with Roman numerals at the first level and uppercase alpha numerals at the second level. If you are creating the format for the second level, you want the autonumber format to keep track of the fact that it is a "child" of the first level paragraph, but you do not want to display the Roman numeral from it (e.g., IV.A.). Instead, you only want to display the uppercase alpha letter (e.g., A). In order to do this, you would insert the { } command at the place where the Roman numeral would normally be displayed. </li>
+                </ul>
+                <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlareStylesGuide" />
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">{secnum} </span>Displays the current section number. <MadCap:conditionalText MadCap:conditions="Products.Flare">You can use this command if you are creating <MadCap:conditionalText MadCap:conditions="Products.Flare">online output, or </MadCap:conditionalText>Word, XPS, PDF, or XHTML output. This command does not apply to FrameMaker output.</MadCap:conditionalText></p>
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="ThirdLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To generate <span class="EmphasisItalic">section</span> numbers, you need to create an autonumber format that includes the {secnum} command. Then you need to specify section breaks in the <MadCap:conditionalText MadCap:conditions="Products.Flare">outline TOC</MadCap:conditionalText>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also insert Section Number variables into page layout headers. By doing this, you can automatically display the correct section number at the top or bottom of pages in the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Page_Layouts/Frames/Inserting_Chapter_Section_and_Volume_Number_Variables_into_Frames.htm">Inserting Chapter, Section, and Volume Number Variables into Frames</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">{chapnum} </span>Displays the current chapter number. </p>
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="ThirdLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To generate <span class="EmphasisItalic">chapter</span> numbers, you need to create an autonumber format that includes the {chapnum} command. Then you need to specify chapter breaks in the <MadCap:conditionalText MadCap:conditions="Products.Flare">outline TOC</MadCap:conditionalText>. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also insert Chapter Number variables into page layout headers. By doing this, you can automatically display the correct chapter number at the top or bottom of pages in the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Page_Layouts/Frames/Inserting_Chapter_Section_and_Volume_Number_Variables_into_Frames.htm">Inserting Chapter, Section, and Volume Number Variables into Frames</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li MadCap:conditions="General.OnlineLive,FlareGuides.FlareStylesGuide">
+                        <p><span class="SetOffFirstLevel">{volnum} </span>Displays the current volume number. </p>
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="ThirdLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To generate <span class="EmphasisItalic">volume</span> numbers, you need to create an autonumber format that includes the {volnum} command. Second, you need to specify chapter breaks in the <MadCap:conditionalText MadCap:conditions="Products.Flare">outline TOC</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. Third, you need to specify the autonumber flow for each volume, resetting the volume number to a specific number<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> (see <MadCap:xref href="../../../Autonumbers/Specifying_Auto_Numbering_Flow_for_Output.htm">Specifying Autonumbering Flow for Output</MadCap:xref>)</MadCap:conditionalText>.</p>
+                                </div>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also insert Volume Number variables into page layout headers. By doing this, you can automatically display the correct volume number at the top or bottom of pages in the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Page_Layouts/Frames/Inserting_Chapter_Section_and_Volume_Number_Variables_into_Frames.htm">Inserting Chapter, Section, and Volume Number Variables into Frames</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li MadCap:conditions="FlareGuides.FlareGettingStartedGuide,FlareGuides.FlarePrintedOutputGuide">
+                        <p><span class="SetOffFirstLevel">{volnum} </span>Displays the current volume number.  </p>
+                        <MadCap:dropDown MadCap:conditions="Products.Flare" class="ThirdLevel">
+                            <MadCap:dropDownHead class="OnlineOnly">
+                                <MadCap:dropDownHotspot>Notes</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody class="Final">
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">To generate <span class="Emphasis">volume</span> numbers, you need to create an autonumber format that includes the {volnum} command. Second, you need to specify chapter breaks in the <MadCap:conditionalText MadCap:conditions="Products.Flare">outline TOC</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> (see <MadCap:xref href="../../../Output/Printed_Output/More_About_Printed_Output/Specifying_Chapter_Breaks_for_Printed_Output.htm">Specifying Chapter Breaks and Page Layouts</MadCap:xref>)</MadCap:conditionalText>. Third, you need to specify the autonumber flow for each volume, resetting the volume number to a specific number<MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide"> (see <MadCap:xref href="../../../Autonumbers/Specifying_Auto_Numbering_Flow_for_Output.htm">Specifying Autonumbering Flow for Output</MadCap:xref>)</MadCap:conditionalText>.</p>
+                                </div>
+                                <div class="note">
+                                    <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can also insert Volume Number variables into page layout headers. By doing this, you can automatically display the correct volume number at the top or bottom of pages in the output. <MadCap:conditionalText MadCap:conditions="General.OnlineLive,FlareGuides.FlarePrintedOutputGuide">See <MadCap:xref href="../../../Page_Layouts/Frames/Inserting_Chapter_Section_and_Volume_Number_Variables_into_Frames.htm">Inserting Chapter, Section, and Volume Number Variables into Frames</MadCap:xref>.</MadCap:conditionalText></p>
+                                </div>
+                            </MadCap:dropDownBody>
+                        </MadCap:dropDown>
+                    </li>
+                    <li><span class="SetOffFirstLevel">{r} </span>This is the same as the {n} command, except it displays the counter as a lowercase Roman numeral. You can replace the "n" with an "r" in any of the commands listed above.</li>
+                    <li><span class="SetOffFirstLevel">{R} </span>This is the same as the {n} command, except it displays the counter as an uppercase Roman numeral. You can replace the "n" with an "R" in any of the commands listed above. </li>
+                    <li><span class="SetOffFirstLevel">{a} </span>This is the same as the {n} command, except it displays the counter as a lowercase alpha letter. You can replace the "n" with an "a" in any of the commands listed above.</li>
+                    <li><span class="SetOffFirstLevel">{A} </span>This is the same as the {n} command, except it displays the counter as an uppercase alpha letter. You can replace the "n" with an "A" in any of the commands listed above. </li>
+                    <li><span class="SetOffFirstLevel">{Sn} </span>This is a counter to be used over the course of an entire section. This specific command retains the current counter value and displays it. However, you can modify it to create custom versions of any of the commands that you see above with {n}. For example, you might want to use {Sn+} or {Sn=1}.</li>
+                    <li><span class="SetOffFirstLevel">{Cn} </span>This is a counter to be used over the course of an entire chapter. This specific command retains the current counter value and displays it. However, you can modify it to create custom versions of any of the commands that you see above with {n}. For example, you might want to use {Cn+} or {Cn=1}.</li>
+                    <li><span class="SetOffFirstLevel">{Gn} </span>This is a counter to be used globally in your content. This specific command retains the current counter value and displays it. However, you can modify it to create custom versions of any of the commands that you see above with {n}. For example, you might want to use {Gn+} or {Gn=1}.</li>
+                    <li><span class="SetOffFirstLevel">H: </span>Specifies a series labeled H. However, you can use any letter of the alphabet for a series label, and you can use several different series labels throughout your content. For example, you might want to use F: for a series of figure captions, or T: for a series of table captions. If you use a series label, it must be first in the autonumber format. </li>
+                    <li><span class="SetOffFirstLevel">SH: </span>Specifies a section-wide series labeled H. However, you can use any letter of the alphabet as the second letter (replacing H). For example, you might want to use SF: for a section-wide series of figure captions, or ST: for a section-wide series of table captions. If you use a series label, it must be first in the autonumber format.</li>
+                    <li><span class="SetOffFirstLevel">CH: </span>Specifies a chapter-wide series labeled H. However, you can use any letter of the alphabet as the second letter (replacing H). For example, you might want to use CF: for a chapter-wide series of figure captions, or CT: for a chapter-wide series of table captions. If you use a series label, it must be first in the autonumber format. </li>
+                    <li><span class="SetOffFirstLevel">GH: </span>Specifies a global series labeled H. However, you can use any letter of the alphabet as the second letter (replacing H). For example, you might want to use GF: for a global series of figure captions, or GT: for a global series of table captions. If you use a series label, it must be first in the autonumber format.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareAutoNumbersGuide,FlareGuides.FlarePrintedOutputGuide" />
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>file commands</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">{ext} </span>Displays the file extension.</li>
+                    <li><span class="SetOffFirstLevel">{file} </span>Displays the file name, including the extension.</li>
+                    <li><span class="SetOffFirstLevel">{filename} </span>Displays the file name, without the extension.</li>
+                    <li><span class="SetOffFirstLevel">{path} </span>Displays the path of the file.</li>
+                    <li><span class="SetOffFirstLevel">{url} </span> Displays the path of the file, URL syntax.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>format commands</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">{b} </span>Starts bold text.</li>
+                    <li><span class="SetOffFirstLevel">{/b} </span>Ends bold text.</li>
+                    <li><span class="SetOffFirstLevel">{bg red} </span>Starts new background color. You can replace "red" with another color.</li>
+                    <li><span class="SetOffFirstLevel">{/bg} </span>Ends the background color.</li>
+                    <li><span class="SetOffFirstLevel">{color red} </span>Starts new text color. You can replace "red" with another color.</li>
+                    <li><span class="SetOffFirstLevel">{/color} </span>Ends the text color.</li>
+                    <li><span class="SetOffFirstLevel">{default} </span>Resets all font changes.</li>
+                    <li><span class="SetOffFirstLevel">{family Courier New} </span>Starts a new font family. You can replace "Courier New" with another font family.</li>
+                    <li><span class="SetOffFirstLevel">{/family} </span>Ends font family.</li>
+                    <li><span class="SetOffFirstLevel">{i} </span>Starts italic text.</li>
+                    <li><span class="SetOffFirstLevel">{/i} </span>Ends italic text.</li>
+                    <li><span class="SetOffFirstLevel">{size 12pt} </span>Starts font size. You can replace "12pt" with another font size.</li>
+                    <li><span class="SetOffFirstLevel">{/size} </span>Ends font size.</li>
+                    <li><span class="SetOffFirstLevel">{sub} </span>Starts subscript text.</li>
+                    <li><span class="SetOffFirstLevel">{/sub} </span>Ends subscript text.</li>
+                    <li><span class="SetOffFirstLevel">{sup} </span>Starts superscript text.</li>
+                    <li><span class="SetOffFirstLevel">{/sup} </span>Ends superscript text.</li>
+                    <li><span class="SetOffFirstLevel">{u} </span>Starts underline text.</li>
+                    <li><span class="SetOffFirstLevel">{/u} </span>Ends underline text.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>page commands</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li><span class="SetOffFirstLevel">{page} </span>Displays the page number.</li>
+                    <li><span class="SetOffFirstLevel">{pagecount} </span>Displays the page count.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown class="SecondLevel">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>text commands</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <ul>
+                    <li><span class="SetOffFirstLevel">{title} </span>Displays the title of the document (from the Properties dialog).<MadCap:conditionalText MadCap:conditions="Products.FlareOnlineOnly"> See <MadCap:xref href="../../../Topics/More_About_Topics/Changing_Topic_Titles.htm">Changing Topic Titles</MadCap:xref>.</MadCap:conditionalText></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

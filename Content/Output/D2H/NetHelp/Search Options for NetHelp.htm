@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="10" MadCap:lastHeight="5037" MadCap:lastWidth="562" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\..\..\Resources\MasterPages\PDF_Topics\D2H\D2HTargets.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Search" />
+            <MadCap:keyword term="Output" />
+            <MadCap:keyword term="Targets;NetHelp" />Search Options for NetHelp</h1>
+        <p>Doc-To-Help’s NetHelp target&#160; includes powerful search features that you can customize for your needs, such as server-side search.</p>
+        <p>By default, JavaScript Client search is used in NetHelp targets and requires no server setup. JavaScript Server search requires setup, but will improve the search speed of NetHelp targets installed on a web server. See <c1hjump><MadCap:xref href="#SettingUpServerSideSearchNetHelp20">Setting Up Server-Side Search for NetHelp Targets</MadCap:xref></c1hjump>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Exact Phrase, Boolean, and Fuzzy Searches</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>JavaScript search supports exact phrase, Boolean, and fuzzy searches. </p>
+                <ul>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Exact phrase search</span> means that if you enclose a phrase in double quotes, the search will be limited to that exact phrase in the online output.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example   </p>
+                            <p>"sports teams"</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Boolean search</span> means that you can use "AND" or "OR" (no quotes) between words or exact phrases when searching. You can also use "AND NOT" or "NOT" before a word or exact phrase to exclude topics containing that phrase from the results. By default, if there is no "AND" or "OR" between words, "AND" is assumed.&#160; </p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example   </p>
+                            <p>football or hockey, sports and not baseball</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span class="SetOffFirstLevel">Fuzzy search</span> will display alternative search options (and results) if the user enters a search term that is close to the term entered.</p>
+                        <div class="example">
+                            <p class="exampleHeadTextEmpty">Example   </p>
+                            <p>Let's say you search for sorts. The search will return "No topics found. Did you mean: sports."</p>
+                        </div>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="SettingUpServerSideSearchNetHelp20"></a>Setting Up Server-Side Search for NetHelp Targets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>The following explains how to set up server-side search for NetHelp targets.</p>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>General Information</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ul>
+                            <li>The search server is JavaScript-based and runs inside the Node.js server.</li>
+                            <li>The search server uses HTTP protocol to handle search queries, so it requires a free port number on the server. For example, if the NetHelp target on the server is handled by a web server (IIS, Apache, etc.) and by default uses port 80, the search server will use 8256 by default. You must verify that the 8256 port for the search server is free and is not blocked by a firewall.</li>
+                            <li>The search server can be used for either a single target or for multiple targets. Using a separate search server for each target can improve search &#160;performance, while using the single search server for multiple targets makes the setup and support processes easier. If you run several search servers, each of them requires a separate port number.</li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Setting up the Search Type</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>In Doc-To-Help, open the <span class="Emphasis">Home</span> ribbon, and at the bottom of the <span class="Emphasis">Target</span> group click <img src="../../../Resources/Images/arrow_btn.png" class="ReduceButtonSize" />. The Help Targets dialog opens.</li>
+                            <li>On the left side of the dialog, select the <span class="Emphasis">NetHelp</span> target.</li>
+                            <li>In the <span class="Emphasis">Advanced</span> section, in the <span class="Emphasis">Search type</span> field, choose <span class="Emphasis">JavaScript Server</span>. </li>
+                            <li>Build the target.</li>
+                        </ol>
+                        <p>After the target is built, click the <span class="Emphasis">View</span> button, or view it when Doc-To-Help asks if you would like to view the target. This will start the search server automatically and will open the NetHelp&#160; target in a browser where you can test the search server. (This starts the server locally and is only for testing.) </p>
+                        <p>When you close the target, the search server will be automatically shut down. When you build/rebuild this or another target and click on the <span class="Emphasis">View</span> button again, the search server is restarted automatically.</p>
+                        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can test only one target at a time. If you have two Doc-To-Help instances running and build a target with the JavaScript Server search type, only one of them can be tested with the View button at a time. If you have one target open already, and try to open another, you will receive an error message that says "you must shutdown the search server." To do so, close the open target and try again. A similar problem can occur if you run the server manually and haven't stopped it. In that case, you will need to stop the search server manually.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="SettingUpServerSingleTarget"></a>Setting Up a Server for a Single Target</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>As a prerequisite to the following steps, Node.js must be installed on the server. It can be downloaded here: <a href="http://nodejs.org">http://nodejs.or</a>.</p>
+                        <ol>
+                            <li>
+                                <p>Copy your built target to the web server.</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example   </p>
+                                    <p>c:\d2h\targets\MyOutput</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Depending on the web server that you use (IIS, Apache, etc.), set up your server to serve the target files (e.g., in IIS, set up a virtual directory).</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example   </p>
+                                    <p>http://localhost/d2h/MyOutput can point to c:\d2h\targets\MyOutput.</p>
+                                </div>
+                            </li>
+                            <li>Run the search server in node.js. For Windows:</li>
+                            <ul>
+                                <li>Open the command line (<span class="Emphasis">Start&gt;All Programs&gt;Accessories&gt;Command Prompt</span>).</li>
+                                <li>Verify that the current directory is C:\. If it is not, type <span class="TypedEntry">C:</span> and press <span class="Emphasis">Enter</span>. This will change current directory to C:\.</li>
+                                <li>Change the current directory and set it to the <span class="Emphasis">js\nodejs</span> subfolder in the built target folder (e.g., cd "c:\d2h\targets\MyOutput\js\nodejs" and press <span class="Emphasis">Enter</span>.</li>
+                                <li>Type <span class="TypedEntry">"node index.js"</span> and press <span class="Emphasis">Enter</span>.</li>
+                            </ul>
+                        </ol>
+                        <p>You should see the message "The server has started" in the command line window. You will also see log and error messages in this window when the search server is used.</p>
+                        <p>To close the search server, you can press <span class="Emphasis">Ctrl+C</span> in the command line window or just close it.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Viewing and testing server-side search</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>
+                                <p>Open the built target in a browser, not from the local file system (i.e., the URL in the browser must start with the "http://" prefix).</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>http://localhost/d2h/MyOutput</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Try searching for a word.</p>
+                                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">When you perform a search, you can see requests and responses from the server in the open command line window.</p>
+                            </li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Setting up a single search server for multiple targets (for Windows)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <ol>
+                            <li>Repeat steps 1-2 from <c1hjump><MadCap:xref href="#SettingUpServerSingleTarget">Setting Up a Server for a Single Target</MadCap:xref></c1hjump>.</li>
+                            <li>Copy the search server files to a separate folder (e.g., c:\d2h\nodejs).</li>
+                            <li>Go to the folder containing the search server files (<span class="Emphasis">c:\d2h\nodejs</span>) and open the <span class="Emphasis">settings.json</span> file. This is a configuration file for the server, in JSON format. By default it has two settings:</li>
+                            <ul>
+                                <li><span class="SetOffFirstLevel">port</span> is the port number that the search server will use. The default value is 8256. Make sure that this port isn't used by another application and isn't blocked by firewalls. Otherwise, you must change this value to any available port number.</li>
+                                <li><span class="SetOffFirstLevel">host</span> is the IP address on which the search server will wait for requests. The default value is "null" and will work in most cases. You need to change this setting only if the system has several network interfaces and you want the search server to use a specific network interface.</li>
+                            </ul>
+                            <li>
+                                <p>To handle multiple targets by a single search server, you need to add the "targets" option to this file with information about your targets. After modifying the "settings.json" file, it could look like this:</p>
+                                <div class="IndentSmall">
+                                    <p class="Code">{</p>
+                                    <p class="CodeIndented">"port": 8256,</p>
+                                    <p class="CodeIndented">"host": null,</p>
+                                    <p class="CodeIndented2">"targets": [</p>
+                                    <p class="CodeIndented3">{</p>
+                                    <p class="CodeIndented4">"path": "/d2h/MyOutput/",</p>
+                                    <p class="CodeIndented4">"index": "c:\\d2h\\targets\\MyOutput\\searchindex.js"</p>
+                                    <p class="CodeIndented3">},&#160;  </p>
+                                    <p class="CodeIndented3">{</p>
+                                    <p class="CodeIndented4">"path": "/d2h/MyOutput/",</p>
+                                    <p class="CodeIndented4">"index": "c:\\d2h\\targets\\MyOutput\\searchindex.js"</p>
+                                    <p class="CodeIndented3">}</p>
+                                    <p class="CodeIndented2">]</p>
+                                    <p class="Code">}</p>
+                                </div>
+                                <p>Each target is described by two values:</p>
+                                <ul>
+                                    <li><span class="SetOffFirstLevel">path</span> is the virtual path you set up on the web server (IIS, Apache, etc.).</li>
+                                    <li><span class="SetOffFirstLevel">index</span> is a physical path to the search data of the target, the "searchinddex.js" file in the Target folder. Note that the character '\' must be expressed as '\\' in these strings.</li>
+                                </ul>
+                            </li>
+                            <li>Make sure you save all changes made to the "settings.json" file.</li>
+                            <li>Repeat step 3 from <c1hjump><MadCap:xref href="#SettingUpServerSingleTarget">Setting Up a Server for a Single Target</MadCap:xref></c1hjump>.</li>
+                        </ol>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #6dc1aa;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">The folder structure described in these steps is only an example; you can use any folder structure you wish.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="SecondLevel">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Updating target configurations</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody class="Final">
+                        <p>If you change the port number setting in the server configuration, you must update this setting in target(s).</p>
+                        <ol>
+                            <li>
+                                <p>Open the command line window and go to the folder containing the search server files</p>
+                                <div class="example">
+                                    <p class="exampleHeadTextEmpty">Example</p>
+                                    <p>"c:\d2h\nodejs" or "c:\d2h\targets\MyOutput\js\nodejs" </p>
+                                </div>
+                                <p>See step 3 of <c1hjump><MadCap:xref href="#SettingUpServerSingleTarget">Setting Up a Server for a Single Target</MadCap:xref></c1hjump>. </p>
+                            </li>
+                            <li>Execute <span class="Emphasis">node searchserverconfig.js</span>. This updates the port number in the configuration files in Target(s) folder.</li>
+                        </ol>
+                        <p>The utility "searchserverconfig.js" uses the "settings.json" file to update target configurations.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HTargetsGuide" />
+    </body>
+</html>

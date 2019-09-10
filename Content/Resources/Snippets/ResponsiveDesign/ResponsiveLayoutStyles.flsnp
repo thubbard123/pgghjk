@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Flare" MadCap:lastBlockDepth="7" MadCap:lastHeight="1454" MadCap:lastWidth="1172">
+    <body>
+        <p>If you've used the Foundation framework, you know that there are several styles involved. In the simplified Flare system, there are only a few styles to know about.</p>
+        <p>When you create a responsive layout in Flare, you are asked to create a new "row" style, or use an existing one. It's called a row style because it controls everything that is going on inside that one-row grid. However, in CSS it is actually a div style.</p>
+        <p>
+            <img src="../../Images/responsive_layout3.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <p>In fact, when you are all done adding cells to the row and assigning columns, you will also end up with multiple complex selectors in your stylesheet. These selectors consist of div styles, using the nth-child pseudo class for each cell.</p>
+        <MadCap:pageBreak MadCap:conditions="FlareGuides.FlareWhatsNewGuide,FlareGuides.FlareHTML5Guide" />
+        <div class="example">
+            <p class="exampleHeadTextEmpty">Example</p>
+            <p>In the following image, we have a responsive layout with three cells, so we have three complex selectors; the number at the end in parentheses represents the order of the cells.</p>
+            <p>
+                <img src="../../Images/responsive_layout4.png" alt="" title="" class="MaxWidth100Percent" />
+            </p>
+            <p>Maybe you want to make formatting adjustments to the second cell in this row style. In that case, you would select <span class="Emphasis">div.MyResponsiveLayout &gt; div:nth-child(2)</span> and modify the properties for it on the right side of the editor.</p>
+        </div>
+        <p>When you click in a cell in the XML Editor, the Responsive Layout window pane will show the relevant complex selector and the definitions for it. You cannot edit this part of the Responsive Layout window pane, but you can copy and paste it elsewhere if necessary. If you click the <span class="Emphasis">Edit</span> button below this section, the stylesheet opens and automatically chooses the appropriate selector so that you can edit its properties.</p>
+        <p>
+            <img src="../../Images/responsive_layout5.png" alt="" title="" class="MaxWidth100Percent" />
+        </p>
+        <MadCap:snippetBlock src="ResponsiveContentStylesTip.flsnp" />
+    </body>
+</html>

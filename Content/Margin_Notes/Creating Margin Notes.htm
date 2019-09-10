@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Products.D2H" MadCap:lastBlockDepth="6" MadCap:lastHeight="723" MadCap:lastWidth="947" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" style="mc-master-page: url('..\Resources\MasterPages\PDF_Topics\D2H\D2HDocumentsTemplatesContent.flmsp');">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Margin notes;Notes:margin" />
+            <MadCap:conditionalText MadCap:conditions="General.OnlineLive">Creating </MadCap:conditionalText>Margin Notes</h1>
+        <p>Margin notes are used to place text or images in the left margin of a manual, next to the main body of the text. Margin notes do not appear in online outputs unless you explicitly link them to the text, where they will appear as popups.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create a Margin Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the Word source document, place your cursor at the point you’d like to insert the margin note.</li>
+                    <li>
+                        <p>In the <span class="Emphasis">Doc-To-Help</span> ribbon, click the <span class="Emphasis">Margin Note</span> button and  select <span class="Emphasis">Create</span>.</p>
+                        <p>A two-column table is placed in the document with the text of the paragraph in the right hand table cell. If table gridlines are turned on in Word, you'll see a dotted outline of the table. The gridlines do not print.</p>
+                    </li>
+                    <li>Type the margin note (or insert an image) in the left column of the table. The paragraph text will be in the right column.</li>
+                </ol>
+                <p>If you would like to add another margin note for the same paragraph, click in the left column, select the <span class="Emphasis">Margin Note</span> button and choose <span class="Emphasis">Add Definition</span>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:snippetBlock src="../Resources/Snippets/EmptyPageBreakAfter.flsnp" MadCap:conditions="D2HGuides.D2HDocumentsTemplatesContent" />
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How to Create a Hotlink to a Margin Note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p>This is supported in online outputs only.</p>
+                <ol>
+                    <li>After following the previous steps to create a margin note, highlight the text in the right column that you want to use as a hotspot.</li>
+                    <li>In the <span class="Emphasis">Doc-To-Help</span> ribbon, click the <span class="Emphasis">Margin Note</span> button and select <span class="Emphasis">Set Link</span>.</li>
+                    <li>
+                        <p>A dialog confirms that you want to link the selected text with the contents of the highlighted cell (i.e., the margin note). If it is correct, click <span class="Emphasis">OK</span>. If not, use the  <span class="Emphasis">Previous</span> and  <span class="Emphasis">Next</span> buttons to navigate to the proper cell. </p>
+                        <p>The hotspot is created and will be indicated in the Word document with a comment that notes the link information. If you would like to see this relationship more graphically, click in the right column, then in the <span class="Emphasis">Doc-To-Help</span> ribbon click the <span class="Emphasis">Margin Note</span> button and choose <span class="Emphasis">Highlight Definition Links</span>.</p>
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

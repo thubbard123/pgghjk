@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Products.Lingo" MadCap:lastBlockDepth="8" MadCap:lastHeight="1268" MadCap:lastWidth="910">
+    <head><title></title>
+        <meta name="description" content="MadCap installing SQL, installing SQL&#160;Server, SQL server requirements, Install Microsoft SQL&#160;Server" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="SQL:SQLite;SQL:Express" />
+            <MadCap:concept term="TranslationMemory" />
+            <MadCap:keyword term="Translation memory" />
+            <MadCap:concept term="Dictionaries" />
+            <MadCap:keyword term="Translation memory:dictionaries;Dictionaries:translation memory" />SQL</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SQLLingoSummary.flsnp" />
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">SQLite</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>sqlite</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SQLiteSummary.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2 MadCap:conditions="General.Print" class="NoPageBreakBefore">SQL Server Express</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="OnlineOnly">
+                <MadCap:dropDownHotspot>sql server express</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/TranslationMemory/SQLExpressSummary.flsnp" />
+                <p>When installing SQL Server Express, it is recommended that you accept the default settings as you move through the installation wizard. If you want to explore any of the alternative options, please refer to the documentation provided with Microsoft SQL Server Express.</p>
+                <p>If you are using <MadCap:keyword term="Microsoft Windows Vista" />Windows Vista or later versions, you do not automatically have administrative privileges when installing SQL Server 2012 Express. However, you can manually add yourself as an SQL Server administrator by using the following steps.</p>
+                <p class="Subheading">how to add yourself as an sql server administrator</p>
+                <ol>
+                    <li>Select <span class="Emphasis">Start&gt;All Programs&gt;Microsoft SQL Server 2012&gt;SQL Server Surface Area Configuration</span>.</li>
+                    <li>Click <span class="Emphasis">Add New Administrator</span>.</li>
+                    <li>Highlight the server and click the button with the double arrows pointing to the right.</li>
+                    <li>
+                        <MadCap:snippetText src="../Resources/Snippets/StepsGeneral/ClickOK.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot MadCap:conditions="General.OnlineLive">notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody class="Final">
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you are having difficulty connecting to a remote Lingo database, it may be due to the security setting of SQL. To view a remote server, you must have administrator rights on that server. You can add users to a local machine as administrators or add users in SQL Management Studio. To do this in Management Studio: (1) open SQL Server Management Studio (see <a href="http://msdn.microsoft.com/" target="_blank">msdn.microsoft.com</a> for more information); (2) expand the server and then expand <span class="Emphasis">Security</span>; you’ll probably have a login called "BUILTIN\Administrators," which will have "sysadmin" rights; in that case, any admin of your machine will have sysadmin rights because they’re part of that group; and (3) add anyone to this who will need to access your server.</p>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your database is not displaying when you are setting up TM, your SQL browser service may not be enabled. To enable this service: (1) open SQL Server Management Studio (see <a href="http://msdn.microsoft.com/" target="_blank">msdn.microsoft.com</a> for more information), (2) open the SQL Server Configuration Manager, (3) open the SQL Server Browser and go to the <span class="Emphasis">Service</span> tab, (4) change the Start Mode to <span class="Emphasis">Automatic</span>, and (5) click <span class="Emphasis">Apply</span>, and (6) start your <span class="Emphasis">SQL Server Browser</span>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="General.OnlineNotWebHelp">
+            <MadCap:conceptLink term="TranslationMemory" />
+        </p>
+    </body>
+</html>
